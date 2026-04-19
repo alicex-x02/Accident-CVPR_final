@@ -1,0 +1,187 @@
+Loading model: Qwen/Qwen3.5-9B
+Using device: cuda
+The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+Loading weights:   0%|          | 0/760 [00:00<?, ?it/s]Loading weights:   0%|          | 1/760 [00:00<05:53,  2.15it/s]Loading weights:   0%|          | 2/760 [00:01<07:07,  1.77it/s]Loading weights:   2%|▏         | 14/760 [00:01<00:43, 16.98it/s]Loading weights:   4%|▎         | 27/760 [00:01<00:21, 34.20it/s]Loading weights:   5%|▌         | 39/760 [00:01<00:15, 47.52it/s]Loading weights:   6%|▋         | 48/760 [00:01<00:13, 51.00it/s]Loading weights:   9%|▊         | 66/760 [00:01<00:09, 76.05it/s]Loading weights:  11%|█         | 80/760 [00:01<00:08, 84.74it/s]Loading weights:  12%|█▏        | 93/760 [00:01<00:07, 94.85it/s]Loading weights:  14%|█▍        | 105/760 [00:02<00:07, 84.01it/s]Loading weights:  16%|█▌        | 118/760 [00:02<00:06, 94.40it/s]Loading weights:  17%|█▋        | 131/760 [00:02<00:06, 96.19it/s]Loading weights:  19%|█▉        | 147/760 [00:02<00:05, 105.66it/s]Loading weights:  21%|██        | 159/760 [00:02<00:06, 96.67it/s] Loading weights:  23%|██▎       | 173/760 [00:02<00:05, 101.86it/s]Loading weights:  24%|██▍       | 186/760 [00:02<00:05, 107.76it/s]Loading weights:  26%|██▌       | 199/760 [00:02<00:04, 112.88it/s]Loading weights:  28%|██▊       | 211/760 [00:03<00:05, 93.97it/s] Loading weights:  30%|██▉       | 226/760 [00:03<00:05, 101.82it/s]Loading weights:  31%|███▏      | 239/760 [00:03<00:04, 106.83it/s]Loading weights:  33%|███▎      | 252/760 [00:03<00:04, 112.47it/s]Loading weights:  35%|███▍      | 264/760 [00:03<00:05, 91.97it/s] Loading weights:  37%|███▋      | 279/760 [00:03<00:04, 99.72it/s]Loading weights:  38%|███▊      | 292/760 [00:03<00:04, 106.81it/s]Loading weights:  40%|████      | 305/760 [00:04<00:04, 102.05it/s]Loading weights:  42%|████▏     | 316/760 [00:04<00:04, 90.95it/s] Loading weights:  44%|████▎     | 331/760 [00:04<00:04, 101.78it/s]Loading weights:  45%|████▌     | 342/760 [00:04<00:04, 103.10it/s]Loading weights:  46%|████▋     | 353/760 [00:04<00:03, 102.31it/s]Loading weights:  48%|████▊     | 364/760 [00:04<00:04, 88.23it/s] Loading weights:  49%|████▉     | 374/760 [00:04<00:04, 90.45it/s]Loading weights:  51%|█████     | 385/760 [00:04<00:03, 94.00it/s]Loading weights:  52%|█████▏    | 398/760 [00:04<00:03, 101.67it/s]Loading weights:  54%|█████▍    | 410/760 [00:05<00:03, 97.11it/s] Loading weights:  55%|█████▌    | 420/760 [00:05<00:04, 83.36it/s]Loading weights:  63%|██████▎   | 482/760 [00:05<00:01, 211.16it/s]Loading weights:  76%|███████▌  | 578/760 [00:05<00:00, 401.34it/s]Loading weights:  90%|████████▉ | 683/760 [00:05<00:00, 571.61it/s]Loading weights: 100%|██████████| 760/760 [00:05<00:00, 133.72it/s]
+
+[1] Processing: videos/Z4kg2Ev3vhk_00.mp4
+Keyword argument `enable_thinking` is not a valid argument for this processor and will be ignored.
+/opt/conda/envs/yujin/lib/python3.10/site-packages/transformers/video_processing_utils.py:872: UserWarning: `torchcodec` is not installed and cannot be used to decode the video by default. Falling back to `torchvision`. Note that `torchvision` decoding is deprecated and will be removed in future versions. 
+  warnings.warn(
+/opt/conda/envs/yujin/lib/python3.10/site-packages/transformers/video_utils.py:534: UserWarning: Using `torchvision` for video decoding is deprecated and will be removed in future versions. Please use `torchcodec` instead.
+  warnings.warn(
+  -> model output: {
+  "accident_time": 0.0
+}
+
+  -> predicted accident_time=0.0000
+  -> model output: {"center_x": 0.42, "center_y": 0.75}
+
+  -> predicted location: center_x=0.4200, center_y=0.7500
+  -> model output: {
+  "type": "single"
+}
+
+  -> final parsed result: accident_time=0.0000, center_x=0.4200, center_y=0.7500, type=single
+  -> CSV updated: /workspace/yujin/code/accident/predictions.csv (1 rows saved)
+
+[2] Processing: videos/unS0-TLF1ao_00.mp4
+  -> model output: {
+  "accident_time": 2.0
+}
+
+  -> predicted accident_time=2.0000
+  -> model output: ```json
+{
+  "center_x": 0.79,
+  "center_y": 0.42
+}
+```
+
+  -> predicted location: center_x=0.7900, center_y=0.4200
+  -> model output: {
+  "type": "single"
+}
+
+  -> final parsed result: accident_time=2.0000, center_x=0.7900, center_y=0.4200, type=single
+  -> CSV updated: /workspace/yujin/code/accident/predictions.csv (2 rows saved)
+
+[3] Processing: videos/UarP8qU1S-c_00.mp4
+  -> model output: {
+  "accident_time": 7.0
+}
+
+  -> predicted accident_time=7.0000
+  -> model output: ```json
+{
+  "center_x": 0.31,
+  "center_y": 0.34
+}
+```
+
+  -> predicted location: center_x=0.3100, center_y=0.3400
+  -> model output: {
+  "type": "single"
+}
+
+  -> final parsed result: accident_time=7.0000, center_x=0.3100, center_y=0.3400, type=single
+  -> CSV updated: /workspace/yujin/code/accident/predictions.csv (3 rows saved)
+
+[4] Processing: videos/UarP8qU1S-c_01.mp4
+  -> model output: {
+  "accident_time": 1.0
+}
+
+  -> predicted accident_time=1.0000
+  -> model output: {"center_x": 0.57, "center_y": 0.55}
+
+  -> predicted location: center_x=0.5700, center_y=0.5500
+  -> model output: {
+  "type": "single"
+}
+
+  -> final parsed result: accident_time=1.0000, center_x=0.5700, center_y=0.5500, type=single
+  -> CSV updated: /workspace/yujin/code/accident/predictions.csv (4 rows saved)
+
+[5] Processing: videos/nAXTthLfgtI_00.mp4
+  -> model output: {
+  "accident_time": 0.0
+}
+
+  -> predicted accident_time=0.0000
+  -> model output: {
+  "center_x": 0.19,
+  "center_y": 0.61
+}
+
+  -> predicted location: center_x=0.1900, center_y=0.6100
+  -> model output: {
+  "type": "single"
+}
+
+  -> final parsed result: accident_time=0.0000, center_x=0.1900, center_y=0.6100, type=single
+  -> CSV updated: /workspace/yujin/code/accident/predictions.csv (5 rows saved)
+
+[6] Processing: videos/fzWY0vLAXzI_00.mp4
+  -> model output: {
+  "accident_time": 4.0
+}
+
+  -> predicted accident_time=4.0000
+  -> model output: ```json
+{
+  "center_x": 0.33,
+  "center_y": 0.19
+}
+```
+
+  -> predicted location: center_x=0.3300, center_y=0.1900
+  -> model output: {
+  "type": "t-bone"
+}
+
+  -> final parsed result: accident_time=4.0000, center_x=0.3300, center_y=0.1900, type=t-bone
+  -> CSV updated: /workspace/yujin/code/accident/predictions.csv (6 rows saved)
+
+[7] Processing: videos/vxZ47DoPNY8_00.mp4
+  -> model output: {
+  "accident_time": 3.0
+}
+
+  -> predicted accident_time=3.0000
+  -> model output: ```json
+{
+  "center_x": 0.789,
+  "center_y": 0.208
+}
+```
+
+  -> predicted location: center_x=0.7890, center_y=0.2080
+  -> model output: {
+  "type": "single"
+}
+
+  -> final parsed result: accident_time=3.0000, center_x=0.7890, center_y=0.2080, type=single
+  -> CSV updated: /workspace/yujin/code/accident/predictions.csv (7 rows saved)
+
+[8] Processing: videos/OXVXsdDT9QQ_00.mp4
+  -> model output: {
+  "accident_time": 1.5
+}
+
+  -> predicted accident_time=1.5000
+  -> model output: ```json
+{
+  "center_x": 0.56,
+  "center_y": 0.63
+}
+```
+
+  -> predicted location: center_x=0.5600, center_y=0.6300
+  -> model output: {
+  "type": "t-bone"
+}
+
+  -> final parsed result: accident_time=1.5000, center_x=0.5600, center_y=0.6300, type=t-bone
+  -> CSV updated: /workspace/yujin/code/accident/predictions.csv (8 rows saved)
+
+[9] Processing: videos/VozrseCzhQc_00.mp4
+  -> model output: {
+  "accident_time": 5.0
+}
+
+  -> predicted accident_time=5.0000
+  -> model output: {
+  "center_x": 0.604,
+  "center_y": 0.575
+}
+
+  -> predicted location: center_x=0.6040, center_y=0.5750
+  -> model output: {
+  "type": "single"
+}
+
+  -> final parsed result: accident_time=5.0000, center_x=0.6040, center_y=0.5750, type=single
+  -> CSV updated: /workspace/yujin/code/accident/predictions.csv (9 rows saved)
+
+[10] Processing: videos/kABWTDKgc9U_00.mp4
+  -> model output: 

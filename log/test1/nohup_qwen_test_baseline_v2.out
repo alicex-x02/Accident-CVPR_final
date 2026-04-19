@@ -1,0 +1,204 @@
+Loading model: Qwen/Qwen3.5-9B
+Using device: cuda
+The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+Loading weights:   0%|          | 0/760 [00:00<?, ?it/s]Loading weights:   0%|          | 1/760 [00:00<05:46,  2.19it/s]Loading weights:   0%|          | 2/760 [00:01<07:00,  1.80it/s]Loading weights:   2%|▏         | 15/760 [00:01<00:41, 17.98it/s]Loading weights:   4%|▍         | 29/760 [00:01<00:20, 35.07it/s]Loading weights:   6%|▌         | 42/760 [00:01<00:13, 51.48it/s]Loading weights:   7%|▋         | 52/760 [00:01<00:12, 58.20it/s]Loading weights:   9%|▉         | 67/760 [00:01<00:09, 74.10it/s]Loading weights:  11%|█         | 80/760 [00:01<00:07, 85.37it/s]Loading weights:  12%|█▏        | 93/760 [00:01<00:06, 95.56it/s]Loading weights:  14%|█▍        | 105/760 [00:02<00:07, 83.13it/s]Loading weights:  16%|█▌        | 119/760 [00:02<00:06, 96.13it/s]Loading weights:  18%|█▊        | 133/760 [00:02<00:06, 99.59it/s]Loading weights:  19%|█▉        | 146/760 [00:02<00:05, 105.60it/s]Loading weights:  21%|██        | 158/760 [00:02<00:06, 89.35it/s] Loading weights:  23%|██▎       | 173/760 [00:02<00:05, 97.89it/s]Loading weights:  24%|██▍       | 186/760 [00:02<00:05, 102.82it/s]Loading weights:  26%|██▌       | 199/760 [00:02<00:05, 108.68it/s]Loading weights:  28%|██▊       | 211/760 [00:03<00:06, 91.05it/s] Loading weights:  30%|██▉       | 226/760 [00:03<00:05, 99.06it/s]Loading weights:  31%|███▏      | 238/760 [00:03<00:05, 103.45it/s]Loading weights:  33%|███▎      | 250/760 [00:03<00:04, 107.49it/s]Loading weights:  34%|███▍      | 262/760 [00:03<00:05, 92.42it/s] Loading weights:  37%|███▋      | 278/760 [00:03<00:04, 106.02it/s]Loading weights:  38%|███▊      | 290/760 [00:03<00:04, 107.43it/s]Loading weights:  40%|███▉      | 302/760 [00:03<00:04, 108.43it/s]Loading weights:  41%|████▏     | 314/760 [00:04<00:05, 86.30it/s] Loading weights:  44%|████▎     | 331/760 [00:04<00:04, 102.23it/s]Loading weights:  45%|████▌     | 343/760 [00:04<00:03, 106.25it/s]Loading weights:  47%|████▋     | 355/760 [00:04<00:04, 99.12it/s] Loading weights:  48%|████▊     | 366/760 [00:04<00:04, 81.55it/s]Loading weights:  51%|█████     | 384/760 [00:04<00:03, 99.66it/s]Loading weights:  52%|█████▏    | 395/760 [00:04<00:03, 100.08it/s]Loading weights:  54%|█████▎    | 407/760 [00:05<00:03, 98.47it/s] Loading weights:  55%|█████▌    | 418/760 [00:05<00:04, 84.95it/s]Loading weights:  58%|█████▊    | 443/760 [00:05<00:02, 122.20it/s]Loading weights:  71%|███████   | 538/760 [00:05<00:00, 325.28it/s]Loading weights:  84%|████████▍ | 638/760 [00:05<00:00, 499.31it/s]Loading weights:  99%|█████████▉| 753/760 [00:05<00:00, 658.33it/s]Loading weights: 100%|██████████| 760/760 [00:05<00:00, 133.55it/s]
+
+[1] Processing: videos/Z4kg2Ev3vhk_00.mp4
+Keyword argument `enable_thinking` is not a valid argument for this processor and will be ignored.
+/opt/conda/envs/yujin/lib/python3.10/site-packages/transformers/video_processing_utils.py:872: UserWarning: `torchcodec` is not installed and cannot be used to decode the video by default. Falling back to `torchvision`. Note that `torchvision` decoding is deprecated and will be removed in future versions. 
+  warnings.warn(
+/opt/conda/envs/yujin/lib/python3.10/site-packages/transformers/video_utils.py:534: UserWarning: Using `torchvision` for video decoding is deprecated and will be removed in future versions. Please use `torchcodec` instead.
+  warnings.warn(
+  -> model output: {
+  "accident_time": 0.0
+}
+
+  -> predicted accident_time=0.0000
+  -> model output: {"center_x": 0.44, "center_y": 0.75}
+
+  -> predicted location: center_x=0.4400, center_y=0.7500
+  -> model output: {
+  "type": "single"
+}
+
+  -> final parsed result: accident_time=0.0000, center_x=0.4400, center_y=0.7500, type=single
+
+[2] Processing: videos/unS0-TLF1ao_00.mp4
+  -> model output: {
+  "accident_time": 2.0
+}
+
+  -> predicted accident_time=2.0000
+  -> model output: ```json
+{
+  "center_x": 0.79,
+  "center_y": 0.43
+}
+```
+
+  -> predicted location: center_x=0.7900, center_y=0.4300
+  -> model output: {
+  "type": "single"
+}
+
+  -> final parsed result: accident_time=2.0000, center_x=0.7900, center_y=0.4300, type=single
+
+[3] Processing: videos/UarP8qU1S-c_00.mp4
+  -> model output: {
+  "accident_time": 6.0
+}
+
+  -> predicted accident_time=6.0000
+  -> model output: ```json
+{
+  "center_x": 0.468,
+  "center_y": 0.500
+}
+```
+
+  -> predicted location: center_x=0.4680, center_y=0.5000
+  -> model output: {
+  "type": "single"
+}
+
+  -> final parsed result: accident_time=6.0000, center_x=0.4680, center_y=0.5000, type=single
+
+[4] Processing: videos/UarP8qU1S-c_01.mp4
+  -> model output: {
+  "accident_time": 1.0
+}
+
+  -> predicted accident_time=1.0000
+  -> model output: {"center_x": 0.57, "center_y": 0.55}
+
+  -> predicted location: center_x=0.5700, center_y=0.5500
+  -> model output: {
+  "type": "single"
+}
+
+  -> final parsed result: accident_time=1.0000, center_x=0.5700, center_y=0.5500, type=single
+
+[5] Processing: videos/nAXTthLfgtI_00.mp4
+  -> model output: {
+  "accident_time": 0.0
+}
+
+  -> predicted accident_time=0.0000
+  -> model output: {"center_x": 0.36, "center_y": 0.42}
+
+  -> predicted location: center_x=0.3600, center_y=0.4200
+  -> model output: {
+  "type": "single"
+}
+
+  -> final parsed result: accident_time=0.0000, center_x=0.3600, center_y=0.4200, type=single
+
+[6] Processing: videos/fzWY0vLAXzI_00.mp4
+  -> model output: {
+  "accident_time": 4.0
+}
+
+  -> predicted accident_time=4.0000
+  -> model output: ```json
+{
+  "center_x": 0.33,
+  "center_y": 0.19
+}
+```
+
+  -> predicted location: center_x=0.3300, center_y=0.1900
+  -> model output: {
+  "type": "t-bone"
+}
+
+  -> final parsed result: accident_time=4.0000, center_x=0.3300, center_y=0.1900, type=t-bone
+
+[7] Processing: videos/vxZ47DoPNY8_00.mp4
+  -> model output: {
+  "accident_time": 3.0
+}
+
+  -> predicted accident_time=3.0000
+  -> model output: ```json
+{
+  "center_x": 0.81,
+  "center_y": 0.22
+}
+```
+
+  -> predicted location: center_x=0.8100, center_y=0.2200
+  -> model output: {
+  "type": "single"
+}
+
+  -> final parsed result: accident_time=3.0000, center_x=0.8100, center_y=0.2200, type=single
+
+[8] Processing: videos/OXVXsdDT9QQ_00.mp4
+  -> model output: {
+  "accident_time": 1.5
+}
+
+  -> predicted accident_time=1.5000
+  -> model output: ```json
+{
+  "center_x": 0.55,
+  "center_y": 0.63
+}
+```
+
+  -> predicted location: center_x=0.5500, center_y=0.6300
+  -> model output: {
+  "type": "t-bone"
+}
+
+  -> final parsed result: accident_time=1.5000, center_x=0.5500, center_y=0.6300, type=t-bone
+
+[9] Processing: videos/VozrseCzhQc_00.mp4
+  -> model output: {
+  "accident_time": 5.0
+}
+
+  -> predicted accident_time=5.0000
+  -> model output: {
+  "center_x": 0.604,
+  "center_y": 0.575
+}
+
+  -> predicted location: center_x=0.6040, center_y=0.5750
+  -> model output: {
+  "type": "single"
+}
+
+  -> final parsed result: accident_time=5.0000, center_x=0.6040, center_y=0.5750, type=single
+
+[10] Processing: videos/kABWTDKgc9U_00.mp4
+  -> model output: {
+  "accident_time": 0.0
+}
+
+  -> predicted accident_time=0.0000
+  -> model output: {"center_x": 0.75, "center_y": 0.66}
+
+  -> predicted location: center_x=0.7500, center_y=0.6600
+  -> model output: {
+  "type": "single"
+}
+
+  -> final parsed result: accident_time=0.0000, center_x=0.7500, center_y=0.6600, type=single
+
+[11] Processing: videos/ftk_fSc4haM_00.mp4
+  -> model output: {
+  "accident_time": 6.7
+}
+
+  -> predicted accident_time=6.7000
+  -> model output: ```json
+{
+  "center_x": 0.73,
+  "center_y": 0.26
+}
+```
+
+  -> predicted location: center_x=0.7300, center_y=0.2600
+  -> model output: {
+  "type": 

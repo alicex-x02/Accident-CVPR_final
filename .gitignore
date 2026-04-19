@@ -1,0 +1,42 @@
+# Keep the backup focused on source, logs, and result files.
+# Heavy model artifacts and local caches stay out of Git.
+
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Project-generated caches
+.cache/
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+
+# Editor and OS noise
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Local environments
+.venv/
+venv/
+env/
+
+# Heavy model artifacts
+models/
+code/accident
+*.pt
+*.pth
+*.safetensors
+*.msgpack
+*.ckpt
+*.onnx
+
+# Large temporary videos from runs
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.webm

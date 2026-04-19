@@ -1,0 +1,180 @@
+2026-04-17 15:06:55,307 | INFO | Dataset root: /workspace/woo/ACCIDENT@CVPR/data/raw/accident
+2026-04-17 15:06:55,307 | INFO | Metadata CSV: /workspace/woo/ACCIDENT@CVPR/data/raw/accident/test_metadata.csv
+2026-04-17 15:06:55,307 | INFO | Videos dir: /workspace/woo/ACCIDENT@CVPR/data/raw/accident/videos
+2026-04-17 15:06:55,307 | INFO | Model path: /root/.cache/huggingface/hub/models--Qwen--Qwen3-VL-8B-Instruct
+2026-04-17 15:06:55,307 | INFO | Shard: 0 / 2
+2026-04-17 15:06:55,307 | INFO | Output CSV: /workspace/yujin/result/submission_shard00_of_02.csv
+2026-04-17 15:06:55,307 | INFO | Raw log: /workspace/yujin/log/raw_outputs_shard00_of_02.jsonl
+2026-04-17 15:06:55,307 | INFO | Temp dir: /workspace/yujin/log/temp_shard00_of_02
+2026-04-17 15:06:55,422 | INFO | Rows assigned to this shard: 1014
+2026-04-17 15:07:04,030 | INFO | [1/1014] Processing videos/Z4kg2Ev3vhk_00.mp4
+2026-04-17 15:07:18,419 | INFO | [1/1014] Updated CSV | videos/Z4kg2Ev3vhk_00.mp4 | t=10.376 xy=(0.332322, 0.777071) type=rear-end
+2026-04-17 15:07:18,420 | INFO | [2/1014] Processing videos/UarP8qU1S-c_00.mp4
+2026-04-17 15:07:50,129 | INFO | [2/1014] Updated CSV | videos/UarP8qU1S-c_00.mp4 | t=5.328 xy=(0.215975, 0.700805) type=single
+2026-04-17 15:07:50,130 | INFO | [3/1014] Processing videos/nAXTthLfgtI_00.mp4
+2026-04-17 15:07:58,432 | INFO | [3/1014] Updated CSV | videos/nAXTthLfgtI_00.mp4 | t=2.197 xy=(0.678490, 0.874392) type=single
+2026-04-17 15:07:58,432 | INFO | [4/1014] Processing videos/vxZ47DoPNY8_00.mp4
+2026-04-17 15:08:08,441 | INFO | [4/1014] Updated CSV | videos/vxZ47DoPNY8_00.mp4 | t=3.367 xy=(0.683911, 0.779384) type=single
+2026-04-17 15:08:08,442 | INFO | [5/1014] Processing videos/VozrseCzhQc_00.mp4
+2026-04-17 15:08:15,925 | INFO | [5/1014] Updated CSV | videos/VozrseCzhQc_00.mp4 | t=3.584 xy=(0.348468, 0.861142) type=single
+2026-04-17 15:08:15,926 | INFO | [6/1014] Processing videos/ftk_fSc4haM_00.mp4
+2026-04-17 15:08:24,697 | INFO | [6/1014] Updated CSV | videos/ftk_fSc4haM_00.mp4 | t=0.603 xy=(0.829922, 0.422851) type=t-bone
+2026-04-17 15:08:24,698 | INFO | [7/1014] Processing videos/LiM5LPSZoow_00.mp4
+2026-04-17 15:08:35,265 | INFO | [7/1014] Updated CSV | videos/LiM5LPSZoow_00.mp4 | t=1.203 xy=(0.813826, 0.896642) type=t-bone
+2026-04-17 15:08:35,266 | INFO | [8/1014] Processing videos/maJsgJsapH4_00.mp4
+2026-04-17 15:08:48,169 | INFO | [8/1014] Updated CSV | videos/maJsgJsapH4_00.mp4 | t=8.839 xy=(0.573469, 0.472249) type=single
+2026-04-17 15:08:48,170 | INFO | [9/1014] Processing videos/maJGw3hQs_s_00.mp4
+2026-04-17 15:08:57,810 | INFO | [9/1014] Updated CSV | videos/maJGw3hQs_s_00.mp4 | t=0.601 xy=(0.912326, 0.814386) type=single
+2026-04-17 15:08:57,811 | INFO | [10/1014] Processing videos/aF2Hbp8C23A_00.mp4
+2026-04-17 15:09:05,746 | INFO | [10/1014] Updated CSV | videos/aF2Hbp8C23A_00.mp4 | t=0.604 xy=(0.101711, 0.636224) type=single
+2026-04-17 15:09:05,746 | INFO | [11/1014] Processing videos/bJMc3sNP2AU_00.mp4
+2026-04-17 15:09:15,247 | INFO | [11/1014] Updated CSV | videos/bJMc3sNP2AU_00.mp4 | t=0.597 xy=(0.724097, 0.330752) type=single
+2026-04-17 15:09:15,248 | INFO | [12/1014] Processing videos/gp_9zTMpVrs_00.mp4
+2026-04-17 15:09:25,436 | INFO | [12/1014] Updated CSV | videos/gp_9zTMpVrs_00.mp4 | t=6.189 xy=(0.528478, 0.686353) type=single
+2026-04-17 15:09:25,437 | INFO | [13/1014] Processing videos/jq-5EaxSR3M_00.mp4
+2026-04-17 15:09:35,569 | INFO | [13/1014] Updated CSV | videos/jq-5EaxSR3M_00.mp4 | t=1.000 xy=(0.881187, 0.677557) type=single
+2026-04-17 15:09:35,570 | INFO | [14/1014] Processing videos/FR3eYZzgeJY_00.mp4
+2026-04-17 15:09:46,051 | INFO | [14/1014] Updated CSV | videos/FR3eYZzgeJY_00.mp4 | t=1.811 xy=(0.872128, 0.926796) type=head-on
+2026-04-17 15:09:46,052 | INFO | [15/1014] Processing videos/Mem77KKhF8c_00.mp4
+2026-04-17 15:09:55,842 | INFO | [15/1014] Updated CSV | videos/Mem77KKhF8c_00.mp4 | t=1.638 xy=(0.132722, 0.701193) type=head-on
+2026-04-17 15:09:55,843 | INFO | [16/1014] Processing videos/fgI4vUtP_1I_00.mp4
+2026-04-17 15:10:05,850 | INFO | [16/1014] Updated CSV | videos/fgI4vUtP_1I_00.mp4 | t=1.804 xy=(0.485808, 0.693354) type=single
+2026-04-17 15:10:05,850 | INFO | [17/1014] Processing videos/LklNl33KztU_00.mp4
+2026-04-17 15:10:18,592 | INFO | [17/1014] Updated CSV | videos/LklNl33KztU_00.mp4 | t=0.599 xy=(0.317716, 0.656905) type=single
+2026-04-17 15:10:18,594 | INFO | [18/1014] Processing videos/mntY3Xh8lT4_00.mp4
+2026-04-17 15:10:28,390 | INFO | [18/1014] Updated CSV | videos/mntY3Xh8lT4_00.mp4 | t=3.650 xy=(0.406070, 0.611527) type=single
+2026-04-17 15:10:28,391 | INFO | [19/1014] Processing videos/7AFnEpBVrr4_00.mp4
+2026-04-17 15:10:39,049 | INFO | [19/1014] Updated CSV | videos/7AFnEpBVrr4_00.mp4 | t=1.623 xy=(0.241461, 0.659008) type=t-bone
+2026-04-17 15:10:39,050 | INFO | [20/1014] Processing videos/-AztVDZ6cEE_00.mp4
+2026-04-17 15:10:49,796 | INFO | [20/1014] Updated CSV | videos/-AztVDZ6cEE_00.mp4 | t=0.599 xy=(0.222462, 0.782140) type=single
+2026-04-17 15:10:49,797 | INFO | [21/1014] Processing videos/a8zHkZ_t16k_00.mp4
+2026-04-17 15:11:03,964 | INFO | [21/1014] Updated CSV | videos/a8zHkZ_t16k_00.mp4 | t=21.414 xy=(0.792460, 0.796218) type=single
+2026-04-17 15:11:03,965 | INFO | [22/1014] Processing videos/-SNFUobKjoM_00.mp4
+2026-04-17 15:11:14,599 | INFO | [22/1014] Updated CSV | videos/-SNFUobKjoM_00.mp4 | t=6.429 xy=(0.826416, 0.696479) type=t-bone
+2026-04-17 15:11:14,600 | INFO | [23/1014] Processing videos/reXieySb4JI_00.mp4
+2026-04-17 15:11:28,142 | INFO | [23/1014] Updated CSV | videos/reXieySb4JI_00.mp4 | t=0.999 xy=(0.846466, 0.700059) type=single
+2026-04-17 15:11:28,142 | INFO | [24/1014] Processing videos/VXuNX_OYkig_00.mp4
+2026-04-17 15:11:38,429 | INFO | [24/1014] Updated CSV | videos/VXuNX_OYkig_00.mp4 | t=0.603 xy=(0.483262, 0.864390) type=single
+2026-04-17 15:11:38,430 | INFO | [25/1014] Processing videos/dGUCJwW8b1g_00.mp4
+2026-04-17 15:11:51,508 | INFO | [25/1014] Updated CSV | videos/dGUCJwW8b1g_00.mp4 | t=2.316 xy=(0.418772, 0.862954) type=sideswipe
+2026-04-17 15:11:51,510 | INFO | [26/1014] Processing videos/iYAIZEocjbg_00.mp4
+2026-04-17 15:11:59,955 | INFO | [26/1014] Updated CSV | videos/iYAIZEocjbg_00.mp4 | t=9.033 xy=(0.738020, 0.800923) type=t-bone
+2026-04-17 15:11:59,955 | INFO | [27/1014] Processing videos/mDtCi-XVAbo_00.mp4
+2026-04-17 15:12:12,936 | INFO | [27/1014] Updated CSV | videos/mDtCi-XVAbo_00.mp4 | t=6.530 xy=(0.607721, 0.815329) type=single
+2026-04-17 15:12:12,937 | INFO | [28/1014] Processing videos/1ZQAChv0TEI_00.mp4
+2026-04-17 15:12:25,494 | INFO | [28/1014] Updated CSV | videos/1ZQAChv0TEI_00.mp4 | t=1.814 xy=(0.908725, 0.868762) type=single
+2026-04-17 15:12:25,494 | INFO | [29/1014] Processing videos/ui52V2KkRN4_00.mp4
+2026-04-17 15:12:36,971 | INFO | [29/1014] Updated CSV | videos/ui52V2KkRN4_00.mp4 | t=0.606 xy=(0.668230, 0.606137) type=single
+2026-04-17 15:12:36,972 | INFO | [30/1014] Processing videos/C7gOL8qM71E_00.mp4
+2026-04-17 15:12:49,903 | INFO | [30/1014] Updated CSV | videos/C7gOL8qM71E_00.mp4 | t=1.398 xy=(0.427843, 0.671587) type=single
+2026-04-17 15:12:49,904 | INFO | [31/1014] Processing videos/1BIZOZtxRpY_00.mp4
+2026-04-17 15:12:59,859 | INFO | [31/1014] Updated CSV | videos/1BIZOZtxRpY_00.mp4 | t=4.168 xy=(0.751530, 0.854745) type=head-on
+2026-04-17 15:12:59,860 | INFO | [32/1014] Processing videos/bow1eKeR6oY_00.mp4
+2026-04-17 15:13:09,715 | INFO | [32/1014] Updated CSV | videos/bow1eKeR6oY_00.mp4 | t=2.205 xy=(0.247139, 0.871290) type=single
+2026-04-17 15:13:09,716 | INFO | [33/1014] Processing videos/6T58bsyZz40_00.mp4
+2026-04-17 15:13:20,288 | INFO | [33/1014] Updated CSV | videos/6T58bsyZz40_00.mp4 | t=5.592 xy=(0.348332, 0.582068) type=single
+2026-04-17 15:13:20,289 | INFO | [34/1014] Processing videos/zISHd2Jt7Qs_00.mp4
+2026-04-17 15:13:34,076 | INFO | [34/1014] Updated CSV | videos/zISHd2Jt7Qs_00.mp4 | t=5.569 xy=(0.890312, 0.804577) type=single
+2026-04-17 15:13:34,076 | INFO | [35/1014] Processing videos/1lD9kE-VJ7I_00.mp4
+2026-04-17 15:13:45,670 | INFO | [35/1014] Updated CSV | videos/1lD9kE-VJ7I_00.mp4 | t=6.190 xy=(0.735859, 0.838883) type=single
+2026-04-17 15:13:45,670 | INFO | [36/1014] Processing videos/fYUPTfVRKEk_00.mp4
+2026-04-17 15:13:55,442 | INFO | [36/1014] Updated CSV | videos/fYUPTfVRKEk_00.mp4 | t=8.591 xy=(0.817216, 0.628856) type=single
+2026-04-17 15:13:55,443 | INFO | [37/1014] Processing videos/BR4WAtlyQEQ_00.mp4
+2026-04-17 15:14:04,936 | INFO | [37/1014] Updated CSV | videos/BR4WAtlyQEQ_00.mp4 | t=1.578 xy=(0.570117, 0.774466) type=single
+2026-04-17 15:14:04,937 | INFO | [38/1014] Processing videos/JHq6SVNhY0Y_00.mp4
+2026-04-17 15:14:15,348 | INFO | [38/1014] Updated CSV | videos/JHq6SVNhY0Y_00.mp4 | t=4.646 xy=(0.644665, 0.757644) type=t-bone
+2026-04-17 15:14:15,349 | INFO | [39/1014] Processing videos/6EW9PrDqKA8_00.mp4
+2026-04-17 15:14:25,562 | INFO | [39/1014] Updated CSV | videos/6EW9PrDqKA8_00.mp4 | t=3.776 xy=(0.591769, 0.880433) type=single
+2026-04-17 15:14:25,563 | INFO | [40/1014] Processing videos/wQ_pGHoj2SI_00.mp4
+2026-04-17 15:14:38,648 | INFO | [40/1014] Updated CSV | videos/wQ_pGHoj2SI_00.mp4 | t=4.994 xy=(0.230442, 0.635897) type=single
+2026-04-17 15:14:38,648 | INFO | [41/1014] Processing videos/Chf8yRqccCM_00.mp4
+2026-04-17 15:14:46,410 | INFO | [41/1014] Updated CSV | videos/Chf8yRqccCM_00.mp4 | t=0.602 xy=(0.458570, 0.603314) type=single
+2026-04-17 15:14:46,411 | INFO | [42/1014] Processing videos/yQz3PyPvr5Y_00.mp4
+2026-04-17 15:14:55,979 | INFO | [42/1014] Updated CSV | videos/yQz3PyPvr5Y_00.mp4 | t=4.534 xy=(0.381991, 0.492078) type=sideswipe
+2026-04-17 15:14:55,979 | INFO | [43/1014] Processing videos/GaAVUUYx9q8_00.mp4
+2026-04-17 15:15:08,550 | INFO | [43/1014] Updated CSV | videos/GaAVUUYx9q8_00.mp4 | t=0.803 xy=(0.086178, 0.601488) type=single
+2026-04-17 15:15:08,551 | INFO | [44/1014] Processing videos/LP_C34tyPl4_00.mp4
+2026-04-17 15:15:19,151 | INFO | [44/1014] Updated CSV | videos/LP_C34tyPl4_00.mp4 | t=12.590 xy=(0.082017, 0.687190) type=sideswipe
+2026-04-17 15:15:19,152 | INFO | [45/1014] Processing videos/mzHmLvV9QlM_00.mp4
+2026-04-17 15:15:28,773 | INFO | [45/1014] Updated CSV | videos/mzHmLvV9QlM_00.mp4 | t=1.004 xy=(0.408361, 0.635905) type=single
+2026-04-17 15:15:28,774 | INFO | [46/1014] Processing videos/-yLuZ5wxAsc_00.mp4
+2026-04-17 15:15:39,252 | INFO | [46/1014] Updated CSV | videos/-yLuZ5wxAsc_00.mp4 | t=3.057 xy=(0.356673, 0.829164) type=single
+2026-04-17 15:15:39,253 | INFO | [47/1014] Processing videos/Q72Ly8rGtnc_00.mp4
+2026-04-17 15:15:49,385 | INFO | [47/1014] Updated CSV | videos/Q72Ly8rGtnc_00.mp4 | t=19.427 xy=(0.388905, 0.814318) type=single
+2026-04-17 15:15:49,386 | INFO | [48/1014] Processing videos/LMw1OJe37fM_00.mp4
+2026-04-17 15:15:59,508 | INFO | [48/1014] Updated CSV | videos/LMw1OJe37fM_00.mp4 | t=9.530 xy=(0.138010, 0.565982) type=t-bone
+2026-04-17 15:15:59,508 | INFO | [49/1014] Processing videos/Fb1XWmXZTZw_00.mp4
+2026-04-17 15:16:08,636 | INFO | [49/1014] Updated CSV | videos/Fb1XWmXZTZw_00.mp4 | t=1.602 xy=(0.745089, 0.868276) type=single
+2026-04-17 15:16:08,637 | INFO | [50/1014] Processing videos/clXKxQWjB4c_00.mp4
+2026-04-17 15:16:18,565 | INFO | [50/1014] Updated CSV | videos/clXKxQWjB4c_00.mp4 | t=3.597 xy=(0.637663, 0.760155) type=rear-end
+2026-04-17 15:16:18,566 | INFO | [51/1014] Processing videos/jc-fa_AjIXw_00.mp4
+2026-04-17 15:16:28,750 | INFO | [51/1014] Updated CSV | videos/jc-fa_AjIXw_00.mp4 | t=10.200 xy=(0.744886, 0.626741) type=single
+2026-04-17 15:16:28,751 | INFO | [52/1014] Processing videos/JNsoId5gPK8_00.mp4
+2026-04-17 15:16:41,705 | INFO | [52/1014] Updated CSV | videos/JNsoId5gPK8_00.mp4 | t=2.002 xy=(0.639528, 0.532249) type=single
+2026-04-17 15:16:41,705 | INFO | [53/1014] Processing videos/a8-i2E4jrpk_01.mp4
+2026-04-17 15:16:53,501 | INFO | [53/1014] Updated CSV | videos/a8-i2E4jrpk_01.mp4 | t=1.000 xy=(0.150489, 0.574701) type=sideswipe
+2026-04-17 15:16:53,502 | INFO | [54/1014] Processing videos/CVSBJThqVgA_00.mp4
+2026-04-17 15:17:05,384 | INFO | [54/1014] Updated CSV | videos/CVSBJThqVgA_00.mp4 | t=2.409 xy=(0.282280, 0.734925) type=single
+2026-04-17 15:17:05,385 | INFO | [55/1014] Processing videos/vMqldj7d7e0_00.mp4
+2026-04-17 15:17:15,575 | INFO | [55/1014] Updated CSV | videos/vMqldj7d7e0_00.mp4 | t=10.812 xy=(0.080351, 0.580866) type=single
+2026-04-17 15:17:15,576 | INFO | [56/1014] Processing videos/NaRgSBNtbFY_00.mp4
+2026-04-17 15:17:29,364 | INFO | [56/1014] Updated CSV | videos/NaRgSBNtbFY_00.mp4 | t=21.448 xy=(0.625102, 0.825876) type=sideswipe
+2026-04-17 15:17:29,364 | INFO | [57/1014] Processing videos/PyYCjM8tvSY_00.mp4
+2026-04-17 15:17:39,782 | INFO | [57/1014] Updated CSV | videos/PyYCjM8tvSY_00.mp4 | t=0.601 xy=(0.341695, 0.926715) type=single
+2026-04-17 15:17:39,783 | INFO | [58/1014] Processing videos/diYHDL2G4KA_00.mp4
+2026-04-17 15:17:52,211 | INFO | [58/1014] Updated CSV | videos/diYHDL2G4KA_00.mp4 | t=5.147 xy=(0.698273, 0.679646) type=t-bone
+2026-04-17 15:17:52,212 | INFO | [59/1014] Processing videos/YYgdkr0Qiw0_00.mp4
+2026-04-17 15:18:02,479 | INFO | [59/1014] Updated CSV | videos/YYgdkr0Qiw0_00.mp4 | t=0.800 xy=(0.315990, 0.877559) type=t-bone
+2026-04-17 15:18:02,479 | INFO | [60/1014] Processing videos/aUvorQJ7jRU_00.mp4
+2026-04-17 15:18:13,637 | INFO | [60/1014] Updated CSV | videos/aUvorQJ7jRU_00.mp4 | t=2.812 xy=(0.103791, 0.826582) type=sideswipe
+2026-04-17 15:18:13,638 | INFO | [61/1014] Processing videos/HROdEY9OZk4_00.mp4
+2026-04-17 15:18:26,558 | INFO | [61/1014] Updated CSV | videos/HROdEY9OZk4_00.mp4 | t=2.400 xy=(0.703877, 0.557417) type=t-bone
+2026-04-17 15:18:26,559 | INFO | [62/1014] Processing videos/jFpORnj_-cI_00.mp4
+2026-04-17 15:18:34,122 | INFO | [62/1014] Updated CSV | videos/jFpORnj_-cI_00.mp4 | t=12.313 xy=(0.706647, 0.792324) type=sideswipe
+2026-04-17 15:18:34,122 | INFO | [63/1014] Processing videos/GsL5oknV-w0_00.mp4
+2026-04-17 15:18:44,529 | INFO | [63/1014] Updated CSV | videos/GsL5oknV-w0_00.mp4 | t=3.864 xy=(0.719175, 0.923944) type=sideswipe
+2026-04-17 15:18:44,530 | INFO | [64/1014] Processing videos/jPTJZRBPQgc_00.mp4
+2026-04-17 15:18:54,587 | INFO | [64/1014] Updated CSV | videos/jPTJZRBPQgc_00.mp4 | t=1.806 xy=(0.249972, 0.699952) type=sideswipe
+2026-04-17 15:18:54,587 | INFO | [65/1014] Processing videos/hT1Hz_gFnBs_00.mp4
+2026-04-17 15:19:04,767 | INFO | [65/1014] Updated CSV | videos/hT1Hz_gFnBs_00.mp4 | t=4.606 xy=(0.767936, 0.863956) type=t-bone
+2026-04-17 15:19:04,768 | INFO | [66/1014] Processing videos/fJxVsTAIK5Y_00.mp4
+2026-04-17 15:19:13,468 | INFO | [66/1014] Updated CSV | videos/fJxVsTAIK5Y_00.mp4 | t=1.915 xy=(0.510787, 0.725083) type=single
+2026-04-17 15:19:13,468 | INFO | [67/1014] Processing videos/jiiHFFhdKPc_00.mp4
+2026-04-17 15:19:23,643 | INFO | [67/1014] Updated CSV | videos/jiiHFFhdKPc_00.mp4 | t=3.323 xy=(0.671621, 0.705560) type=t-bone
+2026-04-17 15:19:23,643 | INFO | [68/1014] Processing videos/r4P0kKBitVM_00.mp4
+2026-04-17 15:19:32,094 | INFO | [68/1014] Updated CSV | videos/r4P0kKBitVM_00.mp4 | t=2.205 xy=(0.747914, 0.631728) type=single
+2026-04-17 15:19:32,095 | INFO | [69/1014] Processing videos/otYsKPJqTr0_00.mp4
+2026-04-17 15:19:42,289 | INFO | [69/1014] Updated CSV | videos/otYsKPJqTr0_00.mp4 | t=2.764 xy=(0.837056, 0.376426) type=t-bone
+2026-04-17 15:19:42,290 | INFO | [70/1014] Processing videos/6J-qSLHzj_k_00.mp4
+2026-04-17 15:19:49,957 | INFO | [70/1014] Updated CSV | videos/6J-qSLHzj_k_00.mp4 | t=0.808 xy=(0.187418, 0.402023) type=sideswipe
+2026-04-17 15:19:49,958 | INFO | [71/1014] Processing videos/sRyjIctHIdA_00.mp4
+2026-04-17 15:20:02,105 | INFO | [71/1014] Updated CSV | videos/sRyjIctHIdA_00.mp4 | t=0.200 xy=(0.823101, 0.803208) type=t-bone
+2026-04-17 15:20:02,106 | INFO | [72/1014] Processing videos/qOTEPSVfGSI_00.mp4
+2026-04-17 15:20:15,776 | INFO | [72/1014] Updated CSV | videos/qOTEPSVfGSI_00.mp4 | t=5.800 xy=(0.270227, 0.882495) type=single
+2026-04-17 15:20:15,776 | INFO | [73/1014] Processing videos/exMp0HFGLFY_00.mp4
+2026-04-17 15:20:25,854 | INFO | [73/1014] Updated CSV | videos/exMp0HFGLFY_00.mp4 | t=2.203 xy=(0.677261, 0.627404) type=t-bone
+2026-04-17 15:20:25,854 | INFO | [74/1014] Processing videos/Er-dsvrO1UU_00.mp4
+2026-04-17 15:20:35,704 | INFO | [74/1014] Updated CSV | videos/Er-dsvrO1UU_00.mp4 | t=26.413 xy=(0.468943, 0.788694) type=single
+2026-04-17 15:20:35,704 | INFO | [75/1014] Processing videos/ZDiU58ZiXTk_00.mp4
+2026-04-17 15:20:48,463 | INFO | [75/1014] Updated CSV | videos/ZDiU58ZiXTk_00.mp4 | t=5.140 xy=(0.692396, 0.368767) type=sideswipe
+2026-04-17 15:20:48,464 | INFO | [76/1014] Processing videos/S5EyvIwUUU0_00.mp4
+2026-04-17 15:21:01,720 | INFO | [76/1014] Updated CSV | videos/S5EyvIwUUU0_00.mp4 | t=7.592 xy=(0.768749, 0.877499) type=t-bone
+2026-04-17 15:21:01,721 | INFO | [77/1014] Processing videos/-RrDtLjWsT4_00.mp4
+2026-04-17 15:21:15,194 | INFO | [77/1014] Updated CSV | videos/-RrDtLjWsT4_00.mp4 | t=4.036 xy=(0.830922, 0.663745) type=single
+2026-04-17 15:21:15,194 | INFO | [78/1014] Processing videos/CQaoY2QypM8_00.mp4
+2026-04-17 15:21:25,440 | INFO | [78/1014] Updated CSV | videos/CQaoY2QypM8_00.mp4 | t=25.457 xy=(0.752528, 0.743233) type=t-bone
+2026-04-17 15:21:25,440 | INFO | [79/1014] Processing videos/cPyZuPSQrkI_00.mp4
+2026-04-17 15:21:38,504 | INFO | [79/1014] Updated CSV | videos/cPyZuPSQrkI_00.mp4 | t=10.211 xy=(0.701597, 0.677538) type=t-bone
+2026-04-17 15:21:38,504 | INFO | [80/1014] Processing videos/-oreKuCoQnI_00.mp4
+2026-04-17 15:21:48,295 | INFO | [80/1014] Updated CSV | videos/-oreKuCoQnI_00.mp4 | t=5.011 xy=(0.224844, 0.752105) type=single
+2026-04-17 15:21:48,295 | INFO | [81/1014] Processing videos/ZVFTg3X2Acc_00.mp4
+2026-04-17 15:21:58,761 | INFO | [81/1014] Updated CSV | videos/ZVFTg3X2Acc_00.mp4 | t=1.814 xy=(0.872086, 0.817939) type=t-bone
+2026-04-17 15:21:58,762 | INFO | [82/1014] Processing videos/FojgBxlQgiw_00.mp4
+2026-04-17 15:22:08,906 | INFO | [82/1014] Updated CSV | videos/FojgBxlQgiw_00.mp4 | t=0.800 xy=(0.585535, 0.859096) type=t-bone
+2026-04-17 15:22:08,906 | INFO | [83/1014] Processing videos/BVvMdTfk43Y_00.mp4
+2026-04-17 15:22:21,554 | INFO | [83/1014] Updated CSV | videos/BVvMdTfk43Y_00.mp4 | t=0.602 xy=(0.195768, 0.697676) type=single
+2026-04-17 15:22:21,554 | INFO | [84/1014] Processing videos/uJR-x2ahMjo_00.mp4
+2026-04-17 15:22:34,567 | INFO | [84/1014] Updated CSV | videos/uJR-x2ahMjo_00.mp4 | t=1.602 xy=(0.803118, 0.465173) type=t-bone
+2026-04-17 15:22:34,568 | INFO | [85/1014] Processing videos/tnXaQLZivt0_00.mp4
+2026-04-17 15:22:45,301 | INFO | [85/1014] Updated CSV | videos/tnXaQLZivt0_00.mp4 | t=12.428 xy=(0.457349, 0.849560) type=t-bone
+2026-04-17 15:22:45,301 | INFO | [86/1014] Processing videos/sy3K_DPXi1g_00.mp4

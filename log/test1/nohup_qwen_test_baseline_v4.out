@@ -1,0 +1,1847 @@
+Loading model: Qwen/Qwen3.5-9B
+Using device: cuda
+The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+Loading weights:   0%|          | 0/760 [00:00<?, ?it/s]Loading weights:   0%|          | 1/760 [00:01<13:51,  1.10s/it]Loading weights:   2%|▏         | 15/760 [00:01<00:45, 16.36it/s]Loading weights:   3%|▎         | 26/760 [00:01<00:25, 29.14it/s]Loading weights:   5%|▌         | 41/760 [00:01<00:14, 48.70it/s]Loading weights:   7%|▋         | 52/760 [00:01<00:12, 54.81it/s]Loading weights:   9%|▊         | 65/760 [00:01<00:10, 69.30it/s]Loading weights:  10%|█         | 77/760 [00:01<00:08, 80.03it/s]Loading weights:  12%|█▏        | 89/760 [00:01<00:07, 87.18it/s]Loading weights:  13%|█▎        | 100/760 [00:02<00:08, 78.57it/s]Loading weights:  15%|█▌        | 114/760 [00:02<00:06, 92.71it/s]Loading weights:  16%|█▋        | 125/760 [00:02<00:06, 96.21it/s]Loading weights:  18%|█▊        | 136/760 [00:02<00:06, 91.96it/s]Loading weights:  20%|█▉        | 149/760 [00:02<00:06, 94.79it/s]Loading weights:  21%|██        | 160/760 [00:02<00:06, 95.04it/s]Loading weights:  23%|██▎       | 173/760 [00:02<00:06, 96.01it/s]Loading weights:  25%|██▍       | 187/760 [00:02<00:05, 106.18it/s]Loading weights:  26%|██▌       | 199/760 [00:02<00:05, 109.66it/s]Loading weights:  28%|██▊       | 211/760 [00:03<00:05, 96.38it/s] Loading weights:  30%|██▉       | 226/760 [00:03<00:05, 104.29it/s]Loading weights:  31%|███▏      | 239/760 [00:03<00:04, 107.91it/s]Loading weights:  33%|███▎      | 252/760 [00:03<00:04, 112.86it/s]Loading weights:  35%|███▍      | 264/760 [00:03<00:05, 91.09it/s] Loading weights:  37%|███▋      | 279/760 [00:03<00:04, 98.93it/s]Loading weights:  38%|███▊      | 291/760 [00:03<00:04, 103.47it/s]Loading weights:  40%|███▉      | 302/760 [00:04<00:04, 104.91it/s]Loading weights:  41%|████      | 313/760 [00:04<00:05, 83.51it/s] Loading weights:  44%|████▎     | 331/760 [00:04<00:04, 102.22it/s]Loading weights:  45%|████▌     | 343/760 [00:04<00:04, 98.84it/s] Loading weights:  47%|████▋     | 354/760 [00:04<00:04, 97.52it/s]Loading weights:  48%|████▊     | 365/760 [00:04<00:04, 85.41it/s]Loading weights:  50%|█████     | 381/760 [00:04<00:03, 101.20it/s]Loading weights:  52%|█████▏    | 392/760 [00:04<00:03, 99.63it/s] Loading weights:  53%|█████▎    | 403/760 [00:05<00:03, 92.83it/s]Loading weights:  54%|█████▍    | 413/760 [00:05<00:03, 92.02it/s]Loading weights:  56%|█████▌    | 423/760 [00:05<00:04, 83.48it/s]Loading weights:  65%|██████▌   | 495/760 [00:05<00:01, 239.06it/s]Loading weights:  79%|███████▉  | 601/760 [00:05<00:00, 449.90it/s]Loading weights:  93%|█████████▎| 705/760 [00:05<00:00, 608.31it/s]Loading weights: 100%|██████████| 760/760 [00:05<00:00, 132.15it/s]
+
+[1] Processing: videos/Z4kg2Ev3vhk_00.mp4
+Keyword argument `enable_thinking` is not a valid argument for this processor and will be ignored.
+/opt/conda/envs/yujin/lib/python3.10/site-packages/transformers/video_processing_utils.py:872: UserWarning: `torchcodec` is not installed and cannot be used to decode the video by default. Falling back to `torchvision`. Note that `torchvision` decoding is deprecated and will be removed in future versions. 
+  warnings.warn(
+/opt/conda/envs/yujin/lib/python3.10/site-packages/transformers/video_utils.py:534: UserWarning: Using `torchvision` for video decoding is deprecated and will be removed in future versions. Please use `torchcodec` instead.
+  warnings.warn(
+  -> model output: {
+  "accident_time": 0.0
+}
+
+  -> predicted accident_time=0.0000
+  -> model output: {"center_x": 0.43, "center_y": 0.75}
+
+  -> predicted location: center_x=0.4300, center_y=0.7500
+  -> model output: {
+  "type": "single"
+}
+
+  -> final parsed result: accident_time=0.0000, center_x=0.4300, center_y=0.7500, type=single
+  -> CSV updated: /workspace/yujin/result/predictions.csv (1 rows saved)
+
+[2] Processing: videos/unS0-TLF1ao_00.mp4
+  -> model output: {
+  "accident_time": 2.0
+}
+
+  -> predicted accident_time=2.0000
+  -> model output: ```json
+{
+  "center_x": 0.78,
+  "center_y": 0.43
+}
+```
+
+  -> predicted location: center_x=0.7800, center_y=0.4300
+  -> model output: {
+  "type": "single"
+}
+
+  -> final parsed result: accident_time=2.0000, center_x=0.7800, center_y=0.4300, type=single
+  -> CSV updated: /workspace/yujin/result/predictions.csv (2 rows saved)
+
+[3] Processing: videos/UarP8qU1S-c_00.mp4
+  -> model output: {
+  "accident_time": 5.0
+}
+
+  -> predicted accident_time=5.0000
+  -> model output: {"center_x": 0.14, "center_y": 0.76}
+
+  -> predicted location: center_x=0.1400, center_y=0.7600
+  -> model output: {
+  "type": "single"
+}
+
+  -> final parsed result: accident_time=5.0000, center_x=0.1400, center_y=0.7600, type=single
+  -> CSV updated: /workspace/yujin/result/predictions.csv (3 rows saved)
+
+[4] Processing: videos/UarP8qU1S-c_01.mp4
+  -> model output: {
+  "accident_time": 1.0
+}
+
+  -> predicted accident_time=1.0000
+  -> model output: {"center_x": 0.57, "center_y": 0.55}
+
+  -> predicted location: center_x=0.5700, center_y=0.5500
+  -> model output: {
+  "type": "single"
+}
+
+  -> final parsed result: accident_time=1.0000, center_x=0.5700, center_y=0.5500, type=single
+  -> CSV updated: /workspace/yujin/result/predictions.csv (4 rows saved)
+
+[5] Processing: videos/nAXTthLfgtI_00.mp4
+  -> model output: {
+  "accident_time": 0.0
+}
+
+  -> predicted accident_time=0.0000
+  -> model output: {
+  "center_x": 0.38,
+  "center_y": 0.55
+}
+
+  -> predicted location: center_x=0.3800, center_y=0.5500
+  -> model output: {
+  "type": "single"
+}
+
+  -> final parsed result: accident_time=0.0000, center_x=0.3800, center_y=0.5500, type=single
+  -> CSV updated: /workspace/yujin/result/predictions.csv (5 rows saved)
+
+[6] Processing: videos/fzWY0vLAXzI_00.mp4
+  -> model output: {
+  "accident_time": 4.0
+}
+
+  -> predicted accident_time=4.0000
+  -> model output: {"center_x": 0.34, "center_y": 0.18}
+
+  -> predicted location: center_x=0.3400, center_y=0.1800
+  -> model output: {
+  "type": "t-bone"
+}
+
+  -> final parsed result: accident_time=4.0000, center_x=0.3400, center_y=0.1800, type=t-bone
+  -> CSV updated: /workspace/yujin/result/predictions.csv (6 rows saved)
+
+[7] Processing: videos/vxZ47DoPNY8_00.mp4
+  -> model output: {
+  "accident_time": 3.0
+}
+
+  -> predicted accident_time=3.0000
+  -> model output: ```json
+{
+  "center_x": 0.78,
+  "center_y": 0.21
+}
+```
+
+  -> predicted location: center_x=0.7800, center_y=0.2100
+  -> model output: {
+  "type": "single"
+}
+
+  -> final parsed result: accident_time=3.0000, center_x=0.7800, center_y=0.2100, type=single
+  -> CSV updated: /workspace/yujin/result/predictions.csv (7 rows saved)
+
+[8] Processing: videos/OXVXsdDT9QQ_00.mp4
+  -> model output: {
+  "accident_time": 1.5
+}
+
+  -> predicted accident_time=1.5000
+  -> model output: ```json
+{
+  "center_x": 0.55,
+  "center_y": 0.62
+}
+```
+
+  -> predicted location: center_x=0.5500, center_y=0.6200
+  -> model output: {
+  "type": "t-bone"
+}
+
+  -> final parsed result: accident_time=1.5000, center_x=0.5500, center_y=0.6200, type=t-bone
+  -> CSV updated: /workspace/yujin/result/predictions.csv (8 rows saved)
+
+[9] Processing: videos/VozrseCzhQc_00.mp4
+  -> model output: {
+  "accident_time": 5.0
+}
+
+  -> predicted accident_time=5.0000
+  -> model output: {
+  "center_x": 0.605,
+  "center_y": 0.578
+}
+
+  -> predicted location: center_x=0.6050, center_y=0.5780
+  -> model output: {
+  "type": "single"
+}
+
+  -> final parsed result: accident_time=5.0000, center_x=0.6050, center_y=0.5780, type=single
+  -> CSV updated: /workspace/yujin/result/predictions.csv (9 rows saved)
+
+[10] Processing: videos/kABWTDKgc9U_00.mp4
+  -> model output: {
+  "accident_time": 17.3
+}
+
+  -> predicted accident_time=17.3000
+  -> model output: ```json
+{
+  "center_x": 0.48,
+  "center_y": 0.40
+}
+```
+
+  -> predicted location: center_x=0.4800, center_y=0.4000
+  -> model output: {
+  "type": "single"
+}
+
+  -> final parsed result: accident_time=17.3000, center_x=0.4800, center_y=0.4000, type=single
+  -> CSV updated: /workspace/yujin/result/predictions.csv (10 rows saved)
+
+[11] Processing: videos/ftk_fSc4haM_00.mp4
+  -> model output: {
+  "accident_time": 6.0
+}
+
+  -> predicted accident_time=6.0000
+  -> model output: ```json
+{
+  "center_x": 0.75,
+  "center_y": 0.27
+}
+```
+
+  -> predicted location: center_x=0.7500, center_y=0.2700
+  -> model output: {
+  "type": "single"
+}
+
+  -> final parsed result: accident_time=6.0000, center_x=0.7500, center_y=0.2700, type=single
+  -> CSV updated: /workspace/yujin/result/predictions.csv (11 rows saved)
+
+[12] Processing: videos/BgdKGnFqz0I_00.mp4
+  -> model output: {
+  "accident_time": 9.0
+}
+
+  -> predicted accident_time=9.0000
+  -> model output: ```json
+{
+  "center_x": 0.403,
+  "center_y": 0.393
+}
+```
+
+  -> predicted location: center_x=0.4030, center_y=0.3930
+  -> model output: {
+  "type": "single"
+}
+
+  -> final parsed result: accident_time=9.0000, center_x=0.4030, center_y=0.3930, type=single
+  -> CSV updated: /workspace/yujin/result/predictions.csv (12 rows saved)
+
+[13] Processing: videos/LiM5LPSZoow_00.mp4
+  -> model output: {
+  "accident_time": 0.0
+}
+
+  -> predicted accident_time=0.0000
+  -> model output: {"center_x": 0.59, "center_y": 0.57}
+
+  -> predicted location: center_x=0.5900, center_y=0.5700
+  -> model output: {
+  "type": "single"
+}
+
+  -> final parsed result: accident_time=0.0000, center_x=0.5900, center_y=0.5700, type=single
+  -> CSV updated: /workspace/yujin/result/predictions.csv (13 rows saved)
+
+[14] Processing: videos/F0NHENn-HS4_00.mp4
+  -> model output: {
+  "accident_time": 5.0
+}
+
+  -> predicted accident_time=5.0000
+  -> model output: {"center_x": 0.497, "center_y": 0.307}
+
+  -> predicted location: center_x=0.4970, center_y=0.3070
+  -> model output: {
+  "type": "single"
+}
+
+  -> final parsed result: accident_time=5.0000, center_x=0.4970, center_y=0.3070, type=single
+  -> CSV updated: /workspace/yujin/result/predictions.csv (14 rows saved)
+
+[15] Processing: videos/maJsgJsapH4_00.mp4
+  -> model output: {
+  "accident_time": 6.0
+}
+
+  -> predicted accident_time=6.0000
+  -> model output: ```json
+{
+  "center_x": 0.62,
+  "center_y": 0.52
+}
+```
+
+  -> predicted location: center_x=0.6200, center_y=0.5200
+  -> model output: {
+  "type": "single"
+}
+
+  -> final parsed result: accident_time=6.0000, center_x=0.6200, center_y=0.5200, type=single
+  -> CSV updated: /workspace/yujin/result/predictions.csv (15 rows saved)
+
+[16] Processing: videos/iA_u73BG4ZM_00.mp4
+  -> model output: {
+  "accident_time": 0.0
+}
+
+  -> predicted accident_time=0.0000
+  -> model output: {"center_x": 0.59, "center_y": 0.47}
+
+  -> predicted location: center_x=0.5900, center_y=0.4700
+  -> model output: {
+  "type": "single"
+}
+
+  -> final parsed result: accident_time=0.0000, center_x=0.5900, center_y=0.4700, type=single
+  -> CSV updated: /workspace/yujin/result/predictions.csv (16 rows saved)
+
+[17] Processing: videos/maJGw3hQs_s_00.mp4
+  -> model output: {
+  "accident_time": 5.8
+}
+
+  -> predicted accident_time=5.8000
+  -> model output: {"center_x": 0.313, "center_y": 0.312}
+
+  -> predicted location: center_x=0.3130, center_y=0.3120
+  -> model output: {
+  "type": "single"
+}
+
+  -> final parsed result: accident_time=5.8000, center_x=0.3130, center_y=0.3120, type=single
+  -> CSV updated: /workspace/yujin/result/predictions.csv (17 rows saved)
+
+[18] Processing: videos/aPsS_HaokoU_00.mp4
+  -> model output: {
+  "accident_time": 8.0
+}
+
+  -> predicted accident_time=8.0000
+  -> model output: {
+  "center_x": 0.26,
+  "center_y": 0.92
+}
+
+  -> predicted location: center_x=0.2600, center_y=0.9200
+  -> model output: {
+  "type": "single"
+}
+
+  -> final parsed result: accident_time=8.0000, center_x=0.2600, center_y=0.9200, type=single
+  -> CSV updated: /workspace/yujin/result/predictions.csv (18 rows saved)
+
+[19] Processing: videos/aF2Hbp8C23A_00.mp4
+  -> model output: {
+  "accident_time": 3.9
+}
+
+  -> predicted accident_time=3.9000
+  -> model output: {
+  "center_x": 0.27,
+  "center_y": 0.52
+}
+
+  -> predicted location: center_x=0.2700, center_y=0.5200
+  -> model output: {
+  "type": "single"
+}
+
+  -> final parsed result: accident_time=3.9000, center_x=0.2700, center_y=0.5200, type=single
+  -> CSV updated: /workspace/yujin/result/predictions.csv (19 rows saved)
+
+[20] Processing: videos/82sQ7N-aHOw_00.mp4
+  -> model output: {
+  "accident_time": 0.0
+}
+
+  -> predicted accident_time=0.0000
+  -> model output: {
+  "center_x": 0.0,
+  "center_y": 0.0
+}
+
+  -> predicted location: center_x=0.0000, center_y=0.0000
+  -> model output: {
+  "type": "single"
+}
+
+  -> final parsed result: accident_time=0.0000, center_x=0.0000, center_y=0.0000, type=single
+  -> CSV updated: /workspace/yujin/result/predictions.csv (20 rows saved)
+
+[21] Processing: videos/bJMc3sNP2AU_00.mp4
+  -> model output: {
+  "accident_time": 0.0
+}
+
+  -> predicted accident_time=0.0000
+  -> model output: {"center_x": 0.75, "center_y": 0.26}
+
+  -> predicted location: center_x=0.7500, center_y=0.2600
+  -> model output: {
+  "type": "single"
+}
+
+  -> final parsed result: accident_time=0.0000, center_x=0.7500, center_y=0.2600, type=single
+  -> CSV updated: /workspace/yujin/result/predictions.csv (21 rows saved)
+
+[22] Processing: videos/XaqA-uzqeNc_00.mp4
+  -> model output: {
+  "accident_time": 1.0
+}
+
+  -> predicted accident_time=1.0000
+  -> model output: {
+  "center_x": 0.86,
+  "center_y": 0.88
+}
+
+  -> predicted location: center_x=0.8600, center_y=0.8800
+  -> model output: {
+  "type": "single"
+}
+
+  -> final parsed result: accident_time=1.0000, center_x=0.8600, center_y=0.8800, type=single
+  -> CSV updated: /workspace/yujin/result/predictions.csv (22 rows saved)
+
+[23] Processing: videos/gp_9zTMpVrs_00.mp4
+  -> model output: {
+  "accident_time": 27.0
+}
+
+  -> predicted accident_time=27.0000
+  -> model output: {"center_x": 0.64, "center_y": 0.57}
+
+  -> predicted location: center_x=0.6400, center_y=0.5700
+  -> model output: {
+  "type": "single"
+}
+
+  -> final parsed result: accident_time=27.0000, center_x=0.6400, center_y=0.5700, type=single
+  -> CSV updated: /workspace/yujin/result/predictions.csv (23 rows saved)
+
+[24] Processing: videos/B_nBw3PcHXg_00.mp4
+  -> model output: {
+  "accident_time": 4.0
+}
+
+  -> predicted accident_time=4.0000
+  -> model output: ```json
+{
+  "center_x": 0.39,
+  "center_y": 0.45
+}
+```
+
+  -> predicted location: center_x=0.3900, center_y=0.4500
+  -> model output: {
+  "type": "single"
+}
+
+  -> final parsed result: accident_time=4.0000, center_x=0.3900, center_y=0.4500, type=single
+  -> CSV updated: /workspace/yujin/result/predictions.csv (24 rows saved)
+
+[25] Processing: videos/jq-5EaxSR3M_00.mp4
+  -> model output: {
+  "accident_time": 6.0
+}
+
+  -> predicted accident_time=6.0000
+  -> model output: {"center_x": 0.401, "center_y": 0.208}
+
+  -> predicted location: center_x=0.4010, center_y=0.2080
+  -> model output: {
+  "type": "single"
+}
+
+  -> final parsed result: accident_time=6.0000, center_x=0.4010, center_y=0.2080, type=single
+  -> CSV updated: /workspace/yujin/result/predictions.csv (25 rows saved)
+
+[26] Processing: videos/4jVVNw9AF2s_00.mp4
+  -> model output: {
+  "accident_time": 1.7
+}
+
+  -> predicted accident_time=1.7000
+  -> model output: {"center_x": 0.72, "center_y": 0.72}
+
+  -> predicted location: center_x=0.7200, center_y=0.7200
+  -> model output: {
+  "type": "single"
+}
+
+  -> final parsed result: accident_time=1.7000, center_x=0.7200, center_y=0.7200, type=single
+  -> CSV updated: /workspace/yujin/result/predictions.csv (26 rows saved)
+
+[27] Processing: videos/FR3eYZzgeJY_00.mp4
+  -> model output: {
+  "accident_time": 3.9
+}
+
+  -> predicted accident_time=3.9000
+  -> model output: {"center_x": 0.37, "center_y": 0.65}
+
+  -> predicted location: center_x=0.3700, center_y=0.6500
+  -> model output: {
+  "type": "single"
+}
+
+  -> final parsed result: accident_time=3.9000, center_x=0.3700, center_y=0.6500, type=single
+  -> CSV updated: /workspace/yujin/result/predictions.csv (27 rows saved)
+
+[28] Processing: videos/ApyekBAgfg8_00.mp4
+  -> model output: {
+  "accident_time": 3.0
+}
+
+  -> predicted accident_time=3.0000
+  -> model output: {"center_x": 0.58, "center_y": 0.28}
+
+  -> predicted location: center_x=0.5800, center_y=0.2800
+  -> model output: {
+  "type": "single"
+}
+
+  -> final parsed result: accident_time=3.0000, center_x=0.5800, center_y=0.2800, type=single
+  -> CSV updated: /workspace/yujin/result/predictions.csv (28 rows saved)
+
+[29] Processing: videos/Mem77KKhF8c_00.mp4
+  -> model output: {
+  "accident_time": 2.5
+}
+
+  -> predicted accident_time=2.5000
+  -> model output: {
+  "center_x": 0.45,
+  "center_y": 0.57
+}
+
+  -> predicted location: center_x=0.4500, center_y=0.5700
+  -> model output: {
+  "type": "sideswipe"
+}
+
+  -> final parsed result: accident_time=2.5000, center_x=0.4500, center_y=0.5700, type=sideswipe
+  -> CSV updated: /workspace/yujin/result/predictions.csv (29 rows saved)
+
+[30] Processing: videos/GSvQCAPnFGo_00.mp4
+  -> model output: {
+  "accident_time": 4.8
+}
+
+  -> predicted accident_time=4.8000
+  -> model output: ```json
+{
+  "center_x": 0.82,
+  "center_y": 0.53
+}
+```
+
+  -> predicted location: center_x=0.8200, center_y=0.5300
+  -> model output: {
+  "type": "sideswipe"
+}
+
+  -> final parsed result: accident_time=4.8000, center_x=0.8200, center_y=0.5300, type=sideswipe
+  -> CSV updated: /workspace/yujin/result/predictions.csv (30 rows saved)
+
+[31] Processing: videos/fgI4vUtP_1I_00.mp4
+  -> model output: {
+  "accident_time": 0.0
+}
+
+  -> predicted accident_time=0.0000
+  -> model output: {"center_x": 0.467, "center_y": 0.414}
+
+  -> predicted location: center_x=0.4670, center_y=0.4140
+  -> model output: {
+  "type": "single"
+}
+
+  -> final parsed result: accident_time=0.0000, center_x=0.4670, center_y=0.4140, type=single
+  -> CSV updated: /workspace/yujin/result/predictions.csv (31 rows saved)
+
+[32] Processing: videos/TthKPyywzu8_00.mp4
+  -> model output: {
+  "accident_time": 5.0
+}
+
+  -> predicted accident_time=5.0000
+  -> model output: {"center_x": 0.49, "center_y": 0.29}
+
+  -> predicted location: center_x=0.4900, center_y=0.2900
+  -> model output: {
+  "type": "t-bone"
+}
+
+  -> final parsed result: accident_time=5.0000, center_x=0.4900, center_y=0.2900, type=t-bone
+  -> CSV updated: /workspace/yujin/result/predictions.csv (32 rows saved)
+
+[33] Processing: videos/LklNl33KztU_00.mp4
+  -> model output: {
+  "accident_time": 6.0
+}
+
+  -> predicted accident_time=6.0000
+  -> model output: {"center_x": 0.81, "center_y": 0.42}
+
+  -> predicted location: center_x=0.8100, center_y=0.4200
+  -> model output: {
+  "type": "single"
+}
+
+  -> final parsed result: accident_time=6.0000, center_x=0.8100, center_y=0.4200, type=single
+  -> CSV updated: /workspace/yujin/result/predictions.csv (33 rows saved)
+
+[34] Processing: videos/tK1wd_HCYNo_00.mp4
+  -> model output: {
+  "accident_time": 10.0
+}
+
+  -> predicted accident_time=10.0000
+  -> model output: ```json
+{
+  "center_x": 0.43,
+  "center_y": 0.51
+}
+```
+
+  -> predicted location: center_x=0.4300, center_y=0.5100
+  -> model output: {
+  "type": "single"
+}
+
+  -> final parsed result: accident_time=10.0000, center_x=0.4300, center_y=0.5100, type=single
+  -> CSV updated: /workspace/yujin/result/predictions.csv (34 rows saved)
+
+[35] Processing: videos/mntY3Xh8lT4_00.mp4
+  -> model output: {
+  "accident_time": 3.6
+}
+
+  -> predicted accident_time=3.6000
+  -> model output: {"center_x": 0.53, "center_y": 0.4}
+
+  -> predicted location: center_x=0.5300, center_y=0.4000
+  -> model output: {
+  "type": "single"
+}
+
+  -> final parsed result: accident_time=3.6000, center_x=0.5300, center_y=0.4000, type=single
+  -> CSV updated: /workspace/yujin/result/predictions.csv (35 rows saved)
+
+[36] Processing: videos/CzOWGXrwbp4_00.mp4
+  -> model output: {
+  "accident_time": 12.0
+}
+
+  -> predicted accident_time=12.0000
+  -> model output: {"center_x": 0.601, "center_y": 0.426}
+
+  -> predicted location: center_x=0.6010, center_y=0.4260
+  -> model output: {
+  "type": "single"
+}
+
+  -> final parsed result: accident_time=12.0000, center_x=0.6010, center_y=0.4260, type=single
+  -> CSV updated: /workspace/yujin/result/predictions.csv (36 rows saved)
+
+[37] Processing: videos/7AFnEpBVrr4_00.mp4
+  -> model output: {
+  "accident_time": 6.0
+}
+
+  -> predicted accident_time=6.0000
+  -> model output: ```json
+{
+  "center_x": 0.49,
+  "center_y": 0.67
+}
+```
+
+  -> predicted location: center_x=0.4900, center_y=0.6700
+  -> model output: {
+  "type": "single"
+}
+
+  -> final parsed result: accident_time=6.0000, center_x=0.4900, center_y=0.6700, type=single
+  -> CSV updated: /workspace/yujin/result/predictions.csv (37 rows saved)
+
+[38] Processing: videos/njJxs1KozgE_00.mp4
+  -> model output: {
+  "accident_time": 3.6
+}
+
+  -> predicted accident_time=3.6000
+  -> model output: ```json
+{
+  "center_x": 0.58,
+  "center_y": 0.52
+}
+```
+
+  -> predicted location: center_x=0.5800, center_y=0.5200
+  -> model output: {
+  "type": "single"
+}
+
+  -> final parsed result: accident_time=3.6000, center_x=0.5800, center_y=0.5200, type=single
+  -> CSV updated: /workspace/yujin/result/predictions.csv (38 rows saved)
+
+[39] Processing: videos/-AztVDZ6cEE_00.mp4
+  -> model output: {
+  "accident_time": 3.0
+}
+
+  -> predicted accident_time=3.0000
+  -> model output: ```json
+{
+  "center_x": 0.528,
+  "center_y": 0.298
+}
+```
+
+  -> predicted location: center_x=0.5280, center_y=0.2980
+  -> model output: {
+  "type": "single"
+}
+
+  -> final parsed result: accident_time=3.0000, center_x=0.5280, center_y=0.2980, type=single
+  -> CSV updated: /workspace/yujin/result/predictions.csv (39 rows saved)
+
+[40] Processing: videos/kUp_0rJe_OI_00.mp4
+  -> model output: {
+  "accident_time": 2.0
+}
+
+  -> predicted accident_time=2.0000
+  -> model output: {"center_x": 0.304, "center_y": 0.203}
+
+  -> predicted location: center_x=0.3040, center_y=0.2030
+  -> model output: {
+  "type": "single"
+}
+
+  -> final parsed result: accident_time=2.0000, center_x=0.3040, center_y=0.2030, type=single
+  -> CSV updated: /workspace/yujin/result/predictions.csv (40 rows saved)
+
+[41] Processing: videos/a8zHkZ_t16k_00.mp4
+  -> model output: {
+  "accident_time": 28.0
+}
+
+  -> predicted accident_time=28.0000
+  -> model output: ```json
+{
+  "center_x": 0.63,
+  "center_y": 0.48
+}
+```
+
+  -> predicted location: center_x=0.6300, center_y=0.4800
+  -> model output: {
+  "type": "single"
+}
+
+  -> final parsed result: accident_time=28.0000, center_x=0.6300, center_y=0.4800, type=single
+  -> CSV updated: /workspace/yujin/result/predictions.csv (41 rows saved)
+
+[42] Processing: videos/PQHiBa179Ew_00.mp4
+  -> model output: {
+  "accident_time": 6.0
+}
+
+  -> predicted accident_time=6.0000
+  -> model output: {"center_x": 0.58, "center_y": 0.75}
+
+  -> predicted location: center_x=0.5800, center_y=0.7500
+  -> model output: {
+  "type": "single"
+}
+
+  -> final parsed result: accident_time=6.0000, center_x=0.5800, center_y=0.7500, type=single
+  -> CSV updated: /workspace/yujin/result/predictions.csv (42 rows saved)
+
+[43] Processing: videos/-SNFUobKjoM_00.mp4
+  -> model output: {
+  "accident_time": 14.0
+}
+
+  -> predicted accident_time=14.0000
+  -> model output: ```json
+{
+  "center_x": 0.84,
+  "center_y": 0.60
+}
+```
+
+  -> predicted location: center_x=0.8400, center_y=0.6000
+  -> model output: {
+  "type": "single"
+}
+
+  -> final parsed result: accident_time=14.0000, center_x=0.8400, center_y=0.6000, type=single
+  -> CSV updated: /workspace/yujin/result/predictions.csv (43 rows saved)
+
+[44] Processing: videos/TahWBItdUvQ_00.mp4
+  -> model output: {
+  "accident_time": 3.0
+}
+
+  -> predicted accident_time=3.0000
+  -> model output: {
+  "center_x": 0.44,
+  "center_y": 0.12
+}
+
+  -> predicted location: center_x=0.4400, center_y=0.1200
+  -> model output: {
+  "type": "single"
+}
+
+  -> final parsed result: accident_time=3.0000, center_x=0.4400, center_y=0.1200, type=single
+  -> CSV updated: /workspace/yujin/result/predictions.csv (44 rows saved)
+
+[45] Processing: videos/reXieySb4JI_00.mp4
+  -> model output: {
+  "accident_time": 7.5
+}
+
+  -> predicted accident_time=7.5000
+  -> model output: {"center_x": 0.62, "center_y": 0.66}
+
+  -> predicted location: center_x=0.6200, center_y=0.6600
+  -> model output: {
+  "type": "t-bone"
+}
+
+  -> final parsed result: accident_time=7.5000, center_x=0.6200, center_y=0.6600, type=t-bone
+  -> CSV updated: /workspace/yujin/result/predictions.csv (45 rows saved)
+
+[46] Processing: videos/m2uBNOFIvKk_00.mp4
+  -> model output: {
+  "accident_time": 19.0
+}
+
+  -> predicted accident_time=19.0000
+  -> model output: ```json
+{
+  "center_x": 0.62,
+  "center_y": 0.37
+}
+```
+
+  -> predicted location: center_x=0.6200, center_y=0.3700
+  -> model output: {
+  "type": "single"
+}
+
+  -> final parsed result: accident_time=19.0000, center_x=0.6200, center_y=0.3700, type=single
+  -> CSV updated: /workspace/yujin/result/predictions.csv (46 rows saved)
+
+[47] Processing: videos/VXuNX_OYkig_00.mp4
+  -> model output: {
+  "accident_time": 0.0
+}
+
+  -> predicted accident_time=0.0000
+  -> model output: {"center_x": 0.49, "center_y": 0.71}
+
+  -> predicted location: center_x=0.4900, center_y=0.7100
+  -> model output: {
+  "type": "single"
+}
+
+  -> final parsed result: accident_time=0.0000, center_x=0.4900, center_y=0.7100, type=single
+  -> CSV updated: /workspace/yujin/result/predictions.csv (47 rows saved)
+
+[48] Processing: videos/GsRdjuR2PpE_00.mp4
+  -> model output: {
+  "accident_time": 4.0
+}
+
+  -> predicted accident_time=4.0000
+  -> model output: {"center_x": 0.611, "center_y": 0.34}
+
+  -> predicted location: center_x=0.6110, center_y=0.3400
+  -> model output: {
+  "type": "single"
+}
+
+  -> final parsed result: accident_time=4.0000, center_x=0.6110, center_y=0.3400, type=single
+  -> CSV updated: /workspace/yujin/result/predictions.csv (48 rows saved)
+
+[49] Processing: videos/dGUCJwW8b1g_00.mp4
+  -> model output: {
+  "accident_time": 2.7
+}
+
+  -> predicted accident_time=2.7000
+  -> model output: ```json
+{
+  "center_x": 0.53,
+  "center_y": 0.58
+}
+```
+
+  -> predicted location: center_x=0.5300, center_y=0.5800
+  -> model output: {
+  "type": "sideswipe"
+}
+
+  -> final parsed result: accident_time=2.7000, center_x=0.5300, center_y=0.5800, type=sideswipe
+  -> CSV updated: /workspace/yujin/result/predictions.csv (49 rows saved)
+
+[50] Processing: videos/FV6XO5Yg9VU_00.mp4
+  -> model output: {
+  "accident_time": 14.0
+}
+
+  -> predicted accident_time=14.0000
+  -> model output: {
+  "center_x": 0.58,
+  "center_y": 0.41
+}
+
+  -> predicted location: center_x=0.5800, center_y=0.4100
+  -> model output: {
+  "type": "single"
+}
+
+  -> final parsed result: accident_time=14.0000, center_x=0.5800, center_y=0.4100, type=single
+  -> CSV updated: /workspace/yujin/result/predictions.csv (50 rows saved)
+
+[51] Processing: videos/iYAIZEocjbg_00.mp4
+  -> model output: {
+  "accident_time": 14.0
+}
+
+  -> predicted accident_time=14.0000
+  -> model output: {
+  "center_x": 0.48,
+  "center_y": 0.58
+}
+
+  -> predicted location: center_x=0.4800, center_y=0.5800
+  -> model output: {
+  "type": "sideswipe"
+}
+
+  -> final parsed result: accident_time=14.0000, center_x=0.4800, center_y=0.5800, type=sideswipe
+  -> CSV updated: /workspace/yujin/result/predictions.csv (51 rows saved)
+
+[52] Processing: videos/n-aa3NIlRMo_00.mp4
+  -> model output: {
+  "accident_time": 15.0
+}
+
+  -> predicted accident_time=15.0000
+  -> model output: {
+  "center_x": 0.58,
+  "center_y": 0.78
+}
+
+  -> predicted location: center_x=0.5800, center_y=0.7800
+  -> model output: {
+  "type": "single"
+}
+
+  -> final parsed result: accident_time=15.0000, center_x=0.5800, center_y=0.7800, type=single
+  -> CSV updated: /workspace/yujin/result/predictions.csv (52 rows saved)
+
+[53] Processing: videos/mDtCi-XVAbo_00.mp4
+  -> model output: {
+  "accident_time": 1.0
+}
+
+  -> predicted accident_time=1.0000
+  -> model output: {"center_x": 0.52, "center_y": 0.56}
+
+  -> predicted location: center_x=0.5200, center_y=0.5600
+  -> model output: {
+  "type": "single"
+}
+
+  -> final parsed result: accident_time=1.0000, center_x=0.5200, center_y=0.5600, type=single
+  -> CSV updated: /workspace/yujin/result/predictions.csv (53 rows saved)
+
+[54] Processing: videos/QJYDZ1PBiYQ_00.mp4
+  -> model output: {
+  "accident_time": 2.9
+}
+
+  -> predicted accident_time=2.9000
+  -> model output: {"center_x": 0.73, "center_y": 0.71}
+
+  -> predicted location: center_x=0.7300, center_y=0.7100
+  -> model output: {
+  "type": "t-bone"
+}
+
+  -> final parsed result: accident_time=2.9000, center_x=0.7300, center_y=0.7100, type=t-bone
+  -> CSV updated: /workspace/yujin/result/predictions.csv (54 rows saved)
+
+[55] Processing: videos/1ZQAChv0TEI_00.mp4
+  -> model output: {
+  "accident_time": 0.0
+}
+
+  -> predicted accident_time=0.0000
+  -> model output: ```json
+{
+  "center_x": 0.57,
+  "center_y": 0.65
+}
+```
+
+  -> predicted location: center_x=0.5700, center_y=0.6500
+  -> model output: {
+  "type": "single"
+}
+
+  -> final parsed result: accident_time=0.0000, center_x=0.5700, center_y=0.6500, type=single
+  -> CSV updated: /workspace/yujin/result/predictions.csv (55 rows saved)
+
+[56] Processing: videos/e6ZQvn6NyLI_00.mp4
+  -> model output: {
+  "accident_time": 4.0
+}
+
+  -> predicted accident_time=4.0000
+  -> model output: ```json
+{
+  "center_x": 0.51,
+  "center_y": 0.46
+}
+```
+
+  -> predicted location: center_x=0.5100, center_y=0.4600
+  -> model output: {
+  "type": "sideswipe"
+}
+
+  -> final parsed result: accident_time=4.0000, center_x=0.5100, center_y=0.4600, type=sideswipe
+  -> CSV updated: /workspace/yujin/result/predictions.csv (56 rows saved)
+
+[57] Processing: videos/ui52V2KkRN4_00.mp4
+  -> model output: {
+  "accident_time": 0.0
+}
+
+  -> predicted accident_time=0.0000
+  -> model output: {
+  "center_x": 0.66,
+  "center_y": 0.5
+}
+
+  -> predicted location: center_x=0.6600, center_y=0.5000
+  -> model output: {
+  "type": "single"
+}
+
+  -> final parsed result: accident_time=0.0000, center_x=0.6600, center_y=0.5000, type=single
+  -> CSV updated: /workspace/yujin/result/predictions.csv (57 rows saved)
+
+[58] Processing: videos/QyRcmm87rJ8_00.mp4
+  -> model output: {
+  "accident_time": 5.6
+}
+
+  -> predicted accident_time=5.6000
+  -> model output: {
+  "center_x": 0.51,
+  "center_y": 0.63
+}
+
+  -> predicted location: center_x=0.5100, center_y=0.6300
+  -> model output: {
+  "type": "single"
+}
+
+  -> final parsed result: accident_time=5.6000, center_x=0.5100, center_y=0.6300, type=single
+  -> CSV updated: /workspace/yujin/result/predictions.csv (58 rows saved)
+
+[59] Processing: videos/C7gOL8qM71E_00.mp4
+  -> model output: {
+  "accident_time": 13.0
+}
+
+  -> predicted accident_time=13.0000
+  -> model output: {"center_x": 0.15, "center_y": 0.35}
+
+  -> predicted location: center_x=0.1500, center_y=0.3500
+  -> model output: {
+  "type": "single"
+}
+
+  -> final parsed result: accident_time=13.0000, center_x=0.1500, center_y=0.3500, type=single
+  -> CSV updated: /workspace/yujin/result/predictions.csv (59 rows saved)
+
+[60] Processing: videos/At-4-Y2g7Y8_00.mp4
+  -> model output: {
+  "accident_time": 10.0
+}
+
+  -> predicted accident_time=10.0000
+  -> model output: {"center_x": 0.54, "center_y": 0.48}
+
+  -> predicted location: center_x=0.5400, center_y=0.4800
+  -> model output: {
+  "type": "sideswipe"
+}
+
+  -> final parsed result: accident_time=10.0000, center_x=0.5400, center_y=0.4800, type=sideswipe
+  -> CSV updated: /workspace/yujin/result/predictions.csv (60 rows saved)
+
+[61] Processing: videos/1BIZOZtxRpY_00.mp4
+  -> model output: {
+  "accident_time": 15.0
+}
+
+  -> predicted accident_time=15.0000
+  -> model output: {"center_x": 0.54, "center_y": 0.59}
+
+  -> predicted location: center_x=0.5400, center_y=0.5900
+  -> model output: {
+  "type": "single"
+}
+
+  -> final parsed result: accident_time=15.0000, center_x=0.5400, center_y=0.5900, type=single
+  -> CSV updated: /workspace/yujin/result/predictions.csv (61 rows saved)
+
+[62] Processing: videos/GWx-Z5rWhzc_00.mp4
+  -> model output: {
+  "accident_time": 2.8
+}
+
+  -> predicted accident_time=2.8000
+  -> model output: {"center_x": 0.52, "center_y": 0.51}
+
+  -> predicted location: center_x=0.5200, center_y=0.5100
+  -> model output: {
+  "type": "sideswipe"
+}
+
+  -> final parsed result: accident_time=2.8000, center_x=0.5200, center_y=0.5100, type=sideswipe
+  -> CSV updated: /workspace/yujin/result/predictions.csv (62 rows saved)
+
+[63] Processing: videos/bow1eKeR6oY_00.mp4
+  -> model output: ```json
+{
+  "accident_time": 0.0
+}
+```
+
+  -> predicted accident_time=0.0000
+  -> model output: {"center_x": 0.62, "center_y": 0.38}
+
+  -> predicted location: center_x=0.6200, center_y=0.3800
+  -> model output: {
+  "type": "single"
+}
+
+  -> final parsed result: accident_time=0.0000, center_x=0.6200, center_y=0.3800, type=single
+  -> CSV updated: /workspace/yujin/result/predictions.csv (63 rows saved)
+
+[64] Processing: videos/7CO_LqgfiFg_00.mp4
+  -> model output: {
+  "accident_time": 4.6
+}
+
+  -> predicted accident_time=4.6000
+  -> model output: ```json
+{
+  "center_x": 0.52,
+  "center_y": 0.76
+}
+```
+
+  -> predicted location: center_x=0.5200, center_y=0.7600
+  -> model output: {
+  "type": "single"
+}
+
+  -> final parsed result: accident_time=4.6000, center_x=0.5200, center_y=0.7600, type=single
+  -> CSV updated: /workspace/yujin/result/predictions.csv (64 rows saved)
+
+[65] Processing: videos/6T58bsyZz40_00.mp4
+  -> model output: {
+  "accident_time": 12.6
+}
+
+  -> predicted accident_time=12.6000
+  -> model output: {"center_x": 0.64, "center_y": 0.39}
+
+  -> predicted location: center_x=0.6400, center_y=0.3900
+  -> model output: {
+  "type": "sideswipe"
+}
+
+  -> final parsed result: accident_time=12.6000, center_x=0.6400, center_y=0.3900, type=sideswipe
+  -> CSV updated: /workspace/yujin/result/predictions.csv (65 rows saved)
+
+[66] Processing: videos/bn7c9LxpeuA_00.mp4
+  -> model output: {
+  "accident_time": 0.0
+}
+
+  -> predicted accident_time=0.0000
+  -> model output: {"center_x": 0.403, "center_y": 0.839}
+
+  -> predicted location: center_x=0.4030, center_y=0.8390
+  -> model output: {
+  "type": "single"
+}
+
+  -> final parsed result: accident_time=0.0000, center_x=0.4030, center_y=0.8390, type=single
+  -> CSV updated: /workspace/yujin/result/predictions.csv (66 rows saved)
+
+[67] Processing: videos/zISHd2Jt7Qs_00.mp4
+  -> model output: {
+  "accident_time": 26.5
+}
+
+  -> predicted accident_time=26.5000
+  -> model output: {
+  "center_x": 0.69,
+  "center_y": 0.24
+}
+
+  -> predicted location: center_x=0.6900, center_y=0.2400
+  -> model output: {
+  "type": "single"
+}
+
+  -> final parsed result: accident_time=26.5000, center_x=0.6900, center_y=0.2400, type=single
+  -> CSV updated: /workspace/yujin/result/predictions.csv (67 rows saved)
+
+[68] Processing: videos/0isplBZQftg_00.mp4
+  -> model output: {
+  "accident_time": 2.0
+}
+
+  -> predicted accident_time=2.0000
+  -> model output: {"center_x": 0.61, "center_y": 0.67}
+
+  -> predicted location: center_x=0.6100, center_y=0.6700
+  -> model output: {
+  "type": "sideswipe"
+}
+
+  -> final parsed result: accident_time=2.0000, center_x=0.6100, center_y=0.6700, type=sideswipe
+  -> CSV updated: /workspace/yujin/result/predictions.csv (68 rows saved)
+
+[69] Processing: videos/1lD9kE-VJ7I_00.mp4
+  -> model output: {
+  "accident_time": 5.0
+}
+
+  -> predicted accident_time=5.0000
+  -> model output: {
+  "center_x": 0.44,
+  "center_y": 0.65
+}
+
+  -> predicted location: center_x=0.4400, center_y=0.6500
+  -> model output: {
+  "type": "single"
+}
+
+  -> final parsed result: accident_time=5.0000, center_x=0.4400, center_y=0.6500, type=single
+  -> CSV updated: /workspace/yujin/result/predictions.csv (69 rows saved)
+
+[70] Processing: videos/afVZZ3v87cc_00.mp4
+  -> model output: ```json
+{
+  "accident_time": 1.0
+}
+```
+
+  -> predicted accident_time=1.0000
+  -> model output: {"center_x": 0.45, "center_y": 0.51}
+
+  -> predicted location: center_x=0.4500, center_y=0.5100
+  -> model output: {
+  "type": "sideswipe"
+}
+
+  -> final parsed result: accident_time=1.0000, center_x=0.4500, center_y=0.5100, type=sideswipe
+  -> CSV updated: /workspace/yujin/result/predictions.csv (70 rows saved)
+
+[71] Processing: videos/fYUPTfVRKEk_00.mp4
+  -> model output: {
+  "accident_time": 3.0
+}
+
+  -> predicted accident_time=3.0000
+  -> model output: {"center_x": 0.27, "center_y": 0.34}
+
+  -> predicted location: center_x=0.2700, center_y=0.3400
+  -> model output: {
+  "type": "single"
+}
+
+  -> final parsed result: accident_time=3.0000, center_x=0.2700, center_y=0.3400, type=single
+  -> CSV updated: /workspace/yujin/result/predictions.csv (71 rows saved)
+
+[72] Processing: videos/NDkAFTqHLzo_00.mp4
+  -> model output: {
+  "accident_time": 3.1
+}
+
+  -> predicted accident_time=3.1000
+  -> model output: ```json
+{
+  "center_x": 0.62,
+  "center_y": 0.51
+}
+```
+
+  -> predicted location: center_x=0.6200, center_y=0.5100
+  -> model output: {
+  "type": "sideswipe"
+}
+
+  -> final parsed result: accident_time=3.1000, center_x=0.6200, center_y=0.5100, type=sideswipe
+  -> CSV updated: /workspace/yujin/result/predictions.csv (72 rows saved)
+
+[73] Processing: videos/BR4WAtlyQEQ_00.mp4
+  -> model output: {
+  "accident_time": 7.0
+}
+
+  -> predicted accident_time=7.0000
+  -> model output: {
+  "center_x": 0.53,
+  "center_y": 0.36
+}
+
+  -> predicted location: center_x=0.5300, center_y=0.3600
+  -> model output: {
+  "type": "single"
+}
+
+  -> final parsed result: accident_time=7.0000, center_x=0.5300, center_y=0.3600, type=single
+  -> CSV updated: /workspace/yujin/result/predictions.csv (73 rows saved)
+
+[74] Processing: videos/zXKdiWjxhd8_00.mp4
+  -> model output: {
+  "accident_time": 7.0
+}
+
+  -> predicted accident_time=7.0000
+  -> model output: ```json
+{
+  "center_x": 0.36,
+  "center_y": 0.68
+}
+```
+
+  -> predicted location: center_x=0.3600, center_y=0.6800
+  -> model output: {
+  "type": "single"
+}
+
+  -> final parsed result: accident_time=7.0000, center_x=0.3600, center_y=0.6800, type=single
+  -> CSV updated: /workspace/yujin/result/predictions.csv (74 rows saved)
+
+[75] Processing: videos/JHq6SVNhY0Y_00.mp4
+  -> model output: {
+  "accident_time": 3.0
+}
+
+  -> predicted accident_time=3.0000
+  -> model output: {"center_x": 0.81, "center_y": 0.75}
+
+  -> predicted location: center_x=0.8100, center_y=0.7500
+  -> model output: {
+  "type": "single"
+}
+
+  -> final parsed result: accident_time=3.0000, center_x=0.8100, center_y=0.7500, type=single
+  -> CSV updated: /workspace/yujin/result/predictions.csv (75 rows saved)
+
+[76] Processing: videos/03HtRCJa8Yk_00.mp4
+  -> model output: {
+  "accident_time": 6.0
+}
+
+  -> predicted accident_time=6.0000
+  -> model output: {"center_x": 0.38, "center_y": 0.46}
+
+  -> predicted location: center_x=0.3800, center_y=0.4600
+  -> model output: {
+  "type": "single"
+}
+
+  -> final parsed result: accident_time=6.0000, center_x=0.3800, center_y=0.4600, type=single
+  -> CSV updated: /workspace/yujin/result/predictions.csv (76 rows saved)
+
+[77] Processing: videos/6EW9PrDqKA8_00.mp4
+  -> model output: {
+  "accident_time": 5.0
+}
+
+  -> predicted accident_time=5.0000
+  -> model output: {
+  "center_x": 0.21,
+  "center_y": 0.69
+}
+
+  -> predicted location: center_x=0.2100, center_y=0.6900
+  -> model output: {
+  "type": "sideswipe"
+}
+
+  -> final parsed result: accident_time=5.0000, center_x=0.2100, center_y=0.6900, type=sideswipe
+  -> CSV updated: /workspace/yujin/result/predictions.csv (77 rows saved)
+
+[78] Processing: videos/-NgnSm_oEB4_00.mp4
+  -> model output: {
+  "accident_time": 5.0
+}
+
+  -> predicted accident_time=5.0000
+  -> model output: {"center_x": 0.278, "center_y": 0.348}
+
+  -> predicted location: center_x=0.2780, center_y=0.3480
+  -> model output: {
+  "type": "rear-end"
+}
+
+  -> final parsed result: accident_time=5.0000, center_x=0.2780, center_y=0.3480, type=rear-end
+  -> CSV updated: /workspace/yujin/result/predictions.csv (78 rows saved)
+
+[79] Processing: videos/wQ_pGHoj2SI_00.mp4
+  -> model output: {
+  "accident_time": 15.8
+}
+
+  -> predicted accident_time=15.8000
+  -> model output: {"center_x": 0.24, "center_y": 0.59}
+
+  -> predicted location: center_x=0.2400, center_y=0.5900
+  -> model output: {
+  "type": "single"
+}
+
+  -> final parsed result: accident_time=15.8000, center_x=0.2400, center_y=0.5900, type=single
+  -> CSV updated: /workspace/yujin/result/predictions.csv (79 rows saved)
+
+[80] Processing: videos/dZ-F8lZ16-A_00.mp4
+  -> model output: {
+  "accident_time": 5.0
+}
+
+  -> predicted accident_time=5.0000
+  -> model output: {"center_x": 0.41, "center_y": 0.29}
+
+  -> predicted location: center_x=0.4100, center_y=0.2900
+  -> model output: {
+  "type": "single"
+}
+
+  -> final parsed result: accident_time=5.0000, center_x=0.4100, center_y=0.2900, type=single
+  -> CSV updated: /workspace/yujin/result/predictions.csv (80 rows saved)
+
+[81] Processing: videos/Chf8yRqccCM_00.mp4
+  -> model output: {
+  "accident_time": 0.0
+}
+
+  -> predicted accident_time=0.0000
+  -> model output: {"center_x": 0.48, "center_y": 0.77}
+
+  -> predicted location: center_x=0.4800, center_y=0.7700
+  -> model output: {
+  "type": "single"
+}
+
+  -> final parsed result: accident_time=0.0000, center_x=0.4800, center_y=0.7700, type=single
+  -> CSV updated: /workspace/yujin/result/predictions.csv (81 rows saved)
+
+[82] Processing: videos/P4oEdSFJvfU_00.mp4
+  -> model output: {
+  "accident_time": 17.5
+}
+
+  -> predicted accident_time=17.5000
+  -> model output: {"center_x": 0.21, "center_y": 0.54}
+
+  -> predicted location: center_x=0.2100, center_y=0.5400
+  -> model output: {
+  "type": "single"
+}
+
+  -> final parsed result: accident_time=17.5000, center_x=0.2100, center_y=0.5400, type=single
+  -> CSV updated: /workspace/yujin/result/predictions.csv (82 rows saved)
+
+[83] Processing: videos/yQz3PyPvr5Y_00.mp4
+  -> model output: {
+  "accident_time": 5.0
+}
+
+  -> predicted accident_time=5.0000
+  -> model output: {
+  "center_x": 0.75,
+  "center_y": 0.25
+}
+
+  -> predicted location: center_x=0.7500, center_y=0.2500
+  -> model output: {
+  "type": "single"
+}
+
+  -> final parsed result: accident_time=5.0000, center_x=0.7500, center_y=0.2500, type=single
+  -> CSV updated: /workspace/yujin/result/predictions.csv (83 rows saved)
+
+[84] Processing: videos/FhFwhsyOjUU_00.mp4
+  -> model output: {
+  "accident_time": 17.0
+}
+
+  -> predicted accident_time=17.0000
+  -> model output: {
+  "center_x": 0.35,
+  "center_y": 0.31
+}
+
+  -> predicted location: center_x=0.3500, center_y=0.3100
+  -> model output: {
+  "type": "sideswipe"
+}
+
+  -> final parsed result: accident_time=17.0000, center_x=0.3500, center_y=0.3100, type=sideswipe
+  -> CSV updated: /workspace/yujin/result/predictions.csv (84 rows saved)
+
+[85] Processing: videos/GaAVUUYx9q8_00.mp4
+  -> model output: {
+  "accident_time": 0.0
+}
+
+  -> predicted accident_time=0.0000
+  -> model output: {"center_x": 0.51, "center_y": 0.49}
+
+  -> predicted location: center_x=0.5100, center_y=0.4900
+  -> model output: {
+  "type": "single"
+}
+
+  -> final parsed result: accident_time=0.0000, center_x=0.5100, center_y=0.4900, type=single
+  -> CSV updated: /workspace/yujin/result/predictions.csv (85 rows saved)
+
+[86] Processing: videos/-jZ5Rlhzzi4_00.mp4
+  -> model output: {
+  "accident_time": 0.0
+}
+
+  -> predicted accident_time=0.0000
+  -> model output: {"center_x": 0.497, "center_y": 0.969}
+
+  -> predicted location: center_x=0.4970, center_y=0.9690
+  -> model output: {
+  "type": "single"
+}
+
+  -> final parsed result: accident_time=0.0000, center_x=0.4970, center_y=0.9690, type=single
+  -> CSV updated: /workspace/yujin/result/predictions.csv (86 rows saved)
+
+[87] Processing: videos/LP_C34tyPl4_00.mp4
+  -> model output: {
+  "accident_time": 28.5
+}
+
+  -> predicted accident_time=28.5000
+  -> model output: ```json
+{
+  "center_x": 0.82,
+  "center_y": 0.53
+}
+```
+
+  -> predicted location: center_x=0.8200, center_y=0.5300
+  -> model output: {
+  "type": "single"
+}
+
+  -> final parsed result: accident_time=28.5000, center_x=0.8200, center_y=0.5300, type=single
+  -> CSV updated: /workspace/yujin/result/predictions.csv (87 rows saved)
+
+[88] Processing: videos/tFS_Hk-qEiQ_00.mp4
+  -> model output: {
+  "accident_time": 0.0
+}
+
+  -> predicted accident_time=0.0000
+  -> model output: {"center_x": 0.33, "center_y": 0.5}
+
+  -> predicted location: center_x=0.3300, center_y=0.5000
+  -> model output: {
+  "type": "single"
+}
+
+  -> final parsed result: accident_time=0.0000, center_x=0.3300, center_y=0.5000, type=single
+  -> CSV updated: /workspace/yujin/result/predictions.csv (88 rows saved)
+
+[89] Processing: videos/mzHmLvV9QlM_00.mp4
+  -> model output: {
+  "accident_time": 0.0
+}
+
+  -> predicted accident_time=0.0000
+  -> model output: {"center_x": 0.474, "center_y": 0.818}
+
+  -> predicted location: center_x=0.4740, center_y=0.8180
+  -> model output: {
+  "type": "single"
+}
+
+  -> final parsed result: accident_time=0.0000, center_x=0.4740, center_y=0.8180, type=single
+  -> CSV updated: /workspace/yujin/result/predictions.csv (89 rows saved)
+
+[90] Processing: videos/c4exlXawFaM_00.mp4
+  -> model output: {
+  "accident_time": 0.0
+}
+
+  -> predicted accident_time=0.0000
+  -> model output: {"center_x": 0.663, "center_y": 0.382}
+
+  -> predicted location: center_x=0.6630, center_y=0.3820
+  -> model output: {
+  "type": "single"
+}
+
+  -> final parsed result: accident_time=0.0000, center_x=0.6630, center_y=0.3820, type=single
+  -> CSV updated: /workspace/yujin/result/predictions.csv (90 rows saved)
+
+[91] Processing: videos/-yLuZ5wxAsc_00.mp4
+  -> model output: {
+  "accident_time": 6.0
+}
+
+  -> predicted accident_time=6.0000
+  -> model output: {"center_x": 0.38, "center_y": 0.45}
+
+  -> predicted location: center_x=0.3800, center_y=0.4500
+  -> model output: {
+  "type": "single"
+}
+
+  -> final parsed result: accident_time=6.0000, center_x=0.3800, center_y=0.4500, type=single
+  -> CSV updated: /workspace/yujin/result/predictions.csv (91 rows saved)
+
+[92] Processing: videos/uKieP03gwxQ_00.mp4
+  -> model output: {
+  "accident_time": 18.0
+}
+
+  -> predicted accident_time=18.0000
+  -> model output: {"center_x": 0.62, "center_y": 0.65}
+
+  -> predicted location: center_x=0.6200, center_y=0.6500
+  -> model output: {
+  "type": "single"
+}
+
+  -> final parsed result: accident_time=18.0000, center_x=0.6200, center_y=0.6500, type=single
+  -> CSV updated: /workspace/yujin/result/predictions.csv (92 rows saved)
+
+[93] Processing: videos/Q72Ly8rGtnc_00.mp4
+  -> model output: {
+  "accident_time": 20.0
+}
+
+  -> predicted accident_time=20.0000
+  -> model output: {
+  "center_x": 0.77,
+  "center_y": 0.41
+}
+
+  -> predicted location: center_x=0.7700, center_y=0.4100
+  -> model output: {
+  "type": "single"
+}
+
+  -> final parsed result: accident_time=20.0000, center_x=0.7700, center_y=0.4100, type=single
+  -> CSV updated: /workspace/yujin/result/predictions.csv (93 rows saved)
+
+[94] Processing: videos/Img4DcUjRmo_00.mp4
+  -> model output: {
+  "accident_time": 2.0
+}
+
+  -> predicted accident_time=2.0000
+  -> model output: {
+  "center_x": 0.23,
+  "center_y": 0.43
+}
+
+  -> predicted location: center_x=0.2300, center_y=0.4300
+  -> model output: {
+  "type": "single"
+}
+
+  -> final parsed result: accident_time=2.0000, center_x=0.2300, center_y=0.4300, type=single
+  -> CSV updated: /workspace/yujin/result/predictions.csv (94 rows saved)
+
+[95] Processing: videos/LMw1OJe37fM_00.mp4
+  -> model output: {
+  "accident_time": 0.0
+}
+
+  -> predicted accident_time=0.0000
+  -> model output: {
+  "center_x": 0.48,
+  "center_y": 0.27
+}
+
+  -> predicted location: center_x=0.4800, center_y=0.2700
+  -> model output: {
+  "type": "single"
+}
+
+  -> final parsed result: accident_time=0.0000, center_x=0.4800, center_y=0.2700, type=single
+  -> CSV updated: /workspace/yujin/result/predictions.csv (95 rows saved)
+
+[96] Processing: videos/jgAGNNIG13E_00.mp4
+  -> model output: {
+  "accident_time": 0.0
+}
+
+  -> predicted accident_time=0.0000
+  -> model output: {"center_x": 0.433, "center_y": 0.317}
+
+  -> predicted location: center_x=0.4330, center_y=0.3170
+  -> model output: {
+  "type": "single"
+}
+
+  -> final parsed result: accident_time=0.0000, center_x=0.4330, center_y=0.3170, type=single
+  -> CSV updated: /workspace/yujin/result/predictions.csv (96 rows saved)
+
+[97] Processing: videos/Fb1XWmXZTZw_00.mp4
+  -> model output: {
+  "accident_time": 26.0
+}
+
+  -> predicted accident_time=26.0000
+  -> model output: {"center_x": 0.98, "center_y": 0.75}
+
+  -> predicted location: center_x=0.9800, center_y=0.7500
+  -> model output: {
+  "type": "single"
+}
+
+  -> final parsed result: accident_time=26.0000, center_x=0.9800, center_y=0.7500, type=single
+  -> CSV updated: /workspace/yujin/result/predictions.csv (97 rows saved)
+
+[98] Processing: videos/mllfWsyVZ1s_00.mp4
+  -> model output: {
+  "accident_time": 0.0
+}
+
+  -> predicted accident_time=0.0000
+  -> model output: {"center_x": 0.52, "center_y": 0.4}
+
+  -> predicted location: center_x=0.5200, center_y=0.4000
+  -> model output: {
+  "type": "single"
+}
+
+  -> final parsed result: accident_time=0.0000, center_x=0.5200, center_y=0.4000, type=single
+  -> CSV updated: /workspace/yujin/result/predictions.csv (98 rows saved)
+
+[99] Processing: videos/clXKxQWjB4c_00.mp4
+  -> model output: {
+  "accident_time": 0.0
+}
+
+  -> predicted accident_time=0.0000
+  -> model output: {"center_x": 0.51, "center_y": 0.71}
+
+  -> predicted location: center_x=0.5100, center_y=0.7100
+  -> model output: {
+  "type": "single"
+}
+
+  -> final parsed result: accident_time=0.0000, center_x=0.5100, center_y=0.7100, type=single
+  -> CSV updated: /workspace/yujin/result/predictions.csv (99 rows saved)
+
+[100] Processing: videos/ozOAT76M0PM_00.mp4
+  -> model output: {
+  "accident_time": 2.0
+}
+
+  -> predicted accident_time=2.0000
+  -> model output: ```json
+{
+  "center_x": 0.62,
+  "center_y": 0.70
+}
+```
+
+  -> predicted location: center_x=0.6200, center_y=0.7000
+  -> model output: {
+  "type": "single"
+}
+
+  -> final parsed result: accident_time=2.0000, center_x=0.6200, center_y=0.7000, type=single
+  -> CSV updated: /workspace/yujin/result/predictions.csv (100 rows saved)
+
+[101] Processing: videos/jc-fa_AjIXw_00.mp4
+  -> model output: {
+  "accident_time": 10.0
+}
+
+  -> predicted accident_time=10.0000
+  -> model output: {"center_x": 0.64, "center_y": 0.52}
+
+  -> predicted location: center_x=0.6400, center_y=0.5200
+  -> model output: {
+  "type": "single"
+}
+
+  -> final parsed result: accident_time=10.0000, center_x=0.6400, center_y=0.5200, type=single
+  -> CSV updated: /workspace/yujin/result/predictions.csv (101 rows saved)
+
+[102] Processing: videos/YmMM4JeUJJ0_00.mp4
+  -> model output: {
+  "accident_time": 0.0
+}
+
+  -> predicted accident_time=0.0000
+  -> model output: {"center_x": 0.52, "center_y": 0.52}
+
+  -> predicted location: center_x=0.5200, center_y=0.5200
+  -> model output: {
+  "type": "single"
+}
+
+  -> final parsed result: accident_time=0.0000, center_x=0.5200, center_y=0.5200, type=single
+  -> CSV updated: /workspace/yujin/result/predictions.csv (102 rows saved)
+
+[103] Processing: videos/JNsoId5gPK8_00.mp4
+  -> model output: {
+  "accident_time": 0.0
+}
+
+  -> predicted accident_time=0.0000
+  -> model output: ```json
+{
+  "center_x": 0.477,
+  "center_y": 0.213
+}
+```
+
+  -> predicted location: center_x=0.4770, center_y=0.2130
+  -> model output: 

@@ -1,0 +1,12 @@
+2026-04-17 14:40:00,618 | INFO | Dataset root: /root/Desktop/workspace/woo/ACCIDENT@CVPR/data/raw/accident
+2026-04-17 14:40:00,618 | INFO | Metadata CSV: /root/Desktop/workspace/woo/ACCIDENT@CVPR/data/raw/accident/test_metadata.csv
+2026-04-17 14:40:00,618 | INFO | Videos dir: /root/Desktop/workspace/woo/ACCIDENT@CVPR/data/raw/accident/videos
+2026-04-17 14:40:00,618 | INFO | Model path: /root/.cache/huggingface/hub/models--Qwen--Qwen3-VL-8B-Instruct
+2026-04-17 14:40:00,618 | INFO | Shard: 0 / 2
+2026-04-17 14:40:00,618 | INFO | Output CSV: /root/Desktop/workspace/yujin/result/submission_shard00_of_02.csv
+2026-04-17 14:40:00,619 | INFO | Raw log: /root/Desktop/workspace/yujin/log/raw_outputs_shard00_of_02.jsonl
+2026-04-17 14:40:00,619 | INFO | Temp dir: /root/Desktop/workspace/yujin/log/temp_shard00_of_02
+2026-04-17 14:40:00,632 | INFO | Rows assigned to this shard: 1
+2026-04-17 14:40:09,090 | INFO | [1/1] Processing Z4kg2Ev3vhk_00
+2026-04-17 14:40:19,775 | INFO | [1/1] Updated CSV | Z4kg2Ev3vhk_00 | t=10.376 xy=(0.332322, 0.777071) type=other
+2026-04-17 14:40:19,776 | INFO | Finished shard run. Saved CSV: /root/Desktop/workspace/yujin/result/submission_shard00_of_02.csv

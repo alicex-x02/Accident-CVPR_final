@@ -1,0 +1,5355 @@
+Loading model: Qwen/Qwen3.5-9B
+Using device: cuda
+The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+Loading weights:   0%|          | 0/760 [00:00<?, ?it/s]Loading weights:   0%|          | 1/760 [00:00<05:56,  2.13it/s]Loading weights:   0%|          | 2/760 [00:01<07:14,  1.74it/s]Loading weights:   2%|▏         | 14/760 [00:01<00:44, 16.61it/s]Loading weights:   4%|▎         | 27/760 [00:01<00:21, 33.57it/s]Loading weights:   5%|▌         | 40/760 [00:01<00:14, 49.62it/s]Loading weights:   7%|▋         | 50/760 [00:01<00:14, 50.14it/s]Loading weights:   9%|▊         | 66/760 [00:01<00:10, 68.91it/s]Loading weights:  10%|█         | 76/760 [00:01<00:09, 75.21it/s]Loading weights:  11%|█▏        | 86/760 [00:01<00:08, 78.63it/s]Loading weights:  13%|█▎        | 96/760 [00:02<00:08, 74.59it/s]Loading weights:  14%|█▍        | 105/760 [00:02<00:08, 77.05it/s]Loading weights:  16%|█▌        | 119/760 [00:02<00:07, 91.06it/s]Loading weights:  17%|█▋        | 132/760 [00:02<00:06, 99.19it/s]Loading weights:  19%|█▉        | 143/760 [00:02<00:06, 93.45it/s]Loading weights:  20%|██        | 153/760 [00:02<00:08, 74.75it/s]Loading weights:  23%|██▎       | 172/760 [00:02<00:06, 96.53it/s]Loading weights:  24%|██▍       | 185/760 [00:03<00:05, 95.86it/s]Loading weights:  26%|██▌       | 199/760 [00:03<00:05, 104.98it/s]Loading weights:  28%|██▊       | 211/760 [00:03<00:06, 87.91it/s] Loading weights:  30%|██▉       | 225/760 [00:03<00:05, 99.04it/s]Loading weights:  31%|███       | 236/760 [00:03<00:05, 100.82it/s]Loading weights:  32%|███▎      | 247/760 [00:03<00:05, 95.34it/s] Loading weights:  34%|███▍      | 258/760 [00:03<00:05, 86.89it/s]Loading weights:  35%|███▌      | 268/760 [00:03<00:05, 84.87it/s]Loading weights:  37%|███▋      | 279/760 [00:04<00:05, 89.82it/s]Loading weights:  38%|███▊      | 292/760 [00:04<00:04, 95.93it/s]Loading weights:  40%|███▉      | 303/760 [00:04<00:04, 98.99it/s]Loading weights:  41%|████▏     | 314/760 [00:04<00:05, 79.22it/s]Loading weights:  44%|████▎     | 331/760 [00:04<00:04, 96.27it/s]Loading weights:  45%|████▌     | 344/760 [00:04<00:04, 103.57it/s]Loading weights:  47%|████▋     | 356/760 [00:04<00:04, 99.41it/s] Loading weights:  48%|████▊     | 367/760 [00:05<00:05, 77.68it/s]Loading weights:  51%|█████     | 384/760 [00:05<00:03, 94.06it/s]Loading weights:  52%|█████▏    | 395/760 [00:05<00:03, 97.39it/s]Loading weights:  53%|█████▎    | 406/760 [00:05<00:03, 93.03it/s]Loading weights:  55%|█████▍    | 416/760 [00:05<00:03, 88.93it/s]Loading weights:  56%|█████▌    | 426/760 [00:05<00:04, 82.31it/s]Loading weights:  69%|██████▉   | 525/760 [00:05<00:00, 300.78it/s]Loading weights:  82%|████████▏ | 623/760 [00:05<00:00, 472.76it/s]Loading weights:  93%|█████████▎| 705/760 [00:06<00:00, 560.22it/s]Loading weights: 100%|██████████| 760/760 [00:06<00:00, 125.02it/s]
+
+[1] Processing: videos/Z4kg2Ev3vhk_00.mp4
+  -> optical-flow stats: points=141 score_max=4.855681 score_mean=1.955894 score_std=1.406142
+  -> optical-flow candidates:
+     rank=1 t=26.682s score=4.855681 z=2.062 motion=4.621153 delta=0.335039 idx=125 KEEP
+     rank=2 t=27.741s score=4.748027 z=1.986 motion=4.662376 delta=0.122358 idx=130 KEEP
+     rank=3 t=10.376s score=4.428614 z=1.759 motion=4.273823 delta=0.221129 idx=48 KEEP
+     rank=4 t=29.435s score=4.116101 z=1.536 motion=4.011464 delta=0.149482 idx=138 KEEP
+     rank=5 t=8.682s score=4.008948 z=1.460 motion=3.698893 delta=0.442936 idx=40 KEEP
+  -> candidate clips for Qwen selector:
+     index=1 rank=1 t=26.682s score=4.855681 z=2.062
+     index=2 rank=2 t=27.741s score=4.748027 z=1.986
+     index=3 rank=3 t=10.376s score=4.428614 z=1.759
+     index=4 rank=4 t=29.435s score=4.116101 z=1.536
+     index=5 rank=5 t=8.682s score=4.008948 z=1.460
+Keyword argument `enable_thinking` is not a valid argument for this processor and will be ignored.
+/opt/conda/envs/yujin/lib/python3.10/site-packages/transformers/video_processing_utils.py:872: UserWarning: `torchcodec` is not installed and cannot be used to decode the video by default. Falling back to `torchvision`. Note that `torchvision` decoding is deprecated and will be removed in future versions. 
+  warnings.warn(
+/opt/conda/envs/yujin/lib/python3.10/site-packages/transformers/video_utils.py:534: UserWarning: Using `torchvision` for video decoding is deprecated and will be removed in future versions. Please use `torchcodec` instead.
+  warnings.warn(
+  -> model output: {
+  "selected_candidate_index": 3
+}
+
+  -> selected OF candidate: index=3 rank=3 time=10.3765s score=4.428614 z=1.759
+  -> predicted accident_time=10.3765
+  -> model output: {
+  "center_x": 0.708,
+  "center_y": 0.379
+}
+
+  -> model output: {"center_x": 0.55, "center_y": 0.4}
+
+  -> model output: {
+  "center_x": 0.57,
+  "center_y": 0.37
+}
+
+  -> model output: {"center_x": 0.46, "center_y": 0.55}
+
+  -> model output: {
+  "center_x": 0.48,
+  "center_y": 0.62
+}
+
+  -> predicted location: center_x=0.5643, center_y=0.3986
+  -> saved representative frame: /workspace/yujin/code/accident/frames/Z4kg2Ev3vhk_00_t10.376.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "sideswipe"
+}
+
+  -> final parsed result: accident_time=10.3765, center_x=0.5643, center_y=0.3986, type=sideswipe
+  -> CSV updated: /workspace/yujin/result/test8.csv (1 rows saved)
+
+[2] Processing: videos/unS0-TLF1ao_00.mp4
+  -> optical-flow stats: points=29 score_max=0.927113 score_mean=0.402626 score_std=0.250119
+  -> optical-flow candidates:
+     rank=1 t=1.600s score=0.927113 z=2.097 motion=0.808590 delta=0.169319 idx=7 KEEP
+     rank=2 t=2.800s score=0.407234 z=0.018 motion=0.407234 delta=0.000000 idx=13 KEEP
+     rank=3 t=5.200s score=0.342096 z=-0.242 motion=0.335029 delta=0.010095 idx=25 KEEP
+     rank=4 t=0.600s score=0.258346 z=-0.577 motion=0.214432 delta=0.062733 idx=2 KEEP
+     rank=5 t=4.000s score=0.225966 z=-0.706 motion=0.209643 delta=0.023319 idx=19 KEEP
+  -> candidate clips for Qwen selector:
+     index=1 rank=1 t=1.600s score=0.927113 z=2.097
+     index=2 rank=2 t=2.800s score=0.407234 z=0.018
+     index=3 rank=3 t=5.200s score=0.342096 z=-0.242
+     index=4 rank=4 t=0.600s score=0.258346 z=-0.577
+     index=5 rank=5 t=4.000s score=0.225966 z=-0.706
+  -> model output: {
+  "selected_candidate_index": 4
+}
+
+  -> selected OF candidate: index=4 rank=4 time=0.6000s score=0.258346 z=-0.577
+  -> predicted accident_time=0.6000
+  -> model output: {"center_x": 0.57, "center_y": 0.28}
+
+  -> model output: {"center_x": 0.58, "center_y": 0.28}
+
+  -> model output: {"center_x": 0.61, "center_y": 0.29}
+
+  -> model output: {
+  "center_x": 0.55,
+  "center_y": 0.55
+}
+
+  -> model output: {
+  "center_x": 0.55,
+  "center_y": 0.55
+}
+
+  -> predicted location: center_x=0.5930, center_y=0.2929
+  -> saved representative frame: /workspace/yujin/code/accident/frames/unS0-TLF1ao_00_t0.600.jpg
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=0.6000, center_x=0.5930, center_y=0.2929, type=single
+  -> CSV updated: /workspace/yujin/result/test8.csv (2 rows saved)
+
+[3] Processing: videos/UarP8qU1S-c_00.mp4
+  -> optical-flow stats: points=74 score_max=1.797323 score_mean=0.312395 score_std=0.436506
+  -> optical-flow candidates:
+     rank=1 t=5.123s score=1.797323 z=3.402 motion=1.571112 delta=0.323158 idx=24 KEEP
+     rank=2 t=6.148s score=1.029364 z=1.643 motion=1.029364 delta=0.000000 idx=29 KEEP
+     rank=3 t=7.173s score=0.416446 z=0.238 motion=0.416446 delta=0.000000 idx=34 KEEP
+     rank=4 t=9.222s score=0.335019 z=0.052 motion=0.322376 delta=0.018062 idx=44 KEEP
+     rank=5 t=8.197s score=0.294223 z=-0.042 motion=0.294223 delta=0.000000 idx=39 KEEP
+  -> candidate clips for Qwen selector:
+     index=1 rank=1 t=5.123s score=1.797323 z=3.402
+     index=2 rank=2 t=6.148s score=1.029364 z=1.643
+     index=3 rank=3 t=7.173s score=0.416446 z=0.238
+     index=4 rank=4 t=9.222s score=0.335019 z=0.052
+     index=5 rank=5 t=8.197s score=0.294223 z=-0.042
+  -> model output: {
+  "selected_candidate_index": 3
+}
+
+  -> selected OF candidate: index=3 rank=3 time=7.1726s score=0.416446 z=0.238
+  -> predicted accident_time=7.1726
+  -> model output: {"center_x": 0.63, "center_y": 0.36}
+
+  -> model output: {
+  "center_x": 0.64,
+  "center_y": 0.35
+}
+
+  -> model output: {"center_x": 0.66, "center_y": 0.33}
+
+  -> model output: {
+  "center_x": 0.51,
+  "center_y": 0.51
+}
+
+  -> model output: {
+  "center_x": 0.51,
+  "center_y": 0.51
+}
+
+  -> predicted location: center_x=0.6425, center_y=0.3525
+  -> saved representative frame: /workspace/yujin/code/accident/frames/UarP8qU1S-c_00_t7.173.jpg
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=7.1726, center_x=0.6425, center_y=0.3525, type=single
+  -> CSV updated: /workspace/yujin/result/test8.csv (3 rows saved)
+
+[4] Processing: videos/UarP8qU1S-c_01.mp4
+  -> optical-flow stats: points=30 score_max=1.869640 score_mean=0.611411 score_std=0.481322
+  -> optical-flow candidates:
+     rank=1 t=2.614s score=1.869640 z=2.614 motion=1.597624 delta=0.388594 idx=12 KEEP
+     rank=2 t=0.603s score=0.972011 z=0.749 motion=0.831342 delta=0.200956 idx=2 KEEP
+     rank=3 t=3.619s score=0.463749 z=-0.307 motion=0.463749 delta=0.000000 idx=17 KEEP
+     rank=4 t=1.609s score=0.391990 z=-0.456 motion=0.391990 delta=0.000000 idx=7 KEEP
+     rank=5 t=4.625s score=0.172095 z=-0.913 motion=0.172095 delta=0.000000 idx=22 KEEP
+  -> candidate clips for Qwen selector:
+     index=1 rank=1 t=2.614s score=1.869640 z=2.614
+     index=2 rank=2 t=0.603s score=0.972011 z=0.749
+     index=3 rank=3 t=3.619s score=0.463749 z=-0.307
+     index=4 rank=4 t=1.609s score=0.391990 z=-0.456
+     index=5 rank=5 t=4.625s score=0.172095 z=-0.913
+  -> model output: {
+  "selected_candidate_index": 1
+}
+
+  -> selected OF candidate: index=1 rank=1 time=2.6140s score=1.869640 z=2.614
+  -> predicted accident_time=2.6140
+  -> model output: {
+  "center_x": 0.64,
+  "center_y": 0.31
+}
+
+  -> model output: {"center_x": 0.65, "center_y": 0.3}
+
+  -> model output: {"center_x": 0.66, "center_y": 0.29}
+
+  -> model output: {
+  "center_x": 0.52,
+  "center_y": 0.48
+}
+
+  -> model output: {
+  "center_x": 0.52,
+  "center_y": 0.48
+}
+
+  -> predicted location: center_x=0.6550, center_y=0.2947
+  -> saved representative frame: /workspace/yujin/code/accident/frames/UarP8qU1S-c_01_t2.614.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "sideswipe"
+}
+
+  -> final parsed result: accident_time=2.6140, center_x=0.6550, center_y=0.2947, type=sideswipe
+  -> CSV updated: /workspace/yujin/result/test8.csv (4 rows saved)
+
+[5] Processing: videos/nAXTthLfgtI_00.mp4
+  -> optical-flow stats: points=69 score_max=1.356468 score_mean=0.971346 score_std=0.201808
+  -> optical-flow candidates:
+     rank=1 t=2.197s score=1.356468 z=1.908 motion=1.342080 delta=0.020554 idx=10 KEEP
+     rank=2 t=3.995s score=1.242442 z=1.343 motion=1.211407 delta=0.044334 idx=19 KEEP
+     rank=3 t=0.599s score=1.153043 z=0.900 motion=1.007369 delta=0.208106 idx=2 KEEP
+     rank=4 t=5.194s score=1.115877 z=0.716 motion=1.115877 delta=0.000000 idx=25 KEEP
+     rank=5 t=9.389s score=1.082835 z=0.552 motion=1.059825 delta=0.032871 idx=46 KEEP
+  -> candidate clips for Qwen selector:
+     index=1 rank=1 t=2.197s score=1.356468 z=1.908
+     index=2 rank=2 t=3.995s score=1.242442 z=1.343
+     index=3 rank=3 t=0.599s score=1.153043 z=0.900
+     index=4 rank=4 t=5.194s score=1.115877 z=0.716
+     index=5 rank=5 t=9.389s score=1.082835 z=0.552
+  -> model output: {
+  "selected_candidate_index": 1
+}
+
+  -> selected OF candidate: index=1 rank=1 time=2.1974s score=1.356468 z=1.908
+  -> predicted accident_time=2.1974
+  -> model output: {
+  "center_x": 0.16,
+  "center_y": 0.63
+}
+
+  -> model output: {
+  "center_x": 0.16,
+  "center_y": 0.63
+}
+
+  -> model output: {
+  "center_x": 0.52,
+  "center_y": 0.52
+}
+
+  -> model output: {"center_x": 0.38, "center_y": 0.45}
+
+  -> model output: {"center_x": 0.52, "center_y": 0.51}
+
+  -> predicted location: center_x=0.1600, center_y=0.6300
+  -> saved representative frame: /workspace/yujin/code/accident/frames/nAXTthLfgtI_00_t2.197.jpg
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=2.1974, center_x=0.1600, center_y=0.6300, type=single
+  -> CSV updated: /workspace/yujin/result/test8.csv (5 rows saved)
+
+[6] Processing: videos/fzWY0vLAXzI_00.mp4
+  -> optical-flow stats: points=47 score_max=1.022964 score_mean=0.363333 score_std=0.358479
+  -> optical-flow candidates:
+     rank=1 t=4.727s score=1.022964 z=1.840 motion=0.993652 delta=0.041874 idx=24 KEEP
+     rank=2 t=3.592s score=0.834856 z=1.315 motion=0.762631 delta=0.103178 idx=18 KEEP
+     rank=3 t=5.861s score=0.496790 z=0.372 motion=0.496790 delta=0.000000 idx=30 KEEP
+     rank=4 t=2.458s score=0.223478 z=-0.390 motion=0.199207 delta=0.034673 idx=12 KEEP
+     rank=5 t=1.323s score=0.100288 z=-0.734 motion=0.092314 delta=0.011391 idx=6 KEEP
+  -> candidate clips for Qwen selector:
+     index=1 rank=1 t=4.727s score=1.022964 z=1.840
+     index=2 rank=2 t=3.592s score=0.834856 z=1.315
+     index=3 rank=3 t=5.861s score=0.496790 z=0.372
+     index=4 rank=4 t=2.458s score=0.223478 z=-0.390
+     index=5 rank=5 t=1.323s score=0.100288 z=-0.734
+  -> model output: {
+  "selected_candidate_index": 1
+}
+
+  -> selected OF candidate: index=1 rank=1 time=4.7266s score=1.022964 z=1.840
+  -> predicted accident_time=4.7266
+  -> model output: {"center_x": 0.41, "center_y": 0.22}
+
+  -> model output: {
+  "center_x": 0.44,
+  "center_y": 0.21
+}
+
+  -> model output: {
+  "center_x": 0.49,
+  "center_y": 0.21
+}
+
+  -> model output: {
+  "center_x": 0.51,
+  "center_y": 0.48
+}
+
+  -> model output: {
+  "center_x": 0.45,
+  "center_y": 0.35
+}
+
+  -> predicted location: center_x=0.4400, center_y=0.2019
+  -> saved representative frame: /workspace/yujin/code/accident/frames/fzWY0vLAXzI_00_t4.727.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.99
+}
+
+  -> model output: {
+  "type": "t-bone"
+}
+
+  -> final parsed result: accident_time=4.7266, center_x=0.4400, center_y=0.2019, type=t-bone
+  -> CSV updated: /workspace/yujin/result/test8.csv (6 rows saved)
+
+[7] Processing: videos/vxZ47DoPNY8_00.mp4
+  -> optical-flow stats: points=34 score_max=1.592612 score_mean=0.773083 score_std=0.482122
+  -> optical-flow candidates:
+     rank=1 t=3.367s score=1.592612 z=1.700 motion=1.519256 delta=0.104795 idx=14 KEEP
+     rank=2 t=5.163s score=1.364057 z=1.226 motion=1.304961 delta=0.084423 idx=22 KEEP
+     rank=3 t=0.449s score=1.001314 z=0.473 motion=0.922494 delta=0.112600 idx=1 KEEP
+     rank=4 t=6.285s score=0.458484 z=-0.653 motion=0.458484 delta=0.000000 idx=27 KEEP
+     rank=5 t=2.245s score=0.307205 z=-0.966 motion=0.277947 delta=0.041798 idx=9 KEEP
+  -> candidate clips for Qwen selector:
+     index=1 rank=1 t=3.367s score=1.592612 z=1.700
+     index=2 rank=2 t=5.163s score=1.364057 z=1.226
+     index=3 rank=3 t=0.449s score=1.001314 z=0.473
+     index=4 rank=4 t=6.285s score=0.458484 z=-0.653
+     index=5 rank=5 t=2.245s score=0.307205 z=-0.966
+  -> model output: {
+  "selected_candidate_index": 1
+}
+
+  -> selected OF candidate: index=1 rank=1 time=3.3669s score=1.592612 z=1.700
+  -> predicted accident_time=3.3669
+  -> model output: {"center_x": 0.78, "center_y": 0.21}
+
+  -> model output: {"center_x": 0.79, "center_y": 0.24}
+
+  -> model output: {"center_x": 0.81, "center_y": 0.26}
+
+  -> model output: {
+  "center_x": 0.48,
+  "center_y": 0.62
+}
+
+  -> model output: {
+  "center_x": 0.46,
+  "center_y": 0.55
+}
+
+  -> predicted location: center_x=0.7817, center_y=0.2530
+  -> saved representative frame: /workspace/yujin/code/accident/frames/vxZ47DoPNY8_00_t3.367.jpg
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=3.3669, center_x=0.7817, center_y=0.2530, type=single
+  -> CSV updated: /workspace/yujin/result/test8.csv (7 rows saved)
+
+[8] Processing: videos/OXVXsdDT9QQ_00.mp4
+  -> optical-flow stats: points=29 score_max=2.557709 score_mean=1.114682 score_std=0.772066
+  -> optical-flow candidates:
+     rank=1 t=1.798s score=2.557709 z=1.869 motion=2.311673 delta=0.351480 idx=9 KEEP
+     rank=2 t=2.876s score=1.275707 z=0.209 motion=1.275707 delta=0.000000 idx=15 KEEP
+     rank=3 t=0.719s score=0.939426 z=-0.227 motion=0.821749 delta=0.168109 idx=3 KEEP
+     rank=4 t=3.955s score=0.459893 z=-0.848 motion=0.459893 delta=0.000000 idx=21 KEEP
+     rank=5 t=5.034s score=0.206266 z=-1.177 motion=0.206266 delta=0.000000 idx=27 REJECT(too_close_to_end(duration-0.3))
+  -> candidate clips for Qwen selector:
+     index=1 rank=1 t=1.798s score=2.557709 z=1.869
+     index=2 rank=2 t=2.876s score=1.275707 z=0.209
+     index=3 rank=3 t=0.719s score=0.939426 z=-0.227
+     index=4 rank=4 t=3.955s score=0.459893 z=-0.848
+  -> model output: {
+  "selected_candidate_index": 1
+}
+
+  -> selected OF candidate: index=1 rank=1 time=1.7978s score=2.557709 z=1.869
+  -> predicted accident_time=1.7978
+  -> model output: {"center_x": 0.56, "center_y": 0.61}
+
+  -> model output: {"center_x": 0.55, "center_y": 0.6}
+
+  -> model output: {
+  "center_x": 0.19,
+  "center_y": 0.45
+}
+
+  -> model output: {
+  "center_x": 0.62,
+  "center_y": 0.52
+}
+
+  -> model output: {
+  "center_x": 0.68,
+  "center_y": 0.52
+}
+
+  -> predicted location: center_x=0.5965, center_y=0.6048
+  -> saved representative frame: /workspace/yujin/code/accident/frames/OXVXsdDT9QQ_00_t1.798.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "t-bone"
+}
+
+  -> final parsed result: accident_time=1.7978, center_x=0.5965, center_y=0.6048, type=t-bone
+  -> CSV updated: /workspace/yujin/result/test8.csv (8 rows saved)
+
+[9] Processing: videos/VozrseCzhQc_00.mp4
+  -> optical-flow stats: points=48 score_max=0.376039 score_mean=0.321583 score_std=0.046385
+  -> optical-flow candidates:
+     rank=1 t=5.178s score=0.376039 z=1.174 motion=0.372922 delta=0.004453 idx=25 KEEP
+     rank=2 t=6.771s score=0.370283 z=1.050 motion=0.367680 delta=0.003718 idx=33 KEEP
+     rank=3 t=3.385s score=0.350068 z=0.614 motion=0.342608 delta=0.010657 idx=16 KEEP
+     rank=4 t=7.966s score=0.315952 z=-0.121 motion=0.315952 delta=0.000000 idx=39 KEEP
+     rank=5 t=1.593s score=0.313280 z=-0.179 motion=0.307227 delta=0.008647 idx=7 KEEP
+  -> candidate clips for Qwen selector:
+     index=1 rank=1 t=5.178s score=0.376039 z=1.174
+     index=2 rank=2 t=6.771s score=0.370283 z=1.050
+     index=3 rank=3 t=3.385s score=0.350068 z=0.614
+     index=4 rank=4 t=7.966s score=0.315952 z=-0.121
+     index=5 rank=5 t=1.593s score=0.313280 z=-0.179
+  -> model output: {
+  "selected_candidate_index": 2
+}
+
+  -> selected OF candidate: index=2 rank=2 time=6.7707s score=0.370283 z=1.050
+  -> predicted accident_time=6.7707
+  -> model output: {
+  "center_x": 0.61,
+  "center_y": 0.48
+}
+
+  -> model output: {
+  "center_x": 0.61,
+  "center_y": 0.48
+}
+
+  -> model output: {
+  "center_x": 0.54,
+  "center_y": 0.51
+}
+
+  -> model output: {
+  "center_x": 0.52,
+  "center_y": 0.48
+}
+
+  -> model output: {"center_x": 0.51, "center_y": 0.54}
+
+  -> predicted location: center_x=0.6121, center_y=0.4800
+  -> saved representative frame: /workspace/yujin/code/accident/frames/VozrseCzhQc_00_t6.771.jpg
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=6.7707, center_x=0.6121, center_y=0.4800, type=single
+  -> CSV updated: /workspace/yujin/result/test8.csv (9 rows saved)
+
+[10] Processing: videos/kABWTDKgc9U_00.mp4
+  -> optical-flow stats: points=147 score_max=1.412587 score_mean=0.451173 score_std=0.281371
+  -> optical-flow candidates:
+     rank=1 t=6.007s score=1.412587 z=3.417 motion=1.360080 delta=0.075009 idx=29 KEEP
+     rank=2 t=0.601s score=0.975634 z=1.864 motion=0.914303 delta=0.087616 idx=2 KEEP
+     rank=3 t=7.008s score=0.826523 z=1.334 motion=0.826523 delta=0.000000 idx=34 KEEP
+     rank=4 t=5.006s score=0.820081 z=1.311 motion=0.729928 delta=0.128789 idx=24 KEEP
+     rank=5 t=1.802s score=0.800340 z=1.241 motion=0.744665 delta=0.079535 idx=8 KEEP
+  -> candidate clips for Qwen selector:
+     index=1 rank=1 t=6.007s score=1.412587 z=3.417
+     index=2 rank=2 t=0.601s score=0.975634 z=1.864
+     index=3 rank=3 t=7.008s score=0.826523 z=1.334
+     index=4 rank=4 t=5.006s score=0.820081 z=1.311
+     index=5 rank=5 t=1.802s score=0.800340 z=1.241
+  -> model output: {
+  "selected_candidate_index": 3
+}
+
+  -> selected OF candidate: index=3 rank=3 time=7.0079s score=0.826523 z=1.334
+  -> predicted accident_time=7.0079
+  -> model output: {"center_x": 0.505, "center_y": 0.434}
+
+  -> model output: {
+  "center_x": 0.51,
+  "center_y": 0.89
+}
+
+  -> model output: {"center_x": 0.47, "center_y": 0.92}
+
+  -> model output: {
+  "center_x": 0.48,
+  "center_y": 0.75
+}
+
+  -> model output: {
+  "center_x": 0.43,
+  "center_y": 0.48
+}
+
+  -> predicted location: center_x=0.4966, center_y=0.8900
+  -> saved representative frame: /workspace/yujin/code/accident/frames/kABWTDKgc9U_00_t7.008.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "sideswipe"
+}
+
+  -> final parsed result: accident_time=7.0079, center_x=0.4966, center_y=0.8900, type=sideswipe
+  -> CSV updated: /workspace/yujin/result/test8.csv (10 rows saved)
+
+[11] Processing: videos/ftk_fSc4haM_00.mp4
+  -> optical-flow stats: points=71 score_max=2.067867 score_mean=0.515104 score_std=0.496423
+  -> optical-flow candidates:
+     rank=1 t=0.603s score=2.067867 z=3.128 motion=1.833112 delta=0.335364 idx=2 KEEP
+     rank=2 t=5.229s score=1.107181 z=1.193 motion=1.039316 delta=0.096951 idx=25 KEEP
+     rank=3 t=2.615s score=0.980678 z=0.938 motion=0.916225 delta=0.092076 idx=12 KEEP
+     rank=4 t=4.223s score=0.921967 z=0.820 motion=0.905831 delta=0.023051 idx=20 KEEP
+     rank=5 t=6.235s score=0.740006 z=0.453 motion=0.740006 delta=0.000000 idx=30 KEEP
+  -> candidate clips for Qwen selector:
+     index=1 rank=1 t=0.603s score=2.067867 z=3.128
+     index=2 rank=2 t=5.229s score=1.107181 z=1.193
+     index=3 rank=3 t=2.615s score=0.980678 z=0.938
+     index=4 rank=4 t=4.223s score=0.921967 z=0.820
+     index=5 rank=5 t=6.235s score=0.740006 z=0.453
+  -> model output: {
+  "selected_candidate_index": 5
+}
+
+  -> selected OF candidate: index=5 rank=5 time=6.2346s score=0.740006 z=0.453
+  -> predicted accident_time=6.2346
+  -> model output: {"center_x": 0.747, "center_y": 0.275}
+
+  -> model output: ```json
+{
+  "center_x": 0.71,
+  "center_y": 0.30
+}
+```
+
+  -> model output: {"center_x": 0.739, "center_y": 0.277}
+
+  -> model output: {
+  "center_x": 0.44,
+  "center_y": 0.48
+}
+
+  -> model output: {
+  "center_x": 0.58,
+  "center_y": 0.52
+}
+
+  -> predicted location: center_x=0.7390, center_y=0.2770
+  -> saved representative frame: /workspace/yujin/code/accident/frames/ftk_fSc4haM_00_t6.235.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "t-bone"
+}
+
+  -> final parsed result: accident_time=6.2346, center_x=0.7390, center_y=0.2770, type=t-bone
+  -> CSV updated: /workspace/yujin/result/test8.csv (11 rows saved)
+
+[12] Processing: videos/BgdKGnFqz0I_00.mp4
+  -> optical-flow stats: points=48 score_max=0.302905 score_mean=0.202957 score_std=0.052460
+  -> optical-flow candidates:
+     rank=1 t=5.635s score=0.302905 z=1.905 motion=0.297178 delta=0.008182 idx=27 KEEP
+     rank=2 t=6.641s score=0.248292 z=0.864 motion=0.248292 delta=0.000000 idx=32 KEEP
+     rank=3 t=4.427s score=0.246926 z=0.838 motion=0.241011 delta=0.008449 idx=21 KEEP
+     rank=4 t=1.811s score=0.235399 z=0.618 motion=0.227103 delta=0.011852 idx=8 KEEP
+     rank=5 t=9.257s score=0.188796 z=-0.270 motion=0.178982 delta=0.014021 idx=45 KEEP
+  -> candidate clips for Qwen selector:
+     index=1 rank=1 t=5.635s score=0.302905 z=1.905
+     index=2 rank=2 t=6.641s score=0.248292 z=0.864
+     index=3 rank=3 t=4.427s score=0.246926 z=0.838
+     index=4 rank=4 t=1.811s score=0.235399 z=0.618
+     index=5 rank=5 t=9.257s score=0.188796 z=-0.270
+  -> model output: {
+  "selected_candidate_index": 5
+}
+
+  -> selected OF candidate: index=5 rank=5 time=9.2573s score=0.188796 z=-0.270
+  -> predicted accident_time=9.2573
+  -> model output: {
+  "center_x": 0.405,
+  "center_y": 0.382
+}
+
+  -> model output: {
+  "center_x": 0.405,
+  "center_y": 0.385
+}
+
+  -> model output: {
+  "center_x": 0.41,
+  "center_y": 0.38
+}
+
+  -> model output: {
+  "center_x": 0.53,
+  "center_y": 0.51
+}
+
+  -> model output: {
+  "center_x": 0.57,
+  "center_y": 0.51
+}
+
+  -> predicted location: center_x=0.4166, center_y=0.3851
+  -> saved representative frame: /workspace/yujin/code/accident/frames/BgdKGnFqz0I_00_t9.257.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "t-bone"
+}
+
+  -> final parsed result: accident_time=9.2573, center_x=0.4166, center_y=0.3851, type=t-bone
+  -> CSV updated: /workspace/yujin/result/test8.csv (12 rows saved)
+
+[13] Processing: videos/LiM5LPSZoow_00.mp4
+  -> optical-flow stats: points=149 score_max=1.851920 score_mean=0.488112 score_std=0.411072
+  -> optical-flow candidates:
+     rank=1 t=2.806s score=1.851920 z=3.318 motion=1.793375 delta=0.083636 idx=13 KEEP
+     rank=2 t=1.804s score=1.369915 z=2.145 motion=1.329424 delta=0.057844 idx=8 KEEP
+     rank=3 t=0.802s score=1.126340 z=1.553 motion=1.037340 delta=0.127143 idx=3 KEEP
+     rank=4 t=3.808s score=0.980447 z=1.198 motion=0.980447 delta=0.000000 idx=18 KEEP
+     rank=5 t=19.042s score=0.797590 z=0.753 motion=0.724410 delta=0.104544 idx=94 KEEP
+  -> candidate clips for Qwen selector:
+     index=1 rank=1 t=2.806s score=1.851920 z=3.318
+     index=2 rank=2 t=1.804s score=1.369915 z=2.145
+     index=3 rank=3 t=0.802s score=1.126340 z=1.553
+     index=4 rank=4 t=3.808s score=0.980447 z=1.198
+     index=5 rank=5 t=19.042s score=0.797590 z=0.753
+  -> model output: {
+  "selected_candidate_index": 5
+}
+
+  -> selected OF candidate: index=5 rank=5 time=19.0423s score=0.797590 z=0.753
+  -> predicted accident_time=19.0423
+  -> model output: {
+  "center_x": 0.52,
+  "center_y": 0.55
+}
+
+  -> model output: {
+  "center_x": 0.49,
+  "center_y": 0.53
+}
+
+  -> model output: {
+  "center_x": 0.51,
+  "center_y": 0.77
+}
+
+  -> model output: {
+  "center_x": 0.48,
+  "center_y": 0.52
+}
+
+  -> model output: {
+  "center_x": 0.42,
+  "center_y": 0.48
+}
+
+  -> predicted location: center_x=0.5013, center_y=0.5500
+  -> saved representative frame: /workspace/yujin/code/accident/frames/LiM5LPSZoow_00_t19.042.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "t-bone"
+}
+
+  -> final parsed result: accident_time=19.0423, center_x=0.5013, center_y=0.5500, type=t-bone
+  -> CSV updated: /workspace/yujin/result/test8.csv (13 rows saved)
+
+[14] Processing: videos/F0NHENn-HS4_00.mp4
+  -> optical-flow stats: points=104 score_max=1.532953 score_mean=0.892025 score_std=0.413671
+  -> optical-flow candidates:
+     rank=1 t=0.598s score=1.532953 z=1.549 motion=1.344937 delta=0.268595 idx=2 KEEP
+     rank=2 t=2.990s score=1.462534 z=1.379 motion=1.439393 delta=0.033058 idx=14 KEEP
+     rank=3 t=4.585s score=1.432901 z=1.308 motion=1.421204 delta=0.016710 idx=22 KEEP
+     rank=4 t=6.778s score=1.422248 z=1.282 motion=1.388065 delta=0.048832 idx=33 KEEP
+     rank=5 t=1.794s score=1.388547 z=1.200 motion=1.310800 delta=0.111067 idx=8 KEEP
+  -> candidate clips for Qwen selector:
+     index=1 rank=1 t=0.598s score=1.532953 z=1.549
+     index=2 rank=2 t=2.990s score=1.462534 z=1.379
+     index=3 rank=3 t=4.585s score=1.432901 z=1.308
+     index=4 rank=4 t=6.778s score=1.422248 z=1.282
+     index=5 rank=5 t=1.794s score=1.388547 z=1.200
+  -> model output: {
+  "selected_candidate_index": 4
+}
+
+  -> selected OF candidate: index=4 rank=4 time=6.7784s score=1.422248 z=1.282
+  -> predicted accident_time=6.7784
+  -> model output: {
+  "center_x": 0.45,
+  "center_y": 0.43
+}
+
+  -> model output: {"center_x": 0.368, "center_y": 0.386}
+
+  -> model output: {
+  "center_x": 0.47,
+  "center_y": 0.45
+}
+
+  -> model output: {
+  "center_x": 0.48,
+  "center_y": 0.32
+}
+
+  -> model output: {
+  "center_x": 0.54,
+  "center_y": 0.52
+}
+
+  -> predicted location: center_x=0.4500, center_y=0.4300
+  -> saved representative frame: /workspace/yujin/code/accident/frames/F0NHENn-HS4_00_t6.778.jpg
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=6.7784, center_x=0.4500, center_y=0.4300, type=single
+  -> CSV updated: /workspace/yujin/result/test8.csv (14 rows saved)
+
+[15] Processing: videos/maJsgJsapH4_00.mp4
+  -> optical-flow stats: points=149 score_max=1.629805 score_mean=0.719455 score_std=0.328932
+  -> optical-flow candidates:
+     rank=1 t=8.839s score=1.629805 z=2.768 motion=1.602242 delta=0.039375 idx=43 KEEP
+     rank=2 t=5.625s score=1.376063 z=1.996 motion=1.339779 delta=0.051834 idx=27 KEEP
+     rank=3 t=7.835s score=1.231336 z=1.556 motion=1.153460 delta=0.111252 idx=38 KEEP
+     rank=4 t=9.844s score=1.160357 z=1.340 motion=1.160357 delta=0.000000 idx=48 KEEP
+     rank=5 t=4.620s score=1.095108 z=1.142 motion=1.026033 delta=0.098678 idx=22 KEEP
+  -> candidate clips for Qwen selector:
+     index=1 rank=1 t=8.839s score=1.629805 z=2.768
+     index=2 rank=2 t=5.625s score=1.376063 z=1.996
+     index=3 rank=3 t=7.835s score=1.231336 z=1.556
+     index=4 rank=4 t=9.844s score=1.160357 z=1.340
+     index=5 rank=5 t=4.620s score=1.095108 z=1.142
+  -> model output: {
+  "selected_candidate_index": 1
+}
+
+  -> selected OF candidate: index=1 rank=1 time=8.8391s score=1.629805 z=2.768
+  -> predicted accident_time=8.8391
+  -> model output: {"center_x": 0.406, "center_y": 0.673}
+
+  -> model output: {"center_x": 0.375, "center_y": 0.682}
+
+  -> model output: {"center_x": 0.57, "center_y": 0.69}
+
+  -> model output: {
+  "center_x": 0.42,
+  "center_y": 0.51
+}
+
+  -> model output: {
+  "center_x": 0.38,
+  "center_y": 0.52
+}
+
+  -> predicted location: center_x=0.3748, center_y=0.6856
+  -> saved representative frame: /workspace/yujin/code/accident/frames/maJsgJsapH4_00_t8.839.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "sideswipe"
+}
+
+  -> final parsed result: accident_time=8.8391, center_x=0.3748, center_y=0.6856, type=sideswipe
+  -> CSV updated: /workspace/yujin/result/test8.csv (15 rows saved)
+
+[16] Processing: videos/iA_u73BG4ZM_00.mp4
+  -> optical-flow stats: points=150 score_max=1.194164 score_mean=0.637882 score_std=0.222169
+  -> optical-flow candidates:
+     rank=1 t=3.400s score=1.194164 z=2.504 motion=1.110065 delta=0.120141 idx=16 KEEP
+     rank=2 t=26.000s score=1.175527 z=2.420 motion=1.095272 delta=0.114650 idx=129 KEEP
+     rank=3 t=28.200s score=1.093031 z=2.049 motion=0.978733 delta=0.163282 idx=140 KEEP
+     rank=4 t=14.600s score=1.001590 z=1.637 motion=0.930686 delta=0.101292 idx=72 KEEP
+     rank=5 t=1.600s score=0.961534 z=1.457 motion=0.905368 delta=0.080237 idx=7 KEEP
+  -> candidate clips for Qwen selector:
+     index=1 rank=1 t=3.400s score=1.194164 z=2.504
+     index=2 rank=2 t=26.000s score=1.175527 z=2.420
+     index=3 rank=3 t=28.200s score=1.093031 z=2.049
+     index=4 rank=4 t=14.600s score=1.001590 z=1.637
+     index=5 rank=5 t=1.600s score=0.961534 z=1.457
+  -> model output: {
+  "selected_candidate_index": 1
+}
+
+  -> selected OF candidate: index=1 rank=1 time=3.4000s score=1.194164 z=2.504
+  -> predicted accident_time=3.4000
+  -> model output: {"center_x": 0.51, "center_y": 0.59}
+
+  -> model output: {"center_x": 0.65, "center_y": 0.51}
+
+  -> model output: {"center_x": 0.641, "center_y": 0.508}
+
+  -> model output: {
+  "center_x": 0.52,
+  "center_y": 0.52
+}
+
+  -> model output: {
+  "center_x": 0.5,
+  "center_y": 0.5
+}
+
+  -> predicted location: center_x=0.6411, center_y=0.5104
+  -> saved representative frame: /workspace/yujin/code/accident/frames/iA_u73BG4ZM_00_t3.400.jpg
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=3.4000, center_x=0.6411, center_y=0.5104, type=single
+  -> CSV updated: /workspace/yujin/result/test8.csv (16 rows saved)
+
+[17] Processing: videos/maJGw3hQs_s_00.mp4
+  -> optical-flow stats: points=149 score_max=0.733004 score_mean=0.253151 score_std=0.130571
+  -> optical-flow candidates:
+     rank=1 t=23.032s score=0.733004 z=3.675 motion=0.689903 delta=0.061573 idx=114 KEEP
+     rank=2 t=0.601s score=0.650864 z=3.046 motion=0.602503 delta=0.069087 idx=2 KEEP
+     rank=3 t=24.033s score=0.444462 z=1.465 motion=0.444462 delta=0.000000 idx=119 KEEP
+     rank=4 t=22.031s score=0.422892 z=1.300 motion=0.397004 delta=0.036983 idx=109 KEEP
+     rank=5 t=2.003s score=0.357832 z=0.802 motion=0.336042 delta=0.031128 idx=9 KEEP
+  -> candidate clips for Qwen selector:
+     index=1 rank=1 t=23.032s score=0.733004 z=3.675
+     index=2 rank=2 t=0.601s score=0.650864 z=3.046
+     index=3 rank=3 t=24.033s score=0.444462 z=1.465
+     index=4 rank=4 t=22.031s score=0.422892 z=1.300
+     index=5 rank=5 t=2.003s score=0.357832 z=0.802
+  -> model output: {
+  "selected_candidate_index": 2
+}
+
+  -> selected OF candidate: index=2 rank=2 time=0.6008s score=0.650864 z=3.046
+  -> predicted accident_time=0.6008
+  -> model output: {
+  "center_x": 0.88,
+  "center_y": 0.4
+}
+
+  -> model output: {
+  "center_x": 0.88,
+  "center_y": 0.38
+}
+
+  -> model output: {
+  "center_x": 0.85,
+  "center_y": 0.39
+}
+
+  -> model output: {
+  "center_x": 0.66,
+  "center_y": 0.54
+}
+
+  -> model output: {
+  "center_x": 0.5,
+  "center_y": 0.5
+}
+
+  -> predicted location: center_x=0.8702, center_y=0.3900
+  -> saved representative frame: /workspace/yujin/code/accident/frames/maJGw3hQs_s_00_t0.601.jpg
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=0.6008, center_x=0.8702, center_y=0.3900, type=single
+  -> CSV updated: /workspace/yujin/result/test8.csv (17 rows saved)
+
+[18] Processing: videos/aPsS_HaokoU_00.mp4
+  -> optical-flow stats: points=162 score_max=0.875150 score_mean=0.322903 score_std=0.252584
+  -> optical-flow candidates:
+     rank=1 t=6.497s score=0.875150 z=2.186 motion=0.843260 delta=0.045557 idx=35 KEEP
+     rank=2 t=7.580s score=0.799513 z=1.887 motion=0.799513 delta=0.000000 idx=41 KEEP
+     rank=3 t=0.541s score=0.770353 z=1.771 motion=0.666592 delta=0.148230 idx=2 KEEP
+     rank=4 t=4.692s score=0.695119 z=1.474 motion=0.687753 delta=0.010523 idx=25 KEEP
+     rank=5 t=3.609s score=0.592953 z=1.069 motion=0.580642 delta=0.017587 idx=19 KEEP
+  -> candidate clips for Qwen selector:
+     index=1 rank=1 t=6.497s score=0.875150 z=2.186
+     index=2 rank=2 t=7.580s score=0.799513 z=1.887
+     index=3 rank=3 t=0.541s score=0.770353 z=1.771
+     index=4 rank=4 t=4.692s score=0.695119 z=1.474
+     index=5 rank=5 t=3.609s score=0.592953 z=1.069
+  -> model output: {
+  "selected_candidate_index": 4
+}
+
+  -> selected OF candidate: index=4 rank=4 time=4.6922s score=0.695119 z=1.474
+  -> predicted accident_time=4.6922
+  -> model output: {
+  "center_x": 0.55,
+  "center_y": 0.47
+}
+
+  -> model output: {
+  "center_x": 0.55,
+  "center_y": 0.52
+}
+
+  -> model output: {
+  "center_x": 0.55,
+  "center_y": 0.45
+}
+
+  -> model output: {
+  "center_x": 0.48,
+  "center_y": 0.42
+}
+
+  -> model output: {
+  "center_x": 0.48,
+  "center_y": 0.42
+}
+
+  -> predicted location: center_x=0.5446, center_y=0.4494
+  -> saved representative frame: /workspace/yujin/code/accident/frames/aPsS_HaokoU_00_t4.692.jpg
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=4.6922, center_x=0.5446, center_y=0.4494, type=single
+  -> CSV updated: /workspace/yujin/result/test8.csv (18 rows saved)
+
+[19] Processing: videos/aF2Hbp8C23A_00.mp4
+  -> optical-flow stats: points=48 score_max=1.168789 score_mean=0.236190 score_std=0.258084
+  -> optical-flow candidates:
+     rank=1 t=0.604s score=1.168789 z=3.614 motion=1.008600 delta=0.228841 idx=2 KEEP
+     rank=2 t=1.610s score=0.296768 z=0.235 motion=0.296768 delta=0.000000 idx=7 KEEP
+     rank=3 t=4.628s score=0.200147 z=-0.140 motion=0.186973 delta=0.018820 idx=22 KEEP
+     rank=4 t=6.036s score=0.186137 z=-0.194 motion=0.184440 delta=0.002424 idx=29 KEEP
+     rank=5 t=3.622s score=0.159106 z=-0.299 motion=0.152282 delta=0.009748 idx=17 KEEP
+  -> candidate clips for Qwen selector:
+     index=1 rank=1 t=0.604s score=1.168789 z=3.614
+     index=2 rank=2 t=1.610s score=0.296768 z=0.235
+     index=3 rank=3 t=4.628s score=0.200147 z=-0.140
+     index=4 rank=4 t=6.036s score=0.186137 z=-0.194
+     index=5 rank=5 t=3.622s score=0.159106 z=-0.299
+  -> model output: {
+  "selected_candidate_index": 5
+}
+
+  -> selected OF candidate: index=5 rank=5 time=3.6216s score=0.159106 z=-0.299
+  -> predicted accident_time=3.6216
+  -> model output: {
+  "center_x": 0.31,
+  "center_y": 0.48
+}
+
+  -> model output: {
+  "center_x": 0.29,
+  "center_y": 0.5
+}
+
+  -> model output: {
+  "center_x": 0.28,
+  "center_y": 0.51
+}
+
+  -> model output: {
+  "center_x": 0.53,
+  "center_y": 0.48
+}
+
+  -> model output: {
+  "center_x": 0.56,
+  "center_y": 0.48
+}
+
+  -> predicted location: center_x=0.3017, center_y=0.4955
+  -> saved representative frame: /workspace/yujin/code/accident/frames/aF2Hbp8C23A_00_t3.622.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "t-bone"
+}
+
+  -> final parsed result: accident_time=3.6216, center_x=0.3017, center_y=0.4955, type=t-bone
+  -> CSV updated: /workspace/yujin/result/test8.csv (19 rows saved)
+
+[20] Processing: videos/82sQ7N-aHOw_00.mp4
+  -> optical-flow stats: points=78 score_max=1.668290 score_mean=0.565269 score_std=0.437431
+  -> optical-flow candidates:
+     rank=1 t=5.414s score=1.668290 z=2.522 motion=1.533289 delta=0.192858 idx=26 KEEP
+     rank=2 t=12.433s score=1.444489 z=2.010 motion=1.397575 delta=0.067020 idx=61 KEEP
+     rank=3 t=10.829s score=1.281700 z=1.638 motion=1.193882 delta=0.125455 idx=53 KEEP
+     rank=4 t=8.823s score=0.673540 z=0.248 motion=0.656630 delta=0.024156 idx=43 KEEP
+     rank=5 t=4.412s score=0.520413 z=-0.103 motion=0.480565 delta=0.056925 idx=21 KEEP
+  -> candidate clips for Qwen selector:
+     index=1 rank=1 t=5.414s score=1.668290 z=2.522
+     index=2 rank=2 t=12.433s score=1.444489 z=2.010
+     index=3 rank=3 t=10.829s score=1.281700 z=1.638
+     index=4 rank=4 t=8.823s score=0.673540 z=0.248
+     index=5 rank=5 t=4.412s score=0.520413 z=-0.103
+  -> model output: {
+  "selected_candidate_index": 1
+}
+
+  -> selected OF candidate: index=1 rank=1 time=5.4144s score=1.668290 z=2.522
+  -> predicted accident_time=5.4144
+  -> model output: {
+  "center_x": 0.53,
+  "center_y": 0.78
+}
+
+  -> model output: {
+  "center_x": 0.55,
+  "center_y": 0.85
+}
+
+  -> model output: {
+  "center_x": 0.52,
+  "center_y": 0.68
+}
+
+  -> model output: {
+  "center_x": 0.58,
+  "center_y": 0.68
+}
+
+  -> model output: {
+  "center_x": 0.63,
+  "center_y": 0.78
+}
+
+  -> predicted location: center_x=0.5616, center_y=0.8514
+  -> saved representative frame: /workspace/yujin/code/accident/frames/82sQ7N-aHOw_00_t5.414.jpg
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=5.4144, center_x=0.5616, center_y=0.8514, type=single
+  -> CSV updated: /workspace/yujin/result/test8.csv (20 rows saved)
+
+[21] Processing: videos/bJMc3sNP2AU_00.mp4
+  -> optical-flow stats: points=33 score_max=0.112280 score_mean=0.084357 score_std=0.016056
+  -> optical-flow candidates:
+     rank=1 t=5.771s score=0.112280 z=1.739 motion=0.109297 delta=0.004262 idx=28 KEEP
+     rank=2 t=0.597s score=0.108545 z=1.506 motion=0.098005 delta=0.015058 idx=2 KEEP
+     rank=3 t=2.786s score=0.107940 z=1.469 motion=0.093850 delta=0.020128 idx=13 KEEP
+     rank=4 t=4.378s score=0.099464 z=0.941 motion=0.090012 delta=0.013503 idx=21 KEEP
+  -> candidate clips for Qwen selector:
+     index=1 rank=1 t=5.771s score=0.112280 z=1.739
+     index=2 rank=2 t=0.597s score=0.108545 z=1.506
+     index=3 rank=3 t=2.786s score=0.107940 z=1.469
+     index=4 rank=4 t=4.378s score=0.099464 z=0.941
+  -> model output: {
+  "selected_candidate_index": 1
+}
+
+  -> selected OF candidate: index=1 rank=1 time=5.7710s score=0.112280 z=1.739
+  -> predicted accident_time=5.7710
+  -> model output: {"center_x": 0.83, "center_y": 0.19}
+
+  -> model output: {"center_x": 0.83, "center_y": 0.19}
+
+  -> model output: {"center_x": 0.83, "center_y": 0.19}
+
+  -> model output: {
+  "center_x": 0.58,
+  "center_y": 0.48
+}
+
+  -> model output: {
+  "center_x": 0.52,
+  "center_y": 0.48
+}
+
+  -> predicted location: center_x=0.8322, center_y=0.1900
+  -> saved representative frame: /workspace/yujin/code/accident/frames/bJMc3sNP2AU_00_t5.771.jpg
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=5.7710, center_x=0.8322, center_y=0.1900, type=single
+  -> CSV updated: /workspace/yujin/result/test8.csv (21 rows saved)
+
+[22] Processing: videos/XaqA-uzqeNc_00.mp4
+  -> optical-flow stats: points=40 score_max=3.168758 score_mean=1.566646 score_std=0.876953
+  -> optical-flow candidates:
+     rank=1 t=6.627s score=3.168758 z=1.827 motion=3.024781 delta=0.205682 idx=32 KEEP
+     rank=2 t=2.410s score=2.631643 z=1.214 motion=2.494294 delta=0.196213 idx=11 KEEP
+     rank=3 t=0.602s score=2.440984 z=0.997 motion=2.205664 delta=0.336170 idx=2 KEEP
+     rank=4 t=7.631s score=1.681853 z=0.131 motion=1.681853 delta=0.000000 idx=37 KEEP
+     rank=5 t=5.623s score=1.087433 z=-0.546 motion=0.920077 delta=0.239081 idx=27 KEEP
+  -> candidate clips for Qwen selector:
+     index=1 rank=1 t=6.627s score=3.168758 z=1.827
+     index=2 rank=2 t=2.410s score=2.631643 z=1.214
+     index=3 rank=3 t=0.602s score=2.440984 z=0.997
+     index=4 rank=4 t=7.631s score=1.681853 z=0.131
+     index=5 rank=5 t=5.623s score=1.087433 z=-0.546
+  -> model output: {
+  "selected_candidate_index": 2
+}
+
+  -> selected OF candidate: index=2 rank=2 time=2.4098s score=2.631643 z=1.214
+  -> predicted accident_time=2.4098
+  -> model output: {
+  "center_x": 0.45,
+  "center_y": 0.62
+}
+
+  -> model output: {
+  "center_x": 0.45,
+  "center_y": 0.48
+}
+
+  -> model output: {
+  "center_x": 0.31,
+  "center_y": 0.44
+}
+
+  -> model output: {
+  "center_x": 0.56,
+  "center_y": 0.54
+}
+
+  -> model output: {
+  "center_x": 0.5,
+  "center_y": 0.5
+}
+
+  -> predicted location: center_x=0.4504, center_y=0.4800
+  -> saved representative frame: /workspace/yujin/code/accident/frames/XaqA-uzqeNc_00_t2.410.jpg
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.99
+}
+
+  -> final parsed result: accident_time=2.4098, center_x=0.4504, center_y=0.4800, type=single
+  -> CSV updated: /workspace/yujin/result/test8.csv (22 rows saved)
+
+[23] Processing: videos/gp_9zTMpVrs_00.mp4
+  -> optical-flow stats: points=140 score_max=4.211919 score_mean=1.620696 score_std=0.901252
+  -> optical-flow candidates:
+     rank=1 t=15.772s score=4.211919 z=2.875 motion=3.971764 delta=0.343079 idx=78 KEEP
+     rank=2 t=6.189s score=3.051069 z=1.587 motion=2.985317 delta=0.093931 idx=30 KEEP
+     rank=3 t=9.982s score=2.845801 z=1.359 motion=2.783354 delta=0.089209 idx=49 KEEP
+     rank=4 t=13.177s score=2.589125 z=1.075 motion=2.267190 delta=0.459907 idx=65 KEEP
+     rank=5 t=17.369s score=2.435143 z=0.904 motion=2.296497 delta=0.198066 idx=86 KEEP
+  -> candidate clips for Qwen selector:
+     index=1 rank=1 t=15.772s score=4.211919 z=2.875
+     index=2 rank=2 t=6.189s score=3.051069 z=1.587
+     index=3 rank=3 t=9.982s score=2.845801 z=1.359
+     index=4 rank=4 t=13.177s score=2.589125 z=1.075
+     index=5 rank=5 t=17.369s score=2.435143 z=0.904
+  -> model output: {
+  "selected_candidate_index": 1
+}
+
+  -> selected OF candidate: index=1 rank=1 time=15.7719s score=4.211919 z=2.875
+  -> predicted accident_time=15.7719
+  -> model output: {
+  "center_x": 0.72,
+  "center_y": 0.64
+}
+
+  -> model output: {
+  "center_x": 0.56,
+  "center_y": 0.66
+}
+
+  -> model output: {
+  "center_x": 0.48,
+  "center_y": 0.39
+}
+
+  -> model output: {"center_x": 0.5, "center_y": 0.5}
+
+  -> model output: {
+  "center_x": 0.5,
+  "center_y": 0.5
+}
+
+  -> predicted location: center_x=0.5600, center_y=0.6398
+  -> saved representative frame: /workspace/yujin/code/accident/frames/gp_9zTMpVrs_00_t15.772.jpg
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=15.7719, center_x=0.5600, center_y=0.6398, type=single
+  -> CSV updated: /workspace/yujin/result/test8.csv (23 rows saved)
+
+[24] Processing: videos/B_nBw3PcHXg_00.mp4
+  -> optical-flow stats: points=158 score_max=1.641524 score_mean=0.368032 score_std=0.398313
+  -> optical-flow candidates:
+     rank=1 t=0.567s score=1.641524 z=3.197 motion=1.437634 delta=0.291271 idx=2 KEEP
+     rank=2 t=29.085s score=1.577452 z=3.036 motion=1.478782 delta=0.140958 idx=153 KEEP
+     rank=3 t=3.400s score=1.203287 z=2.097 motion=1.066630 delta=0.195224 idx=17 KEEP
+     rank=4 t=1.700s score=0.949145 z=1.459 motion=0.949145 delta=0.000000 idx=8 KEEP
+     rank=5 t=4.533s score=0.546222 z=0.447 motion=0.546222 delta=0.000000 idx=23 KEEP
+  -> candidate clips for Qwen selector:
+     index=1 rank=1 t=0.567s score=1.641524 z=3.197
+     index=2 rank=2 t=29.085s score=1.577452 z=3.036
+     index=3 rank=3 t=3.400s score=1.203287 z=2.097
+     index=4 rank=4 t=1.700s score=0.949145 z=1.459
+     index=5 rank=5 t=4.533s score=0.546222 z=0.447
+  -> model output: {
+  "selected_candidate_index": 4
+}
+
+  -> selected OF candidate: index=4 rank=4 time=1.6998s score=0.949145 z=1.459
+  -> predicted accident_time=1.6998
+  -> model output: {"center_x": 0.39, "center_y": 0.45}
+
+  -> model output: {"center_x": 0.42, "center_y": 0.45}
+
+  -> model output: {"center_x": 0.44, "center_y": 0.44}
+
+  -> model output: {
+  "center_x": 0.58,
+  "center_y": 0.45
+}
+
+  -> model output: {
+  "center_x": 0.58,
+  "center_y": 0.42
+}
+
+  -> predicted location: center_x=0.4408, center_y=0.4300
+  -> saved representative frame: /workspace/yujin/code/accident/frames/B_nBw3PcHXg_00_t1.700.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "rear-end"
+}
+
+  -> final parsed result: accident_time=1.6998, center_x=0.4408, center_y=0.4300, type=rear-end
+  -> CSV updated: /workspace/yujin/result/test8.csv (24 rows saved)
+
+[25] Processing: videos/jq-5EaxSR3M_00.mp4
+  -> optical-flow stats: points=149 score_max=2.173885 score_mean=0.873019 score_std=0.609476
+  -> optical-flow candidates:
+     rank=1 t=7.800s score=2.173885 z=2.134 motion=2.046647 delta=0.181768 idx=38 KEEP
+     rank=2 t=0.800s score=2.127891 z=2.059 motion=1.879750 delta=0.354488 idx=3 KEEP
+     rank=3 t=3.000s score=2.102510 z=2.017 motion=2.055685 delta=0.066894 idx=14 KEEP
+     rank=4 t=26.800s score=1.936520 z=1.745 motion=1.866478 delta=0.100060 idx=133 KEEP
+     rank=5 t=6.000s score=1.859058 z=1.618 motion=1.715016 delta=0.205775 idx=29 KEEP
+  -> candidate clips for Qwen selector:
+     index=1 rank=1 t=7.800s score=2.173885 z=2.134
+     index=2 rank=2 t=0.800s score=2.127891 z=2.059
+     index=3 rank=3 t=3.000s score=2.102510 z=2.017
+     index=4 rank=4 t=26.800s score=1.936520 z=1.745
+     index=5 rank=5 t=6.000s score=1.859058 z=1.618
+  -> model output: {
+  "selected_candidate_index": 3
+}
+
+  -> selected OF candidate: index=3 rank=3 time=3.0000s score=2.102510 z=2.017
+  -> predicted accident_time=3.0000
+  -> model output: {
+  "center_x": 0.51,
+  "center_y": 0.32
+}
+
+  -> model output: {
+  "center_x": 0.51,
+  "center_y": 0.31
+}
+
+  -> model output: {
+  "center_x": 0.68,
+  "center_y": 0.44
+}
+
+  -> model output: {
+  "center_x": 0.56,
+  "center_y": 0.52
+}
+
+  -> model output: {
+  "center_x": 0.38,
+  "center_y": 0.42
+}
+
+  -> predicted location: center_x=0.5100, center_y=0.3200
+  -> saved representative frame: /workspace/yujin/code/accident/frames/jq-5EaxSR3M_00_t3.000.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "rear-end"
+}
+
+  -> final parsed result: accident_time=3.0000, center_x=0.5100, center_y=0.3200, type=rear-end
+  -> CSV updated: /workspace/yujin/result/test8.csv (25 rows saved)
+
+[26] Processing: videos/4jVVNw9AF2s_00.mp4
+  -> optical-flow stats: points=149 score_max=1.091488 score_mean=0.298214 score_std=0.259234
+  -> optical-flow candidates:
+     rank=1 t=20.502s score=1.091488 z=3.060 motion=1.004297 delta=0.124558 idx=101 KEEP
+     rank=2 t=28.542s score=0.948922 z=2.510 motion=0.773868 delta=0.250077 idx=141 KEEP
+     rank=3 t=23.517s score=0.740561 z=1.706 motion=0.715147 delta=0.036305 idx=116 KEEP
+     rank=4 t=27.336s score=0.664509 z=1.413 motion=0.628697 delta=0.051160 idx=135 KEEP
+     rank=5 t=1.005s score=0.565924 z=1.033 motion=0.527883 delta=0.054344 idx=4 KEEP
+  -> candidate clips for Qwen selector:
+     index=1 rank=1 t=20.502s score=1.091488 z=3.060
+     index=2 rank=2 t=28.542s score=0.948922 z=2.510
+     index=3 rank=3 t=23.517s score=0.740561 z=1.706
+     index=4 rank=4 t=27.336s score=0.664509 z=1.413
+     index=5 rank=5 t=1.005s score=0.565924 z=1.033
+  -> model output: {
+  "selected_candidate_index": 5
+}
+
+  -> selected OF candidate: index=5 rank=5 time=1.0050s score=0.565924 z=1.033
+  -> predicted accident_time=1.0050
+  -> model output: {
+  "center_x": 0.37,
+  "center_y": 0.43
+}
+
+  -> model output: {
+  "center_x": 0.81,
+  "center_y": 0.85
+}
+
+  -> model output: {
+  "center_x": 0.25,
+  "center_y": 0.42
+}
+
+  -> model output: {
+  "center_x": 0.46,
+  "center_y": 0.52
+}
+
+  -> model output: {
+  "center_x": 0.53,
+  "center_y": 0.58
+}
+
+  -> predicted location: center_x=0.3700, center_y=0.4371
+  -> saved representative frame: /workspace/yujin/code/accident/frames/4jVVNw9AF2s_00_t1.005.jpg
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=1.0050, center_x=0.3700, center_y=0.4371, type=single
+  -> CSV updated: /workspace/yujin/result/test8.csv (26 rows saved)
+
+[27] Processing: videos/FR3eYZzgeJY_00.mp4
+  -> optical-flow stats: points=182 score_max=0.680472 score_mean=0.118781 score_std=0.121169
+  -> optical-flow candidates:
+     rank=1 t=3.128s score=0.680472 z=4.636 motion=0.634495 delta=0.065681 idx=18 KEEP
+     rank=2 t=1.975s score=0.382547 z=2.177 motion=0.364665 delta=0.025545 idx=11 KEEP
+     rank=3 t=4.774s score=0.181814 z=0.520 motion=0.179034 delta=0.003971 idx=28 KEEP
+     rank=4 t=11.852s score=0.177731 z=0.487 motion=0.168633 delta=0.012997 idx=71 KEEP
+     rank=5 t=13.169s score=0.164884 z=0.380 motion=0.164609 delta=0.000393 idx=79 KEEP
+  -> candidate clips for Qwen selector:
+     index=1 rank=1 t=3.128s score=0.680472 z=4.636
+     index=2 rank=2 t=1.975s score=0.382547 z=2.177
+     index=3 rank=3 t=4.774s score=0.181814 z=0.520
+     index=4 rank=4 t=11.852s score=0.177731 z=0.487
+     index=5 rank=5 t=13.169s score=0.164884 z=0.380
+  -> model output: {
+  "selected_candidate_index": 5
+}
+
+  -> selected OF candidate: index=5 rank=5 time=13.1694s score=0.164884 z=0.380
+  -> predicted accident_time=13.1694
+  -> model output: {
+  "center_x": 0.53,
+  "center_y": 0.53
+}
+
+  -> model output: {
+  "center_x": 0.52,
+  "center_y": 0.53
+}
+
+  -> model output: {
+  "center_x": 0.53,
+  "center_y": 0.52
+}
+
+  -> model output: {
+  "center_x": 0.08,
+  "center_y": 0.48
+}
+
+  -> model output: {
+  "center_x": 0.5,
+  "center_y": 0.5
+}
+
+  -> predicted location: center_x=0.5299, center_y=0.5299
+  -> saved representative frame: /workspace/yujin/code/accident/frames/FR3eYZzgeJY_00_t13.169.jpg
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=13.1694, center_x=0.5299, center_y=0.5299, type=single
+  -> CSV updated: /workspace/yujin/result/test8.csv (27 rows saved)
+
+[28] Processing: videos/ApyekBAgfg8_00.mp4
+  -> optical-flow stats: points=149 score_max=0.923169 score_mean=0.271723 score_std=0.210603
+  -> optical-flow candidates:
+     rank=1 t=1.204s score=0.923169 z=3.093 motion=0.833708 delta=0.127802 idx=5 KEEP
+     rank=2 t=3.613s score=0.877758 z=2.878 motion=0.849663 delta=0.040135 idx=17 KEEP
+     rank=3 t=2.609s score=0.604929 z=1.582 motion=0.572632 delta=0.046139 idx=12 KEEP
+     rank=4 t=4.617s score=0.404231 z=0.629 motion=0.404231 delta=0.000000 idx=22 KEEP
+     rank=5 t=0.201s score=0.386418 z=0.545 motion=0.386418 delta=0.000000 idx=0 REJECT(too_close_to_start<=0.3)
+  -> candidate clips for Qwen selector:
+     index=1 rank=1 t=1.204s score=0.923169 z=3.093
+     index=2 rank=2 t=3.613s score=0.877758 z=2.878
+     index=3 rank=3 t=2.609s score=0.604929 z=1.582
+     index=4 rank=4 t=4.617s score=0.404231 z=0.629
+  -> model output: {
+  "selected_candidate_index": 4
+}
+
+  -> selected OF candidate: index=4 rank=4 time=4.6166s score=0.404231 z=0.629
+  -> predicted accident_time=4.6166
+  -> model output: {
+  "center_x": 0.71,
+  "center_y": 0.71
+}
+
+  -> model output: {
+  "center_x": 0.71,
+  "center_y": 0.71
+}
+
+  -> model output: {
+  "center_x": 0.71,
+  "center_y": 0.71
+}
+
+  -> model output: {
+  "center_x": 0.53,
+  "center_y": 0.51
+}
+
+  -> model output: {
+  "center_x": 0.48,
+  "center_y": 0.62
+}
+
+  -> predicted location: center_x=0.7100, center_y=0.7126
+  -> saved representative frame: /workspace/yujin/code/accident/frames/ApyekBAgfg8_00_t4.617.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "sideswipe"
+}
+
+  -> final parsed result: accident_time=4.6166, center_x=0.7100, center_y=0.7126, type=sideswipe
+  -> CSV updated: /workspace/yujin/result/test8.csv (28 rows saved)
+
+[29] Processing: videos/Mem77KKhF8c_00.mp4
+  -> optical-flow stats: points=146 score_max=0.678767 score_mean=0.189245 score_std=0.120176
+  -> optical-flow candidates:
+     rank=1 t=1.024s score=0.678767 z=4.073 motion=0.581899 delta=0.138383 idx=4 KEEP
+     rank=2 t=2.047s score=0.443149 z=2.113 motion=0.443149 delta=0.000000 idx=9 KEEP
+     rank=3 t=3.685s score=0.368559 z=1.492 motion=0.355756 delta=0.018289 idx=17 KEEP
+     rank=4 t=21.906s score=0.306343 z=0.974 motion=0.271404 delta=0.049912 idx=106 KEEP
+     rank=5 t=29.481s score=0.287179 z=0.815 motion=0.269873 delta=0.024723 idx=143 KEEP
+  -> candidate clips for Qwen selector:
+     index=1 rank=1 t=1.024s score=0.678767 z=4.073
+     index=2 rank=2 t=2.047s score=0.443149 z=2.113
+     index=3 rank=3 t=3.685s score=0.368559 z=1.492
+     index=4 rank=4 t=21.906s score=0.306343 z=0.974
+     index=5 rank=5 t=29.481s score=0.287179 z=0.815
+  -> model output: {
+  "selected_candidate_index": 2
+}
+
+  -> selected OF candidate: index=2 rank=2 time=2.0473s score=0.443149 z=2.113
+  -> predicted accident_time=2.0473
+  -> model output: {
+  "center_x": 0.26,
+  "center_y": 0.64
+}
+
+  -> model output: {
+  "center_x": 0.21,
+  "center_y": 0.61
+}
+
+  -> model output: {
+  "center_x": 0.36,
+  "center_y": 0.61
+}
+
+  -> model output: {
+  "center_x": 0.52,
+  "center_y": 0.55
+}
+
+  -> model output: {
+  "center_x": 0.48,
+  "center_y": 0.52
+}
+
+  -> predicted location: center_x=0.2600, center_y=0.6157
+  -> saved representative frame: /workspace/yujin/code/accident/frames/Mem77KKhF8c_00_t2.047.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "sideswipe"
+}
+
+  -> final parsed result: accident_time=2.0473, center_x=0.2600, center_y=0.6157, type=sideswipe
+  -> CSV updated: /workspace/yujin/result/test8.csv (29 rows saved)
+
+[30] Processing: videos/GSvQCAPnFGo_00.mp4
+  -> optical-flow stats: points=149 score_max=1.123520 score_mean=0.250741 score_std=0.261684
+  -> optical-flow candidates:
+     rank=1 t=21.678s score=1.123520 z=3.335 motion=1.088126 delta=0.050563 idx=107 KEEP
+     rank=2 t=22.682s score=0.648794 z=1.521 motion=0.648794 delta=0.000000 idx=112 KEEP
+     rank=3 t=4.014s score=0.643335 z=1.500 motion=0.610864 delta=0.046388 idx=19 KEEP
+     rank=4 t=20.675s score=0.627203 z=1.439 motion=0.490055 delta=0.195925 idx=102 KEEP
+     rank=5 t=12.244s score=0.579286 z=1.255 motion=0.444691 delta=0.192278 idx=60 KEEP
+  -> candidate clips for Qwen selector:
+     index=1 rank=1 t=21.678s score=1.123520 z=3.335
+     index=2 rank=2 t=22.682s score=0.648794 z=1.521
+     index=3 rank=3 t=4.014s score=0.643335 z=1.500
+     index=4 rank=4 t=20.675s score=0.627203 z=1.439
+     index=5 rank=5 t=12.244s score=0.579286 z=1.255
+  -> model output: {
+  "selected_candidate_index": 3
+}
+
+  -> selected OF candidate: index=3 rank=3 time=4.0145s score=0.643335 z=1.500
+  -> predicted accident_time=4.0145
+  -> model output: {"center_x": 0.698, "center_y": 0.545}
+
+  -> model output: {
+  "center_x": 0.72,
+  "center_y": 0.54
+}
+
+  -> model output: {
+  "center_x": 0.74,
+  "center_y": 0.54
+}
+
+  -> model output: {
+  "center_x": 0.52,
+  "center_y": 0.55
+}
+
+  -> model output: {
+  "center_x": 0.55,
+  "center_y": 0.55
+}
+
+  -> predicted location: center_x=0.7277, center_y=0.5526
+  -> saved representative frame: /workspace/yujin/code/accident/frames/GSvQCAPnFGo_00_t4.014.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "t-bone"
+}
+
+  -> final parsed result: accident_time=4.0145, center_x=0.7277, center_y=0.5526, type=t-bone
+  -> CSV updated: /workspace/yujin/result/test8.csv (30 rows saved)
+
+[31] Processing: videos/fgI4vUtP_1I_00.mp4
+  -> optical-flow stats: points=149 score_max=1.377646 score_mean=0.497877 score_std=0.298448
+  -> optical-flow candidates:
+     rank=1 t=27.060s score=1.377646 z=2.948 motion=1.252680 delta=0.178524 idx=134 KEEP
+     rank=2 t=12.628s score=1.239435 z=2.485 motion=1.205644 delta=0.048272 idx=62 KEEP
+     rank=3 t=1.403s score=1.128463 z=2.113 motion=1.060179 delta=0.097549 idx=6 KEEP
+     rank=4 t=29.465s score=0.860922 z=1.216 motion=0.763592 delta=0.139044 idx=146 KEEP
+     rank=5 t=14.833s score=0.824173 z=1.093 motion=0.789027 delta=0.050208 idx=73 KEEP
+  -> candidate clips for Qwen selector:
+     index=1 rank=1 t=27.060s score=1.377646 z=2.948
+     index=2 rank=2 t=12.628s score=1.239435 z=2.485
+     index=3 rank=3 t=1.403s score=1.128463 z=2.113
+     index=4 rank=4 t=29.465s score=0.860922 z=1.216
+     index=5 rank=5 t=14.833s score=0.824173 z=1.093
+  -> model output: {
+  "selected_candidate_index": 3
+}
+
+  -> selected OF candidate: index=3 rank=3 time=1.4031s score=1.128463 z=2.113
+  -> predicted accident_time=1.4031
+  -> model output: {
+  "center_x": 0.47,
+  "center_y": 0.41
+}
+
+  -> model output: {
+  "center_x": 0.47,
+  "center_y": 0.41
+}
+
+  -> model output: {"center_x": 0.47, "center_y": 0.41}
+
+  -> model output: {
+  "center_x": 0.52,
+  "center_y": 0.48
+}
+
+  -> model output: {
+  "center_x": 0.54,
+  "center_y": 0.56
+}
+
+  -> predicted location: center_x=0.4774, center_y=0.4100
+  -> saved representative frame: /workspace/yujin/code/accident/frames/fgI4vUtP_1I_00_t1.403.jpg
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=1.4031, center_x=0.4774, center_y=0.4100, type=single
+  -> CSV updated: /workspace/yujin/result/test8.csv (31 rows saved)
+
+[32] Processing: videos/TthKPyywzu8_00.mp4
+  -> optical-flow stats: points=144 score_max=0.254497 score_mean=0.084981 score_std=0.059104
+  -> optical-flow candidates:
+     rank=1 t=6.228s score=0.254497 z=2.868 motion=0.246231 delta=0.011808 idx=29 KEEP
+     rank=2 t=7.473s score=0.224189 z=2.355 motion=0.214285 delta=0.014149 idx=35 KEEP
+     rank=3 t=9.549s score=0.192157 z=1.813 motion=0.167918 delta=0.034628 idx=45 KEEP
+     rank=4 t=1.246s score=0.181560 z=1.634 motion=0.158658 delta=0.032717 idx=5 KEEP
+     rank=5 t=5.190s score=0.159285 z=1.257 motion=0.150310 delta=0.012821 idx=24 KEEP
+  -> candidate clips for Qwen selector:
+     index=1 rank=1 t=6.228s score=0.254497 z=2.868
+     index=2 rank=2 t=7.473s score=0.224189 z=2.355
+     index=3 rank=3 t=9.549s score=0.192157 z=1.813
+     index=4 rank=4 t=1.246s score=0.181560 z=1.634
+     index=5 rank=5 t=5.190s score=0.159285 z=1.257
+  -> model output: {
+  "selected_candidate_index": 3
+}
+
+  -> selected OF candidate: index=3 rank=3 time=9.5490s score=0.192157 z=1.813
+  -> predicted accident_time=9.5490
+  -> model output: {"center_x": 0.69, "center_y": 0.37}
+
+  -> model output: {"center_x": 0.68, "center_y": 0.37}
+
+  -> model output: {"center_x": 0.688, "center_y": 0.374}
+
+  -> model output: {
+  "center_x": 0.51,
+  "center_y": 0.51
+}
+
+  -> model output: {
+  "center_x": 0.51,
+  "center_y": 0.53
+}
+
+  -> predicted location: center_x=0.6905, center_y=0.3733
+  -> saved representative frame: /workspace/yujin/code/accident/frames/TthKPyywzu8_00_t9.549.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "t-bone"
+}
+
+  -> final parsed result: accident_time=9.5490, center_x=0.6905, center_y=0.3733, type=t-bone
+  -> CSV updated: /workspace/yujin/result/test8.csv (32 rows saved)
+
+[33] Processing: videos/LklNl33KztU_00.mp4
+  -> optical-flow stats: points=133 score_max=3.014015 score_mean=0.708176 score_std=0.488737
+  -> optical-flow candidates:
+     rank=1 t=11.186s score=3.014015 z=4.718 motion=2.681793 delta=0.474604 idx=55 KEEP
+     rank=2 t=13.383s score=2.146709 z=2.943 motion=2.009536 delta=0.195962 idx=66 KEEP
+     rank=3 t=0.599s score=1.172888 z=0.951 motion=1.037309 delta=0.193685 idx=2 KEEP
+     rank=4 t=8.589s score=0.812221 z=0.213 motion=0.794589 delta=0.025189 idx=42 KEEP
+     rank=5 t=6.792s score=0.808943 z=0.206 motion=0.776571 delta=0.046246 idx=33 KEEP
+  -> candidate clips for Qwen selector:
+     index=1 rank=1 t=11.186s score=3.014015 z=4.718
+     index=2 rank=2 t=13.383s score=2.146709 z=2.943
+     index=3 rank=3 t=0.599s score=1.172888 z=0.951
+     index=4 rank=4 t=8.589s score=0.812221 z=0.213
+     index=5 rank=5 t=6.792s score=0.808943 z=0.206
+  -> model output: {
+  "selected_candidate_index": 4
+}
+
+  -> selected OF candidate: index=4 rank=4 time=8.5892s score=0.812221 z=0.213
+  -> predicted accident_time=8.5892
+  -> model output: {
+  "center_x": 0.866,
+  "center_y": 0.401
+}
+
+  -> model output: {
+  "center_x": 0.86,
+  "center_y": 0.4
+}
+
+  -> model output: {"center_x": 0.86, "center_y": 0.4}
+
+  -> model output: {
+  "center_x": 0.65,
+  "center_y": 0.52
+}
+
+  -> model output: {
+  "center_x": 0.54,
+  "center_y": 0.52
+}
+
+  -> predicted location: center_x=0.8601, center_y=0.4056
+  -> saved representative frame: /workspace/yujin/code/accident/frames/LklNl33KztU_00_t8.589.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "rear-end"
+}
+
+  -> final parsed result: accident_time=8.5892, center_x=0.8601, center_y=0.4056, type=rear-end
+  -> CSV updated: /workspace/yujin/result/test8.csv (33 rows saved)
+
+[34] Processing: videos/tK1wd_HCYNo_00.mp4
+  -> optical-flow stats: points=150 score_max=2.031032 score_mean=0.658884 score_std=0.414070
+  -> optical-flow candidates:
+     rank=1 t=13.585s score=2.031032 z=3.314 motion=1.903161 delta=0.182673 idx=67 KEEP
+     rank=2 t=15.782s score=1.726320 z=2.578 motion=1.704640 delta=0.030972 idx=78 KEEP
+     rank=3 t=12.386s score=1.303568 z=1.557 motion=1.256680 delta=0.066983 idx=61 KEEP
+     rank=4 t=26.171s score=1.055068 z=0.957 motion=0.985344 delta=0.099606 idx=130 KEEP
+     rank=5 t=19.378s score=1.015960 z=0.862 motion=0.981718 delta=0.048918 idx=96 KEEP
+  -> candidate clips for Qwen selector:
+     index=1 rank=1 t=13.585s score=2.031032 z=3.314
+     index=2 rank=2 t=15.782s score=1.726320 z=2.578
+     index=3 rank=3 t=12.386s score=1.303568 z=1.557
+     index=4 rank=4 t=26.171s score=1.055068 z=0.957
+     index=5 rank=5 t=19.378s score=1.015960 z=0.862
+  -> model output: {
+  "selected_candidate_index": 4
+}
+
+  -> selected OF candidate: index=4 rank=4 time=26.1710s score=1.055068 z=0.957
+  -> predicted accident_time=26.1710
+  -> model output: {"center_x": 0.48, "center_y": 0.57}
+
+  -> model output: {"center_x": 0.47, "center_y": 0.56}
+
+  -> model output: {"center_x": 0.47, "center_y": 0.55}
+
+  -> model output: {
+  "center_x": 0.48,
+  "center_y": 0.55
+}
+
+  -> model output: {
+  "center_x": 0.55,
+  "center_y": 0.65
+}
+
+  -> predicted location: center_x=0.4700, center_y=0.5793
+  -> saved representative frame: /workspace/yujin/code/accident/frames/tK1wd_HCYNo_00_t26.171.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "rear-end"
+}
+
+  -> final parsed result: accident_time=26.1710, center_x=0.4700, center_y=0.5793, type=rear-end
+  -> CSV updated: /workspace/yujin/result/test8.csv (34 rows saved)
+
+[35] Processing: videos/mntY3Xh8lT4_00.mp4
+  -> optical-flow stats: points=119 score_max=0.448241 score_mean=0.120087 score_std=0.087526
+  -> optical-flow candidates:
+     rank=1 t=3.447s score=0.448241 z=3.749 motion=0.405049 delta=0.061702 idx=16 KEEP
+     rank=2 t=5.069s score=0.362939 z=2.775 motion=0.341536 delta=0.030576 idx=24 KEEP
+     rank=3 t=21.900s score=0.142205 z=0.253 motion=0.128720 delta=0.019263 idx=107 KEEP
+     rank=4 t=0.608s score=0.133750 z=0.156 motion=0.125001 delta=0.012498 idx=2 KEEP
+     rank=5 t=20.683s score=0.130669 z=0.121 motion=0.127005 delta=0.005234 idx=101 KEEP
+  -> candidate clips for Qwen selector:
+     index=1 rank=1 t=3.447s score=0.448241 z=3.749
+     index=2 rank=2 t=5.069s score=0.362939 z=2.775
+     index=3 rank=3 t=21.900s score=0.142205 z=0.253
+     index=4 rank=4 t=0.608s score=0.133750 z=0.156
+     index=5 rank=5 t=20.683s score=0.130669 z=0.121
+  -> model output: {
+  "selected_candidate_index": 3
+}
+
+  -> selected OF candidate: index=3 rank=3 time=21.9000s score=0.142205 z=0.253
+  -> predicted accident_time=21.9000
+  -> model output: {
+  "center_x": 0.38,
+  "center_y": 0.7
+}
+
+  -> model output: {
+  "center_x": 0.38,
+  "center_y": 0.7
+}
+
+  -> model output: {
+  "center_x": 0.39,
+  "center_y": 0.69
+}
+
+  -> model output: {
+  "center_x": 0.51,
+  "center_y": 0.51
+}
+
+  -> model output: {
+  "center_x": 0.52,
+  "center_y": 0.51
+}
+
+  -> predicted location: center_x=0.3835, center_y=0.7022
+  -> saved representative frame: /workspace/yujin/code/accident/frames/mntY3Xh8lT4_00_t21.900.jpg
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=21.9000, center_x=0.3835, center_y=0.7022, type=single
+  -> CSV updated: /workspace/yujin/result/test8.csv (35 rows saved)
+
+[36] Processing: videos/CzOWGXrwbp4_00.mp4
+  -> optical-flow stats: points=100 score_max=2.407864 score_mean=0.615829 score_std=0.571784
+  -> optical-flow candidates:
+     rank=1 t=4.893s score=2.407864 z=3.134 motion=2.101581 delta=0.437547 idx=22 KEEP
+     rank=2 t=7.233s score=1.400293 z=1.372 motion=1.361132 delta=0.055944 idx=33 KEEP
+     rank=3 t=18.507s score=1.316333 z=1.225 motion=1.225281 delta=0.130074 idx=86 KEEP
+     rank=4 t=5.956s score=1.222558 z=1.061 motion=1.222558 delta=0.000000 idx=27 KEEP
+     rank=5 t=1.915s score=1.213180 z=1.045 motion=1.154360 delta=0.084028 idx=8 KEEP
+  -> candidate clips for Qwen selector:
+     index=1 rank=1 t=4.893s score=2.407864 z=3.134
+     index=2 rank=2 t=7.233s score=1.400293 z=1.372
+     index=3 rank=3 t=18.507s score=1.316333 z=1.225
+     index=4 rank=4 t=5.956s score=1.222558 z=1.061
+     index=5 rank=5 t=1.915s score=1.213180 z=1.045
+  -> model output: {
+  "selected_candidate_index": 2
+}
+
+  -> selected OF candidate: index=2 rank=2 time=7.2327s score=1.400293 z=1.372
+  -> predicted accident_time=7.2327
+  -> model output: {"center_x": 0.44, "center_y": 0.75}
+
+  -> model output: {
+  "center_x": 0.43,
+  "center_y": 0.82
+}
+
+  -> model output: {
+  "center_x": 0.36,
+  "center_y": 0.89
+}
+
+  -> model output: {
+  "center_x": 0.45,
+  "center_y": 0.65
+}
+
+  -> model output: {
+  "center_x": 0.5,
+  "center_y": 0.5
+}
+
+  -> predicted location: center_x=0.4297, center_y=0.8200
+  -> saved representative frame: /workspace/yujin/code/accident/frames/CzOWGXrwbp4_00_t7.233.jpg
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=7.2327, center_x=0.4297, center_y=0.8200, type=single
+  -> CSV updated: /workspace/yujin/result/test8.csv (36 rows saved)
+
+[37] Processing: videos/7AFnEpBVrr4_00.mp4
+  -> optical-flow stats: points=147 score_max=0.101165 score_mean=0.051272 score_std=0.020754
+  -> optical-flow candidates:
+     rank=1 t=29.425s score=0.101165 z=2.404 motion=0.092371 delta=0.012562 idx=144 KEEP
+     rank=2 t=6.088s score=0.096634 z=2.186 motion=0.095694 delta=0.001342 idx=29 KEEP
+     rank=3 t=5.073s score=0.093895 z=2.054 motion=0.091141 delta=0.003934 idx=24 KEEP
+     rank=4 t=1.623s score=0.089216 z=1.828 motion=0.087597 delta=0.002313 idx=7 KEEP
+     rank=5 t=0.609s score=0.079643 z=1.367 motion=0.070156 delta=0.013552 idx=2 KEEP
+  -> candidate clips for Qwen selector:
+     index=1 rank=1 t=29.425s score=0.101165 z=2.404
+     index=2 rank=2 t=6.088s score=0.096634 z=2.186
+     index=3 rank=3 t=5.073s score=0.093895 z=2.054
+     index=4 rank=4 t=1.623s score=0.089216 z=1.828
+     index=5 rank=5 t=0.609s score=0.079643 z=1.367
+  -> model output: {
+  "selected_candidate_index": 3
+}
+
+  -> selected OF candidate: index=3 rank=3 time=5.0732s score=0.093895 z=2.054
+  -> predicted accident_time=5.0732
+  -> model output: {"center_x": 0.54, "center_y": 0.92}
+
+  -> model output: {"center_x": 0.52, "center_y": 0.89}
+
+  -> model output: {"center_x": 0.54, "center_y": 0.93}
+
+  -> model output: {
+  "center_x": 0.42,
+  "center_y": 0.68
+}
+
+  -> model output: {
+  "center_x": 0.42,
+  "center_y": 0.78
+}
+
+  -> predicted location: center_x=0.5195, center_y=0.9200
+  -> saved representative frame: /workspace/yujin/code/accident/frames/7AFnEpBVrr4_00_t5.073.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "rear-end"
+}
+
+  -> final parsed result: accident_time=5.0732, center_x=0.5195, center_y=0.9200, type=rear-end
+  -> CSV updated: /workspace/yujin/result/test8.csv (37 rows saved)
+
+[38] Processing: videos/njJxs1KozgE_00.mp4
+  -> optical-flow stats: points=149 score_max=1.478009 score_mean=0.422417 score_std=0.403183
+  -> optical-flow candidates:
+     rank=1 t=5.018s score=1.478009 z=2.618 motion=1.433109 delta=0.064142 idx=24 KEEP
+     rank=2 t=25.693s score=1.225255 z=1.991 motion=1.196123 delta=0.041617 idx=127 KEEP
+     rank=3 t=27.901s score=1.087350 z=1.649 motion=1.049473 delta=0.054110 idx=138 KEEP
+     rank=4 t=0.602s score=1.035612 z=1.521 motion=0.918704 delta=0.167012 idx=2 KEEP
+     rank=5 t=4.014s score=1.001243 z=1.436 motion=0.866211 delta=0.192903 idx=19 KEEP
+  -> candidate clips for Qwen selector:
+     index=1 rank=1 t=5.018s score=1.478009 z=2.618
+     index=2 rank=2 t=25.693s score=1.225255 z=1.991
+     index=3 rank=3 t=27.901s score=1.087350 z=1.649
+     index=4 rank=4 t=0.602s score=1.035612 z=1.521
+     index=5 rank=5 t=4.014s score=1.001243 z=1.436
+  -> model output: {
+  "selected_candidate_index": 1
+}
+
+  -> selected OF candidate: index=1 rank=1 time=5.0181s score=1.478009 z=2.618
+  -> predicted accident_time=5.0181
+  -> model output: {"center_x": 0.66, "center_y": 0.55}
+
+  -> model output: {"center_x": 0.683, "center_y": 0.559}
+
+  -> model output: {"center_x": 0.52, "center_y": 0.72}
+
+  -> model output: {
+  "center_x": 0.59,
+  "center_y": 0.48
+}
+
+  -> model output: {
+  "center_x": 0.5,
+  "center_y": 0.5
+}
+
+  -> predicted location: center_x=0.6600, center_y=0.5590
+  -> saved representative frame: /workspace/yujin/code/accident/frames/njJxs1KozgE_00_t5.018.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "t-bone"
+}
+
+  -> final parsed result: accident_time=5.0181, center_x=0.6600, center_y=0.5590, type=t-bone
+  -> CSV updated: /workspace/yujin/result/test8.csv (38 rows saved)
+
+[39] Processing: videos/-AztVDZ6cEE_00.mp4
+  -> optical-flow stats: points=132 score_max=0.854489 score_mean=0.261971 score_std=0.174798
+  -> optical-flow candidates:
+     rank=1 t=0.599s score=0.854489 z=3.390 motion=0.779645 delta=0.106921 idx=2 KEEP
+     rank=2 t=3.394s score=0.844600 z=3.333 motion=0.790952 delta=0.076640 idx=16 KEEP
+     rank=3 t=10.580s score=0.580326 z=1.821 motion=0.495434 delta=0.121273 idx=52 KEEP
+     rank=4 t=1.996s score=0.499786 z=1.361 motion=0.481366 delta=0.026315 idx=9 KEEP
+     rank=5 t=13.574s score=0.278565 z=0.095 motion=0.269919 delta=0.012352 idx=67 KEEP
+  -> candidate clips for Qwen selector:
+     index=1 rank=1 t=0.599s score=0.854489 z=3.390
+     index=2 rank=2 t=3.394s score=0.844600 z=3.333
+     index=3 rank=3 t=10.580s score=0.580326 z=1.821
+     index=4 rank=4 t=1.996s score=0.499786 z=1.361
+     index=5 rank=5 t=13.574s score=0.278565 z=0.095
+  -> model output: {
+  "selected_candidate_index": 2
+}
+
+  -> selected OF candidate: index=2 rank=2 time=3.3936s score=0.844600 z=3.333
+  -> predicted accident_time=3.3936
+  -> model output: {
+  "center_x": 0.53,
+  "center_y": 0.3
+}
+
+  -> model output: {
+  "center_x": 0.53,
+  "center_y": 0.3
+}
+
+  -> model output: {"center_x": 0.54, "center_y": 0.3}
+
+  -> model output: {
+  "center_x": 0.54,
+  "center_y": 0.52
+}
+
+  -> model output: {
+  "center_x": 0.56,
+  "center_y": 0.51
+}
+
+  -> predicted location: center_x=0.5457, center_y=0.3030
+  -> saved representative frame: /workspace/yujin/code/accident/frames/-AztVDZ6cEE_00_t3.394.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "t-bone"
+}
+
+  -> final parsed result: accident_time=3.3936, center_x=0.5457, center_y=0.3030, type=t-bone
+  -> CSV updated: /workspace/yujin/result/test8.csv (39 rows saved)
+
+[40] Processing: videos/kUp_0rJe_OI_00.mp4
+  -> optical-flow stats: points=156 score_max=5.299995 score_mean=0.751399 score_std=1.013330
+  -> optical-flow candidates:
+     rank=1 t=12.820s score=5.299995 z=4.489 motion=4.873205 delta=0.609701 idx=66 KEEP
+     rank=2 t=1.531s score=2.670940 z=1.894 motion=2.324200 delta=0.495343 idx=7 KEEP
+     rank=3 t=11.481s score=2.228924 z=1.458 motion=2.089727 delta=0.198853 idx=59 KEEP
+     rank=4 t=18.752s score=2.165507 z=1.396 motion=1.933631 delta=0.331251 idx=97 KEEP
+     rank=5 t=17.604s score=1.964976 z=1.198 motion=1.572660 delta=0.560451 idx=91 KEEP
+  -> candidate clips for Qwen selector:
+     index=1 rank=1 t=12.820s score=5.299995 z=4.489
+     index=2 rank=2 t=1.531s score=2.670940 z=1.894
+     index=3 rank=3 t=11.481s score=2.228924 z=1.458
+     index=4 rank=4 t=18.752s score=2.165507 z=1.396
+     index=5 rank=5 t=17.604s score=1.964976 z=1.198
+  -> model output: {
+  "selected_candidate_index": 4
+}
+
+  -> selected OF candidate: index=4 rank=4 time=18.7521s score=2.165507 z=1.396
+  -> predicted accident_time=18.7521
+  -> model output: {
+  "center_x": 0.75,
+  "center_y": 0.5
+}
+
+  -> model output: {
+  "center_x": 0.85,
+  "center_y": 0.63
+}
+
+  -> model output: {
+  "center_x": 0.53,
+  "center_y": 0.31
+}
+
+  -> model output: {
+  "center_x": 0.68,
+  "center_y": 0.68
+}
+
+  -> model output: {
+  "center_x": 0.88,
+  "center_y": 0.85
+}
+
+  -> predicted location: center_x=0.8210, center_y=0.5718
+  -> saved representative frame: /workspace/yujin/code/accident/frames/kUp_0rJe_OI_00_t18.752.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "rear-end"
+}
+
+  -> final parsed result: accident_time=18.7521, center_x=0.8210, center_y=0.5718, type=rear-end
+  -> CSV updated: /workspace/yujin/result/test8.csv (40 rows saved)
+
+[41] Processing: videos/a8zHkZ_t16k_00.mp4
+  -> optical-flow stats: points=148 score_max=0.109136 score_mean=0.073093 score_std=0.015734
+  -> optical-flow candidates:
+     rank=1 t=28.485s score=0.109136 z=2.291 motion=0.096530 delta=0.018010 idx=140 KEEP
+     rank=2 t=23.434s score=0.104256 z=1.980 motion=0.098002 delta=0.008934 idx=115 KEEP
+     rank=3 t=21.414s score=0.098087 z=1.588 motion=0.090410 delta=0.010967 idx=105 KEEP
+     rank=4 t=27.272s score=0.091805 z=1.189 motion=0.086979 delta=0.006895 idx=134 KEEP
+     rank=5 t=0.606s score=0.090746 z=1.122 motion=0.081822 delta=0.012748 idx=2 KEEP
+  -> candidate clips for Qwen selector:
+     index=1 rank=1 t=28.485s score=0.109136 z=2.291
+     index=2 rank=2 t=23.434s score=0.104256 z=1.980
+     index=3 rank=3 t=21.414s score=0.098087 z=1.588
+     index=4 rank=4 t=27.272s score=0.091805 z=1.189
+     index=5 rank=5 t=0.606s score=0.090746 z=1.122
+  -> model output: {
+  "selected_candidate_index": 5
+}
+
+  -> selected OF candidate: index=5 rank=5 time=0.6061s score=0.090746 z=1.122
+  -> predicted accident_time=0.6061
+  -> model output: {"center_x": 0.599, "center_y": 0.606}
+
+  -> model output: {"center_x": 0.602, "center_y": 0.504}
+
+  -> model output: ```json
+{
+  "center_x": 0.601,
+  "center_y": 0.505
+}
+```
+
+  -> model output: {
+  "center_x": 0.51,
+  "center_y": 0.51
+}
+
+  -> model output: {
+  "center_x": 0.51,
+  "center_y": 0.48
+}
+
+  -> predicted location: center_x=0.6034, center_y=0.5050
+  -> saved representative frame: /workspace/yujin/code/accident/frames/a8zHkZ_t16k_00_t0.606.jpg
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=0.6061, center_x=0.6034, center_y=0.5050, type=single
+  -> CSV updated: /workspace/yujin/result/test8.csv (41 rows saved)
+
+[42] Processing: videos/PQHiBa179Ew_00.mp4
+  -> optical-flow stats: points=149 score_max=0.124470 score_mean=0.064240 score_std=0.025260
+  -> optical-flow candidates:
+     rank=1 t=9.800s score=0.124470 z=2.384 motion=0.121649 delta=0.004029 idx=48 KEEP
+     rank=2 t=6.800s score=0.119008 z=2.168 motion=0.114520 delta=0.006410 idx=33 KEEP
+     rank=3 t=10.800s score=0.104684 z=1.601 motion=0.104684 delta=0.000000 idx=53 KEEP
+     rank=4 t=7.800s score=0.103683 z=1.561 motion=0.103683 delta=0.000000 idx=38 KEEP
+     rank=5 t=8.800s score=0.102268 z=1.505 motion=0.100232 delta=0.002908 idx=43 KEEP
+  -> candidate clips for Qwen selector:
+     index=1 rank=1 t=9.800s score=0.124470 z=2.384
+     index=2 rank=2 t=6.800s score=0.119008 z=2.168
+     index=3 rank=3 t=10.800s score=0.104684 z=1.601
+     index=4 rank=4 t=7.800s score=0.103683 z=1.561
+     index=5 rank=5 t=8.800s score=0.102268 z=1.505
+  -> model output: {
+  "selected_candidate_index": 1
+}
+
+  -> selected OF candidate: index=1 rank=1 time=9.8000s score=0.124470 z=2.384
+  -> predicted accident_time=9.8000
+  -> model output: {
+  "center_x": 0.57,
+  "center_y": 0.81
+}
+
+  -> model output: {"center_x": 0.58, "center_y": 0.81}
+
+  -> model output: {
+  "center_x": 0.58,
+  "center_y": 0.81
+}
+
+  -> model output: {
+  "center_x": 0.51,
+  "center_y": 0.58
+}
+
+  -> model output: {
+  "center_x": 0.52,
+  "center_y": 0.55
+}
+
+  -> predicted location: center_x=0.5837, center_y=0.8224
+  -> saved representative frame: /workspace/yujin/code/accident/frames/PQHiBa179Ew_00_t9.800.jpg
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=9.8000, center_x=0.5837, center_y=0.8224, type=single
+  -> CSV updated: /workspace/yujin/result/test8.csv (42 rows saved)
+
+[43] Processing: videos/-SNFUobKjoM_00.mp4
+  -> optical-flow stats: points=149 score_max=2.077756 score_mean=0.372593 score_std=0.448666
+  -> optical-flow candidates:
+     rank=1 t=9.040s score=2.077756 z=3.801 motion=1.930187 delta=0.210813 idx=44 KEEP
+     rank=2 t=6.027s score=1.069280 z=1.553 motion=0.989591 delta=0.113841 idx=29 KEEP
+     rank=3 t=29.531s score=1.026109 z=1.457 motion=0.831077 delta=0.278618 idx=146 KEEP
+     rank=4 t=10.045s score=0.983168 z=1.361 motion=0.983168 delta=0.000000 idx=49 KEEP
+     rank=5 t=14.464s score=0.899634 z=1.175 motion=0.859613 delta=0.057173 idx=71 KEEP
+  -> candidate clips for Qwen selector:
+     index=1 rank=1 t=9.040s score=2.077756 z=3.801
+     index=2 rank=2 t=6.027s score=1.069280 z=1.553
+     index=3 rank=3 t=29.531s score=1.026109 z=1.457
+     index=4 rank=4 t=10.045s score=0.983168 z=1.361
+     index=5 rank=5 t=14.464s score=0.899634 z=1.175
+  -> model output: {
+  "selected_candidate_index": 4
+}
+
+  -> selected OF candidate: index=4 rank=4 time=10.0445s score=0.983168 z=1.361
+  -> predicted accident_time=10.0445
+  -> model output: {"center_x": 0.73, "center_y": 0.52}
+
+  -> model output: ```json
+{
+  "center_x": 0.72,
+  "center_y": 0.52
+}
+```
+
+  -> model output: ```json
+{
+  "center_x": 0.69,
+  "center_y": 0.48
+}
+```
+
+  -> model output: {
+  "center_x": 0.56,
+  "center_y": 0.48
+}
+
+  -> model output: {
+  "center_x": 0.55,
+  "center_y": 0.45
+}
+
+  -> predicted location: center_x=0.7331, center_y=0.5115
+  -> saved representative frame: /workspace/yujin/code/accident/frames/-SNFUobKjoM_00_t10.045.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "t-bone"
+}
+
+  -> final parsed result: accident_time=10.0445, center_x=0.7331, center_y=0.5115, type=t-bone
+  -> CSV updated: /workspace/yujin/result/test8.csv (43 rows saved)
+
+[44] Processing: videos/TahWBItdUvQ_00.mp4
+  -> optical-flow stats: points=25 score_max=0.286759 score_mean=0.170112 score_std=0.066225
+  -> optical-flow candidates:
+     rank=1 t=3.938s score=0.286759 z=1.761 motion=0.269900 delta=0.024085 idx=20 KEEP
+     rank=2 t=2.812s score=0.218256 z=0.727 motion=0.201663 delta=0.023704 idx=14 KEEP
+     rank=3 t=0.562s score=0.133971 z=-0.546 motion=0.118595 delta=0.021966 idx=2 KEEP
+     rank=4 t=1.688s score=0.099460 z=-1.067 motion=0.092373 delta=0.010125 idx=8 KEEP
+  -> candidate clips for Qwen selector:
+     index=1 rank=1 t=3.938s score=0.286759 z=1.761
+     index=2 rank=2 t=2.812s score=0.218256 z=0.727
+     index=3 rank=3 t=0.562s score=0.133971 z=-0.546
+     index=4 rank=4 t=1.688s score=0.099460 z=-1.067
+  -> model output: {
+  "selected_candidate_index": 1
+}
+
+  -> selected OF candidate: index=1 rank=1 time=3.9375s score=0.286759 z=1.761
+  -> predicted accident_time=3.9375
+  -> model output: {
+  "center_x": 0.31,
+  "center_y": 0.18
+}
+
+  -> model output: {
+  "center_x": 0.305,
+  "center_y": 0.191
+}
+
+  -> model output: {
+  "center_x": 0.27,
+  "center_y": 0.2
+}
+
+  -> model output: {
+  "center_x": 0.49,
+  "center_y": 0.44
+}
+
+  -> model output: {
+  "center_x": 0.5,
+  "center_y": 0.5
+}
+
+  -> predicted location: center_x=0.3049, center_y=0.1905
+  -> saved representative frame: /workspace/yujin/code/accident/frames/TahWBItdUvQ_00_t3.938.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "sideswipe"
+}
+
+  -> final parsed result: accident_time=3.9375, center_x=0.3049, center_y=0.1905, type=sideswipe
+  -> CSV updated: /workspace/yujin/result/test8.csv (44 rows saved)
+
+[45] Processing: videos/reXieySb4JI_00.mp4
+  -> optical-flow stats: points=150 score_max=0.794568 score_mean=0.359394 score_std=0.182060
+  -> optical-flow candidates:
+     rank=1 t=6.193s score=0.794568 z=2.390 motion=0.773445 delta=0.030176 idx=30 KEEP
+     rank=2 t=8.790s score=0.688139 z=1.806 motion=0.678692 delta=0.013494 idx=43 KEEP
+     rank=3 t=0.799s score=0.640236 z=1.543 motion=0.596979 delta=0.061796 idx=3 KEEP
+     rank=4 t=7.392s score=0.637646 z=1.528 motion=0.637646 delta=0.000000 idx=36 KEEP
+     rank=5 t=4.994s score=0.620926 z=1.437 motion=0.598980 delta=0.031351 idx=24 KEEP
+  -> candidate clips for Qwen selector:
+     index=1 rank=1 t=6.193s score=0.794568 z=2.390
+     index=2 rank=2 t=8.790s score=0.688139 z=1.806
+     index=3 rank=3 t=0.799s score=0.640236 z=1.543
+     index=4 rank=4 t=7.392s score=0.637646 z=1.528
+     index=5 rank=5 t=4.994s score=0.620926 z=1.437
+  -> model output: {
+  "selected_candidate_index": 2
+}
+
+  -> selected OF candidate: index=2 rank=2 time=8.7902s score=0.688139 z=1.806
+  -> predicted accident_time=8.7902
+  -> model output: {"center_x": 0.45, "center_y": 0.65}
+
+  -> model output: {"center_x": 0.367, "center_y": 0.643}
+
+  -> model output: {
+  "center_x": 0.65,
+  "center_y": 0.63
+}
+
+  -> model output: {
+  "center_x": 0.38,
+  "center_y": 0.54
+}
+
+  -> model output: {
+  "center_x": 0.33,
+  "center_y": 0.54
+}
+
+  -> predicted location: center_x=0.4062, center_y=0.6536
+  -> saved representative frame: /workspace/yujin/code/accident/frames/reXieySb4JI_00_t8.790.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "t-bone"
+}
+
+  -> final parsed result: accident_time=8.7902, center_x=0.4062, center_y=0.6536, type=t-bone
+  -> CSV updated: /workspace/yujin/result/test8.csv (45 rows saved)
+
+[46] Processing: videos/m2uBNOFIvKk_00.mp4
+  -> optical-flow stats: points=154 score_max=1.412605 score_mean=0.810408 score_std=0.283139
+  -> optical-flow candidates:
+     rank=1 t=19.660s score=1.412605 z=2.127 motion=1.348034 delta=0.092244 idx=100 KEEP
+     rank=2 t=29.393s score=1.351307 z=1.910 motion=1.238225 delta=0.161545 idx=150 KEEP
+     rank=3 t=21.607s score=1.349237 z=1.903 motion=1.301976 delta=0.067515 idx=110 KEEP
+     rank=4 t=1.557s score=1.348868 z=1.902 motion=1.239403 delta=0.156379 idx=7 KEEP
+     rank=5 t=17.519s score=1.136952 z=1.153 motion=1.025951 delta=0.158574 idx=89 KEEP
+  -> candidate clips for Qwen selector:
+     index=1 rank=1 t=19.660s score=1.412605 z=2.127
+     index=2 rank=2 t=29.393s score=1.351307 z=1.910
+     index=3 rank=3 t=21.607s score=1.349237 z=1.903
+     index=4 rank=4 t=1.557s score=1.348868 z=1.902
+     index=5 rank=5 t=17.519s score=1.136952 z=1.153
+  -> model output: {
+  "selected_candidate_index": 1
+}
+
+  -> selected OF candidate: index=1 rank=1 time=19.6601s score=1.412605 z=2.127
+  -> predicted accident_time=19.6601
+  -> model output: {
+  "center_x": 0.62,
+  "center_y": 0.36
+}
+
+  -> model output: {
+  "center_x": 0.59,
+  "center_y": 0.37
+}
+
+  -> model output: {
+  "center_x": 0.54,
+  "center_y": 0.38
+}
+
+  -> model output: {
+  "center_x": 0.45,
+  "center_y": 0.5
+}
+
+  -> model output: {
+  "center_x": 0.42,
+  "center_y": 0.48
+}
+
+  -> predicted location: center_x=0.5699, center_y=0.3693
+  -> saved representative frame: /workspace/yujin/code/accident/frames/m2uBNOFIvKk_00_t19.660.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.99
+}
+
+  -> model output: {
+  "type": "t-bone"
+}
+
+  -> final parsed result: accident_time=19.6601, center_x=0.5699, center_y=0.3693, type=t-bone
+  -> CSV updated: /workspace/yujin/result/test8.csv (46 rows saved)
+
+[47] Processing: videos/VXuNX_OYkig_00.mp4
+  -> optical-flow stats: points=35 score_max=0.089128 score_mean=0.043096 score_std=0.019619
+  -> optical-flow candidates:
+     rank=1 t=0.603s score=0.089128 z=2.346 motion=0.079553 delta=0.013678 idx=2 KEEP
+     rank=2 t=1.607s score=0.063168 z=1.023 motion=0.063168 delta=0.000000 idx=7 KEEP
+     rank=3 t=2.612s score=0.049797 z=0.342 motion=0.049797 delta=0.000000 idx=12 KEEP
+     rank=4 t=3.617s score=0.042394 z=-0.036 motion=0.042394 delta=0.000000 idx=17 KEEP
+     rank=5 t=4.621s score=0.030772 z=-0.628 motion=0.030772 delta=0.000000 idx=22 KEEP
+  -> candidate clips for Qwen selector:
+     index=1 rank=1 t=0.603s score=0.089128 z=2.346
+     index=2 rank=2 t=1.607s score=0.063168 z=1.023
+     index=3 rank=3 t=2.612s score=0.049797 z=0.342
+     index=4 rank=4 t=3.617s score=0.042394 z=-0.036
+     index=5 rank=5 t=4.621s score=0.030772 z=-0.628
+  -> model output: {
+  "selected_candidate_index": 4
+}
+
+  -> selected OF candidate: index=4 rank=4 time=3.6167s score=0.042394 z=-0.036
+  -> predicted accident_time=3.6167
+  -> model output: {"center_x": 0.51, "center_y": 0.72}
+
+  -> model output: {"center_x": 0.51, "center_y": 0.72}
+
+  -> model output: {"center_x": 0.51, "center_y": 0.71}
+
+  -> model output: {"center_x": 0.51, "center_y": 0.49}
+
+  -> model output: {
+  "center_x": 0.53,
+  "center_y": 0.48
+}
+
+  -> predicted location: center_x=0.5139, center_y=0.7157
+  -> saved representative frame: /workspace/yujin/code/accident/frames/VXuNX_OYkig_00_t3.617.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "t-bone"
+}
+
+  -> final parsed result: accident_time=3.6167, center_x=0.5139, center_y=0.7157, type=t-bone
+  -> CSV updated: /workspace/yujin/result/test8.csv (47 rows saved)
+
+[48] Processing: videos/GsRdjuR2PpE_00.mp4
+  -> optical-flow stats: points=148 score_max=2.040902 score_mean=0.584227 score_std=0.438021
+  -> optical-flow candidates:
+     rank=1 t=22.587s score=2.040902 z=3.326 motion=1.992553 delta=0.069070 idx=126 KEEP
+     rank=2 t=7.826s score=1.409521 z=1.884 motion=1.291828 delta=0.168133 idx=43 KEEP
+     rank=3 t=3.023s score=1.358057 z=1.767 motion=1.282553 delta=0.107862 idx=16 KEEP
+     rank=4 t=21.520s score=1.279174 z=1.587 motion=1.184964 delta=0.134585 idx=120 KEEP
+     rank=5 t=23.654s score=0.892284 z=0.703 motion=0.892284 delta=0.000000 idx=132 KEEP
+  -> candidate clips for Qwen selector:
+     index=1 rank=1 t=22.587s score=2.040902 z=3.326
+     index=2 rank=2 t=7.826s score=1.409521 z=1.884
+     index=3 rank=3 t=3.023s score=1.358057 z=1.767
+     index=4 rank=4 t=21.520s score=1.279174 z=1.587
+     index=5 rank=5 t=23.654s score=0.892284 z=0.703
+  -> model output: {
+  "selected_candidate_index": 1
+}
+
+  -> selected OF candidate: index=1 rank=1 time=22.5873s score=2.040902 z=3.326
+  -> predicted accident_time=22.5873
+  -> model output: {"center_x": 0.405, "center_y": 0.237}
+
+  -> model output: {
+  "center_x": 0.41,
+  "center_y": 0.23
+}
+
+  -> model output: {"center_x": 0.405, "center_y": 0.229}
+
+  -> model output: {
+  "center_x": 0.55,
+  "center_y": 0.52
+}
+
+  -> model output: {
+  "center_x": 0.52,
+  "center_y": 0.48
+}
+
+  -> predicted location: center_x=0.4099, center_y=0.2300
+  -> saved representative frame: /workspace/yujin/code/accident/frames/GsRdjuR2PpE_00_t22.587.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "t-bone"
+}
+
+  -> final parsed result: accident_time=22.5873, center_x=0.4099, center_y=0.2300, type=t-bone
+  -> CSV updated: /workspace/yujin/result/test8.csv (48 rows saved)
+
+[49] Processing: videos/dGUCJwW8b1g_00.mp4
+  -> optical-flow stats: points=141 score_max=3.969087 score_mean=1.637369 score_std=0.774513
+  -> optical-flow candidates:
+     rank=1 t=1.960s score=3.969087 z=3.011 motion=3.603560 delta=0.522182 idx=10 KEEP
+     rank=2 t=3.742s score=3.080194 z=1.863 motion=3.030861 delta=0.070477 idx=20 KEEP
+     rank=3 t=6.949s score=2.528383 z=1.150 motion=2.374483 delta=0.219857 idx=38 KEEP
+     rank=4 t=14.610s score=2.509096 z=1.126 motion=2.334975 delta=0.248745 idx=81 KEEP
+     rank=5 t=8.018s score=2.428960 z=1.022 motion=2.428960 delta=0.000000 idx=44 KEEP
+  -> candidate clips for Qwen selector:
+     index=1 rank=1 t=1.960s score=3.969087 z=3.011
+     index=2 rank=2 t=3.742s score=3.080194 z=1.863
+     index=3 rank=3 t=6.949s score=2.528383 z=1.150
+     index=4 rank=4 t=14.610s score=2.509096 z=1.126
+     index=5 rank=5 t=8.018s score=2.428960 z=1.022
+  -> model output: {
+  "selected_candidate_index": 2
+}
+
+  -> selected OF candidate: index=2 rank=2 time=3.7416s score=3.080194 z=1.863
+  -> predicted accident_time=3.7416
+  -> model output: {"center_x": 0.617, "center_y": 0.516}
+
+  -> model output: {"center_x": 0.637, "center_y": 0.499}
+
+  -> model output: {"center_x": 0.653, "center_y": 0.474}
+
+  -> model output: {
+  "center_x": 0.52,
+  "center_y": 0.48
+}
+
+  -> model output: {
+  "center_x": 0.58,
+  "center_y": 0.52
+}
+
+  -> predicted location: center_x=0.6445, center_y=0.4990
+  -> saved representative frame: /workspace/yujin/code/accident/frames/dGUCJwW8b1g_00_t3.742.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "sideswipe"
+}
+
+  -> final parsed result: accident_time=3.7416, center_x=0.6445, center_y=0.4990, type=sideswipe
+  -> CSV updated: /workspace/yujin/result/test8.csv (49 rows saved)
+
+[50] Processing: videos/FV6XO5Yg9VU_00.mp4
+  -> optical-flow stats: points=139 score_max=2.619887 score_mean=1.708474 score_std=0.468244
+  -> optical-flow candidates:
+     rank=1 t=15.382s score=2.619887 z=1.946 motion=2.528878 delta=0.130012 idx=76 KEEP
+     rank=2 t=23.372s score=2.575012 z=1.851 motion=2.511486 delta=0.090752 idx=116 KEEP
+     rank=3 t=22.173s score=2.514058 z=1.720 motion=2.342659 delta=0.244857 idx=110 KEEP
+     rank=4 t=3.795s score=2.409038 z=1.496 motion=2.264515 delta=0.206461 idx=18 KEEP
+     rank=5 t=12.984s score=2.309449 z=1.283 motion=2.250857 delta=0.083704 idx=64 KEEP
+  -> candidate clips for Qwen selector:
+     index=1 rank=1 t=15.382s score=2.619887 z=1.946
+     index=2 rank=2 t=23.372s score=2.575012 z=1.851
+     index=3 rank=3 t=22.173s score=2.514058 z=1.720
+     index=4 rank=4 t=3.795s score=2.409038 z=1.496
+     index=5 rank=5 t=12.984s score=2.309449 z=1.283
+  -> model output: {
+  "selected_candidate_index": 4
+}
+
+  -> selected OF candidate: index=4 rank=4 time=3.7955s score=2.409038 z=1.496
+  -> predicted accident_time=3.7955
+  -> model output: {
+  "center_x": 0.55,
+  "center_y": 0.71
+}
+
+  -> model output: {
+  "center_x": 0.51,
+  "center_y": 0.39
+}
+
+  -> model output: {"center_x": 0.51, "center_y": 0.38}
+
+  -> model output: {
+  "center_x": 0.5,
+  "center_y": 0.5
+}
+
+  -> model output: {
+  "center_x": 0.48,
+  "center_y": 0.45
+}
+
+  -> predicted location: center_x=0.5093, center_y=0.3887
+  -> saved representative frame: /workspace/yujin/code/accident/frames/FV6XO5Yg9VU_00_t3.795.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "rear-end"
+}
+
+  -> final parsed result: accident_time=3.7955, center_x=0.5093, center_y=0.3887, type=rear-end
+  -> CSV updated: /workspace/yujin/result/test8.csv (50 rows saved)
+
+[51] Processing: videos/iYAIZEocjbg_00.mp4
+  -> optical-flow stats: points=126 score_max=2.515792 score_mean=0.972783 score_std=0.648832
+  -> optical-flow candidates:
+     rank=1 t=9.033s score=2.515792 z=2.378 motion=2.420642 delta=0.135929 idx=37 KEEP
+     rank=2 t=11.172s score=2.088409 z=1.719 motion=1.994972 delta=0.133481 idx=46 KEEP
+     rank=3 t=12.836s score=1.911696 z=1.447 motion=1.733419 delta=0.254682 idx=53 KEEP
+     rank=4 t=7.607s score=1.745243 z=1.191 motion=1.632530 delta=0.161018 idx=31 KEEP
+     rank=5 t=24.246s score=1.672461 z=1.078 motion=1.516912 delta=0.222213 idx=101 KEEP
+  -> candidate clips for Qwen selector:
+     index=1 rank=1 t=9.033s score=2.515792 z=2.378
+     index=2 rank=2 t=11.172s score=2.088409 z=1.719
+     index=3 rank=3 t=12.836s score=1.911696 z=1.447
+     index=4 rank=4 t=7.607s score=1.745243 z=1.191
+     index=5 rank=5 t=24.246s score=1.672461 z=1.078
+  -> model output: {
+  "selected_candidate_index": 5
+}
+
+  -> selected OF candidate: index=5 rank=5 time=24.2459s score=1.672461 z=1.078
+  -> predicted accident_time=24.2459
+  -> model output: {
+  "center_x": 0.65,
+  "center_y": 0.58
+}
+
+  -> model output: {
+  "center_x": 0.63,
+  "center_y": 0.57
+}
+
+  -> model output: {
+  "center_x": 0.64,
+  "center_y": 0.56
+}
+
+  -> model output: {
+  "center_x": 0.42,
+  "center_y": 0.55
+}
+
+  -> model output: {"center_x": 0.55, "center_y": 0.5}
+
+  -> predicted location: center_x=0.6400, center_y=0.5700
+  -> saved representative frame: /workspace/yujin/code/accident/frames/iYAIZEocjbg_00_t24.246.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "t-bone"
+}
+
+  -> final parsed result: accident_time=24.2459, center_x=0.6400, center_y=0.5700, type=t-bone
+  -> CSV updated: /workspace/yujin/result/test8.csv (51 rows saved)
+
+[52] Processing: videos/n-aa3NIlRMo_00.mp4
+  -> optical-flow stats: points=149 score_max=0.281159 score_mean=0.115957 score_std=0.045719
+  -> optical-flow candidates:
+     rank=1 t=0.601s score=0.281159 z=3.613 motion=0.248151 delta=0.047155 idx=2 KEEP
+     rank=2 t=5.011s score=0.228651 z=2.465 motion=0.214657 delta=0.019990 idx=24 KEEP
+     rank=3 t=1.604s score=0.213137 z=2.126 motion=0.213137 delta=0.000000 idx=7 KEEP
+     rank=4 t=2.606s score=0.182392 z=1.453 motion=0.182392 delta=0.000000 idx=12 KEEP
+     rank=5 t=6.013s score=0.161319 z=0.992 motion=0.161319 delta=0.000000 idx=29 KEEP
+  -> candidate clips for Qwen selector:
+     index=1 rank=1 t=0.601s score=0.281159 z=3.613
+     index=2 rank=2 t=5.011s score=0.228651 z=2.465
+     index=3 rank=3 t=1.604s score=0.213137 z=2.126
+     index=4 rank=4 t=2.606s score=0.182392 z=1.453
+     index=5 rank=5 t=6.013s score=0.161319 z=0.992
+  -> model output: {
+  "selected_candidate_index": 5
+}
+
+  -> selected OF candidate: index=5 rank=5 time=6.0134s score=0.161319 z=0.992
+  -> predicted accident_time=6.0134
+  -> model output: {
+  "center_x": 0.56,
+  "center_y": 0.77
+}
+
+  -> model output: {
+  "center_x": 0.56,
+  "center_y": 0.76
+}
+
+  -> model output: {
+  "center_x": 0.57,
+  "center_y": 0.77
+}
+
+  -> model output: {"center_x": 0.48, "center_y": 0.55}
+
+  -> model output: {
+  "center_x": 0.52,
+  "center_y": 0.52
+}
+
+  -> predicted location: center_x=0.5600, center_y=0.7757
+  -> saved representative frame: /workspace/yujin/code/accident/frames/n-aa3NIlRMo_00_t6.013.jpg
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=6.0134, center_x=0.5600, center_y=0.7757, type=single
+  -> CSV updated: /workspace/yujin/result/test8.csv (52 rows saved)
+
+[53] Processing: videos/mDtCi-XVAbo_00.mp4
+  -> optical-flow stats: points=118 score_max=2.462625 score_mean=1.277347 score_std=0.454808
+  -> optical-flow candidates:
+     rank=1 t=6.530s score=2.462625 z=2.606 motion=2.351540 delta=0.158692 idx=32 KEEP
+     rank=2 t=21.767s score=1.966546 z=1.515 motion=1.879182 delta=0.124805 idx=109 KEEP
+     rank=3 t=8.707s score=1.793576 z=1.135 motion=1.768126 delta=0.036357 idx=43 KEEP
+     rank=4 t=3.166s score=1.682162 z=0.890 motion=1.608475 delta=0.105267 idx=15 KEEP
+     rank=5 t=10.488s score=1.641096 z=0.800 motion=1.578712 delta=0.089120 idx=52 KEEP
+  -> candidate clips for Qwen selector:
+     index=1 rank=1 t=6.530s score=2.462625 z=2.606
+     index=2 rank=2 t=21.767s score=1.966546 z=1.515
+     index=3 rank=3 t=8.707s score=1.793576 z=1.135
+     index=4 rank=4 t=3.166s score=1.682162 z=0.890
+     index=5 rank=5 t=10.488s score=1.641096 z=0.800
+  -> model output: {
+  "selected_candidate_index": 1
+}
+
+  -> selected OF candidate: index=1 rank=1 time=6.5302s score=2.462625 z=2.606
+  -> predicted accident_time=6.5302
+  -> model output: {"center_x": 0.54, "center_y": 0.69}
+
+  -> model output: {"center_x": 0.51, "center_y": 0.66}
+
+  -> model output: {"center_x": 0.48, "center_y": 0.63}
+
+  -> model output: {
+  "center_x": 0.48,
+  "center_y": 0.52
+}
+
+  -> model output: {
+  "center_x": 0.5,
+  "center_y": 0.5
+}
+
+  -> predicted location: center_x=0.5100, center_y=0.6600
+  -> saved representative frame: /workspace/yujin/code/accident/frames/mDtCi-XVAbo_00_t6.530.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "rear-end"
+}
+
+  -> final parsed result: accident_time=6.5302, center_x=0.5100, center_y=0.6600, type=rear-end
+  -> CSV updated: /workspace/yujin/result/test8.csv (53 rows saved)
+
+[54] Processing: videos/QJYDZ1PBiYQ_00.mp4
+  -> optical-flow stats: points=124 score_max=2.126826 score_mean=0.441126 score_std=0.440226
+  -> optical-flow candidates:
+     rank=1 t=2.804s score=2.126826 z=3.829 motion=1.988463 delta=0.197661 idx=13 KEEP
+     rank=2 t=3.805s score=1.102417 z=1.502 motion=1.102417 delta=0.000000 idx=18 KEEP
+     rank=3 t=1.802s score=0.930517 z=1.112 motion=0.820586 delta=0.157045 idx=8 KEEP
+     rank=4 t=4.806s score=0.921040 z=1.090 motion=0.921040 delta=0.000000 idx=23 KEEP
+     rank=5 t=17.623s score=0.816057 z=0.852 motion=0.794558 delta=0.030712 idx=87 KEEP
+  -> candidate clips for Qwen selector:
+     index=1 rank=1 t=2.804s score=2.126826 z=3.829
+     index=2 rank=2 t=3.805s score=1.102417 z=1.502
+     index=3 rank=3 t=1.802s score=0.930517 z=1.112
+     index=4 rank=4 t=4.806s score=0.921040 z=1.090
+     index=5 rank=5 t=17.623s score=0.816057 z=0.852
+  -> model output: {
+  "selected_candidate_index": 2
+}
+
+  -> selected OF candidate: index=2 rank=2 time=3.8051s score=1.102417 z=1.502
+  -> predicted accident_time=3.8051
+  -> model output: {"center_x": 0.51, "center_y": 0.71}
+
+  -> model output: {"center_x": 0.51, "center_y": 0.74}
+
+  -> model output: {"center_x": 0.51, "center_y": 0.82}
+
+  -> model output: {
+  "center_x": 0.48,
+  "center_y": 0.55
+}
+
+  -> model output: {
+  "center_x": 0.51,
+  "center_y": 0.54
+}
+
+  -> predicted location: center_x=0.5100, center_y=0.7500
+  -> saved representative frame: /workspace/yujin/code/accident/frames/QJYDZ1PBiYQ_00_t3.805.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "t-bone"
+}
+
+  -> final parsed result: accident_time=3.8051, center_x=0.5100, center_y=0.7500, type=t-bone
+  -> CSV updated: /workspace/yujin/result/test8.csv (54 rows saved)
+
+[55] Processing: videos/1ZQAChv0TEI_00.mp4
+  -> optical-flow stats: points=148 score_max=1.635531 score_mean=0.397864 score_std=0.303928
+  -> optical-flow candidates:
+     rank=1 t=5.644s score=1.635531 z=4.072 motion=1.594267 delta=0.058949 idx=27 KEEP
+     rank=2 t=4.636s score=0.979247 z=1.913 motion=0.890460 delta=0.126839 idx=22 KEEP
+     rank=3 t=0.605s score=0.834754 z=1.437 motion=0.730239 delta=0.149307 idx=2 KEEP
+     rank=4 t=1.814s score=0.822339 z=1.397 motion=0.813144 delta=0.013136 idx=8 KEEP
+     rank=5 t=2.822s score=0.697988 z=0.987 motion=0.697988 delta=0.000000 idx=13 KEEP
+  -> candidate clips for Qwen selector:
+     index=1 rank=1 t=5.644s score=1.635531 z=4.072
+     index=2 rank=2 t=4.636s score=0.979247 z=1.913
+     index=3 rank=3 t=0.605s score=0.834754 z=1.437
+     index=4 rank=4 t=1.814s score=0.822339 z=1.397
+     index=5 rank=5 t=2.822s score=0.697988 z=0.987
+  -> model output: {
+  "selected_candidate_index": 5
+}
+
+  -> selected OF candidate: index=5 rank=5 time=2.8220s score=0.697988 z=0.987
+  -> predicted accident_time=2.8220
+  -> model output: {
+  "center_x": 0.52,
+  "center_y": 0.42
+}
+
+  -> model output: {"center_x": 0.459, "center_y": 0.618}
+
+  -> model output: {"center_x": 0.528, "center_y": 0.421}
+
+  -> model output: {"center_x": 0.52, "center_y": 0.5}
+
+  -> model output: {
+  "center_x": 0.52,
+  "center_y": 0.48
+}
+
+  -> predicted location: center_x=0.5253, center_y=0.4203
+  -> saved representative frame: /workspace/yujin/code/accident/frames/1ZQAChv0TEI_00_t2.822.jpg
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=2.8220, center_x=0.5253, center_y=0.4203, type=single
+  -> CSV updated: /workspace/yujin/result/test8.csv (55 rows saved)
+
+[56] Processing: videos/e6ZQvn6NyLI_00.mp4
+  -> optical-flow stats: points=149 score_max=1.731191 score_mean=0.454370 score_std=0.347878
+  -> optical-flow candidates:
+     rank=1 t=2.606s score=1.731191 z=3.670 motion=1.624922 delta=0.151813 idx=12 KEEP
+     rank=2 t=3.608s score=1.116398 z=1.903 motion=1.116398 delta=0.000000 idx=17 KEEP
+     rank=3 t=21.648s score=0.872083 z=1.201 motion=0.779923 delta=0.131658 idx=107 KEEP
+     rank=4 t=23.653s score=0.860208 z=1.167 motion=0.791367 delta=0.098344 idx=117 KEEP
+     rank=5 t=0.601s score=0.807142 z=1.014 motion=0.700604 delta=0.152197 idx=2 KEEP
+  -> candidate clips for Qwen selector:
+     index=1 rank=1 t=2.606s score=1.731191 z=3.670
+     index=2 rank=2 t=3.608s score=1.116398 z=1.903
+     index=3 rank=3 t=21.648s score=0.872083 z=1.201
+     index=4 rank=4 t=23.653s score=0.860208 z=1.167
+     index=5 rank=5 t=0.601s score=0.807142 z=1.014
+  -> model output: {
+  "selected_candidate_index": 3
+}
+
+  -> selected OF candidate: index=3 rank=3 time=21.6481s score=0.872083 z=1.201
+  -> predicted accident_time=21.6481
+  -> model output: {
+  "center_x": 0.44,
+  "center_y": 0.41
+}
+
+  -> model output: {
+  "center_x": 0.53,
+  "center_y": 0.37
+}
+
+  -> model output: {
+  "center_x": 0.52,
+  "center_y": 0.37
+}
+
+  -> model output: {
+  "center_x": 0.54,
+  "center_y": 0.52
+}
+
+  -> model output: {
+  "center_x": 0.56,
+  "center_y": 0.44
+}
+
+  -> predicted location: center_x=0.5354, center_y=0.3700
+  -> saved representative frame: /workspace/yujin/code/accident/frames/e6ZQvn6NyLI_00_t21.648.jpg
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=21.6481, center_x=0.5354, center_y=0.3700, type=single
+  -> CSV updated: /workspace/yujin/result/test8.csv (56 rows saved)
+
+[57] Processing: videos/ui52V2KkRN4_00.mp4
+  -> optical-flow stats: points=52 score_max=0.108341 score_mean=0.069097 score_std=0.017620
+  -> optical-flow candidates:
+     rank=1 t=6.865s score=0.108341 z=2.227 motion=0.104776 delta=0.005093 idx=33 KEEP
+     rank=2 t=5.452s score=0.105684 z=2.076 motion=0.086957 delta=0.026753 idx=26 KEEP
+     rank=3 t=10.096s score=0.099418 z=1.721 motion=0.092398 delta=0.010029 idx=49 KEEP
+     rank=4 t=0.606s score=0.082981 z=0.788 motion=0.067070 delta=0.022729 idx=2 KEEP
+     rank=5 t=8.884s score=0.076014 z=0.392 motion=0.072883 delta=0.004472 idx=43 KEEP
+  -> candidate clips for Qwen selector:
+     index=1 rank=1 t=6.865s score=0.108341 z=2.227
+     index=2 rank=2 t=5.452s score=0.105684 z=2.076
+     index=3 rank=3 t=10.096s score=0.099418 z=1.721
+     index=4 rank=4 t=0.606s score=0.082981 z=0.788
+     index=5 rank=5 t=8.884s score=0.076014 z=0.392
+  -> model output: {
+  "selected_candidate_index": 1
+}
+
+  -> selected OF candidate: index=1 rank=1 time=6.8650s score=0.108341 z=2.227
+  -> predicted accident_time=6.8650
+  -> model output: {"center_x": 0.52, "center_y": 0.43}
+
+  -> model output: {"center_x": 0.46, "center_y": 0.53}
+
+  -> model output: {"center_x": 0.51, "center_y": 0.52}
+
+  -> model output: {
+  "center_x": 0.45,
+  "center_y": 0.32
+}
+
+  -> model output: {
+  "center_x": 0.34,
+  "center_y": 0.45
+}
+
+  -> predicted location: center_x=0.4899, center_y=0.5070
+  -> saved representative frame: /workspace/yujin/code/accident/frames/ui52V2KkRN4_00_t6.865.jpg
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=6.8650, center_x=0.4899, center_y=0.5070, type=single
+  -> CSV updated: /workspace/yujin/result/test8.csv (57 rows saved)
+
+[58] Processing: videos/QyRcmm87rJ8_00.mp4
+  -> optical-flow stats: points=150 score_max=2.188687 score_mean=0.586240 score_std=0.631633
+  -> optical-flow candidates:
+     rank=1 t=0.600s score=2.188687 z=2.537 motion=1.924222 delta=0.377806 idx=2 KEEP
+     rank=2 t=3.197s score=1.970810 z=2.192 motion=1.910348 delta=0.086375 idx=15 KEEP
+     rank=3 t=1.799s score=1.897636 z=2.076 motion=1.897636 delta=0.000000 idx=8 KEEP
+     rank=4 t=23.780s score=1.460974 z=1.385 motion=1.334854 delta=0.180171 idx=118 KEEP
+     rank=5 t=5.196s score=1.379515 z=1.256 motion=1.310404 delta=0.098731 idx=25 KEEP
+  -> candidate clips for Qwen selector:
+     index=1 rank=1 t=0.600s score=2.188687 z=2.537
+     index=2 rank=2 t=3.197s score=1.970810 z=2.192
+     index=3 rank=3 t=1.799s score=1.897636 z=2.076
+     index=4 rank=4 t=23.780s score=1.460974 z=1.385
+     index=5 rank=5 t=5.196s score=1.379515 z=1.256
+  -> model output: {
+  "selected_candidate_index": 4
+}
+
+  -> selected OF candidate: index=4 rank=4 time=23.7802s score=1.460974 z=1.385
+  -> predicted accident_time=23.7802
+  -> model output: {
+  "center_x": 0.23,
+  "center_y": 0.61
+}
+
+  -> model output: {
+  "center_x": 0.23,
+  "center_y": 0.61
+}
+
+  -> model output: {
+  "center_x": 0.27,
+  "center_y": 0.59
+}
+
+  -> model output: {
+  "center_x": 0.42,
+  "center_y": 0.42
+}
+
+  -> model output: {
+  "center_x": 0.35,
+  "center_y": 0.38
+}
+
+  -> predicted location: center_x=0.1979, center_y=0.5795
+  -> saved representative frame: /workspace/yujin/code/accident/frames/QyRcmm87rJ8_00_t23.780.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "sideswipe"
+}
+
+  -> final parsed result: accident_time=23.7802, center_x=0.1979, center_y=0.5795, type=sideswipe
+  -> CSV updated: /workspace/yujin/result/test8.csv (58 rows saved)
+
+[59] Processing: videos/C7gOL8qM71E_00.mp4
+  -> optical-flow stats: points=150 score_max=2.761663 score_mean=0.875416 score_std=0.737463
+  -> optical-flow candidates:
+     rank=1 t=2.797s score=2.761663 z=2.558 motion=2.606219 delta=0.222063 idx=13 KEEP
+     rank=2 t=24.573s score=2.239990 z=1.850 motion=2.147704 delta=0.131837 idx=122 KEEP
+     rank=3 t=1.398s score=1.961820 z=1.473 motion=1.789351 delta=0.246384 idx=6 KEEP
+     rank=4 t=23.374s score=1.885860 z=1.370 motion=1.723613 delta=0.231781 idx=116 KEEP
+     rank=5 t=29.567s score=1.871096 z=1.350 motion=1.751034 delta=0.171517 idx=147 KEEP
+  -> candidate clips for Qwen selector:
+     index=1 rank=1 t=2.797s score=2.761663 z=2.558
+     index=2 rank=2 t=24.573s score=2.239990 z=1.850
+     index=3 rank=3 t=1.398s score=1.961820 z=1.473
+     index=4 rank=4 t=23.374s score=1.885860 z=1.370
+     index=5 rank=5 t=29.567s score=1.871096 z=1.350
+  -> model output: {
+  "selected_candidate_index": 2
+}
+
+  -> selected OF candidate: index=2 rank=2 time=24.5727s score=2.239990 z=1.850
+  -> predicted accident_time=24.5727
+  -> model output: {
+  "center_x": 0.14,
+  "center_y": 0.34
+}
+
+  -> model output: {
+  "center_x": 0.13,
+  "center_y": 0.33
+}
+
+  -> model output: {
+  "center_x": 0.15,
+  "center_y": 0.35
+}
+
+  -> model output: {
+  "center_x": 0.35,
+  "center_y": 0.45
+}
+
+  -> model output: {
+  "center_x": 0.5,
+  "center_y": 0.5
+}
+
+  -> predicted location: center_x=0.1400, center_y=0.3400
+  -> saved representative frame: /workspace/yujin/code/accident/frames/C7gOL8qM71E_00_t24.573.jpg
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=24.5727, center_x=0.1400, center_y=0.3400, type=single
+  -> CSV updated: /workspace/yujin/result/test8.csv (59 rows saved)
+
+[60] Processing: videos/At-4-Y2g7Y8_00.mp4
+  -> optical-flow stats: points=149 score_max=2.682631 score_mean=1.487253 score_std=0.451435
+  -> optical-flow candidates:
+     rank=1 t=2.606s score=2.682631 z=2.648 motion=2.589077 delta=0.133649 idx=12 KEEP
+     rank=2 t=1.403s score=2.514245 z=2.275 motion=2.410452 delta=0.148275 idx=6 KEEP
+     rank=3 t=6.414s score=2.310324 z=1.823 motion=2.185712 delta=0.178016 idx=31 KEEP
+     rank=4 t=3.608s score=2.095146 z=1.347 motion=2.095146 delta=0.000000 idx=17 KEEP
+     rank=5 t=4.610s score=1.949425 z=1.024 motion=1.896834 delta=0.075130 idx=22 KEEP
+  -> candidate clips for Qwen selector:
+     index=1 rank=1 t=2.606s score=2.682631 z=2.648
+     index=2 rank=2 t=1.403s score=2.514245 z=2.275
+     index=3 rank=3 t=6.414s score=2.310324 z=1.823
+     index=4 rank=4 t=3.608s score=2.095146 z=1.347
+     index=5 rank=5 t=4.610s score=1.949425 z=1.024
+  -> model output: {
+  "selected_candidate_index": 3
+}
+
+  -> selected OF candidate: index=3 rank=3 time=6.4142s score=2.310324 z=1.823
+  -> predicted accident_time=6.4142
+  -> model output: {
+  "center_x": 0.65,
+  "center_y": 0.4
+}
+
+  -> model output: {"center_x": 0.64, "center_y": 0.41}
+
+  -> model output: {"center_x": 0.64, "center_y": 0.43}
+
+  -> model output: {
+  "center_x": 0.43,
+  "center_y": 0.55
+}
+
+  -> model output: {
+  "center_x": 0.42,
+  "center_y": 0.58
+}
+
+  -> predicted location: center_x=0.6196, center_y=0.4296
+  -> saved representative frame: /workspace/yujin/code/accident/frames/At-4-Y2g7Y8_00_t6.414.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "rear-end"
+}
+
+  -> final parsed result: accident_time=6.4142, center_x=0.6196, center_y=0.4296, type=rear-end
+  -> CSV updated: /workspace/yujin/result/test8.csv (60 rows saved)
+
+[61] Processing: videos/1BIZOZtxRpY_00.mp4
+  -> optical-flow stats: points=137 score_max=1.364214 score_mean=0.600311 score_std=0.226245
+  -> optical-flow candidates:
+     rank=1 t=6.142s score=1.364214 z=3.376 motion=1.254144 delta=0.157243 idx=27 KEEP
+     rank=2 t=4.168s score=1.211642 z=2.702 motion=1.049309 delta=0.231904 idx=18 KEEP
+     rank=3 t=14.916s score=1.028722 z=1.894 motion=1.002464 delta=0.037512 idx=67 KEEP
+     rank=4 t=13.600s score=0.793324 z=0.853 motion=0.770069 delta=0.033221 idx=61 KEEP
+     rank=5 t=20.839s score=0.768238 z=0.742 motion=0.738815 delta=0.042033 idx=94 KEEP
+  -> candidate clips for Qwen selector:
+     index=1 rank=1 t=6.142s score=1.364214 z=3.376
+     index=2 rank=2 t=4.168s score=1.211642 z=2.702
+     index=3 rank=3 t=14.916s score=1.028722 z=1.894
+     index=4 rank=4 t=13.600s score=0.793324 z=0.853
+     index=5 rank=5 t=20.839s score=0.768238 z=0.742
+  -> model output: {
+  "selected_candidate_index": 5
+}
+
+  -> selected OF candidate: index=5 rank=5 time=20.8389s score=0.768238 z=0.742
+  -> predicted accident_time=20.8389
+  -> model output: {
+  "center_x": 0.51,
+  "center_y": 0.54
+}
+
+  -> model output: {
+  "center_x": 0.51,
+  "center_y": 0.53
+}
+
+  -> model output: {
+  "center_x": 0.51,
+  "center_y": 0.52
+}
+
+  -> model output: {
+  "center_x": 0.56,
+  "center_y": 0.58
+}
+
+  -> model output: {
+  "center_x": 0.5,
+  "center_y": 0.5
+}
+
+  -> predicted location: center_x=0.5100, center_y=0.5300
+  -> saved representative frame: /workspace/yujin/code/accident/frames/1BIZOZtxRpY_00_t20.839.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "rear-end"
+}
+
+  -> final parsed result: accident_time=20.8389, center_x=0.5100, center_y=0.5300, type=rear-end
+  -> CSV updated: /workspace/yujin/result/test8.csv (61 rows saved)
+
+[62] Processing: videos/GWx-Z5rWhzc_00.mp4
+  -> optical-flow stats: points=132 score_max=1.627355 score_mean=0.453727 score_std=0.303797
+  -> optical-flow candidates:
+     rank=1 t=3.003s score=1.627355 z=3.863 motion=1.538430 delta=0.127036 idx=14 KEEP
+     rank=2 t=2.002s score=1.021277 z=1.868 motion=0.984220 delta=0.052939 idx=9 KEEP
+     rank=3 t=1.001s score=0.721743 z=0.882 motion=0.659296 delta=0.089209 idx=4 KEEP
+     rank=4 t=21.020s score=0.714362 z=0.858 motion=0.698954 delta=0.022011 idx=104 KEEP
+     rank=5 t=17.617s score=0.643217 z=0.624 motion=0.628959 delta=0.020368 idx=87 KEEP
+  -> candidate clips for Qwen selector:
+     index=1 rank=1 t=3.003s score=1.627355 z=3.863
+     index=2 rank=2 t=2.002s score=1.021277 z=1.868
+     index=3 rank=3 t=1.001s score=0.721743 z=0.882
+     index=4 rank=4 t=21.020s score=0.714362 z=0.858
+     index=5 rank=5 t=17.617s score=0.643217 z=0.624
+  -> model output: {
+  "selected_candidate_index": 4
+}
+
+  -> selected OF candidate: index=4 rank=4 time=21.0197s score=0.714362 z=0.858
+  -> predicted accident_time=21.0197
+  -> model output: {"center_x": 0.49, "center_y": 0.46}
+
+  -> model output: {
+  "center_x": 0.49,
+  "center_y": 0.44
+}
+
+  -> model output: {"center_x": 0.49, "center_y": 0.44}
+
+  -> model output: {
+  "center_x": 0.51,
+  "center_y": 0.58
+}
+
+  -> model output: {
+  "center_x": 0.62,
+  "center_y": 0.65
+}
+
+  -> predicted location: center_x=0.4938, center_y=0.4707
+  -> saved representative frame: /workspace/yujin/code/accident/frames/GWx-Z5rWhzc_00_t21.020.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "t-bone"
+}
+
+  -> final parsed result: accident_time=21.0197, center_x=0.4938, center_y=0.4707, type=t-bone
+  -> CSV updated: /workspace/yujin/result/test8.csv (62 rows saved)
+
+[63] Processing: videos/bow1eKeR6oY_00.mp4
+  -> optical-flow stats: points=149 score_max=1.113052 score_mean=0.446993 score_std=0.249362
+  -> optical-flow candidates:
+     rank=1 t=2.205s score=1.113052 z=2.671 motion=1.043679 delta=0.099104 idx=10 KEEP
+     rank=2 t=8.619s score=1.074766 z=2.518 motion=1.003530 delta=0.101765 idx=42 KEEP
+     rank=3 t=15.033s score=0.865116 z=1.677 motion=0.833334 delta=0.045402 idx=74 KEEP
+     rank=4 t=9.621s score=0.783247 z=1.348 motion=0.783247 delta=0.000000 idx=47 KEEP
+     rank=5 t=16.036s score=0.674060 z=0.911 motion=0.674060 delta=0.000000 idx=79 KEEP
+  -> candidate clips for Qwen selector:
+     index=1 rank=1 t=2.205s score=1.113052 z=2.671
+     index=2 rank=2 t=8.619s score=1.074766 z=2.518
+     index=3 rank=3 t=15.033s score=0.865116 z=1.677
+     index=4 rank=4 t=9.621s score=0.783247 z=1.348
+     index=5 rank=5 t=16.036s score=0.674060 z=0.911
+  -> model output: {
+  "selected_candidate_index": 3
+}
+
+  -> selected OF candidate: index=3 rank=3 time=15.0334s score=0.865116 z=1.677
+  -> predicted accident_time=15.0334
+  -> model output: {
+  "center_x": 0.62,
+  "center_y": 0.39
+}
+
+  -> model output: {
+  "center_x": 0.62,
+  "center_y": 0.39
+}
+
+  -> model output: {
+  "center_x": 0.65,
+  "center_y": 0.39
+}
+
+  -> model output: {
+  "center_x": 0.54,
+  "center_y": 0.52
+}
+
+  -> model output: {
+  "center_x": 0.48,
+  "center_y": 0.52
+}
+
+  -> predicted location: center_x=0.6200, center_y=0.3946
+  -> saved representative frame: /workspace/yujin/code/accident/frames/bow1eKeR6oY_00_t15.033.jpg
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=15.0334, center_x=0.6200, center_y=0.3946, type=single
+  -> CSV updated: /workspace/yujin/result/test8.csv (63 rows saved)
+
+[64] Processing: videos/7CO_LqgfiFg_00.mp4
+  -> optical-flow stats: points=149 score_max=0.675472 score_mean=0.302898 score_std=0.200058
+  -> optical-flow candidates:
+     rank=1 t=3.608s score=0.675472 z=1.862 motion=0.655326 delta=0.028779 idx=17 KEEP
+     rank=2 t=1.604s score=0.645018 z=1.710 motion=0.629653 delta=0.021951 idx=7 KEEP
+     rank=3 t=5.612s score=0.628131 z=1.626 motion=0.613783 delta=0.020497 idx=27 KEEP
+     rank=4 t=0.601s score=0.623008 z=1.600 motion=0.541238 delta=0.116814 idx=2 KEEP
+     rank=5 t=2.606s score=0.606311 z=1.517 motion=0.606311 delta=0.000000 idx=12 KEEP
+  -> candidate clips for Qwen selector:
+     index=1 rank=1 t=3.608s score=0.675472 z=1.862
+     index=2 rank=2 t=1.604s score=0.645018 z=1.710
+     index=3 rank=3 t=5.612s score=0.628131 z=1.626
+     index=4 rank=4 t=0.601s score=0.623008 z=1.600
+     index=5 rank=5 t=2.606s score=0.606311 z=1.517
+  -> model output: {
+  "selected_candidate_index": 3
+}
+
+  -> selected OF candidate: index=3 rank=3 time=5.6125s score=0.628131 z=1.626
+  -> predicted accident_time=5.6125
+  -> model output: {
+  "center_x": 0.51,
+  "center_y": 0.75
+}
+
+  -> model output: {"center_x": 0.52, "center_y": 0.77}
+
+  -> model output: {"center_x": 0.516, "center_y": 0.75}
+
+  -> model output: {
+  "center_x": 0.52,
+  "center_y": 0.54
+}
+
+  -> model output: {
+  "center_x": 0.51,
+  "center_y": 0.58
+}
+
+  -> predicted location: center_x=0.5188, center_y=0.7649
+  -> saved representative frame: /workspace/yujin/code/accident/frames/7CO_LqgfiFg_00_t5.612.jpg
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=5.6125, center_x=0.5188, center_y=0.7649, type=single
+  -> CSV updated: /workspace/yujin/result/test8.csv (64 rows saved)
+
+[65] Processing: videos/6T58bsyZz40_00.mp4
+  -> optical-flow stats: points=149 score_max=2.473002 score_mean=1.431899 score_std=0.421978
+  -> optical-flow candidates:
+     rank=1 t=5.392s score=2.473002 z=2.467 motion=2.255209 delta=0.311133 idx=26 KEEP
+     rank=2 t=9.187s score=2.430609 z=2.367 motion=2.251288 delta=0.256174 idx=45 KEEP
+     rank=3 t=24.166s score=2.331574 z=2.132 motion=2.222445 delta=0.155899 idx=120 KEEP
+     rank=4 t=26.164s score=2.208826 z=1.841 motion=2.081637 delta=0.181697 idx=130 KEEP
+     rank=5 t=22.768s score=2.162727 z=1.732 motion=2.061712 delta=0.144307 idx=113 KEEP
+  -> candidate clips for Qwen selector:
+     index=1 rank=1 t=5.392s score=2.473002 z=2.467
+     index=2 rank=2 t=9.187s score=2.430609 z=2.367
+     index=3 rank=3 t=24.166s score=2.331574 z=2.132
+     index=4 rank=4 t=26.164s score=2.208826 z=1.841
+     index=5 rank=5 t=22.768s score=2.162727 z=1.732
+  -> model output: {
+  "selected_candidate_index": 3
+}
+
+  -> selected OF candidate: index=3 rank=3 time=24.1664s score=2.331574 z=2.132
+  -> predicted accident_time=24.1664
+  -> model output: {
+  "center_x": 0.657,
+  "center_y": 0.375
+}
+
+  -> model output: {
+  "center_x": 0.66,
+  "center_y": 0.38
+}
+
+  -> model output: {
+  "center_x": 0.65,
+  "center_y": 0.38
+}
+
+  -> model output: {
+  "center_x": 0.52,
+  "center_y": 0.48
+}
+
+  -> model output: {
+  "center_x": 0.52,
+  "center_y": 0.51
+}
+
+  -> predicted location: center_x=0.6621, center_y=0.3800
+  -> saved representative frame: /workspace/yujin/code/accident/frames/6T58bsyZz40_00_t24.166.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "sideswipe"
+}
+
+  -> final parsed result: accident_time=24.1664, center_x=0.6621, center_y=0.3800, type=sideswipe
+  -> CSV updated: /workspace/yujin/result/test8.csv (65 rows saved)
+
+[66] Processing: videos/bn7c9LxpeuA_00.mp4
+  -> optical-flow stats: points=125 score_max=1.141524 score_mean=0.403953 score_std=0.264885
+  -> optical-flow candidates:
+     rank=1 t=22.171s score=1.141524 z=2.784 motion=1.055878 delta=0.122351 idx=110 KEEP
+     rank=2 t=17.177s score=0.873742 z=1.774 motion=0.798996 delta=0.106780 idx=85 KEEP
+     rank=3 t=14.780s score=0.851043 z=1.688 motion=0.756580 delta=0.134947 idx=73 KEEP
+     rank=4 t=12.184s score=0.844202 z=1.662 motion=0.799411 delta=0.063987 idx=60 KEEP
+     rank=5 t=5.393s score=0.772499 z=1.391 motion=0.700636 delta=0.102662 idx=26 KEEP
+  -> candidate clips for Qwen selector:
+     index=1 rank=1 t=22.171s score=1.141524 z=2.784
+     index=2 rank=2 t=17.177s score=0.873742 z=1.774
+     index=3 rank=3 t=14.780s score=0.851043 z=1.688
+     index=4 rank=4 t=12.184s score=0.844202 z=1.662
+     index=5 rank=5 t=5.393s score=0.772499 z=1.391
+  -> model output: {
+  "selected_candidate_index": 5
+}
+
+  -> selected OF candidate: index=5 rank=5 time=5.3929s score=0.772499 z=1.391
+  -> predicted accident_time=5.3929
+  -> model output: {
+  "center_x": 0.467,
+  "center_y": 0.574
+}
+
+  -> model output: {
+  "center_x": 0.27,
+  "center_y": 0.77
+}
+
+  -> model output: {
+  "center_x": 0.21,
+  "center_y": 0.82
+}
+
+  -> model output: {
+  "center_x": 0.49,
+  "center_y": 0.51
+}
+
+  -> model output: {
+  "center_x": 0.48,
+  "center_y": 0.55
+}
+
+  -> predicted location: center_x=0.2652, center_y=0.7738
+  -> saved representative frame: /workspace/yujin/code/accident/frames/bn7c9LxpeuA_00_t5.393.jpg
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=5.3929, center_x=0.2652, center_y=0.7738, type=single
+  -> CSV updated: /workspace/yujin/result/test8.csv (66 rows saved)
+
+[67] Processing: videos/zISHd2Jt7Qs_00.mp4
+  -> optical-flow stats: points=150 score_max=1.286817 score_mean=0.446986 score_std=0.252492
+  -> optical-flow candidates:
+     rank=1 t=12.530s score=1.286817 z=3.326 motion=1.226252 delta=0.086522 idx=62 KEEP
+     rank=2 t=5.569s score=1.111359 z=2.631 motion=1.063158 delta=0.068859 idx=27 KEEP
+     rank=3 t=29.437s score=0.876187 z=1.700 motion=0.844005 delta=0.045973 idx=147 KEEP
+     rank=4 t=10.542s score=0.672494 z=0.893 motion=0.644782 delta=0.039588 idx=52 KEEP
+     rank=5 t=18.497s score=0.540919 z=0.372 motion=0.523878 delta=0.024345 idx=92 KEEP
+  -> candidate clips for Qwen selector:
+     index=1 rank=1 t=12.530s score=1.286817 z=3.326
+     index=2 rank=2 t=5.569s score=1.111359 z=2.631
+     index=3 rank=3 t=29.437s score=0.876187 z=1.700
+     index=4 rank=4 t=10.542s score=0.672494 z=0.893
+     index=5 rank=5 t=18.497s score=0.540919 z=0.372
+  -> model output: {
+  "selected_candidate_index": 3
+}
+
+  -> selected OF candidate: index=3 rank=3 time=29.4366s score=0.876187 z=1.700
+  -> predicted accident_time=29.4366
+  -> model output: {"center_x": 0.701, "center_y": 0.236}
+
+  -> model output: {
+  "center_x": 0.87,
+  "center_y": 0.24
+}
+
+  -> model output: {
+  "center_x": 0.701,
+  "center_y": 0.234
+}
+
+  -> model output: {
+  "center_x": 0.52,
+  "center_y": 0.51
+}
+
+  -> model output: {
+  "center_x": 0.64,
+  "center_y": 0.46
+}
+
+  -> predicted location: center_x=0.7087, center_y=0.2360
+  -> saved representative frame: /workspace/yujin/code/accident/frames/zISHd2Jt7Qs_00_t29.437.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "t-bone"
+}
+
+  -> final parsed result: accident_time=29.4366, center_x=0.7087, center_y=0.2360, type=t-bone
+  -> CSV updated: /workspace/yujin/result/test8.csv (67 rows saved)
+
+[68] Processing: videos/0isplBZQftg_00.mp4
+  -> optical-flow stats: points=150 score_max=3.628856 score_mean=1.303568 score_std=0.705355
+  -> optical-flow candidates:
+     rank=1 t=2.397s score=3.628856 z=3.297 motion=3.440177 delta=0.269542 idx=11 KEEP
+     rank=2 t=11.387s score=2.398918 z=1.553 motion=2.339286 delta=0.085189 idx=56 KEEP
+     rank=3 t=21.376s score=2.318308 z=1.439 motion=2.209383 delta=0.155607 idx=106 KEEP
+     rank=4 t=8.590s score=2.064330 z=1.079 motion=1.982531 delta=0.116856 idx=42 KEEP
+     rank=5 t=28.768s score=1.957536 z=0.927 motion=1.765930 delta=0.273723 idx=143 KEEP
+  -> candidate clips for Qwen selector:
+     index=1 rank=1 t=2.397s score=3.628856 z=3.297
+     index=2 rank=2 t=11.387s score=2.398918 z=1.553
+     index=3 rank=3 t=21.376s score=2.318308 z=1.439
+     index=4 rank=4 t=8.590s score=2.064330 z=1.079
+     index=5 rank=5 t=28.768s score=1.957536 z=0.927
+  -> model output: {
+  "selected_candidate_index": 5
+}
+
+  -> selected OF candidate: index=5 rank=5 time=28.7681s score=1.957536 z=0.927
+  -> predicted accident_time=28.7681
+  -> model output: {
+  "center_x": 0.38,
+  "center_y": 0.59
+}
+
+  -> model output: {
+  "center_x": 0.42,
+  "center_y": 0.63
+}
+
+  -> model output: {
+  "center_x": 0.48,
+  "center_y": 0.66
+}
+
+  -> model output: {
+  "center_x": 0.47,
+  "center_y": 0.45
+}
+
+  -> model output: {
+  "center_x": 0.56,
+  "center_y": 0.48
+}
+
+  -> predicted location: center_x=0.4200, center_y=0.6250
+  -> saved representative frame: /workspace/yujin/code/accident/frames/0isplBZQftg_00_t28.768.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "t-bone"
+}
+
+  -> final parsed result: accident_time=28.7681, center_x=0.4200, center_y=0.6250, type=t-bone
+  -> CSV updated: /workspace/yujin/result/test8.csv (68 rows saved)
+
+[69] Processing: videos/1lD9kE-VJ7I_00.mp4
+  -> optical-flow stats: points=101 score_max=3.092583 score_mean=0.578901 score_std=0.852298
+  -> optical-flow candidates:
+     rank=1 t=4.393s score=3.092583 z=2.949 motion=2.921734 delta=0.244069 idx=21 KEEP
+     rank=2 t=5.791s score=2.568555 z=2.334 motion=2.345617 delta=0.318483 idx=28 KEEP
+     rank=3 t=6.989s score=1.336394 z=0.889 motion=1.336394 delta=0.000000 idx=34 KEEP
+     rank=4 t=0.998s score=1.264404 z=0.804 motion=1.096084 delta=0.240457 idx=4 KEEP
+     rank=5 t=3.195s score=0.657446 z=0.092 motion=0.554840 delta=0.146580 idx=15 KEEP
+  -> candidate clips for Qwen selector:
+     index=1 rank=1 t=4.393s score=3.092583 z=2.949
+     index=2 rank=2 t=5.791s score=2.568555 z=2.334
+     index=3 rank=3 t=6.989s score=1.336394 z=0.889
+     index=4 rank=4 t=0.998s score=1.264404 z=0.804
+     index=5 rank=5 t=3.195s score=0.657446 z=0.092
+  -> model output: {
+  "selected_candidate_index": 2
+}
+
+  -> selected OF candidate: index=2 rank=2 time=5.7905s score=2.568555 z=2.334
+  -> predicted accident_time=5.7905
+  -> model output: {
+  "center_x": 0.59,
+  "center_y": 0.68
+}
+
+  -> model output: {
+  "center_x": 0.63,
+  "center_y": 0.74
+}
+
+  -> model output: {
+  "center_x": 0.68,
+  "center_y": 0.78
+}
+
+  -> model output: {
+  "center_x": 0.54,
+  "center_y": 0.62
+}
+
+  -> model output: {
+  "center_x": 0.58,
+  "center_y": 0.62
+}
+
+  -> predicted location: center_x=0.6455, center_y=0.7707
+  -> saved representative frame: /workspace/yujin/code/accident/frames/1lD9kE-VJ7I_00_t5.791.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "t-bone"
+}
+
+  -> final parsed result: accident_time=5.7905, center_x=0.6455, center_y=0.7707, type=t-bone
+  -> CSV updated: /workspace/yujin/result/test8.csv (69 rows saved)
+
+[70] Processing: videos/afVZZ3v87cc_00.mp4
+  -> optical-flow stats: points=149 score_max=1.475407 score_mean=0.676450 score_std=0.276103
+  -> optical-flow candidates:
+     rank=1 t=3.409s score=1.475407 z=2.894 motion=1.331825 delta=0.205118 idx=16 KEEP
+     rank=2 t=1.003s score=1.284650 z=2.203 motion=1.134188 delta=0.214947 idx=4 KEEP
+     rank=3 t=15.443s score=1.080418 z=1.463 motion=1.039571 delta=0.058352 idx=76 KEEP
+     rank=4 t=23.264s score=1.068285 z=1.419 motion=0.970034 delta=0.140359 idx=115 KEEP
+     rank=5 t=2.006s score=1.004760 z=1.189 motion=1.004760 delta=0.000000 idx=9 KEEP
+  -> candidate clips for Qwen selector:
+     index=1 rank=1 t=3.409s score=1.475407 z=2.894
+     index=2 rank=2 t=1.003s score=1.284650 z=2.203
+     index=3 rank=3 t=15.443s score=1.080418 z=1.463
+     index=4 rank=4 t=23.264s score=1.068285 z=1.419
+     index=5 rank=5 t=2.006s score=1.004760 z=1.189
+  -> model output: {
+  "selected_candidate_index": 3
+}
+
+  -> selected OF candidate: index=3 rank=3 time=15.4428s score=1.080418 z=1.463
+  -> predicted accident_time=15.4428
+  -> model output: {
+  "center_x": 0.34,
+  "center_y": 0.57
+}
+
+  -> model output: {"center_x": 0.45, "center_y": 0.51}
+
+  -> model output: {"center_x": 0.32, "center_y": 0.63}
+
+  -> model output: {"center_x": 0.51, "center_y": 0.45}
+
+  -> model output: {
+  "center_x": 0.48,
+  "center_y": 0.45
+}
+
+  -> predicted location: center_x=0.3400, center_y=0.5573
+  -> saved representative frame: /workspace/yujin/code/accident/frames/afVZZ3v87cc_00_t15.443.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "rear-end"
+}
+
+  -> final parsed result: accident_time=15.4428, center_x=0.3400, center_y=0.5573, type=rear-end
+  -> CSV updated: /workspace/yujin/result/test8.csv (70 rows saved)
+
+[71] Processing: videos/fYUPTfVRKEk_00.mp4
+  -> optical-flow stats: points=121 score_max=2.123303 score_mean=0.894519 score_std=0.560548
+  -> optical-flow candidates:
+     rank=1 t=13.586s score=2.123303 z=2.192 motion=1.948446 delta=0.249797 idx=67 KEEP
+     rank=2 t=8.591s score=1.996599 z=1.966 motion=1.932724 delta=0.091251 idx=42 KEEP
+     rank=3 t=18.181s score=1.795934 z=1.608 motion=1.607936 delta=0.268569 idx=90 KEEP
+     rank=4 t=11.588s score=1.767649 z=1.558 motion=1.540501 delta=0.324497 idx=57 KEEP
+     rank=5 t=21.977s score=1.716231 z=1.466 motion=1.652783 delta=0.090641 idx=109 KEEP
+  -> candidate clips for Qwen selector:
+     index=1 rank=1 t=13.586s score=2.123303 z=2.192
+     index=2 rank=2 t=8.591s score=1.996599 z=1.966
+     index=3 rank=3 t=18.181s score=1.795934 z=1.608
+     index=4 rank=4 t=11.588s score=1.767649 z=1.558
+     index=5 rank=5 t=21.977s score=1.716231 z=1.466
+  -> model output: {
+  "selected_candidate_index": 2
+}
+
+  -> selected OF candidate: index=2 rank=2 time=8.5912s score=1.996599 z=1.966
+  -> predicted accident_time=8.5912
+  -> model output: {"center_x": 0.303, "center_y": 0.375}
+
+  -> model output: {
+  "center_x": 0.303,
+  "center_y": 0.375
+}
+
+  -> model output: {"center_x": 0.404, "center_y": 0.422}
+
+  -> model output: {
+  "center_x": 0.61,
+  "center_y": 0.63
+}
+
+  -> model output: {
+  "center_x": 0.53,
+  "center_y": 0.53
+}
+
+  -> predicted location: center_x=0.3108, center_y=0.3833
+  -> saved representative frame: /workspace/yujin/code/accident/frames/fYUPTfVRKEk_00_t8.591.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "rear-end"
+}
+
+  -> final parsed result: accident_time=8.5912, center_x=0.3108, center_y=0.3833, type=rear-end
+  -> CSV updated: /workspace/yujin/result/test8.csv (71 rows saved)
+
+[72] Processing: videos/NDkAFTqHLzo_00.mp4
+  -> optical-flow stats: points=123 score_max=2.957957 score_mean=1.012149 score_std=0.671254
+  -> optical-flow candidates:
+     rank=1 t=3.805s score=2.957957 z=2.899 motion=2.742894 delta=0.307232 idx=18 KEEP
+     rank=2 t=1.802s score=2.429463 z=2.111 motion=2.296050 delta=0.190590 idx=8 KEEP
+     rank=3 t=2.804s score=2.254582 z=1.851 motion=2.249017 delta=0.007951 idx=13 KEEP
+     rank=4 t=5.207s score=1.812306 z=1.192 motion=1.784720 delta=0.039410 idx=25 KEEP
+     rank=5 t=19.426s score=1.623815 z=0.911 motion=1.518151 delta=0.150948 idx=96 KEEP
+  -> candidate clips for Qwen selector:
+     index=1 rank=1 t=3.805s score=2.957957 z=2.899
+     index=2 rank=2 t=1.802s score=2.429463 z=2.111
+     index=3 rank=3 t=2.804s score=2.254582 z=1.851
+     index=4 rank=4 t=5.207s score=1.812306 z=1.192
+     index=5 rank=5 t=19.426s score=1.623815 z=0.911
+  -> model output: {
+  "selected_candidate_index": 1
+}
+
+  -> selected OF candidate: index=1 rank=1 time=3.8051s score=2.957957 z=2.899
+  -> predicted accident_time=3.8051
+  -> model output: {"center_x": 0.57, "center_y": 0.46}
+
+  -> model output: {"center_x": 0.54, "center_y": 0.45}
+
+  -> model output: {"center_x": 0.59, "center_y": 0.49}
+
+  -> model output: {
+  "center_x": 0.5,
+  "center_y": 0.5
+}
+
+  -> model output: {
+  "center_x": 0.51,
+  "center_y": 0.58
+}
+
+  -> predicted location: center_x=0.5700, center_y=0.4600
+  -> saved representative frame: /workspace/yujin/code/accident/frames/NDkAFTqHLzo_00_t3.805.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "rear-end"
+}
+
+  -> final parsed result: accident_time=3.8051, center_x=0.5700, center_y=0.4600, type=rear-end
+  -> CSV updated: /workspace/yujin/result/test8.csv (72 rows saved)
+
+[73] Processing: videos/BR4WAtlyQEQ_00.mp4
+  -> optical-flow stats: points=132 score_max=0.738457 score_mean=0.098629 score_std=0.127464
+  -> optical-flow candidates:
+     rank=1 t=1.578s score=0.738457 z=5.020 motion=0.646592 delta=0.131236 idx=6 KEEP
+     rank=2 t=0.451s score=0.472271 z=2.931 motion=0.465823 delta=0.009211 idx=1 KEEP
+     rank=3 t=4.734s score=0.230611 z=1.035 motion=0.192411 delta=0.054571 idx=20 KEEP
+     rank=4 t=2.931s score=0.107461 z=0.069 motion=0.098460 delta=0.012859 idx=12 KEEP
+     rank=5 t=5.861s score=0.104316 z=0.045 motion=0.104316 delta=0.000000 idx=25 KEEP
+  -> candidate clips for Qwen selector:
+     index=1 rank=1 t=1.578s score=0.738457 z=5.020
+     index=2 rank=2 t=0.451s score=0.472271 z=2.931
+     index=3 rank=3 t=4.734s score=0.230611 z=1.035
+     index=4 rank=4 t=2.931s score=0.107461 z=0.069
+     index=5 rank=5 t=5.861s score=0.104316 z=0.045
+  -> model output: {
+  "selected_candidate_index": 5
+}
+
+  -> selected OF candidate: index=5 rank=5 time=5.8615s score=0.104316 z=0.045
+  -> predicted accident_time=5.8615
+  -> model output: {
+  "center_x": 0.496,
+  "center_y": 0.296
+}
+
+  -> model output: {
+  "center_x": 0.504,
+  "center_y": 0.305
+}
+
+  -> model output: {
+  "center_x": 0.51,
+  "center_y": 0.31
+}
+
+  -> model output: {
+  "center_x": 0.51,
+  "center_y": 0.52
+}
+
+  -> model output: {
+  "center_x": 0.52,
+  "center_y": 0.52
+}
+
+  -> predicted location: center_x=0.5077, center_y=0.3098
+  -> saved representative frame: /workspace/yujin/code/accident/frames/BR4WAtlyQEQ_00_t5.861.jpg
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=5.8615, center_x=0.5077, center_y=0.3098, type=single
+  -> CSV updated: /workspace/yujin/result/test8.csv (73 rows saved)
+
+[74] Processing: videos/zXKdiWjxhd8_00.mp4
+  -> optical-flow stats: points=149 score_max=2.232297 score_mean=0.357254 score_std=0.417835
+  -> optical-flow candidates:
+     rank=1 t=2.609s score=2.232297 z=4.488 motion=2.143020 delta=0.127537 idx=12 KEEP
+     rank=2 t=5.217s score=0.921157 z=1.350 motion=0.893434 delta=0.039604 idx=25 KEEP
+     rank=3 t=3.612s score=0.832000 z=1.136 motion=0.832000 delta=0.000000 idx=17 KEEP
+     rank=4 t=8.227s score=0.818341 z=1.104 motion=0.769147 delta=0.070277 idx=40 KEEP
+     rank=5 t=1.605s score=0.634441 z=0.663 motion=0.560707 delta=0.105335 idx=7 KEEP
+  -> candidate clips for Qwen selector:
+     index=1 rank=1 t=2.609s score=2.232297 z=4.488
+     index=2 rank=2 t=5.217s score=0.921157 z=1.350
+     index=3 rank=3 t=3.612s score=0.832000 z=1.136
+     index=4 rank=4 t=8.227s score=0.818341 z=1.104
+     index=5 rank=5 t=1.605s score=0.634441 z=0.663
+  -> model output: {
+  "selected_candidate_index": 4
+}
+
+  -> selected OF candidate: index=4 rank=4 time=8.2273s score=0.818341 z=1.104
+  -> predicted accident_time=8.2273
+  -> model output: {"center_x": 0.307, "center_y": 0.644}
+
+  -> model output: {"center_x": 0.308, "center_y": 0.646}
+
+  -> model output: {"center_x": 0.307, "center_y": 0.648}
+
+  -> model output: {
+  "center_x": 0.51,
+  "center_y": 0.51
+}
+
+  -> model output: {
+  "center_x": 0.53,
+  "center_y": 0.44
+}
+
+  -> predicted location: center_x=0.3107, center_y=0.6460
+  -> saved representative frame: /workspace/yujin/code/accident/frames/zXKdiWjxhd8_00_t8.227.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "t-bone"
+}
+
+  -> final parsed result: accident_time=8.2273, center_x=0.3107, center_y=0.6460, type=t-bone
+  -> CSV updated: /workspace/yujin/result/test8.csv (74 rows saved)
+
+[75] Processing: videos/JHq6SVNhY0Y_00.mp4
+  -> optical-flow stats: points=148 score_max=4.150458 score_mean=2.099138 score_std=0.840317
+  -> optical-flow candidates:
+     rank=1 t=20.606s score=4.150458 z=2.441 motion=4.043159 delta=0.153283 idx=101 KEEP
+     rank=2 t=4.444s score=3.594564 z=1.780 motion=3.339092 delta=0.364960 idx=21 KEEP
+     rank=3 t=24.444s score=3.350768 z=1.489 motion=3.233275 delta=0.167847 idx=120 KEEP
+     rank=4 t=22.828s score=3.350431 z=1.489 motion=3.180963 delta=0.242099 idx=112 KEEP
+     rank=5 t=6.465s score=3.008727 z=1.082 motion=2.728997 delta=0.399614 idx=31 KEEP
+  -> candidate clips for Qwen selector:
+     index=1 rank=1 t=20.606s score=4.150458 z=2.441
+     index=2 rank=2 t=4.444s score=3.594564 z=1.780
+     index=3 rank=3 t=24.444s score=3.350768 z=1.489
+     index=4 rank=4 t=22.828s score=3.350431 z=1.489
+     index=5 rank=5 t=6.465s score=3.008727 z=1.082
+  -> model output: {
+  "selected_candidate_index": 2
+}
+
+  -> selected OF candidate: index=2 rank=2 time=4.4444s score=3.594564 z=1.780
+  -> predicted accident_time=4.4444
+  -> model output: {"center_x": 0.68, "center_y": 0.36}
+
+  -> model output: {"center_x": 0.617, "center_y": 0.371}
+
+  -> model output: {
+  "center_x": 0.61,
+  "center_y": 0.38
+}
+
+  -> model output: {
+  "center_x": 0.44,
+  "center_y": 0.52
+}
+
+  -> model output: {
+  "center_x": 0.55,
+  "center_y": 0.52
+}
+
+  -> predicted location: center_x=0.6170, center_y=0.3765
+  -> saved representative frame: /workspace/yujin/code/accident/frames/JHq6SVNhY0Y_00_t4.444.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "t-bone"
+}
+
+  -> final parsed result: accident_time=4.4444, center_x=0.6170, center_y=0.3765, type=t-bone
+  -> CSV updated: /workspace/yujin/result/test8.csv (75 rows saved)
+
+[76] Processing: videos/03HtRCJa8Yk_00.mp4
+  -> optical-flow stats: points=149 score_max=3.580757 score_mean=0.658429 score_std=0.947844
+  -> optical-flow candidates:
+     rank=1 t=2.410s score=3.580757 z=3.083 motion=3.482790 delta=0.139953 idx=11 KEEP
+     rank=2 t=3.414s score=2.962058 z=2.430 motion=2.959276 delta=0.003973 idx=16 KEEP
+     rank=3 t=5.623s score=2.289830 z=1.721 motion=2.243413 delta=0.066310 idx=27 KEEP
+     rank=4 t=4.418s score=2.129777 z=1.552 motion=2.129777 delta=0.000000 idx=21 KEEP
+     rank=5 t=1.406s score=1.983326 z=1.398 motion=1.648649 delta=0.478111 idx=6 KEEP
+  -> candidate clips for Qwen selector:
+     index=1 rank=1 t=2.410s score=3.580757 z=3.083
+     index=2 rank=2 t=3.414s score=2.962058 z=2.430
+     index=3 rank=3 t=5.623s score=2.289830 z=1.721
+     index=4 rank=4 t=4.418s score=2.129777 z=1.552
+     index=5 rank=5 t=1.406s score=1.983326 z=1.398
+  -> model output: {
+  "selected_candidate_index": 3
+}
+
+  -> selected OF candidate: index=3 rank=3 time=5.6233s score=2.289830 z=1.721
+  -> predicted accident_time=5.6233
+  -> model output: {
+  "center_x": 0.64,
+  "center_y": 0.35
+}
+
+  -> model output: {
+  "center_x": 0.68,
+  "center_y": 0.48
+}
+
+  -> model output: {
+  "center_x": 0.58,
+  "center_y": 0.63
+}
+
+  -> model output: {
+  "center_x": 0.5,
+  "center_y": 0.5
+}
+
+  -> model output: {
+  "center_x": 0.46,
+  "center_y": 0.61
+}
+
+  -> predicted location: center_x=0.6393, center_y=0.4800
+  -> saved representative frame: /workspace/yujin/code/accident/frames/03HtRCJa8Yk_00_t5.623.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "t-bone"
+}
+
+  -> final parsed result: accident_time=5.6233, center_x=0.6393, center_y=0.4800, type=t-bone
+  -> CSV updated: /workspace/yujin/result/test8.csv (76 rows saved)
+
+[77] Processing: videos/6EW9PrDqKA8_00.mp4
+  -> optical-flow stats: points=129 score_max=2.431428 score_mean=0.680404 score_std=0.573356
+  -> optical-flow candidates:
+     rank=1 t=3.776s score=2.431428 z=3.054 motion=2.289120 delta=0.203297 idx=17 KEEP
+     rank=2 t=21.606s score=1.846661 z=2.034 motion=1.765535 delta=0.115895 idx=102 KEEP
+     rank=3 t=25.172s score=1.495072 z=1.421 motion=1.405624 delta=0.127784 idx=119 KEEP
+     rank=4 t=22.655s score=1.369077 z=1.201 motion=1.369077 delta=0.000000 idx=107 KEEP
+     rank=5 t=26.431s score=1.315486 z=1.108 motion=1.252384 delta=0.090146 idx=125 KEEP
+  -> candidate clips for Qwen selector:
+     index=1 rank=1 t=3.776s score=2.431428 z=3.054
+     index=2 rank=2 t=21.606s score=1.846661 z=2.034
+     index=3 rank=3 t=25.172s score=1.495072 z=1.421
+     index=4 rank=4 t=22.655s score=1.369077 z=1.201
+     index=5 rank=5 t=26.431s score=1.315486 z=1.108
+  -> model output: {
+  "selected_candidate_index": 3
+}
+
+  -> selected OF candidate: index=3 rank=3 time=25.1722s score=1.495072 z=1.421
+  -> predicted accident_time=25.1722
+  -> model output: {
+  "center_x": 0.19,
+  "center_y": 0.67
+}
+
+  -> model output: {
+  "center_x": 0.21,
+  "center_y": 0.69
+}
+
+  -> model output: {
+  "center_x": 0.18,
+  "center_y": 0.68
+}
+
+  -> model output: {
+  "center_x": 0.47,
+  "center_y": 0.55
+}
+
+  -> model output: {
+  "center_x": 0.42,
+  "center_y": 0.52
+}
+
+  -> predicted location: center_x=0.1878, center_y=0.6853
+  -> saved representative frame: /workspace/yujin/code/accident/frames/6EW9PrDqKA8_00_t25.172.jpg
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=25.1722, center_x=0.1878, center_y=0.6853, type=single
+  -> CSV updated: /workspace/yujin/result/test8.csv (77 rows saved)
+
+[78] Processing: videos/-NgnSm_oEB4_00.mp4
+  -> optical-flow stats: points=144 score_max=2.926268 score_mean=0.791580 score_std=0.841003
+  -> optical-flow candidates:
+     rank=1 t=13.510s score=2.926268 z=2.538 motion=2.773532 delta=0.218195 idx=64 KEEP
+     rank=2 t=8.730s score=2.737444 z=2.314 motion=2.583224 delta=0.220315 idx=41 KEEP
+     rank=3 t=0.831s score=2.618922 z=2.173 motion=2.491138 delta=0.182550 idx=3 KEEP
+     rank=4 t=7.275s score=2.334337 z=1.834 motion=2.043509 delta=0.415469 idx=34 KEEP
+     rank=5 t=3.949s score=1.584962 z=0.943 motion=1.532484 delta=0.074969 idx=18 KEEP
+  -> candidate clips for Qwen selector:
+     index=1 rank=1 t=13.510s score=2.926268 z=2.538
+     index=2 rank=2 t=8.730s score=2.737444 z=2.314
+     index=3 rank=3 t=0.831s score=2.618922 z=2.173
+     index=4 rank=4 t=7.275s score=2.334337 z=1.834
+     index=5 rank=5 t=3.949s score=1.584962 z=0.943
+  -> model output: {
+  "selected_candidate_index": 4
+}
+
+  -> selected OF candidate: index=4 rank=4 time=7.2748s score=2.334337 z=1.834
+  -> predicted accident_time=7.2748
+  -> model output: {
+  "center_x": 0.30,
+  "center_y": 0.38
+}
+
+  -> model output: {
+  "center_x": 0.29,
+  "center_y": 0.38
+}
+
+  -> model output: {
+  "center_x": 0.31,
+  "center_y": 0.41
+}
+
+  -> model output: {
+  "center_x": 0.48,
+  "center_y": 0.52
+}
+
+  -> model output: {
+  "center_x": 0.44,
+  "center_y": 0.52
+}
+
+  -> predicted location: center_x=0.2918, center_y=0.3849
+  -> saved representative frame: /workspace/yujin/code/accident/frames/-NgnSm_oEB4_00_t7.275.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "rear-end"
+}
+
+  -> final parsed result: accident_time=7.2748, center_x=0.2918, center_y=0.3849, type=rear-end
+  -> CSV updated: /workspace/yujin/result/test8.csv (78 rows saved)
+
+[79] Processing: videos/wQ_pGHoj2SI_00.mp4
+  -> optical-flow stats: points=150 score_max=3.283724 score_mean=1.790000 score_std=0.741559
+  -> optical-flow candidates:
+     rank=1 t=10.189s score=3.283724 z=2.014 motion=3.186765 delta=0.138513 idx=50 KEEP
+     rank=2 t=8.990s score=3.142251 z=1.824 motion=3.002038 delta=0.200305 idx=44 KEEP
+     rank=3 t=23.174s score=3.053696 z=1.704 motion=2.887940 delta=0.236794 idx=115 KEEP
+     rank=4 t=4.994s score=3.045830 z=1.693 motion=2.883052 delta=0.232541 idx=24 KEEP
+     rank=5 t=27.969s score=2.946790 z=1.560 motion=2.841068 delta=0.151031 idx=139 KEEP
+  -> candidate clips for Qwen selector:
+     index=1 rank=1 t=10.189s score=3.283724 z=2.014
+     index=2 rank=2 t=8.990s score=3.142251 z=1.824
+     index=3 rank=3 t=23.174s score=3.053696 z=1.704
+     index=4 rank=4 t=4.994s score=3.045830 z=1.693
+     index=5 rank=5 t=27.969s score=2.946790 z=1.560
+  -> model output: {
+  "selected_candidate_index": 5
+}
+
+  -> selected OF candidate: index=5 rank=5 time=27.9690s score=2.946790 z=1.560
+  -> predicted accident_time=27.9690
+  -> model output: {"center_x": 0.41, "center_y": 0.28}
+
+  -> model output: {"center_x": 0.55, "center_y": 0.18}
+
+  -> model output: {"center_x": 0.04, "center_y": 0.81}
+
+  -> model output: {
+  "center_x": 0.62,
+  "center_y": 0.41
+}
+
+  -> model output: {
+  "center_x": 0.58,
+  "center_y": 0.35
+}
+
+  -> predicted location: center_x=0.4309, center_y=0.2435
+  -> saved representative frame: /workspace/yujin/code/accident/frames/wQ_pGHoj2SI_00_t27.969.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "rear-end"
+}
+
+  -> final parsed result: accident_time=27.9690, center_x=0.4309, center_y=0.2435, type=rear-end
+  -> CSV updated: /workspace/yujin/result/test8.csv (79 rows saved)
+
+[80] Processing: videos/dZ-F8lZ16-A_00.mp4
+  -> optical-flow stats: points=36 score_max=2.748327 score_mean=1.883650 score_std=0.410436
+  -> optical-flow candidates:
+     rank=1 t=3.229s score=2.748327 z=2.107 motion=2.627186 delta=0.173059 idx=15 KEEP
+     rank=2 t=1.009s score=2.268862 z=0.939 motion=2.113099 delta=0.222518 idx=4 KEEP
+     rank=3 t=2.220s score=1.920224 z=0.089 motion=1.889741 delta=0.043546 idx=10 KEEP
+     rank=4 t=4.440s score=1.845512 z=-0.093 motion=1.777206 delta=0.097579 idx=21 KEEP
+     rank=5 t=6.257s score=1.828975 z=-0.133 motion=1.802115 delta=0.038371 idx=30 KEEP
+  -> candidate clips for Qwen selector:
+     index=1 rank=1 t=3.229s score=2.748327 z=2.107
+     index=2 rank=2 t=1.009s score=2.268862 z=0.939
+     index=3 rank=3 t=2.220s score=1.920224 z=0.089
+     index=4 rank=4 t=4.440s score=1.845512 z=-0.093
+     index=5 rank=5 t=6.257s score=1.828975 z=-0.133
+  -> model output: {
+  "selected_candidate_index": 5
+}
+
+  -> selected OF candidate: index=5 rank=5 time=6.2566s score=1.828975 z=-0.133
+  -> predicted accident_time=6.2566
+  -> model output: {"center_x": 0.41, "center_y": 0.21}
+
+  -> model output: {
+  "center_x": 0.41,
+  "center_y": 0.22
+}
+
+  -> model output: {
+  "center_x": 0.602,
+  "center_y": 0.392
+}
+
+  -> model output: {
+  "center_x": 0.51,
+  "center_y": 0.44
+}
+
+  -> model output: {
+  "center_x": 0.47,
+  "center_y": 0.28
+}
+
+  -> predicted location: center_x=0.4100, center_y=0.1951
+  -> saved representative frame: /workspace/yujin/code/accident/frames/dZ-F8lZ16-A_00_t6.257.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "rear-end"
+}
+
+  -> final parsed result: accident_time=6.2566, center_x=0.4100, center_y=0.1951, type=rear-end
+  -> CSV updated: /workspace/yujin/result/test8.csv (80 rows saved)
+
+[81] Processing: videos/Chf8yRqccCM_00.mp4
+  -> optical-flow stats: points=54 score_max=2.609722 score_mean=0.964775 score_std=0.706567
+  -> optical-flow candidates:
+     rank=1 t=5.220s score=2.609722 z=2.328 motion=2.328017 delta=0.402436 idx=25 KEEP
+     rank=2 t=2.409s score=2.238400 z=1.803 motion=2.103844 delta=0.192223 idx=11 KEEP
+     rank=3 t=0.602s score=1.373821 z=0.579 motion=1.266089 delta=0.153903 idx=2 KEEP
+     rank=4 t=3.413s score=0.874212 z=-0.128 motion=0.874212 delta=0.000000 idx=16 KEEP
+     rank=5 t=6.223s score=0.820018 z=-0.205 motion=0.820018 delta=0.000000 idx=30 KEEP
+  -> candidate clips for Qwen selector:
+     index=1 rank=1 t=5.220s score=2.609722 z=2.328
+     index=2 rank=2 t=2.409s score=2.238400 z=1.803
+     index=3 rank=3 t=0.602s score=1.373821 z=0.579
+     index=4 rank=4 t=3.413s score=0.874212 z=-0.128
+     index=5 rank=5 t=6.223s score=0.820018 z=-0.205
+  -> model output: {
+  "selected_candidate_index": 1
+}
+
+  -> selected OF candidate: index=1 rank=1 time=5.2197s score=2.609722 z=2.328
+  -> predicted accident_time=5.2197
+  -> model output: {
+  "center_x": 0.04,
+  "center_y": 0.61
+}
+
+  -> model output: {
+  "center_x": 0.31,
+  "center_y": 0.68
+}
+
+  -> model output: {
+  "center_x": 0.37,
+  "center_y": 0.64
+}
+
+  -> model output: {
+  "center_x": 0.53,
+  "center_y": 0.68
+}
+
+  -> model output: {
+  "center_x": 0.53,
+  "center_y": 0.68
+}
+
+  -> predicted location: center_x=0.3174, center_y=0.6863
+  -> saved representative frame: /workspace/yujin/code/accident/frames/Chf8yRqccCM_00_t5.220.jpg
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=5.2197, center_x=0.3174, center_y=0.6863, type=single
+  -> CSV updated: /workspace/yujin/result/test8.csv (81 rows saved)
+
+[82] Processing: videos/P4oEdSFJvfU_00.mp4
+  -> optical-flow stats: points=121 score_max=1.408500 score_mean=0.652087 score_std=0.287519
+  -> optical-flow candidates:
+     rank=1 t=12.987s score=1.408500 z=2.631 motion=1.305612 delta=0.146983 idx=64 KEEP
+     rank=2 t=17.382s score=1.178955 z=1.832 motion=1.127696 delta=0.073227 idx=86 KEEP
+     rank=3 t=0.599s score=1.069511 z=1.452 motion=0.924464 delta=0.207211 idx=2 KEEP
+     rank=4 t=2.797s score=0.880211 z=0.793 motion=0.833943 delta=0.066096 idx=13 KEEP
+     rank=5 t=18.581s score=0.858688 z=0.719 motion=0.858688 delta=0.000000 idx=92 KEEP
+  -> candidate clips for Qwen selector:
+     index=1 rank=1 t=12.987s score=1.408500 z=2.631
+     index=2 rank=2 t=17.382s score=1.178955 z=1.832
+     index=3 rank=3 t=0.599s score=1.069511 z=1.452
+     index=4 rank=4 t=2.797s score=0.880211 z=0.793
+     index=5 rank=5 t=18.581s score=0.858688 z=0.719
+  -> model output: {
+  "selected_candidate_index": 2
+}
+
+  -> selected OF candidate: index=2 rank=2 time=17.3822s score=1.178955 z=1.832
+  -> predicted accident_time=17.3822
+  -> model output: {
+  "center_x": 0.19,
+  "center_y": 0.56
+}
+
+  -> model output: {
+  "center_x": 0.19,
+  "center_y": 0.54
+}
+
+  -> model output: {
+  "center_x": 0.14,
+  "center_y": 0.63
+}
+
+  -> model output: {
+  "center_x": 0.43,
+  "center_y": 0.45
+}
+
+  -> model output: {
+  "center_x": 0.38,
+  "center_y": 0.52
+}
+
+  -> predicted location: center_x=0.1718, center_y=0.5600
+  -> saved representative frame: /workspace/yujin/code/accident/frames/P4oEdSFJvfU_00_t17.382.jpg
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=17.3822, center_x=0.1718, center_y=0.5600, type=single
+  -> CSV updated: /workspace/yujin/result/test8.csv (82 rows saved)
+
+[83] Processing: videos/yQz3PyPvr5Y_00.mp4
+  -> optical-flow stats: points=132 score_max=1.849682 score_mean=0.429349 score_std=0.435851
+  -> optical-flow candidates:
+     rank=1 t=19.496s score=1.849682 z=3.259 motion=1.667185 delta=0.260710 idx=85 KEEP
+     rank=2 t=25.617s score=1.667666 z=2.841 motion=1.410040 delta=0.368036 idx=112 KEEP
+     rank=3 t=4.534s score=1.490463 z=2.435 motion=1.381843 delta=0.155172 idx=19 KEEP
+     rank=4 t=5.668s score=0.864676 z=0.999 motion=0.864676 delta=0.000000 idx=24 KEEP
+     rank=5 t=26.751s score=0.657258 z=0.523 motion=0.657258 delta=0.000000 idx=117 KEEP
+  -> candidate clips for Qwen selector:
+     index=1 rank=1 t=19.496s score=1.849682 z=3.259
+     index=2 rank=2 t=25.617s score=1.667666 z=2.841
+     index=3 rank=3 t=4.534s score=1.490463 z=2.435
+     index=4 rank=4 t=5.668s score=0.864676 z=0.999
+     index=5 rank=5 t=26.751s score=0.657258 z=0.523
+  -> model output: {
+  "selected_candidate_index": 5
+}
+
+  -> selected OF candidate: index=5 rank=5 time=26.7506s score=0.657258 z=0.523
+  -> predicted accident_time=26.7506
+  -> model output: {
+  "center_x": 0.64,
+  "center_y": 0.51
+}
+
+  -> model output: {
+  "center_x": 0.63,
+  "center_y": 0.47
+}
+
+  -> model output: {
+  "center_x": 0.71,
+  "center_y": 0.41
+}
+
+  -> model output: {
+  "center_x": 0.48,
+  "center_y": 0.52
+}
+
+  -> model output: {
+  "center_x": 0.42,
+  "center_y": 0.58
+}
+
+  -> predicted location: center_x=0.6314, center_y=0.4774
+  -> saved representative frame: /workspace/yujin/code/accident/frames/yQz3PyPvr5Y_00_t26.751.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "t-bone"
+}
+
+  -> final parsed result: accident_time=26.7506, center_x=0.6314, center_y=0.4774, type=t-bone
+  -> CSV updated: /workspace/yujin/result/test8.csv (83 rows saved)
+
+[84] Processing: videos/FhFwhsyOjUU_00.mp4
+  -> optical-flow stats: points=136 score_max=4.308518 score_mean=1.924791 score_std=0.845713
+  -> optical-flow candidates:
+     rank=1 t=20.000s score=4.308518 z=2.819 motion=4.103584 delta=0.292762 idx=99 KEEP
+     rank=2 t=9.600s score=3.337733 z=1.671 motion=3.252582 delta=0.121644 idx=47 KEEP
+     rank=3 t=26.200s score=3.256803 z=1.575 motion=2.882399 delta=0.534863 idx=130 KEEP
+     rank=4 t=22.600s score=3.050894 z=1.332 motion=2.984901 delta=0.094275 idx=112 KEEP
+     rank=5 t=21.200s score=2.931498 z=1.190 motion=2.882262 delta=0.070337 idx=105 KEEP
+  -> candidate clips for Qwen selector:
+     index=1 rank=1 t=20.000s score=4.308518 z=2.819
+     index=2 rank=2 t=9.600s score=3.337733 z=1.671
+     index=3 rank=3 t=26.200s score=3.256803 z=1.575
+     index=4 rank=4 t=22.600s score=3.050894 z=1.332
+     index=5 rank=5 t=21.200s score=2.931498 z=1.190
+  -> model output: {
+  "selected_candidate_index": 3
+}
+
+  -> selected OF candidate: index=3 rank=3 time=26.2000s score=3.256803 z=1.575
+  -> predicted accident_time=26.2000
+  -> model output: {"center_x": 0.527, "center_y": 0.342}
+
+  -> model output: {"center_x": 0.57, "center_y": 0.52}
+
+  -> model output: {
+  "center_x": 0.61,
+  "center_y": 0.57
+}
+
+  -> model output: {
+  "center_x": 0.56,
+  "center_y": 0.62
+}
+
+  -> model output: {
+  "center_x": 0.52,
+  "center_y": 0.65
+}
+
+  -> predicted location: center_x=0.5752, center_y=0.5590
+  -> saved representative frame: /workspace/yujin/code/accident/frames/FhFwhsyOjUU_00_t26.200.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "sideswipe"
+}
+
+  -> final parsed result: accident_time=26.2000, center_x=0.5752, center_y=0.5590, type=sideswipe
+  -> CSV updated: /workspace/yujin/result/test8.csv (84 rows saved)
+
+[85] Processing: videos/GaAVUUYx9q8_00.mp4
+  -> optical-flow stats: points=149 score_max=3.599773 score_mean=0.791339 score_std=0.979404
+  -> optical-flow candidates:
+     rank=1 t=2.007s score=3.599773 z=2.867 motion=3.434117 delta=0.236651 idx=9 KEEP
+     rank=2 t=6.020s score=2.764872 z=2.015 motion=2.630826 delta=0.191495 idx=29 KEEP
+     rank=3 t=0.602s score=2.753562 z=2.003 motion=2.447797 delta=0.436807 idx=2 KEEP
+     rank=4 t=3.010s score=2.607270 z=1.854 motion=2.607270 delta=0.000000 idx=14 KEEP
+     rank=5 t=29.498s score=2.193027 z=1.431 motion=1.983105 delta=0.299889 idx=146 KEEP
+  -> candidate clips for Qwen selector:
+     index=1 rank=1 t=2.007s score=3.599773 z=2.867
+     index=2 rank=2 t=6.020s score=2.764872 z=2.015
+     index=3 rank=3 t=0.602s score=2.753562 z=2.003
+     index=4 rank=4 t=3.010s score=2.607270 z=1.854
+     index=5 rank=5 t=29.498s score=2.193027 z=1.431
+  -> model output: {
+  "selected_candidate_index": 5
+}
+
+  -> selected OF candidate: index=5 rank=5 time=29.4980s score=2.193027 z=1.431
+  -> predicted accident_time=29.4980
+  -> model output: {"center_x": 0.54, "center_y": 0.6}
+
+  -> model output: {"center_x": 0.56, "center_y": 0.56}
+
+  -> model output: {"center_x": 0.19, "center_y": 0.35}
+
+  -> model output: {
+  "center_x": 0.57,
+  "center_y": 0.52
+}
+
+  -> model output: {
+  "center_x": 0.56,
+  "center_y": 0.55
+}
+
+  -> predicted location: center_x=0.5554, center_y=0.5673
+  -> saved representative frame: /workspace/yujin/code/accident/frames/GaAVUUYx9q8_00_t29.498.jpg
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=29.4980, center_x=0.5554, center_y=0.5673, type=single
+  -> CSV updated: /workspace/yujin/result/test8.csv (85 rows saved)
+
+[86] Processing: videos/-jZ5Rlhzzi4_00.mp4
+  -> optical-flow stats: points=149 score_max=2.389876 score_mean=0.869228 score_std=0.628366
+  -> optical-flow candidates:
+     rank=1 t=18.090s score=2.389876 z=2.420 motion=2.272126 delta=0.168214 idx=89 KEEP
+     rank=2 t=2.211s score=2.192744 z=2.106 motion=2.100951 delta=0.131132 idx=10 KEEP
+     rank=3 t=1.005s score=2.001492 z=1.802 motion=1.877433 delta=0.177228 idx=4 KEEP
+     rank=4 t=6.633s score=1.908285 z=1.654 motion=1.786760 delta=0.173606 idx=32 KEEP
+     rank=5 t=26.331s score=1.842922 z=1.550 motion=1.645177 delta=0.282493 idx=130 KEEP
+  -> candidate clips for Qwen selector:
+     index=1 rank=1 t=18.090s score=2.389876 z=2.420
+     index=2 rank=2 t=2.211s score=2.192744 z=2.106
+     index=3 rank=3 t=1.005s score=2.001492 z=1.802
+     index=4 rank=4 t=6.633s score=1.908285 z=1.654
+     index=5 rank=5 t=26.331s score=1.842922 z=1.550
+  -> model output: {
+  "selected_candidate_index": 2
+}
+
+  -> selected OF candidate: index=2 rank=2 time=2.2110s score=2.192744 z=2.106
+  -> predicted accident_time=2.2110
+  -> model output: {
+  "center_x": 0.31,
+  "center_y": 0.64
+}
+
+  -> model output: {
+  "center_x": 0.37,
+  "center_y": 0.73
+}
+
+  -> model output: {
+  "center_x": 0.32,
+  "center_y": 0.82
+}
+
+  -> model output: {
+  "center_x": 0.52,
+  "center_y": 0.58
+}
+
+  -> model output: {
+  "center_x": 0.55,
+  "center_y": 0.55
+}
+
+  -> predicted location: center_x=0.3273, center_y=0.7431
+  -> saved representative frame: /workspace/yujin/code/accident/frames/-jZ5Rlhzzi4_00_t2.211.jpg
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=2.2110, center_x=0.3273, center_y=0.7431, type=single
+  -> CSV updated: /workspace/yujin/result/test8.csv (86 rows saved)
+
+[87] Processing: videos/LP_C34tyPl4_00.mp4
+  -> optical-flow stats: points=150 score_max=2.287142 score_mean=1.276190 score_std=0.429688
+  -> optical-flow candidates:
+     rank=1 t=11.990s score=2.287142 z=2.353 motion=2.044264 delta=0.346969 idx=59 KEEP
+     rank=2 t=22.781s score=2.246576 z=2.258 motion=2.068799 delta=0.253966 idx=113 KEEP
+     rank=3 t=28.376s score=2.182945 z=2.110 motion=1.963292 delta=0.313789 idx=141 KEEP
+     rank=4 t=13.389s score=1.990433 z=1.662 motion=1.945998 delta=0.063478 idx=66 KEEP
+     rank=5 t=0.600s score=1.872551 z=1.388 motion=1.733004 delta=0.199353 idx=2 KEEP
+  -> candidate clips for Qwen selector:
+     index=1 rank=1 t=11.990s score=2.287142 z=2.353
+     index=2 rank=2 t=22.781s score=2.246576 z=2.258
+     index=3 rank=3 t=28.376s score=2.182945 z=2.110
+     index=4 rank=4 t=13.389s score=1.990433 z=1.662
+     index=5 rank=5 t=0.600s score=1.872551 z=1.388
+  -> model output: {
+  "selected_candidate_index": 4
+}
+
+  -> selected OF candidate: index=4 rank=4 time=13.3889s score=1.990433 z=1.662
+  -> predicted accident_time=13.3889
+  -> model output: {"center_x": 0.56, "center_y": 0.49}
+
+  -> model output: {
+  "center_x": 0.34,
+  "center_y": 0.53
+}
+
+  -> model output: {"center_x": 0.327, "center_y": 0.546}
+
+  -> model output: {
+  "center_x": 0.48,
+  "center_y": 0.52
+}
+
+  -> model output: {"center_x": 0.42, "center_y": 0.54}
+
+  -> predicted location: center_x=0.3317, center_y=0.5372
+  -> saved representative frame: /workspace/yujin/code/accident/frames/LP_C34tyPl4_00_t13.389.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "rear-end"
+}
+
+  -> final parsed result: accident_time=13.3889, center_x=0.3317, center_y=0.5372, type=rear-end
+  -> CSV updated: /workspace/yujin/result/test8.csv (87 rows saved)
+
+[88] Processing: videos/tFS_Hk-qEiQ_00.mp4
+  -> optical-flow stats: points=25 score_max=2.209249 score_mean=0.710243 score_std=0.753697
+  -> optical-flow candidates:
+     rank=1 t=0.808s score=2.209249 z=1.989 motion=2.046867 delta=0.231974 idx=3 KEEP
+     rank=2 t=1.817s score=0.653713 z=-0.075 motion=0.653713 delta=0.000000 idx=8 KEEP
+     rank=3 t=4.644s score=0.382510 z=-0.435 motion=0.355028 delta=0.039260 idx=22 KEEP
+     rank=4 t=3.635s score=0.116395 z=-0.788 motion=0.101815 delta=0.020830 idx=17 KEEP
+  -> candidate clips for Qwen selector:
+     index=1 rank=1 t=0.808s score=2.209249 z=1.989
+     index=2 rank=2 t=1.817s score=0.653713 z=-0.075
+     index=3 rank=3 t=4.644s score=0.382510 z=-0.435
+     index=4 rank=4 t=3.635s score=0.116395 z=-0.788
+  -> model output: {
+  "selected_candidate_index": 1
+}
+
+  -> selected OF candidate: index=1 rank=1 time=0.8077s score=2.209249 z=1.989
+  -> predicted accident_time=0.8077
+  -> model output: {"center_x": 0.48, "center_y": 0.68}
+
+  -> model output: {"center_x": 0.45, "center_y": 0.65}
+
+  -> model output: {
+  "center_x": 0.48,
+  "center_y": 0.52
+}
+
+  -> model output: {
+  "center_x": 0.52,
+  "center_y": 0.68
+}
+
+  -> model output: {
+  "center_x": 0.35,
+  "center_y": 0.55
+}
+
+  -> predicted location: center_x=0.4800, center_y=0.6624
+  -> saved representative frame: /workspace/yujin/code/accident/frames/tFS_Hk-qEiQ_00_t0.808.jpg
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=0.8077, center_x=0.4800, center_y=0.6624, type=single
+  -> CSV updated: /workspace/yujin/result/test8.csv (88 rows saved)
+
+[89] Processing: videos/mzHmLvV9QlM_00.mp4
+  -> optical-flow stats: points=45 score_max=1.207589 score_mean=0.239754 score_std=0.334548
+  -> optical-flow candidates:
+     rank=1 t=7.628s score=1.207589 z=2.893 motion=1.100369 delta=0.153171 idx=37 KEEP
+     rank=2 t=6.624s score=0.359937 z=0.359 motion=0.302800 delta=0.081624 idx=32 KEEP
+     rank=3 t=8.631s score=0.345758 z=0.317 motion=0.345758 delta=0.000000 idx=42 KEEP
+     rank=4 t=0.602s score=0.078564 z=-0.482 motion=0.064809 delta=0.019651 idx=2 KEEP
+     rank=5 t=5.219s score=0.053274 z=-0.557 motion=0.051085 delta=0.003127 idx=25 KEEP
+  -> candidate clips for Qwen selector:
+     index=1 rank=1 t=7.628s score=1.207589 z=2.893
+     index=2 rank=2 t=6.624s score=0.359937 z=0.359
+     index=3 rank=3 t=8.631s score=0.345758 z=0.317
+     index=4 rank=4 t=0.602s score=0.078564 z=-0.482
+     index=5 rank=5 t=5.219s score=0.053274 z=-0.557
+  -> model output: {
+  "selected_candidate_index": 4
+}
+
+  -> selected OF candidate: index=4 rank=4 time=0.6022s score=0.078564 z=-0.482
+  -> predicted accident_time=0.6022
+  -> model output: {"center_x": 0.52, "center_y": 0.5}
+
+  -> model output: {"center_x": 0.51, "center_y": 0.51}
+
+  -> model output: {"center_x": 0.512, "center_y": 0.505}
+
+  -> model output: {
+  "center_x": 0.51,
+  "center_y": 0.52
+}
+
+  -> model output: {
+  "center_x": 0.43,
+  "center_y": 0.45
+}
+
+  -> predicted location: center_x=0.5120, center_y=0.5050
+  -> saved representative frame: /workspace/yujin/code/accident/frames/mzHmLvV9QlM_00_t0.602.jpg
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=0.6022, center_x=0.5120, center_y=0.5050, type=single
+  -> CSV updated: /workspace/yujin/result/test8.csv (89 rows saved)
+
+[90] Processing: videos/c4exlXawFaM_00.mp4
+  -> optical-flow stats: points=164 score_max=1.934562 score_mean=0.543813 score_std=0.493532
+  -> optical-flow candidates:
+     rank=1 t=2.009s score=1.934562 z=2.818 motion=1.866883 delta=0.096686 idx=10 KEEP
+     rank=2 t=3.287s score=1.580338 z=2.100 motion=1.499397 delta=0.115631 idx=17 KEEP
+     rank=3 t=0.913s score=1.473451 z=1.884 motion=1.278525 delta=0.278465 idx=4 KEEP
+     rank=4 t=19.906s score=1.282054 z=1.496 motion=1.262624 delta=0.027757 idx=108 KEEP
+     rank=5 t=23.924s score=1.078910 z=1.084 motion=1.046841 delta=0.045813 idx=130 KEEP
+  -> candidate clips for Qwen selector:
+     index=1 rank=1 t=2.009s score=1.934562 z=2.818
+     index=2 rank=2 t=3.287s score=1.580338 z=2.100
+     index=3 rank=3 t=0.913s score=1.473451 z=1.884
+     index=4 rank=4 t=19.906s score=1.282054 z=1.496
+     index=5 rank=5 t=23.924s score=1.078910 z=1.084
+  -> model output: {
+  "selected_candidate_index": 2
+}
+
+  -> selected OF candidate: index=2 rank=2 time=3.2872s score=1.580338 z=2.100
+  -> predicted accident_time=3.2872
+  -> model output: {"center_x": 0.54, "center_y": 0.57}
+
+  -> model output: {
+  "center_x": 0.605,
+  "center_y": 0.508
+}
+
+  -> model output: {"center_x": 0.635, "center_y": 0.477}
+
+  -> model output: {
+  "center_x": 0.49,
+  "center_y": 0.51
+}
+
+  -> model output: {
+  "center_x": 0.5,
+  "center_y": 0.5
+}
+
+  -> predicted location: center_x=0.6043, center_y=0.5080
+  -> saved representative frame: /workspace/yujin/code/accident/frames/c4exlXawFaM_00_t3.287.jpg
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=3.2872, center_x=0.6043, center_y=0.5080, type=single
+  -> CSV updated: /workspace/yujin/result/test8.csv (90 rows saved)
+
+[91] Processing: videos/-yLuZ5wxAsc_00.mp4
+  -> optical-flow stats: points=156 score_max=0.196303 score_mean=0.073355 score_std=0.028417
+  -> optical-flow candidates:
+     rank=1 t=3.057s score=0.196303 z=4.326 motion=0.188219 delta=0.011549 idx=15 KEEP
+     rank=2 t=28.662s score=0.117802 z=1.564 motion=0.105055 delta=0.018210 idx=149 KEEP
+     rank=3 t=5.350s score=0.116156 z=1.506 motion=0.107194 delta=0.012803 idx=27 KEEP
+     rank=4 t=1.911s score=0.109226 z=1.262 motion=0.104505 delta=0.006744 idx=9 KEEP
+     rank=5 t=0.573s score=0.102677 z=1.032 motion=0.093210 delta=0.013524 idx=2 KEEP
+  -> candidate clips for Qwen selector:
+     index=1 rank=1 t=3.057s score=0.196303 z=4.326
+     index=2 rank=2 t=28.662s score=0.117802 z=1.564
+     index=3 rank=3 t=5.350s score=0.116156 z=1.506
+     index=4 rank=4 t=1.911s score=0.109226 z=1.262
+     index=5 rank=5 t=0.573s score=0.102677 z=1.032
+  -> model output: {
+  "selected_candidate_index": 1
+}
+
+  -> selected OF candidate: index=1 rank=1 time=3.0573s score=0.196303 z=4.326
+  -> predicted accident_time=3.0573
+  -> model output: {
+  "center_x": 0.47,
+  "center_y": 0.52
+}
+
+  -> model output: {
+  "center_x": 0.47,
+  "center_y": 0.52
+}
+
+  -> model output: {
+  "center_x": 0.47,
+  "center_y": 0.52
+}
+
+  -> model output: {
+  "center_x": 0.52,
+  "center_y": 0.48
+}
+
+  -> model output: {
+  "center_x": 0.54,
+  "center_y": 0.43
+}
+
+  -> predicted location: center_x=0.4775, center_y=0.5115
+  -> saved representative frame: /workspace/yujin/code/accident/frames/-yLuZ5wxAsc_00_t3.057.jpg
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=3.0573, center_x=0.4775, center_y=0.5115, type=single
+  -> CSV updated: /workspace/yujin/result/test8.csv (91 rows saved)
+
+[92] Processing: videos/uKieP03gwxQ_00.mp4
+  -> optical-flow stats: points=129 score_max=0.497261 score_mean=0.393518 score_std=0.050030
+  -> optical-flow candidates:
+     rank=1 t=0.602s score=0.497261 z=2.074 motion=0.425275 delta=0.102837 idx=2 KEEP
+     rank=2 t=2.208s score=0.480281 z=1.734 motion=0.475209 delta=0.007246 idx=10 KEEP
+     rank=3 t=5.019s score=0.460821 z=1.345 motion=0.451891 delta=0.012756 idx=24 KEEP
+     rank=4 t=3.614s score=0.460612 z=1.341 motion=0.459136 delta=0.002108 idx=17 KEEP
+     rank=5 t=22.888s score=0.449854 z=1.126 motion=0.439187 delta=0.015238 idx=113 KEEP
+  -> candidate clips for Qwen selector:
+     index=1 rank=1 t=0.602s score=0.497261 z=2.074
+     index=2 rank=2 t=2.208s score=0.480281 z=1.734
+     index=3 rank=3 t=5.019s score=0.460821 z=1.345
+     index=4 rank=4 t=3.614s score=0.460612 z=1.341
+     index=5 rank=5 t=22.888s score=0.449854 z=1.126
+  -> model output: {
+  "selected_candidate_index": 5
+}
+
+  -> selected OF candidate: index=5 rank=5 time=22.8879s score=0.449854 z=1.126
+  -> predicted accident_time=22.8879
+  -> model output: {"center_x": 0.57, "center_y": 0.71}
+
+  -> model output: {"center_x": 0.58, "center_y": 0.71}
+
+  -> model output: {"center_x": 0.58, "center_y": 0.69}
+
+  -> model output: {
+  "center_x": 0.5,
+  "center_y": 0.5
+}
+
+  -> model output: {
+  "center_x": 0.51,
+  "center_y": 0.48
+}
+
+  -> predicted location: center_x=0.5800, center_y=0.7095
+  -> saved representative frame: /workspace/yujin/code/accident/frames/uKieP03gwxQ_00_t22.888.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "rear-end"
+}
+
+  -> final parsed result: accident_time=22.8879, center_x=0.5800, center_y=0.7095, type=rear-end
+  -> CSV updated: /workspace/yujin/result/test8.csv (92 rows saved)
+
+[93] Processing: videos/Q72Ly8rGtnc_00.mp4
+  -> optical-flow stats: points=149 score_max=1.901301 score_mean=0.332508 score_std=0.432886
+  -> optical-flow candidates:
+     rank=1 t=19.427s score=1.901301 z=3.624 motion=1.805545 delta=0.136794 idx=96 KEEP
+     rank=2 t=23.232s score=1.381676 z=2.424 motion=1.271869 delta=0.156868 idx=115 KEEP
+     rank=3 t=26.236s score=1.286390 z=2.204 motion=1.227041 delta=0.084783 idx=130 KEEP
+     rank=4 t=18.426s score=0.899104 z=1.309 motion=0.767782 delta=0.187603 idx=91 KEEP
+     rank=5 t=27.238s score=0.688283 z=0.822 motion=0.688283 delta=0.000000 idx=135 KEEP
+  -> candidate clips for Qwen selector:
+     index=1 rank=1 t=19.427s score=1.901301 z=3.624
+     index=2 rank=2 t=23.232s score=1.381676 z=2.424
+     index=3 rank=3 t=26.236s score=1.286390 z=2.204
+     index=4 rank=4 t=18.426s score=0.899104 z=1.309
+     index=5 rank=5 t=27.238s score=0.688283 z=0.822
+  -> model output: {
+  "selected_candidate_index": 4
+}
+
+  -> selected OF candidate: index=4 rank=4 time=18.4256s score=0.899104 z=1.309
+  -> predicted accident_time=18.4256
+  -> model output: {
+  "center_x": 0.77,
+  "center_y": 0.41
+}
+
+  -> model output: {
+  "center_x": 0.92,
+  "center_y": 0.72
+}
+
+  -> model output: {
+  "center_x": 0.82,
+  "center_y": 0.78
+}
+
+  -> model output: {
+  "center_x": 0.78,
+  "center_y": 0.52
+}
+
+  -> model output: {
+  "center_x": 0.78,
+  "center_y": 0.55
+}
+
+  -> predicted location: center_x=0.8929, center_y=0.7277
+  -> saved representative frame: /workspace/yujin/code/accident/frames/Q72Ly8rGtnc_00_t18.426.jpg
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=18.4256, center_x=0.8929, center_y=0.7277, type=single
+  -> CSV updated: /workspace/yujin/result/test8.csv (93 rows saved)
+
+[94] Processing: videos/Img4DcUjRmo_00.mp4
+  -> optical-flow stats: points=149 score_max=1.688654 score_mean=0.661170 score_std=0.407852
+  -> optical-flow candidates:
+     rank=1 t=5.600s score=1.688654 z=2.519 motion=1.583259 delta=0.150566 idx=27 KEEP
+     rank=2 t=19.600s score=1.419852 z=1.860 motion=1.363451 delta=0.080574 idx=97 KEEP
+     rank=3 t=7.600s score=1.273499 z=1.501 motion=1.212987 delta=0.086447 idx=37 KEEP
+     rank=4 t=18.600s score=1.232312 z=1.400 motion=1.164250 delta=0.097232 idx=92 KEEP
+     rank=5 t=15.000s score=1.180789 z=1.274 motion=1.149888 delta=0.044144 idx=74 KEEP
+  -> candidate clips for Qwen selector:
+     index=1 rank=1 t=5.600s score=1.688654 z=2.519
+     index=2 rank=2 t=19.600s score=1.419852 z=1.860
+     index=3 rank=3 t=7.600s score=1.273499 z=1.501
+     index=4 rank=4 t=18.600s score=1.232312 z=1.400
+     index=5 rank=5 t=15.000s score=1.180789 z=1.274
+  -> model output: {
+  "selected_candidate_index": 4
+}
+
+  -> selected OF candidate: index=4 rank=4 time=18.6000s score=1.232312 z=1.400
+  -> predicted accident_time=18.6000
+  -> model output: {
+  "center_x": 0.82,
+  "center_y": 0.39
+}
+
+  -> model output: {
+  "center_x": 0.82,
+  "center_y": 0.85
+}
+
+  -> model output: {
+  "center_x": 0.72,
+  "center_y": 0.39
+}
+
+  -> model output: {
+  "center_x": 0.28,
+  "center_y": 0.48
+}
+
+  -> model output: {
+  "center_x": 0.52,
+  "center_y": 0.55
+}
+
+  -> predicted location: center_x=0.8200, center_y=0.3900
+  -> saved representative frame: /workspace/yujin/code/accident/frames/Img4DcUjRmo_00_t18.600.jpg
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=18.6000, center_x=0.8200, center_y=0.3900, type=single
+  -> CSV updated: /workspace/yujin/result/test8.csv (94 rows saved)
+
+[95] Processing: videos/LMw1OJe37fM_00.mp4
+  -> optical-flow stats: points=144 score_max=0.685952 score_mean=0.260230 score_std=0.155198
+  -> optical-flow candidates:
+     rank=1 t=9.116s score=0.685952 z=2.743 motion=0.609249 delta=0.109576 idx=43 KEEP
+     rank=2 t=29.006s score=0.603875 z=2.214 motion=0.564227 delta=0.056640 idx=139 KEEP
+     rank=3 t=0.622s score=0.490767 z=1.485 motion=0.436561 delta=0.077437 idx=2 KEEP
+     rank=4 t=10.981s score=0.472384 z=1.367 motion=0.458469 delta=0.019879 idx=52 KEEP
+     rank=5 t=19.268s score=0.469148 z=1.346 motion=0.444605 delta=0.035061 idx=92 KEEP
+  -> candidate clips for Qwen selector:
+     index=1 rank=1 t=9.116s score=0.685952 z=2.743
+     index=2 rank=2 t=29.006s score=0.603875 z=2.214
+     index=3 rank=3 t=0.622s score=0.490767 z=1.485
+     index=4 rank=4 t=10.981s score=0.472384 z=1.367
+     index=5 rank=5 t=19.268s score=0.469148 z=1.346
+  -> model output: {
+  "selected_candidate_index": 1
+}
+
+  -> selected OF candidate: index=1 rank=1 time=9.1161s score=0.685952 z=2.743
+  -> predicted accident_time=9.1161
+  -> model output: {"center_x": 0.628, "center_y": 0.217}
+
+  -> model output: {
+  "center_x": 0.63,
+  "center_y": 0.21
+}
+
+  -> model output: {
+  "center_x": 0.64,
+  "center_y": 0.21
+}
+
+  -> model output: {
+  "center_x": 0.45,
+  "center_y": 0.5
+}
+
+  -> model output: {
+  "center_x": 0.38,
+  "center_y": 0.52
+}
+
+  -> predicted location: center_x=0.6099, center_y=0.2100
+  -> saved representative frame: /workspace/yujin/code/accident/frames/LMw1OJe37fM_00_t9.116.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "sideswipe"
+}
+
+  -> final parsed result: accident_time=9.1161, center_x=0.6099, center_y=0.2100, type=sideswipe
+  -> CSV updated: /workspace/yujin/result/test8.csv (95 rows saved)
+
+[96] Processing: videos/jgAGNNIG13E_00.mp4
+  -> optical-flow stats: points=149 score_max=1.982271 score_mean=0.426165 score_std=0.366493
+  -> optical-flow candidates:
+     rank=1 t=23.452s score=1.982271 z=4.246 motion=1.834323 delta=0.211354 idx=116 KEEP
+     rank=2 t=6.615s score=1.193420 z=2.093 motion=1.045781 delta=0.210913 idx=32 KEEP
+     rank=3 t=8.218s score=0.917461 z=1.341 motion=0.876171 delta=0.058985 idx=40 KEEP
+     rank=4 t=27.261s score=0.870680 z=1.213 motion=0.829197 delta=0.059260 idx=135 KEEP
+     rank=5 t=4.610s score=0.738555 z=0.852 motion=0.668259 delta=0.100423 idx=22 KEEP
+  -> candidate clips for Qwen selector:
+     index=1 rank=1 t=23.452s score=1.982271 z=4.246
+     index=2 rank=2 t=6.615s score=1.193420 z=2.093
+     index=3 rank=3 t=8.218s score=0.917461 z=1.341
+     index=4 rank=4 t=27.261s score=0.870680 z=1.213
+     index=5 rank=5 t=4.610s score=0.738555 z=0.852
+  -> model output: {
+  "selected_candidate_index": 4
+}
+
+  -> selected OF candidate: index=4 rank=4 time=27.2606s score=0.870680 z=1.213
+  -> predicted accident_time=27.2606
+  -> model output: {"center_x": 0.516, "center_y": 0.426}
+
+  -> model output: {"center_x": 0.52, "center_y": 0.43}
+
+  -> model output: {"center_x": 0.528, "center_y": 0.442}
+
+  -> model output: {
+  "center_x": 0.52,
+  "center_y": 0.48
+}
+
+  -> model output: {
+  "center_x": 0.42,
+  "center_y": 0.48
+}
+
+  -> predicted location: center_x=0.5200, center_y=0.4246
+  -> saved representative frame: /workspace/yujin/code/accident/frames/jgAGNNIG13E_00_t27.261.jpg
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=27.2606, center_x=0.5200, center_y=0.4246, type=single
+  -> CSV updated: /workspace/yujin/result/test8.csv (96 rows saved)
+
+[97] Processing: videos/Fb1XWmXZTZw_00.mp4
+  -> optical-flow stats: points=132 score_max=2.640623 score_mean=1.462713 score_std=0.575863
+  -> optical-flow candidates:
+     rank=1 t=10.410s score=2.640623 z=2.045 motion=2.597653 delta=0.061385 idx=51 KEEP
+     rank=2 t=3.603s score=2.521663 z=1.839 motion=2.473119 delta=0.069349 idx=17 KEEP
+     rank=3 t=0.601s score=2.302672 z=1.459 motion=2.009584 delta=0.418697 idx=2 KEEP
+     rank=4 t=1.602s score=2.232941 z=1.338 motion=2.215723 delta=0.024597 idx=7 KEEP
+     rank=5 t=9.409s score=2.227201 z=1.328 motion=2.162895 delta=0.091866 idx=46 KEEP
+  -> candidate clips for Qwen selector:
+     index=1 rank=1 t=10.410s score=2.640623 z=2.045
+     index=2 rank=2 t=3.603s score=2.521663 z=1.839
+     index=3 rank=3 t=0.601s score=2.302672 z=1.459
+     index=4 rank=4 t=1.602s score=2.232941 z=1.338
+     index=5 rank=5 t=9.409s score=2.227201 z=1.328
+  -> model output: {
+  "selected_candidate_index": 1
+}
+
+  -> selected OF candidate: index=1 rank=1 time=10.4098s score=2.640623 z=2.045
+  -> predicted accident_time=10.4098
+  -> model output: {
+  "center_x": 0.43,
+  "center_y": 0.41
+}
+
+  -> model output: {"center_x": 0.428, "center_y": 0.472}
+
+  -> model output: {"center_x": 0.465, "center_y": 0.508}
+
+  -> model output: {
+  "center_x": 0.41,
+  "center_y": 0.45
+}
+
+  -> model output: {
+  "center_x": 0.43,
+  "center_y": 0.42
+}
+
+  -> predicted location: center_x=0.4119, center_y=0.4508
+  -> saved representative frame: /workspace/yujin/code/accident/frames/Fb1XWmXZTZw_00_t10.410.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "rear-end"
+}
+
+  -> final parsed result: accident_time=10.4098, center_x=0.4119, center_y=0.4508, type=rear-end
+  -> CSV updated: /workspace/yujin/result/test8.csv (97 rows saved)
+
+[98] Processing: videos/mllfWsyVZ1s_00.mp4
+  -> optical-flow stats: points=130 score_max=1.230039 score_mean=0.144302 score_std=0.242052
+  -> optical-flow candidates:
+     rank=1 t=28.312s score=1.230039 z=4.486 motion=1.097400 delta=0.189484 idx=122 KEEP
+     rank=2 t=5.064s score=0.706172 z=2.321 motion=0.640934 delta=0.093197 idx=21 KEEP
+     rank=3 t=29.463s score=0.462024 z=1.313 motion=0.462024 delta=0.000000 idx=127 KEEP
+     rank=4 t=0.691s score=0.266935 z=0.507 motion=0.245364 delta=0.030816 idx=2 KEEP
+     rank=5 t=6.215s score=0.155775 z=0.047 motion=0.155775 delta=0.000000 idx=26 KEEP
+  -> candidate clips for Qwen selector:
+     index=1 rank=1 t=28.312s score=1.230039 z=4.486
+     index=2 rank=2 t=5.064s score=0.706172 z=2.321
+     index=3 rank=3 t=29.463s score=0.462024 z=1.313
+     index=4 rank=4 t=0.691s score=0.266935 z=0.507
+     index=5 rank=5 t=6.215s score=0.155775 z=0.047
+  -> model output: {
+  "selected_candidate_index": 2
+}
+
+  -> selected OF candidate: index=2 rank=2 time=5.0639s score=0.706172 z=2.321
+  -> predicted accident_time=5.0639
+  -> model output: {"center_x": 0.33, "center_y": 0.76}
+
+  -> model output: {"center_x": 0.418, "center_y": 0.656}
+
+  -> model output: {"center_x": 0.49, "center_y": 0.55}
+
+  -> model output: {
+  "center_x": 0.52,
+  "center_y": 0.51
+}
+
+  -> model output: {
+  "center_x": 0.52,
+  "center_y": 0.48
+}
+
+  -> predicted location: center_x=0.4235, center_y=0.6560
+  -> saved representative frame: /workspace/yujin/code/accident/frames/mllfWsyVZ1s_00_t5.064.jpg
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=5.0639, center_x=0.4235, center_y=0.6560, type=single
+  -> CSV updated: /workspace/yujin/result/test8.csv (98 rows saved)
+
+[99] Processing: videos/clXKxQWjB4c_00.mp4
+  -> optical-flow stats: points=130 score_max=0.365005 score_mean=0.163194 score_std=0.054873
+  -> optical-flow candidates:
+     rank=1 t=3.597s score=0.365005 z=3.678 motion=0.323027 delta=0.059968 idx=17 KEEP
+     rank=2 t=4.995s score=0.271546 z=1.975 motion=0.242562 delta=0.041405 idx=24 KEEP
+     rank=3 t=2.398s score=0.243567 z=1.465 motion=0.216684 delta=0.038404 idx=11 KEEP
+     rank=4 t=6.594s score=0.241137 z=1.420 motion=0.229728 delta=0.016298 idx=32 KEEP
+     rank=5 t=19.381s score=0.234988 z=1.308 motion=0.216653 delta=0.026192 idx=96 KEEP
+  -> candidate clips for Qwen selector:
+     index=1 rank=1 t=3.597s score=0.365005 z=3.678
+     index=2 rank=2 t=4.995s score=0.271546 z=1.975
+     index=3 rank=3 t=2.398s score=0.243567 z=1.465
+     index=4 rank=4 t=6.594s score=0.241137 z=1.420
+     index=5 rank=5 t=19.381s score=0.234988 z=1.308
+  -> model output: {
+  "selected_candidate_index": 4
+}
+
+  -> selected OF candidate: index=4 rank=4 time=6.5937s score=0.241137 z=1.420
+  -> predicted accident_time=6.5937
+  -> model output: {
+  "center_x": 0.505,
+  "center_y": 0.685
+}
+
+  -> model output: {
+  "center_x": 0.51,
+  "center_y": 0.7
+}
+
+  -> model output: {
+  "center_x": 0.52,
+  "center_y": 0.71
+}
+
+  -> model output: {
+  "center_x": 0.49,
+  "center_y": 0.51
+}
+
+  -> model output: {
+  "center_x": 0.5,
+  "center_y": 0.5
+}
+
+  -> predicted location: center_x=0.5098, center_y=0.7000
+  -> saved representative frame: /workspace/yujin/code/accident/frames/clXKxQWjB4c_00_t6.594.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "rear-end"
+}
+
+  -> final parsed result: accident_time=6.5937, center_x=0.5098, center_y=0.7000, type=rear-end
+  -> CSV updated: /workspace/yujin/result/test8.csv (99 rows saved)
+
+[100] Processing: videos/ozOAT76M0PM_00.mp4
+  -> optical-flow stats: points=150 score_max=0.443195 score_mean=0.183435 score_std=0.133556
+  -> optical-flow candidates:
+     rank=1 t=2.987s score=0.443195 z=1.945 motion=0.429145 delta=0.020071 idx=14 KEEP
+     rank=2 t=25.288s score=0.443014 z=1.944 motion=0.427669 delta=0.021921 idx=126 KEEP
+     rank=3 t=28.872s score=0.394528 z=1.581 motion=0.388090 delta=0.009198 idx=144 KEEP
+     rank=4 t=21.106s score=0.384661 z=1.507 motion=0.379824 delta=0.006910 idx=105 KEEP
+     rank=5 t=19.912s score=0.318930 z=1.015 motion=0.303317 delta=0.022304 idx=99 KEEP
+  -> candidate clips for Qwen selector:
+     index=1 rank=1 t=2.987s score=0.443195 z=1.945
+     index=2 rank=2 t=25.288s score=0.443014 z=1.944
+     index=3 rank=3 t=28.872s score=0.394528 z=1.581
+     index=4 rank=4 t=21.106s score=0.384661 z=1.507
+     index=5 rank=5 t=19.912s score=0.318930 z=1.015
+  -> model output: {
+  "selected_candidate_index": 2
+}
+
+  -> selected OF candidate: index=2 rank=2 time=25.2876s score=0.443014 z=1.944
+  -> predicted accident_time=25.2876
+  -> model output: ```json
+{
+  "center_x": 0.52,
+  "center_y": 0.75
+}
+```
+
+  -> model output: {"center_x": 0.52, "center_y": 0.75}
+
+  -> model output: ```json
+{
+  "center_x": 0.52,
+  "center_y": 0.75
+}
+```
+
+  -> model output: {
+  "center_x": 0.51,
+  "center_y": 0.52
+}
+
+  -> model output: {
+  "center_x": 0.52,
+  "center_y": 0.58
+}
+
+  -> predicted location: center_x=0.5238, center_y=0.7573
+  -> saved representative frame: /workspace/yujin/code/accident/frames/ozOAT76M0PM_00_t25.288.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "t-bone"
+}
+
+  -> final parsed result: accident_time=25.2876, center_x=0.5238, center_y=0.7573, type=t-bone
+  -> CSV updated: /workspace/yujin/result/test8.csv (100 rows saved)
+
+[101] Processing: videos/jc-fa_AjIXw_00.mp4
+  -> optical-flow stats: points=149 score_max=2.847573 score_mean=0.847927 score_std=0.578039
+  -> optical-flow candidates:
+     rank=1 t=10.200s score=2.847573 z=3.459 motion=2.653821 delta=0.276788 idx=50 KEEP
+     rank=2 t=12.600s score=1.809940 z=1.664 motion=1.757027 delta=0.075590 idx=62 KEEP
+     rank=3 t=14.600s score=1.469656 z=1.076 motion=1.403789 delta=0.094095 idx=72 KEEP
+     rank=4 t=11.600s score=1.415631 z=0.982 motion=1.379990 delta=0.050915 idx=57 KEEP
+     rank=5 t=20.000s score=1.283183 z=0.753 motion=1.264392 delta=0.026844 idx=99 KEEP
+  -> candidate clips for Qwen selector:
+     index=1 rank=1 t=10.200s score=2.847573 z=3.459
+     index=2 rank=2 t=12.600s score=1.809940 z=1.664
+     index=3 rank=3 t=14.600s score=1.469656 z=1.076
+     index=4 rank=4 t=11.600s score=1.415631 z=0.982
+     index=5 rank=5 t=20.000s score=1.283183 z=0.753

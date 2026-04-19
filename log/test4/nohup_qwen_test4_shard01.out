@@ -1,0 +1,188 @@
+2026-04-17 15:06:53,779 | INFO | Dataset root: /workspace/woo/ACCIDENT@CVPR/data/raw/accident
+2026-04-17 15:06:53,780 | INFO | Metadata CSV: /workspace/woo/ACCIDENT@CVPR/data/raw/accident/test_metadata.csv
+2026-04-17 15:06:53,780 | INFO | Videos dir: /workspace/woo/ACCIDENT@CVPR/data/raw/accident/videos
+2026-04-17 15:06:53,780 | INFO | Model path: /root/.cache/huggingface/hub/models--Qwen--Qwen3-VL-8B-Instruct
+2026-04-17 15:06:53,780 | INFO | Shard: 1 / 2
+2026-04-17 15:06:53,780 | INFO | Output CSV: /workspace/yujin/result/submission_shard01_of_02.csv
+2026-04-17 15:06:53,780 | INFO | Raw log: /workspace/yujin/log/raw_outputs_shard01_of_02.jsonl
+2026-04-17 15:06:53,780 | INFO | Temp dir: /workspace/yujin/log/temp_shard01_of_02
+2026-04-17 15:06:53,902 | INFO | Rows assigned to this shard: 1013
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/750 [00:00<?, ?it/s]Loading weights:   0%|          | 1/750 [00:00<04:07,  3.03it/s]Loading weights:   0%|          | 2/750 [00:00<03:45,  3.32it/s]Loading weights:   3%|▎         | 26/750 [00:00<00:13, 52.39it/s]Loading weights:   5%|▌         | 38/750 [00:00<00:10, 64.95it/s]Loading weights:   7%|▋         | 49/750 [00:00<00:09, 73.83it/s]Loading weights:   8%|▊         | 59/750 [00:01<00:08, 78.85it/s]Loading weights:   9%|▉         | 71/750 [00:01<00:07, 87.25it/s]Loading weights:  11%|█         | 81/750 [00:01<00:07, 89.00it/s]Loading weights:  12%|█▏        | 93/750 [00:01<00:06, 94.51it/s]Loading weights:  14%|█▍        | 104/750 [00:01<00:06, 96.81it/s]Loading weights:  15%|█▌        | 115/750 [00:01<00:06, 96.40it/s]Loading weights:  17%|█▋        | 126/750 [00:01<00:06, 91.95it/s]Loading weights:  18%|█▊        | 136/750 [00:01<00:06, 92.21it/s]Loading weights:  20%|█▉        | 147/750 [00:01<00:06, 90.97it/s]Loading weights:  21%|██        | 159/750 [00:02<00:06, 88.50it/s]Loading weights:  23%|██▎       | 170/750 [00:02<00:06, 93.50it/s]Loading weights:  24%|██▍       | 180/750 [00:02<00:06, 94.88it/s]Loading weights:  26%|██▌       | 192/750 [00:02<00:05, 98.91it/s]Loading weights:  27%|██▋       | 204/750 [00:02<00:05, 104.36it/s]Loading weights:  29%|██▊       | 215/750 [00:02<00:05, 97.54it/s] Loading weights:  30%|███       | 225/750 [00:02<00:05, 94.56it/s]Loading weights:  32%|███▏      | 237/750 [00:02<00:05, 96.98it/s]Loading weights:  33%|███▎      | 247/750 [00:03<00:05, 91.19it/s]Loading weights:  34%|███▍      | 258/750 [00:03<00:05, 94.90it/s]Loading weights:  36%|███▌      | 270/750 [00:03<00:05, 94.15it/s]Loading weights:  37%|███▋      | 280/750 [00:03<00:05, 88.90it/s]Loading weights:  39%|███▉      | 292/750 [00:03<00:04, 94.18it/s]Loading weights:  40%|████      | 303/750 [00:03<00:04, 93.30it/s]Loading weights:  42%|████▏     | 314/750 [00:03<00:04, 94.49it/s]Loading weights:  44%|████▍     | 331/750 [00:03<00:03, 105.35it/s]Loading weights:  46%|████▌     | 342/750 [00:03<00:03, 102.02it/s]Loading weights:  47%|████▋     | 353/750 [00:04<00:04, 98.07it/s] Loading weights:  49%|████▊     | 364/750 [00:04<00:03, 99.32it/s]Loading weights:  50%|█████     | 375/750 [00:04<00:03, 100.36it/s]Loading weights:  51%|█████▏    | 386/750 [00:04<00:03, 99.50it/s] Loading weights:  53%|█████▎    | 397/750 [00:04<00:03, 101.24it/s]Loading weights:  73%|███████▎  | 549/750 [00:04<00:00, 493.55it/s]Loading weights:  85%|████████▍ | 635/750 [00:04<00:00, 593.10it/s]Loading weights:  97%|█████████▋| 731/750 [00:04<00:00, 663.29it/s]Loading weights: 100%|██████████| 750/750 [00:04<00:00, 152.32it/s]
+2026-04-17 15:07:02,091 | INFO | [1/1013] Processing videos/unS0-TLF1ao_00.mp4
+/opt/conda/envs/yujin/lib/python3.10/site-packages/transformers/video_processing_utils.py:872: UserWarning: `torchcodec` is not installed and cannot be used to decode the video by default. Falling back to `torchvision`. Note that `torchvision` decoding is deprecated and will be removed in future versions. 
+  warnings.warn(
+/opt/conda/envs/yujin/lib/python3.10/site-packages/transformers/video_utils.py:534: UserWarning: Using `torchvision` for video decoding is deprecated and will be removed in future versions. Please use `torchcodec` instead.
+  warnings.warn(
+2026-04-17 15:07:12,935 | INFO | [1/1013] Updated CSV | videos/unS0-TLF1ao_00.mp4 | t=0.600 xy=(0.587354, 0.299924) type=head-on
+2026-04-17 15:07:12,936 | INFO | [2/1013] Processing videos/UarP8qU1S-c_01.mp4
+2026-04-17 15:07:42,510 | INFO | [2/1013] Updated CSV | videos/UarP8qU1S-c_01.mp4 | t=0.603 xy=(0.406441, 0.842128) type=rear-end
+2026-04-17 15:07:42,511 | INFO | [3/1013] Processing videos/fzWY0vLAXzI_00.mp4
+2026-04-17 15:07:53,575 | INFO | [3/1013] Updated CSV | videos/fzWY0vLAXzI_00.mp4 | t=4.916 xy=(0.500567, 0.233757) type=t-bone
+2026-04-17 15:07:53,576 | INFO | [4/1013] Processing videos/OXVXsdDT9QQ_00.mp4
+2026-04-17 15:08:03,692 | INFO | [4/1013] Updated CSV | videos/OXVXsdDT9QQ_00.mp4 | t=0.539 xy=(0.581118, 0.464430) type=sideswipe
+2026-04-17 15:08:03,693 | INFO | [5/1013] Processing videos/kABWTDKgc9U_00.mp4
+2026-04-17 15:08:19,124 | INFO | [5/1013] Updated CSV | videos/kABWTDKgc9U_00.mp4 | t=0.601 xy=(0.697352, 0.788303) type=single
+2026-04-17 15:08:19,125 | INFO | [6/1013] Processing videos/BgdKGnFqz0I_00.mp4
+2026-04-17 15:08:27,384 | INFO | [6/1013] Updated CSV | videos/BgdKGnFqz0I_00.mp4 | t=1.811 xy=(0.810435, 0.612773) type=single
+2026-04-17 15:08:27,385 | INFO | [7/1013] Processing videos/F0NHENn-HS4_00.mp4
+2026-04-17 15:08:39,633 | INFO | [7/1013] Updated CSV | videos/F0NHENn-HS4_00.mp4 | t=2.990 xy=(0.860590, 0.874259) type=single
+2026-04-17 15:08:39,634 | INFO | [8/1013] Processing videos/iA_u73BG4ZM_00.mp4
+2026-04-17 15:08:49,929 | INFO | [8/1013] Updated CSV | videos/iA_u73BG4ZM_00.mp4 | t=3.400 xy=(0.809222, 0.882663) type=single
+2026-04-17 15:08:49,930 | INFO | [9/1013] Processing videos/aPsS_HaokoU_00.mp4
+2026-04-17 15:09:00,589 | INFO | [9/1013] Updated CSV | videos/aPsS_HaokoU_00.mp4 | t=0.541 xy=(0.230436, 0.836745) type=single
+2026-04-17 15:09:00,590 | INFO | [10/1013] Processing videos/82sQ7N-aHOw_00.mp4
+2026-04-17 15:09:09,179 | INFO | [10/1013] Updated CSV | videos/82sQ7N-aHOw_00.mp4 | t=5.615 xy=(0.543759, 0.851958) type=single
+2026-04-17 15:09:09,180 | INFO | [11/1013] Processing videos/XaqA-uzqeNc_00.mp4
+2026-04-17 15:09:16,836 | INFO | [11/1013] Updated CSV | videos/XaqA-uzqeNc_00.mp4 | t=2.611 xy=(0.114811, 0.458743) type=single
+2026-04-17 15:09:16,837 | INFO | [12/1013] Processing videos/B_nBw3PcHXg_00.mp4
+2026-04-17 15:09:30,440 | INFO | [12/1013] Updated CSV | videos/B_nBw3PcHXg_00.mp4 | t=3.588 xy=(0.317622, 0.487508) type=t-bone
+2026-04-17 15:09:30,441 | INFO | [13/1013] Processing videos/4jVVNw9AF2s_00.mp4
+2026-04-17 15:09:40,747 | INFO | [13/1013] Updated CSV | videos/4jVVNw9AF2s_00.mp4 | t=20.703 xy=(0.743278, 0.786667) type=t-bone
+2026-04-17 15:09:40,748 | INFO | [14/1013] Processing videos/ApyekBAgfg8_00.mp4
+2026-04-17 15:09:50,881 | INFO | [14/1013] Updated CSV | videos/ApyekBAgfg8_00.mp4 | t=1.405 xy=(0.414220, 0.650131) type=t-bone
+2026-04-17 15:09:50,882 | INFO | [15/1013] Processing videos/GSvQCAPnFGo_00.mp4
+2026-04-17 15:10:00,903 | INFO | [15/1013] Updated CSV | videos/GSvQCAPnFGo_00.mp4 | t=4.014 xy=(0.638964, 0.782814) type=t-bone
+2026-04-17 15:10:00,904 | INFO | [16/1013] Processing videos/TthKPyywzu8_00.mp4
+2026-04-17 15:10:14,014 | INFO | [16/1013] Updated CSV | videos/TthKPyywzu8_00.mp4 | t=6.228 xy=(0.610739, 0.377892) type=t-bone
+2026-04-17 15:10:14,015 | INFO | [17/1013] Processing videos/tK1wd_HCYNo_00.mp4
+2026-04-17 15:10:27,243 | INFO | [17/1013] Updated CSV | videos/tK1wd_HCYNo_00.mp4 | t=11.987 xy=(0.877168, 0.572518) type=single
+2026-04-17 15:10:27,244 | INFO | [18/1013] Processing videos/CzOWGXrwbp4_00.mp4
+2026-04-17 15:10:34,610 | INFO | [18/1013] Updated CSV | videos/CzOWGXrwbp4_00.mp4 | t=4.893 xy=(0.609457, 0.844707) type=rear-end
+2026-04-17 15:10:34,611 | INFO | [19/1013] Processing videos/njJxs1KozgE_00.mp4
+2026-04-17 15:10:44,971 | INFO | [19/1013] Updated CSV | videos/njJxs1KozgE_00.mp4 | t=5.219 xy=(0.607538, 0.871219) type=t-bone
+2026-04-17 15:10:44,972 | INFO | [20/1013] Processing videos/kUp_0rJe_OI_00.mp4
+2026-04-17 15:10:56,043 | INFO | [20/1013] Updated CSV | videos/kUp_0rJe_OI_00.mp4 | t=1.531 xy=(0.821524, 0.712207) type=single
+2026-04-17 15:10:56,044 | INFO | [21/1013] Processing videos/PQHiBa179Ew_00.mp4
+2026-04-17 15:11:06,325 | INFO | [21/1013] Updated CSV | videos/PQHiBa179Ew_00.mp4 | t=7.000 xy=(0.511068, 0.880312) type=single
+2026-04-17 15:11:06,326 | INFO | [22/1013] Processing videos/TahWBItdUvQ_00.mp4
+2026-04-17 15:11:13,534 | INFO | [22/1013] Updated CSV | videos/TahWBItdUvQ_00.mp4 | t=0.938 xy=(0.596878, 0.160556) type=single
+2026-04-17 15:11:13,534 | INFO | [23/1013] Processing videos/m2uBNOFIvKk_00.mp4
+2026-04-17 15:11:24,411 | INFO | [23/1013] Updated CSV | videos/m2uBNOFIvKk_00.mp4 | t=2.141 xy=(0.631095, 0.725427) type=t-bone
+2026-04-17 15:11:24,411 | INFO | [24/1013] Processing videos/GsRdjuR2PpE_00.mp4
+2026-04-17 15:11:37,976 | INFO | [24/1013] Updated CSV | videos/GsRdjuR2PpE_00.mp4 | t=3.023 xy=(0.872834, 0.458159) type=t-bone
+2026-04-17 15:11:37,977 | INFO | [25/1013] Processing videos/FV6XO5Yg9VU_00.mp4
+2026-04-17 15:11:48,127 | INFO | [25/1013] Updated CSV | videos/FV6XO5Yg9VU_00.mp4 | t=3.995 xy=(0.854606, 0.749926) type=single
+2026-04-17 15:11:48,127 | INFO | [26/1013] Processing videos/n-aa3NIlRMo_00.mp4
+2026-04-17 15:11:57,824 | INFO | [26/1013] Updated CSV | videos/n-aa3NIlRMo_00.mp4 | t=0.601 xy=(0.243642, 0.950786) type=single
+2026-04-17 15:11:57,824 | INFO | [27/1013] Processing videos/QJYDZ1PBiYQ_00.mp4
+2026-04-17 15:12:10,423 | INFO | [27/1013] Updated CSV | videos/QJYDZ1PBiYQ_00.mp4 | t=3.004 xy=(0.735193, 0.783148) type=t-bone
+2026-04-17 15:12:10,423 | INFO | [28/1013] Processing videos/e6ZQvn6NyLI_00.mp4
+2026-04-17 15:12:20,309 | INFO | [28/1013] Updated CSV | videos/e6ZQvn6NyLI_00.mp4 | t=2.806 xy=(0.860077, 0.740877) type=single
+2026-04-17 15:12:20,310 | INFO | [29/1013] Processing videos/QyRcmm87rJ8_00.mp4
+2026-04-17 15:12:30,250 | INFO | [29/1013] Updated CSV | videos/QyRcmm87rJ8_00.mp4 | t=0.999 xy=(0.438989, 0.657035) type=t-bone
+2026-04-17 15:12:30,250 | INFO | [30/1013] Processing videos/At-4-Y2g7Y8_00.mp4
+2026-04-17 15:12:40,588 | INFO | [30/1013] Updated CSV | videos/At-4-Y2g7Y8_00.mp4 | t=1.002 xy=(0.882555, 0.599250) type=single
+2026-04-17 15:12:40,588 | INFO | [31/1013] Processing videos/GWx-Z5rWhzc_00.mp4
+2026-04-17 15:12:50,249 | INFO | [31/1013] Updated CSV | videos/GWx-Z5rWhzc_00.mp4 | t=1.401 xy=(0.411326, 0.935149) type=t-bone
+2026-04-17 15:12:50,250 | INFO | [32/1013] Processing videos/7CO_LqgfiFg_00.mp4
+2026-04-17 15:13:00,658 | INFO | [32/1013] Updated CSV | videos/7CO_LqgfiFg_00.mp4 | t=5.612 xy=(0.348392, 0.916488) type=single
+2026-04-17 15:13:00,659 | INFO | [33/1013] Processing videos/bn7c9LxpeuA_00.mp4
+2026-04-17 15:13:10,289 | INFO | [33/1013] Updated CSV | videos/bn7c9LxpeuA_00.mp4 | t=12.184 xy=(0.905437, 0.733055) type=single
+2026-04-17 15:13:10,289 | INFO | [34/1013] Processing videos/0isplBZQftg_00.mp4
+2026-04-17 15:13:23,933 | INFO | [34/1013] Updated CSV | videos/0isplBZQftg_00.mp4 | t=2.597 xy=(0.622864, 0.893341) type=t-bone
+2026-04-17 15:13:23,934 | INFO | [35/1013] Processing videos/afVZZ3v87cc_00.mp4
+2026-04-17 15:13:33,919 | INFO | [35/1013] Updated CSV | videos/afVZZ3v87cc_00.mp4 | t=1.604 xy=(0.286185, 0.678810) type=sideswipe
+2026-04-17 15:13:33,919 | INFO | [36/1013] Processing videos/NDkAFTqHLzo_00.mp4
+2026-04-17 15:13:46,059 | INFO | [36/1013] Updated CSV | videos/NDkAFTqHLzo_00.mp4 | t=2.003 xy=(0.894095, 0.698336) type=sideswipe
+2026-04-17 15:13:46,060 | INFO | [37/1013] Processing videos/zXKdiWjxhd8_00.mp4
+2026-04-17 15:13:59,013 | INFO | [37/1013] Updated CSV | videos/zXKdiWjxhd8_00.mp4 | t=2.609 xy=(0.800947, 0.909927) type=single
+2026-04-17 15:13:59,013 | INFO | [38/1013] Processing videos/03HtRCJa8Yk_00.mp4
+2026-04-17 15:14:08,822 | INFO | [38/1013] Updated CSV | videos/03HtRCJa8Yk_00.mp4 | t=2.410 xy=(0.127530, 0.880074) type=single
+2026-04-17 15:14:08,823 | INFO | [39/1013] Processing videos/-NgnSm_oEB4_00.mp4
+2026-04-17 15:14:18,565 | INFO | [39/1013] Updated CSV | videos/-NgnSm_oEB4_00.mp4 | t=0.831 xy=(0.178973, 0.763391) type=single
+2026-04-17 15:14:18,566 | INFO | [40/1013] Processing videos/dZ-F8lZ16-A_00.mp4
+2026-04-17 15:14:26,427 | INFO | [40/1013] Updated CSV | videos/dZ-F8lZ16-A_00.mp4 | t=1.413 xy=(0.857147, 0.783421) type=rear-end
+2026-04-17 15:14:26,428 | INFO | [41/1013] Processing videos/P4oEdSFJvfU_00.mp4
+2026-04-17 15:14:35,782 | INFO | [41/1013] Updated CSV | videos/P4oEdSFJvfU_00.mp4 | t=1.199 xy=(0.139535, 0.780537) type=single
+2026-04-17 15:14:35,782 | INFO | [42/1013] Processing videos/FhFwhsyOjUU_00.mp4
+2026-04-17 15:14:45,782 | INFO | [42/1013] Updated CSV | videos/FhFwhsyOjUU_00.mp4 | t=9.600 xy=(0.702827, 0.745269) type=single
+2026-04-17 15:14:45,783 | INFO | [43/1013] Processing videos/-jZ5Rlhzzi4_00.mp4
+2026-04-17 15:14:55,832 | INFO | [43/1013] Updated CSV | videos/-jZ5Rlhzzi4_00.mp4 | t=2.211 xy=(0.458432, 0.572560) type=single
+2026-04-17 15:14:55,833 | INFO | [44/1013] Processing videos/tFS_Hk-qEiQ_00.mp4
+2026-04-17 15:15:03,180 | INFO | [44/1013] Updated CSV | videos/tFS_Hk-qEiQ_00.mp4 | t=0.808 xy=(0.452034, 0.682970) type=rear-end
+2026-04-17 15:15:03,180 | INFO | [45/1013] Processing videos/c4exlXawFaM_00.mp4
+2026-04-17 15:15:13,419 | INFO | [45/1013] Updated CSV | videos/c4exlXawFaM_00.mp4 | t=2.009 xy=(0.203821, 0.655171) type=single
+2026-04-17 15:15:13,419 | INFO | [46/1013] Processing videos/uKieP03gwxQ_00.mp4
+2026-04-17 15:15:25,788 | INFO | [46/1013] Updated CSV | videos/uKieP03gwxQ_00.mp4 | t=1.405 xy=(0.163706, 0.888720) type=single
+2026-04-17 15:15:25,788 | INFO | [47/1013] Processing videos/Img4DcUjRmo_00.mp4
+2026-04-17 15:15:36,289 | INFO | [47/1013] Updated CSV | videos/Img4DcUjRmo_00.mp4 | t=5.600 xy=(0.533468, 0.646870) type=t-bone
+2026-04-17 15:15:36,289 | INFO | [48/1013] Processing videos/jgAGNNIG13E_00.mp4
+2026-04-17 15:15:46,541 | INFO | [48/1013] Updated CSV | videos/jgAGNNIG13E_00.mp4 | t=6.815 xy=(0.115853, 0.699330) type=single
+2026-04-17 15:15:46,541 | INFO | [49/1013] Processing videos/mllfWsyVZ1s_00.mp4
+2026-04-17 15:15:55,843 | INFO | [49/1013] Updated CSV | videos/mllfWsyVZ1s_00.mp4 | t=0.691 xy=(0.502049, 0.426227) type=rear-end
+2026-04-17 15:15:55,843 | INFO | [50/1013] Processing videos/ozOAT76M0PM_00.mp4
+2026-04-17 15:16:09,235 | INFO | [50/1013] Updated CSV | videos/ozOAT76M0PM_00.mp4 | t=2.987 xy=(0.439656, 0.896369) type=single
+2026-04-17 15:16:09,236 | INFO | [51/1013] Processing videos/YmMM4JeUJJ0_00.mp4
+2026-04-17 15:16:18,331 | INFO | [51/1013] Updated CSV | videos/YmMM4JeUJJ0_00.mp4 | t=0.726 xy=(0.316266, 0.258359) type=single
+2026-04-17 15:16:18,331 | INFO | [52/1013] Processing videos/a8-i2E4jrpk_00.mp4
+2026-04-17 15:16:27,973 | INFO | [52/1013] Updated CSV | videos/a8-i2E4jrpk_00.mp4 | t=1.014 xy=(0.498993, 0.654283) type=single
+2026-04-17 15:16:27,974 | INFO | [53/1013] Processing videos/GIm11SfAp8c_00.mp4
+2026-04-17 15:16:38,417 | INFO | [53/1013] Updated CSV | videos/GIm11SfAp8c_00.mp4 | t=2.427 xy=(0.913258, 0.654443) type=single
+2026-04-17 15:16:38,417 | INFO | [54/1013] Processing videos/CBPD-SF1p90_00.mp4
+2026-04-17 15:16:47,093 | INFO | [54/1013] Updated CSV | videos/CBPD-SF1p90_00.mp4 | t=3.631 xy=(0.189315, 0.821605) type=single
+2026-04-17 15:16:47,094 | INFO | [55/1013] Processing videos/pQ84BiOk854_00.mp4
+2026-04-17 15:16:56,419 | INFO | [55/1013] Updated CSV | videos/pQ84BiOk854_00.mp4 | t=1.598 xy=(0.296474, 0.623562) type=t-bone
+2026-04-17 15:16:56,420 | INFO | [56/1013] Processing videos/2xFyklpa54I_00.mp4
+2026-04-17 15:17:09,891 | INFO | [56/1013] Updated CSV | videos/2xFyklpa54I_00.mp4 | t=5.813 xy=(0.517621, 0.783230) type=t-bone
+2026-04-17 15:17:09,892 | INFO | [57/1013] Processing videos/nHmyMVHNPDs_00.mp4
+2026-04-17 15:17:22,758 | INFO | [57/1013] Updated CSV | videos/nHmyMVHNPDs_00.mp4 | t=2.260 xy=(0.477445, 0.856367) type=t-bone
+2026-04-17 15:17:22,759 | INFO | [58/1013] Processing videos/HZXYwgLy0RE_00.mp4
+2026-04-17 15:17:35,610 | INFO | [58/1013] Updated CSV | videos/HZXYwgLy0RE_00.mp4 | t=2.803 xy=(0.199825, 0.827018) type=t-bone
+2026-04-17 15:17:35,611 | INFO | [59/1013] Processing videos/mDHuTgnSxMs_00.mp4
+2026-04-17 15:17:48,027 | INFO | [59/1013] Updated CSV | videos/mDHuTgnSxMs_00.mp4 | t=0.599 xy=(0.512217, 0.868042) type=t-bone
+2026-04-17 15:17:48,028 | INFO | [60/1013] Processing videos/M6WWLqx3z88_00.mp4
+2026-04-17 15:18:01,057 | INFO | [60/1013] Updated CSV | videos/M6WWLqx3z88_00.mp4 | t=1.403 xy=(0.492134, 0.664545) type=t-bone
+2026-04-17 15:18:01,058 | INFO | [61/1013] Processing videos/PgdU-LSKlZU_00.mp4
+2026-04-17 15:18:14,656 | INFO | [61/1013] Updated CSV | videos/PgdU-LSKlZU_00.mp4 | t=7.592 xy=(0.479167, 0.743416) type=t-bone
+2026-04-17 15:18:14,658 | INFO | [62/1013] Processing videos/Aj5AlGboqeI_00.mp4
+2026-04-17 15:18:27,575 | INFO | [62/1013] Updated CSV | videos/Aj5AlGboqeI_00.mp4 | t=1.600 xy=(0.121029, 0.825884) type=sideswipe
+2026-04-17 15:18:27,576 | INFO | [63/1013] Processing videos/1BsCOLh_qEs_00.mp4
+2026-04-17 15:18:35,832 | INFO | [63/1013] Updated CSV | videos/1BsCOLh_qEs_00.mp4 | t=1.391 xy=(0.652922, 0.619287) type=single
+2026-04-17 15:18:35,833 | INFO | [64/1013] Processing videos/c8wyblfra3o_00.mp4
+2026-04-17 15:18:45,556 | INFO | [64/1013] Updated CSV | videos/c8wyblfra3o_00.mp4 | t=0.596 xy=(0.134048, 0.539395) type=single
+2026-04-17 15:18:45,556 | INFO | [65/1013] Processing videos/YnYUC6nonG8_00.mp4
+2026-04-17 15:18:58,491 | INFO | [65/1013] Updated CSV | videos/YnYUC6nonG8_00.mp4 | t=17.575 xy=(0.211735, 0.807146) type=single
+2026-04-17 15:18:58,492 | INFO | [66/1013] Processing videos/8UJFstPfuhU_00.mp4
+2026-04-17 15:19:11,611 | INFO | [66/1013] Updated CSV | videos/8UJFstPfuhU_00.mp4 | t=0.600 xy=(0.186990, 0.566463) type=single
+2026-04-17 15:19:11,612 | INFO | [67/1013] Processing videos/JTIfOGQql0A_00.mp4
+2026-04-17 15:19:20,685 | INFO | [67/1013] Updated CSV | videos/JTIfOGQql0A_00.mp4 | t=5.448 xy=(0.780523, 0.661982) type=t-bone
+2026-04-17 15:19:20,685 | INFO | [68/1013] Processing videos/OMjHjaMBzus_00.mp4
+2026-04-17 15:19:30,118 | INFO | [68/1013] Updated CSV | videos/OMjHjaMBzus_00.mp4 | t=3.994 xy=(0.838227, 0.869576) type=single
+2026-04-17 15:19:30,119 | INFO | [69/1013] Processing videos/zVoe5ZUg3kE_00.mp4
+2026-04-17 15:19:42,831 | INFO | [69/1013] Updated CSV | videos/zVoe5ZUg3kE_00.mp4 | t=2.366 xy=(0.646414, 0.855102) type=t-bone
+2026-04-17 15:19:42,831 | INFO | [70/1013] Processing videos/qNH-EtH6qPo_00.mp4
+2026-04-17 15:19:53,000 | INFO | [70/1013] Updated CSV | videos/qNH-EtH6qPo_00.mp4 | t=4.406 xy=(0.764019, 0.933861) type=head-on
+2026-04-17 15:19:53,000 | INFO | [71/1013] Processing videos/VpQn6ugiG1M_00.mp4
+2026-04-17 15:20:05,351 | INFO | [71/1013] Updated CSV | videos/VpQn6ugiG1M_00.mp4 | t=1.602 xy=(0.099257, 0.882090) type=single
+2026-04-17 15:20:05,352 | INFO | [72/1013] Processing videos/FnahNGsmeSQ_00.mp4
+2026-04-17 15:20:14,613 | INFO | [72/1013] Updated CSV | videos/FnahNGsmeSQ_00.mp4 | t=3.346 xy=(0.839960, 0.847176) type=single
+2026-04-17 15:20:14,614 | INFO | [73/1013] Processing videos/6hJ8mYLUfE8_00.mp4
+2026-04-17 15:20:22,137 | INFO | [73/1013] Updated CSV | videos/6hJ8mYLUfE8_00.mp4 | t=0.550 xy=(0.268350, 0.584376) type=t-bone
+2026-04-17 15:20:22,137 | INFO | [74/1013] Processing videos/OKlebmp3c0M_00.mp4
+2026-04-17 15:20:35,118 | INFO | [74/1013] Updated CSV | videos/OKlebmp3c0M_00.mp4 | t=0.800 xy=(0.261448, 0.417071) type=sideswipe
+2026-04-17 15:20:35,118 | INFO | [75/1013] Processing videos/0oA6iej2zdk_00.mp4
+2026-04-17 15:20:47,160 | INFO | [75/1013] Updated CSV | videos/0oA6iej2zdk_00.mp4 | t=1.394 xy=(0.589517, 0.881806) type=single
+2026-04-17 15:20:47,161 | INFO | [76/1013] Processing videos/T0Rkm2Q2e2k_00.mp4
+2026-04-17 15:21:00,372 | INFO | [76/1013] Updated CSV | videos/T0Rkm2Q2e2k_00.mp4 | t=2.961 xy=(0.825654, 0.770982) type=t-bone
+2026-04-17 15:21:00,372 | INFO | [77/1013] Processing videos/FD2WTKo0V94_00.mp4
+2026-04-17 15:21:10,636 | INFO | [77/1013] Updated CSV | videos/FD2WTKo0V94_00.mp4 | t=0.602 xy=(0.461162, 0.898088) type=t-bone
+2026-04-17 15:21:10,637 | INFO | [78/1013] Processing videos/kgifRjE69lo_00.mp4
+2026-04-17 15:21:20,352 | INFO | [78/1013] Updated CSV | videos/kgifRjE69lo_00.mp4 | t=6.152 xy=(0.657751, 0.446476) type=single
+2026-04-17 15:21:20,352 | INFO | [79/1013] Processing videos/aRQeSqO9Ri4_00.mp4
+2026-04-17 15:21:29,768 | INFO | [79/1013] Updated CSV | videos/aRQeSqO9Ri4_00.mp4 | t=8.387 xy=(0.169899, 0.635089) type=t-bone
+2026-04-17 15:21:29,768 | INFO | [80/1013] Processing videos/JGeH83hHjpE_00.mp4
+2026-04-17 15:21:42,959 | INFO | [80/1013] Updated CSV | videos/JGeH83hHjpE_00.mp4 | t=1.808 xy=(0.215039, 0.792918) type=sideswipe
+2026-04-17 15:21:42,959 | INFO | [81/1013] Processing videos/xQCJTgk1AxQ_00.mp4
+2026-04-17 15:21:51,990 | INFO | [81/1013] Updated CSV | videos/xQCJTgk1AxQ_00.mp4 | t=0.616 xy=(0.598477, 0.800160) type=single
+2026-04-17 15:21:51,991 | INFO | [82/1013] Processing videos/bzNkUstnRMM_00.mp4
+2026-04-17 15:22:01,789 | INFO | [82/1013] Updated CSV | videos/bzNkUstnRMM_00.mp4 | t=4.136 xy=(0.640650, 0.746438) type=t-bone
+2026-04-17 15:22:01,789 | INFO | [83/1013] Processing videos/5fSIVNb3L64_00.mp4
+2026-04-17 15:22:11,665 | INFO | [83/1013] Updated CSV | videos/5fSIVNb3L64_00.mp4 | t=6.409 xy=(0.423652, 0.590984) type=t-bone
+2026-04-17 15:22:11,665 | INFO | [84/1013] Processing videos/Jafouq9fwp4_00.mp4
+2026-04-17 15:22:24,042 | INFO | [84/1013] Updated CSV | videos/Jafouq9fwp4_00.mp4 | t=0.842 xy=(0.460195, 0.511504) type=t-bone
+2026-04-17 15:22:24,043 | INFO | [85/1013] Processing videos/neiYtur4FOY_00.mp4
+2026-04-17 15:22:36,744 | INFO | [85/1013] Updated CSV | videos/neiYtur4FOY_00.mp4 | t=0.795 xy=(0.172345, 0.900252) type=single
+2026-04-17 15:22:36,745 | INFO | [86/1013] Processing videos/5UK0XveIgBA_00.mp4
+2026-04-17 15:22:50,436 | INFO | [86/1013] Updated CSV | videos/5UK0XveIgBA_00.mp4 | t=25.487 xy=(0.088293, 0.859716) type=t-bone
+2026-04-17 15:22:50,437 | INFO | [87/1013] Processing videos/X6sdr4NzEdU_00.mp4
