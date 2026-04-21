@@ -40,3 +40,4 @@ code/accident
 *.avi
 *.mkv
 *.webm
+.opencode/

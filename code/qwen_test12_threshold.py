@@ -24,11 +24,11 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 ACCIDENT_DIR = os.path.join(BASE_DIR, "accident")
 RESULT_DIR = os.path.join(os.path.dirname(BASE_DIR), "result")
 METADATA_PATH = os.path.join(ACCIDENT_DIR, "test_metadata.csv")
-PREDICTION_PATH = os.path.join(RESULT_DIR, "testtest.csv")
-RAW_LOG_PATH = os.path.join(ACCIDENT_DIR, "testtest_raw_outputs.jsonl")
-PART_PREDICTION_TEMPLATE = os.path.join(RESULT_DIR, "testtest_{part}.csv")
-PART_RAW_LOG_TEMPLATE = os.path.join(ACCIDENT_DIR, "testtest_{part}_raw_outputs.jsonl")
-PART_RUN_LOG_TEMPLATE = os.path.join(os.path.dirname(BASE_DIR), "log", "testtest_{part}_gpu{gpu}.out")
+PREDICTION_PATH = os.path.join(RESULT_DIR, "qwen_test12_threshold.csv")
+RAW_LOG_PATH = os.path.join(ACCIDENT_DIR, "qwen_test12_threshold_raw_outputs.jsonl")
+PART_PREDICTION_TEMPLATE = os.path.join(RESULT_DIR, "qwen_test12_threshold_{part}.csv")
+PART_RAW_LOG_TEMPLATE = os.path.join(ACCIDENT_DIR, "qwen_test12_threshold_{part}_raw_outputs.jsonl")
+PART_RUN_LOG_TEMPLATE = os.path.join(os.path.dirname(BASE_DIR), "log", "qwen_test12_threshold_{part}_gpu{gpu}.out")
 
 MODEL_NAME = "Qwen/Qwen3.5-9B"
 VALID_TYPES = {"rear-end", "head-on", "sideswipe", "t-bone", "single"}
@@ -55,9 +55,9 @@ TIME_CANDIDATE_CLIP_FPS = 6.0
 
 # Hybrid switch rule:
 # - Trust Qwen for normal predictions.
-# - Use OF rule when Qwen collapses to the start or jumps too late.
+# - Use OF rule when Qwen collapses to the start or predicts beyond 90% of the clip duration.
 HYBRID_QWEN_ZERO_THRESHOLD_SEC = 0.30
-HYBRID_QWEN_LATE_THRESHOLD_SEC = 15.00
+HYBRID_QWEN_LATE_RATIO = 0.90
 
 LOCATION_FRAME_OFFSETS = (-0.20, 0.0, 0.20)
 LOCATION_CROP_SCALES = (0.40, 0.26)
@@ -506,7 +506,8 @@ def predict_time_with_hybrid_qwen_of(
     Strategy:
     1. Ask Qwen for the full-video accident_time.
     2. If Qwen is normal, use Qwen time.
-    3. If Qwen collapses to <=0.3s or jumps later than 15s, run OF rule selector.
+    3. If Qwen collapses to <=0.3s or jumps later than 90% of the clip duration,
+       run OF rule selector.
     4. If OF produces a valid candidate, use OF time; otherwise fallback to Qwen time.
 
     Location/type code remains unchanged and receives the selected accident_time.
@@ -541,13 +542,16 @@ def predict_time_with_hybrid_qwen_of(
     diagnostics["qwen_time"] = qwen_time
     print(f"  -> initial Qwen time: {_fmt_float(qwen_time, 4)}s", flush=True)
 
+    duration = _safe_duration(meta)
+    late_threshold = duration * HYBRID_QWEN_LATE_RATIO if duration is not None else None
+
     suspicious_reason = None
     if qwen_time is None:
         suspicious_reason = "qwen_time_none"
     elif float(qwen_time) <= HYBRID_QWEN_ZERO_THRESHOLD_SEC:
         suspicious_reason = f"qwen_time<={HYBRID_QWEN_ZERO_THRESHOLD_SEC}"
-    elif float(qwen_time) > HYBRID_QWEN_LATE_THRESHOLD_SEC:
-        suspicious_reason = f"qwen_time>{HYBRID_QWEN_LATE_THRESHOLD_SEC}"
+    elif late_threshold is not None and float(qwen_time) > late_threshold:
+        suspicious_reason = f"qwen_time>{HYBRID_QWEN_LATE_RATIO:.2f}*duration"
 
     diagnostics["qwen_suspicious"] = suspicious_reason is not None
     diagnostics["qwen_suspicious_reason"] = suspicious_reason

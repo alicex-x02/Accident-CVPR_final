@@ -18,11 +18,13 @@ from transformers import AutoModelForImageTextToText, AutoProcessor, TextIterato
 
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+SCRIPT_STEM = re.sub(r"[^A-Za-z0-9._-]+", "_", os.path.splitext(os.path.basename(__file__))[0]).strip("_")
 ACCIDENT_DIR = os.path.join(BASE_DIR, "accident")
 RESULT_DIR = os.path.join(os.path.dirname(BASE_DIR), "result")
 METADATA_PATH = os.path.join(ACCIDENT_DIR, "test_metadata.csv")
-PREDICTION_PATH = os.path.join(RESULT_DIR, "test8.csv")
-RAW_LOG_PATH = os.path.join(ACCIDENT_DIR, "raw_outputs.jsonl")
+# Keep outputs tied to the script name so repeated runs do not collide.
+PREDICTION_PATH = os.path.join(RESULT_DIR, f"{SCRIPT_STEM}.csv")
+RAW_LOG_PATH = os.path.join(ACCIDENT_DIR, f"{SCRIPT_STEM}.jsonl")
 
 MODEL_NAME = "Qwen/Qwen3.5-9B"
 VALID_TYPES = {"rear-end", "head-on", "sideswipe", "t-bone", "single"}
@@ -1190,8 +1192,13 @@ def main():
     print(f"Loading model: {MODEL_NAME}")
     print(f"Using device: {'cuda' if torch.cuda.is_available() else 'cpu'}")
 
-    processor = AutoProcessor.from_pretrained(MODEL_NAME)
-    model = AutoModelForImageTextToText.from_pretrained(MODEL_NAME, device_map="auto", torch_dtype="auto")
+    processor = AutoProcessor.from_pretrained(MODEL_NAME, trust_remote_code=True)
+    model = AutoModelForImageTextToText.from_pretrained(
+        MODEL_NAME,
+        device_map="auto",
+        torch_dtype="auto",
+        trust_remote_code=True,
+    )
 
     predictions: List[Dict[str, Any]] = []
     fieldnames = ["path", "accident_time", "center_x", "center_y", "type"]
