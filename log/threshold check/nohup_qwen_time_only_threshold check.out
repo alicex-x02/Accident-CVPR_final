@@ -1,0 +1,43 @@
+Loading model: Qwen/Qwen3.5-9B
+Using device: cuda
+The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+Loading weights:   0%|          | 0/760 [00:00<?, ?it/s]Loading weights:   0%|          | 1/760 [00:00<05:47,  2.19it/s]Loading weights:   2%|▏         | 13/760 [00:00<00:26, 27.99it/s]Loading weights:   3%|▎         | 23/760 [00:00<00:16, 43.91it/s]Loading weights:   4%|▍         | 30/760 [00:00<00:14, 49.08it/s]Loading weights:   6%|▌         | 42/760 [00:00<00:11, 64.75it/s]Loading weights:   7%|▋         | 51/760 [00:01<00:10, 65.82it/s]Loading weights:   9%|▊         | 66/760 [00:01<00:08, 84.18it/s]Loading weights:  10%|█         | 77/760 [00:01<00:07, 89.94it/s]Loading weights:  11%|█▏        | 87/760 [00:01<00:07, 90.86it/s]Loading weights:  13%|█▎        | 97/760 [00:01<00:07, 84.53it/s]Loading weights:  14%|█▍        | 106/760 [00:01<00:07, 83.67it/s]Loading weights:  16%|█▌        | 119/760 [00:01<00:06, 95.24it/s]Loading weights:  17%|█▋        | 129/760 [00:01<00:06, 96.15it/s]Loading weights:  18%|█▊        | 139/760 [00:01<00:06, 94.67it/s]Loading weights:  20%|█▉        | 149/760 [00:02<00:07, 84.21it/s]Loading weights:  22%|██▏       | 168/760 [00:02<00:05, 110.33it/s]Loading weights:  24%|██▎       | 180/760 [00:02<00:05, 107.85it/s]Loading weights:  25%|██▌       | 192/760 [00:02<00:05, 97.23it/s] Loading weights:  27%|██▋       | 203/760 [00:02<00:06, 90.07it/s]Loading weights:  28%|██▊       | 213/760 [00:02<00:06, 85.60it/s]Loading weights:  30%|██▉       | 226/760 [00:02<00:05, 92.37it/s]Loading weights:  31%|███       | 237/760 [00:02<00:05, 94.52it/s]Loading weights:  33%|███▎      | 250/760 [00:03<00:04, 102.94it/s]Loading weights:  34%|███▍      | 261/760 [00:03<00:06, 81.82it/s] Loading weights:  37%|███▋      | 278/760 [00:03<00:04, 98.51it/s]Loading weights:  38%|███▊      | 291/760 [00:03<00:04, 103.50it/s]Loading weights:  40%|███▉      | 303/760 [00:03<00:04, 99.46it/s] Loading weights:  41%|████▏     | 314/760 [00:03<00:05, 78.96it/s]Loading weights:  44%|████▎     | 331/760 [00:03<00:04, 95.13it/s]Loading weights:  45%|████▌     | 344/760 [00:04<00:04, 100.88it/s]Loading weights:  47%|████▋     | 355/760 [00:04<00:04, 98.35it/s] Loading weights:  48%|████▊     | 366/760 [00:04<00:05, 77.55it/s]Loading weights:  51%|█████     | 384/760 [00:04<00:03, 95.43it/s]Loading weights:  52%|█████▏    | 395/760 [00:04<00:03, 95.24it/s]Loading weights:  53%|█████▎    | 406/760 [00:04<00:03, 96.62it/s]Loading weights:  55%|█████▍    | 417/760 [00:04<00:04, 84.90it/s]Loading weights:  56%|█████▌    | 427/760 [00:05<00:03, 87.57it/s]Loading weights:  73%|███████▎  | 553/760 [00:05<00:00, 376.89it/s]Loading weights:  86%|████████▌ | 654/760 [00:05<00:00, 541.41it/s]Loading weights:  98%|█████████▊| 747/760 [00:05<00:00, 643.85it/s]Loading weights: 100%|██████████| 760/760 [00:05<00:00, 140.87it/s]
+Shard setup: part 1/1, rows 1-2027 of 2027
+
+[1] Processing: videos/Z4kg2Ev3vhk_00.mp4
+Keyword argument `enable_thinking` is not a valid argument for this processor and will be ignored.
+/opt/conda/envs/yujin/lib/python3.10/site-packages/transformers/video_processing_utils.py:872: UserWarning: `torchcodec` is not installed and cannot be used to decode the video by default. Falling back to `torchvision`. Note that `torchvision` decoding is deprecated and will be removed in future versions. 
+  warnings.warn(
+/opt/conda/envs/yujin/lib/python3.10/site-packages/transformers/video_utils.py:534: UserWarning: Using `torchvision` for video decoding is deprecated and will be removed in future versions. Please use `torchcodec` instead.
+  warnings.warn(
+  -> model output: {
+  "accident_time": 0.0
+}
+
+  -> Qwen predicted 0.0, running zero-only check...
+  -> model output: {
+  "found_at_zero": false,
+  "confidence": 0.95
+}
+
+  -> not found 0: zero_check_found_at_zero_false
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_time_only_threshold check_predictions.csv (1 rows saved)
+
+[2] Processing: videos/unS0-TLF1ao_00.mp4
+  -> model output: {
+  "accident_time": 2.0
+}
+
+  -> found: accident_time=2.0000 (original qwen time, no extra check)
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_time_only_threshold check_predictions.csv (2 rows saved)
+
+[3] Processing: videos/UarP8qU1S-c_00.mp4
+  -> model output: {
+  "accident_time": 5.0
+}
+
+  -> found: accident_time=5.0000 (original qwen time, no extra check)
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_time_only_threshold check_predictions.csv (3 rows saved)
+
+[4] Processing: videos/UarP8qU1S-c_01.mp4
+  -> model output: 

@@ -16,36 +16,20 @@ from typing import Any, Dict, List, Optional, Sequence, Tuple
 import cv2
 import numpy as np
 import torch
-from pipeline.optical_flow import (
-    compute_motion_curve,
-    moving_average,
-    select_top_k_peaks,
-)
-from transformers import (
-    AutoModelForImageTextToText,
-    AutoProcessor,
-    TextIteratorStreamer,
-)
+from pipeline.optical_flow import compute_motion_curve, moving_average, select_top_k_peaks
+from transformers import AutoModelForImageTextToText, AutoProcessor, TextIteratorStreamer
 
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 ACCIDENT_DIR = os.path.join(BASE_DIR, "accident")
 RESULT_DIR = os.path.join(os.path.dirname(BASE_DIR), "result")
 METADATA_PATH = os.path.join(ACCIDENT_DIR, "test_metadata.csv")
-PREDICTION_PATH = os.path.join(RESULT_DIR, "qwen_test11_hybrid.csv")
-RAW_LOG_PATH = os.path.join(ACCIDENT_DIR, "qwen_test11_hybrid_raw_outputs.jsonl")
-CONFIDENCE_TABLE_PATH = os.path.join(RESULT_DIR, "qwen_test11_hybrid_confidence.csv")
-PART_PREDICTION_TEMPLATE = os.path.join(RESULT_DIR, "qwen_test11_hybrid_{part}.csv")
-PART_RAW_LOG_TEMPLATE = os.path.join(
-    ACCIDENT_DIR, "qwen_test11_hybrid_{part}_raw_outputs.jsonl"
-)
-PART_CONFIDENCE_TEMPLATE = os.path.join(
-    RESULT_DIR, "qwen_test11_hybrid_{part}_confidence.csv"
-)
-PART_RUN_LOG_TEMPLATE = os.path.join(
-    os.path.dirname(BASE_DIR), "log", "qwen_test11_hybrid_{part}_gpu{gpu}.out"
-)
-CURRENT_RAW_LOG_PATH = RAW_LOG_PATH
+SCRIPT_STEM = os.path.splitext(os.path.basename(__file__))[0]
+PREDICTION_PATH = os.path.join(RESULT_DIR, f"{SCRIPT_STEM}.csv")
+RAW_LOG_PATH = os.path.join(ACCIDENT_DIR, f"{SCRIPT_STEM}_raw_outputs.jsonl")
+PART_PREDICTION_TEMPLATE = os.path.join(RESULT_DIR, f"{SCRIPT_STEM}_{{part}}.csv")
+PART_RAW_LOG_TEMPLATE = os.path.join(ACCIDENT_DIR, f"{SCRIPT_STEM}_{{part}}_raw_outputs.jsonl")
+PART_RUN_LOG_TEMPLATE = os.path.join(os.path.dirname(BASE_DIR), "log", f"{SCRIPT_STEM}_{{part}}_gpu{{gpu}}.out")
 
 MODEL_NAME = "Qwen/Qwen3.5-9B"
 VALID_TYPES = {"rear-end", "head-on", "sideswipe", "t-bone", "single"}
@@ -72,9 +56,9 @@ TIME_CANDIDATE_CLIP_FPS = 6.0
 
 # Hybrid switch rule:
 # - Trust Qwen for normal predictions.
-# - Use OF rule when Qwen collapses to the start or jumps too late.
-HYBRID_QWEN_ZERO_THRESHOLD_SEC = 0.30
-HYBRID_QWEN_LATE_THRESHOLD_SEC = 15.00
+# - Use OF rule when Qwen collapses to the first 10% of the clip or predicts beyond 90% of the clip duration.
+HYBRID_QWEN_FRONT_RATIO = 0.10
+HYBRID_QWEN_LATE_RATIO = 0.90
 
 LOCATION_FRAME_OFFSETS = (-0.20, 0.0, 0.20)
 LOCATION_CROP_SCALES = (0.40, 0.26)
@@ -90,13 +74,6 @@ def resolve_output_paths(part_name: Optional[str] = None) -> Tuple[str, str]:
         PART_PREDICTION_TEMPLATE.format(part=safe_part),
         PART_RAW_LOG_TEMPLATE.format(part=safe_part),
     )
-
-
-def resolve_confidence_output_path(part_name: Optional[str] = None) -> str:
-    if not part_name:
-        return CONFIDENCE_TABLE_PATH
-    safe_part = str(part_name).strip()
-    return PART_CONFIDENCE_TEMPLATE.format(part=safe_part)
 
 
 def count_metadata_rows(csv_path: str) -> int:
@@ -129,20 +106,13 @@ def launch_two_gpu_shards(total_rows: int) -> int:
     mid = total_rows // 2
     shards = [
         {"start_row": 1, "end_row": mid, "part_name": "part0", "gpu_id": 0},
-        {
-            "start_row": mid + 1,
-            "end_row": total_rows,
-            "part_name": "part1",
-            "gpu_id": 1,
-        },
+        {"start_row": mid + 1, "end_row": total_rows, "part_name": "part1", "gpu_id": 1},
     ]
 
     processes: List[Tuple[str, Any, Any]] = []
     try:
         for shard in shards:
-            log_path = PART_RUN_LOG_TEMPLATE.format(
-                part=shard["part_name"], gpu=shard["gpu_id"]
-            )
+            log_path = PART_RUN_LOG_TEMPLATE.format(part=shard["part_name"], gpu=shard["gpu_id"])
             log_file = open(log_path, "w", encoding="utf-8")
             env = os.environ.copy()
             env["CUDA_VISIBLE_DEVICES"] = str(shard["gpu_id"])
@@ -156,9 +126,7 @@ def launch_two_gpu_shards(total_rows: int) -> int:
                 f"Launching {shard['part_name']} on GPU {shard['gpu_id']} "
                 f"for rows {shard['start_row']}..{shard['end_row']} -> {log_path}"
             )
-            proc = subprocess.Popen(
-                cmd, env=env, stdout=log_file, stderr=subprocess.STDOUT
-            )
+            proc = subprocess.Popen(cmd, env=env, stdout=log_file, stderr=subprocess.STDOUT)
             processes.append((log_path, proc, log_file))
 
         exit_code = 0
@@ -249,9 +217,8 @@ Output format:
     return prompt.strip()
 
 
-def build_time_candidate_selector_prompt(
-    metadata: Dict[str, str], num_candidates: int
-) -> str:
+
+def build_time_candidate_selector_prompt(metadata: Dict[str, str], num_candidates: int) -> str:
     prompt = f"""
 You are an expert traffic accident analyst.
 
@@ -290,9 +257,7 @@ Output format:
     return prompt.strip()
 
 
-def validate_candidate_selection(
-    result: Dict[str, Any], num_candidates: int
-) -> Optional[int]:
+def validate_candidate_selection(result: Dict[str, Any], num_candidates: int) -> Optional[int]:
     try:
         idx = int(result["selected_candidate_index"])
     except (KeyError, TypeError, ValueError):
@@ -318,22 +283,16 @@ def _fmt_float(value: Any, digits: int = 4) -> str:
         return str(value)
 
 
-def detect_flow_time_candidates(
-    video_path: str, meta: Dict[str, str]
-) -> Dict[str, Any]:
+def detect_flow_time_candidates(video_path: str, meta: Dict[str, str]) -> Dict[str, Any]:
     diagnostics: Dict[str, Any] = {"candidate_rows": []}
     duration = _safe_duration(meta)
     try:
-        times, motion_values = compute_motion_curve(
-            video_path=video_path, sample_fps=TIME_FLOW_SAMPLE_FPS
-        )
+        times, motion_values = compute_motion_curve(video_path=video_path, sample_fps=TIME_FLOW_SAMPLE_FPS)
         diagnostics["num_motion_points"] = int(motion_values.size)
         if motion_values.size == 0:
             return diagnostics
 
-        smoothed_motion = moving_average(
-            motion_values, window_size=TIME_FLOW_SMOOTH_WINDOW
-        ).astype(np.float32, copy=False)
+        smoothed_motion = moving_average(motion_values, window_size=TIME_FLOW_SMOOTH_WINDOW).astype(np.float32, copy=False)
         positive_delta = np.zeros_like(smoothed_motion, dtype=np.float32)
         if smoothed_motion.size > 1:
             positive_delta[1:] = np.maximum(np.diff(smoothed_motion), 0.0)
@@ -379,9 +338,7 @@ def detect_flow_time_candidates(
 
             if candidate_time <= TIME_FLOW_MIN_VALID_SEC:
                 reject_reason = f"too_close_to_start<={TIME_FLOW_MIN_VALID_SEC}"
-            elif duration is not None and candidate_time >= max(
-                0.0, duration - TIME_FLOW_END_MARGIN_SEC
-            ):
+            elif duration is not None and candidate_time >= max(0.0, duration - TIME_FLOW_END_MARGIN_SEC):
                 reject_reason = f"too_close_to_end(duration-{TIME_FLOW_END_MARGIN_SEC})"
             elif float(z_score) < TIME_FLOW_MIN_SCORE_Z:
                 reject_reason = f"low_score_z<{TIME_FLOW_MIN_SCORE_Z}"
@@ -399,9 +356,7 @@ def detect_flow_time_candidates(
                 }
             )
 
-        candidate_rows.sort(
-            key=lambda item: (-float(item["score"]), float(item["candidate_time"]))
-        )
+        candidate_rows.sort(key=lambda item: (-float(item["score"]), float(item["candidate_time"])))
         for rank, row in enumerate(candidate_rows, start=1):
             row["rank"] = int(rank)
         diagnostics["candidate_rows"] = candidate_rows
@@ -454,7 +409,7 @@ def write_labeled_candidate_sequence_video(
         cap.release()
         raise RuntimeError(f"Video has no frames: {video_path}")
 
-    fourcc = getattr(cv2, "VideoWriter_fourcc")(*"mp4v")
+    fourcc = cv2.VideoWriter_fourcc(*"mp4v")
     writer = cv2.VideoWriter(output_path, fourcc, clip_fps, (width, height))
     if not writer.isOpened():
         cap.release()
@@ -467,25 +422,14 @@ def write_labeled_candidate_sequence_video(
     for display_idx, row in enumerate(candidate_rows, start=1):
         candidate_time = float(row["candidate_time"])
         title = np.zeros((height, width, 3), dtype=np.uint8)
-        cv2.putText(
-            title,
-            f"CANDIDATE {display_idx}",
-            (max(20, width // 12), height // 2),
-            cv2.FONT_HERSHEY_SIMPLEX,
-            max(1.0, width / 800.0),
-            (255, 255, 255),
-            2,
-            cv2.LINE_AA,
-        )
+        cv2.putText(title, f"CANDIDATE {display_idx}", (max(20, width // 12), height // 2), cv2.FONT_HERSHEY_SIMPLEX, max(1.0, width / 800.0), (255, 255, 255), 2, cv2.LINE_AA)
         for _ in range(title_frames):
             writer.write(title)
 
         start_time = max(0.0, candidate_time - window_sec)
         end_time = min(duration, candidate_time + window_sec)
         start_frame = max(0, int(round(start_time * src_fps)))
-        end_frame = min(
-            frame_count, max(start_frame + 1, int(round(end_time * src_fps)))
-        )
+        end_frame = min(frame_count, max(start_frame + 1, int(round(end_time * src_fps))))
         cap.set(cv2.CAP_PROP_POS_FRAMES, start_frame)
         idx = start_frame
         while idx < end_frame:
@@ -494,19 +438,8 @@ def write_labeled_candidate_sequence_video(
                 break
             if (idx - start_frame) % step == 0:
                 frame = frame.copy()
-                cv2.rectangle(
-                    frame, (0, 0), (width, max(42, height // 12)), (0, 0, 0), -1
-                )
-                cv2.putText(
-                    frame,
-                    f"CANDIDATE {display_idx}",
-                    (12, max(30, height // 16)),
-                    cv2.FONT_HERSHEY_SIMPLEX,
-                    max(0.8, width / 1000.0),
-                    (255, 255, 255),
-                    2,
-                    cv2.LINE_AA,
-                )
+                cv2.rectangle(frame, (0, 0), (width, max(42, height // 12)), (0, 0, 0), -1)
+                cv2.putText(frame, f"CANDIDATE {display_idx}", (12, max(30, height // 16)), cv2.FONT_HERSHEY_SIMPLEX, max(0.8, width / 1000.0), (255, 255, 255), 2, cv2.LINE_AA)
                 writer.write(frame)
             idx += 1
 
@@ -514,9 +447,7 @@ def write_labeled_candidate_sequence_video(
     cap.release()
 
 
-def save_temp_candidate_sequence(
-    video_path: str, candidate_rows: Sequence[Dict[str, Any]], prefix: str
-) -> str:
+def save_temp_candidate_sequence(video_path: str, candidate_rows: Sequence[Dict[str, Any]], prefix: str) -> str:
     fd, path = tempfile.mkstemp(prefix=prefix, suffix=".mp4", dir=ACCIDENT_DIR)
     os.close(fd)
     write_labeled_candidate_sequence_video(
@@ -529,9 +460,7 @@ def save_temp_candidate_sequence(
     return path
 
 
-def select_flow_candidate_by_rule(
-    candidate_rows: Sequence[Dict[str, Any]],
-) -> Tuple[Optional[Dict[str, Any]], Dict[str, Any]]:
+def select_flow_candidate_by_rule(candidate_rows: Sequence[Dict[str, Any]]) -> Tuple[Optional[Dict[str, Any]], Dict[str, Any]]:
     """Select an OF candidate without asking Qwen.
 
     Rule:
@@ -578,7 +507,8 @@ def predict_time_with_hybrid_qwen_of(
     Strategy:
     1. Ask Qwen for the full-video accident_time.
     2. If Qwen is normal, use Qwen time.
-    3. If Qwen collapses to <=0.3s or jumps later than 15s, run OF rule selector.
+    3. If Qwen collapses to <=0.3s or jumps later than 90% of the clip duration,
+       run OF rule selector.
     4. If OF produces a valid candidate, use OF time; otherwise fallback to Qwen time.
 
     Location/type code remains unchanged and receives the selected accident_time.
@@ -609,21 +539,21 @@ def predict_time_with_hybrid_qwen_of(
         stage="time_qwen_initial_hybrid",
     )
     diagnostics["qwen_raw"] = raw_qwen_time
-    qwen_time = (
-        validate_time_prediction(raw_qwen_time, meta)
-        if raw_qwen_time is not None
-        else None
-    )
+    qwen_time = validate_time_prediction(raw_qwen_time, meta) if raw_qwen_time is not None else None
     diagnostics["qwen_time"] = qwen_time
     print(f"  -> initial Qwen time: {_fmt_float(qwen_time, 4)}s", flush=True)
+
+    duration = _safe_duration(meta)
+    front_threshold = duration * HYBRID_QWEN_FRONT_RATIO if duration is not None else None
+    late_threshold = duration * HYBRID_QWEN_LATE_RATIO if duration is not None else None
 
     suspicious_reason = None
     if qwen_time is None:
         suspicious_reason = "qwen_time_none"
-    elif float(qwen_time) <= HYBRID_QWEN_ZERO_THRESHOLD_SEC:
-        suspicious_reason = f"qwen_time<={HYBRID_QWEN_ZERO_THRESHOLD_SEC}"
-    elif float(qwen_time) > HYBRID_QWEN_LATE_THRESHOLD_SEC:
-        suspicious_reason = f"qwen_time>{HYBRID_QWEN_LATE_THRESHOLD_SEC}"
+    elif front_threshold is not None and float(qwen_time) <= front_threshold:
+        suspicious_reason = f"qwen_time<={HYBRID_QWEN_FRONT_RATIO:.2f}*duration"
+    elif late_threshold is not None and float(qwen_time) > late_threshold:
+        suspicious_reason = f"qwen_time>{HYBRID_QWEN_LATE_RATIO:.2f}*duration"
 
     diagnostics["qwen_suspicious"] = suspicious_reason is not None
     diagnostics["qwen_suspicious_reason"] = suspicious_reason
@@ -702,10 +632,7 @@ def predict_time_with_hybrid_qwen_of(
     )
     return qwen_time, diagnostics
 
-
-def build_location_prompt(
-    metadata: Dict[str, str], accident_time: float, frame_offset: float = 0.0
-) -> str:
+def build_location_prompt(metadata: Dict[str, str], accident_time: float, frame_offset: float = 0.0) -> str:
     prompt = f"""
 You are an expert traffic accident analyst looking at ONE frame from CCTV footage.
 
@@ -748,9 +675,7 @@ Output format:
     return prompt.strip()
 
 
-def build_location_crop_refine_prompt(
-    metadata: Dict[str, str], accident_time: float
-) -> str:
+def build_location_crop_refine_prompt(metadata: Dict[str, str], accident_time: float) -> str:
     prompt = f"""
 You are an expert traffic accident analyst looking at a CROPPED zoom-in image around a predicted collision area.
 
@@ -799,19 +724,17 @@ The clip is centered near accident_time = {accident_time:.3f} seconds.
 {_meta_block(metadata)}
 
 Your task is step 1 of accident classification.
-Determine whether the FIRST impact involves MULTIPLE vehicles physically colliding with each other.
+Determine whether the collision involves MULTIPLE vehicles physically colliding with each other.
 
 Definitions:
-- true: the first impact is a vehicle-to-vehicle collision involving two or more vehicles.
-- false: the first impact involves only one vehicle and a non-vehicle object (for example a pole, barrier, guardrail, ditch, curb, wall, or roadside object), with no direct vehicle-to-vehicle contact.
+- true: two or more vehicles are physically involved in the impact with each other.
+- false: only one vehicle is involved in the accident impact (for example hitting a pole, barrier, guardrail, ditch, or roadside object), with no direct vehicle-to-vehicle collision.
 
 Instructions:
-1. Focus on the FIRST physical impact only, not the aftermath.
-2. Watch the short motion in the clip, not just one frame.
-3. Return true if another vehicle is directly struck, is struck by the target vehicle, or is clearly part of the first impact.
-4. Return false only if the first impact is truly vehicle-to-object or single-vehicle with NO direct vehicle-to-vehicle contact.
-5. If another vehicle is plausibly part of the first impact, prefer true rather than false.
-6. Do not classify by severity. Use only who physically collides in the first impact.
+1. Watch the short motion in the clip, not just one frame.
+2. Decide whether another vehicle is clearly part of the actual impact.
+3. If another vehicle is clearly struck or strikes the target vehicle, return true.
+4. Only return false when the accident is truly single-vehicle.
 
 Critical output rules:
 - Output JSON only.
@@ -834,59 +757,7 @@ Output format:
     return prompt.strip()
 
 
-def build_direction_prompt(metadata: Dict[str, str], accident_time: float) -> str:
-    prompt = f"""
-You are an expert traffic accident analyst looking at a SHORT CCTV clip around the first traffic collision.
-
-The clip is centered near accident_time = {accident_time:.3f} seconds.
-
-{_meta_block(metadata)}
-
-The collision is already assumed to involve MULTIPLE vehicles.
-
-Your task is step 2 of accident classification.
-Classify the relative direction relationship of the main collision vehicles immediately before the FIRST impact.
-
-Choose exactly one value:
-- "same": the main collision vehicles are moving in roughly the same direction before impact.
-- "opposite": the main collision vehicles approach from roughly opposite directions before impact.
-- "crossing": the main collision vehicles follow crossing paths, such as intersection or lateral crossing movement.
-
-Instructions:
-1. Focus on the FIRST physical impact only.
-2. Use the vehicle motion immediately before contact, not the aftermath.
-3. Return exactly one of ["same", "opposite", "crossing"].
-4. Use "same" when the main collision vehicles are traveling in broadly the same direction.
-5. Use "opposite" when they approach each other from opposite directions.
-6. Use "crossing" when their trajectories intersect laterally, such as at an intersection or oblique crossing.
-
-Critical output rules:
-- Output JSON only.
-- No reasoning.
-- No analysis.
-- No markdown.
-- No bullet points.
-- No code block.
-- No text before JSON.
-- No text after JSON.
-- The JSON must contain exactly this key:
-  "direction_relation"
-
-Output format:
-{{
-  "direction_relation": "<one of: same, opposite, crossing>"
-}}
-"""
-    return prompt.strip()
-
-
 def build_type_multi_prompt(metadata: Dict[str, str], accident_time: float) -> str:
-    return build_direction_prompt(metadata, accident_time)
-
-
-def build_type_rearend_vs_sideswipe_prompt(
-    metadata: Dict[str, str], accident_time: float
-) -> str:
     prompt = f"""
 You are an expert traffic accident analyst looking at a SHORT CCTV clip around the first traffic collision.
 
@@ -895,18 +766,17 @@ The clip is centered near accident_time = {accident_time:.3f} seconds.
 {_meta_block(metadata)}
 
 The collision is already assumed to involve MULTIPLE vehicles.
-The relative direction relation before the FIRST impact is already classified as "same".
-
-Choose exactly one label:
-- rear-end: one vehicle's front hits the rear of another vehicle moving in roughly the same direction.
-- sideswipe: two vehicles moving in roughly the same direction make side-to-side contact with lateral overlap.
+Classify the multi-vehicle collision into exactly one of these four types:
+- rear-end: one vehicle crashes into the back of another vehicle traveling in the same direction.
+- head-on: two vehicles traveling in opposite directions collide front-to-front.
+- sideswipe: two vehicles moving in roughly the same direction make side-to-side contact while overlapping partially.
+- t-bone: the front of one vehicle crashes into the side of another vehicle, forming a T shape.
 
 Instructions:
-1. Focus on the FIRST physical impact only.
-2. Use both motion direction and contact surfaces.
-3. If the main impact is front-to-rear, choose "rear-end".
-4. If the main impact is side-to-side overlap, choose "sideswipe".
-5. Do not output head-on, t-bone, or single.
+1. Use the motion in the clip, not just one frame.
+2. Compare the relative approach directions and the contact surfaces.
+3. Choose exactly one label from ["rear-end", "head-on", "sideswipe", "t-bone"].
+4. Do not output "single" in this step.
 
 Critical output rules:
 - Output JSON only.
@@ -922,7 +792,7 @@ Critical output rules:
 
 Output format:
 {{
-  "type": "<one of: rear-end, sideswipe>"
+  "type": "<one of: rear-end, head-on, sideswipe, t-bone>"
 }}
 """
     return prompt.strip()
@@ -940,21 +810,16 @@ Classify the accident type into exactly one of these labels:
 ["rear-end", "head-on", "sideswipe", "t-bone", "single"]
 
 Definitions:
-- rear-end: one vehicle's front hits the rear of another vehicle moving in roughly the same direction.
-- head-on: two vehicles moving in roughly opposite directions collide front-to-front.
-- sideswipe: two vehicles moving in roughly the same direction make side-to-side contact with lateral overlap.
-- t-bone: the front of one vehicle hits the side of another vehicle.
-- single: one vehicle first collides with a non-vehicle object, with no direct vehicle-to-vehicle impact.
+- rear-end: one vehicle crashes into the back of another vehicle traveling in the same direction.
+- head-on: two vehicles traveling in opposite directions collide front-to-front.
+- sideswipe: two vehicles moving in roughly the same direction make side-to-side contact while overlapping partially.
+- t-bone: the front of one vehicle crashes into the side of another vehicle, forming a T shape.
+- single: only one vehicle is involved in the crash, with no direct vehicle-to-vehicle collision.
 
 Instructions:
-1. Focus on the FIRST physical impact only, not the aftermath.
-2. Use both approach direction and contact surfaces.
-3. Prefer a multi-vehicle label if another vehicle is clearly part of the first impact.
-4. Return "single" only when the first impact is truly vehicle-to-object.
-5. Return "head-on" only for front-to-front opposite-direction impact.
-6. Return "t-bone" only for front-to-side impact.
-7. Return "rear-end" only for front-to-rear same-direction impact.
-8. Return "sideswipe" only for side-to-side overlap contact.
+1. Use motion over the clip, not just one frame.
+2. Prefer a non-single label when another vehicle is clearly part of the impact.
+3. Return only the best single label.
 
 Critical output rules:
 - Output JSON only.
@@ -1018,9 +883,7 @@ def extract_first_json_object(text: str) -> Optional[Dict[str, Any]]:
     return None
 
 
-def validate_time_prediction(
-    result: Dict[str, Any], meta: Dict[str, str]
-) -> Optional[float]:
+def validate_time_prediction(result: Dict[str, Any], meta: Dict[str, str]) -> Optional[float]:
     try:
         accident_time = float(result["accident_time"])
     except (KeyError, TypeError, ValueError):
@@ -1047,9 +910,7 @@ def validate_location_prediction(result: Dict[str, Any]) -> Optional[Dict[str, f
     return {"center_x": clamp01(center_x), "center_y": clamp01(center_y)}
 
 
-def validate_type_prediction(
-    result: Dict[str, Any], allow_single: bool = True
-) -> Optional[str]:
+def validate_type_prediction(result: Dict[str, Any], allow_single: bool = True) -> Optional[str]:
     try:
         accident_type = str(result["type"]).strip().lower()
     except (KeyError, TypeError, ValueError):
@@ -1060,9 +921,7 @@ def validate_type_prediction(
     return accident_type
 
 
-def validate_multi_binary_prediction(
-    result: Dict[str, Any],
-) -> Optional[Tuple[bool, float]]:
+def validate_multi_binary_prediction(result: Dict[str, Any]) -> Optional[Tuple[bool, float]]:
     try:
         value = bool(result["involves_multiple_vehicles"])
     except Exception:
@@ -1073,63 +932,6 @@ def validate_multi_binary_prediction(
         confidence = 0.0
     confidence = max(0.0, min(confidence, 1.0))
     return value, confidence
-
-
-def validate_direction_relation_prediction(result: Dict[str, Any]) -> Optional[str]:
-    try:
-        direction_relation = str(result["direction_relation"]).strip().lower()
-    except (KeyError, TypeError, ValueError):
-        return None
-    if direction_relation not in {"same", "opposite", "crossing"}:
-        return None
-    return direction_relation
-
-
-def _csv_value(value: Any) -> Any:
-    return "" if value is None else value
-
-
-def build_type_confidence_row(
-    rel_path: str,
-    accident_time: float,
-    final_type: Optional[str],
-    diagnostics: Dict[str, Any],
-) -> Dict[str, Any]:
-    binary_decision = diagnostics.get("binary_decision") or {}
-    binary_is_multi = binary_decision.get("is_multi")
-    binary_confidence = binary_decision.get("confidence")
-    if isinstance(binary_confidence, (int, float)):
-        binary_multi_confidence = (
-            float(binary_confidence)
-            if binary_is_multi is True
-            else 1.0 - float(binary_confidence)
-        )
-        binary_single_confidence = (
-            float(binary_confidence)
-            if binary_is_multi is False
-            else 1.0 - float(binary_confidence)
-        )
-    else:
-        binary_multi_confidence = None
-        binary_single_confidence = None
-
-    direction_decision = diagnostics.get("direction_decision") or {}
-    rearend_vs_sideswipe = diagnostics.get("rearend_vs_sideswipe") or {}
-    fallback = diagnostics.get("fallback") or {}
-
-    return {
-        "path": rel_path,
-        "accident_time": accident_time,
-        "final_type": _csv_value(final_type),
-        "final_source": _csv_value(diagnostics.get("final_source")),
-        "binary_is_multi": _csv_value(binary_is_multi),
-        "binary_confidence": _csv_value(binary_confidence),
-        "binary_multi_confidence_proxy": _csv_value(binary_multi_confidence),
-        "binary_single_confidence_proxy": _csv_value(binary_single_confidence),
-        "direction_relation": _csv_value(direction_decision.get("direction_relation")),
-        "rearend_vs_sideswipe_type": _csv_value(rearend_vs_sideswipe.get("type")),
-        "fallback_type": _csv_value(fallback.get("type")),
-    }
 
 
 def move_inputs_to_device(batch, device):
@@ -1220,9 +1022,7 @@ def save_temp_frame(frame: Any, prefix: str) -> str:
     return path
 
 
-def create_center_crop(
-    frame: Any, center_x: float, center_y: float, scale: float
-) -> Tuple[Any, Tuple[int, int, int, int]]:
+def create_center_crop(frame: Any, center_x: float, center_y: float, scale: float) -> Tuple[Any, Tuple[int, int, int, int]]:
     h, w = frame.shape[:2]
     crop_w = max(32, int(round(w * scale)))
     crop_h = max(32, int(round(h * scale)))
@@ -1236,11 +1036,7 @@ def create_center_crop(
     return crop, (x1, y1, x2, y2)
 
 
-def remap_crop_point_to_global(
-    local_xy: Dict[str, float],
-    bbox: Tuple[int, int, int, int],
-    frame_shape: Tuple[int, int, int],
-) -> Dict[str, float]:
+def remap_crop_point_to_global(local_xy: Dict[str, float], bbox: Tuple[int, int, int, int], frame_shape: Tuple[int, int, int]) -> Dict[str, float]:
     x1, y1, x2, y2 = bbox
     h, w = frame_shape[:2]
     crop_w = max(1, x2 - x1)
@@ -1256,10 +1052,7 @@ def remap_crop_point_to_global(
 def median_xy(points: Sequence[Dict[str, float]]) -> Dict[str, float]:
     xs = [p["center_x"] for p in points]
     ys = [p["center_y"] for p in points]
-    return {
-        "center_x": clamp01(float(median(xs))),
-        "center_y": clamp01(float(median(ys))),
-    }
+    return {"center_x": clamp01(float(median(xs))), "center_y": clamp01(float(median(ys)))}
 
 
 def copy_to_persistent_frame_dir(src_path: str, rel_path: str, suffix: str) -> str:
@@ -1271,13 +1064,7 @@ def copy_to_persistent_frame_dir(src_path: str, rel_path: str, suffix: str) -> s
     return dst
 
 
-def write_video_clip(
-    video_path: str,
-    center_time_sec: float,
-    output_path: str,
-    window_sec: float,
-    clip_fps: float,
-) -> None:
+def write_video_clip(video_path: str, center_time_sec: float, output_path: str, window_sec: float, clip_fps: float) -> None:
     cap = cv2.VideoCapture(video_path)
     if not cap.isOpened():
         raise FileNotFoundError(f"Could not open video: {video_path}")
@@ -1296,7 +1083,7 @@ def write_video_clip(
     end_frame = min(max(start_frame + 1, frame_count), int(round(end_time * src_fps)))
     step = max(1, int(round(src_fps / max(clip_fps, 1e-6))))
 
-    fourcc = getattr(cv2, "VideoWriter_fourcc")(*"mp4v")
+    fourcc = cv2.VideoWriter_fourcc(*"mp4v")
     writer = cv2.VideoWriter(output_path, fourcc, clip_fps, (width, height))
     if not writer.isOpened():
         cap.release()
@@ -1316,13 +1103,7 @@ def write_video_clip(
     cap.release()
 
 
-def save_temp_clip(
-    video_path: str,
-    accident_time: float,
-    window_sec: float,
-    clip_fps: float,
-    prefix: str,
-) -> str:
+def save_temp_clip(video_path: str, accident_time: float, window_sec: float, clip_fps: float, prefix: str) -> str:
     fd, path = tempfile.mkstemp(prefix=prefix, suffix=".mp4", dir=ACCIDENT_DIR)
     os.close(fd)
     write_video_clip(video_path, accident_time, path, window_sec, clip_fps)
@@ -1342,12 +1123,7 @@ def call_qwen_for_media(
     messages = [
         {
             "role": "system",
-            "content": [
-                {
-                    "type": "text",
-                    "text": "Respond with JSON only. No reasoning. No explanation. /no_think",
-                }
-            ],
+            "content": [{"type": "text", "text": "Respond with JSON only. No reasoning. No explanation. /no_think"}],
         },
         {
             "role": "user",
@@ -1370,9 +1146,7 @@ def call_qwen_for_media(
                 enable_thinking=False,
             )
             processed = move_inputs_to_device(processed, model.device)
-            streamer = TextIteratorStreamer(
-                processor.tokenizer, skip_prompt=True, skip_special_tokens=True
-            )
+            streamer = TextIteratorStreamer(processor.tokenizer, skip_prompt=True, skip_special_tokens=True)
             generation_kwargs = dict(
                 **processed,
                 max_new_tokens=MAX_NEW_TOKENS,
@@ -1391,15 +1165,7 @@ def call_qwen_for_media(
                 collected_text += new_text
             thread.join()
             print()
-            append_raw_log(
-                CURRENT_RAW_LOG_PATH,
-                {
-                    "path": rel_path,
-                    "stage": stage,
-                    "attempt": attempt,
-                    "raw_output": collected_text,
-                },
-            )
+            append_raw_log(RAW_LOG_PATH, {"path": rel_path, "stage": stage, "attempt": attempt, "raw_output": collected_text})
             parsed = extract_first_json_object(collected_text)
             if parsed is not None:
                 return parsed
@@ -1435,9 +1201,7 @@ def predict_location_with_multiframe_refine(
         if extracted is None:
             continue
         frame = extracted["frame"]
-        frame_path = save_temp_frame(
-            frame, prefix=f"loc_{offset:+.2f}_".replace(".", "_")
-        )
+        frame_path = save_temp_frame(frame, prefix=f"loc_{offset:+.2f}_".replace(".", "_"))
         extracted_frames.append((offset, frame, frame_path))
         raw_loc = call_qwen_for_media(
             model=model,
@@ -1470,15 +1234,11 @@ def predict_location_with_multiframe_refine(
         central_entry = extracted_frames[len(extracted_frames) // 2]
 
     _, central_frame, central_frame_path = central_entry
-    persistent_frame_path = copy_to_persistent_frame_dir(
-        central_frame_path, rel_path, f"t{accident_time:.3f}"
-    )
+    persistent_frame_path = copy_to_persistent_frame_dir(central_frame_path, rel_path, f"t{accident_time:.3f}")
 
     refined_candidates: List[Dict[str, float]] = [coarse]
     for scale in LOCATION_CROP_SCALES:
-        crop, bbox = create_center_crop(
-            central_frame, coarse["center_x"], coarse["center_y"], scale
-        )
+        crop, bbox = create_center_crop(central_frame, coarse["center_x"], coarse["center_y"], scale)
         crop_path = save_temp_frame(crop, prefix=f"loc_crop_{int(scale * 100):02d}_")
         raw_crop = call_qwen_for_media(
             model=model,
@@ -1489,9 +1249,7 @@ def predict_location_with_multiframe_refine(
             rel_path=rel_path,
             stage=f"location_crop_refine_{int(scale * 100):02d}",
         )
-        crop_loc = (
-            validate_location_prediction(raw_crop) if raw_crop is not None else None
-        )
+        crop_loc = validate_location_prediction(raw_crop) if raw_crop is not None else None
         if crop_loc is not None:
             global_loc = remap_crop_point_to_global(crop_loc, bbox, central_frame.shape)
             diagnostics["refined_points"].append({"scale": scale, **global_loc})
@@ -1509,64 +1267,6 @@ def predict_location_with_multiframe_refine(
     return final_loc, persistent_frame_path, diagnostics
 
 
-def predict_multi_type_with_direction_relation(
-    model,
-    processor,
-    clip_path: str,
-    rel_path: str,
-    meta: Dict[str, str],
-    accident_time: float,
-    diagnostics: Dict[str, Any],
-) -> Optional[str]:
-    raw_direction = call_qwen_for_media(
-        model=model,
-        processor=processor,
-        media_type="video",
-        media_path=os.path.abspath(clip_path),
-        prompt=build_direction_prompt(meta, accident_time),
-        rel_path=rel_path,
-        stage="type_direction_relation",
-    )
-    direction_relation = (
-        validate_direction_relation_prediction(raw_direction)
-        if raw_direction is not None
-        else None
-    )
-    diagnostics["direction"] = raw_direction
-    if direction_relation is None:
-        return None
-
-    diagnostics["direction_decision"] = {"direction_relation": direction_relation}
-    if direction_relation == "opposite":
-        diagnostics["final_source"] = "direction_opposite"
-        return "head-on"
-    if direction_relation == "crossing":
-        diagnostics["final_source"] = "direction_crossing"
-        return "t-bone"
-    if direction_relation != "same":
-        return None
-
-    raw_same_direction = call_qwen_for_media(
-        model=model,
-        processor=processor,
-        media_type="video",
-        media_path=os.path.abspath(clip_path),
-        prompt=build_type_rearend_vs_sideswipe_prompt(meta, accident_time),
-        rel_path=rel_path,
-        stage="type_rearend_vs_sideswipe",
-    )
-    same_direction_type = (
-        validate_type_prediction(raw_same_direction, allow_single=False)
-        if raw_same_direction is not None
-        else None
-    )
-    diagnostics["rearend_vs_sideswipe"] = raw_same_direction
-    if same_direction_type in {"rear-end", "sideswipe"}:
-        diagnostics["final_source"] = "rearend_vs_sideswipe"
-        return same_direction_type
-    return None
-
-
 def predict_type_with_clip_two_stage(
     model,
     processor,
@@ -1576,13 +1276,7 @@ def predict_type_with_clip_two_stage(
     accident_time: float,
 ) -> Tuple[Optional[str], Dict[str, Any]]:
     diagnostics: Dict[str, Any] = {}
-    clip_path = save_temp_clip(
-        abs_video_path,
-        accident_time,
-        window_sec=TYPE_WINDOW_SEC,
-        clip_fps=TYPE_CLIP_FPS,
-        prefix="type_clip_",
-    )
+    clip_path = save_temp_clip(abs_video_path, accident_time, window_sec=TYPE_WINDOW_SEC, clip_fps=TYPE_CLIP_FPS, prefix="type_clip_")
     try:
         raw_binary = call_qwen_for_media(
             model=model,
@@ -1593,37 +1287,30 @@ def predict_type_with_clip_two_stage(
             rel_path=rel_path,
             stage="type_binary",
         )
-        binary = (
-            validate_multi_binary_prediction(raw_binary)
-            if raw_binary is not None
-            else None
-        )
+        binary = validate_multi_binary_prediction(raw_binary) if raw_binary is not None else None
         diagnostics["binary"] = raw_binary
 
         if binary is not None:
             is_multi, confidence = binary
-            diagnostics["binary_decision"] = {
-                "is_multi": is_multi,
-                "confidence": confidence,
-            }
+            diagnostics["binary_decision"] = {"is_multi": is_multi, "confidence": confidence}
             if not is_multi and confidence >= 0.45:
-                diagnostics["final_source"] = "binary_single"
                 return "single", diagnostics
 
-            multi_type = predict_multi_type_with_direction_relation(
+            raw_multi = call_qwen_for_media(
                 model=model,
                 processor=processor,
-                clip_path=clip_path,
+                media_type="video",
+                media_path=os.path.abspath(clip_path),
+                prompt=build_type_multi_prompt(meta, accident_time),
                 rel_path=rel_path,
-                meta=meta,
-                accident_time=accident_time,
-                diagnostics=diagnostics,
+                stage="type_multi",
             )
+            multi_type = validate_type_prediction(raw_multi, allow_single=False) if raw_multi is not None else None
+            diagnostics["multi"] = raw_multi
             if multi_type is not None:
                 return multi_type, diagnostics
 
             if not is_multi:
-                diagnostics["final_source"] = "binary_single_after_multi_route"
                 return "single", diagnostics
 
         raw_fallback = call_qwen_for_media(
@@ -1636,12 +1323,7 @@ def predict_type_with_clip_two_stage(
             stage="type_fallback",
         )
         diagnostics["fallback"] = raw_fallback
-        fallback_type = (
-            validate_type_prediction(raw_fallback, allow_single=True)
-            if raw_fallback is not None
-            else None
-        )
-        diagnostics["final_source"] = "fallback"
+        fallback_type = validate_type_prediction(raw_fallback, allow_single=True) if raw_fallback is not None else None
         return fallback_type, diagnostics
     finally:
         if os.path.exists(clip_path):
@@ -1654,8 +1336,6 @@ def main(
     part_name: Optional[str] = None,
     gpu_id: Optional[int] = None,
 ):
-    global CURRENT_RAW_LOG_PATH
-
     if gpu_id is not None:
         os.environ["CUDA_VISIBLE_DEVICES"] = str(gpu_id)
 
@@ -1666,15 +1346,11 @@ def main(
     os.makedirs(RESULT_DIR, exist_ok=True)
 
     prediction_path, raw_log_path = resolve_output_paths(part_name)
-    confidence_path = resolve_confidence_output_path(part_name)
-    CURRENT_RAW_LOG_PATH = raw_log_path
 
     if os.path.exists(raw_log_path):
         os.remove(raw_log_path)
     if os.path.exists(prediction_path):
         os.remove(prediction_path)
-    if os.path.exists(confidence_path):
-        os.remove(confidence_path)
 
     if end_row is not None and end_row < start_row:
         raise ValueError(f"end_row must be >= start_row, got {start_row}..{end_row}")
@@ -1685,43 +1361,19 @@ def main(
     print(f"Using device: {'cuda' if torch.cuda.is_available() else 'cpu'}")
     print(f"Processing rows: {start_row}..{end_row if end_row is not None else 'end'}")
     print(f"CSV output: {prediction_path}")
-    print(f"Confidence table: {confidence_path}")
     print(f"Raw log: {raw_log_path}")
 
     processor = AutoProcessor.from_pretrained(MODEL_NAME)
-    model = AutoModelForImageTextToText.from_pretrained(
-        MODEL_NAME, device_map="auto", torch_dtype="auto"
-    )
+    model = AutoModelForImageTextToText.from_pretrained(MODEL_NAME, device_map="auto", torch_dtype="auto")
 
     predictions: List[Dict[str, Any]] = []
     fieldnames = ["path", "accident_time", "center_x", "center_y", "type"]
-    confidence_fieldnames = [
-        "path",
-        "accident_time",
-        "final_type",
-        "final_source",
-        "binary_is_multi",
-        "binary_confidence",
-        "binary_multi_confidence_proxy",
-        "binary_single_confidence_proxy",
-        "direction_relation",
-        "rearend_vs_sideswipe_type",
-        "fallback_type",
-    ]
 
-    with open(prediction_path, "w", newline="", encoding="utf-8") as prediction_file, open(
-        confidence_path, "w", newline="", encoding="utf-8"
-    ) as confidence_file:
+    with open(prediction_path, "w", newline="", encoding="utf-8") as prediction_file:
         writer = csv.DictWriter(prediction_file, fieldnames=fieldnames)
-        confidence_writer = csv.DictWriter(
-            confidence_file, fieldnames=confidence_fieldnames
-        )
         writer.writeheader()
-        confidence_writer.writeheader()
         prediction_file.flush()
-        confidence_file.flush()
         os.fsync(prediction_file.fileno())
-        os.fsync(confidence_file.fileno())
 
         for idx, meta in enumerate(read_metadata(METADATA_PATH), start=1):
             if idx < start_row:
@@ -1750,38 +1402,26 @@ def main(
                 rel_path=rel_path,
                 meta=meta,
             )
-            append_raw_log(
-                raw_log_path,
-                {"path": rel_path, "stage": "time_hybrid_summary", **time_diag},
-            )
+            append_raw_log(raw_log_path, {"path": rel_path, "stage": "time_hybrid_summary", **time_diag})
             if accident_time is None:
-                print(
-                    "  -> Failed to resolve accident_time from hybrid Qwen/OF selector"
-                )
+                print("  -> Failed to resolve accident_time from hybrid Qwen/OF selector")
                 continue
             print(f"  -> predicted accident_time={accident_time:.4f}")
 
-            location, persistent_frame_path, location_diag = (
-                predict_location_with_multiframe_refine(
-                    model=model,
-                    processor=processor,
-                    abs_video_path=abs_video_path,
-                    rel_path=rel_path,
-                    meta=meta,
-                    accident_time=accident_time,
-                )
+            location, persistent_frame_path, location_diag = predict_location_with_multiframe_refine(
+                model=model,
+                processor=processor,
+                abs_video_path=abs_video_path,
+                rel_path=rel_path,
+                meta=meta,
+                accident_time=accident_time,
             )
-            append_raw_log(
-                raw_log_path,
-                {"path": rel_path, "stage": "location_summary", **location_diag},
-            )
+            append_raw_log(raw_log_path, {"path": rel_path, "stage": "location_summary", **location_diag})
             if location is None:
                 print("  -> Failed to get valid location prediction")
                 continue
             center_x, center_y = location["center_x"], location["center_y"]
-            print(
-                f"  -> predicted location: center_x={center_x:.4f}, center_y={center_y:.4f}"
-            )
+            print(f"  -> predicted location: center_x={center_x:.4f}, center_y={center_y:.4f}")
             if persistent_frame_path:
                 print(f"  -> saved representative frame: {persistent_frame_path}")
 
@@ -1793,9 +1433,7 @@ def main(
                 meta=meta,
                 accident_time=accident_time,
             )
-            append_raw_log(
-                raw_log_path, {"path": rel_path, "stage": "type_summary", **type_diag}
-            )
+            append_raw_log(raw_log_path, {"path": rel_path, "stage": "type_summary", **type_diag})
             if accident_type is None:
                 print("  -> Failed to get valid JSON response for type")
                 continue
@@ -1803,20 +1441,6 @@ def main(
             print(
                 f"  -> final parsed result: accident_time={accident_time:.4f}, "
                 f"center_x={center_x:.4f}, center_y={center_y:.4f}, type={accident_type}"
-            )
-
-            confidence_row = build_type_confidence_row(
-                rel_path=rel_path,
-                accident_time=accident_time,
-                final_type=accident_type,
-                diagnostics=type_diag,
-            )
-            print(
-                "  -> confidence summary: "
-                f"binary_conf={confidence_row['binary_confidence']}, "
-                f"direction={confidence_row['direction_relation']}, "
-                f"same_dir_type={confidence_row['rearend_vs_sideswipe_type']}, "
-                f"source={confidence_row['final_source']}"
             )
 
             row = {
@@ -1828,51 +1452,23 @@ def main(
             }
             predictions.append(row)
             writer.writerow(row)
-            confidence_writer.writerow(confidence_row)
             prediction_file.flush()
-            confidence_file.flush()
             os.fsync(prediction_file.fileno())
-            os.fsync(confidence_file.fileno())
-            print(
-                f"  -> CSV updated: {prediction_path} ({len(predictions)} rows saved)"
-            )
-            print(f"  -> Confidence table updated: {confidence_path}")
+            print(f"  -> CSV updated: {prediction_path} ({len(predictions)} rows saved)")
 
     if predictions:
         print(f"\nSaved predictions incrementally to: {prediction_path}")
     else:
         print("\nNo predictions generated.")
-    print(f"Confidence table saved to: {confidence_path}")
     print(f"Raw outputs saved to: {raw_log_path}")
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(
-        description="Run the qwen_test11 hybrid accident pipeline"
-    )
-    parser.add_argument(
-        "--start-row",
-        type=int,
-        default=1,
-        help="1-based inclusive start row from test_metadata.csv",
-    )
-    parser.add_argument(
-        "--end-row",
-        type=int,
-        default=None,
-        help="1-based inclusive end row from test_metadata.csv",
-    )
-    parser.add_argument(
-        "--part-name",
-        default=None,
-        help="Part name used in output filenames, e.g. part0",
-    )
-    parser.add_argument(
-        "--gpu-id",
-        type=int,
-        default=None,
-        help="GPU id to expose to this process via CUDA_VISIBLE_DEVICES",
-    )
+    parser = argparse.ArgumentParser(description="Run the qwen_test10 hybrid accident pipeline")
+    parser.add_argument("--start-row", type=int, default=1, help="1-based inclusive start row from test_metadata.csv")
+    parser.add_argument("--end-row", type=int, default=None, help="1-based inclusive end row from test_metadata.csv")
+    parser.add_argument("--part-name", default=None, help="Part name used in output filenames, e.g. part0")
+    parser.add_argument("--gpu-id", type=int, default=None, help="GPU id to expose to this process via CUDA_VISIBLE_DEVICES")
     parser.add_argument(
         "--launch-two-gpus",
         action="store_true",

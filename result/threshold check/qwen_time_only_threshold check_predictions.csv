@@ -1,0 +1,4 @@
+path,time_status,accident_time,zero_check_confidence,reason,raw_qwen_time,raw_zero_check
+videos/Z4kg2Ev3vhk_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/unS0-TLF1ao_00.mp4,found,2.0,,nonzero_original_qwen_time,"{""accident_time"": 2.0}",
+videos/UarP8qU1S-c_00.mp4,found,5.0,,nonzero_original_qwen_time,"{""accident_time"": 5.0}",

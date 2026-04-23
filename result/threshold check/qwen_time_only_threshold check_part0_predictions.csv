@@ -1,0 +1,1015 @@
+path,time_status,accident_time,zero_check_confidence,reason,raw_qwen_time,raw_zero_check
+videos/Z4kg2Ev3vhk_00.mp4,found,1.0,,nonzero_original_qwen_time,"{""accident_time"": 1.0}",
+videos/unS0-TLF1ao_00.mp4,found,2.0,,nonzero_original_qwen_time,"{""accident_time"": 2.0}",
+videos/UarP8qU1S-c_00.mp4,found,7.0,,nonzero_original_qwen_time,"{""accident_time"": 7.0}",
+videos/UarP8qU1S-c_01.mp4,found,1.0,,nonzero_original_qwen_time,"{""accident_time"": 1.0}",
+videos/nAXTthLfgtI_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/fzWY0vLAXzI_00.mp4,found,4.0,,nonzero_original_qwen_time,"{""accident_time"": 4.0}",
+videos/vxZ47DoPNY8_00.mp4,found,3.0,,nonzero_original_qwen_time,"{""accident_time"": 3.0}",
+videos/OXVXsdDT9QQ_00.mp4,found,1.5,,nonzero_original_qwen_time,"{""accident_time"": 1.5}",
+videos/VozrseCzhQc_00.mp4,found,5.0,,nonzero_original_qwen_time,"{""accident_time"": 5.0}",
+videos/kABWTDKgc9U_00.mp4,found,17.5,,nonzero_original_qwen_time,"{""accident_time"": 17.5}",
+videos/ftk_fSc4haM_00.mp4,found,6.0,,nonzero_original_qwen_time,"{""accident_time"": 6.0}",
+videos/BgdKGnFqz0I_00.mp4,found,9.0,,ninety_check_found_at_90_percent_true,"{""accident_time"": 9.0}",
+videos/LiM5LPSZoow_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/F0NHENn-HS4_00.mp4,found,5.0,,nonzero_original_qwen_time,"{""accident_time"": 5.0}",
+videos/maJsgJsapH4_00.mp4,found,5.0,,nonzero_original_qwen_time,"{""accident_time"": 5.0}",
+videos/iA_u73BG4ZM_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/maJGw3hQs_s_00.mp4,found,5.6,,nonzero_original_qwen_time,"{""accident_time"": 5.6}",
+videos/aPsS_HaokoU_00.mp4,found,3.7,,nonzero_original_qwen_time,"{""accident_time"": 3.7}",
+videos/aF2Hbp8C23A_00.mp4,found,3.6,,nonzero_original_qwen_time,"{""accident_time"": 3.6}",
+videos/82sQ7N-aHOw_00.mp4,not found 0,,0.99,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.99}"
+videos/bJMc3sNP2AU_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/XaqA-uzqeNc_00.mp4,found,1.0,,nonzero_original_qwen_time,"{""accident_time"": 1.0}",
+videos/gp_9zTMpVrs_00.mp4,not found 0.9,,,ninety_check_found_at_90_percent_false,"{""accident_time"": 27.0}",
+videos/B_nBw3PcHXg_00.mp4,found,4.5,,nonzero_original_qwen_time,"{""accident_time"": 4.5}",
+videos/jq-5EaxSR3M_00.mp4,found,5.6,,nonzero_original_qwen_time,"{""accident_time"": 5.6}",
+videos/4jVVNw9AF2s_00.mp4,found,1.0,,nonzero_original_qwen_time,"{""accident_time"": 1.0}",
+videos/FR3eYZzgeJY_00.mp4,found,3.9,,nonzero_original_qwen_time,"{""accident_time"": 3.9}",
+videos/ApyekBAgfg8_00.mp4,found,3.92,,nonzero_original_qwen_time,"{""accident_time"": 3.92}",
+videos/Mem77KKhF8c_00.mp4,found,2.8,,nonzero_original_qwen_time,"{""accident_time"": 2.8}",
+videos/GSvQCAPnFGo_00.mp4,found,5.0,,nonzero_original_qwen_time,"{""accident_time"": 5.0}",
+videos/fgI4vUtP_1I_00.mp4,found,1.5,,nonzero_original_qwen_time,"{""accident_time"": 1.5}",
+videos/TthKPyywzu8_00.mp4,found,5.0,,nonzero_original_qwen_time,"{""accident_time"": 5.0}",
+videos/LklNl33KztU_00.mp4,found,6.0,,nonzero_original_qwen_time,"{""accident_time"": 6.0}",
+videos/tK1wd_HCYNo_00.mp4,found,10.0,,nonzero_original_qwen_time,"{""accident_time"": 10.0}",
+videos/mntY3Xh8lT4_00.mp4,found,3.0,,nonzero_original_qwen_time,"{""accident_time"": 3.0}",
+videos/CzOWGXrwbp4_00.mp4,found,11.0,,nonzero_original_qwen_time,"{""accident_time"": 11.0}",
+videos/7AFnEpBVrr4_00.mp4,found,6.0,,nonzero_original_qwen_time,"{""accident_time"": 6.0}",
+videos/njJxs1KozgE_00.mp4,found,4.0,,nonzero_original_qwen_time,"{""accident_time"": 4.0}",
+videos/-AztVDZ6cEE_00.mp4,found,2.6,,nonzero_original_qwen_time,"{""accident_time"": 2.6}",
+videos/kUp_0rJe_OI_00.mp4,found,2.0,,nonzero_original_qwen_time,"{""accident_time"": 2.0}",
+videos/a8zHkZ_t16k_00.mp4,not found 0.9,,,ninety_check_found_at_90_percent_false,"{""accident_time"": 29.967}",
+videos/PQHiBa179Ew_00.mp4,found,6.0,,nonzero_original_qwen_time,"{""accident_time"": 6.0}",
+videos/-SNFUobKjoM_00.mp4,found,13.0,,nonzero_original_qwen_time,"{""accident_time"": 13.0}",
+videos/TahWBItdUvQ_00.mp4,found,3.0,,nonzero_original_qwen_time,"{""accident_time"": 3.0}",
+videos/reXieySb4JI_00.mp4,found,7.6,,nonzero_original_qwen_time,"{""accident_time"": 7.6}",
+videos/m2uBNOFIvKk_00.mp4,found,18.0,,nonzero_original_qwen_time,"{""accident_time"": 18.0}",
+videos/VXuNX_OYkig_00.mp4,found,3.0,,nonzero_original_qwen_time,"{""accident_time"": 3.0}",
+videos/GsRdjuR2PpE_00.mp4,found,4.0,,nonzero_original_qwen_time,"{""accident_time"": 4.0}",
+videos/dGUCJwW8b1g_00.mp4,found,3.0,,nonzero_original_qwen_time,"{""accident_time"": 3.0}",
+videos/FV6XO5Yg9VU_00.mp4,found,14.0,,nonzero_original_qwen_time,"{""accident_time"": 14.0}",
+videos/iYAIZEocjbg_00.mp4,found,14.0,,nonzero_original_qwen_time,"{""accident_time"": 14.0}",
+videos/n-aa3NIlRMo_00.mp4,found,19.0,,nonzero_original_qwen_time,"{""accident_time"": 19.0}",
+videos/mDtCi-XVAbo_00.mp4,found,1.0,,nonzero_original_qwen_time,"{""accident_time"": 1.0}",
+videos/QJYDZ1PBiYQ_00.mp4,found,3.0,,nonzero_original_qwen_time,"{""accident_time"": 3.0}",
+videos/1ZQAChv0TEI_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/e6ZQvn6NyLI_00.mp4,found,4.917,,nonzero_original_qwen_time,"{""accident_time"": 4.917}",
+videos/ui52V2KkRN4_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/QyRcmm87rJ8_00.mp4,found,5.9,,nonzero_original_qwen_time,"{""accident_time"": 5.9}",
+videos/C7gOL8qM71E_00.mp4,found,13.0,,nonzero_original_qwen_time,"{""accident_time"": 13.0}",
+videos/At-4-Y2g7Y8_00.mp4,found,10.0,,nonzero_original_qwen_time,"{""accident_time"": 10.0}",
+videos/1BIZOZtxRpY_00.mp4,found,15.0,,nonzero_original_qwen_time,"{""accident_time"": 15.0}",
+videos/GWx-Z5rWhzc_00.mp4,found,2.8,,nonzero_original_qwen_time,"{""accident_time"": 2.8}",
+videos/bow1eKeR6oY_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/7CO_LqgfiFg_00.mp4,found,4.0,,nonzero_original_qwen_time,"{""accident_time"": 4.0}",
+videos/6T58bsyZz40_00.mp4,found,12.5,,nonzero_original_qwen_time,"{""accident_time"": 12.5}",
+videos/bn7c9LxpeuA_00.mp4,not found 0,,0.99,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.99}"
+videos/zISHd2Jt7Qs_00.mp4,not found 0.9,,,ninety_check_found_at_90_percent_false,"{""accident_time"": 27.0}",
+videos/0isplBZQftg_00.mp4,found,2.0,,nonzero_original_qwen_time,"{""accident_time"": 2.0}",
+videos/1lD9kE-VJ7I_00.mp4,found,4.6,,nonzero_original_qwen_time,"{""accident_time"": 4.6}",
+videos/afVZZ3v87cc_00.mp4,found,10.0,,nonzero_original_qwen_time,"{""accident_time"": 10.0}",
+videos/fYUPTfVRKEk_00.mp4,found,3.0,,nonzero_original_qwen_time,"{""accident_time"": 3.0}",
+videos/NDkAFTqHLzo_00.mp4,found,2.8,,nonzero_original_qwen_time,"{""accident_time"": 2.8}",
+videos/BR4WAtlyQEQ_00.mp4,found,7.0,,nonzero_original_qwen_time,"{""accident_time"": 7.0}",
+videos/zXKdiWjxhd8_00.mp4,found,7.0,,nonzero_original_qwen_time,"{""accident_time"": 7.0}",
+videos/JHq6SVNhY0Y_00.mp4,found,3.0,,nonzero_original_qwen_time,"{""accident_time"": 3.0}",
+videos/03HtRCJa8Yk_00.mp4,found,6.0,,nonzero_original_qwen_time,"{""accident_time"": 6.0}",
+videos/6EW9PrDqKA8_00.mp4,found,5.0,,nonzero_original_qwen_time,"{""accident_time"": 5.0}",
+videos/-NgnSm_oEB4_00.mp4,found,10.0,,nonzero_original_qwen_time,"{""accident_time"": 10.0}",
+videos/wQ_pGHoj2SI_00.mp4,found,15.6,,nonzero_original_qwen_time,"{""accident_time"": 15.6}",
+videos/dZ-F8lZ16-A_00.mp4,found,5.0,,nonzero_original_qwen_time,"{""accident_time"": 5.0}",
+videos/Chf8yRqccCM_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/P4oEdSFJvfU_00.mp4,found,17.7,,nonzero_original_qwen_time,"{""accident_time"": 17.7}",
+videos/yQz3PyPvr5Y_00.mp4,found,4.0,,nonzero_original_qwen_time,"{""accident_time"": 4.0}",
+videos/FhFwhsyOjUU_00.mp4,found,18.0,,nonzero_original_qwen_time,"{""accident_time"": 18.0}",
+videos/GaAVUUYx9q8_00.mp4,not found 0,,0.99,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.99}"
+videos/-jZ5Rlhzzi4_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/LP_C34tyPl4_00.mp4,not found 0.9,,,ninety_check_found_at_90_percent_false,"{""accident_time"": 28.8}",
+videos/tFS_Hk-qEiQ_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/mzHmLvV9QlM_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/c4exlXawFaM_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/-yLuZ5wxAsc_00.mp4,found,6.0,,nonzero_original_qwen_time,"{""accident_time"": 6.0}",
+videos/uKieP03gwxQ_00.mp4,found,22.0,,nonzero_original_qwen_time,"{""accident_time"": 22.0}",
+videos/Q72Ly8rGtnc_00.mp4,found,19.0,,nonzero_original_qwen_time,"{""accident_time"": 19.0}",
+videos/Img4DcUjRmo_00.mp4,found,2.0,,nonzero_original_qwen_time,"{""accident_time"": 2.0}",
+videos/LMw1OJe37fM_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/jgAGNNIG13E_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/Fb1XWmXZTZw_00.mp4,not found 0.9,,,ninety_check_found_at_90_percent_false,"{""accident_time"": 26.0}",
+videos/mllfWsyVZ1s_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/clXKxQWjB4c_00.mp4,not found 0,,0.99,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.99}"
+videos/ozOAT76M0PM_00.mp4,found,3.0,,nonzero_original_qwen_time,"{""accident_time"": 3.0}",
+videos/jc-fa_AjIXw_00.mp4,found,12.0,,nonzero_original_qwen_time,"{""accident_time"": 12.0}",
+videos/YmMM4JeUJJ0_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/JNsoId5gPK8_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/a8-i2E4jrpk_00.mp4,found,2.7,,nonzero_original_qwen_time,"{""accident_time"": 2.7}",
+videos/a8-i2E4jrpk_01.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/GIm11SfAp8c_00.mp4,found,5.0,,nonzero_original_qwen_time,"{""accident_time"": 5.0}",
+videos/CVSBJThqVgA_00.mp4,found,2.0,,nonzero_original_qwen_time,"{""accident_time"": 2.0}",
+videos/CBPD-SF1p90_00.mp4,found,2.0,,nonzero_original_qwen_time,"{""accident_time"": 2.0}",
+videos/vMqldj7d7e0_00.mp4,found,21.0,,nonzero_original_qwen_time,"{""accident_time"": 21.0}",
+videos/pQ84BiOk854_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/NaRgSBNtbFY_00.mp4,found,3.2,,nonzero_original_qwen_time,"{""accident_time"": 3.2}",
+videos/2xFyklpa54I_00.mp4,found,3.0,,nonzero_original_qwen_time,"{""accident_time"": 3.0}",
+videos/PyYCjM8tvSY_00.mp4,found,2.0,,nonzero_original_qwen_time,"{""accident_time"": 2.0}",
+videos/nHmyMVHNPDs_00.mp4,found,2.0,,nonzero_original_qwen_time,"{""accident_time"": 2.0}",
+videos/diYHDL2G4KA_00.mp4,found,5.0,,nonzero_original_qwen_time,"{""accident_time"": 5.0}",
+videos/HZXYwgLy0RE_00.mp4,found,4.0,,nonzero_original_qwen_time,"{""accident_time"": 4.0}",
+videos/YYgdkr0Qiw0_00.mp4,found,5.8,,nonzero_original_qwen_time,"{""accident_time"": 5.8}",
+videos/mDHuTgnSxMs_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/aUvorQJ7jRU_00.mp4,found,2.5,,nonzero_original_qwen_time,"{""accident_time"": 2.5}",
+videos/M6WWLqx3z88_00.mp4,found,1.5,,nonzero_original_qwen_time,"{""accident_time"": 1.5}",
+videos/HROdEY9OZk4_00.mp4,found,3.7,,nonzero_original_qwen_time,"{""accident_time"": 3.7}",
+videos/PgdU-LSKlZU_00.mp4,found,5.0,,nonzero_original_qwen_time,"{""accident_time"": 5.0}",
+videos/jFpORnj_-cI_00.mp4,found,2.3,,nonzero_original_qwen_time,"{""accident_time"": 2.3}",
+videos/Aj5AlGboqeI_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/GsL5oknV-w0_00.mp4,found,5.0,,nonzero_original_qwen_time,"{""accident_time"": 5.0}",
+videos/1BsCOLh_qEs_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/jPTJZRBPQgc_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/c8wyblfra3o_00.mp4,not found 0.9,,,ninety_check_found_at_90_percent_false,"{""accident_time"": 5.533}",
+videos/hT1Hz_gFnBs_00.mp4,found,4.6,,nonzero_original_qwen_time,"{""accident_time"": 4.6}",
+videos/YnYUC6nonG8_00.mp4,not found 0,,0.99,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.99}"
+videos/fJxVsTAIK5Y_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/8UJFstPfuhU_00.mp4,found,3.9,,nonzero_original_qwen_time,"{""accident_time"": 3.9}",
+videos/jiiHFFhdKPc_00.mp4,found,5.8,,nonzero_original_qwen_time,"{""accident_time"": 5.8}",
+videos/JTIfOGQql0A_00.mp4,found,5.0,,nonzero_original_qwen_time,"{""accident_time"": 5.0}",
+videos/r4P0kKBitVM_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/OMjHjaMBzus_00.mp4,found,5.0,,nonzero_original_qwen_time,"{""accident_time"": 5.0}",
+videos/otYsKPJqTr0_00.mp4,found,4.0,,nonzero_original_qwen_time,"{""accident_time"": 4.0}",
+videos/zVoe5ZUg3kE_00.mp4,found,16.0,,nonzero_original_qwen_time,"{""accident_time"": 16.0}",
+videos/6J-qSLHzj_k_00.mp4,found,5.0,,nonzero_original_qwen_time,"{""accident_time"": 5.0}",
+videos/qNH-EtH6qPo_00.mp4,found,5.0,,nonzero_original_qwen_time,"{""accident_time"": 5.0}",
+videos/sRyjIctHIdA_00.mp4,found,1.0,,nonzero_original_qwen_time,"{""accident_time"": 1.0}",
+videos/VpQn6ugiG1M_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/qOTEPSVfGSI_00.mp4,found,13.0,,nonzero_original_qwen_time,"{""accident_time"": 13.0}",
+videos/FnahNGsmeSQ_00.mp4,found,7.9,,nonzero_original_qwen_time,"{""accident_time"": 7.9}",
+videos/exMp0HFGLFY_00.mp4,found,2.9,,nonzero_original_qwen_time,"{""accident_time"": 2.9}",
+videos/6hJ8mYLUfE8_00.mp4,found,10.0,,nonzero_original_qwen_time,"{""accident_time"": 10.0}",
+videos/Er-dsvrO1UU_00.mp4,not found 0.9,,,ninety_check_found_at_90_percent_false,"{""accident_time"": 28.0}",
+videos/OKlebmp3c0M_00.mp4,found,8.0,,nonzero_original_qwen_time,"{""accident_time"": 8.0}",
+videos/ZDiU58ZiXTk_00.mp4,found,5.0,,nonzero_original_qwen_time,"{""accident_time"": 5.0}",
+videos/0oA6iej2zdk_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/S5EyvIwUUU0_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/T0Rkm2Q2e2k_00.mp4,found,4.0,,nonzero_original_qwen_time,"{""accident_time"": 4.0}",
+videos/-RrDtLjWsT4_00.mp4,found,6.0,,nonzero_original_qwen_time,"{""accident_time"": 6.0}",
+videos/FD2WTKo0V94_00.mp4,found,2.7,,nonzero_original_qwen_time,"{""accident_time"": 2.7}",
+videos/CQaoY2QypM8_00.mp4,found,3.8,,nonzero_original_qwen_time,"{""accident_time"": 3.8}",
+videos/kgifRjE69lo_00.mp4,found,7.7,,nonzero_original_qwen_time,"{""accident_time"": 7.7}",
+videos/cPyZuPSQrkI_00.mp4,found,8.0,,nonzero_original_qwen_time,"{""accident_time"": 8.0}",
+videos/aRQeSqO9Ri4_00.mp4,found,13.0,,nonzero_original_qwen_time,"{""accident_time"": 13.0}",
+videos/-oreKuCoQnI_00.mp4,not found 0,,0.99,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.99}"
+videos/JGeH83hHjpE_00.mp4,found,4.0,,nonzero_original_qwen_time,"{""accident_time"": 4.0}",
+videos/ZVFTg3X2Acc_00.mp4,found,4.0,,nonzero_original_qwen_time,"{""accident_time"": 4.0}",
+videos/xQCJTgk1AxQ_00.mp4,not found 0,,0.99,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.99}"
+videos/FojgBxlQgiw_00.mp4,found,2.0,,nonzero_original_qwen_time,"{""accident_time"": 2.0}",
+videos/bzNkUstnRMM_00.mp4,found,4.0,,nonzero_original_qwen_time,"{""accident_time"": 4.0}",
+videos/BVvMdTfk43Y_00.mp4,found,4.0,,nonzero_original_qwen_time,"{""accident_time"": 4.0}",
+videos/5fSIVNb3L64_00.mp4,found,6.0,,nonzero_original_qwen_time,"{""accident_time"": 6.0}",
+videos/uJR-x2ahMjo_00.mp4,found,1.0,,nonzero_original_qwen_time,"{""accident_time"": 1.0}",
+videos/Jafouq9fwp4_00.mp4,found,2.6,,nonzero_original_qwen_time,"{""accident_time"": 2.6}",
+videos/tnXaQLZivt0_00.mp4,found,2.0,,nonzero_original_qwen_time,"{""accident_time"": 2.0}",
+videos/neiYtur4FOY_00.mp4,found,14.0,,nonzero_original_qwen_time,"{""accident_time"": 14.0}",
+videos/sy3K_DPXi1g_00.mp4,found,9.0,,nonzero_original_qwen_time,"{""accident_time"": 9.0}",
+videos/5UK0XveIgBA_00.mp4,found,4.867,,nonzero_original_qwen_time,"{""accident_time"": 4.867}",
+videos/8uCJX3Qp78g_00.mp4,found,8.0,,nonzero_original_qwen_time,"{""accident_time"": 8.0}",
+videos/X6sdr4NzEdU_00.mp4,found,2.1,,nonzero_original_qwen_time,"{""accident_time"": 2.1}",
+videos/gcbYjCgvbFc_00.mp4,found,4.6,,nonzero_original_qwen_time,"{""accident_time"": 4.6}",
+videos/bb7h-E9S_xE_00.mp4,found,1.3,,nonzero_original_qwen_time,"{""accident_time"": 1.3}",
+videos/Rph4qz-nnAY_00.mp4,found,23.0,,nonzero_original_qwen_time,"{""accident_time"": 23.0}",
+videos/dVgyJhT1tiQ_00.mp4,found,5.0,,nonzero_original_qwen_time,"{""accident_time"": 5.0}",
+videos/mYTte8BTffA_00.mp4,found,22.0,,nonzero_original_qwen_time,"{""accident_time"": 22.0}",
+videos/z4J6Y7Hgprc_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/EYu49m3fAp4_00.mp4,found,20.6,,nonzero_original_qwen_time,"{""accident_time"": 20.6}",
+videos/lprYC7noW0w_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/SX6WrzujsNg_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/pWUkfZdWn7M_00.mp4,found,2.7,,nonzero_original_qwen_time,"{""accident_time"": 2.7}",
+videos/NW8ZJK5zv_M_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/4VuF1Be1yLE_00.mp4,found,4.0,,nonzero_original_qwen_time,"{""accident_time"": 4.0}",
+videos/OmriwRCPF7M_00.mp4,found,12.0,,nonzero_original_qwen_time,"{""accident_time"": 12.0}",
+videos/IF-F7mUXhas_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/NhVQ26Tutwg_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/qCBttHwTwnQ_00.mp4,found,2.0,,nonzero_original_qwen_time,"{""accident_time"": 2.0}",
+videos/xJTY4uupVuI_00.mp4,found,5.0,,nonzero_original_qwen_time,"{""accident_time"": 5.0}",
+videos/3UBcAuDgcOg_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/YkEtYW_U1IY_00.mp4,found,7.0,,nonzero_original_qwen_time,"{""accident_time"": 7.0}",
+videos/p-8rTEjl_30_00.mp4,found,14.8,,nonzero_original_qwen_time,"{""accident_time"": 14.8}",
+videos/Z3s9Wv38oRc_00.mp4,not found 0.9,,,ninety_check_found_at_90_percent_false,"{""accident_time"": 27.0}",
+videos/WFPy6Jpx5iE_00.mp4,found,3.0,,nonzero_original_qwen_time,"{""accident_time"": 3.0}",
+videos/VMOqX7S4IVU_00.mp4,found,13.0,,nonzero_original_qwen_time,"{""accident_time"": 13.0}",
+videos/Pv0z5OwmK-Y_00.mp4,found,7.0,,nonzero_original_qwen_time,"{""accident_time"": 7.0}",
+videos/JZnyV3r3cA4_00.mp4,found,2.0,,nonzero_original_qwen_time,"{""accident_time"": 2.0}",
+videos/gVXvlSSUr88_00.mp4,found,5.0,,nonzero_original_qwen_time,"{""accident_time"": 5.0}",
+videos/y396l4X6WOk_00.mp4,found,7.0,,nonzero_original_qwen_time,"{""accident_time"": 7.0}",
+videos/WqO5068PPhA_00.mp4,found,10.0,,nonzero_original_qwen_time,"{""accident_time"": 10.0}",
+videos/GAuVOgez5bQ_00.mp4,found,23.0,,nonzero_original_qwen_time,"{""accident_time"": 23.0}",
+videos/djlikkK0NnM_00.mp4,not found 0,,1.0,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 1.0}"
+videos/VsJNApu-LP4_00.mp4,found,4.0,,nonzero_original_qwen_time,"{""accident_time"": 4.0}",
+videos/9PeFHB3oBKg_00.mp4,found,6.0,,nonzero_original_qwen_time,"{""accident_time"": 6.0}",
+videos/wrKbzGEUOlI_00.mp4,found,7.0,,nonzero_original_qwen_time,"{""accident_time"": 7.0}",
+videos/ILLwcx7DKvM_00.mp4,found,5.0,,nonzero_original_qwen_time,"{""accident_time"": 5.0}",
+videos/yap1ac36OsU_00.mp4,found,25.0,,nonzero_original_qwen_time,"{""accident_time"": 25.0}",
+videos/Zp5xCOo7DSE_00.mp4,found,1.0,,nonzero_original_qwen_time,"{""accident_time"": 1.0}",
+videos/MAlk_czfNIs_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/swb5GdD__W0_00.mp4,found,2.0,,nonzero_original_qwen_time,"{""accident_time"": 2.0}",
+videos/GVHE7LumYVo_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/k-QTjGUDtZY_00.mp4,found,3.0,,nonzero_original_qwen_time,"{""accident_time"": 3.0}",
+videos/jF_WIm0oxLc_00.mp4,found,18.0,,nonzero_original_qwen_time,"{""accident_time"": 18.0}",
+videos/Ga8NZJ64V80_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/HMdWAx9g5eI_00.mp4,found,6.333,,nonzero_original_qwen_time,"{""accident_time"": 6.333}",
+videos/57T5Z3aTh4s_00.mp4,found,1.0,,nonzero_original_qwen_time,"{""accident_time"": 1.0}",
+videos/PAuYsJns-Fc_00.mp4,found,11.0,,nonzero_original_qwen_time,"{""accident_time"": 11.0}",
+videos/lgU3T6kySLw_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/y1FUdBq8QII_00.mp4,not found 0.9,,,ninety_check_found_at_90_percent_false,"{""accident_time"": 27.0}",
+videos/XdFylnj-1B4_00.mp4,not found 0.9,,,ninety_check_found_at_90_percent_false,"{""accident_time"": 7.7}",
+videos/nxtAJF0x3qQ_00.mp4,found,10.0,,nonzero_original_qwen_time,"{""accident_time"": 10.0}",
+videos/RTPo9EzJ2q4_00.mp4,not found 0,,0.99,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.99}"
+videos/pwc7SEk8BA4_00.mp4,found,10.0,,nonzero_original_qwen_time,"{""accident_time"": 10.0}",
+videos/7v3_mO6HyPk_00.mp4,found,2.0,,nonzero_original_qwen_time,"{""accident_time"": 2.0}",
+videos/ve9ThZ4xzrQ_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/olrS9Xl-I70_00.mp4,found,24.0,,nonzero_original_qwen_time,"{""accident_time"": 24.0}",
+videos/QiRF34ZCDBo_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/paIiPXuFj7Q_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/ig4k6LEEMy0_00.mp4,found,8.7,,nonzero_original_qwen_time,"{""accident_time"": 8.7}",
+videos/n1da-gnbUBU_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/PaOMI4lZ7UI_00.mp4,found,3.9,,nonzero_original_qwen_time,"{""accident_time"": 3.9}",
+videos/R8HeYWy2-HI_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/EkSE8710mGg_00.mp4,found,6.0,,nonzero_original_qwen_time,"{""accident_time"": 6.0}",
+videos/1DTzvlqxm5c_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/YaMXFpSYjOk_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/U9lXW10TLQw_00.mp4,found,8.0,,nonzero_original_qwen_time,"{""accident_time"": 8.0}",
+videos/mjKiqWEZoAM_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/pSjvg4Zq3-4_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/-i9bRJWMtTo_00.mp4,found,5.0,,nonzero_original_qwen_time,"{""accident_time"": 5.0}",
+videos/3taDrOi_n0E_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/LY4ki_2dmwU_00.mp4,found,20.0,,nonzero_original_qwen_time,"{""accident_time"": 20.0}",
+videos/7ORiNi_LtxY_00.mp4,found,4.0,,nonzero_original_qwen_time,"{""accident_time"": 4.0}",
+videos/gbM45Kpz814_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/kDvSnh2NmpM_00.mp4,found,25.0,,nonzero_original_qwen_time,"{""accident_time"": 25.0}",
+videos/Ah1BmOi3V4Q_00.mp4,found,1.0,,nonzero_original_qwen_time,"{""accident_time"": 1.0}",
+videos/BEZNd0pYy-4_00.mp4,not found 0.9,,,ninety_check_found_at_90_percent_false,"{""accident_time"": 29.916666}",
+videos/WvBtraA2jsA_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/Jt65lD9BAPY_00.mp4,found,3.0,,nonzero_original_qwen_time,"{""accident_time"": 3.0}",
+videos/l2iiHvICI2Y_00.mp4,found,12.8,,nonzero_original_qwen_time,"{""accident_time"": 12.8}",
+videos/WTz4apKhaQY_00.mp4,found,5.0,,nonzero_original_qwen_time,"{""accident_time"": 5.0}",
+videos/pS5SXfuqz-4_00.mp4,found,10.666667,,nonzero_original_qwen_time,"{""accident_time"": 10.666667}",
+videos/dfEFaPk-2-Y_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/24IyPsinbH8_00.mp4,found,8.0,,nonzero_original_qwen_time,"{""accident_time"": 8.0}",
+videos/9VTtD6Sw6N4_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/xSMybsal-zs_00.mp4,found,6.0,,nonzero_original_qwen_time,"{""accident_time"": 6.0}",
+videos/-dmYsQc-odI_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/Z_GJQ1KrRJw_00.mp4,found,19.0,,nonzero_original_qwen_time,"{""accident_time"": 19.0}",
+videos/a5_Q39h5LM4_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/OIbLSlLL47A_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/AEzHgZ0xjlk_00.mp4,found,14.0,,nonzero_original_qwen_time,"{""accident_time"": 14.0}",
+videos/Czp_f_DrRB8_00.mp4,found,15.0,,nonzero_original_qwen_time,"{""accident_time"": 15.0}",
+videos/H6FXwjTkWYI_00.mp4,found,8.0,,nonzero_original_qwen_time,"{""accident_time"": 8.0}",
+videos/XSgpMS9s9B8_00.mp4,found,2.833,,nonzero_original_qwen_time,"{""accident_time"": 2.833}",
+videos/XSgpMS9s9B8_01.mp4,found,1.0,,nonzero_original_qwen_time,"{""accident_time"": 1.0}",
+videos/bCQ6OCJYKw0_00.mp4,found,7.0,,nonzero_original_qwen_time,"{""accident_time"": 7.0}",
+videos/T4luKRj7Mhg_00.mp4,found,5.6,,nonzero_original_qwen_time,"{""accident_time"": 5.6}",
+videos/04O2SOGSG_U_00.mp4,found,2.0,,nonzero_original_qwen_time,"{""accident_time"": 2.0}",
+videos/0BHjx8wX7pc_00.mp4,not found 0,,0.99,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.99}"
+videos/sl2h_VexIkA_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/uPwNRl6V9i8_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/IcHtsAFIRjk_00.mp4,found,11.0,,nonzero_original_qwen_time,"{""accident_time"": 11.0}",
+videos/5lfIORCL5FA_00.mp4,found,11.0,,nonzero_original_qwen_time,"{""accident_time"": 11.0}",
+videos/7EqwXtQkP1I_00.mp4,found,4.933,,nonzero_original_qwen_time,"{""accident_time"": 4.933}",
+videos/n0pXXp0cWWw_00.mp4,found,1.9,,nonzero_original_qwen_time,"{""accident_time"": 1.9}",
+videos/KMUWUj13hFw_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/8s8en2EJPzg_00.mp4,found,12.0,,nonzero_original_qwen_time,"{""accident_time"": 12.0}",
+videos/5Vhz1P2k8Ds_00.mp4,found,16.0,,nonzero_original_qwen_time,"{""accident_time"": 16.0}",
+videos/M1ooGq00a4w_00.mp4,found,6.0,,nonzero_original_qwen_time,"{""accident_time"": 6.0}",
+videos/r30SzXochSk_00.mp4,found,6.0,,nonzero_original_qwen_time,"{""accident_time"": 6.0}",
+videos/G84adP8TOLw_00.mp4,found,5.0,,nonzero_original_qwen_time,"{""accident_time"": 5.0}",
+videos/oXMCX36zERc_00.mp4,found,24.0,,nonzero_original_qwen_time,"{""accident_time"": 24.0}",
+videos/2wUrP2wgXhs_00.mp4,found,9.0,,nonzero_original_qwen_time,"{""accident_time"": 9.0}",
+videos/5K9ZZNwt9Fw_00.mp4,found,7.0,,nonzero_original_qwen_time,"{""accident_time"": 7.0}",
+videos/i3WeiV3H_aQ_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/aPXUOJ6X43E_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/KIAzlkbMog4_00.mp4,found,11.0,,nonzero_original_qwen_time,"{""accident_time"": 11.0}",
+videos/o45cTuevkJ8_00.mp4,found,3.0,,nonzero_original_qwen_time,"{""accident_time"": 3.0}",
+videos/a9U54ImNK2M_00.mp4,not found 0.9,,,ninety_check_found_at_90_percent_false,"{""accident_time"": 27.625}",
+videos/oPdIw4WJ6ZU_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/91DHD6SEyVU_00.mp4,found,10.0,,nonzero_original_qwen_time,"{""accident_time"": 10.0}",
+videos/kOOstkWDxz0_00.mp4,found,10.0,,nonzero_original_qwen_time,"{""accident_time"": 10.0}",
+videos/mEQxozTl1S4_00.mp4,found,3.0,,nonzero_original_qwen_time,"{""accident_time"": 3.0}",
+videos/mlv_VGdtang_00.mp4,found,13.0,,nonzero_original_qwen_time,"{""accident_time"": 13.0}",
+videos/UrmfisD-cpk_00.mp4,found,8.0,,nonzero_original_qwen_time,"{""accident_time"": 8.0}",
+videos/g59nWt3t9ZM_00.mp4,found,2.0,,nonzero_original_qwen_time,"{""accident_time"": 2.0}",
+videos/8i0FSER7SuE_00.mp4,found,17.0,,nonzero_original_qwen_time,"{""accident_time"": 17.0}",
+videos/LMr2EuxQ1IY_00.mp4,found,1.0,,nonzero_original_qwen_time,"{""accident_time"": 1.0}",
+videos/HxxaCH818LI_00.mp4,found,2.0,,nonzero_original_qwen_time,"{""accident_time"": 2.0}",
+videos/SUK79gpopL0_00.mp4,found,1.0,,nonzero_original_qwen_time,"{""accident_time"": 1.0}",
+videos/uAmblqScf8Q_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/7dMxFaTmaBs_00.mp4,found,12.0,,nonzero_original_qwen_time,"{""accident_time"": 12.0}",
+videos/LZY4HepPGu0_00.mp4,found,5.0,,nonzero_original_qwen_time,"{""accident_time"": 5.0}",
+videos/adNfN1i5mXs_00.mp4,found,6.3,,nonzero_original_qwen_time,"{""accident_time"": 6.3}",
+videos/3N9sKQIYMy4_00.mp4,found,6.0,,nonzero_original_qwen_time,"{""accident_time"": 6.0}",
+videos/yxdh-n8LgyY_00.mp4,found,9.0,,nonzero_original_qwen_time,"{""accident_time"": 9.0}",
+videos/LmWvBPSBxNE_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/SFQKAmwf-3g_00.mp4,found,5.0,,nonzero_original_qwen_time,"{""accident_time"": 5.0}",
+videos/ITahkTaWzyQ_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/XBOz63PuSvE_00.mp4,found,12.0,,nonzero_original_qwen_time,"{""accident_time"": 12.0}",
+videos/xrQ3mx08clM_00.mp4,found,3.8,,nonzero_original_qwen_time,"{""accident_time"": 3.8}",
+videos/MA3KBCQu9eY_00.mp4,found,12.0,,nonzero_original_qwen_time,"{""accident_time"": 12.0}",
+videos/9K5XWxsJleU_00.mp4,found,10.0,,nonzero_original_qwen_time,"{""accident_time"": 10.0}",
+videos/6nM9m2VkeYk_00.mp4,found,7.0,,nonzero_original_qwen_time,"{""accident_time"": 7.0}",
+videos/4EJgJ6IcI9E_00.mp4,found,4.7,,nonzero_original_qwen_time,"{""accident_time"": 4.7}",
+videos/X-S19mWQG9s_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/nGHp5y9P0Ic_00.mp4,found,5.9,,nonzero_original_qwen_time,"{""accident_time"": 5.9}",
+videos/9u2VbfYpcBw_00.mp4,found,3.0,,nonzero_original_qwen_time,"{""accident_time"": 3.0}",
+videos/og42C5ewnRY_00.mp4,found,13.0,,nonzero_original_qwen_time,"{""accident_time"": 13.0}",
+videos/Yllfxm5QxVE_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/RBriQvW6fa4_00.mp4,found,16.0,,nonzero_original_qwen_time,"{""accident_time"": 16.0}",
+videos/p7GtPUgji9w_00.mp4,found,10.0,,nonzero_original_qwen_time,"{""accident_time"": 10.0}",
+videos/1AfecaLCueU_00.mp4,found,15.0,,nonzero_original_qwen_time,"{""accident_time"": 15.0}",
+videos/tB1MoGqqKsA_00.mp4,found,8.0,,nonzero_original_qwen_time,"{""accident_time"": 8.0}",
+videos/O_WaBEjEV2Y_00.mp4,found,10.5,,nonzero_original_qwen_time,"{""accident_time"": 10.5}",
+videos/snZGxCZ7vFM_00.mp4,found,5.0,,nonzero_original_qwen_time,"{""accident_time"": 5.0}",
+videos/J80rwyEvSlY_00.mp4,found,7.0,,nonzero_original_qwen_time,"{""accident_time"": 7.0}",
+videos/vbIXlHZnRo4_00.mp4,found,19.0,,nonzero_original_qwen_time,"{""accident_time"": 19.0}",
+videos/YigXRe0SDos_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/8h2Xq-MfXPE_00.mp4,found,10.0,,nonzero_original_qwen_time,"{""accident_time"": 10.0}",
+videos/KQ1M-32l-E0_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/NpV7pI8k-SQ_00.mp4,found,6.0,,nonzero_original_qwen_time,"{""accident_time"": 6.0}",
+videos/2xyiKlvOZUQ_00.mp4,found,4.0,,nonzero_original_qwen_time,"{""accident_time"": 4.0}",
+videos/WA6hL9bRnNs_00.mp4,found,5.0,,nonzero_original_qwen_time,"{""accident_time"": 5.0}",
+videos/YwqAnRgRntg_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/6RZ_i-xao0s_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/4tOmPxnuANw_00.mp4,found,16.0,,nonzero_original_qwen_time,"{""accident_time"": 16.0}",
+videos/hs-_vD6T78s_00.mp4,found,20.0,,nonzero_original_qwen_time,"{""accident_time"": 20.0}",
+videos/m8HHbAqyx8g_00.mp4,found,8.0,,nonzero_original_qwen_time,"{""accident_time"": 8.0}",
+videos/CD0ra7MBJJc_00.mp4,found,3.0,,nonzero_original_qwen_time,"{""accident_time"": 3.0}",
+videos/wqYFt0bcNrA_00.mp4,not found 0,,0.99,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.99}"
+videos/l6WnoOecA9s_00.mp4,found,4.92,,nonzero_original_qwen_time,"{""accident_time"": 4.92}",
+videos/TizK5BENdVg_00.mp4,found,3.5,,nonzero_original_qwen_time,"{""accident_time"": 3.5}",
+videos/uiZD8Fw0SGc_00.mp4,found,7.0,,nonzero_original_qwen_time,"{""accident_time"": 7.0}",
+videos/XaN99SF-mAo_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/rivjQ5XnuIg_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": -1.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/vVeLx1IopnM_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/17u3l3wxfFI_00.mp4,found,15.0,,nonzero_original_qwen_time,"{""accident_time"": 15.0}",
+videos/KxlGte5pVZs_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/JeUAtNDJk9A_00.mp4,found,10.0,,nonzero_original_qwen_time,"{""accident_time"": 10.0}",
+videos/4ZGq9c3FKlE_00.mp4,found,4.0,,nonzero_original_qwen_time,"{""accident_time"": 4.0}",
+videos/8asB-NXAPSc_00.mp4,found,2.0,,nonzero_original_qwen_time,"{""accident_time"": 2.0}",
+videos/VpSREWsYWgY_00.mp4,found,6.0,,nonzero_original_qwen_time,"{""accident_time"": 6.0}",
+videos/SpJiUTZO9Qg_00.mp4,found,4.5,,nonzero_original_qwen_time,"{""accident_time"": 4.5}",
+videos/8XV9oXxTZlI_00.mp4,found,1.0,,nonzero_original_qwen_time,"{""accident_time"": 1.0}",
+videos/HVAxCUrR_Qc_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/HXttLdePt0k_00.mp4,found,8.0,,nonzero_original_qwen_time,"{""accident_time"": 8.0}",
+videos/ZDbR2jCDXjM_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/BF5W6-8AkGM_00.mp4,found,10.0,,nonzero_original_qwen_time,"{""accident_time"": 10.0}",
+videos/LGanHyFZCBg_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/-2UPLUV7JLg_00.mp4,not found 0,,1.0,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 1.0}"
+videos/w5gsLw2EF-w_00.mp4,found,2.0,,nonzero_original_qwen_time,"{""accident_time"": 2.0}",
+videos/zqhQY3WbRjY_00.mp4,found,20.9,,nonzero_original_qwen_time,"{""accident_time"": 20.9}",
+videos/7DhAOb5V7_Y_00.mp4,found,18.0,,nonzero_original_qwen_time,"{""accident_time"": 18.0}",
+videos/eQ1QDZ811c0_00.mp4,found,3.0,,nonzero_original_qwen_time,"{""accident_time"": 3.0}",
+videos/W8B8zo8IFPg_00.mp4,found,6.0,,nonzero_original_qwen_time,"{""accident_time"": 6.0}",
+videos/ufUZKmdTyaM_00.mp4,found,2.8,,nonzero_original_qwen_time,"{""accident_time"": 2.8}",
+videos/CwynQU9-yhE_00.mp4,found,5.0,,nonzero_original_qwen_time,"{""accident_time"": 5.0}",
+videos/WroDrfySdmc_00.mp4,found,4.0,,nonzero_original_qwen_time,"{""accident_time"": 4.0}",
+videos/yfkkIC-AN68_00.mp4,found,4.0,,nonzero_original_qwen_time,"{""accident_time"": 4.0}",
+videos/nwb6yD8CMaM_00.mp4,found,8.0,,nonzero_original_qwen_time,"{""accident_time"": 8.0}",
+videos/VLYIKXy1gzg_00.mp4,found,2.8,,nonzero_original_qwen_time,"{""accident_time"": 2.8}",
+videos/O4eKyRwAKXQ_00.mp4,found,6.0,,nonzero_original_qwen_time,"{""accident_time"": 6.0}",
+videos/9gEAWXvgLTw_00.mp4,not found 0,,0.99,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.99}"
+videos/Be6S5ecMGXA_00.mp4,found,5.8,,nonzero_original_qwen_time,"{""accident_time"": 5.8}",
+videos/aW7LYUp_0ig_00.mp4,found,3.0,,nonzero_original_qwen_time,"{""accident_time"": 3.0}",
+videos/J489DF-y2B8_00.mp4,found,5.0,,nonzero_original_qwen_time,"{""accident_time"": 5.0}",
+videos/RWbYqk_RtSE_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/trvzPZZfNPs_00.mp4,found,17.5,,nonzero_original_qwen_time,"{""accident_time"": 17.5}",
+videos/_9tp71S2Gwg_00.mp4,found,7.0,,nonzero_original_qwen_time,"{""accident_time"": 7.0}",
+videos/tHW7Y0dIwkg_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/hJJlducz7aE_00.mp4,not found 0,,0.99,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.99}"
+videos/luYrUPWqC5w_00.mp4,found,6.0,,nonzero_original_qwen_time,"{""accident_time"": 6.0}",
+videos/iguVq1mMWKg_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/tm9gYOoBRmM_00.mp4,found,24.0,,nonzero_original_qwen_time,"{""accident_time"": 24.0}",
+videos/2BBwMYE-FC4_00.mp4,found,11.0,,nonzero_original_qwen_time,"{""accident_time"": 11.0}",
+videos/BiAj8Q5I710_00.mp4,not found 0,,0.99,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.99}"
+videos/5X2Ik8WsWVY_00.mp4,found,1.0,,nonzero_original_qwen_time,"{""accident_time"": 1.0}",
+videos/YXRvo8IOyUM_00.mp4,found,1.8,,nonzero_original_qwen_time,"{""accident_time"": 1.8}",
+videos/jD8ybdMZOU8_00.mp4,found,6.0,,nonzero_original_qwen_time,"{""accident_time"": 6.0}",
+videos/HgLFvVtCXRw_00.mp4,found,3.8,,nonzero_original_qwen_time,"{""accident_time"": 3.8}",
+videos/bZp0v_Xt8EU_00.mp4,found,23.0,,nonzero_original_qwen_time,"{""accident_time"": 23.0}",
+videos/vMzEXTNSTzw_00.mp4,found,3.75,,nonzero_original_qwen_time,"{""accident_time"": 3.75}",
+videos/-wlnF8vCVMo_00.mp4,found,3.96,,nonzero_original_qwen_time,"{""accident_time"": 3.96}",
+videos/b2FAuGPoivk_00.mp4,found,3.0,,nonzero_original_qwen_time,"{""accident_time"": 3.0}",
+videos/cCofNt_oBE8_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/sV5FN5PePOQ_00.mp4,found,2.96,,nonzero_original_qwen_time,"{""accident_time"": 2.96}",
+videos/yS2IYwSqqVk_00.mp4,found,3.5,,nonzero_original_qwen_time,"{""accident_time"": 3.5}",
+videos/mhLc2Vl1ekk_00.mp4,found,8.0,,nonzero_original_qwen_time,"{""accident_time"": 8.0}",
+videos/0eoMti_njew_00.mp4,found,12.0,,nonzero_original_qwen_time,"{""accident_time"": 12.0}",
+videos/sfGi08xARHo_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/e5KS6Gffb3A_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/wGZiHg7a5wU_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/GPMefBsSI44_00.mp4,found,3.0,,nonzero_original_qwen_time,"{""accident_time"": 3.0}",
+videos/NjK1CBPb0tY_00.mp4,found,3.0,,nonzero_original_qwen_time,"{""accident_time"": 3.0}",
+videos/tqSAFTzuCy4_00.mp4,found,3.96,,nonzero_original_qwen_time,"{""accident_time"": 3.96}",
+videos/fcc1sGDTQLM_00.mp4,found,1.0,,nonzero_original_qwen_time,"{""accident_time"": 1.0}",
+videos/OjosPgV4Lss_00.mp4,found,7.0,,nonzero_original_qwen_time,"{""accident_time"": 7.0}",
+videos/owO2-pjxOqs_00.mp4,found,3.0,,nonzero_original_qwen_time,"{""accident_time"": 3.0}",
+videos/jI0_0zPf6BQ_00.mp4,found,5.0,,nonzero_original_qwen_time,"{""accident_time"": 5.0}",
+videos/MsQns-Oy-hk_00.mp4,found,4.0,,nonzero_original_qwen_time,"{""accident_time"": 4.0}",
+videos/MsQns-Oy-hk_01.mp4,not found 0.9,,,ninety_check_found_at_90_percent_false,"{""accident_time"": 5.8}",
+videos/MsQns-Oy-hk_02.mp4,found,1.0,,nonzero_original_qwen_time,"{""accident_time"": 1.0}",
+videos/zAqi6Odnoiw_00.mp4,found,4.0,,nonzero_original_qwen_time,"{""accident_time"": 4.0}",
+videos/jTOB7nAs2HE_00.mp4,not found 0,,0.99,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.99}"
+videos/9PpJJxn6DmA_00.mp4,found,2.0,,nonzero_original_qwen_time,"{""accident_time"": 2.0}",
+videos/uSTubEz9Mpw_00.mp4,found,8.333333333333334,,nonzero_original_qwen_time,"{""accident_time"": 8.333333333333334}",
+videos/Hu5cukZ0Zgw_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/FbMyX_ZWAm8_00.mp4,found,4.0,,nonzero_original_qwen_time,"{""accident_time"": 4.0}",
+videos/yx-CTXIhAGA_00.mp4,found,2.0,,nonzero_original_qwen_time,"{""accident_time"": 2.0}",
+videos/bKrsJSxuQZg_00.mp4,found,3.0,,nonzero_original_qwen_time,"{""accident_time"": 3.0}",
+videos/bI_W3ZOeuUM_00.mp4,found,7.7,,nonzero_original_qwen_time,"{""accident_time"": 7.7}",
+videos/c2-5uzj1W5k_00.mp4,found,5.0,,nonzero_original_qwen_time,"{""accident_time"": 5.0}",
+videos/glkdKMzVzkM_00.mp4,found,16.0,,nonzero_original_qwen_time,"{""accident_time"": 16.0}",
+videos/pMA26OVWUOY_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/xaZ2WJAHrgY_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/1KGjac-XgPM_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/T5TGAD7ygY8_00.mp4,found,4.0,,nonzero_original_qwen_time,"{""accident_time"": 4.0}",
+videos/TY8UXgpfBzU_00.mp4,found,24.0,,nonzero_original_qwen_time,"{""accident_time"": 24.0}",
+videos/Sq5i3O5yoAY_00.mp4,found,29.0,,ninety_check_found_at_90_percent_true,"{""accident_time"": 29.0}",
+videos/k9CLUG7vBOY_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/_GY8RpsMk9o_00.mp4,found,16.0,,nonzero_original_qwen_time,"{""accident_time"": 16.0}",
+videos/7b4ffyFOo_I_00.mp4,found,2.0,,nonzero_original_qwen_time,"{""accident_time"": 2.0}",
+videos/0jk4tWwDKqc_00.mp4,found,6.9,,nonzero_original_qwen_time,"{""accident_time"": 6.9}",
+videos/6nlROBgKAnA_00.mp4,found,5.0,,nonzero_original_qwen_time,"{""accident_time"": 5.0}",
+videos/Am-8EdFyiOU_00.mp4,found,4.0,,nonzero_original_qwen_time,"{""accident_time"": 4.0}",
+videos/CyqcCI-woio_00.mp4,found,5.7,,nonzero_original_qwen_time,"{""accident_time"": 5.7}",
+videos/KQETX3JfWlE_00.mp4,found,18.0,,nonzero_original_qwen_time,"{""accident_time"": 18.0}",
+videos/TwHVVK-smoQ_00.mp4,found,16.9,,nonzero_original_qwen_time,"{""accident_time"": 16.9}",
+videos/twdqtlixsj0_00.mp4,found,12.0,,nonzero_original_qwen_time,"{""accident_time"": 12.0}",
+videos/yqaUDA6i5GY_00.mp4,found,12.0,,nonzero_original_qwen_time,"{""accident_time"": 12.0}",
+videos/QB42gU5X634_00.mp4,not found 0.9,,,ninety_check_found_at_90_percent_false,"{""accident_time"": 5.0}",
+videos/tnO5_kjf1II_00.mp4,found,4.0,,nonzero_original_qwen_time,"{""accident_time"": 4.0}",
+videos/oV7t0yEbT8c_00.mp4,not found 0.9,,,ninety_check_found_at_90_percent_false,"{""accident_time"": 5.0}",
+videos/Hjax6nMPd6Q_00.mp4,found,16.0,,nonzero_original_qwen_time,"{""accident_time"": 16.0}",
+videos/n77TaXyADls_00.mp4,found,5.0,,nonzero_original_qwen_time,"{""accident_time"": 5.0}",
+videos/oAYCNrUXNow_00.mp4,found,1.0,,nonzero_original_qwen_time,"{""accident_time"": 1.0}",
+videos/4tXvj7hHsNA_00.mp4,found,4.0,,nonzero_original_qwen_time,"{""accident_time"": 4.0}",
+videos/4tXvj7hHsNA_01.mp4,found,3.0,,nonzero_original_qwen_time,"{""accident_time"": 3.0}",
+videos/ygTLvXB2H_o_00.mp4,found,2.7,,nonzero_original_qwen_time,"{""accident_time"": 2.7}",
+videos/ygTLvXB2H_o_01.mp4,found,2.0,,nonzero_original_qwen_time,"{""accident_time"": 2.0}",
+videos/ygTLvXB2H_o_02.mp4,found,6.0,,nonzero_original_qwen_time,"{""accident_time"": 6.0}",
+videos/YiQToVQInNw_00.mp4,found,1.7,,nonzero_original_qwen_time,"{""accident_time"": 1.7}",
+videos/dEqwcxeYJw4_00.mp4,found,29.0,,nonzero_original_qwen_time,"{""accident_time"": 29.0}",
+videos/VVgQuJDBIfU_00.mp4,found,8.0,,nonzero_original_qwen_time,"{""accident_time"": 8.0}",
+videos/VVgQuJDBIfU_01.mp4,found,6.0,,nonzero_original_qwen_time,"{""accident_time"": 6.0}",
+videos/ltBaGt6A30I_00.mp4,found,9.0,,nonzero_original_qwen_time,"{""accident_time"": 9.0}",
+videos/c_fIpDR79Wo_00.mp4,found,6.0,,nonzero_original_qwen_time,"{""accident_time"": 6.0}",
+videos/FY2wvzTv5vo_00.mp4,found,1.9,,nonzero_original_qwen_time,"{""accident_time"": 1.9}",
+videos/FY2wvzTv5vo_01.mp4,found,4.0,,nonzero_original_qwen_time,"{""accident_time"": 4.0}",
+videos/J2BlH3gdl0k_00.mp4,not found 0,,0.99,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.99}"
+videos/qZlVsk7-fsk_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/0DB7w7rLGrk_00.mp4,found,19.0,,nonzero_original_qwen_time,"{""accident_time"": 19.0}",
+videos/Lqgoisezv8E_00.mp4,found,10.0,,nonzero_original_qwen_time,"{""accident_time"": 10.0}",
+videos/2vEysG50vYY_00.mp4,found,25.0,,nonzero_original_qwen_time,"{""accident_time"": 25.0}",
+videos/Tbl7dpfeXl8_00.mp4,found,24.0,,nonzero_original_qwen_time,"{""accident_time"": 24.0}",
+videos/SYBMrPb8-3Y_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/DJ-zFm_TSTM_00.mp4,found,11.5,,nonzero_original_qwen_time,"{""accident_time"": 11.5}",
+videos/Wuq6RfJ-yPY_00.mp4,found,19.0,,nonzero_original_qwen_time,"{""accident_time"": 19.0}",
+videos/jnarvwUc5NU_00.mp4,found,3.8,,nonzero_original_qwen_time,"{""accident_time"": 3.8}",
+videos/jfGiD4S9OiA_00.mp4,found,2.0,,nonzero_original_qwen_time,"{""accident_time"": 2.0}",
+videos/JGD3vYYu5S4_00.mp4,not found 0.9,,,ninety_check_found_at_90_percent_false,"{""accident_time"": 16.6}",
+videos/mJArIYTPLbE_00.mp4,found,2.0,,nonzero_original_qwen_time,"{""accident_time"": 2.0}",
+videos/Tzh_MXLofUI_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/AeQaR7cklVU_00.mp4,found,1.8,,nonzero_original_qwen_time,"{""accident_time"": 1.8}",
+videos/CJYMnDmGxio_00.mp4,found,11.0,,nonzero_original_qwen_time,"{""accident_time"": 11.0}",
+videos/63jg9PMxHZM_00.mp4,not found 0,,0.99,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.99}"
+videos/23huSUeAOso_00.mp4,found,11.0,,nonzero_original_qwen_time,"{""accident_time"": 11.0}",
+videos/MCeomZE3fqw_00.mp4,found,4.0,,nonzero_original_qwen_time,"{""accident_time"": 4.0}",
+videos/47M8fAuFNOs_00.mp4,found,17.0,,nonzero_original_qwen_time,"{""accident_time"": 17.0}",
+videos/XOA5P6Ph6kY_00.mp4,found,3.8,,nonzero_original_qwen_time,"{""accident_time"": 3.8}",
+videos/KcWnZOH5CK8_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/Nn10f6awuTk_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/e__4RhcKov4_00.mp4,found,10.9,,nonzero_original_qwen_time,"{""accident_time"": 10.9}",
+videos/jaCr2wkcYJ8_00.mp4,found,15.0,,nonzero_original_qwen_time,"{""accident_time"": 15.0}",
+videos/bw6JUt3iQls_00.mp4,found,21.0,,nonzero_original_qwen_time,"{""accident_time"": 21.0}",
+videos/sppaLXwUokY_00.mp4,found,12.0,,nonzero_original_qwen_time,"{""accident_time"": 12.0}",
+videos/YmswRbkR2YA_00.mp4,found,2.0,,nonzero_original_qwen_time,"{""accident_time"": 2.0}",
+videos/RBxSM1800xg_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/jbfxAh30dDc_00.mp4,found,4.9,,nonzero_original_qwen_time,"{""accident_time"": 4.9}",
+videos/YhXaFioaBfI_00.mp4,not found 0,,0.99,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.99}"
+videos/aliCOjgqdfU_00.mp4,not found 0.9,,,ninety_check_found_at_90_percent_false,"{""accident_time"": 13.6}",
+videos/BVXW2dz2OYA_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/sRM9RLRUYjI_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/TvOF9UpguyM_00.mp4,found,22.8,,nonzero_original_qwen_time,"{""accident_time"": 22.8}",
+videos/zKzNUiaoHZI_00.mp4,found,5.0,,nonzero_original_qwen_time,"{""accident_time"": 5.0}",
+videos/HFgLNfSjd6g_00.mp4,found,2.9,,nonzero_original_qwen_time,"{""accident_time"": 2.9}",
+videos/YyJF_uXryNs_00.mp4,found,10.0,,nonzero_original_qwen_time,"{""accident_time"": 10.0}",
+videos/YyJF_uXryNs_01.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/EpkEvZLzKko_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/vXrwMyoMA4c_00.mp4,not found 0.9,,,ninety_check_found_at_90_percent_false,"{""accident_time"": 23.0}",
+videos/9VsL3A3PJ1Q_00.mp4,found,3.0,,nonzero_original_qwen_time,"{""accident_time"": 3.0}",
+videos/W1hVOBEgpJA_00.mp4,not found 0.9,,,ninety_check_found_at_90_percent_false,"{""accident_time"": 24.975}",
+videos/mz-y5-ksDA8_00.mp4,found,5.0,,nonzero_original_qwen_time,"{""accident_time"": 5.0}",
+videos/BGxp7NOV0AQ_00.mp4,found,4.0,,nonzero_original_qwen_time,"{""accident_time"": 4.0}",
+videos/4j9OcguWbcA_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/mgl0K0RP_y8_00.mp4,not found 0,,0.99,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.99}"
+videos/SvX1Ifafid0_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/IrzdCEl72lc_00.mp4,found,1.8,,nonzero_original_qwen_time,"{""accident_time"": 1.8}",
+videos/DU2mJPGb3ys_00.mp4,not found 0.9,,,ninety_check_found_at_90_percent_false,"{""accident_time"": 21.5}",
+videos/Gi1LR7ikvBo_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/Zq0TjWFlXQI_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/mTYWjKznhOY_00.mp4,found,18.0,,nonzero_original_qwen_time,"{""accident_time"": 18.0}",
+videos/ifCSaYvb0JA_00.mp4,found,10.5,,nonzero_original_qwen_time,"{""accident_time"": 10.5}",
+videos/pS8q0o3ygtI_00.mp4,found,6.0,,nonzero_original_qwen_time,"{""accident_time"": 6.0}",
+videos/sja7nF8p6tw_00.mp4,found,19.0,,nonzero_original_qwen_time,"{""accident_time"": 19.0}",
+videos/82garGyvexA_00.mp4,found,2.0,,nonzero_original_qwen_time,"{""accident_time"": 2.0}",
+videos/WbLH4FMzHeo_00.mp4,found,15.833,,ninety_check_found_at_90_percent_true,"{""accident_time"": 15.833}",
+videos/PD-N1gMJNXg_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/6MBstMRZV9g_00.mp4,found,3.96,,nonzero_original_qwen_time,"{""accident_time"": 3.96}",
+videos/nRLaHoFoa8s_00.mp4,found,9.0,,nonzero_original_qwen_time,"{""accident_time"": 9.0}",
+videos/DHG33zf-bkk_00.mp4,found,7.0,,nonzero_original_qwen_time,"{""accident_time"": 7.0}",
+videos/MRyEislt23s_00.mp4,not found 0,,0.99,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.99}"
+videos/FFkOuMBHngY_00.mp4,found,4.0,,nonzero_original_qwen_time,"{""accident_time"": 4.0}",
+videos/jiOupTjSods_00.mp4,found,10.0,,nonzero_original_qwen_time,"{""accident_time"": 10.0}",
+videos/7O4STdn35L0_00.mp4,found,5.0,,nonzero_original_qwen_time,"{""accident_time"": 5.0}",
+videos/gtKsxCrjJ2Q_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/QbTAfMWdSN0_00.mp4,found,9.0,,nonzero_original_qwen_time,"{""accident_time"": 9.0}",
+videos/TSHPa6dU_yo_00.mp4,not found 0,,0.99,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.99}"
+videos/uwi_3_tL3us_00.mp4,found,3.0,,nonzero_original_qwen_time,"{""accident_time"": 3.0}",
+videos/EAXHuVGCmSA_00.mp4,found,21.2,,nonzero_original_qwen_time,"{""accident_time"": 21.2}",
+videos/PYeSHbpGyn4_00.mp4,found,8.6,,nonzero_original_qwen_time,"{""accident_time"": 8.6}",
+videos/C7fGGRaVtJs_00.mp4,found,3.0,,nonzero_original_qwen_time,"{""accident_time"": 3.0}",
+videos/FImmtvW8KUI_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/5bxGXH9wjOs_00.mp4,found,7.8,,nonzero_original_qwen_time,"{""accident_time"": 7.8}",
+videos/5bxGXH9wjOs_01.mp4,found,2.0,,nonzero_original_qwen_time,"{""accident_time"": 2.0}",
+videos/9Pfq8OtTeQA_00.mp4,not found 0,,0.9,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.9}"
+videos/LDFzVFnuKIg_00.mp4,found,1.0,,nonzero_original_qwen_time,"{""accident_time"": 1.0}",
+videos/ZZM8_m1ngcc_00.mp4,not found 0,,0.99,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.99}"
+videos/kM5FhXJsyWA_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/Mz3oLId8I5Y_00.mp4,found,1.0,,nonzero_original_qwen_time,"{""accident_time"": 1.0}",
+videos/_NywzqOXZGE_00.mp4,found,2.0,,nonzero_original_qwen_time,"{""accident_time"": 2.0}",
+videos/C5Vqz3BcyAs_00.mp4,not found 0,,0.99,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.99}"
+videos/nS5_c56gJKM_00.mp4,found,2.9,,nonzero_original_qwen_time,"{""accident_time"": 2.9}",
+videos/QfxL7R00yJE_00.mp4,not found 0,,0.99,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.99}"
+videos/WeNSWeu3fe4_00.mp4,found,2.6,,nonzero_original_qwen_time,"{""accident_time"": 2.6}",
+videos/rEKHRhOLjm4_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/PIcPcm3xtX8_00.mp4,found,4.0,,nonzero_original_qwen_time,"{""accident_time"": 4.0}",
+videos/6z5WuGfCv1U_00.mp4,found,15.0,,nonzero_original_qwen_time,"{""accident_time"": 15.0}",
+videos/2CilSgyYnK0_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/ov4h43VcSuQ_00.mp4,found,3.0,,nonzero_original_qwen_time,"{""accident_time"": 3.0}",
+videos/gmz3d4kegRk_00.mp4,found,18.0,,nonzero_original_qwen_time,"{""accident_time"": 18.0}",
+videos/VXFyQ2zekTg_00.mp4,not found 0.9,,,ninety_check_found_at_90_percent_false,"{""accident_time"": 4.5}",
+videos/d0uvO8FDM6U_00.mp4,found,6.0,,nonzero_original_qwen_time,"{""accident_time"": 6.0}",
+videos/_wf9h2X_uU0_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/Gg9E2AQBMpM_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/o5neAPqmNm8_00.mp4,found,6.0,,nonzero_original_qwen_time,"{""accident_time"": 6.0}",
+videos/uD3kjTme_dU_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/uD3kjTme_dU_01.mp4,not found 0.9,,,ninety_check_found_at_90_percent_false,"{""accident_time"": 2.7}",
+videos/gRuYZISmQ3k_00.mp4,found,13.0,,nonzero_original_qwen_time,"{""accident_time"": 13.0}",
+videos/c2lwfGKeaQU_00.mp4,found,1.0,,nonzero_original_qwen_time,"{""accident_time"": 1.0}",
+videos/Sv7nUzdTUDo_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/RHwcGsU3d08_00.mp4,found,10.0,,nonzero_original_qwen_time,"{""accident_time"": 10.0}",
+videos/HjA3G2yYrNg_00.mp4,not found 0,,1.0,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 1.0}"
+videos/kR4rLZ7ANAQ_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/Tx7F-6IsLCU_00.mp4,not found 0.9,,,ninety_check_found_at_90_percent_false,"{""accident_time"": 14.8}",
+videos/ZQ4epUNXIYU_00.mp4,found,1.0,,nonzero_original_qwen_time,"{""accident_time"": 1.0}",
+videos/DksclwuFCXI_00.mp4,found,5.0,,nonzero_original_qwen_time,"{""accident_time"": 5.0}",
+videos/7sPi12elNPc_00.mp4,found,4.0,,nonzero_original_qwen_time,"{""accident_time"": 4.0}",
+videos/BX8gqiZIIHs_00.mp4,found,5.0,,nonzero_original_qwen_time,"{""accident_time"": 5.0}",
+videos/CIN6BgkbMDQ_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/CftpplTN-Qc_00.mp4,found,3.8,,nonzero_original_qwen_time,"{""accident_time"": 3.8}",
+videos/qWlYogH_23M_00.mp4,found,3.0,,nonzero_original_qwen_time,"{""accident_time"": 3.0}",
+videos/pVzWMPYJOrI_00.mp4,not found 0,,0.9,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.9}"
+videos/R9u_i3M7YYA_00.mp4,not found 0,,0.99,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.99}"
+videos/RKxTyn2z-QQ_00.mp4,not found 0,,0.99,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.99}"
+videos/D6jE82ExHv4_00.mp4,found,3.5,,nonzero_original_qwen_time,"{""accident_time"": 3.5}",
+videos/D6jE82ExHv4_01.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/MenTH2yFi6c_00.mp4,found,16.8,,nonzero_original_qwen_time,"{""accident_time"": 16.8}",
+videos/h9vCRW9MVKI_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/F40LX7-M7xc_00.mp4,found,4.0,,nonzero_original_qwen_time,"{""accident_time"": 4.0}",
+videos/_KmJLS_TJKY_00.mp4,found,12.958333,,nonzero_original_qwen_time,"{""accident_time"": 12.958333}",
+videos/8jfM1_kqjuY_00.mp4,found,10.0,,nonzero_original_qwen_time,"{""accident_time"": 10.0}",
+videos/32Ou4XKEmgs_00.mp4,found,2.917,,nonzero_original_qwen_time,"{""accident_time"": 2.917}",
+videos/NxY_zN9UWqA_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/YP7fpPBpqis_00.mp4,found,6.0,,nonzero_original_qwen_time,"{""accident_time"": 6.0}",
+videos/ufVELUluHJE_00.mp4,found,10.0,,nonzero_original_qwen_time,"{""accident_time"": 10.0}",
+videos/jBUe4pPfIEg_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/HMh6V4MXD38_00.mp4,found,6.0,,nonzero_original_qwen_time,"{""accident_time"": 6.0}",
+videos/uC7g8msxRak_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/LrMyR9M_g3I_00.mp4,not found 0,,0.99,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.99}"
+videos/3Jiii8dJ4UY_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/mEEMZBZHIrc_00.mp4,not found 0.9,,,ninety_check_found_at_90_percent_false,"{""accident_time"": 29.907}",
+videos/QE6eIgOY5v8_00.mp4,not found 0,,0.9,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.9}"
+videos/yaP_9SJBWUg_00.mp4,found,13.0,,nonzero_original_qwen_time,"{""accident_time"": 13.0}",
+videos/-dqVECYKOk4_00.mp4,found,13.0,,nonzero_original_qwen_time,"{""accident_time"": 13.0}",
+videos/THjJUsS8MXk_00.mp4,found,7.0,,nonzero_original_qwen_time,"{""accident_time"": 7.0}",
+videos/wVHxOW_jAvo_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/yA0g2eWjmNs_00.mp4,found,6.0,,nonzero_original_qwen_time,"{""accident_time"": 6.0}",
+videos/FGZ7r8JC1MY_00.mp4,found,3.5,,nonzero_original_qwen_time,"{""accident_time"": 3.5}",
+videos/YkJBdoMtBfU_00.mp4,found,4.0,,nonzero_original_qwen_time,"{""accident_time"": 4.0}",
+videos/YkJBdoMtBfU_01.mp4,found,1.0,,nonzero_original_qwen_time,"{""accident_time"": 1.0}",
+videos/y-yIv_dFHuc_00.mp4,found,6.0,,nonzero_original_qwen_time,"{""accident_time"": 6.0}",
+videos/x7R33QUiHHM_00.mp4,found,13.0,,nonzero_original_qwen_time,"{""accident_time"": 13.0}",
+videos/Ok6RsksG3fY_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/xBSWuwJElBc_00.mp4,found,4.0,,nonzero_original_qwen_time,"{""accident_time"": 4.0}",
+videos/w-oDFvzkC8o_00.mp4,found,22.0,,nonzero_original_qwen_time,"{""accident_time"": 22.0}",
+videos/aP-xY6fjndg_00.mp4,found,6.9,,nonzero_original_qwen_time,"{""accident_time"": 6.9}",
+videos/1ySfr7IZBs8_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/0jlyeLcFLVc_00.mp4,found,4.0,,nonzero_original_qwen_time,"{""accident_time"": 4.0}",
+videos/kkwEN_zBCx8_00.mp4,found,13.0,,nonzero_original_qwen_time,"{""accident_time"": 13.0}",
+videos/kkwEN_zBCx8_01.mp4,found,3.0,,nonzero_original_qwen_time,"{""accident_time"": 3.0}",
+videos/kkwEN_zBCx8_02.mp4,found,7.0,,nonzero_original_qwen_time,"{""accident_time"": 7.0}",
+videos/nbSL1Tri9gc_00.mp4,found,1.9,,nonzero_original_qwen_time,"{""accident_time"": 1.9}",
+videos/h7MY4vNQ2Ak_00.mp4,found,2.0,,nonzero_original_qwen_time,"{""accident_time"": 2.0}",
+videos/IlublX9hlVc_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/fcJD3Xt4zzA_00.mp4,found,3.6,,nonzero_original_qwen_time,"{""accident_time"": 3.6}",
+videos/5caUHPE480M_00.mp4,found,7.5,,nonzero_original_qwen_time,"{""accident_time"": 7.5}",
+videos/eilpGahN9JI_00.mp4,found,4.0,,nonzero_original_qwen_time,"{""accident_time"": 4.0}",
+videos/EJodW3XFdU4_00.mp4,found,4.0,,nonzero_original_qwen_time,"{""accident_time"": 4.0}",
+videos/JvLt2kMm3Qs_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/qfCt6R_rTMY_00.mp4,found,7.0,,nonzero_original_qwen_time,"{""accident_time"": 7.0}",
+videos/u4lFhg1C20o_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/Uc85umAPCc0_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/eZGqsmnXpHQ_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/jzIahqK1XpM_00.mp4,found,5.0,,nonzero_original_qwen_time,"{""accident_time"": 5.0}",
+videos/7ufiKhY4D_Y_00.mp4,found,18.0,,nonzero_original_qwen_time,"{""accident_time"": 18.0}",
+videos/vcN-clDH2A8_00.mp4,found,11.0,,nonzero_original_qwen_time,"{""accident_time"": 11.0}",
+videos/R29vBQmDFq4_00.mp4,found,7.0,,nonzero_original_qwen_time,"{""accident_time"": 7.0}",
+videos/oXHq9qN7jyk_00.mp4,found,2.9,,nonzero_original_qwen_time,"{""accident_time"": 2.9}",
+videos/dI-ueIMSLZQ_00.mp4,found,2.0,,nonzero_original_qwen_time,"{""accident_time"": 2.0}",
+videos/aPenMcX0LNY_00.mp4,found,16.0,,nonzero_original_qwen_time,"{""accident_time"": 16.0}",
+videos/PI75_k43UTI_00.mp4,found,3.0,,nonzero_original_qwen_time,"{""accident_time"": 3.0}",
+videos/QeZz4_zmy1I_00.mp4,found,1.0,,nonzero_original_qwen_time,"{""accident_time"": 1.0}",
+videos/pcT3Lr767_M_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/6rvo5STkUPw_00.mp4,found,4.0,,nonzero_original_qwen_time,"{""accident_time"": 4.0}",
+videos/gzu1NnmXMuY_00.mp4,found,10.0,,nonzero_original_qwen_time,"{""accident_time"": 10.0}",
+videos/X0SCL-_zJ3o_00.mp4,found,13.0,,nonzero_original_qwen_time,"{""accident_time"": 13.0}",
+videos/fxiCDDZx2YM_00.mp4,found,19.0,,nonzero_original_qwen_time,"{""accident_time"": 19.0}",
+videos/jrbryXS0w74_00.mp4,found,1.0,,nonzero_original_qwen_time,"{""accident_time"": 1.0}",
+videos/Urin3yuptr8_00.mp4,found,6.0,,nonzero_original_qwen_time,"{""accident_time"": 6.0}",
+videos/rJaAl_YfQiM_00.mp4,found,20.0,,nonzero_original_qwen_time,"{""accident_time"": 20.0}",
+videos/H6DKiF_kwIs_00.mp4,not found 0,,0.99,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.99}"
+videos/kbpb8IGOAP0_00.mp4,found,5.0,,nonzero_original_qwen_time,"{""accident_time"": 5.0}",
+videos/2dgMA7afLFc_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/zDgcljcRR8A_00.mp4,found,10.0,,nonzero_original_qwen_time,"{""accident_time"": 10.0}",
+videos/KfSjYfTH-H4_00.mp4,found,2.4,,nonzero_original_qwen_time,"{""accident_time"": 2.4}",
+videos/1ot_Dyi6XyI_00.mp4,found,8.5,,nonzero_original_qwen_time,"{""accident_time"": 8.5}",
+videos/llwNilbilqg_00.mp4,found,6.0,,nonzero_original_qwen_time,"{""accident_time"": 6.0}",
+videos/ITHSYGUkuV8_00.mp4,found,5.0,,nonzero_original_qwen_time,"{""accident_time"": 5.0}",
+videos/dW7rp-cXNMY_00.mp4,found,1.0,,nonzero_original_qwen_time,"{""accident_time"": 1.0}",
+videos/QSPGXxzUXVs_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/24R72DZBQ5k_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/9eE5_INjzaQ_00.mp4,found,2.0,,nonzero_original_qwen_time,"{""accident_time"": 2.0}",
+videos/vii3d_HkqvY_00.mp4,found,8.7,,nonzero_original_qwen_time,"{""accident_time"": 8.7}",
+videos/qzOpk_d1pGU_00.mp4,found,5.0,,nonzero_original_qwen_time,"{""accident_time"": 5.0}",
+videos/3yNBYymxHys_00.mp4,found,9.0,,nonzero_original_qwen_time,"{""accident_time"": 9.0}",
+videos/cVil8sERLjg_00.mp4,found,7.0,,nonzero_original_qwen_time,"{""accident_time"": 7.0}",
+videos/kMm9K4FKQyA_00.mp4,found,5.0,,nonzero_original_qwen_time,"{""accident_time"": 5.0}",
+videos/nKC_z-VEBfE_00.mp4,found,15.0,,nonzero_original_qwen_time,"{""accident_time"": 15.0}",
+videos/nnY1sFj3-Ag_00.mp4,found,3.0,,nonzero_original_qwen_time,"{""accident_time"": 3.0}",
+videos/CRFFj83OIDU_00.mp4,found,4.8,,nonzero_original_qwen_time,"{""accident_time"": 4.8}",
+videos/l_2BO67srNo_00.mp4,not found 0.9,,,ninety_check_found_at_90_percent_false,"{""accident_time"": 7.5}",
+videos/M7tbQSvMe5o_00.mp4,not found 0,,0.99,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.99}"
+videos/FNS3OiJwL0k_00.mp4,found,3.8,,nonzero_original_qwen_time,"{""accident_time"": 3.8}",
+videos/X59Tadp1bjg_00.mp4,found,7.0,,nonzero_original_qwen_time,"{""accident_time"": 7.0}",
+videos/zSujHC7MOcU_00.mp4,found,1.5,,nonzero_original_qwen_time,"{""accident_time"": 1.5}",
+videos/oeRlPluv-eY_00.mp4,found,7.0,,nonzero_original_qwen_time,"{""accident_time"": 7.0}",
+videos/bDLOyLAi51k_00.mp4,found,6.6,,nonzero_original_qwen_time,"{""accident_time"": 6.6}",
+videos/V9uox3MIVrA_00.mp4,found,5.8,,nonzero_original_qwen_time,"{""accident_time"": 5.8}",
+videos/dEINXAEIQjA_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/AFK28KnqDOQ_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/Mujpcz6MX4g_00.mp4,found,4.0,,nonzero_original_qwen_time,"{""accident_time"": 4.0}",
+videos/HYr1QeHHFkI_00.mp4,found,9.0,,nonzero_original_qwen_time,"{""accident_time"": 9.0}",
+videos/_SK-OKBNWj0_00.mp4,found,18.0,,nonzero_original_qwen_time,"{""accident_time"": 18.0}",
+videos/0jCQy-BZ1uw_00.mp4,found,3.0,,nonzero_original_qwen_time,"{""accident_time"": 3.0}",
+videos/UntkxMpwFSY_00.mp4,found,15.0,,nonzero_original_qwen_time,"{""accident_time"": 15.0}",
+videos/c3B2ddiaBcQ_00.mp4,found,3.0,,nonzero_original_qwen_time,"{""accident_time"": 3.0}",
+videos/Sm-U6h1VUYQ_00.mp4,found,10.0,,nonzero_original_qwen_time,"{""accident_time"": 10.0}",
+videos/r-k-zVvecKs_00.mp4,found,5.0,,nonzero_original_qwen_time,"{""accident_time"": 5.0}",
+videos/cSCM3PYMKRo_00.mp4,found,14.0,,nonzero_original_qwen_time,"{""accident_time"": 14.0}",
+videos/cSCM3PYMKRo_01.mp4,found,13.0,,nonzero_original_qwen_time,"{""accident_time"": 13.0}",
+videos/YQxqeP2Q_-M_00.mp4,found,16.7,,nonzero_original_qwen_time,"{""accident_time"": 16.7}",
+videos/FAEmPbAt0Wk_00.mp4,found,4.0,,nonzero_original_qwen_time,"{""accident_time"": 4.0}",
+videos/HC89136mZXs_00.mp4,found,5.0,,nonzero_original_qwen_time,"{""accident_time"": 5.0}",
+videos/UZmfc00aSSQ_00.mp4,found,9.0,,nonzero_original_qwen_time,"{""accident_time"": 9.0}",
+videos/NHOOHKL_z8s_00.mp4,found,16.0,,nonzero_original_qwen_time,"{""accident_time"": 16.0}",
+videos/dbIlU1q8lfM_00.mp4,found,2.0,,nonzero_original_qwen_time,"{""accident_time"": 2.0}",
+videos/u3KPKXc9A1c_00.mp4,found,4.0,,nonzero_original_qwen_time,"{""accident_time"": 4.0}",
+videos/fFxTIUK_Ju0_00.mp4,found,4.0,,nonzero_original_qwen_time,"{""accident_time"": 4.0}",
+videos/fd3l6Z3OSXE_00.mp4,found,6.0,,nonzero_original_qwen_time,"{""accident_time"": 6.0}",
+videos/jriayW0n33c_00.mp4,found,6.9,,nonzero_original_qwen_time,"{""accident_time"": 6.9}",
+videos/iiBMFJqcrGY_00.mp4,found,11.0,,nonzero_original_qwen_time,"{""accident_time"": 11.0}",
+videos/3AvjUT91bJA_00.mp4,found,2.0,,nonzero_original_qwen_time,"{""accident_time"": 2.0}",
+videos/ssoscEvTTLc_00.mp4,found,4.0,,nonzero_original_qwen_time,"{""accident_time"": 4.0}",
+videos/WagIvmw1jcI_00.mp4,found,7.0,,nonzero_original_qwen_time,"{""accident_time"": 7.0}",
+videos/WagIvmw1jcI_01.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/tJlFR_bbD6s_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/NbRmwSIXDzw_00.mp4,found,3.0,,nonzero_original_qwen_time,"{""accident_time"": 3.0}",
+videos/joRCqlk5sSA_00.mp4,found,14.0,,nonzero_original_qwen_time,"{""accident_time"": 14.0}",
+videos/Sb3SaOYjrrs_00.mp4,found,2.0,,nonzero_original_qwen_time,"{""accident_time"": 2.0}",
+videos/Xy3P5EhdZ7k_00.mp4,found,6.0,,nonzero_original_qwen_time,"{""accident_time"": 6.0}",
+videos/xCSV8hDQPDo_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/9eOu-gdsJD4_00.mp4,found,4.0,,nonzero_original_qwen_time,"{""accident_time"": 4.0}",
+videos/_75B7Y8QaX0_00.mp4,found,3.966666666666667,,nonzero_original_qwen_time,"{""accident_time"": 3.966666666666667}",
+videos/klHFoVQo--8_00.mp4,found,5.0,,nonzero_original_qwen_time,"{""accident_time"": 5.0}",
+videos/ja62cRF2tbQ_00.mp4,found,19.0,,nonzero_original_qwen_time,"{""accident_time"": 19.0}",
+videos/QGE0dV-iaSY_00.mp4,found,4.0,,nonzero_original_qwen_time,"{""accident_time"": 4.0}",
+videos/NeOMWr9b_7I_00.mp4,found,2.0,,nonzero_original_qwen_time,"{""accident_time"": 2.0}",
+videos/XPErIB4xgYg_00.mp4,found,7.0,,nonzero_original_qwen_time,"{""accident_time"": 7.0}",
+videos/IjYlfr_dwaE_00.mp4,found,11.0,,nonzero_original_qwen_time,"{""accident_time"": 11.0}",
+videos/G4QrIWuvNoM_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/1jCpA4y5NHY_00.mp4,found,24.0,,nonzero_original_qwen_time,"{""accident_time"": 24.0}",
+videos/5CNGhR8vBBk_00.mp4,not found 0.9,,,ninety_check_found_at_90_percent_false,"{""accident_time"": 29.967}",
+videos/WouBHgQJBM4_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/SUjTl7OifoA_00.mp4,found,13.0,,nonzero_original_qwen_time,"{""accident_time"": 13.0}",
+videos/ZyHloKpLTDs_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/tmv5qTrk8H4_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/6Wt8Y2Z1dkc_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/dO_jtPluv5Q_00.mp4,found,19.0,,nonzero_original_qwen_time,"{""accident_time"": 19.0}",
+videos/lRcaIAGppGs_00.mp4,found,3.8,,nonzero_original_qwen_time,"{""accident_time"": 3.8}",
+videos/R9r3my7Q7po_00.mp4,found,8.0,,nonzero_original_qwen_time,"{""accident_time"": 8.0}",
+videos/QaJHRtPAQRE_00.mp4,found,2.0,,nonzero_original_qwen_time,"{""accident_time"": 2.0}",
+videos/oCp56IFmInU_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/pyL525xZdfw_00.mp4,found,3.0,,nonzero_original_qwen_time,"{""accident_time"": 3.0}",
+videos/HQSjoUe8M8U_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/U46ElqUKa_4_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/C5OJEzm0dio_00.mp4,found,6.0,,nonzero_original_qwen_time,"{""accident_time"": 6.0}",
+videos/mh2N02NQ-bQ_00.mp4,not found 0.9,,,ninety_check_found_at_90_percent_false,"{""accident_time"": 27.0}",
+videos/zWKHAyNKlF4_00.mp4,found,14.0,,nonzero_original_qwen_time,"{""accident_time"": 14.0}",
+videos/2wWw4MidlLY_00.mp4,found,3.0,,nonzero_original_qwen_time,"{""accident_time"": 3.0}",
+videos/mD8Lu8KAoYc_00.mp4,found,3.0,,nonzero_original_qwen_time,"{""accident_time"": 3.0}",
+videos/J4QZ5vJy-3E_00.mp4,found,8.0,,nonzero_original_qwen_time,"{""accident_time"": 8.0}",
+videos/gACmlFi5x0A_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/Rsl5cRsKZQ8_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/hQJqYD_MpRw_00.mp4,found,19.0,,nonzero_original_qwen_time,"{""accident_time"": 19.0}",
+videos/P74ieG--On8_00.mp4,found,5.0,,nonzero_original_qwen_time,"{""accident_time"": 5.0}",
+videos/oiF_zB8j6MM_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/-z1jK6UwRec_00.mp4,found,17.0,,nonzero_original_qwen_time,"{""accident_time"": 17.0}",
+videos/K4we-6FhePo_00.mp4,found,5.0,,nonzero_original_qwen_time,"{""accident_time"": 5.0}",
+videos/dPXXrFXPqGc_00.mp4,found,2.0,,nonzero_original_qwen_time,"{""accident_time"": 2.0}",
+videos/MXO-t9vukaM_00.mp4,found,3.0,,nonzero_original_qwen_time,"{""accident_time"": 3.0}",
+videos/dCV66Y9tV1s_00.mp4,found,22.5,,nonzero_original_qwen_time,"{""accident_time"": 22.5}",
+videos/idAIp622PoY_00.mp4,not found 0,,0.99,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.99}"
+videos/o51jfgj-KEA_00.mp4,found,4.0,,nonzero_original_qwen_time,"{""accident_time"": 4.0}",
+videos/Xdpsr1GVl4U_00.mp4,found,6.0,,nonzero_original_qwen_time,"{""accident_time"": 6.0}",
+videos/-_J5xdxCZZU_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/aMOOElIYyiU_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/oc1DL7vLskc_00.mp4,found,4.0,,nonzero_original_qwen_time,"{""accident_time"": 4.0}",
+videos/Ej9_uEsIejA_00.mp4,found,2.0,,nonzero_original_qwen_time,"{""accident_time"": 2.0}",
+videos/9j0swlmm6eg_00.mp4,found,21.8,,nonzero_original_qwen_time,"{""accident_time"": 21.8}",
+videos/OcSiHrgFRNs_00.mp4,found,25.0,,nonzero_original_qwen_time,"{""accident_time"": 25.0}",
+videos/6rWXOsN-MDM_00.mp4,found,20.0,,nonzero_original_qwen_time,"{""accident_time"": 20.0}",
+videos/FKB8WfghbV0_00.mp4,found,5.0,,nonzero_original_qwen_time,"{""accident_time"": 5.0}",
+videos/Dupsb1RMpXM_00.mp4,found,3.8,,nonzero_original_qwen_time,"{""accident_time"": 3.8}",
+videos/YWFPaOR1CZc_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/L821I_3rs6Y_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/1hJlpaZsYa8_00.mp4,found,4.6,,nonzero_original_qwen_time,"{""accident_time"": 4.6}",
+videos/J4EFIegLA-I_00.mp4,found,4.0,,nonzero_original_qwen_time,"{""accident_time"": 4.0}",
+videos/fLdSFP_8PJ4_00.mp4,found,2.5,,nonzero_original_qwen_time,"{""accident_time"": 2.5}",
+videos/knWz2A2w3Ts_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/vWus0so2b0w_00.mp4,found,7.5,,nonzero_original_qwen_time,"{""accident_time"": 7.5}",
+videos/typL5MlQdQU_00.mp4,found,11.0,,nonzero_original_qwen_time,"{""accident_time"": 11.0}",
+videos/91JpOFnaiD4_00.mp4,found,2.0,,nonzero_original_qwen_time,"{""accident_time"": 2.0}",
+videos/Zt2cNzpQIZc_00.mp4,found,3.8,,nonzero_original_qwen_time,"{""accident_time"": 3.8}",
+videos/1D0KxP4drTU_00.mp4,found,8.0,,nonzero_original_qwen_time,"{""accident_time"": 8.0}",
+videos/5TdEe3ikbEM_00.mp4,found,5.0,,nonzero_original_qwen_time,"{""accident_time"": 5.0}",
+videos/5TdEe3ikbEM_01.mp4,found,1.0,,nonzero_original_qwen_time,"{""accident_time"": 1.0}",
+videos/zz0qZ-sSCbY_00.mp4,found,4.0,,nonzero_original_qwen_time,"{""accident_time"": 4.0}",
+videos/CLxtkUlDwYs_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/D7D-zT4wxC4_00.mp4,found,5.0,,nonzero_original_qwen_time,"{""accident_time"": 5.0}",
+videos/S4pRVJ-We44_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/mM1mhT8o578_00.mp4,not found 0,,0.99,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.99}"
+videos/Dum9n19ZHYk_00.mp4,found,5.6,,nonzero_original_qwen_time,"{""accident_time"": 5.6}",
+videos/neRsGdCvROM_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/QQ3MyzcyOL4_00.mp4,found,4.0,,nonzero_original_qwen_time,"{""accident_time"": 4.0}",
+videos/EEYAqpWdNAE_00.mp4,found,2.0,,nonzero_original_qwen_time,"{""accident_time"": 2.0}",
+videos/Ex8VtDfLq8M_00.mp4,found,3.0,,nonzero_original_qwen_time,"{""accident_time"": 3.0}",
+videos/OlkuOuXVfQ8_00.mp4,found,12.0,,nonzero_original_qwen_time,"{""accident_time"": 12.0}",
+videos/BFN3VYJ9ARs_00.mp4,found,16.0,,nonzero_original_qwen_time,"{""accident_time"": 16.0}",
+videos/JmRMCNbbhOY_00.mp4,found,8.0,,nonzero_original_qwen_time,"{""accident_time"": 8.0}",
+videos/iQbsvy9KGC8_00.mp4,found,9.0,,nonzero_original_qwen_time,"{""accident_time"": 9.0}",
+videos/-PpBteU0p3Q_00.mp4,found,4.0,,nonzero_original_qwen_time,"{""accident_time"": 4.0}",
+videos/ozCjkCKp6DQ_00.mp4,found,7.0,,nonzero_original_qwen_time,"{""accident_time"": 7.0}",
+videos/oocg-wnFMDE_00.mp4,found,12.0,,nonzero_original_qwen_time,"{""accident_time"": 12.0}",
+videos/Zw3DbNY6ZpE_00.mp4,found,7.0,,nonzero_original_qwen_time,"{""accident_time"": 7.0}",
+videos/g1vKgJ9RN8c_00.mp4,found,7.6,,nonzero_original_qwen_time,"{""accident_time"": 7.6}",
+videos/NJvjYUBWAc0_00.mp4,found,6.0,,nonzero_original_qwen_time,"{""accident_time"": 6.0}",
+videos/CpBPz9n7_Rg_00.mp4,not found 0,,0.99,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.99}"
+videos/3wK_g1985p4_00.mp4,not found 0.9,,,ninety_check_found_at_90_percent_false,"{""accident_time"": 29.967}",
+videos/AOlLjNQ2vu4_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/3dIt2gBnS7o_00.mp4,found,3.0,,nonzero_original_qwen_time,"{""accident_time"": 3.0}",
+videos/w_4-UPeU_zc_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/Uf-KkS36dZg_00.mp4,found,2.0,,nonzero_original_qwen_time,"{""accident_time"": 2.0}",
+videos/IbJBE53NXZc_00.mp4,found,6.0,,nonzero_original_qwen_time,"{""accident_time"": 6.0}",
+videos/W0qpYlyc-Ws_00.mp4,found,3.0,,nonzero_original_qwen_time,"{""accident_time"": 3.0}",
+videos/LI8ZZcRlFV8_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/9AnFK85qRjM_00.mp4,found,3.0,,nonzero_original_qwen_time,"{""accident_time"": 3.0}",
+videos/0J5lP1YbTHc_00.mp4,found,3.0,,nonzero_original_qwen_time,"{""accident_time"": 3.0}",
+videos/zjHAkzyXOCg_00.mp4,found,7.0,,nonzero_original_qwen_time,"{""accident_time"": 7.0}",
+videos/lfQuoQHfc4k_00.mp4,found,5.0,,nonzero_original_qwen_time,"{""accident_time"": 5.0}",
+videos/JM2EUK2Odg8_00.mp4,found,1.0,,nonzero_original_qwen_time,"{""accident_time"": 1.0}",
+videos/oWLWFTK4QdU_00.mp4,found,5.6,,nonzero_original_qwen_time,"{""accident_time"": 5.6}",
+videos/oWLWFTK4QdU_01.mp4,found,9.0,,nonzero_original_qwen_time,"{""accident_time"": 9.0}",
+videos/oWLWFTK4QdU_02.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/WyJmpozauFo_00.mp4,found,4.0,,nonzero_original_qwen_time,"{""accident_time"": 4.0}",
+videos/fbkRjY737QE_00.mp4,found,7.0,,nonzero_original_qwen_time,"{""accident_time"": 7.0}",
+videos/XOIVTT7Fn9U_00.mp4,found,7.958,,nonzero_original_qwen_time,"{""accident_time"": 7.958}",
+videos/5ZHUJ6AwHGA_00.mp4,found,5.0,,nonzero_original_qwen_time,"{""accident_time"": 5.0}",
+videos/vrkLno9PSfU_00.mp4,found,6.0,,nonzero_original_qwen_time,"{""accident_time"": 6.0}",
+videos/Vtp5G_Z5BZQ_00.mp4,not found 0,,0.9,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.9}"
+videos/Vtp5G_Z5BZQ_01.mp4,found,2.0,,nonzero_original_qwen_time,"{""accident_time"": 2.0}",
+videos/mRbMWblAmzo_00.mp4,found,7.0,,nonzero_original_qwen_time,"{""accident_time"": 7.0}",
+videos/3Gc1wi2Qp4g_00.mp4,found,23.0,,nonzero_original_qwen_time,"{""accident_time"": 23.0}",
+videos/cF1M5Rhn8Zs_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/rDkG2tN8W8o_00.mp4,found,12.0,,nonzero_original_qwen_time,"{""accident_time"": 12.0}",
+videos/hHLYbcQzL0U_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/F8PPMv46IQk_00.mp4,found,9.5,,nonzero_original_qwen_time,"{""accident_time"": 9.5}",
+videos/p-Tdocrz9HI_00.mp4,found,19.0,,nonzero_original_qwen_time,"{""accident_time"": 19.0}",
+videos/kUsZnGYhevs_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/9P_vAk9ZExI_00.mp4,found,2.6,,nonzero_original_qwen_time,"{""accident_time"": 2.6}",
+videos/vtXjJLurYMY_00.mp4,found,6.0,,nonzero_original_qwen_time,"{""accident_time"": 6.0}",
+videos/UCNyjybsbiU_00.mp4,found,2.0,,nonzero_original_qwen_time,"{""accident_time"": 2.0}",
+videos/x7yDzEf3TxM_00.mp4,found,4.0,,nonzero_original_qwen_time,"{""accident_time"": 4.0}",
+videos/BGXx55xRiic_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/jsh--BYn0pc_00.mp4,found,6.0,,nonzero_original_qwen_time,"{""accident_time"": 6.0}",
+videos/ggSUG42G9YE_00.mp4,found,3.933,,nonzero_original_qwen_time,"{""accident_time"": 3.933}",
+videos/qCDsyJKE1MA_00.mp4,found,6.0,,nonzero_original_qwen_time,"{""accident_time"": 6.0}",
+videos/AjhYRdkLdRc_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/nHKTuIJZA1U_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/nKz4V0ajOgc_00.mp4,found,11.0,,nonzero_original_qwen_time,"{""accident_time"": 11.0}",
+videos/N8kPF4qITIM_00.mp4,found,11.0,,nonzero_original_qwen_time,"{""accident_time"": 11.0}",
+videos/xwp9G0TuTUk_00.mp4,found,12.0,,nonzero_original_qwen_time,"{""accident_time"": 12.0}",
+videos/uGvzo8mRSSo_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/Ov8CuX37yeo_00.mp4,found,5.0,,nonzero_original_qwen_time,"{""accident_time"": 5.0}",
+videos/1yWbvi0K6Eg_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/EyZo7F2P35A_00.mp4,found,5.0,,nonzero_original_qwen_time,"{""accident_time"": 5.0}",
+videos/yTkouPWrmpU_00.mp4,not found 0,,0.99,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.99}"
+videos/pnV5RLCskPI_00.mp4,found,2.0,,nonzero_original_qwen_time,"{""accident_time"": 2.0}",
+videos/x4jVejiZNsI_00.mp4,found,1.0,,nonzero_original_qwen_time,"{""accident_time"": 1.0}",
+videos/_Etcfb7cUH8_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/SWAI7FYPhjc_00.mp4,found,1.9,,nonzero_original_qwen_time,"{""accident_time"": 1.9}",
+videos/GI1-kjZaEWM_00.mp4,found,5.0,,nonzero_original_qwen_time,"{""accident_time"": 5.0}",
+videos/5mrzzNJQOug_00.mp4,found,2.0,,nonzero_original_qwen_time,"{""accident_time"": 2.0}",
+videos/ue2PvUTPXTs_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/FOPldt8txP4_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/FDjxbPaxmho_00.mp4,found,5.933,,nonzero_original_qwen_time,"{""accident_time"": 5.933}",
+videos/SH93O7eHV08_00.mp4,found,11.0,,nonzero_original_qwen_time,"{""accident_time"": 11.0}",
+videos/MvV_hkztDqE_00.mp4,found,16.0,,nonzero_original_qwen_time,"{""accident_time"": 16.0}",
+videos/HGediRhCK14_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/2IY6PpDm85k_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/Th2EbZpLkrk_00.mp4,not found 0.9,,,ninety_check_found_at_90_percent_false,"{""accident_time"": 25.567}",
+videos/5ZYWhoVVLGI_00.mp4,found,10.6,,nonzero_original_qwen_time,"{""accident_time"": 10.6}",
+videos/IrdhgFvZE1Y_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/0Kh7K1ftejg_00.mp4,not found 0.9,,,ninety_check_found_at_90_percent_false,"{""accident_time"": 2.333}",
+videos/qdHRfSReZ0w_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/0sxbjc7SAZA_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/egyW5DsK8BQ_00.mp4,found,4.0,,nonzero_original_qwen_time,"{""accident_time"": 4.0}",
+videos/A6Ut8jw-oLs_00.mp4,found,5.0,,nonzero_original_qwen_time,"{""accident_time"": 5.0}",
+videos/6Xd4Xk76ylQ_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/Qbgh3C8ew2o_00.mp4,found,5.0,,nonzero_original_qwen_time,"{""accident_time"": 5.0}",
+videos/P7BOK9E4kS8_00.mp4,found,8.0,,nonzero_original_qwen_time,"{""accident_time"": 8.0}",
+videos/Cu3dl1ABN2k_00.mp4,found,4.0,,nonzero_original_qwen_time,"{""accident_time"": 4.0}",
+videos/ed96OpSybeQ_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/W1YnYuUFxwg_00.mp4,found,8.8,,nonzero_original_qwen_time,"{""accident_time"": 8.8}",
+videos/MQI5ApNNZPI_00.mp4,found,11.0,,nonzero_original_qwen_time,"{""accident_time"": 11.0}",
+videos/k9lZ453AVO8_00.mp4,found,15.0,,nonzero_original_qwen_time,"{""accident_time"": 15.0}",
+videos/JDc09Tn1tR8_00.mp4,not found 0.9,,,ninety_check_found_at_90_percent_false,"{""accident_time"": 28.0}",
+videos/a3T2DygvH4w_00.mp4,found,5.0,,nonzero_original_qwen_time,"{""accident_time"": 5.0}",
+videos/7KAkcOyPqkw_00.mp4,found,5.8,,nonzero_original_qwen_time,"{""accident_time"": 5.8}",
+videos/2UWHJTklurQ_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/i09Z9tesnac_00.mp4,found,2.0,,nonzero_original_qwen_time,"{""accident_time"": 2.0}",
+videos/T5396f4sJ5w_00.mp4,not found 0.9,,,ninety_check_found_at_90_percent_false,"{""accident_time"": 15.0}",
+videos/r_Ca7EkJDdg_00.mp4,found,3.0,,nonzero_original_qwen_time,"{""accident_time"": 3.0}",
+videos/8j-qfY6_Bxg_00.mp4,found,4.0,,nonzero_original_qwen_time,"{""accident_time"": 4.0}",
+videos/iKpoAkiKqjw_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/OdgIl355A80_00.mp4,found,4.0,,nonzero_original_qwen_time,"{""accident_time"": 4.0}",
+videos/hAaMPL2ieyE_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/9KTcbXYyzWI_00.mp4,found,22.0,,nonzero_original_qwen_time,"{""accident_time"": 22.0}",
+videos/4RAe_LEFTTU_00.mp4,found,8.0,,nonzero_original_qwen_time,"{""accident_time"": 8.0}",
+videos/gnyMlVu3LzY_00.mp4,found,3.0,,nonzero_original_qwen_time,"{""accident_time"": 3.0}",
+videos/vPWarRX_sVI_00.mp4,found,2.6,,nonzero_original_qwen_time,"{""accident_time"": 2.6}",
+videos/ntjBOrqvD6Q_00.mp4,found,2.0,,nonzero_original_qwen_time,"{""accident_time"": 2.0}",
+videos/_5e--tkpUck_00.mp4,found,8.0,,nonzero_original_qwen_time,"{""accident_time"": 8.0}",
+videos/xsX4nrMR0ds_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/3oxYxwfTwro_00.mp4,found,4.0,,nonzero_original_qwen_time,"{""accident_time"": 4.0}",
+videos/6yQNWmpmUPk_00.mp4,found,20.0,,nonzero_original_qwen_time,"{""accident_time"": 20.0}",
+videos/J19P9fWUj2U_00.mp4,found,2.0,,nonzero_original_qwen_time,"{""accident_time"": 2.0}",
+videos/8ZzJdjQi-aM_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/vqIPnFuQ22c_00.mp4,found,3.0,,nonzero_original_qwen_time,"{""accident_time"": 3.0}",
+videos/yD3Q70U-bD4_00.mp4,found,10.0,,nonzero_original_qwen_time,"{""accident_time"": 10.0}",
+videos/RokQ01Hx_Fg_00.mp4,not found 0,,1.0,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 1.0}"
+videos/6fIB4cD0IrE_00.mp4,found,4.0,,nonzero_original_qwen_time,"{""accident_time"": 4.0}",
+videos/yWyxEWTof1A_00.mp4,found,8.0,,nonzero_original_qwen_time,"{""accident_time"": 8.0}",
+videos/_Bm8NYVbTN4_00.mp4,found,6.0,,nonzero_original_qwen_time,"{""accident_time"": 6.0}",
+videos/coukijt9MpI_00.mp4,found,3.0,,nonzero_original_qwen_time,"{""accident_time"": 3.0}",
+videos/kgfitHjT3cs_00.mp4,not found 0,,0.99,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.99}"
+videos/jopSKVpAIos_00.mp4,found,15.02,,nonzero_original_qwen_time,"{""accident_time"": 15.02}",
+videos/QrKQoabj12w_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/neosg71VJkY_00.mp4,found,5.5,,nonzero_original_qwen_time,"{""accident_time"": 5.5}",
+videos/5uh8-3q51uI_00.mp4,found,21.9,,nonzero_original_qwen_time,"{""accident_time"": 21.9}",
+videos/udxjyNtNiV4_00.mp4,found,3.6,,nonzero_original_qwen_time,"{""accident_time"": 3.6}",
+videos/cZkJ009T8mU_00.mp4,found,4.0,,nonzero_original_qwen_time,"{""accident_time"": 4.0}",
+videos/DZBg6CcIi6Y_00.mp4,found,23.0,,nonzero_original_qwen_time,"{""accident_time"": 23.0}",
+videos/cYwpWiiwZro_00.mp4,found,5.0,,nonzero_original_qwen_time,"{""accident_time"": 5.0}",
+videos/wQ0jtlL3tbA_00.mp4,found,1.0,,nonzero_original_qwen_time,"{""accident_time"": 1.0}",
+videos/aw8RbjIaKKA_00.mp4,found,16.0,,nonzero_original_qwen_time,"{""accident_time"": 16.0}",
+videos/NXGMpjaYFsw_00.mp4,found,6.0,,nonzero_original_qwen_time,"{""accident_time"": 6.0}",
+videos/iAsAPYpjkS8_00.mp4,found,3.5,,nonzero_original_qwen_time,"{""accident_time"": 3.5}",
+videos/y7FiOf3tpnk_00.mp4,found,26.0,,nonzero_original_qwen_time,"{""accident_time"": 26.0}",
+videos/l1_qLRlQw8U_00.mp4,found,10.0,,nonzero_original_qwen_time,"{""accident_time"": 10.0}",
+videos/iKor62WhYgc_00.mp4,found,5.0,,nonzero_original_qwen_time,"{""accident_time"": 5.0}",
+videos/5GV2ouD2_hA_00.mp4,found,15.0,,nonzero_original_qwen_time,"{""accident_time"": 15.0}",
+videos/k88wOc1q7kI_00.mp4,found,7.8,,nonzero_original_qwen_time,"{""accident_time"": 7.8}",
+videos/42g5gRbzYhY_00.mp4,found,8.0,,nonzero_original_qwen_time,"{""accident_time"": 8.0}",
+videos/42g5gRbzYhY_01.mp4,found,5.0,,nonzero_original_qwen_time,"{""accident_time"": 5.0}",
+videos/x8GY43DccAs_00.mp4,found,10.0,,nonzero_original_qwen_time,"{""accident_time"": 10.0}",
+videos/unTKXNwIN1A_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/oGQRRhrK2LA_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/SA_ZC0qlqdg_00.mp4,found,9.9,,nonzero_original_qwen_time,"{""accident_time"": 9.9}",
+videos/lj2jsTChFEo_00.mp4,found,12.0,,nonzero_original_qwen_time,"{""accident_time"": 12.0}",
+videos/aLrHglJ_H6o_00.mp4,found,4.0,,nonzero_original_qwen_time,"{""accident_time"": 4.0}",
+videos/yd7QK62ESfM_00.mp4,found,1.0,,nonzero_original_qwen_time,"{""accident_time"": 1.0}",
+videos/7jr-TzLKTrU_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/rk8CtIpbG5w_00.mp4,found,7.0,,nonzero_original_qwen_time,"{""accident_time"": 7.0}",
+videos/pyq3j3CobZ0_00.mp4,found,8.6,,nonzero_original_qwen_time,"{""accident_time"": 8.6}",
+videos/Y3OQspLTLok_00.mp4,found,4.0,,nonzero_original_qwen_time,"{""accident_time"": 4.0}",
+videos/64ZEWTQY7SY_00.mp4,found,4.0,,nonzero_original_qwen_time,"{""accident_time"": 4.0}",
+videos/tmZqFNBoF-E_00.mp4,found,2.7,,nonzero_original_qwen_time,"{""accident_time"": 2.7}",
+videos/7ZCKQq8C3X0_00.mp4,found,5.8,,nonzero_original_qwen_time,"{""accident_time"": 5.8}",
+videos/soihnyrvZms_00.mp4,found,3.0,,nonzero_original_qwen_time,"{""accident_time"": 3.0}",
+videos/6wS8Dv8-S8s_00.mp4,found,22.0,,nonzero_original_qwen_time,"{""accident_time"": 22.0}",
+videos/m33jiO8xGLk_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/9XfMq4ikGTU_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/_-XReeuhpiE_00.mp4,found,4.0,,nonzero_original_qwen_time,"{""accident_time"": 4.0}",
+videos/vR3sZ1IxPAo_00.mp4,found,7.9,,nonzero_original_qwen_time,"{""accident_time"": 7.9}",
+videos/vR3sZ1IxPAo_01.mp4,found,2.9,,nonzero_original_qwen_time,"{""accident_time"": 2.9}",
+videos/3gFe7GtkEPk_00.mp4,not found 0,,0.99,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.99}"
+videos/ao3VuM_p4_8_00.mp4,found,1.0,,nonzero_original_qwen_time,"{""accident_time"": 1.0}",
+videos/-T_E4YhtjyE_00.mp4,found,12.0,,nonzero_original_qwen_time,"{""accident_time"": 12.0}",
+videos/QfHs3610Fw4_00.mp4,found,5.6,,nonzero_original_qwen_time,"{""accident_time"": 5.6}",
+videos/75qRY47mjfQ_00.mp4,found,5.0,,nonzero_original_qwen_time,"{""accident_time"": 5.0}",
+videos/TPVutn4rHsU_00.mp4,found,2.8,,nonzero_original_qwen_time,"{""accident_time"": 2.8}",
+videos/6CW7HogT0ZA_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/vC6P5GxfX-Q_00.mp4,found,4.5,,nonzero_original_qwen_time,"{""accident_time"": 4.5}",
+videos/obqvQOIyzL4_00.mp4,found,14.0,,nonzero_original_qwen_time,"{""accident_time"": 14.0}",
+videos/ob6zKCT1SGE_00.mp4,found,2.0,,nonzero_original_qwen_time,"{""accident_time"": 2.0}",
+videos/QnEqrBCB7Ak_00.mp4,found,3.8,,nonzero_original_qwen_time,"{""accident_time"": 3.8}",
+videos/v45DbbZotgI_00.mp4,found,2.0,,nonzero_original_qwen_time,"{""accident_time"": 2.0}",
+videos/ZQOzzKybkTA_00.mp4,found,11.0,,nonzero_original_qwen_time,"{""accident_time"": 11.0}",
+videos/Vh13EbZJAiA_00.mp4,found,19.0,,nonzero_original_qwen_time,"{""accident_time"": 19.0}",
+videos/GtL1Onu28Iw_00.mp4,found,9.0,,nonzero_original_qwen_time,"{""accident_time"": 9.0}",
+videos/BY9XdpYwLto_00.mp4,found,3.0,,nonzero_original_qwen_time,"{""accident_time"": 3.0}",
+videos/cHJRsctghpY_00.mp4,found,4.0,,nonzero_original_qwen_time,"{""accident_time"": 4.0}",
+videos/aD4MQN4ZM18_00.mp4,found,4.5,,nonzero_original_qwen_time,"{""accident_time"": 4.5}",
+videos/6eUG-Pp36_s_00.mp4,found,13.0,,nonzero_original_qwen_time,"{""accident_time"": 13.0}",
+videos/ZkHzHo_PvIM_00.mp4,found,2.0,,nonzero_original_qwen_time,"{""accident_time"": 2.0}",
+videos/9tBAfjjPEkw_00.mp4,found,3.0,,nonzero_original_qwen_time,"{""accident_time"": 3.0}",
+videos/GbIQab3ECjI_00.mp4,found,3.6,,nonzero_original_qwen_time,"{""accident_time"": 3.6}",
+videos/DTPQZJzsoXY_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/Pjuu3TEEonY_00.mp4,found,5.0,,nonzero_original_qwen_time,"{""accident_time"": 5.0}",
+videos/swjfOB7CzTM_00.mp4,found,11.0,,nonzero_original_qwen_time,"{""accident_time"": 11.0}",
+videos/aTlLIoo3nCE_00.mp4,found,2.0,,nonzero_original_qwen_time,"{""accident_time"": 2.0}",
+videos/wSuWfSgwKZU_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/Mk3DdsuI71U_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/mmEiKiU-ZLs_00.mp4,found,6.0,,nonzero_original_qwen_time,"{""accident_time"": 6.0}",
+videos/gKNkwyn6a-o_00.mp4,found,5.0,,nonzero_original_qwen_time,"{""accident_time"": 5.0}",
+videos/1koo-2ZTC9U_00.mp4,found,2.8,,nonzero_original_qwen_time,"{""accident_time"": 2.8}",
+videos/Cfot7TRlxAQ_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/at2_tQSDlKg_00.mp4,found,2.0,,nonzero_original_qwen_time,"{""accident_time"": 2.0}",
+videos/jzFOvz-C9q0_00.mp4,found,6.0,,nonzero_original_qwen_time,"{""accident_time"": 6.0}",
+videos/wJBN4-qBBWI_00.mp4,found,6.0,,nonzero_original_qwen_time,"{""accident_time"": 6.0}",
+videos/CuKoIfFdF_U_00.mp4,found,4.0,,nonzero_original_qwen_time,"{""accident_time"": 4.0}",
+videos/LosVYAhNYlY_00.mp4,found,4.0,,nonzero_original_qwen_time,"{""accident_time"": 4.0}",
+videos/tAGibqigAx0_00.mp4,found,4.0,,nonzero_original_qwen_time,"{""accident_time"": 4.0}",
+videos/W5YikE19nkc_00.mp4,found,14.0,,nonzero_original_qwen_time,"{""accident_time"": 14.0}",
+videos/n4SC6GEp99A_00.mp4,found,5.7,,nonzero_original_qwen_time,"{""accident_time"": 5.7}",
+videos/QmNsR_29zIs_00.mp4,found,14.0,,nonzero_original_qwen_time,"{""accident_time"": 14.0}",
+videos/0a405keDKpc_00.mp4,found,7.0,,nonzero_original_qwen_time,"{""accident_time"": 7.0}",
+videos/XGmx0mhtM_A_00.mp4,found,8.0,,nonzero_original_qwen_time,"{""accident_time"": 8.0}",
+videos/hgm6sQUl8Yg_00.mp4,found,13.0,,nonzero_original_qwen_time,"{""accident_time"": 13.0}",
+videos/WgD4Rf1J8P4_00.mp4,found,6.0,,nonzero_original_qwen_time,"{""accident_time"": 6.0}",
+videos/7Q6tqECKuVw_00.mp4,found,8.0,,nonzero_original_qwen_time,"{""accident_time"": 8.0}",
+videos/bMFK3B5qPiE_00.mp4,found,10.0,,nonzero_original_qwen_time,"{""accident_time"": 10.0}",
+videos/9BbYjDDO59w_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/r_hzgvP7sJg_00.mp4,found,4.0,,nonzero_original_qwen_time,"{""accident_time"": 4.0}",
+videos/rqXj43PDmBw_00.mp4,not found 0,,0.99,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.99}"
+videos/T1g7fA6Ad-g_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/7FzkwCUqP1Y_00.mp4,found,6.0,,nonzero_original_qwen_time,"{""accident_time"": 6.0}",
+videos/Ly7szYRjMdw_00.mp4,found,2.0,,nonzero_original_qwen_time,"{""accident_time"": 2.0}",
+videos/jPM0jwxK2W8_00.mp4,found,2.0,,nonzero_original_qwen_time,"{""accident_time"": 2.0}",
+videos/9nmufil1vvo_00.mp4,found,5.0,,nonzero_original_qwen_time,"{""accident_time"": 5.0}",
+videos/bUn3nfDgLEs_00.mp4,found,6.0,,nonzero_original_qwen_time,"{""accident_time"": 6.0}",
+videos/4geYk_miUzo_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/4Bde0lYQ4mg_00.mp4,found,2.0,,nonzero_original_qwen_time,"{""accident_time"": 2.0}",
+videos/0PrAtifCwjg_00.mp4,not found 0.9,,,ninety_check_found_at_90_percent_false,"{""accident_time"": 27.6}",
+videos/xUocvk0m-mc_00.mp4,found,5.0,,nonzero_original_qwen_time,"{""accident_time"": 5.0}",
+videos/jNzHFeCP2DU_00.mp4,found,3.0,,nonzero_original_qwen_time,"{""accident_time"": 3.0}",
+videos/jhkWGmAajmE_00.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/gpRtEfxMkYc_00.mp4,not found 0,,0.99,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.99}"
+videos/R69Y-qYAuis_00.mp4,found,3.0,,nonzero_original_qwen_time,"{""accident_time"": 3.0}",
+videos/ZTLYOhzf8Jw_00.mp4,found,3.0,,nonzero_original_qwen_time,"{""accident_time"": 3.0}",
+videos/QX2MmlSq2AQ_00.mp4,not found 0.9,,,ninety_check_found_at_90_percent_false,"{""accident_time"": 26.967}",
+videos/Ns30XeulhHo_00.mp4,found,6.0,,nonzero_original_qwen_time,"{""accident_time"": 6.0}",
+videos/Ns30XeulhHo_01.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/Ns30XeulhHo_02.mp4,found,1.0,,nonzero_original_qwen_time,"{""accident_time"": 1.0}",
+videos/Ns30XeulhHo_03.mp4,found,1.0,,nonzero_original_qwen_time,"{""accident_time"": 1.0}",
+videos/Ns30XeulhHo_04.mp4,found,2.0,,nonzero_original_qwen_time,"{""accident_time"": 2.0}",
+videos/Ns30XeulhHo_05.mp4,not found 0,,0.95,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.95}"
+videos/IOxe9lyfZRA_00.mp4,not found 0,,0.9,zero_check_found_at_zero_false,"{""accident_time"": 0.0}","{""found_at_zero"": false, ""confidence"": 0.9}"
+videos/dQ0ao_Yu7II_00.mp4,found,2.0,,nonzero_original_qwen_time,"{""accident_time"": 2.0}",
+videos/6oymx7wBmjw_00.mp4,found,7.0,,nonzero_original_qwen_time,"{""accident_time"": 7.0}",
+videos/6oymx7wBmjw_01.mp4,found,2.6,,nonzero_original_qwen_time,"{""accident_time"": 2.6}",

@@ -1,0 +1,12 @@
+path,time_status,accident_time,confidence,reason,raw_qwen_time
+videos/Z4kg2Ev3vhk_00.mp4,못찾음,,1.0,qwen_returned_found_false,"{""found"": false, ""accident_time"": null, ""confidence"": 1.0}"
+videos/unS0-TLF1ao_00.mp4,못찾음,,0.0,qwen_returned_found_false,"{""found"": false, ""accident_time"": null, ""confidence"": 0.0}"
+videos/UarP8qU1S-c_00.mp4,못찾음,,1.0,qwen_returned_found_false,"{""found"": false, ""accident_time"": null, ""confidence"": 1.0}"
+videos/UarP8qU1S-c_01.mp4,못찾음,,0.0,qwen_returned_found_false,"{""found"": false, ""accident_time"": null, ""confidence"": 0.0}"
+videos/nAXTthLfgtI_00.mp4,못찾음,,1.0,qwen_returned_found_false,"{""found"": false, ""accident_time"": null, ""confidence"": 1.0}"
+videos/fzWY0vLAXzI_00.mp4,찾음,4.0,0.95,ok,"{""found"": true, ""accident_time"": 4.0, ""confidence"": 0.95}"
+videos/vxZ47DoPNY8_00.mp4,찾음,2.9,0.95,ok,"{""found"": true, ""accident_time"": 2.9, ""confidence"": 0.95}"
+videos/OXVXsdDT9QQ_00.mp4,찾음,1.0,0.95,ok,"{""found"": true, ""accident_time"": 1.0, ""confidence"": 0.95}"
+videos/VozrseCzhQc_00.mp4,못찾음,,1.0,qwen_returned_found_false,"{""found"": false, ""accident_time"": null, ""confidence"": 1.0}"
+videos/kABWTDKgc9U_00.mp4,못찾음,,1.0,qwen_returned_found_false,"{""found"": false, ""accident_time"": null, ""confidence"": 1.0}"
+videos/ftk_fSc4haM_00.mp4,찾음,6.0,0.95,ok,"{""found"": true, ""accident_time"": 6.0, ""confidence"": 0.95}"

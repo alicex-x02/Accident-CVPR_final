@@ -1,0 +1,1938 @@
+Loading model: Qwen/Qwen3.5-9B [rows1_100_cuda1]
+Using device: cuda
+Processing rows: 1..100
+Reusing time/location from: /root/Desktop/workspace/yujin/result/test10/qwen_test10_hybrid.csv
+CSV output: /root/Desktop/workspace/yujin/result/qwen_test11_hybrid_rows1_100_cuda1.csv
+Raw log: /root/Desktop/workspace/yujin/code/accident/qwen_test11_hybrid_rows1_100_cuda1_raw_outputs.jsonl
+
+[1] Processing type-only: videos/Z4kg2Ev3vhk_00.mp4
+  -> reused accident_time=10.3765, center_x=0.5689, center_y=0.3905
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_head_on": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_t_bone": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "sideswipe"
+}
+
+  -> final parsed result: accident_time=10.3765, center_x=0.5689, center_y=0.3905, type=sideswipe
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test11_hybrid_rows1_100_cuda1.csv (1 rows saved)
+
+[2] Processing type-only: videos/unS0-TLF1ao_00.mp4
+  -> reused accident_time=2.0000, center_x=0.7918, center_y=0.4484
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=2.0000, center_x=0.7918, center_y=0.4484, type=single
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test11_hybrid_rows1_100_cuda1.csv (2 rows saved)
+
+[3] Processing type-only: videos/UarP8qU1S-c_00.mp4
+  -> reused accident_time=7.0000, center_x=0.6326, center_y=0.3623
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_head_on": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_t_bone": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "rear-end"
+}
+
+  -> final parsed result: accident_time=7.0000, center_x=0.6326, center_y=0.3623, type=rear-end
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test11_hybrid_rows1_100_cuda1.csv (3 rows saved)
+
+[4] Processing type-only: videos/UarP8qU1S-c_01.mp4
+  -> reused accident_time=1.0000, center_x=0.5700, center_y=0.5522
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_head_on": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_t_bone": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "sideswipe"
+}
+
+  -> final parsed result: accident_time=1.0000, center_x=0.5700, center_y=0.5522, type=sideswipe
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test11_hybrid_rows1_100_cuda1.csv (4 rows saved)
+
+[5] Processing type-only: videos/nAXTthLfgtI_00.mp4
+  -> reused accident_time=2.1974, center_x=0.1747, center_y=0.6400
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=2.1974, center_x=0.1747, center_y=0.6400, type=single
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test11_hybrid_rows1_100_cuda1.csv (5 rows saved)
+
+[6] Processing type-only: videos/fzWY0vLAXzI_00.mp4
+  -> reused accident_time=4.0000, center_x=0.3675, center_y=0.1678
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_head_on": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_t_bone": true,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=4.0000, center_x=0.3675, center_y=0.1678, type=t-bone
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test11_hybrid_rows1_100_cuda1.csv (6 rows saved)
+
+[7] Processing type-only: videos/vxZ47DoPNY8_00.mp4
+  -> reused accident_time=3.0000, center_x=0.7598, center_y=0.2000
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=3.0000, center_x=0.7598, center_y=0.2000, type=single
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test11_hybrid_rows1_100_cuda1.csv (7 rows saved)
+
+[8] Processing type-only: videos/OXVXsdDT9QQ_00.mp4
+  -> reused accident_time=1.5000, center_x=0.5759, center_y=0.5200
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_head_on": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_t_bone": true,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=1.5000, center_x=0.5759, center_y=0.5200, type=t-bone
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test11_hybrid_rows1_100_cuda1.csv (8 rows saved)
+
+[9] Processing type-only: videos/VozrseCzhQc_00.mp4
+  -> reused accident_time=5.0000, center_x=0.5900, center_y=0.5800
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_head_on": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_t_bone": false,
+  "confidence": 0.9
+}
+
+  -> model output: {
+  "type": "rear-end"
+}
+
+  -> final parsed result: accident_time=5.0000, center_x=0.5900, center_y=0.5800, type=rear-end
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test11_hybrid_rows1_100_cuda1.csv (9 rows saved)
+
+[10] Processing type-only: videos/kABWTDKgc9U_00.mp4
+  -> reused accident_time=6.0068, center_x=0.5896, center_y=0.5100
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=6.0068, center_x=0.5896, center_y=0.5100, type=single
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test11_hybrid_rows1_100_cuda1.csv (10 rows saved)
+
+[11] Processing type-only: videos/ftk_fSc4haM_00.mp4
+  -> reused accident_time=6.0000, center_x=0.7140, center_y=0.2855
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_head_on": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_t_bone": true,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=6.0000, center_x=0.7140, center_y=0.2855, type=t-bone
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test11_hybrid_rows1_100_cuda1.csv (11 rows saved)
+
+[12] Processing type-only: videos/BgdKGnFqz0I_00.mp4
+  -> reused accident_time=9.0000, center_x=0.4070, center_y=0.3940
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_head_on": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_t_bone": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "sideswipe"
+}
+
+  -> final parsed result: accident_time=9.0000, center_x=0.4070, center_y=0.3940, type=sideswipe
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test11_hybrid_rows1_100_cuda1.csv (12 rows saved)
+
+[13] Processing type-only: videos/LiM5LPSZoow_00.mp4
+  -> reused accident_time=2.8062, center_x=0.5904, center_y=0.8700
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_head_on": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_t_bone": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "sideswipe"
+}
+
+  -> final parsed result: accident_time=2.8062, center_x=0.5904, center_y=0.8700, type=sideswipe
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test11_hybrid_rows1_100_cuda1.csv (13 rows saved)
+
+[14] Processing type-only: videos/F0NHENn-HS4_00.mp4
+  -> reused accident_time=5.0000, center_x=0.4935, center_y=0.3247
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=5.0000, center_x=0.4935, center_y=0.3247, type=single
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test11_hybrid_rows1_100_cuda1.csv (14 rows saved)
+
+[15] Processing type-only: videos/maJsgJsapH4_00.mp4
+  -> reused accident_time=7.0000, center_x=0.5995, center_y=0.5760
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_head_on": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_t_bone": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "rear-end"
+}
+
+  -> final parsed result: accident_time=7.0000, center_x=0.5995, center_y=0.5760, type=rear-end
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test11_hybrid_rows1_100_cuda1.csv (15 rows saved)
+
+[16] Processing type-only: videos/iA_u73BG4ZM_00.mp4
+  -> reused accident_time=3.4000, center_x=0.6406, center_y=0.5140
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=3.4000, center_x=0.6406, center_y=0.5140, type=single
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test11_hybrid_rows1_100_cuda1.csv (16 rows saved)
+
+[17] Processing type-only: videos/maJGw3hQs_s_00.mp4
+  -> reused accident_time=5.6000, center_x=0.3646, center_y=0.3808
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_head_on": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_t_bone": false,
+  "confidence": 0.9
+}
+
+  -> model output: {
+  "type": "sideswipe"
+}
+
+  -> final parsed result: accident_time=5.6000, center_x=0.3646, center_y=0.3808, type=sideswipe
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test11_hybrid_rows1_100_cuda1.csv (17 rows saved)
+
+[18] Processing type-only: videos/aPsS_HaokoU_00.mp4
+  -> reused accident_time=3.0000, center_x=0.9300, center_y=0.8882
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=3.0000, center_x=0.9300, center_y=0.8882, type=single
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test11_hybrid_rows1_100_cuda1.csv (18 rows saved)
+
+[19] Processing type-only: videos/aF2Hbp8C23A_00.mp4
+  -> reused accident_time=3.7000, center_x=0.2875, center_y=0.5000
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_head_on": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_t_bone": true,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=3.7000, center_x=0.2875, center_y=0.5000, type=t-bone
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test11_hybrid_rows1_100_cuda1.csv (19 rows saved)
+
+[20] Processing type-only: videos/82sQ7N-aHOw_00.mp4
+  -> reused accident_time=5.4144, center_x=0.5613, center_y=0.8394
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=5.4144, center_x=0.5613, center_y=0.8394, type=single
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test11_hybrid_rows1_100_cuda1.csv (20 rows saved)
+
+[21] Processing type-only: videos/bJMc3sNP2AU_00.mp4
+  -> reused accident_time=0.5970, center_x=0.7674, center_y=0.2528
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=0.5970, center_x=0.7674, center_y=0.2528, type=single
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test11_hybrid_rows1_100_cuda1.csv (21 rows saved)
+
+[22] Processing type-only: videos/XaqA-uzqeNc_00.mp4
+  -> reused accident_time=1.0000, center_x=0.0200, center_y=0.6107
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=1.0000, center_x=0.0200, center_y=0.6107, type=single
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test11_hybrid_rows1_100_cuda1.csv (22 rows saved)
+
+[23] Processing type-only: videos/gp_9zTMpVrs_00.mp4
+  -> reused accident_time=15.7719, center_x=0.5602, center_y=0.6400
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=15.7719, center_x=0.5602, center_y=0.6400, type=single
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test11_hybrid_rows1_100_cuda1.csv (23 rows saved)
+
+[24] Processing type-only: videos/B_nBw3PcHXg_00.mp4
+  -> reused accident_time=4.0000, center_x=0.4437, center_y=0.4374
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_head_on": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_t_bone": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "rear-end"
+}
+
+  -> final parsed result: accident_time=4.0000, center_x=0.4437, center_y=0.4374, type=rear-end
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test11_hybrid_rows1_100_cuda1.csv (24 rows saved)
+
+[25] Processing type-only: videos/jq-5EaxSR3M_00.mp4
+  -> reused accident_time=10.0000, center_x=0.5429, center_y=0.3445
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_head_on": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_t_bone": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "rear-end"
+}
+
+  -> final parsed result: accident_time=10.0000, center_x=0.5429, center_y=0.3445, type=rear-end
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test11_hybrid_rows1_100_cuda1.csv (25 rows saved)
+
+[26] Processing type-only: videos/4jVVNw9AF2s_00.mp4
+  -> reused accident_time=2.0000, center_x=0.6492, center_y=0.6800
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=2.0000, center_x=0.6492, center_y=0.6800, type=single
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test11_hybrid_rows1_100_cuda1.csv (26 rows saved)
+
+[27] Processing type-only: videos/FR3eYZzgeJY_00.mp4
+  -> reused accident_time=3.8000, center_x=0.3800, center_y=0.6996
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_head_on": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_t_bone": true,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=3.8000, center_x=0.3800, center_y=0.6996, type=t-bone
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test11_hybrid_rows1_100_cuda1.csv (27 rows saved)
+
+[28] Processing type-only: videos/ApyekBAgfg8_00.mp4
+  -> reused accident_time=3.0000, center_x=0.6473, center_y=0.4636
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_head_on": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_t_bone": true,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=3.0000, center_x=0.6473, center_y=0.4636, type=t-bone
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test11_hybrid_rows1_100_cuda1.csv (28 rows saved)
+
+[29] Processing type-only: videos/Mem77KKhF8c_00.mp4
+  -> reused accident_time=2.0000, center_x=0.2329, center_y=0.6276
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_head_on": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_t_bone": true,
+  "confidence": 0.85
+}
+
+  -> final parsed result: accident_time=2.0000, center_x=0.2329, center_y=0.6276, type=t-bone
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test11_hybrid_rows1_100_cuda1.csv (29 rows saved)
+
+[30] Processing type-only: videos/GSvQCAPnFGo_00.mp4
+  -> reused accident_time=4.5000, center_x=0.8322, center_y=0.5506
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_head_on": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_t_bone": true,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=4.5000, center_x=0.8322, center_y=0.5506, type=t-bone
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test11_hybrid_rows1_100_cuda1.csv (30 rows saved)
+
+[31] Processing type-only: videos/fgI4vUtP_1I_00.mp4
+  -> reused accident_time=12.6281, center_x=0.3171, center_y=0.4331
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=12.6281, center_x=0.3171, center_y=0.4331, type=single
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test11_hybrid_rows1_100_cuda1.csv (31 rows saved)
+
+[32] Processing type-only: videos/TthKPyywzu8_00.mp4
+  -> reused accident_time=5.0000, center_x=0.4800, center_y=0.2953
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_head_on": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_t_bone": true,
+  "confidence": 0.9
+}
+
+  -> final parsed result: accident_time=5.0000, center_x=0.4800, center_y=0.2953, type=t-bone
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test11_hybrid_rows1_100_cuda1.csv (32 rows saved)
+
+[33] Processing type-only: videos/LklNl33KztU_00.mp4
+  -> reused accident_time=6.0000, center_x=0.8242, center_y=0.4234
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_head_on": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_t_bone": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "rear-end"
+}
+
+  -> final parsed result: accident_time=6.0000, center_x=0.8242, center_y=0.4234, type=rear-end
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test11_hybrid_rows1_100_cuda1.csv (33 rows saved)
+
+[34] Processing type-only: videos/tK1wd_HCYNo_00.mp4
+  -> reused accident_time=10.0000, center_x=0.4450, center_y=0.5149
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=10.0000, center_x=0.4450, center_y=0.5149, type=single
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test11_hybrid_rows1_100_cuda1.csv (34 rows saved)
+
+[35] Processing type-only: videos/mntY3Xh8lT4_00.mp4
+  -> reused accident_time=3.0000, center_x=0.5496, center_y=0.3967
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=3.0000, center_x=0.5496, center_y=0.3967, type=single
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test11_hybrid_rows1_100_cuda1.csv (35 rows saved)
+
+[36] Processing type-only: videos/CzOWGXrwbp4_00.mp4
+  -> reused accident_time=11.0000, center_x=0.5572, center_y=0.7184
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_head_on": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_t_bone": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "rear-end"
+}
+
+  -> final parsed result: accident_time=11.0000, center_x=0.5572, center_y=0.7184, type=rear-end
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test11_hybrid_rows1_100_cuda1.csv (36 rows saved)
+
+[37] Processing type-only: videos/7AFnEpBVrr4_00.mp4
+  -> reused accident_time=6.0000, center_x=0.4877, center_y=0.8600
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_head_on": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_t_bone": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "rear-end"
+}
+
+  -> final parsed result: accident_time=6.0000, center_x=0.4877, center_y=0.8600, type=rear-end
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test11_hybrid_rows1_100_cuda1.csv (37 rows saved)
+
+[38] Processing type-only: videos/njJxs1KozgE_00.mp4
+  -> reused accident_time=4.0000, center_x=0.5900, center_y=0.5275
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_head_on": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_t_bone": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "sideswipe"
+}
+
+  -> final parsed result: accident_time=4.0000, center_x=0.5900, center_y=0.5275, type=sideswipe
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test11_hybrid_rows1_100_cuda1.csv (38 rows saved)
+
+[39] Processing type-only: videos/-AztVDZ6cEE_00.mp4
+  -> reused accident_time=2.0000, center_x=0.4837, center_y=0.3509
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_head_on": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_t_bone": true,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=2.0000, center_x=0.4837, center_y=0.3509, type=t-bone
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test11_hybrid_rows1_100_cuda1.csv (39 rows saved)
+
+[40] Processing type-only: videos/kUp_0rJe_OI_00.mp4
+  -> reused accident_time=2.0000, center_x=0.3050, center_y=0.2030
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_head_on": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_t_bone": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "sideswipe"
+}
+
+  -> final parsed result: accident_time=2.0000, center_x=0.3050, center_y=0.2030, type=sideswipe
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test11_hybrid_rows1_100_cuda1.csv (40 rows saved)
+
+[41] Processing type-only: videos/a8zHkZ_t16k_00.mp4
+  -> reused accident_time=0.6061, center_x=0.6034, center_y=0.5050
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=0.6061, center_x=0.6034, center_y=0.5050, type=single
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test11_hybrid_rows1_100_cuda1.csv (41 rows saved)
+
+[42] Processing type-only: videos/PQHiBa179Ew_00.mp4
+  -> reused accident_time=6.0000, center_x=0.5827, center_y=0.7522
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_head_on": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_t_bone": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "rear-end"
+}
+
+  -> final parsed result: accident_time=6.0000, center_x=0.5827, center_y=0.7522, type=rear-end
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test11_hybrid_rows1_100_cuda1.csv (42 rows saved)
+
+[43] Processing type-only: videos/-SNFUobKjoM_00.mp4
+  -> reused accident_time=13.0000, center_x=0.5696, center_y=0.7100
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_head_on": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_t_bone": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "rear-end"
+}
+
+  -> final parsed result: accident_time=13.0000, center_x=0.5696, center_y=0.7100, type=rear-end
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test11_hybrid_rows1_100_cuda1.csv (43 rows saved)
+
+[44] Processing type-only: videos/TahWBItdUvQ_00.mp4
+  -> reused accident_time=3.0000, center_x=0.4400, center_y=0.1277
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_head_on": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_t_bone": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "rear-end"
+}
+
+  -> final parsed result: accident_time=3.0000, center_x=0.4400, center_y=0.1277, type=rear-end
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test11_hybrid_rows1_100_cuda1.csv (44 rows saved)
+
+[45] Processing type-only: videos/reXieySb4JI_00.mp4
+  -> reused accident_time=7.0000, center_x=0.7267, center_y=0.6651
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_head_on": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_t_bone": true,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=7.0000, center_x=0.7267, center_y=0.6651, type=t-bone
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test11_hybrid_rows1_100_cuda1.csv (45 rows saved)
+
+[46] Processing type-only: videos/m2uBNOFIvKk_00.mp4
+  -> reused accident_time=1.5572, center_x=0.5411, center_y=0.3700
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_head_on": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_t_bone": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "sideswipe"
+}
+
+  -> final parsed result: accident_time=1.5572, center_x=0.5411, center_y=0.3700, type=sideswipe
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test11_hybrid_rows1_100_cuda1.csv (46 rows saved)
+
+[47] Processing type-only: videos/VXuNX_OYkig_00.mp4
+  -> reused accident_time=0.6028, center_x=0.4997, center_y=0.6727
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_head_on": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_t_bone": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "rear-end"
+}
+
+  -> final parsed result: accident_time=0.6028, center_x=0.4997, center_y=0.6727, type=rear-end
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test11_hybrid_rows1_100_cuda1.csv (47 rows saved)
+
+[48] Processing type-only: videos/GsRdjuR2PpE_00.mp4
+  -> reused accident_time=5.0000, center_x=0.4800, center_y=0.2692
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_head_on": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_t_bone": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "rear-end"
+}
+
+  -> final parsed result: accident_time=5.0000, center_x=0.4800, center_y=0.2692, type=rear-end
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test11_hybrid_rows1_100_cuda1.csv (48 rows saved)
+
+[49] Processing type-only: videos/dGUCJwW8b1g_00.mp4
+  -> reused accident_time=3.0000, center_x=0.5600, center_y=0.5319
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_head_on": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_t_bone": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "sideswipe"
+}
+
+  -> final parsed result: accident_time=3.0000, center_x=0.5600, center_y=0.5319, type=sideswipe
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test11_hybrid_rows1_100_cuda1.csv (49 rows saved)
+
+[50] Processing type-only: videos/FV6XO5Yg9VU_00.mp4
+  -> reused accident_time=13.0000, center_x=0.6019, center_y=0.4733
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_head_on": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_t_bone": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "rear-end"
+}
+
+  -> final parsed result: accident_time=13.0000, center_x=0.6019, center_y=0.4733, type=rear-end
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test11_hybrid_rows1_100_cuda1.csv (50 rows saved)
+
+[51] Processing type-only: videos/iYAIZEocjbg_00.mp4
+  -> reused accident_time=14.0000, center_x=0.4878, center_y=0.5744
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_head_on": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_t_bone": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "sideswipe"
+}
+
+  -> final parsed result: accident_time=14.0000, center_x=0.4878, center_y=0.5744, type=sideswipe
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test11_hybrid_rows1_100_cuda1.csv (51 rows saved)
+
+[52] Processing type-only: videos/n-aa3NIlRMo_00.mp4
+  -> reused accident_time=15.0000, center_x=0.5800, center_y=0.8137
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=15.0000, center_x=0.5800, center_y=0.8137, type=single
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test11_hybrid_rows1_100_cuda1.csv (52 rows saved)
+
+[53] Processing type-only: videos/mDtCi-XVAbo_00.mp4
+  -> reused accident_time=1.0000, center_x=0.5398, center_y=0.5600
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_head_on": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_t_bone": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "sideswipe"
+}
+
+  -> final parsed result: accident_time=1.0000, center_x=0.5398, center_y=0.5600, type=sideswipe
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test11_hybrid_rows1_100_cuda1.csv (53 rows saved)
+
+[54] Processing type-only: videos/QJYDZ1PBiYQ_00.mp4
+  -> reused accident_time=3.0000, center_x=0.6899, center_y=0.7100
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_head_on": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_t_bone": true,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=3.0000, center_x=0.6899, center_y=0.7100, type=t-bone
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test11_hybrid_rows1_100_cuda1.csv (54 rows saved)
+
+[55] Processing type-only: videos/1ZQAChv0TEI_00.mp4
+  -> reused accident_time=5.6440, center_x=0.5852, center_y=0.8203
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_head_on": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_t_bone": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "rear-end"
+}
+
+  -> final parsed result: accident_time=5.6440, center_x=0.5852, center_y=0.8203, type=rear-end
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test11_hybrid_rows1_100_cuda1.csv (55 rows saved)
+
+[56] Processing type-only: videos/e6ZQvn6NyLI_00.mp4
+  -> reused accident_time=4.0000, center_x=0.5200, center_y=0.4655
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_head_on": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_t_bone": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "sideswipe"
+}
+
+  -> final parsed result: accident_time=4.0000, center_x=0.5200, center_y=0.4655, type=sideswipe
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test11_hybrid_rows1_100_cuda1.csv (56 rows saved)
+
+[57] Processing type-only: videos/ui52V2KkRN4_00.mp4
+  -> reused accident_time=6.8650, center_x=0.5100, center_y=0.4300
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=6.8650, center_x=0.5100, center_y=0.4300, type=single
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test11_hybrid_rows1_100_cuda1.csv (57 rows saved)
+
+[58] Processing type-only: videos/QyRcmm87rJ8_00.mp4
+  -> reused accident_time=5.8000, center_x=0.6390, center_y=0.6255
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.99
+}
+
+  -> model output: {
+  "is_head_on": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_t_bone": true,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=5.8000, center_x=0.6390, center_y=0.6255, type=t-bone
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test11_hybrid_rows1_100_cuda1.csv (58 rows saved)
+
+[59] Processing type-only: videos/C7gOL8qM71E_00.mp4
+  -> reused accident_time=5.0000, center_x=0.1501, center_y=0.3500
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=5.0000, center_x=0.1501, center_y=0.3500, type=single
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test11_hybrid_rows1_100_cuda1.csv (59 rows saved)
+
+[60] Processing type-only: videos/At-4-Y2g7Y8_00.mp4
+  -> reused accident_time=5.0000, center_x=0.5511, center_y=0.3174
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_head_on": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_t_bone": false,
+  "confidence": 0.9
+}
+
+  -> model output: {
+  "type": "rear-end"
+}
+
+  -> final parsed result: accident_time=5.0000, center_x=0.5511, center_y=0.3174, type=rear-end
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test11_hybrid_rows1_100_cuda1.csv (60 rows saved)
+
+[61] Processing type-only: videos/1BIZOZtxRpY_00.mp4
+  -> reused accident_time=15.0000, center_x=0.5612, center_y=0.6235
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_head_on": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_t_bone": false,
+  "confidence": 0.9
+}
+
+  -> model output: {
+  "type": "rear-end"
+}
+
+  -> final parsed result: accident_time=15.0000, center_x=0.5612, center_y=0.6235, type=rear-end
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test11_hybrid_rows1_100_cuda1.csv (61 rows saved)
+
+[62] Processing type-only: videos/GWx-Z5rWhzc_00.mp4
+  -> reused accident_time=2.5000, center_x=0.4938, center_y=0.4900
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_head_on": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_t_bone": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "sideswipe"
+}
+
+  -> final parsed result: accident_time=2.5000, center_x=0.4938, center_y=0.4900, type=sideswipe
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test11_hybrid_rows1_100_cuda1.csv (62 rows saved)
+
+[63] Processing type-only: videos/bow1eKeR6oY_00.mp4
+  -> reused accident_time=2.2049, center_x=0.3931, center_y=0.7256
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=2.2049, center_x=0.3931, center_y=0.7256, type=single
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test11_hybrid_rows1_100_cuda1.csv (63 rows saved)
+
+[64] Processing type-only: videos/7CO_LqgfiFg_00.mp4
+  -> reused accident_time=4.0000, center_x=0.5225, center_y=0.7500
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=4.0000, center_x=0.5225, center_y=0.7500, type=single
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test11_hybrid_rows1_100_cuda1.csv (64 rows saved)
+
+[65] Processing type-only: videos/6T58bsyZz40_00.mp4
+  -> reused accident_time=13.0000, center_x=0.6744, center_y=0.3946
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_head_on": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_t_bone": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "sideswipe"
+}
+
+  -> final parsed result: accident_time=13.0000, center_x=0.6744, center_y=0.3946, type=sideswipe
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test11_hybrid_rows1_100_cuda1.csv (65 rows saved)
+
+[66] Processing type-only: videos/bn7c9LxpeuA_00.mp4
+  -> reused accident_time=17.1772, center_x=0.1501, center_y=0.8900
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=17.1772, center_x=0.1501, center_y=0.8900, type=single
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test11_hybrid_rows1_100_cuda1.csv (66 rows saved)
+
+[67] Processing type-only: videos/zISHd2Jt7Qs_00.mp4
+  -> reused accident_time=12.5305, center_x=0.6977, center_y=0.2436
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=12.5305, center_x=0.6977, center_y=0.2436, type=single
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test11_hybrid_rows1_100_cuda1.csv (67 rows saved)
+
+[68] Processing type-only: videos/0isplBZQftg_00.mp4
+  -> reused accident_time=2.0000, center_x=0.6079, center_y=0.6677
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_head_on": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_t_bone": false,
+  "confidence": 0.9
+}
+
+  -> model output: {
+  "type": "sideswipe"
+}
+
+  -> final parsed result: accident_time=2.0000, center_x=0.6079, center_y=0.6677, type=sideswipe
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test11_hybrid_rows1_100_cuda1.csv (68 rows saved)
+
+[69] Processing type-only: videos/1lD9kE-VJ7I_00.mp4
+  -> reused accident_time=4.9000, center_x=0.4800, center_y=0.6479
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_head_on": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_t_bone": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "sideswipe"
+}
+
+  -> final parsed result: accident_time=4.9000, center_x=0.4800, center_y=0.6479, type=sideswipe
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test11_hybrid_rows1_100_cuda1.csv (69 rows saved)
+
+[70] Processing type-only: videos/afVZZ3v87cc_00.mp4
+  -> reused accident_time=1.0000, center_x=0.4700, center_y=0.5100
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_head_on": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_t_bone": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "rear-end"
+}
+
+  -> final parsed result: accident_time=1.0000, center_x=0.4700, center_y=0.5100, type=rear-end
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test11_hybrid_rows1_100_cuda1.csv (70 rows saved)
+
+[71] Processing type-only: videos/fYUPTfVRKEk_00.mp4
+  -> reused accident_time=3.0000, center_x=0.2662, center_y=0.3400
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_head_on": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_t_bone": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "rear-end"
+}
+
+  -> final parsed result: accident_time=3.0000, center_x=0.2662, center_y=0.3400, type=rear-end
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test11_hybrid_rows1_100_cuda1.csv (71 rows saved)
+
+[72] Processing type-only: videos/NDkAFTqHLzo_00.mp4
+  -> reused accident_time=2.8000, center_x=0.6417, center_y=0.5200
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_head_on": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_t_bone": false,
+  "confidence": 0.9
+}
+
+  -> model output: {
+  "type": "rear-end"
+}
+
+  -> final parsed result: accident_time=2.8000, center_x=0.6417, center_y=0.5200, type=rear-end
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test11_hybrid_rows1_100_cuda1.csv (72 rows saved)
+
+[73] Processing type-only: videos/BR4WAtlyQEQ_00.mp4
+  -> reused accident_time=7.0000, center_x=0.5431, center_y=0.3600
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_head_on": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_t_bone": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "rear-end"
+}
+
+  -> final parsed result: accident_time=7.0000, center_x=0.5431, center_y=0.3600, type=rear-end
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test11_hybrid_rows1_100_cuda1.csv (73 rows saved)
+
+[74] Processing type-only: videos/zXKdiWjxhd8_00.mp4
+  -> reused accident_time=7.0000, center_x=0.3339, center_y=0.6533
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_head_on": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_t_bone": true,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=7.0000, center_x=0.3339, center_y=0.6533, type=t-bone
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test11_hybrid_rows1_100_cuda1.csv (74 rows saved)
+
+[75] Processing type-only: videos/JHq6SVNhY0Y_00.mp4
+  -> reused accident_time=3.0000, center_x=0.8489, center_y=0.7592
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_head_on": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_t_bone": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "sideswipe"
+}
+
+  -> final parsed result: accident_time=3.0000, center_x=0.8489, center_y=0.7592, type=sideswipe
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test11_hybrid_rows1_100_cuda1.csv (75 rows saved)
+
+[76] Processing type-only: videos/03HtRCJa8Yk_00.mp4
+  -> reused accident_time=6.0000, center_x=0.3411, center_y=0.5072
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_head_on": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_t_bone": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "sideswipe"
+}
+
+  -> final parsed result: accident_time=6.0000, center_x=0.3411, center_y=0.5072, type=sideswipe
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test11_hybrid_rows1_100_cuda1.csv (76 rows saved)
+
+[77] Processing type-only: videos/6EW9PrDqKA8_00.mp4
+  -> reused accident_time=5.0000, center_x=0.2100, center_y=0.6950
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_head_on": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_t_bone": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "sideswipe"
+}
+
+  -> final parsed result: accident_time=5.0000, center_x=0.2100, center_y=0.6950, type=sideswipe
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test11_hybrid_rows1_100_cuda1.csv (77 rows saved)
+
+[78] Processing type-only: videos/-NgnSm_oEB4_00.mp4
+  -> reused accident_time=11.0000, center_x=0.2929, center_y=0.4419
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_head_on": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_t_bone": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "rear-end"
+}
+
+  -> final parsed result: accident_time=11.0000, center_x=0.2929, center_y=0.4419, type=rear-end
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test11_hybrid_rows1_100_cuda1.csv (78 rows saved)
+
+[79] Processing type-only: videos/wQ_pGHoj2SI_00.mp4
+  -> reused accident_time=10.1887, center_x=0.2607, center_y=0.4551
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_head_on": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_t_bone": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "rear-end"
+}
+
+  -> final parsed result: accident_time=10.1887, center_x=0.2607, center_y=0.4551, type=rear-end
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test11_hybrid_rows1_100_cuda1.csv (79 rows saved)
+
+[80] Processing type-only: videos/dZ-F8lZ16-A_00.mp4
+  -> reused accident_time=5.5000, center_x=0.5300, center_y=0.3209
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_head_on": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_t_bone": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "rear-end"
+}
+
+  -> final parsed result: accident_time=5.5000, center_x=0.5300, center_y=0.3209, type=rear-end
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test11_hybrid_rows1_100_cuda1.csv (80 rows saved)
+
+[81] Processing type-only: videos/Chf8yRqccCM_00.mp4
+  -> reused accident_time=5.2197, center_x=0.3100, center_y=0.6786
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_head_on": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_t_bone": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "sideswipe"
+}
+
+  -> final parsed result: accident_time=5.2197, center_x=0.3100, center_y=0.6786, type=sideswipe
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test11_hybrid_rows1_100_cuda1.csv (81 rows saved)
+
+[82] Processing type-only: videos/P4oEdSFJvfU_00.mp4
+  -> reused accident_time=12.9867, center_x=0.1758, center_y=0.5549
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_head_on": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_t_bone": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "rear-end"
+}
+
+  -> final parsed result: accident_time=12.9867, center_x=0.1758, center_y=0.5549, type=rear-end
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test11_hybrid_rows1_100_cuda1.csv (82 rows saved)
+
+[83] Processing type-only: videos/yQz3PyPvr5Y_00.mp4
+  -> reused accident_time=4.0000, center_x=0.0519, center_y=0.6799
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_head_on": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_t_bone": false,
+  "confidence": 0.9
+}
+
+  -> model output: {
+  "type": "sideswipe"
+}
+
+  -> final parsed result: accident_time=4.0000, center_x=0.0519, center_y=0.6799, type=sideswipe
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test11_hybrid_rows1_100_cuda1.csv (83 rows saved)
+
+[84] Processing type-only: videos/FhFwhsyOjUU_00.mp4
+  -> reused accident_time=9.6000, center_x=0.8850, center_y=0.5692
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_head_on": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_t_bone": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "rear-end"
+}
+
+  -> final parsed result: accident_time=9.6000, center_x=0.8850, center_y=0.5692, type=rear-end
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test11_hybrid_rows1_100_cuda1.csv (84 rows saved)
+
+[85] Processing type-only: videos/GaAVUUYx9q8_00.mp4
+  -> reused accident_time=2.0067, center_x=0.5600, center_y=0.8100
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_head_on": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_t_bone": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "rear-end"
+}
+
+  -> final parsed result: accident_time=2.0067, center_x=0.5600, center_y=0.8100, type=rear-end
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test11_hybrid_rows1_100_cuda1.csv (85 rows saved)
+
+[86] Processing type-only: videos/-jZ5Rlhzzi4_00.mp4
+  -> reused accident_time=2.2110, center_x=0.3044, center_y=0.7712
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=2.2110, center_x=0.3044, center_y=0.7712, type=single
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test11_hybrid_rows1_100_cuda1.csv (86 rows saved)
+
+[87] Processing type-only: videos/LP_C34tyPl4_00.mp4
+  -> reused accident_time=11.9900, center_x=0.4340, center_y=0.4800
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_head_on": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_t_bone": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "sideswipe"
+}
+
+  -> final parsed result: accident_time=11.9900, center_x=0.4340, center_y=0.4800, type=sideswipe
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test11_hybrid_rows1_100_cuda1.csv (87 rows saved)
+
+[88] Processing type-only: videos/tFS_Hk-qEiQ_00.mp4
+  -> reused accident_time=0.8077, center_x=0.4752, center_y=0.7306
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_head_on": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_t_bone": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "rear-end"
+}
+
+  -> final parsed result: accident_time=0.8077, center_x=0.4752, center_y=0.7306, type=rear-end
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test11_hybrid_rows1_100_cuda1.csv (88 rows saved)
+
+[89] Processing type-only: videos/mzHmLvV9QlM_00.mp4
+  -> reused accident_time=6.6241, center_x=0.5128, center_y=0.7728
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=6.6241, center_x=0.5128, center_y=0.7728, type=single
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test11_hybrid_rows1_100_cuda1.csv (89 rows saved)
+
+[90] Processing type-only: videos/c4exlXawFaM_00.mp4
+  -> reused accident_time=2.0089, center_x=0.1848, center_y=0.4459
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_head_on": false,
+  "confidence": 0.99
+}
+
+  -> model output: {
+  "is_t_bone": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "rear-end"
+}
+
+  -> final parsed result: accident_time=2.0089, center_x=0.1848, center_y=0.4459, type=rear-end
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test11_hybrid_rows1_100_cuda1.csv (90 rows saved)
+
+[91] Processing type-only: videos/-yLuZ5wxAsc_00.mp4
+  -> reused accident_time=6.0000, center_x=0.4315, center_y=0.4539
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_head_on": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_t_bone": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "sideswipe"
+}
+
+  -> final parsed result: accident_time=6.0000, center_x=0.4315, center_y=0.4539, type=sideswipe
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test11_hybrid_rows1_100_cuda1.csv (91 rows saved)
+
+[92] Processing type-only: videos/uKieP03gwxQ_00.mp4
+  -> reused accident_time=0.6023, center_x=0.5805, center_y=0.6736
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_head_on": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_t_bone": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "rear-end"
+}
+
+  -> final parsed result: accident_time=0.6023, center_x=0.5805, center_y=0.6736, type=rear-end
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test11_hybrid_rows1_100_cuda1.csv (92 rows saved)
+
+[93] Processing type-only: videos/Q72Ly8rGtnc_00.mp4
+  -> reused accident_time=19.4269, center_x=0.3818, center_y=0.7335
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=19.4269, center_x=0.3818, center_y=0.7335, type=single
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test11_hybrid_rows1_100_cuda1.csv (93 rows saved)
+
+[94] Processing type-only: videos/Img4DcUjRmo_00.mp4
+  -> reused accident_time=2.0000, center_x=0.3094, center_y=0.2702
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=2.0000, center_x=0.3094, center_y=0.2702, type=single
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test11_hybrid_rows1_100_cuda1.csv (94 rows saved)
+
+[95] Processing type-only: videos/LMw1OJe37fM_00.mp4
+  -> reused accident_time=1.0000, center_x=0.3213, center_y=0.4074
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_head_on": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_t_bone": true,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=1.0000, center_x=0.3213, center_y=0.4074, type=t-bone
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test11_hybrid_rows1_100_cuda1.csv (95 rows saved)
+
+[96] Processing type-only: videos/jgAGNNIG13E_00.mp4
+  -> reused accident_time=6.6147, center_x=0.5330, center_y=0.4808
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=6.6147, center_x=0.5330, center_y=0.4808, type=single
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test11_hybrid_rows1_100_cuda1.csv (96 rows saved)
+
+[97] Processing type-only: videos/Fb1XWmXZTZw_00.mp4
+  -> reused accident_time=10.4098, center_x=0.4176, center_y=0.4516
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_head_on": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_t_bone": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "rear-end"
+}
+
+  -> final parsed result: accident_time=10.4098, center_x=0.4176, center_y=0.4516, type=rear-end
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test11_hybrid_rows1_100_cuda1.csv (97 rows saved)
+
+[98] Processing type-only: videos/mllfWsyVZ1s_00.mp4
+  -> reused accident_time=5.0639, center_x=0.4352, center_y=0.6600
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=5.0639, center_x=0.4352, center_y=0.6600, type=single
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test11_hybrid_rows1_100_cuda1.csv (98 rows saved)
+
+[99] Processing type-only: videos/clXKxQWjB4c_00.mp4
+  -> reused accident_time=13.0000, center_x=0.5147, center_y=0.6800
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=13.0000, center_x=0.5147, center_y=0.6800, type=single
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test11_hybrid_rows1_100_cuda1.csv (99 rows saved)
+
+[100] Processing type-only: videos/ozOAT76M0PM_00.mp4
+  -> reused accident_time=2.9000, center_x=0.7107, center_y=0.6674
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_head_on": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "is_t_bone": false,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "sideswipe"
+}
+
+  -> final parsed result: accident_time=2.9000, center_x=0.7107, center_y=0.6674, type=sideswipe
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test11_hybrid_rows1_100_cuda1.csv (100 rows saved)
+
+Saved predictions incrementally to: /root/Desktop/workspace/yujin/result/qwen_test11_hybrid_rows1_100_cuda1.csv
+Raw outputs saved to: /root/Desktop/workspace/yujin/code/accident/qwen_test11_hybrid_rows1_100_cuda1_raw_outputs.jsonl
+The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+Loading weights:   0%|          | 0/760 [00:00<?, ?it/s]Loading weights:   0%|          | 1/760 [00:00<06:24,  1.98it/s]Loading weights:   0%|          | 2/760 [00:01<07:20,  1.72it/s]Loading weights:   2%|▏         | 14/760 [00:01<00:45, 16.45it/s]Loading weights:   4%|▎         | 27/760 [00:01<00:22, 33.23it/s]Loading weights:   5%|▌         | 38/760 [00:01<00:15, 46.60it/s]Loading weights:   6%|▌         | 47/760 [00:01<00:14, 48.65it/s]Loading weights:   8%|▊         | 59/760 [00:01<00:11, 62.03it/s]Loading weights:   9%|▉         | 68/760 [00:01<00:10, 67.74it/s]Loading weights:  11%|█         | 80/760 [00:01<00:08, 79.93it/s]Loading weights:  12%|█▏        | 94/760 [00:02<00:07, 87.65it/s]Loading weights:  14%|█▎        | 104/760 [00:02<00:07, 85.03it/s]Loading weights:  16%|█▌        | 119/760 [00:02<00:06, 99.42it/s]Loading weights:  17%|█▋        | 132/760 [00:02<00:05, 105.09it/s]Loading weights:  19%|█▉        | 144/760 [00:02<00:06, 101.68it/s]Loading weights:  20%|██        | 155/760 [00:02<00:07, 83.22it/s] Loading weights:  23%|██▎       | 172/760 [00:02<00:06, 93.92it/s]Loading weights:  24%|██▍       | 186/760 [00:03<00:06, 94.73it/s]Loading weights:  26%|██▋       | 200/760 [00:03<00:05, 101.20it/s]Loading weights:  28%|██▊       | 211/760 [00:03<00:06, 86.89it/s] Loading weights:  30%|██▉       | 225/760 [00:03<00:05, 97.49it/s]Loading weights:  31%|███       | 237/760 [00:03<00:05, 101.38it/s]Loading weights:  33%|███▎      | 249/760 [00:03<00:05, 101.07it/s]Loading weights:  34%|███▍      | 260/760 [00:03<00:06, 81.12it/s] Loading weights:  36%|███▋      | 277/760 [00:03<00:05, 96.17it/s]Loading weights:  38%|███▊      | 291/760 [00:04<00:04, 103.70it/s]Loading weights:  40%|███▉      | 303/760 [00:04<00:04, 99.55it/s] Loading weights:  41%|████▏     | 314/760 [00:04<00:05, 80.92it/s]Loading weights:  44%|████▎     | 331/760 [00:04<00:04, 97.16it/s]Loading weights:  45%|████▌     | 344/760 [00:04<00:03, 104.05it/s]Loading weights:  47%|████▋     | 356/760 [00:04<00:04, 100.04it/s]Loading weights:  48%|████▊     | 367/760 [00:04<00:04, 80.64it/s] Loading weights:  51%|█████     | 384/760 [00:05<00:03, 96.34it/s]Loading weights:  52%|█████▏    | 396/760 [00:05<00:03, 99.06it/s]Loading weights:  54%|█████▎    | 407/760 [00:05<00:03, 89.56it/s]Loading weights:  55%|█████▍    | 417/760 [00:05<00:03, 85.91it/s]Loading weights:  57%|█████▋    | 433/760 [00:05<00:03, 103.08it/s]Loading weights:  71%|███████   | 537/760 [00:05<00:00, 338.95it/s]Loading weights:  82%|████████▏ | 625/760 [00:05<00:00, 468.03it/s]Loading weights:  95%|█████████▌| 722/760 [00:05<00:00, 602.79it/s]Loading weights: 100%|██████████| 760/760 [00:05<00:00, 126.97it/s]
+Keyword argument `enable_thinking` is not a valid argument for this processor and will be ignored.
+/opt/conda/envs/yujin/lib/python3.10/site-packages/transformers/video_processing_utils.py:872: UserWarning: `torchcodec` is not installed and cannot be used to decode the video by default. Falling back to `torchvision`. Note that `torchvision` decoding is deprecated and will be removed in future versions. 
+  warnings.warn(
+/opt/conda/envs/yujin/lib/python3.10/site-packages/transformers/video_utils.py:534: UserWarning: Using `torchvision` for video decoding is deprecated and will be removed in future versions. Please use `torchcodec` instead.
+  warnings.warn(
+
+

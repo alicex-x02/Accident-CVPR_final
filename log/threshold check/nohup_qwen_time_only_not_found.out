@@ -1,0 +1,123 @@
+Loading model: Qwen/Qwen3.5-9B
+Using device: cuda
+The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+Loading weights:   0%|          | 0/760 [00:00<?, ?it/s]Loading weights:   0%|          | 1/760 [00:00<06:15,  2.02it/s]Loading weights:   3%|▎         | 26/760 [00:00<00:12, 56.48it/s]Loading weights:   5%|▌         | 40/760 [00:00<00:10, 69.54it/s]Loading weights:   7%|▋         | 52/760 [00:00<00:11, 64.04it/s]Loading weights:   9%|▉         | 67/760 [00:01<00:09, 72.92it/s]Loading weights:  11%|█         | 82/760 [00:01<00:08, 83.92it/s]Loading weights:  13%|█▎        | 96/760 [00:01<00:07, 90.60it/s]Loading weights:  14%|█▍        | 107/760 [00:01<00:06, 94.39it/s]Loading weights:  16%|█▌        | 120/760 [00:01<00:06, 102.06it/s]Loading weights:  18%|█▊        | 134/760 [00:01<00:06, 104.20it/s]Loading weights:  19%|█▉        | 147/760 [00:01<00:05, 109.21it/s]Loading weights:  21%|██        | 159/760 [00:01<00:05, 106.80it/s]Loading weights:  23%|██▎       | 173/760 [00:02<00:05, 113.87it/s]Loading weights:  25%|██▍       | 187/760 [00:02<00:05, 113.52it/s]Loading weights:  26%|██▋       | 201/760 [00:02<00:04, 113.45it/s]Loading weights:  28%|██▊       | 213/760 [00:02<00:05, 101.96it/s]Loading weights:  30%|██▉       | 226/760 [00:02<00:05, 103.85it/s]Loading weights:  31%|███▏      | 239/760 [00:02<00:04, 108.86it/s]Loading weights:  33%|███▎      | 251/760 [00:02<00:04, 108.32it/s]Loading weights:  34%|███▍      | 262/760 [00:02<00:05, 88.22it/s] Loading weights:  36%|███▋      | 277/760 [00:03<00:04, 101.16it/s]Loading weights:  38%|███▊      | 288/760 [00:03<00:04, 98.42it/s] Loading weights:  39%|███▉      | 299/760 [00:03<00:04, 95.92it/s]Loading weights:  41%|████      | 309/760 [00:03<00:05, 87.38it/s]Loading weights:  42%|████▏     | 319/760 [00:03<00:05, 82.89it/s]Loading weights:  44%|████▎     | 332/760 [00:03<00:04, 93.85it/s]Loading weights:  45%|████▌     | 345/760 [00:03<00:04, 103.07it/s]Loading weights:  47%|████▋     | 359/760 [00:03<00:03, 110.37it/s]Loading weights:  49%|████▉     | 371/760 [00:04<00:03, 103.68it/s]Loading weights:  51%|█████     | 385/760 [00:04<00:03, 110.76it/s]Loading weights:  52%|█████▎    | 399/760 [00:04<00:03, 113.76it/s]Loading weights:  54%|█████▍    | 413/760 [00:04<00:02, 117.75it/s]Loading weights:  56%|█████▌    | 425/760 [00:04<00:03, 104.07it/s]Loading weights:  73%|███████▎  | 555/760 [00:04<00:00, 407.04it/s]Loading weights:  86%|████████▌ | 651/760 [00:04<00:00, 551.79it/s]Loading weights:  98%|█████████▊| 743/760 [00:04<00:00, 648.62it/s]Loading weights: 100%|██████████| 760/760 [00:04<00:00, 156.03it/s]
+Shard setup: part 1/1, rows 1-2027 of 2027
+
+[1] Processing: videos/Z4kg2Ev3vhk_00.mp4
+Keyword argument `enable_thinking` is not a valid argument for this processor and will be ignored.
+/opt/conda/envs/yujin/lib/python3.10/site-packages/transformers/video_processing_utils.py:872: UserWarning: `torchcodec` is not installed and cannot be used to decode the video by default. Falling back to `torchvision`. Note that `torchvision` decoding is deprecated and will be removed in future versions. 
+  warnings.warn(
+/opt/conda/envs/yujin/lib/python3.10/site-packages/transformers/video_utils.py:534: UserWarning: Using `torchvision` for video decoding is deprecated and will be removed in future versions. Please use `torchcodec` instead.
+  warnings.warn(
+  -> model output: {
+  "found": false,
+  "accident_time": null,
+  "confidence": 1.0
+}
+
+  -> 못찾음: reason=qwen_returned_found_false, raw_time={'found': False, 'accident_time': None, 'confidence': 1.0}
+  -> CSV updated: /workspace/yujin/result/qwen_time_only_not_found_predictions.csv (1 rows saved)
+
+[2] Processing: videos/unS0-TLF1ao_00.mp4
+  -> model output: {
+  "found": false,
+  "accident_time": null,
+  "confidence": 0.0
+}
+
+  -> 못찾음: reason=qwen_returned_found_false, raw_time={'found': False, 'accident_time': None, 'confidence': 0.0}
+  -> CSV updated: /workspace/yujin/result/qwen_time_only_not_found_predictions.csv (2 rows saved)
+
+[3] Processing: videos/UarP8qU1S-c_00.mp4
+  -> model output: {
+  "found": false,
+  "accident_time": null,
+  "confidence": 1.0
+}
+
+  -> 못찾음: reason=qwen_returned_found_false, raw_time={'found': False, 'accident_time': None, 'confidence': 1.0}
+  -> CSV updated: /workspace/yujin/result/qwen_time_only_not_found_predictions.csv (3 rows saved)
+
+[4] Processing: videos/UarP8qU1S-c_01.mp4
+  -> model output: {
+  "found": false,
+  "accident_time": null,
+  "confidence": 0.0
+}
+
+  -> 못찾음: reason=qwen_returned_found_false, raw_time={'found': False, 'accident_time': None, 'confidence': 0.0}
+  -> CSV updated: /workspace/yujin/result/qwen_time_only_not_found_predictions.csv (4 rows saved)
+
+[5] Processing: videos/nAXTthLfgtI_00.mp4
+  -> model output: {
+  "found": false,
+  "accident_time": null,
+  "confidence": 1.0
+}
+
+  -> 못찾음: reason=qwen_returned_found_false, raw_time={'found': False, 'accident_time': None, 'confidence': 1.0}
+  -> CSV updated: /workspace/yujin/result/qwen_time_only_not_found_predictions.csv (5 rows saved)
+
+[6] Processing: videos/fzWY0vLAXzI_00.mp4
+  -> model output: {
+  "found": true,
+  "accident_time": 4.0,
+  "confidence": 0.95
+}
+
+  -> 찾음: accident_time=4.0000, confidence=0.950
+  -> CSV updated: /workspace/yujin/result/qwen_time_only_not_found_predictions.csv (6 rows saved)
+
+[7] Processing: videos/vxZ47DoPNY8_00.mp4
+  -> model output: {
+  "found": true,
+  "accident_time": 2.9,
+  "confidence": 0.95
+}
+
+  -> 찾음: accident_time=2.9000, confidence=0.950
+  -> CSV updated: /workspace/yujin/result/qwen_time_only_not_found_predictions.csv (7 rows saved)
+
+[8] Processing: videos/OXVXsdDT9QQ_00.mp4
+  -> model output: {
+  "found": true,
+  "accident_time": 1.0,
+  "confidence": 0.95
+}
+
+  -> 찾음: accident_time=1.0000, confidence=0.950
+  -> CSV updated: /workspace/yujin/result/qwen_time_only_not_found_predictions.csv (8 rows saved)
+
+[9] Processing: videos/VozrseCzhQc_00.mp4
+  -> model output: {
+  "found": false,
+  "accident_time": null,
+  "confidence": 1.0
+}
+
+  -> 못찾음: reason=qwen_returned_found_false, raw_time={'found': False, 'accident_time': None, 'confidence': 1.0}
+  -> CSV updated: /workspace/yujin/result/qwen_time_only_not_found_predictions.csv (9 rows saved)
+
+[10] Processing: videos/kABWTDKgc9U_00.mp4
+  -> model output: {
+  "found": false,
+  "accident_time": null,
+  "confidence": 1.0
+}
+
+  -> 못찾음: reason=qwen_returned_found_false, raw_time={'found': False, 'accident_time': None, 'confidence': 1.0}
+  -> CSV updated: /workspace/yujin/result/qwen_time_only_not_found_predictions.csv (10 rows saved)
+
+[11] Processing: videos/ftk_fSc4haM_00.mp4
+  -> model output: {
+  "found": true,
+  "accident_time": 6.0,
+  "confidence": 0.95
+}
+
+  -> 찾음: accident_time=6.0000, confidence=0.950
+  -> CSV updated: /workspace/yujin/result/qwen_time_only_not_found_predictions.csv (11 rows saved)
+
+[12] Processing: videos/BgdKGnFqz0I_00.mp4
+  -> model output: 

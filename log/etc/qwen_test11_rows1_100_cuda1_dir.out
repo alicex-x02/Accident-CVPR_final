@@ -1,0 +1,6 @@
+ERROR conda.cli.main_run:execute(33): Subprocess for 'conda run ['python', '/root/Desktop/workspace/yujin/code/qwen_test11_hybrid.py', '--start-row', '1', '--end-row', '100', '--part-name', 'rows1_100_cuda1_dir', '--reuse-prediction-csv', '/root/Desktop/workspace/yujin/result/test10/qwen_test10_hybrid.csv']' command failed.  (See above for error)
+usage: qwen_test11_hybrid.py [-h] [--start-row START_ROW] [--end-row END_ROW]
+                             [--part-name PART_NAME] [--gpu-id GPU_ID]
+                             [--launch-two-gpus]
+qwen_test11_hybrid.py: error: unrecognized arguments: --reuse-prediction-csv /root/Desktop/workspace/yujin/result/test10/qwen_test10_hybrid.csv
+
