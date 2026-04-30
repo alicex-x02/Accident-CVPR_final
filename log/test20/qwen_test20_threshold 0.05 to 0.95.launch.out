@@ -1,0 +1,6 @@
+nohup: ignoring input
+Launching part0 on GPU 0 for rows 1..1013 -> /root/Desktop/workspace/yujin/log/qwen_test20_threshold 0.05 to 0.95_part0_gpu0.out
+Launching part1 on GPU 1 for rows 1014..2027 -> /root/Desktop/workspace/yujin/log/qwen_test20_threshold 0.05 to 0.95_part1_gpu1.out
+Finished /root/Desktop/workspace/yujin/log/qwen_test20_threshold 0.05 to 0.95_part0_gpu0.out with exit code 0
+Finished /root/Desktop/workspace/yujin/log/qwen_test20_threshold 0.05 to 0.95_part1_gpu1.out with exit code 0
+
