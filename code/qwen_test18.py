@@ -55,9 +55,10 @@ TIME_CANDIDATE_CLIP_WINDOW_SEC = 0.75
 TIME_CANDIDATE_CLIP_FPS = 6.0
 
 # Hybrid switch rule:
-# - Trust Qwen when its self-reported confidence is at least 3/5.
-# - Use OF rule when confidence is below 3/5 or missing.
-HYBRID_QWEN_MIN_CONFIDENCE = 3.0
+# - Trust Qwen whenever the accident is visible enough to provide a usable estimate.
+# - Use OF only when Qwen reports very low reliability: confidence below 2/5 or missing.
+#   With the prompt below, confidence=2 means "visible but temporally ambiguous", so it is still preserved.
+HYBRID_QWEN_MIN_CONFIDENCE = 2.0
 
 LOCATION_FRAME_OFFSETS = (-0.20, 0.0, 0.20)
 LOCATION_CROP_SCALES = (0.40, 0.26)
@@ -183,28 +184,34 @@ def build_time_prompt(metadata: Dict[str, str]) -> str:
     prompt = f"""
 You are an expert traffic accident analyst looking at CCTV footage.
 
-Your task is to detect the first clear traffic accident in the video and return ONLY the accident start time in seconds.
+Your task is to estimate the FIRST accident onset time in seconds and report a calibrated confidence score from 0 to 5.
 
 {_meta_block(metadata)}
 
+Accident time definition:
+- accident_time is the earliest moment when the target accident begins.
+- Prefer the first frame where physical contact begins.
+- If the exact contact frame is occluded, use the first moment where the collision becomes clearly unavoidable and immediate.
+- Do NOT choose the most dramatic motion, aftermath, vehicle stopping, or later traffic movement if it occurs after the first contact.
+
 Instructions:
-1. Carefully analyze the ENTIRE video.
-2. Find the earliest accident_time (in seconds) when a traffic accident CLEARLY BEGINS.
-3. accident_time must correspond to the earliest collision moment:
-   - the first frame where physical contact begins, or
-   - the first frame where collision is clearly unavoidable and immediate.
-4. Ignore the exact location and the accident type in this step.
-5. Rate your confidence in your own time prediction on a 0 to 5 scale.
-   - 5 means the first contact is unmistakably visible and you are highly certain.
-   - 4 means clear, but there is a small amount of occlusion or ambiguity.
-   - 3 means plausible and probably correct, but not fully certain.
-   - 2 means weak estimate, with several plausible times.
-   - 1 means you are mostly guessing.
-   - 0 means you cannot reliably determine the time.
-6. If you are not confident enough, do not guess a random time.
-   - Set accident_time to null.
-   - Set confidence to 0.
-7. Reserve confidence=5 for cases where the first contact is visually obvious.
+1. Carefully analyze the ENTIRE video before deciding.
+2. If any traffic accident is visible, always output your best estimated accident_time.
+3. Do NOT output null unless the video is unreadable or no traffic accident is visible at all.
+4. If the accident is visible but the exact first contact is ambiguous or occluded, still output the best plausible onset time with low confidence instead of null.
+5. Avoid accident_time = 0.0 unless the accident truly begins at the very start of the video.
+6. If multiple plausible accident moments exist, choose the earliest plausible onset of the target accident and lower the confidence.
+7. Confidence should estimate temporal reliability: how likely the predicted accident_time is to be close to the true first collision onset.
+8. Confidence should NOT simply mean visual clarity of any scene, any vehicle motion, or any aftermath.
+9. If the accident itself is visible and your estimate is usable, use confidence 2 or higher. Use confidence 0 or 1 only when the timing estimate is based on almost no direct accident-onset evidence.
+
+Use the full 0 to 5 confidence scale:
+- 5: Almost certain. The first physical contact/onset is clearly visible, with no competing plausible event. The predicted time should be within about 0.5 seconds.
+- 4: High confidence. The onset is visible or strongly supported by immediate pre-contact motion, with only minor blur/occlusion/viewpoint ambiguity. The predicted time should be within about 1 second.
+- 3: Moderate confidence. The target accident onset is plausible, but the exact contact frame is uncertain within about 1-2 seconds. There may be mild occlusion or multiple nearby frames, but the selected event is likely the target accident onset.
+- 2: Usable but low confidence. The target accident is visible, but the first onset is difficult to localize because of occlusion, weak temporal evidence, or multiple plausible onset moments. Still provide the best estimate; it may be off by more than 2 seconds.
+- 1: Very low confidence. The accident onset is not directly visible; the estimate is mostly based on weak context, aftermath, or indirect motion.
+- 0: Unusable. No meaningful accident-related visual evidence is visible, or the video cannot be interpreted. Do not use 0 for ordinary uncertainty when an accident is visible.
 
 Critical output rules:
 - Output JSON only.
@@ -516,8 +523,8 @@ def predict_time_with_hybrid_qwen_of(
     Strategy:
     1. Ask Qwen for the full-video accident_time.
     2. Ask Qwen for a self-reported confidence score from 0 to 5.
-    3. If confidence is at least 3, use Qwen time.
-    4. If confidence is below 3 or missing, run OF rule selector.
+    3. If confidence is at least 2, use Qwen time.
+    4. If confidence is below 2 or missing, run OF rule selector.
     5. If OF produces a valid candidate, use OF time; otherwise fallback to Qwen time.
 
     Location/type code remains unchanged and receives the selected accident_time.

@@ -183,7 +183,7 @@ def build_time_prompt(metadata: Dict[str, str]) -> str:
     prompt = f"""
 You are an expert traffic accident analyst looking at CCTV footage.
 
-Your task is to detect the first clear traffic accident in the video and return ONLY the accident start time in seconds.
+Your task is to detect the first clear traffic accident in the video and return ONLY the best estimated accident start time in seconds.
 
 {_meta_block(metadata)}
 
@@ -194,17 +194,18 @@ Instructions:
    - the first frame where physical contact begins, or
    - the first frame where collision is clearly unavoidable and immediate.
 4. Ignore the exact location and the accident type in this step.
-5. Rate your confidence in your own time prediction on a 0 to 5 scale.
-   - 5 means the first contact is unmistakably visible and you are highly certain.
-   - 4 means clear, but there is a small amount of occlusion or ambiguity.
-   - 3 means plausible and probably correct, but not fully certain.
-   - 2 means weak estimate, with several plausible times.
-   - 1 means you are mostly guessing.
-   - 0 means you cannot reliably determine the time.
-6. If you are not confident enough, do not guess a random time.
-   - Set accident_time to null.
-   - Set confidence to 0.
-7. Reserve confidence=5 for cases where the first contact is visually obvious.
+5. Always output your best estimated accident_time, even when the exact contact frame is uncertain.
+6. Do NOT output null unless the video is unreadable or no traffic accident is visible at all.
+7. Use confidence to express uncertainty instead of refusing to estimate.
+8. Use the full 0 to 5 confidence scale according to this rubric:
+   - 5: The first physical contact is clearly visible with almost no ambiguity.
+   - 4: The contact is visible, but there is slight blur, occlusion, low resolution, or viewpoint ambiguity.
+   - 3: The accident onset is plausible from motion/context, but the exact contact frame is uncertain within about 1-2 seconds.
+   - 2: The accident is visible, but there are multiple plausible onset times, heavy occlusion, or substantial ambiguity.
+   - 1: Only weak evidence of the accident timing is visible; the estimate is mostly based on context or aftermath.
+   - 0: No meaningful accident-related visual evidence is visible, or the video cannot be interpreted.
+9. Do not use confidence=0 for ordinary uncertainty. Use confidence=1 or 2 for weak but usable estimates.
+10. Reserve confidence=5 only for cases where the first contact is visually obvious.
 
 Critical output rules:
 - Output JSON only.
@@ -225,7 +226,6 @@ Output format:
 }}
 """
     return prompt.strip()
-
 
 def build_time_candidate_selector_prompt(metadata: Dict[str, str], num_candidates: int) -> str:
     prompt = f"""

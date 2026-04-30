@@ -1,0 +1,6 @@
+[launch] part0 start-row=265 end-row=1013 gpu=0
+[launch] part0 pid=879093
+[launch] part1 start-row=1282 end-row=2027 gpu=1
+[launch] part1 pid=879094
+[retry] part1 start-row=1282 end-row=2027 gpu=1 outer_cuda_visible_devices=1
+[retry] part1 pid=882792

@@ -1,0 +1,4923 @@
+The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+Loading model: Qwen/Qwen3.5-9B [part1]
+Using device: cuda
+Processing rows: 1014..2027
+CSV output: /root/Desktop/workspace/yujin/result/qwen_test15_part1.csv
+Raw log: /root/Desktop/workspace/yujin/code/accident/qwen_test15_part1_raw_outputs.jsonl
+Loading weights:   0%|          | 0/760 [00:00<?, ?it/s]Loading weights:   0%|          | 1/760 [00:00<06:27,  1.96it/s]Loading weights:   0%|          | 2/760 [00:01<07:08,  1.77it/s]Loading weights:   2%|▏         | 14/760 [00:01<00:44, 16.72it/s]Loading weights:   4%|▎         | 27/760 [00:01<00:21, 33.48it/s]Loading weights:   5%|▌         | 38/760 [00:01<00:15, 46.99it/s]Loading weights:   6%|▌         | 47/760 [00:01<00:15, 45.84it/s]Loading weights:   9%|▊         | 66/760 [00:01<00:10, 66.96it/s]Loading weights:  11%|█         | 80/760 [00:01<00:08, 79.21it/s]Loading weights:  12%|█▏        | 92/760 [00:02<00:07, 86.03it/s]Loading weights:  14%|█▎        | 103/760 [00:02<00:08, 76.41it/s]Loading weights:  16%|█▌        | 119/760 [00:02<00:06, 92.00it/s]Loading weights:  17%|█▋        | 132/760 [00:02<00:06, 99.71it/s]Loading weights:  19%|█▉        | 144/760 [00:02<00:06, 96.37it/s]Loading weights:  20%|██        | 155/760 [00:02<00:07, 81.91it/s]Loading weights:  23%|██▎       | 172/760 [00:02<00:05, 98.69it/s]Loading weights:  24%|██▍       | 183/760 [00:02<00:05, 101.28it/s]Loading weights:  26%|██▌       | 194/760 [00:03<00:05, 94.93it/s] Loading weights:  27%|██▋       | 205/760 [00:03<00:06, 91.94it/s]Loading weights:  29%|██▊       | 218/760 [00:03<00:05, 101.34it/s]Loading weights:  30%|███       | 229/760 [00:03<00:05, 94.29it/s] Loading weights:  31%|███▏      | 239/760 [00:03<00:05, 95.16it/s]Loading weights:  33%|███▎      | 253/760 [00:03<00:04, 103.57it/s]Loading weights:  35%|███▍      | 264/760 [00:03<00:05, 88.71it/s] Loading weights:  37%|███▋      | 279/760 [00:03<00:04, 96.41it/s]Loading weights:  38%|███▊      | 292/760 [00:04<00:04, 103.50it/s]Loading weights:  40%|████      | 305/760 [00:04<00:04, 109.11it/s]Loading weights:  42%|████▏     | 317/760 [00:04<00:04, 88.63it/s] Loading weights:  44%|████▎     | 332/760 [00:04<00:04, 96.31it/s]Loading weights:  45%|████▌     | 345/760 [00:04<00:04, 102.59it/s]Loading weights:  47%|████▋     | 356/760 [00:04<00:03, 103.60it/s]Loading weights:  48%|████▊     | 367/760 [00:04<00:04, 82.40it/s] Loading weights:  51%|█████     | 384/760 [00:05<00:03, 98.16it/s]Loading weights:  52%|█████▏    | 395/760 [00:05<00:03, 100.91it/s]Loading weights:  53%|█████▎    | 406/760 [00:05<00:03, 101.78it/s]Loading weights:  55%|█████▍    | 417/760 [00:05<00:03, 88.28it/s] Loading weights:  57%|█████▋    | 433/760 [00:05<00:03, 105.40it/s]Loading weights:  70%|███████   | 535/760 [00:05<00:00, 339.64it/s]Loading weights:  84%|████████▍ | 639/760 [00:05<00:00, 524.36it/s]Loading weights:  98%|█████████▊| 745/760 [00:05<00:00, 668.40it/s]Loading weights: 100%|██████████| 760/760 [00:05<00:00, 129.49it/s]
+
+[1014] Processing: videos/6oymx7wBmjw_01.mp4
+  -> hybrid time selector: running full-video Qwen first
+Keyword argument `enable_thinking` is not a valid argument for this processor and will be ignored.
+/opt/conda/envs/yujin/lib/python3.10/site-packages/transformers/video_processing_utils.py:872: UserWarning: `torchcodec` is not installed and cannot be used to decode the video by default. Falling back to `torchvision`. Note that `torchvision` decoding is deprecated and will be removed in future versions. 
+  warnings.warn(
+/opt/conda/envs/yujin/lib/python3.10/site-packages/transformers/video_utils.py:534: UserWarning: Using `torchvision` for video decoding is deprecated and will be removed in future versions. Please use `torchcodec` instead.
+  warnings.warn(
+  -> model output: {
+  "accident_time": 2.8,
+  "confidence": 5
+}
+
+  -> initial Qwen time: 2.8000s (confidence=5.00/5)
+  -> Qwen time accepted by hybrid rule; final_time=2.8000s (confidence=5.00/5)
+  -> predicted accident_time=2.8000 (source=qwen, qwen_confidence=5.00/5)
+  -> model output: {
+  "center_x": 0.789,
+  "center_y": 0.381
+}
+
+  -> model output: {
+  "center_x": 0.797,
+  "center_y": 0.374
+}
+
+  -> model output: {"center_x": 0.809, "center_y": 0.366}
+
+  -> model output: {
+  "center_x": 0.51,
+  "center_y": 0.48
+}
+
+  -> model output: {
+  "center_x": 0.55,
+  "center_y": 0.55
+}
+
+  -> predicted location: center_x=0.8003, center_y=0.3740
+  -> saved representative frame: /root/Desktop/workspace/yujin/code/accident/frames/6oymx7wBmjw_01_t2.800.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "t-bone"
+}
+
+  -> final parsed result: accident_time=2.8000, center_x=0.8003, center_y=0.3740, type=t-bone
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test15_part1.csv (1 rows saved)
+
+[1015] Processing: videos/6oymx7wBmjw_02.mp4
+  -> hybrid time selector: running full-video Qwen first
+  -> model output: {
+  "accident_time": null,
+  "confidence": 0
+}
+
+  -> initial Qwen time: Nones (confidence=0.00/5)
+  -> Qwen time is suspicious; running OF rule selector (reason=qwen_time_none, confidence=0.00/5)
+  -> optical-flow stats: points=15 score_max=1.861336 score_mean=0.972605 score_std=0.577302
+  -> optical-flow candidates:
+     rank=1 t=1.175s score=1.861336 z=1.539 motion=1.687370 delta=0.248522 idx=4 late=False KEEP
+     rank=2 t=2.350s score=0.710929 z=-0.453 motion=0.710929 delta=0.000000 idx=9 late=False REJECT(too_close_to_end(duration-1.0))
+     rank=3 t=3.525s score=0.167808 z=-1.394 motion=0.167808 delta=0.000000 idx=14 late=True REJECT(too_close_to_end(duration-1.0))
+  -> rule-based OF selector: Qwen selector is disabled
+  -> selected OF candidate by hybrid rule: rank=1 time=1.1751s score=1.861336 z=1.539 late=False rule=hard_filter_start_end_z_then_prefer_non_late_then_best_rank
+  -> final hybrid time: 1.1751s (source=optical_flow_rule, qwen_time=Nones, qwen_confidence=0.00/5)
+  -> predicted accident_time=1.1751 (source=optical_flow_rule, qwen_confidence=0.00/5)
+  -> model output: {"center_x": 0.61, "center_y": 0.32}
+
+  -> model output: {"center_x": 0.63, "center_y": 0.32}
+
+  -> model output: ```json
+{
+  "center_x": 0.59,
+  "center_y": 0.32
+}
+```
+
+  -> model output: {
+  "center_x": 0.54,
+  "center_y": 0.51
+}
+
+  -> model output: {
+  "center_x": 0.58,
+  "center_y": 0.52
+}
+
+  -> predicted location: center_x=0.6254, center_y=0.3232
+  -> saved representative frame: /root/Desktop/workspace/yujin/code/accident/frames/6oymx7wBmjw_02_t1.175.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "t-bone"
+}
+
+  -> final parsed result: accident_time=1.1751, center_x=0.6254, center_y=0.3232, type=t-bone
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test15_part1.csv (2 rows saved)
+
+[1016] Processing: videos/6oymx7wBmjw_03.mp4
+  -> hybrid time selector: running full-video Qwen first
+  -> model output: {
+  "accident_time": null,
+  "confidence": 0
+}
+
+  -> initial Qwen time: Nones (confidence=0.00/5)
+  -> Qwen time is suspicious; running OF rule selector (reason=qwen_time_none, confidence=0.00/5)
+  -> optical-flow stats: points=45 score_max=0.344063 score_mean=0.211551 score_std=0.054236
+  -> optical-flow candidates:
+     rank=1 t=1.787s score=0.344063 z=2.443 motion=0.328797 delta=0.021809 idx=8 late=False KEEP
+     rank=2 t=8.539s score=0.252861 z=0.762 motion=0.251112 delta=0.002498 idx=42 late=True REJECT(too_close_to_end(duration-1.0))
+     rank=3 t=7.347s score=0.221719 z=0.187 motion=0.211983 delta=0.013909 idx=36 late=True KEEP
+     rank=4 t=3.773s score=0.214787 z=0.060 motion=0.201983 delta=0.018291 idx=18 late=False KEEP
+     rank=5 t=0.596s score=0.212555 z=0.019 motion=0.182108 delta=0.043496 idx=2 late=False KEEP
+  -> rule-based OF selector: Qwen selector is disabled
+  -> selected OF candidate by hybrid rule: rank=1 time=1.7872s score=0.344063 z=2.443 late=False rule=hard_filter_start_end_z_then_prefer_non_late_then_best_rank
+  -> final hybrid time: 1.7872s (source=optical_flow_rule, qwen_time=Nones, qwen_confidence=0.00/5)
+  -> predicted accident_time=1.7872 (source=optical_flow_rule, qwen_confidence=0.00/5)
+  -> model output: {"center_x": 0.08, "center_y": 0.48}
+
+  -> model output: {"center_x": 0.03, "center_y": 0.53}
+
+  -> model output: {"center_x": 0.03, "center_y": 0.39}
+
+  -> model output: {"center_x": 0.63, "center_y": 0.21}
+
+  -> model output: {
+  "center_x": 0.13,
+  "center_y": 0.65
+}
+
+  -> predicted location: center_x=0.0337, center_y=0.4800
+  -> saved representative frame: /root/Desktop/workspace/yujin/code/accident/frames/6oymx7wBmjw_03_t1.787.jpg
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=1.7872, center_x=0.0337, center_y=0.4800, type=single
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test15_part1.csv (3 rows saved)
+
+[1017] Processing: videos/6oymx7wBmjw_04.mp4
+  -> hybrid time selector: running full-video Qwen first
+  -> model output: {
+  "accident_time": 5.0,
+  "confidence": 5.0
+}
+
+  -> initial Qwen time: 5.0000s (confidence=5.00/5)
+  -> Qwen time accepted by hybrid rule; final_time=5.0000s (confidence=5.00/5)
+  -> predicted accident_time=5.0000 (source=qwen, qwen_confidence=5.00/5)
+  -> model output: {"center_x": 0.429, "center_y": 0.347}
+
+  -> model output: {"center_x": 0.719, "center_y": 0.325}
+
+  -> model output: {
+  "center_x": 0.75,
+  "center_y": 0.31
+}
+
+  -> model output: {
+  "center_x": 0.58,
+  "center_y": 0.52
+}
+
+  -> model output: {
+  "center_x": 0.58,
+  "center_y": 0.55
+}
+
+  -> predicted location: center_x=0.7401, center_y=0.3327
+  -> saved representative frame: /root/Desktop/workspace/yujin/code/accident/frames/6oymx7wBmjw_04_t5.000.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "t-bone"
+}
+
+  -> final parsed result: accident_time=5.0000, center_x=0.7401, center_y=0.3327, type=t-bone
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test15_part1.csv (4 rows saved)
+
+[1018] Processing: videos/cZo9DI6DSIY_00.mp4
+  -> hybrid time selector: running full-video Qwen first
+  -> model output: {
+  "accident_time": 2.0,
+  "confidence": 5
+}
+
+  -> initial Qwen time: 2.0000s (confidence=5.00/5)
+  -> Qwen time accepted by hybrid rule; final_time=2.0000s (confidence=5.00/5)
+  -> predicted accident_time=2.0000 (source=qwen, qwen_confidence=5.00/5)
+  -> model output: {"center_x": 0.59, "center_y": 0.33}
+
+  -> model output: {"center_x": 0.52, "center_y": 0.33}
+
+  -> model output: {
+  "center_x": 0.48,
+  "center_y": 0.31
+}
+
+  -> model output: {
+  "center_x": 0.58,
+  "center_y": 0.42
+}
+
+  -> model output: {
+  "center_x": 0.55,
+  "center_y": 0.35
+}
+
+  -> predicted location: center_x=0.5329, center_y=0.2970
+  -> saved representative frame: /root/Desktop/workspace/yujin/code/accident/frames/cZo9DI6DSIY_00_t2.000.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.99
+}
+
+  -> model output: {
+  "type": "t-bone"
+}
+
+  -> final parsed result: accident_time=2.0000, center_x=0.5329, center_y=0.2970, type=t-bone
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test15_part1.csv (5 rows saved)
+
+[1019] Processing: videos/cZo9DI6DSIY_01.mp4
+  -> hybrid time selector: running full-video Qwen first
+  -> model output: {
+  "accident_time": 6.0,
+  "confidence": 5
+}
+
+  -> initial Qwen time: 6.0000s (confidence=5.00/5)
+  -> Qwen time accepted by hybrid rule; final_time=6.0000s (confidence=5.00/5)
+  -> predicted accident_time=6.0000 (source=qwen, qwen_confidence=5.00/5)
+  -> model output: {"center_x": 0.33, "center_y": 0.52}
+
+  -> model output: {"center_x": 0.28, "center_y": 0.61}
+
+  -> model output: {
+  "center_x": 0.26,
+  "center_y": 0.63
+}
+
+  -> model output: {
+  "center_x": 0.48,
+  "center_y": 0.58
+}
+
+  -> model output: {
+  "center_x": 0.45,
+  "center_y": 0.65
+}
+
+  -> predicted location: center_x=0.2715, center_y=0.6418
+  -> saved representative frame: /root/Desktop/workspace/yujin/code/accident/frames/cZo9DI6DSIY_01_t6.000.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "t-bone"
+}
+
+  -> final parsed result: accident_time=6.0000, center_x=0.2715, center_y=0.6418, type=t-bone
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test15_part1.csv (6 rows saved)
+
+[1020] Processing: videos/cZo9DI6DSIY_02.mp4
+  -> hybrid time selector: running full-video Qwen first
+  -> model output: {
+  "accident_time": 17.0,
+  "confidence": 5.0
+}
+
+  -> initial Qwen time: 17.0000s (confidence=5.00/5)
+  -> Qwen time accepted by hybrid rule; final_time=17.0000s (confidence=5.00/5)
+  -> predicted accident_time=17.0000 (source=qwen, qwen_confidence=5.00/5)
+  -> model output: {"center_x": 0.64, "center_y": 0.5}
+
+  -> model output: {"center_x": 0.61, "center_y": 0.52}
+
+  -> model output: {"center_x": 0.58, "center_y": 0.51}
+
+  -> model output: {
+  "center_x": 0.42,
+  "center_y": 0.45
+}
+
+  -> model output: {
+  "center_x": 0.45,
+  "center_y": 0.55
+}
+
+  -> predicted location: center_x=0.5969, center_y=0.5100
+  -> saved representative frame: /root/Desktop/workspace/yujin/code/accident/frames/cZo9DI6DSIY_02_t17.000.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "sideswipe"
+}
+
+  -> final parsed result: accident_time=17.0000, center_x=0.5969, center_y=0.5100, type=sideswipe
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test15_part1.csv (7 rows saved)
+
+[1021] Processing: videos/cZo9DI6DSIY_03.mp4
+  -> hybrid time selector: running full-video Qwen first
+  -> model output: {
+  "accident_time": 3.9,
+  "confidence": 5
+}
+
+  -> initial Qwen time: 3.9000s (confidence=5.00/5)
+  -> Qwen time accepted by hybrid rule; final_time=3.9000s (confidence=5.00/5)
+  -> predicted accident_time=3.9000 (source=qwen, qwen_confidence=5.00/5)
+  -> model output: {"center_x": 0.53, "center_y": 0.69}
+
+  -> model output: {"center_x": 0.54, "center_y": 0.68}
+
+  -> model output: {"center_x": 0.56, "center_y": 0.66}
+
+  -> model output: {
+  "center_x": 0.51,
+  "center_y": 0.52
+}
+
+  -> model output: {
+  "center_x": 0.53,
+  "center_y": 0.52
+}
+
+  -> predicted location: center_x=0.5439, center_y=0.6853
+  -> saved representative frame: /root/Desktop/workspace/yujin/code/accident/frames/cZo9DI6DSIY_03_t3.900.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "t-bone"
+}
+
+  -> final parsed result: accident_time=3.9000, center_x=0.5439, center_y=0.6853, type=t-bone
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test15_part1.csv (8 rows saved)
+
+[1022] Processing: videos/nGzSLxoFILc_00.mp4
+  -> hybrid time selector: running full-video Qwen first
+  -> model output: {
+  "accident_time": 3.0,
+  "confidence": 5
+}
+
+  -> initial Qwen time: 3.0000s (confidence=5.00/5)
+  -> Qwen time accepted by hybrid rule; final_time=3.0000s (confidence=5.00/5)
+  -> predicted accident_time=3.0000 (source=qwen, qwen_confidence=5.00/5)
+  -> model output: {
+  "center_x": 0.33,
+  "center_y": 0.28
+}
+
+  -> model output: {
+  "center_x": 0.36,
+  "center_y": 0.29
+}
+
+  -> model output: {
+  "center_x": 0.35,
+  "center_y": 0.31
+}
+
+  -> model output: {
+  "center_x": 0.52,
+  "center_y": 0.52
+}
+
+  -> model output: {
+  "center_x": 0.52,
+  "center_y": 0.55
+}
+
+  -> predicted location: center_x=0.3555, center_y=0.2980
+  -> saved representative frame: /root/Desktop/workspace/yujin/code/accident/frames/nGzSLxoFILc_00_t3.000.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "sideswipe"
+}
+
+  -> final parsed result: accident_time=3.0000, center_x=0.3555, center_y=0.2980, type=sideswipe
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test15_part1.csv (9 rows saved)
+
+[1023] Processing: videos/jvM9Js5f9dI_00.mp4
+  -> hybrid time selector: running full-video Qwen first
+  -> model output: {
+  "accident_time": null,
+  "confidence": 0
+}
+
+  -> initial Qwen time: Nones (confidence=0.00/5)
+  -> Qwen time is suspicious; running OF rule selector (reason=qwen_time_none, confidence=0.00/5)
+  -> optical-flow stats: points=106 score_max=0.446968 score_mean=0.202894 score_std=0.099964
+  -> optical-flow candidates:
+     rank=1 t=13.416s score=0.446968 z=2.442 motion=0.418693 delta=0.040393 idx=66 late=False KEEP
+     rank=2 t=5.807s score=0.368961 z=1.661 motion=0.348079 delta=0.029832 idx=28 late=False KEEP
+     rank=3 t=14.417s score=0.337070 z=1.342 motion=0.337070 delta=0.000000 idx=71 late=False KEEP
+     rank=4 t=10.813s score=0.315222 z=1.124 motion=0.287569 delta=0.039504 idx=53 late=False KEEP
+     rank=5 t=3.404s score=0.300054 z=0.972 motion=0.288193 delta=0.016944 idx=16 late=False KEEP
+  -> rule-based OF selector: Qwen selector is disabled
+  -> selected OF candidate by hybrid rule: rank=1 time=13.4158s score=0.446968 z=2.442 late=False rule=hard_filter_start_end_z_then_prefer_non_late_then_best_rank
+  -> final hybrid time: 13.4158s (source=optical_flow_rule, qwen_time=Nones, qwen_confidence=0.00/5)
+  -> predicted accident_time=13.4158 (source=optical_flow_rule, qwen_confidence=0.00/5)
+  -> model output: {
+  "center_x": 0.58,
+  "center_y": 0.57
+}
+
+  -> model output: {"center_x": 0.58, "center_y": 0.57}
+
+  -> model output: {
+  "center_x": 0.58,
+  "center_y": 0.57
+}
+
+  -> model output: {
+  "center_x": 0.48,
+  "center_y": 0.51
+}
+
+  -> model output: {
+  "center_x": 0.51,
+  "center_y": 0.52
+}
+
+  -> predicted location: center_x=0.5800, center_y=0.5735
+  -> saved representative frame: /root/Desktop/workspace/yujin/code/accident/frames/jvM9Js5f9dI_00_t13.416.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "sideswipe"
+}
+
+  -> final parsed result: accident_time=13.4158, center_x=0.5800, center_y=0.5735, type=sideswipe
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test15_part1.csv (10 rows saved)
+
+[1024] Processing: videos/p1ibbi6Pljw_00.mp4
+  -> hybrid time selector: running full-video Qwen first
+  -> model output: {
+  "accident_time": null,
+  "confidence": 0
+}
+
+  -> initial Qwen time: Nones (confidence=0.00/5)
+  -> Qwen time is suspicious; running OF rule selector (reason=qwen_time_none, confidence=0.00/5)
+  -> optical-flow stats: points=151 score_max=1.119871 score_mean=0.792243 score_std=0.156006
+  -> optical-flow candidates:
+     rank=1 t=1.985s score=1.119871 z=2.100 motion=1.086574 delta=0.047566 idx=9 late=False KEEP
+     rank=2 t=0.596s score=1.105299 z=2.007 motion=0.965119 delta=0.200257 idx=2 late=False KEEP
+     rank=3 t=8.338s score=1.047882 z=1.639 motion=1.021133 delta=0.038212 idx=41 late=False KEEP
+     rank=4 t=6.948s score=0.992240 z=1.282 motion=0.977610 delta=0.020901 idx=34 late=False KEEP
+     rank=5 t=9.529s score=0.976552 z=1.181 motion=0.976552 delta=0.000000 idx=47 late=False KEEP
+  -> rule-based OF selector: Qwen selector is disabled
+  -> selected OF candidate by hybrid rule: rank=1 time=1.9851s score=1.119871 z=2.100 late=False rule=hard_filter_start_end_z_then_prefer_non_late_then_best_rank
+  -> final hybrid time: 1.9851s (source=optical_flow_rule, qwen_time=Nones, qwen_confidence=0.00/5)
+  -> predicted accident_time=1.9851 (source=optical_flow_rule, qwen_confidence=0.00/5)
+  -> model output: {"center_x": 0.771, "center_y": 0.588}
+
+  -> model output: {
+  "center_x": 0.76,
+  "center_y": 0.58
+}
+
+  -> model output: {
+  "center_x": 0.748,
+  "center_y": 0.571
+}
+
+  -> model output: {
+  "center_x": 0.48,
+  "center_y": 0.48
+}
+
+  -> model output: {
+  "center_x": 0.48,
+  "center_y": 0.52
+}
+
+  -> predicted location: center_x=0.7548, center_y=0.5800
+  -> saved representative frame: /root/Desktop/workspace/yujin/code/accident/frames/p1ibbi6Pljw_00_t1.985.jpg
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=1.9851, center_x=0.7548, center_y=0.5800, type=single
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test15_part1.csv (11 rows saved)
+
+[1025] Processing: videos/9jZ67_1d5nU_00.mp4
+  -> hybrid time selector: running full-video Qwen first
+  -> model output: {
+  "accident_time": null,
+  "confidence": 0
+}
+
+  -> initial Qwen time: Nones (confidence=0.00/5)
+  -> Qwen time is suspicious; running OF rule selector (reason=qwen_time_none, confidence=0.00/5)
+  -> optical-flow stats: points=50 score_max=2.642370 score_mean=0.843984 score_std=0.678602
+  -> optical-flow candidates:
+     rank=1 t=0.614s score=2.642370 z=2.650 motion=2.356728 delta=0.408061 idx=2 late=False KEEP
+     rank=2 t=2.250s score=1.701309 z=1.263 motion=1.650637 delta=0.072389 idx=10 late=False KEEP
+     rank=3 t=7.979s score=1.475032 z=0.930 motion=1.160030 delta=0.450003 idx=38 late=True KEEP
+     rank=4 t=5.933s score=0.601807 z=-0.357 motion=0.512810 delta=0.127137 idx=28 late=False REJECT(low_score_z<0.0)
+     rank=5 t=3.273s score=0.590678 z=-0.373 motion=0.590678 delta=0.000000 idx=15 late=False REJECT(low_score_z<0.0)
+  -> rule-based OF selector: Qwen selector is disabled
+  -> selected OF candidate by hybrid rule: rank=1 time=0.6138s score=2.642370 z=2.650 late=False rule=hard_filter_start_end_z_then_prefer_non_late_then_best_rank
+  -> final hybrid time: 0.6138s (source=optical_flow_rule, qwen_time=Nones, qwen_confidence=0.00/5)
+  -> predicted accident_time=0.6138 (source=optical_flow_rule, qwen_confidence=0.00/5)
+  -> model output: {
+  "center_x": 0.49,
+  "center_y": 0.57
+}
+
+  -> model output: {
+  "center_x": 0.46,
+  "center_y": 0.58
+}
+
+  -> model output: {
+  "center_x": 0.0,
+  "center_y": 0.0
+}
+
+  -> model output: {
+  "center_x": 0.51,
+  "center_y": 0.53
+}
+
+  -> model output: {
+  "center_x": 0.48,
+  "center_y": 0.51
+}
+
+  -> predicted location: center_x=0.4600, center_y=0.5728
+  -> saved representative frame: /root/Desktop/workspace/yujin/code/accident/frames/9jZ67_1d5nU_00_t0.614.jpg
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=0.6138, center_x=0.4600, center_y=0.5728, type=single
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test15_part1.csv (12 rows saved)
+
+[1026] Processing: videos/O0_rWZB5-xM_00.mp4
+  -> hybrid time selector: running full-video Qwen first
+  -> model output: {
+  "accident_time": null,
+  "confidence": 0
+}
+
+  -> initial Qwen time: Nones (confidence=0.00/5)
+  -> Qwen time is suspicious; running OF rule selector (reason=qwen_time_none, confidence=0.00/5)
+  -> optical-flow stats: points=149 score_max=0.569243 score_mean=0.172022 score_std=0.104708
+  -> optical-flow candidates:
+     rank=1 t=17.624s score=0.569243 z=3.794 motion=0.508729 delta=0.086449 idx=87 late=False KEEP
+     rank=2 t=29.441s score=0.321991 z=1.432 motion=0.309927 delta=0.017234 idx=146 late=True REJECT(too_close_to_end(duration-1.0))
+     rank=3 t=2.604s score=0.297230 z=1.196 motion=0.295115 delta=0.003021 idx=12 late=False KEEP
+     rank=4 t=1.602s score=0.279543 z=1.027 motion=0.271283 delta=0.011801 idx=7 late=False KEEP
+     rank=5 t=16.623s score=0.273190 z=0.966 motion=0.264703 delta=0.012124 idx=82 late=False KEEP
+  -> rule-based OF selector: Qwen selector is disabled
+  -> selected OF candidate by hybrid rule: rank=1 time=17.6244s score=0.569243 z=3.794 late=False rule=hard_filter_start_end_z_then_prefer_non_late_then_best_rank
+  -> final hybrid time: 17.6244s (source=optical_flow_rule, qwen_time=Nones, qwen_confidence=0.00/5)
+  -> predicted accident_time=17.6244 (source=optical_flow_rule, qwen_confidence=0.00/5)
+  -> model output: {"center_x": 0.402, "center_y": 0.465}
+
+  -> model output: {"center_x": 0.401, "center_y": 0.473}
+
+  -> model output: {"center_x": 0.401, "center_y": 0.467}
+
+  -> model output: {
+  "center_x": 0.58,
+  "center_y": 0.52
+}
+
+  -> model output: {
+  "center_x": 0.58,
+  "center_y": 0.55
+}
+
+  -> predicted location: center_x=0.4219, center_y=0.4746
+  -> saved representative frame: /root/Desktop/workspace/yujin/code/accident/frames/O0_rWZB5-xM_00_t17.624.jpg
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=17.6244, center_x=0.4219, center_y=0.4746, type=single
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test15_part1.csv (13 rows saved)
+
+[1027] Processing: videos/Lm_u8Ey-588_00.mp4
+  -> hybrid time selector: running full-video Qwen first
+  -> model output: {
+  "accident_time": 3.0,
+  "confidence": 5
+}
+
+  -> initial Qwen time: 3.0000s (confidence=5.00/5)
+  -> Qwen time accepted by hybrid rule; final_time=3.0000s (confidence=5.00/5)
+  -> predicted accident_time=3.0000 (source=qwen, qwen_confidence=5.00/5)
+  -> model output: {"center_x": 0.62, "center_y": 0.71}
+
+  -> model output: {
+  "center_x": 0.68,
+  "center_y": 0.72
+}
+
+  -> model output: {
+  "center_x": 0.72,
+  "center_y": 0.72
+}
+
+  -> model output: {
+  "center_x": 0.48,
+  "center_y": 0.42
+}
+
+  -> model output: {
+  "center_x": 0.45,
+  "center_y": 0.55
+}
+
+  -> predicted location: center_x=0.6714, center_y=0.7200
+  -> saved representative frame: /root/Desktop/workspace/yujin/code/accident/frames/Lm_u8Ey-588_00_t3.000.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "sideswipe"
+}
+
+  -> final parsed result: accident_time=3.0000, center_x=0.6714, center_y=0.7200, type=sideswipe
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test15_part1.csv (14 rows saved)
+
+[1028] Processing: videos/hyZ-ZbPYabo_00.mp4
+  -> hybrid time selector: running full-video Qwen first
+  -> model output: {
+  "accident_time": 8.0,
+  "confidence": 5
+}
+
+  -> initial Qwen time: 8.0000s (confidence=5.00/5)
+  -> Qwen time accepted by hybrid rule; final_time=8.0000s (confidence=5.00/5)
+  -> predicted accident_time=8.0000 (source=qwen, qwen_confidence=5.00/5)
+  -> model output: {
+  "center_x": 0.428,
+  "center_y": 0.625
+}
+
+  -> model output: {
+  "center_x": 0.44,
+  "center_y": 0.62
+}
+
+  -> model output: {
+  "center_x": 0.48,
+  "center_y": 0.62
+}
+
+  -> model output: {
+  "center_x": 0.56,
+  "center_y": 0.52
+}
+
+  -> model output: {
+  "center_x": 0.51,
+  "center_y": 0.52
+}
+
+  -> predicted location: center_x=0.4430, center_y=0.6255
+  -> saved representative frame: /root/Desktop/workspace/yujin/code/accident/frames/hyZ-ZbPYabo_00_t8.000.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "t-bone"
+}
+
+  -> final parsed result: accident_time=8.0000, center_x=0.4430, center_y=0.6255, type=t-bone
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test15_part1.csv (15 rows saved)
+
+[1029] Processing: videos/YDret7_VHUQ_00.mp4
+  -> hybrid time selector: running full-video Qwen first
+  -> model output: {
+  "accident_time": 2.7,
+  "confidence": 5
+}
+
+  -> initial Qwen time: 2.7000s (confidence=5.00/5)
+  -> Qwen time accepted by hybrid rule; final_time=2.7000s (confidence=5.00/5)
+  -> predicted accident_time=2.7000 (source=qwen, qwen_confidence=5.00/5)
+  -> model output: {
+  "center_x": 0.58,
+  "center_y": 0.65
+}
+
+  -> model output: {
+  "center_x": 0.71,
+  "center_y": 0.64
+}
+
+  -> model output: {
+  "center_x": 0.56,
+  "center_y": 0.58
+}
+
+  -> model output: {
+  "center_x": 0.52,
+  "center_y": 0.48
+}
+
+  -> model output: {
+  "center_x": 0.48,
+  "center_y": 0.48
+}
+
+  -> predicted location: center_x=0.5800, center_y=0.6352
+  -> saved representative frame: /root/Desktop/workspace/yujin/code/accident/frames/YDret7_VHUQ_00_t2.700.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "t-bone"
+}
+
+  -> final parsed result: accident_time=2.7000, center_x=0.5800, center_y=0.6352, type=t-bone
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test15_part1.csv (16 rows saved)
+
+[1030] Processing: videos/w5i2d9URq1I_00.mp4
+  -> hybrid time selector: running full-video Qwen first
+  -> model output: {
+  "accident_time": null,
+  "confidence": 0
+}
+
+  -> initial Qwen time: Nones (confidence=0.00/5)
+  -> Qwen time is suspicious; running OF rule selector (reason=qwen_time_none, confidence=0.00/5)
+  -> optical-flow stats: points=149 score_max=1.947504 score_mean=1.187822 score_std=0.350164
+  -> optical-flow candidates:
+     rank=1 t=2.397s score=1.947504 z=2.169 motion=1.771698 delta=0.251152 idx=11 late=False KEEP
+     rank=2 t=4.194s score=1.879226 z=1.975 motion=1.750251 delta=0.184250 idx=20 late=False KEEP
+     rank=3 t=12.583s score=1.778846 z=1.688 motion=1.744164 delta=0.049546 idx=62 late=False KEEP
+     rank=4 t=8.388s score=1.726662 z=1.539 motion=1.670906 delta=0.079652 idx=41 late=False KEEP
+     rank=5 t=5.992s score=1.627995 z=1.257 motion=1.599508 delta=0.040696 idx=29 late=False KEEP
+  -> rule-based OF selector: Qwen selector is disabled
+  -> selected OF candidate by hybrid rule: rank=1 time=2.3967s score=1.947504 z=2.169 late=False rule=hard_filter_start_end_z_then_prefer_non_late_then_best_rank
+  -> final hybrid time: 2.3967s (source=optical_flow_rule, qwen_time=Nones, qwen_confidence=0.00/5)
+  -> predicted accident_time=2.3967 (source=optical_flow_rule, qwen_confidence=0.00/5)
+  -> model output: {"center_x": 0.349, "center_y": 0.602}
+
+  -> model output: {"center_x": 0.356, "center_y": 0.606}
+
+  -> model output: {"center_x": 0.343, "center_y": 0.612}
+
+  -> model output: {
+  "center_x": 0.48,
+  "center_y": 0.52
+}
+
+  -> model output: {
+  "center_x": 0.46,
+  "center_y": 0.52
+}
+
+  -> predicted location: center_x=0.3403, center_y=0.6116
+  -> saved representative frame: /root/Desktop/workspace/yujin/code/accident/frames/w5i2d9URq1I_00_t2.397.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "rear-end"
+}
+
+  -> final parsed result: accident_time=2.3967, center_x=0.3403, center_y=0.6116, type=rear-end
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test15_part1.csv (17 rows saved)
+
+[1031] Processing: videos/y6d2TfbeWFk_00.mp4
+  -> hybrid time selector: running full-video Qwen first
+  -> model output: {
+  "accident_time": null,
+  "confidence": 0
+}
+
+  -> initial Qwen time: Nones (confidence=0.00/5)
+  -> Qwen time is suspicious; running OF rule selector (reason=qwen_time_none, confidence=0.00/5)
+  -> optical-flow stats: points=150 score_max=0.429991 score_mean=0.173475 score_std=0.072399
+  -> optical-flow candidates:
+     rank=1 t=6.994s score=0.429991 z=3.543 motion=0.398811 delta=0.044543 idx=34 late=False KEEP
+     rank=2 t=1.199s score=0.383333 z=2.899 motion=0.349122 delta=0.048873 idx=5 late=False KEEP
+     rank=3 t=13.389s score=0.297387 z=1.711 motion=0.281290 delta=0.022996 idx=66 late=False KEEP
+     rank=4 t=3.397s score=0.271657 z=1.356 motion=0.265863 delta=0.008277 idx=16 late=False KEEP
+     rank=5 t=10.991s score=0.217005 z=0.601 motion=0.206140 delta=0.015522 idx=54 late=False KEEP
+  -> rule-based OF selector: Qwen selector is disabled
+  -> selected OF candidate by hybrid rule: rank=1 time=6.9942s score=0.429991 z=3.543 late=False rule=hard_filter_start_end_z_then_prefer_non_late_then_best_rank
+  -> final hybrid time: 6.9942s (source=optical_flow_rule, qwen_time=Nones, qwen_confidence=0.00/5)
+  -> predicted accident_time=6.9942 (source=optical_flow_rule, qwen_confidence=0.00/5)
+  -> model output: {
+  "center_x": 0.48,
+  "center_y": 0.57
+}
+
+  -> model output: {
+  "center_x": 0.51,
+  "center_y": 0.56
+}
+
+  -> model output: {
+  "center_x": 0.49,
+  "center_y": 0.56
+}
+
+  -> model output: {
+  "center_x": 0.5,
+  "center_y": 0.5
+}
+
+  -> model output: {
+  "center_x": 0.5,
+  "center_y": 0.5
+}
+
+  -> predicted location: center_x=0.4900, center_y=0.5600
+  -> saved representative frame: /root/Desktop/workspace/yujin/code/accident/frames/y6d2TfbeWFk_00_t6.994.jpg
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=6.9942, center_x=0.4900, center_y=0.5600, type=single
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test15_part1.csv (18 rows saved)
+
+[1032] Processing: videos/4VVOcbvXgdE_00.mp4
+  -> hybrid time selector: running full-video Qwen first
+  -> model output: {
+  "accident_time": null,
+  "confidence": 0
+}
+
+  -> initial Qwen time: Nones (confidence=0.00/5)
+  -> Qwen time is suspicious; running OF rule selector (reason=qwen_time_none, confidence=0.00/5)
+  -> optical-flow stats: points=73 score_max=0.539766 score_mean=0.304926 score_std=0.114201
+  -> optical-flow candidates:
+     rank=1 t=11.426s score=0.539766 z=2.056 motion=0.528955 delta=0.015445 idx=56 late=True KEEP
+     rank=2 t=9.221s score=0.494265 z=1.658 motion=0.475646 delta=0.026599 idx=45 late=False KEEP
+     rank=3 t=10.223s score=0.395539 z=0.793 motion=0.395539 delta=0.000000 idx=50 late=False KEEP
+     rank=4 t=12.829s score=0.386582 z=0.715 motion=0.383712 delta=0.004100 idx=63 late=True KEEP
+     rank=5 t=2.205s score=0.353447 z=0.425 motion=0.336803 delta=0.023776 idx=10 late=False KEEP
+  -> rule-based OF selector: Qwen selector is disabled
+  -> selected OF candidate by hybrid rule: rank=2 time=9.2207s score=0.494265 z=1.658 late=False rule=hard_filter_start_end_z_then_prefer_non_late_then_best_rank
+  -> final hybrid time: 9.2207s (source=optical_flow_rule, qwen_time=Nones, qwen_confidence=0.00/5)
+  -> predicted accident_time=9.2207 (source=optical_flow_rule, qwen_confidence=0.00/5)
+  -> model output: {
+  "center_x": 0.49,
+  "center_y": 0.61
+}
+
+  -> model output: {
+  "center_x": 0.49,
+  "center_y": 0.61
+}
+
+  -> model output: {
+  "center_x": 0.49,
+  "center_y": 0.61
+}
+
+  -> model output: {
+  "center_x": 0.51,
+  "center_y": 0.51
+}
+
+  -> model output: {
+  "center_x": 0.51,
+  "center_y": 0.52
+}
+
+  -> predicted location: center_x=0.4929, center_y=0.6139
+  -> saved representative frame: /root/Desktop/workspace/yujin/code/accident/frames/4VVOcbvXgdE_00_t9.221.jpg
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=9.2207, center_x=0.4929, center_y=0.6139, type=single
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test15_part1.csv (19 rows saved)
+
+[1033] Processing: videos/BcZnPHU8nvY_00.mp4
+  -> hybrid time selector: running full-video Qwen first
+  -> model output: {
+  "accident_time": null,
+  "confidence": 0
+}
+
+  -> initial Qwen time: Nones (confidence=0.00/5)
+  -> Qwen time is suspicious; running OF rule selector (reason=qwen_time_none, confidence=0.00/5)
+  -> optical-flow stats: points=164 score_max=0.818489 score_mean=0.384591 score_std=0.148160
+  -> optical-flow candidates:
+     rank=1 t=24.840s score=0.818489 z=2.929 motion=0.778092 delta=0.057710 idx=135 late=True KEEP
+     rank=2 t=5.845s score=0.715061 z=2.230 motion=0.627418 delta=0.125204 idx=31 late=False KEEP
+     rank=3 t=1.826s score=0.639452 z=1.720 motion=0.606371 delta=0.047258 idx=9 late=False KEEP
+     rank=4 t=3.470s score=0.629738 z=1.655 motion=0.619751 delta=0.014268 idx=18 late=False KEEP
+     rank=5 t=0.548s score=0.616477 z=1.565 motion=0.534424 delta=0.117218 idx=2 late=False KEEP
+  -> rule-based OF selector: Qwen selector is disabled
+  -> selected OF candidate by hybrid rule: rank=2 time=5.8447s score=0.715061 z=2.230 late=False rule=hard_filter_start_end_z_then_prefer_non_late_then_best_rank
+  -> final hybrid time: 5.8447s (source=optical_flow_rule, qwen_time=Nones, qwen_confidence=0.00/5)
+  -> predicted accident_time=5.8447 (source=optical_flow_rule, qwen_confidence=0.00/5)
+  -> model output: {
+  "center_x": 0.53,
+  "center_y": 0.55
+}
+
+  -> model output: {
+  "center_x": 0.55,
+  "center_y": 0.55
+}
+
+  -> model output: {
+  "center_x": 0.56,
+  "center_y": 0.54
+}
+
+  -> model output: {"center_x": 0.53, "center_y": 0.53}
+
+  -> model output: {
+  "center_x": 0.52,
+  "center_y": 0.58
+}
+
+  -> predicted location: center_x=0.5550, center_y=0.5607
+  -> saved representative frame: /root/Desktop/workspace/yujin/code/accident/frames/BcZnPHU8nvY_00_t5.845.jpg
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=5.8447, center_x=0.5550, center_y=0.5607, type=single
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test15_part1.csv (20 rows saved)
+
+[1034] Processing: videos/meDGeTof2x0_00.mp4
+  -> hybrid time selector: running full-video Qwen first
+  -> model output: {
+  "accident_time": 20.0,
+  "confidence": 5
+}
+
+  -> initial Qwen time: 20.0000s (confidence=5.00/5)
+  -> Qwen time accepted by hybrid rule; final_time=20.0000s (confidence=5.00/5)
+  -> predicted accident_time=20.0000 (source=qwen, qwen_confidence=5.00/5)
+  -> model output: {"center_x": 0.215, "center_y": 0.33}
+
+  -> model output: {"center_x": 0.217, "center_y": 0.333}
+
+  -> model output: {"center_x": 0.228, "center_y": 0.334}
+
+  -> model output: {
+  "center_x": 0.51,
+  "center_y": 0.51
+}
+
+  -> model output: {
+  "center_x": 0.51,
+  "center_y": 0.48
+}
+
+  -> predicted location: center_x=0.2194, center_y=0.3330
+  -> saved representative frame: /root/Desktop/workspace/yujin/code/accident/frames/meDGeTof2x0_00_t20.000.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "rear-end"
+}
+
+  -> final parsed result: accident_time=20.0000, center_x=0.2194, center_y=0.3330, type=rear-end
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test15_part1.csv (21 rows saved)
+
+[1035] Processing: videos/WXUOlgOESJ4_00.mp4
+  -> hybrid time selector: running full-video Qwen first
+  -> model output: {
+  "accident_time": null,
+  "confidence": 0
+}
+
+  -> initial Qwen time: Nones (confidence=0.00/5)
+  -> Qwen time is suspicious; running OF rule selector (reason=qwen_time_none, confidence=0.00/5)
+  -> optical-flow stats: points=148 score_max=0.861287 score_mean=0.283571 score_std=0.214709
+  -> optical-flow candidates:
+     rank=1 t=14.772s score=0.861287 z=2.691 motion=0.777752 delta=0.119334 idx=72 late=False KEEP
+     rank=2 t=10.522s score=0.823662 z=2.515 motion=0.789820 delta=0.048346 idx=51 late=False KEEP
+     rank=3 t=18.414s score=0.707567 z=1.975 motion=0.654463 delta=0.075863 idx=90 late=True KEEP
+     rank=4 t=6.273s score=0.646978 z=1.693 motion=0.626498 delta=0.029258 idx=30 late=False KEEP
+     rank=5 t=19.831s score=0.604982 z=1.497 motion=0.543580 delta=0.087717 idx=97 late=True KEEP
+  -> rule-based OF selector: Qwen selector is disabled
+  -> selected OF candidate by hybrid rule: rank=1 time=14.7719s score=0.861287 z=2.691 late=False rule=hard_filter_start_end_z_then_prefer_non_late_then_best_rank
+  -> final hybrid time: 14.7719s (source=optical_flow_rule, qwen_time=Nones, qwen_confidence=0.00/5)
+  -> predicted accident_time=14.7719 (source=optical_flow_rule, qwen_confidence=0.00/5)
+  -> model output: {
+  "center_x": 0.42,
+  "center_y": 0.55
+}
+
+  -> model output: {
+  "center_x": 0.423,
+  "center_y": 0.547
+}
+
+  -> model output: {
+  "center_x": 0.425,
+  "center_y": 0.545
+}
+
+  -> model output: {
+  "center_x": 0.48,
+  "center_y": 0.5
+}
+
+  -> model output: {
+  "center_x": 0.55,
+  "center_y": 0.5
+}
+
+  -> predicted location: center_x=0.4230, center_y=0.5466
+  -> saved representative frame: /root/Desktop/workspace/yujin/code/accident/frames/WXUOlgOESJ4_00_t14.772.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "rear-end"
+}
+
+  -> final parsed result: accident_time=14.7719, center_x=0.4230, center_y=0.5466, type=rear-end
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test15_part1.csv (22 rows saved)
+
+[1036] Processing: videos/qFypaL4RVTw_00.mp4
+  -> hybrid time selector: running full-video Qwen first
+  -> model output: {
+  "accident_time": 24.0,
+  "confidence": 5
+}
+
+  -> initial Qwen time: 24.0000s (confidence=5.00/5)
+  -> Qwen time accepted by hybrid rule; final_time=24.0000s (confidence=5.00/5)
+  -> predicted accident_time=24.0000 (source=qwen, qwen_confidence=5.00/5)
+  -> model output: {"center_x": 0.32, "center_y": 0.61}
+
+  -> model output: {"center_x": 0.35, "center_y": 0.52}
+
+  -> model output: {
+  "center_x": 0.37,
+  "center_y": 0.53
+}
+
+  -> model output: {
+  "center_x": 0.47,
+  "center_y": 0.48
+}
+
+  -> model output: {
+  "center_x": 0.42,
+  "center_y": 0.42
+}
+
+  -> predicted location: center_x=0.3379, center_y=0.5217
+  -> saved representative frame: /root/Desktop/workspace/yujin/code/accident/frames/qFypaL4RVTw_00_t24.000.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "rear-end"
+}
+
+  -> final parsed result: accident_time=24.0000, center_x=0.3379, center_y=0.5217, type=rear-end
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test15_part1.csv (23 rows saved)
+
+[1037] Processing: videos/-Qt5bDJNT84_00.mp4
+  -> hybrid time selector: running full-video Qwen first
+  -> model output: {
+  "accident_time": null,
+  "confidence": 0
+}
+
+  -> initial Qwen time: Nones (confidence=0.00/5)
+  -> Qwen time is suspicious; running OF rule selector (reason=qwen_time_none, confidence=0.00/5)
+  -> optical-flow stats: points=17 score_max=2.428303 score_mean=1.565032 score_std=0.559092
+  -> optical-flow candidates:
+     rank=1 t=1.556s score=2.428303 z=1.544 motion=2.292783 delta=0.193599 idx=7 late=False KEEP
+     rank=2 t=2.918s score=1.755266 z=0.340 motion=1.628002 delta=0.181806 idx=14 late=True REJECT(too_close_to_end(duration-1.0))
+     rank=3 t=0.389s score=0.783507 z=-1.398 motion=0.599350 delta=0.263082 idx=1 late=False REJECT(too_close_to_start<=0.5)
+  -> rule-based OF selector: Qwen selector is disabled
+  -> selected OF candidate by hybrid rule: rank=1 time=1.5564s score=2.428303 z=1.544 late=False rule=hard_filter_start_end_z_then_prefer_non_late_then_best_rank
+  -> final hybrid time: 1.5564s (source=optical_flow_rule, qwen_time=Nones, qwen_confidence=0.00/5)
+  -> predicted accident_time=1.5564 (source=optical_flow_rule, qwen_confidence=0.00/5)
+  -> model output: {
+  "center_x": 0.64,
+  "center_y": 0.46
+}
+
+  -> model output: {
+  "center_x": 0.64,
+  "center_y": 0.44
+}
+
+  -> model output: {
+  "center_x": 0.65,
+  "center_y": 0.35
+}
+
+  -> model output: {
+  "center_x": 0.45,
+  "center_y": 0.42
+}
+
+  -> model output: {
+  "center_x": 0.51,
+  "center_y": 0.51
+}
+
+  -> predicted location: center_x=0.6400, center_y=0.4400
+  -> saved representative frame: /root/Desktop/workspace/yujin/code/accident/frames/-Qt5bDJNT84_00_t1.556.jpg
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=1.5564, center_x=0.6400, center_y=0.4400, type=single
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test15_part1.csv (24 rows saved)
+
+[1038] Processing: videos/6AzIoSDn5Qs_00.mp4
+  -> hybrid time selector: running full-video Qwen first
+  -> model output: {
+  "accident_time": 2.0,
+  "confidence": 5
+}
+
+  -> initial Qwen time: 2.0000s (confidence=5.00/5)
+  -> Qwen time accepted by hybrid rule; final_time=2.0000s (confidence=5.00/5)
+  -> predicted accident_time=2.0000 (source=qwen, qwen_confidence=5.00/5)
+  -> model output: {
+  "center_x": 0.45,
+  "center_y": 0.82
+}
+
+  -> model output: {
+  "center_x": 0.43,
+  "center_y": 0.82
+}
+
+  -> model output: {
+  "center_x": 0.42,
+  "center_y": 0.88
+}
+
+  -> model output: {
+  "center_x": 0.48,
+  "center_y": 0.52
+}
+
+  -> model output: {
+  "center_x": 0.45,
+  "center_y": 0.45
+}
+
+  -> predicted location: center_x=0.4211, center_y=0.8084
+  -> saved representative frame: /root/Desktop/workspace/yujin/code/accident/frames/6AzIoSDn5Qs_00_t2.000.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "rear-end"
+}
+
+  -> final parsed result: accident_time=2.0000, center_x=0.4211, center_y=0.8084, type=rear-end
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test15_part1.csv (25 rows saved)
+
+[1039] Processing: videos/6s2KTCCo1Hw_00.mp4
+  -> hybrid time selector: running full-video Qwen first
+  -> model output: {
+  "accident_time": 7.0,
+  "confidence": 5
+}
+
+  -> initial Qwen time: 7.0000s (confidence=5.00/5)
+  -> Qwen time accepted by hybrid rule; final_time=7.0000s (confidence=5.00/5)
+  -> predicted accident_time=7.0000 (source=qwen, qwen_confidence=5.00/5)
+  -> model output: {
+  "center_x": 0.505,
+  "center_y": 0.335
+}
+
+  -> model output: {"center_x": 0.43, "center_y": 0.82}
+
+  -> model output: {
+  "center_x": 0.408,
+  "center_y": 0.815
+}
+
+  -> model output: {
+  "center_x": 0.62,
+  "center_y": 0.62
+}
+
+  -> model output: {
+  "center_x": 0.62,
+  "center_y": 0.58
+}
+
+  -> predicted location: center_x=0.4611, center_y=0.8357
+  -> saved representative frame: /root/Desktop/workspace/yujin/code/accident/frames/6s2KTCCo1Hw_00_t7.000.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "rear-end"
+}
+
+  -> final parsed result: accident_time=7.0000, center_x=0.4611, center_y=0.8357, type=rear-end
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test15_part1.csv (26 rows saved)
+
+[1040] Processing: videos/tSSn6ZA4cfI_00.mp4
+  -> hybrid time selector: running full-video Qwen first
+  -> model output: {
+  "accident_time": null,
+  "confidence": 0
+}
+
+  -> initial Qwen time: Nones (confidence=0.00/5)
+  -> Qwen time is suspicious; running OF rule selector (reason=qwen_time_none, confidence=0.00/5)
+  -> optical-flow stats: points=149 score_max=0.937067 score_mean=0.440869 score_std=0.232916
+  -> optical-flow candidates:
+     rank=1 t=25.513s score=0.937067 z=2.130 motion=0.899497 delta=0.053672 idx=126 late=True KEEP
+     rank=2 t=28.125s score=0.904171 z=1.989 motion=0.871566 delta=0.046578 idx=139 late=True KEEP
+     rank=3 t=29.330s score=0.897039 z=1.959 motion=0.855861 delta=0.058825 idx=145 late=True REJECT(too_close_to_end(duration-1.0))
+     rank=4 t=5.022s score=0.884410 z=1.904 motion=0.840616 delta=0.062562 idx=24 late=False KEEP
+     rank=5 t=23.304s score=0.738811 z=1.279 motion=0.651469 delta=0.124774 idx=115 late=True KEEP
+  -> rule-based OF selector: Qwen selector is disabled
+  -> selected OF candidate by hybrid rule: rank=4 time=5.0223s score=0.884410 z=1.904 late=False rule=hard_filter_start_end_z_then_prefer_non_late_then_best_rank
+  -> final hybrid time: 5.0223s (source=optical_flow_rule, qwen_time=Nones, qwen_confidence=0.00/5)
+  -> predicted accident_time=5.0223 (source=optical_flow_rule, qwen_confidence=0.00/5)
+  -> model output: {
+  "center_x": 0.61,
+  "center_y": 0.51
+}
+
+  -> model output: {
+  "center_x": 0.14,
+  "center_y": 0.62
+}
+
+  -> model output: {
+  "center_x": 0.06,
+  "center_y": 0.76
+}
+
+  -> model output: {
+  "center_x": 0.35,
+  "center_y": 0.52
+}
+
+  -> model output: {
+  "center_x": 0.48,
+  "center_y": 0.48
+}
+
+  -> predicted location: center_x=0.1396, center_y=0.6200
+  -> saved representative frame: /root/Desktop/workspace/yujin/code/accident/frames/tSSn6ZA4cfI_00_t5.022.jpg
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=5.0223, center_x=0.1396, center_y=0.6200, type=single
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test15_part1.csv (27 rows saved)
+
+[1041] Processing: videos/CJP-_jaZ3FQ_00.mp4
+  -> hybrid time selector: running full-video Qwen first
+  -> model output: {
+  "accident_time": null,
+  "confidence": 0
+}
+
+  -> initial Qwen time: Nones (confidence=0.00/5)
+  -> Qwen time is suspicious; running OF rule selector (reason=qwen_time_none, confidence=0.00/5)
+  -> optical-flow stats: points=150 score_max=2.209599 score_mean=0.287797 score_std=0.438963
+  -> optical-flow candidates:
+     rank=1 t=4.586s score=2.209599 z=4.378 motion=1.885685 delta=0.462734 idx=22 late=False KEEP
+     rank=2 t=11.166s score=1.241450 z=2.173 motion=1.104993 delta=0.194938 idx=55 late=False KEEP
+     rank=3 t=1.196s score=1.130991 z=1.921 motion=1.085603 delta=0.064839 idx=5 late=False KEEP
+     rank=4 t=3.390s score=0.494682 z=0.471 motion=0.412579 delta=0.117290 idx=16 late=False KEEP
+     rank=5 t=19.540s score=0.368328 z=0.183 motion=0.328335 delta=0.057132 idx=97 late=True KEEP
+  -> rule-based OF selector: Qwen selector is disabled
+  -> selected OF candidate by hybrid rule: rank=1 time=4.5860s score=2.209599 z=4.378 late=False rule=hard_filter_start_end_z_then_prefer_non_late_then_best_rank
+  -> final hybrid time: 4.5860s (source=optical_flow_rule, qwen_time=Nones, qwen_confidence=0.00/5)
+  -> predicted accident_time=4.5860 (source=optical_flow_rule, qwen_confidence=0.00/5)
+  -> model output: {"center_x": 0.33, "center_y": 0.51}
+
+  -> model output: {"center_x": 0.52, "center_y": 0.22}
+
+  -> model output: {"center_x": 0.661, "center_y": 0.266}
+
+  -> model output: {
+  "center_x": 0.51,
+  "center_y": 0.43
+}
+
+  -> model output: {
+  "center_x": 0.51,
+  "center_y": 0.35
+}
+
+  -> predicted location: center_x=0.5225, center_y=0.2370
+  -> saved representative frame: /root/Desktop/workspace/yujin/code/accident/frames/CJP-_jaZ3FQ_00_t4.586.jpg
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=4.5860, center_x=0.5225, center_y=0.2370, type=single
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test15_part1.csv (28 rows saved)
+
+[1042] Processing: videos/PxRDOMjsbE8_00.mp4
+  -> hybrid time selector: running full-video Qwen first
+  -> model output: {
+  "accident_time": 5.4,
+  "confidence": 4
+}
+
+  -> initial Qwen time: 5.4000s (confidence=4.00/5)
+  -> Qwen time accepted by hybrid rule; final_time=5.4000s (confidence=4.00/5)
+  -> predicted accident_time=5.4000 (source=qwen, qwen_confidence=4.00/5)
+  -> model output: {
+  "center_x": 0.29,
+  "center_y": 0.61
+}
+
+  -> model output: {
+  "center_x": 0.29,
+  "center_y": 0.63
+}
+
+  -> model output: {
+  "center_x": 0.29,
+  "center_y": 0.65
+}
+
+  -> model output: {
+  "center_x": 0.52,
+  "center_y": 0.51
+}
+
+  -> model output: {
+  "center_x": 0.5,
+  "center_y": 0.5
+}
+
+  -> predicted location: center_x=0.2900, center_y=0.6300
+  -> saved representative frame: /root/Desktop/workspace/yujin/code/accident/frames/PxRDOMjsbE8_00_t5.400.jpg
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=5.4000, center_x=0.2900, center_y=0.6300, type=single
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test15_part1.csv (29 rows saved)
+
+[1043] Processing: videos/lM1uI0uKh-U_00.mp4
+  -> hybrid time selector: running full-video Qwen first
+  -> model output: {
+  "accident_time": null,
+  "confidence": 0
+}
+
+  -> initial Qwen time: Nones (confidence=0.00/5)
+  -> Qwen time is suspicious; running OF rule selector (reason=qwen_time_none, confidence=0.00/5)
+  -> optical-flow stats: points=149 score_max=0.907415 score_mean=0.464845 score_std=0.167374
+  -> optical-flow candidates:
+     rank=1 t=15.835s score=0.907415 z=2.644 motion=0.837874 delta=0.099345 idx=78 late=False KEEP
+     rank=2 t=26.659s score=0.901416 z=2.608 motion=0.869447 delta=0.045671 idx=132 late=True KEEP
+     rank=3 t=3.408s score=0.765461 z=1.796 motion=0.727633 delta=0.054040 idx=16 late=False KEEP
+     rank=4 t=25.056s score=0.750816 z=1.709 motion=0.725752 delta=0.035805 idx=124 late=True KEEP
+     rank=5 t=18.241s score=0.610815 z=0.872 motion=0.591316 delta=0.027856 idx=90 late=True KEEP
+  -> rule-based OF selector: Qwen selector is disabled
+  -> selected OF candidate by hybrid rule: rank=1 time=15.8352s score=0.907415 z=2.644 late=False rule=hard_filter_start_end_z_then_prefer_non_late_then_best_rank
+  -> final hybrid time: 15.8352s (source=optical_flow_rule, qwen_time=Nones, qwen_confidence=0.00/5)
+  -> predicted accident_time=15.8352 (source=optical_flow_rule, qwen_confidence=0.00/5)
+  -> model output: {"center_x": 0.54, "center_y": 0.62}
+
+  -> model output: {
+  "center_x": 0.57,
+  "center_y": 0.62
+}
+
+  -> model output: {
+  "center_x": 0.52,
+  "center_y": 0.62
+}
+
+  -> model output: {
+  "center_x": 0.53,
+  "center_y": 0.58
+}
+
+  -> model output: {
+  "center_x": 0.61,
+  "center_y": 0.58
+}
+
+  -> predicted location: center_x=0.5519, center_y=0.6410
+  -> saved representative frame: /root/Desktop/workspace/yujin/code/accident/frames/lM1uI0uKh-U_00_t15.835.jpg
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=15.8352, center_x=0.5519, center_y=0.6410, type=single
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test15_part1.csv (30 rows saved)
+
+[1044] Processing: videos/ajxUuxbpAVQ_00.mp4
+  -> hybrid time selector: running full-video Qwen first
+  -> model output: {
+  "accident_time": null,
+  "confidence": 0
+}
+
+  -> initial Qwen time: Nones (confidence=0.00/5)
+  -> Qwen time is suspicious; running OF rule selector (reason=qwen_time_none, confidence=0.00/5)
+  -> optical-flow stats: points=124 score_max=3.259828 score_mean=1.760496 score_std=0.505968
+  -> optical-flow candidates:
+     rank=1 t=17.600s score=3.259828 z=2.963 motion=2.949495 delta=0.443334 idx=87 late=False KEEP
+     rank=2 t=14.000s score=2.754156 z=1.964 motion=2.588538 delta=0.236596 idx=69 late=False KEEP
+     rank=3 t=20.200s score=2.696786 z=1.850 motion=2.548812 delta=0.211391 idx=100 late=True KEEP
+     rank=4 t=0.600s score=2.637473 z=1.733 motion=2.394089 delta=0.347691 idx=2 late=False KEEP
+     rank=5 t=11.800s score=2.458601 z=1.380 motion=2.335000 delta=0.176574 idx=58 late=False KEEP
+  -> rule-based OF selector: Qwen selector is disabled
+  -> selected OF candidate by hybrid rule: rank=1 time=17.6000s score=3.259828 z=2.963 late=False rule=hard_filter_start_end_z_then_prefer_non_late_then_best_rank
+  -> final hybrid time: 17.6000s (source=optical_flow_rule, qwen_time=Nones, qwen_confidence=0.00/5)
+  -> predicted accident_time=17.6000 (source=optical_flow_rule, qwen_confidence=0.00/5)
+  -> model output: {
+  "center_x": 0.5,
+  "center_y": 0.5
+}
+
+  -> model output: {
+  "center_x": 0.59,
+  "center_y": 0.52
+}
+
+  -> model output: {
+  "center_x": 0.52,
+  "center_y": 0.57
+}
+
+  -> model output: {
+  "center_x": 0.59,
+  "center_y": 0.46
+}
+
+  -> model output: {
+  "center_x": 0.57,
+  "center_y": 0.42
+}
+
+  -> predicted location: center_x=0.5383, center_y=0.5035
+  -> saved representative frame: /root/Desktop/workspace/yujin/code/accident/frames/ajxUuxbpAVQ_00_t17.600.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "sideswipe"
+}
+
+  -> final parsed result: accident_time=17.6000, center_x=0.5383, center_y=0.5035, type=sideswipe
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test15_part1.csv (31 rows saved)
+
+[1045] Processing: videos/H0MCccZiB3M_00.mp4
+  -> hybrid time selector: running full-video Qwen first
+  -> model output: {
+  "accident_time": 3.0,
+  "confidence": 5.0
+}
+
+  -> initial Qwen time: 3.0000s (confidence=5.00/5)
+  -> Qwen time accepted by hybrid rule; final_time=3.0000s (confidence=5.00/5)
+  -> predicted accident_time=3.0000 (source=qwen, qwen_confidence=5.00/5)
+  -> model output: {"center_x": 0.5, "center_y": 0.47}
+
+  -> model output: {"center_x": 0.46, "center_y": 0.48}
+
+  -> model output: {"center_x": 0.27, "center_y": 0.49}
+
+  -> model output: {"center_x": 0.51, "center_y": 0.51}
+
+  -> model output: {
+  "center_x": 0.5,
+  "center_y": 0.5
+}
+
+  -> predicted location: center_x=0.4600, center_y=0.4801
+  -> saved representative frame: /root/Desktop/workspace/yujin/code/accident/frames/H0MCccZiB3M_00_t3.000.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "t-bone"
+}
+
+  -> final parsed result: accident_time=3.0000, center_x=0.4600, center_y=0.4801, type=t-bone
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test15_part1.csv (32 rows saved)
+
+[1046] Processing: videos/GDadq8Vznvc_00.mp4
+  -> hybrid time selector: running full-video Qwen first
+  -> model output: {
+  "accident_time": 7.0,
+  "confidence": 5
+}
+
+  -> initial Qwen time: 7.0000s (confidence=5.00/5)
+  -> Qwen time accepted by hybrid rule; final_time=7.0000s (confidence=5.00/5)
+  -> predicted accident_time=7.0000 (source=qwen, qwen_confidence=5.00/5)
+  -> model output: {
+  "center_x": 0.71,
+  "center_y": 0.77
+}
+
+  -> model output: {
+  "center_x": 0.72,
+  "center_y": 0.79
+}
+
+  -> model output: {
+  "center_x": 0.68,
+  "center_y": 0.75
+}
+
+  -> model output: {
+  "center_x": 0.54,
+  "center_y": 0.58
+}
+
+  -> model output: {
+  "center_x": 0.42,
+  "center_y": 0.48
+}
+
+  -> predicted location: center_x=0.7100, center_y=0.7700
+  -> saved representative frame: /root/Desktop/workspace/yujin/code/accident/frames/GDadq8Vznvc_00_t7.000.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "sideswipe"
+}
+
+  -> final parsed result: accident_time=7.0000, center_x=0.7100, center_y=0.7700, type=sideswipe
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test15_part1.csv (33 rows saved)
+
+[1047] Processing: videos/-qmYW4S3Xxo_00.mp4
+  -> hybrid time selector: running full-video Qwen first
+  -> model output: {
+  "accident_time": 28.6,
+  "confidence": 5
+}
+
+  -> initial Qwen time: 28.6000s (confidence=5.00/5)
+  -> Qwen time accepted by hybrid rule; final_time=28.6000s (confidence=5.00/5)
+  -> predicted accident_time=28.6000 (source=qwen, qwen_confidence=5.00/5)
+  -> model output: {"center_x": 0.575, "center_y": 0.425}
+
+  -> model output: {"center_x": 0.59, "center_y": 0.42}
+
+  -> model output: {"center_x": 0.59, "center_y": 0.42}
+
+  -> model output: {
+  "center_x": 0.49,
+  "center_y": 0.52
+}
+
+  -> model output: {
+  "center_x": 0.43,
+  "center_y": 0.53
+}
+
+  -> predicted location: center_x=0.5859, center_y=0.4273
+  -> saved representative frame: /root/Desktop/workspace/yujin/code/accident/frames/-qmYW4S3Xxo_00_t28.600.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "sideswipe"
+}
+
+  -> final parsed result: accident_time=28.6000, center_x=0.5859, center_y=0.4273, type=sideswipe
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test15_part1.csv (34 rows saved)
+
+[1048] Processing: videos/E7SZ9wPStb4_00.mp4
+  -> hybrid time selector: running full-video Qwen first
+  -> model output: {
+  "accident_time": null,
+  "confidence": 0
+}
+
+  -> initial Qwen time: Nones (confidence=0.00/5)
+  -> Qwen time is suspicious; running OF rule selector (reason=qwen_time_none, confidence=0.00/5)
+  -> optical-flow stats: points=149 score_max=1.000286 score_mean=0.552571 score_std=0.249337
+  -> optical-flow candidates:
+     rank=1 t=3.605s score=1.000286 z=1.796 motion=0.939712 delta=0.086534 idx=17 late=False KEEP
+     rank=2 t=9.613s score=0.962520 z=1.644 motion=0.892664 delta=0.099795 idx=47 late=False KEEP
+     rank=3 t=6.809s score=0.932299 z=1.523 motion=0.898933 delta=0.047666 idx=33 late=False KEEP
+     rank=4 t=11.616s score=0.887007 z=1.341 motion=0.850696 delta=0.051872 idx=57 late=False KEEP
+     rank=5 t=21.430s score=0.858194 z=1.226 motion=0.837855 delta=0.029055 idx=106 late=True KEEP
+  -> rule-based OF selector: Qwen selector is disabled
+  -> selected OF candidate by hybrid rule: rank=1 time=3.6050s score=1.000286 z=1.796 late=False rule=hard_filter_start_end_z_then_prefer_non_late_then_best_rank
+  -> final hybrid time: 3.6050s (source=optical_flow_rule, qwen_time=Nones, qwen_confidence=0.00/5)
+  -> predicted accident_time=3.6050 (source=optical_flow_rule, qwen_confidence=0.00/5)
+  -> model output: {
+  "center_x": 0.35,
+  "center_y": 0.58
+}
+
+  -> model output: {
+  "center_x": 0.37,
+  "center_y": 0.65
+}
+
+  -> model output: {
+  "center_x": 0.36,
+  "center_y": 0.58
+}
+
+  -> model output: {
+  "center_x": 0.54,
+  "center_y": 0.62
+}
+
+  -> model output: {"center_x": 0.52, "center_y": 0.61}
+
+  -> predicted location: center_x=0.3654, center_y=0.6084
+  -> saved representative frame: /root/Desktop/workspace/yujin/code/accident/frames/E7SZ9wPStb4_00_t3.605.jpg
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=3.6050, center_x=0.3654, center_y=0.6084, type=single
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test15_part1.csv (35 rows saved)
+
+[1049] Processing: videos/y-QrV0SN9V0_00.mp4
+  -> hybrid time selector: running full-video Qwen first
+  -> model output: {
+  "accident_time": 2.3,
+  "confidence": 5
+}
+
+  -> initial Qwen time: 2.3000s (confidence=5.00/5)
+  -> Qwen time accepted by hybrid rule; final_time=2.3000s (confidence=5.00/5)
+  -> predicted accident_time=2.3000 (source=qwen, qwen_confidence=5.00/5)
+  -> model output: {
+  "center_x": 0.48,
+  "center_y": 0.64
+}
+
+  -> model output: {
+  "center_x": 0.53,
+  "center_y": 0.6
+}
+
+  -> model output: {
+  "center_x": 0.56,
+  "center_y": 0.56
+}
+
+  -> model output: {
+  "center_x": 0.47,
+  "center_y": 0.53
+}
+
+  -> model output: {
+  "center_x": 0.45,
+  "center_y": 0.55
+}
+
+  -> predicted location: center_x=0.5177, center_y=0.6107
+  -> saved representative frame: /root/Desktop/workspace/yujin/code/accident/frames/y-QrV0SN9V0_00_t2.300.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "rear-end"
+}
+
+  -> final parsed result: accident_time=2.3000, center_x=0.5177, center_y=0.6107, type=rear-end
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test15_part1.csv (36 rows saved)
+
+[1050] Processing: videos/fK7DAi8Ybvc_00.mp4
+  -> hybrid time selector: running full-video Qwen first
+  -> model output: {
+  "accident_time": null,
+  "confidence": 0
+}
+
+  -> initial Qwen time: Nones (confidence=0.00/5)
+  -> Qwen time is suspicious; running OF rule selector (reason=qwen_time_none, confidence=0.00/5)
+  -> optical-flow stats: points=146 score_max=0.937987 score_mean=0.594136 score_std=0.159887
+  -> optical-flow candidates:
+     rank=1 t=1.227s score=0.937987 z=2.151 motion=0.868159 delta=0.099754 idx=5 late=False KEEP
+     rank=2 t=3.273s score=0.883889 z=1.812 motion=0.873616 delta=0.014676 idx=15 late=False KEEP
+     rank=3 t=5.727s score=0.843582 z=1.560 motion=0.832583 delta=0.015713 idx=27 late=False KEEP
+     rank=4 t=2.250s score=0.837232 z=1.520 motion=0.837232 delta=0.000000 idx=10 late=False KEEP
+     rank=5 t=4.705s score=0.820955 z=1.419 motion=0.815943 delta=0.007161 idx=22 late=False KEEP
+  -> rule-based OF selector: Qwen selector is disabled
+  -> selected OF candidate by hybrid rule: rank=1 time=1.2273s score=0.937987 z=2.151 late=False rule=hard_filter_start_end_z_then_prefer_non_late_then_best_rank
+  -> final hybrid time: 1.2273s (source=optical_flow_rule, qwen_time=Nones, qwen_confidence=0.00/5)
+  -> predicted accident_time=1.2273 (source=optical_flow_rule, qwen_confidence=0.00/5)
+  -> model output: {
+  "center_x": 0.51,
+  "center_y": 0.64
+}
+
+  -> model output: {
+  "center_x": 0.49,
+  "center_y": 0.58
+}
+
+  -> model output: {
+  "center_x": 0.49,
+  "center_y": 0.66
+}
+
+  -> model output: {
+  "center_x": 0.49,
+  "center_y": 0.51
+}
+
+  -> model output: {
+  "center_x": 0.52,
+  "center_y": 0.55
+}
+
+  -> predicted location: center_x=0.4900, center_y=0.6431
+  -> saved representative frame: /root/Desktop/workspace/yujin/code/accident/frames/fK7DAi8Ybvc_00_t1.227.jpg
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=1.2273, center_x=0.4900, center_y=0.6431, type=single
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test15_part1.csv (37 rows saved)
+
+[1051] Processing: videos/LSiLtoXajJE_00.mp4
+  -> hybrid time selector: running full-video Qwen first
+  -> model output: {
+  "accident_time": 10.0,
+  "confidence": 5
+}
+
+  -> initial Qwen time: 10.0000s (confidence=5.00/5)
+  -> Qwen time accepted by hybrid rule; final_time=10.0000s (confidence=5.00/5)
+  -> predicted accident_time=10.0000 (source=qwen, qwen_confidence=5.00/5)
+  -> model output: {"center_x": 0.349, "center_y": 0.656}
+
+  -> model output: {
+  "center_x": 0.34,
+  "center_y": 0.66
+}
+
+  -> model output: {
+  "center_x": 0.34,
+  "center_y": 0.66
+}
+
+  -> model output: {
+  "center_x": 0.52,
+  "center_y": 0.48
+}
+
+  -> model output: {
+  "center_x": 0.55,
+  "center_y": 0.48
+}
+
+  -> predicted location: center_x=0.3480, center_y=0.6547
+  -> saved representative frame: /root/Desktop/workspace/yujin/code/accident/frames/LSiLtoXajJE_00_t10.000.jpg
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=10.0000, center_x=0.3480, center_y=0.6547, type=single
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test15_part1.csv (38 rows saved)
+
+[1052] Processing: videos/_0RDZgCKPGo_00.mp4
+  -> hybrid time selector: running full-video Qwen first
+  -> model output: {
+  "accident_time": null,
+  "confidence": 0
+}
+
+  -> initial Qwen time: Nones (confidence=0.00/5)
+  -> Qwen time is suspicious; running OF rule selector (reason=qwen_time_none, confidence=0.00/5)
+  -> optical-flow stats: points=132 score_max=1.189247 score_mean=0.206167 score_std=0.231873
+  -> optical-flow candidates:
+     rank=1 t=15.132s score=1.189247 z=4.240 motion=1.065421 delta=0.176893 idx=74 late=False KEEP
+     rank=2 t=16.140s score=0.670701 z=2.003 motion=0.670701 delta=0.000000 idx=79 late=False KEEP
+     rank=3 t=14.123s score=0.531841 z=1.405 motion=0.459512 delta=0.103328 idx=69 late=False KEEP
+     rank=4 t=5.044s score=0.404542 z=0.856 motion=0.351992 delta=0.075071 idx=24 late=False KEEP
+     rank=5 t=18.561s score=0.306439 z=0.432 motion=0.279550 delta=0.038413 idx=91 late=True KEEP
+  -> rule-based OF selector: Qwen selector is disabled
+  -> selected OF candidate by hybrid rule: rank=1 time=15.1316s score=1.189247 z=4.240 late=False rule=hard_filter_start_end_z_then_prefer_non_late_then_best_rank
+  -> final hybrid time: 15.1316s (source=optical_flow_rule, qwen_time=Nones, qwen_confidence=0.00/5)
+  -> predicted accident_time=15.1316 (source=optical_flow_rule, qwen_confidence=0.00/5)
+  -> model output: {
+  "center_x": 0.704,
+  "center_y": 0.819
+}
+
+  -> model output: {
+  "center_x": 0.66,
+  "center_y": 0.67
+}
+
+  -> model output: {
+  "center_x": 0.68,
+  "center_y": 0.69
+}
+
+  -> model output: {
+  "center_x": 0.46,
+  "center_y": 0.51
+}
+
+  -> model output: {
+  "center_x": 0.48,
+  "center_y": 0.52
+}
+
+  -> predicted location: center_x=0.6746, center_y=0.6931
+  -> saved representative frame: /root/Desktop/workspace/yujin/code/accident/frames/_0RDZgCKPGo_00_t15.132.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "rear-end"
+}
+
+  -> final parsed result: accident_time=15.1316, center_x=0.6746, center_y=0.6931, type=rear-end
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test15_part1.csv (39 rows saved)
+
+[1053] Processing: videos/BdHk9yhbB94_00.mp4
+  -> hybrid time selector: running full-video Qwen first
+  -> model output: {
+  "accident_time": 3.5,
+  "confidence": 5
+}
+
+  -> initial Qwen time: 3.5000s (confidence=5.00/5)
+  -> Qwen time accepted by hybrid rule; final_time=3.5000s (confidence=5.00/5)
+  -> predicted accident_time=3.5000 (source=qwen, qwen_confidence=5.00/5)
+  -> model output: {
+  "center_x": 0.14,
+  "center_y": 0.85
+}
+
+  -> model output: {
+  "center_x": 0.22,
+  "center_y": 0.83
+}
+
+  -> model output: {
+  "center_x": 0.31,
+  "center_y": 0.83
+}
+
+  -> model output: {
+  "center_x": 0.45,
+  "center_y": 0.45
+}
+
+  -> model output: {
+  "center_x": 0.5,
+  "center_y": 0.5
+}
+
+  -> predicted location: center_x=0.2195, center_y=0.8300
+  -> saved representative frame: /root/Desktop/workspace/yujin/code/accident/frames/BdHk9yhbB94_00_t3.500.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "sideswipe"
+}
+
+  -> final parsed result: accident_time=3.5000, center_x=0.2195, center_y=0.8300, type=sideswipe
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test15_part1.csv (40 rows saved)
+
+[1054] Processing: videos/mCR74lvVPdY_00.mp4
+  -> hybrid time selector: running full-video Qwen first
+  -> model output: {
+  "accident_time": null,
+  "confidence": 0
+}
+
+  -> initial Qwen time: Nones (confidence=0.00/5)
+  -> Qwen time is suspicious; running OF rule selector (reason=qwen_time_none, confidence=0.00/5)
+  -> optical-flow stats: points=149 score_max=2.925198 score_mean=0.858380 score_std=0.635540
+  -> optical-flow candidates:
+     rank=1 t=2.403s score=2.925198 z=3.252 motion=2.813306 delta=0.159846 idx=11 late=False KEEP
+     rank=2 t=3.405s score=2.119181 z=1.984 motion=2.119181 delta=0.000000 idx=16 late=False KEEP
+     rank=3 t=9.213s score=1.978103 z=1.762 motion=1.827839 delta=0.214662 idx=45 late=False KEEP
+     rank=4 t=1.402s score=1.800835 z=1.483 motion=1.651591 delta=0.213206 idx=6 late=False KEEP
+     rank=5 t=19.026s score=1.797465 z=1.478 motion=1.726836 delta=0.100900 idx=94 late=True KEEP
+  -> rule-based OF selector: Qwen selector is disabled
+  -> selected OF candidate by hybrid rule: rank=1 time=2.4033s score=2.925198 z=3.252 late=False rule=hard_filter_start_end_z_then_prefer_non_late_then_best_rank
+  -> final hybrid time: 2.4033s (source=optical_flow_rule, qwen_time=Nones, qwen_confidence=0.00/5)
+  -> predicted accident_time=2.4033 (source=optical_flow_rule, qwen_confidence=0.00/5)
+  -> model output: {
+  "center_x": 0.58,
+  "center_y": 0.6
+}
+
+  -> model output: {
+  "center_x": 0.63,
+  "center_y": 0.55
+}
+
+  -> model output: {
+  "center_x": 0.66,
+  "center_y": 0.53
+}
+
+  -> model output: {
+  "center_x": 0.53,
+  "center_y": 0.55
+}
+
+  -> model output: {
+  "center_x": 0.52,
+  "center_y": 0.55
+}
+
+  -> predicted location: center_x=0.6345, center_y=0.5623
+  -> saved representative frame: /root/Desktop/workspace/yujin/code/accident/frames/mCR74lvVPdY_00_t2.403.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "sideswipe"
+}
+
+  -> final parsed result: accident_time=2.4033, center_x=0.6345, center_y=0.5623, type=sideswipe
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test15_part1.csv (41 rows saved)
+
+[1055] Processing: videos/xYbFnmG3-Og_00.mp4
+  -> hybrid time selector: running full-video Qwen first
+  -> model output: {
+  "accident_time": 17.0,
+  "confidence": 4.0
+}
+
+  -> initial Qwen time: 17.0000s (confidence=4.00/5)
+  -> Qwen time accepted by hybrid rule; final_time=17.0000s (confidence=4.00/5)
+  -> predicted accident_time=17.0000 (source=qwen, qwen_confidence=4.00/5)
+  -> model output: {
+  "center_x": 0.45,
+  "center_y": 0.72
+}
+
+  -> model output: {
+  "center_x": 0.57,
+  "center_y": 0.76
+}
+
+  -> model output: {
+  "center_x": 0.55,
+  "center_y": 0.75
+}
+
+  -> model output: {
+  "center_x": 0.65,
+  "center_y": 0.65
+}
+
+  -> model output: {
+  "center_x": 0.42,
+  "center_y": 0.58
+}
+
+  -> predicted location: center_x=0.5500, center_y=0.7703
+  -> saved representative frame: /root/Desktop/workspace/yujin/code/accident/frames/xYbFnmG3-Og_00_t17.000.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "t-bone"
+}
+
+  -> final parsed result: accident_time=17.0000, center_x=0.5500, center_y=0.7703, type=t-bone
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test15_part1.csv (42 rows saved)
+
+[1056] Processing: videos/FaI91W7BO04_00.mp4
+  -> hybrid time selector: running full-video Qwen first
+  -> model output: {
+  "accident_time": null,
+  "confidence": 0
+}
+
+  -> initial Qwen time: Nones (confidence=0.00/5)
+  -> Qwen time is suspicious; running OF rule selector (reason=qwen_time_none, confidence=0.00/5)
+  -> optical-flow stats: points=37 score_max=0.686410 score_mean=0.259558 score_std=0.166094
+  -> optical-flow candidates:
+     rank=1 t=7.671s score=0.686410 z=2.570 motion=0.586963 delta=0.142066 idx=32 late=True KEEP
+     rank=2 t=6.276s score=0.462776 z=1.224 motion=0.370990 delta=0.131123 idx=26 late=False KEEP
+     rank=3 t=4.417s score=0.211434 z=-0.290 motion=0.196645 delta=0.021127 idx=18 late=False REJECT(low_score_z<0.0)
+     rank=4 t=0.697s score=0.189635 z=-0.421 motion=0.158533 delta=0.044432 idx=2 late=False REJECT(low_score_z<0.0)
+     rank=5 t=3.254s score=0.167699 z=-0.553 motion=0.161681 delta=0.008596 idx=13 late=False REJECT(low_score_z<0.0)
+  -> rule-based OF selector: Qwen selector is disabled
+  -> selected OF candidate by hybrid rule: rank=2 time=6.2763s score=0.462776 z=1.224 late=False rule=hard_filter_start_end_z_then_prefer_non_late_then_best_rank
+  -> final hybrid time: 6.2763s (source=optical_flow_rule, qwen_time=Nones, qwen_confidence=0.00/5)
+  -> predicted accident_time=6.2763 (source=optical_flow_rule, qwen_confidence=0.00/5)
+  -> model output: {
+  "center_x": 0.39,
+  "center_y": 0.58
+}
+
+  -> model output: {
+  "center_x": 0.39,
+  "center_y": 0.57
+}
+
+  -> model output: {
+  "center_x": 0.39,
+  "center_y": 0.57
+}
+
+  -> model output: {"center_x": 0.51, "center_y": 0.42}
+
+  -> model output: {
+  "center_x": 0.5,
+  "center_y": 0.5
+}
+
+  -> predicted location: center_x=0.3900, center_y=0.5700
+  -> saved representative frame: /root/Desktop/workspace/yujin/code/accident/frames/FaI91W7BO04_00_t6.276.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "t-bone"
+}
+
+  -> final parsed result: accident_time=6.2763, center_x=0.3900, center_y=0.5700, type=t-bone
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test15_part1.csv (43 rows saved)
+
+[1057] Processing: videos/lpeKVGzEaUk_00.mp4
+  -> hybrid time selector: running full-video Qwen first
+  -> model output: {
+  "accident_time": null,
+  "confidence": 0
+}
+
+  -> initial Qwen time: Nones (confidence=0.00/5)
+  -> Qwen time is suspicious; running OF rule selector (reason=qwen_time_none, confidence=0.00/5)
+  -> optical-flow stats: points=147 score_max=1.459046 score_mean=0.615833 score_std=0.305677
+  -> optical-flow candidates:
+     rank=1 t=1.016s score=1.459046 z=2.759 motion=1.362365 delta=0.138116 idx=4 late=False KEEP
+     rank=2 t=19.513s score=1.178904 z=1.842 motion=1.142905 delta=0.051427 idx=95 late=True KEEP
+     rank=3 t=16.058s score=1.047495 z=1.412 motion=1.006638 delta=0.058367 idx=78 late=False KEEP
+     rank=4 t=8.334s score=0.998000 z=1.250 motion=0.945377 delta=0.075175 idx=40 late=False KEEP
+     rank=5 t=20.529s score=0.949723 z=1.092 motion=0.949723 delta=0.000000 idx=100 late=True KEEP
+  -> rule-based OF selector: Qwen selector is disabled
+  -> selected OF candidate by hybrid rule: rank=1 time=1.0163s score=1.459046 z=2.759 late=False rule=hard_filter_start_end_z_then_prefer_non_late_then_best_rank
+  -> final hybrid time: 1.0163s (source=optical_flow_rule, qwen_time=Nones, qwen_confidence=0.00/5)
+  -> predicted accident_time=1.0163 (source=optical_flow_rule, qwen_confidence=0.00/5)
+  -> model output: {
+  "center_x": 0.52,
+  "center_y": 0.76
+}
+
+  -> model output: {
+  "center_x": 0.51,
+  "center_y": 0.78
+}
+
+  -> model output: {
+  "center_x": 0.53,
+  "center_y": 0.73
+}
+
+  -> model output: {
+  "center_x": 0.5,
+  "center_y": 0.5
+}
+
+  -> model output: {
+  "center_x": 0.5,
+  "center_y": 0.5
+}
+
+  -> predicted location: center_x=0.5188, center_y=0.7599
+  -> saved representative frame: /root/Desktop/workspace/yujin/code/accident/frames/lpeKVGzEaUk_00_t1.016.jpg
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=1.0163, center_x=0.5188, center_y=0.7599, type=single
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test15_part1.csv (44 rows saved)
+
+[1058] Processing: videos/ZSgfKfHNOb8_00.mp4
+  -> hybrid time selector: running full-video Qwen first
+  -> model output: {
+  "accident_time": 4.0,
+  "confidence": 5
+}
+
+  -> initial Qwen time: 4.0000s (confidence=5.00/5)
+  -> Qwen time accepted by hybrid rule; final_time=4.0000s (confidence=5.00/5)
+  -> predicted accident_time=4.0000 (source=qwen, qwen_confidence=5.00/5)
+  -> model output: {
+  "center_x": 0.57,
+  "center_y": 0.48
+}
+
+  -> model output: {
+  "center_x": 0.84,
+  "center_y": 0.65
+}
+
+  -> model output: {
+  "center_x": 0.59,
+  "center_y": 0.51
+}
+
+  -> model output: {
+  "center_x": 0.47,
+  "center_y": 0.44
+}
+
+  -> model output: {
+  "center_x": 0.5,
+  "center_y": 0.5
+}
+
+  -> predicted location: center_x=0.5896, center_y=0.5100
+  -> saved representative frame: /root/Desktop/workspace/yujin/code/accident/frames/ZSgfKfHNOb8_00_t4.000.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "sideswipe"
+}
+
+  -> final parsed result: accident_time=4.0000, center_x=0.5896, center_y=0.5100, type=sideswipe
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test15_part1.csv (45 rows saved)
+
+[1059] Processing: videos/w1jVynKgMzo_00.mp4
+  -> hybrid time selector: running full-video Qwen first
+  -> model output: {
+  "accident_time": null,
+  "confidence": 0
+}
+
+  -> initial Qwen time: Nones (confidence=0.00/5)
+  -> Qwen time is suspicious; running OF rule selector (reason=qwen_time_none, confidence=0.00/5)
+  -> optical-flow stats: points=150 score_max=2.889918 score_mean=1.139731 score_std=0.609421
+  -> optical-flow candidates:
+     rank=1 t=15.947s score=2.889918 z=2.872 motion=2.532269 delta=0.510928 idx=79 late=False KEEP
+     rank=2 t=2.591s score=2.264178 z=1.845 motion=2.232582 delta=0.045137 idx=12 late=False KEEP
+     rank=3 t=28.505s score=2.102201 z=1.579 motion=2.064664 delta=0.053623 idx=142 late=True KEEP
+     rank=4 t=6.777s score=1.861755 z=1.185 motion=1.757899 delta=0.148365 idx=33 late=False KEEP
+     rank=5 t=14.751s score=1.785252 z=1.059 motion=1.662386 delta=0.175524 idx=73 late=False KEEP
+  -> rule-based OF selector: Qwen selector is disabled
+  -> selected OF candidate by hybrid rule: rank=1 time=15.9468s score=2.889918 z=2.872 late=False rule=hard_filter_start_end_z_then_prefer_non_late_then_best_rank
+  -> final hybrid time: 15.9468s (source=optical_flow_rule, qwen_time=Nones, qwen_confidence=0.00/5)
+  -> predicted accident_time=15.9468 (source=optical_flow_rule, qwen_confidence=0.00/5)
+  -> model output: {
+  "center_x": 0.49,
+  "center_y": 0.55
+}
+
+  -> model output: {"center_x": 0.53, "center_y": 0.54}
+
+  -> model output: {
+  "center_x": 0.53,
+  "center_y": 0.51
+}
+
+  -> model output: {
+  "center_x": 0.48,
+  "center_y": 0.52
+}
+
+  -> model output: {
+  "center_x": 0.45,
+  "center_y": 0.55
+}
+
+  -> predicted location: center_x=0.5219, center_y=0.5478
+  -> saved representative frame: /root/Desktop/workspace/yujin/code/accident/frames/w1jVynKgMzo_00_t15.947.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "rear-end"
+}
+
+  -> final parsed result: accident_time=15.9468, center_x=0.5219, center_y=0.5478, type=rear-end
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test15_part1.csv (46 rows saved)
+
+[1060] Processing: videos/l9KMgfV5BeU_00.mp4
+  -> hybrid time selector: running full-video Qwen first
+  -> model output: {
+  "accident_time": null,
+  "confidence": 0
+}
+
+  -> initial Qwen time: Nones (confidence=0.00/5)
+  -> Qwen time is suspicious; running OF rule selector (reason=qwen_time_none, confidence=0.00/5)
+  -> optical-flow stats: points=138 score_max=0.509159 score_mean=0.161563 score_std=0.115936
+  -> optical-flow candidates:
+     rank=1 t=10.286s score=0.509159 z=2.998 motion=0.449136 delta=0.085748 idx=52 late=False KEEP
+     rank=2 t=12.421s score=0.415601 z=2.191 motion=0.405519 delta=0.014402 idx=63 late=False KEEP
+     rank=3 t=14.168s score=0.325957 z=1.418 motion=0.323365 delta=0.003703 idx=72 late=False KEEP
+     rank=4 t=18.826s score=0.276427 z=0.991 motion=0.273158 delta=0.004671 idx=96 late=True KEEP
+     rank=5 t=15.333s score=0.233613 z=0.621 motion=0.233613 delta=0.000000 idx=78 late=False KEEP
+  -> rule-based OF selector: Qwen selector is disabled
+  -> selected OF candidate by hybrid rule: rank=1 time=10.2864s score=0.509159 z=2.998 late=False rule=hard_filter_start_end_z_then_prefer_non_late_then_best_rank
+  -> final hybrid time: 10.2864s (source=optical_flow_rule, qwen_time=Nones, qwen_confidence=0.00/5)
+  -> predicted accident_time=10.2864 (source=optical_flow_rule, qwen_confidence=0.00/5)
+  -> model output: {
+  "center_x": 0.03,
+  "center_y": 0.42
+}
+
+  -> model output: {
+  "center_x": 0.04,
+  "center_y": 0.42
+}
+
+  -> model output: {
+  "center_x": 0.85,
+  "center_y": 0.35
+}
+
+  -> model output: {
+  "center_x": 0.15,
+  "center_y": 0.55
+}
+
+  -> model output: {
+  "center_x": 0.35,
+  "center_y": 0.55
+}
+
+  -> predicted location: center_x=0.0599, center_y=0.4326
+  -> saved representative frame: /root/Desktop/workspace/yujin/code/accident/frames/l9KMgfV5BeU_00_t10.286.jpg
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.99
+}
+
+  -> final parsed result: accident_time=10.2864, center_x=0.0599, center_y=0.4326, type=single
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test15_part1.csv (47 rows saved)
+
+[1061] Processing: videos/_j_q79xO2ug_00.mp4
+  -> hybrid time selector: running full-video Qwen first
+  -> model output: {
+  "accident_time": null,
+  "confidence": 0
+}
+
+  -> initial Qwen time: Nones (confidence=0.00/5)
+  -> Qwen time is suspicious; running OF rule selector (reason=qwen_time_none, confidence=0.00/5)
+  -> optical-flow stats: points=348 score_max=1.928663 score_mean=0.332908 score_std=0.390006
+  -> optical-flow candidates:
+     rank=1 t=20.115s score=1.928663 z=4.092 motion=1.781119 delta=0.210776 idx=79 late=True KEEP
+     rank=2 t=77.190s score=1.308505 z=2.501 motion=1.225077 delta=0.119183 idx=306 late=True KEEP
+     rank=3 t=66.630s score=1.236976 z=2.318 motion=1.085268 delta=0.216726 idx=264 late=True KEEP
+     rank=4 t=56.070s score=1.199602 z=2.222 motion=1.170432 delta=0.041671 idx=222 late=True KEEP
+     rank=5 t=78.196s score=1.185799 z=2.187 motion=1.148240 delta=0.053656 idx=310 late=True KEEP
+  -> rule-based OF selector: Qwen selector is disabled
+  -> selected OF candidate by hybrid rule: rank=1 time=20.1148s score=1.928663 z=4.092 late=True rule=hard_filter_start_end_z_then_prefer_non_late_then_best_rank
+  -> final hybrid time: 20.1148s (source=optical_flow_rule, qwen_time=Nones, qwen_confidence=0.00/5)
+  -> predicted accident_time=20.1148 (source=optical_flow_rule, qwen_confidence=0.00/5)
+  -> model output: ```json
+{
+  "center_x": 0.51,
+  "center_y": 0.24
+}
+```
+
+  -> model output: {"center_x": 0.56, "center_y": 0.25}
+
+  -> model output: {"center_x": 0.59, "center_y": 0.31}
+
+  -> model output: {
+  "center_x": 0.5,
+  "center_y": 0.5
+}
+
+  -> model output: {
+  "center_x": 0.0,
+  "center_y": 0.5
+}
+
+  -> predicted location: center_x=0.5599, center_y=0.2500
+  -> saved representative frame: /root/Desktop/workspace/yujin/code/accident/frames/_j_q79xO2ug_00_t20.115.jpg
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=20.1148, center_x=0.5599, center_y=0.2500, type=single
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test15_part1.csv (48 rows saved)
+
+[1062] Processing: videos/hzxEJZNwy6s_00.mp4
+  -> hybrid time selector: running full-video Qwen first
+  -> model output: {
+  "accident_time": 110.0,
+  "confidence": 5
+}
+
+  -> initial Qwen time: 110.0000s (confidence=5.00/5)
+  -> Qwen time accepted by hybrid rule; final_time=110.0000s (confidence=5.00/5)
+  -> predicted accident_time=110.0000 (source=qwen, qwen_confidence=5.00/5)
+  -> model output: {"center_x": 0.62, "center_y": 0.43}
+
+  -> model output: {"center_x": 0.62, "center_y": 0.43}
+
+  -> model output: {
+  "center_x": 0.57,
+  "center_y": 0.27
+}
+
+  -> model output: {
+  "center_x": 0.41,
+  "center_y": 0.52
+}
+
+  -> model output: {
+  "center_x": 0.35,
+  "center_y": 0.55
+}
+
+  -> predicted location: center_x=0.5840, center_y=0.4371
+  -> saved representative frame: /root/Desktop/workspace/yujin/code/accident/frames/hzxEJZNwy6s_00_t110.000.jpg
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=110.0000, center_x=0.5840, center_y=0.4371, type=single
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test15_part1.csv (49 rows saved)
+
+[1063] Processing: videos/x5XPG-uYJlM_00.mp4
+  -> hybrid time selector: running full-video Qwen first
+  -> model output: {
+  "accident_time": 6.0,
+  "confidence": 5
+}
+
+  -> initial Qwen time: 6.0000s (confidence=5.00/5)
+  -> Qwen time accepted by hybrid rule; final_time=6.0000s (confidence=5.00/5)
+  -> predicted accident_time=6.0000 (source=qwen, qwen_confidence=5.00/5)
+  -> model output: {
+  "center_x": 0.28,
+  "center_y": 0.55
+}
+
+  -> model output: {
+  "center_x": 0.31,
+  "center_y": 0.58
+}
+
+  -> model output: {
+  "center_x": 0.23,
+  "center_y": 0.39
+}
+
+  -> model output: {
+  "center_x": 0.61,
+  "center_y": 0.56
+}
+
+  -> model output: {
+  "center_x": 0.62,
+  "center_y": 0.65
+}
+
+  -> predicted location: center_x=0.3111, center_y=0.5726
+  -> saved representative frame: /root/Desktop/workspace/yujin/code/accident/frames/x5XPG-uYJlM_00_t6.000.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "rear-end"
+}
+
+  -> final parsed result: accident_time=6.0000, center_x=0.3111, center_y=0.5726, type=rear-end
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test15_part1.csv (50 rows saved)
+
+[1064] Processing: videos/qigDKE0vaXw_00.mp4
+  -> hybrid time selector: running full-video Qwen first
+  -> model output: {
+  "accident_time": null,
+  "confidence": 0
+}
+
+  -> initial Qwen time: Nones (confidence=0.00/5)
+  -> Qwen time is suspicious; running OF rule selector (reason=qwen_time_none, confidence=0.00/5)
+  -> optical-flow stats: points=115 score_max=1.961641 score_mean=0.638279 score_std=0.440363
+  -> optical-flow candidates:
+     rank=1 t=2.404s score=1.961641 z=3.005 motion=1.813088 delta=0.212219 idx=11 late=False KEEP
+     rank=2 t=7.013s score=1.498956 z=1.954 motion=1.398744 delta=0.143160 idx=34 late=False KEEP
+     rank=3 t=9.417s score=1.284775 z=1.468 motion=1.259605 delta=0.035956 idx=46 late=False KEEP
+     rank=4 t=13.625s score=1.171633 z=1.211 motion=1.067788 delta=0.148350 idx=67 late=False KEEP
+     rank=5 t=4.007s score=1.110439 z=1.072 motion=1.003874 delta=0.152236 idx=19 late=False KEEP
+  -> rule-based OF selector: Qwen selector is disabled
+  -> selected OF candidate by hybrid rule: rank=1 time=2.4045s score=1.961641 z=3.005 late=False rule=hard_filter_start_end_z_then_prefer_non_late_then_best_rank
+  -> final hybrid time: 2.4045s (source=optical_flow_rule, qwen_time=Nones, qwen_confidence=0.00/5)
+  -> predicted accident_time=2.4045 (source=optical_flow_rule, qwen_confidence=0.00/5)
+  -> model output: {
+  "center_x": 0.42,
+  "center_y": 0.57
+}
+
+  -> model output: {
+  "center_x": 0.48,
+  "center_y": 0.66
+}
+
+  -> model output: {
+  "center_x": 0.37,
+  "center_y": 0.64
+}
+
+  -> model output: {
+  "center_x": 0.5,
+  "center_y": 0.5
+}
+
+  -> model output: {
+  "center_x": 0.5,
+  "center_y": 0.5
+}
+
+  -> predicted location: center_x=0.4200, center_y=0.6400
+  -> saved representative frame: /root/Desktop/workspace/yujin/code/accident/frames/qigDKE0vaXw_00_t2.404.jpg
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=2.4045, center_x=0.4200, center_y=0.6400, type=single
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test15_part1.csv (51 rows saved)
+
+[1065] Processing: videos/CtYbOZdwGkY_00.mp4
+  -> hybrid time selector: running full-video Qwen first
+  -> model output: {
+  "accident_time": 3.0,
+  "confidence": 5
+}
+
+  -> initial Qwen time: 3.0000s (confidence=5.00/5)
+  -> Qwen time accepted by hybrid rule; final_time=3.0000s (confidence=5.00/5)
+  -> predicted accident_time=3.0000 (source=qwen, qwen_confidence=5.00/5)
+  -> model output: {
+  "center_x": 0.43,
+  "center_y": 0.55
+}
+
+  -> model output: {
+  "center_x": 0.44,
+  "center_y": 0.55
+}
+
+  -> model output: {
+  "center_x": 0.45,
+  "center_y": 0.55
+}
+
+  -> model output: {
+  "center_x": 0.39,
+  "center_y": 0.63
+}
+
+  -> model output: {
+  "center_x": 0.51,
+  "center_y": 0.51
+}
+
+  -> predicted location: center_x=0.4400, center_y=0.5520
+  -> saved representative frame: /root/Desktop/workspace/yujin/code/accident/frames/CtYbOZdwGkY_00_t3.000.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "rear-end"
+}
+
+  -> final parsed result: accident_time=3.0000, center_x=0.4400, center_y=0.5520, type=rear-end
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test15_part1.csv (52 rows saved)
+
+[1066] Processing: videos/fK5Y7gMh21c_00.mp4
+  -> hybrid time selector: running full-video Qwen first
+  -> model output: {
+  "accident_time": null,
+  "confidence": 0
+}
+
+  -> initial Qwen time: Nones (confidence=0.00/5)
+  -> Qwen time is suspicious; running OF rule selector (reason=qwen_time_none, confidence=0.00/5)
+  -> optical-flow stats: points=29 score_max=1.124596 score_mean=0.466064 score_std=0.341709
+  -> optical-flow candidates:
+     rank=1 t=1.213s score=1.124596 z=1.927 motion=1.100915 delta=0.033831 idx=5 late=False KEEP
+     rank=2 t=0.202s score=0.469393 z=0.010 motion=0.469393 delta=0.000000 idx=0 late=False REJECT(too_close_to_start<=0.5)
+     rank=3 t=2.225s score=0.398170 z=-0.199 motion=0.398170 delta=0.000000 idx=10 late=False REJECT(low_score_z<0.0)
+     rank=4 t=4.652s score=0.376247 z=-0.263 motion=0.348587 delta=0.039513 idx=22 late=True REJECT(low_score_z<0.0)
+     rank=5 t=5.663s score=0.202432 z=-0.772 motion=0.202432 delta=0.000000 idx=27 late=True REJECT(too_close_to_end(duration-1.0))
+  -> rule-based OF selector: Qwen selector is disabled
+  -> selected OF candidate by hybrid rule: rank=1 time=1.2135s score=1.124596 z=1.927 late=False rule=hard_filter_start_end_z_then_prefer_non_late_then_best_rank
+  -> final hybrid time: 1.2135s (source=optical_flow_rule, qwen_time=Nones, qwen_confidence=0.00/5)
+  -> predicted accident_time=1.2135 (source=optical_flow_rule, qwen_confidence=0.00/5)
+  -> model output: {
+  "center_x": 0.35,
+  "center_y": 0.35
+}
+
+  -> model output: {
+  "center_x": 0.83,
+  "center_y": 0.5
+}
+
+  -> model output: {
+  "center_x": 0.37,
+  "center_y": 0.37
+}
+
+  -> model output: {
+  "center_x": 0.47,
+  "center_y": 0.45
+}
+
+  -> model output: {
+  "center_x": 0.5,
+  "center_y": 0.5
+}
+
+  -> predicted location: center_x=0.3697, center_y=0.3700
+  -> saved representative frame: /root/Desktop/workspace/yujin/code/accident/frames/fK5Y7gMh21c_00_t1.213.jpg
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=1.2135, center_x=0.3697, center_y=0.3700, type=single
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test15_part1.csv (53 rows saved)
+
+[1067] Processing: videos/08gvKdY9xj4_00.mp4
+  -> hybrid time selector: running full-video Qwen first
+  -> model output: {
+  "accident_time": null,
+  "confidence": 0
+}
+
+  -> initial Qwen time: Nones (confidence=0.00/5)
+  -> Qwen time is suspicious; running OF rule selector (reason=qwen_time_none, confidence=0.00/5)
+  -> optical-flow stats: points=150 score_max=0.812888 score_mean=0.259721 score_std=0.211243
+  -> optical-flow candidates:
+     rank=1 t=27.400s score=0.812888 z=2.619 motion=0.773183 delta=0.056722 idx=136 late=True KEEP
+     rank=2 t=25.200s score=0.745446 z=2.299 motion=0.727647 delta=0.025427 idx=125 late=True KEEP
+     rank=3 t=16.800s score=0.656996 z=1.881 motion=0.615784 delta=0.058875 idx=83 late=False KEEP
+     rank=4 t=28.800s score=0.647061 z=1.834 motion=0.599539 delta=0.067889 idx=143 late=True KEEP
+     rank=5 t=4.400s score=0.546617 z=1.358 motion=0.509816 delta=0.052573 idx=21 late=False KEEP
+  -> rule-based OF selector: Qwen selector is disabled
+  -> selected OF candidate by hybrid rule: rank=3 time=16.8000s score=0.656996 z=1.881 late=False rule=hard_filter_start_end_z_then_prefer_non_late_then_best_rank
+  -> final hybrid time: 16.8000s (source=optical_flow_rule, qwen_time=Nones, qwen_confidence=0.00/5)
+  -> predicted accident_time=16.8000 (source=optical_flow_rule, qwen_confidence=0.00/5)
+  -> model output: {
+  "center_x": 0.37,
+  "center_y": 0.94
+}
+
+  -> model output: {
+  "center_x": 0.40,
+  "center_y": 0.44
+}
+
+  -> model output: {
+  "center_x": 0.43,
+  "center_y": 0.82
+}
+
+  -> model output: {
+  "center_x": 0.51,
+  "center_y": 0.65
+}
+
+  -> model output: {
+  "center_x": 0.5,
+  "center_y": 0.5
+}
+
+  -> predicted location: center_x=0.4003, center_y=0.8206
+  -> saved representative frame: /root/Desktop/workspace/yujin/code/accident/frames/08gvKdY9xj4_00_t16.800.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "rear-end"
+}
+
+  -> final parsed result: accident_time=16.8000, center_x=0.4003, center_y=0.8206, type=rear-end
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test15_part1.csv (54 rows saved)
+
+[1068] Processing: videos/yab6XEomWGM_00.mp4
+  -> hybrid time selector: running full-video Qwen first
+  -> model output: {
+  "accident_time": 7.0,
+  "confidence": 5
+}
+
+  -> initial Qwen time: 7.0000s (confidence=5.00/5)
+  -> Qwen time accepted by hybrid rule; final_time=7.0000s (confidence=5.00/5)
+  -> predicted accident_time=7.0000 (source=qwen, qwen_confidence=5.00/5)
+  -> model output: {
+  "center_x": 0.45,
+  "center_y": 0.28
+}
+
+  -> model output: {
+  "center_x": 0.407,
+  "center_y": 0.347
+}
+
+  -> model output: {
+  "center_x": 0.14,
+  "center_y": 0.41
+}
+
+  -> model output: {
+  "center_x": 0.5,
+  "center_y": 0.5
+}
+
+  -> model output: {
+  "center_x": 0.44,
+  "center_y": 0.56
+}
+
+  -> predicted location: center_x=0.4062, center_y=0.3470
+  -> saved representative frame: /root/Desktop/workspace/yujin/code/accident/frames/yab6XEomWGM_00_t7.000.jpg
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=7.0000, center_x=0.4062, center_y=0.3470, type=single
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test15_part1.csv (55 rows saved)
+
+[1069] Processing: videos/YD-7Fnztg_4_00.mp4
+  -> hybrid time selector: running full-video Qwen first
+  -> model output: {
+  "accident_time": null,
+  "confidence": 0
+}
+
+  -> initial Qwen time: Nones (confidence=0.00/5)
+  -> Qwen time is suspicious; running OF rule selector (reason=qwen_time_none, confidence=0.00/5)
+  -> optical-flow stats: points=149 score_max=1.845170 score_mean=0.918863 score_std=0.337418
+  -> optical-flow candidates:
+     rank=1 t=1.402s score=1.845170 z=2.745 motion=1.779543 delta=0.093753 idx=6 late=False KEEP
+     rank=2 t=13.018s score=1.711420 z=2.349 motion=1.660148 delta=0.073246 idx=64 late=False KEEP
+     rank=3 t=17.825s score=1.651473 z=2.171 motion=1.554848 delta=0.138036 idx=88 late=False KEEP
+     rank=4 t=4.406s score=1.538646 z=1.837 motion=1.400789 delta=0.196939 idx=21 late=False KEEP
+     rank=5 t=22.231s score=1.202854 z=0.842 motion=1.171306 delta=0.045069 idx=110 late=True KEEP
+  -> rule-based OF selector: Qwen selector is disabled
+  -> selected OF candidate by hybrid rule: rank=1 time=1.4019s score=1.845170 z=2.745 late=False rule=hard_filter_start_end_z_then_prefer_non_late_then_best_rank
+  -> final hybrid time: 1.4019s (source=optical_flow_rule, qwen_time=Nones, qwen_confidence=0.00/5)
+  -> predicted accident_time=1.4019 (source=optical_flow_rule, qwen_confidence=0.00/5)
+  -> model output: {
+  "center_x": 0.65,
+  "center_y": 0.55
+}
+
+  -> model output: {
+  "center_x": 0.62,
+  "center_y": 0.56
+}
+
+  -> model output: {
+  "center_x": 0.64,
+  "center_y": 0.52
+}
+
+  -> model output: {
+  "center_x": 0.45,
+  "center_y": 0.52
+}
+
+  -> model output: {
+  "center_x": 0.44,
+  "center_y": 0.58
+}
+
+  -> predicted location: center_x=0.6242, center_y=0.5567
+  -> saved representative frame: /root/Desktop/workspace/yujin/code/accident/frames/YD-7Fnztg_4_00_t1.402.jpg
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=1.4019, center_x=0.6242, center_y=0.5567, type=single
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test15_part1.csv (56 rows saved)
+
+[1070] Processing: videos/hQVkdwPxafw_00.mp4
+  -> hybrid time selector: running full-video Qwen first
+  -> model output: {
+  "accident_time": null,
+  "confidence": 0
+}
+
+  -> initial Qwen time: Nones (confidence=0.00/5)
+  -> Qwen time is suspicious; running OF rule selector (reason=qwen_time_none, confidence=0.00/5)
+  -> optical-flow stats: points=150 score_max=2.888960 score_mean=0.685118 score_std=0.682226
+  -> optical-flow candidates:
+     rank=1 t=22.494s score=2.888960 z=3.230 motion=2.822012 delta=0.095640 idx=112 late=True KEEP
+     rank=2 t=21.299s score=1.987419 z=1.909 motion=1.748659 delta=0.341086 idx=106 late=True KEEP
+     rank=3 t=24.086s score=1.966701 z=1.879 motion=1.598673 delta=0.525755 idx=120 late=True KEEP
+     rank=4 t=17.119s score=1.843210 z=1.698 motion=1.760735 delta=0.117822 idx=85 late=False KEEP
+     rank=5 t=10.749s score=1.429461 z=1.091 motion=1.301473 delta=0.182840 idx=53 late=False KEEP
+  -> rule-based OF selector: Qwen selector is disabled
+  -> selected OF candidate by hybrid rule: rank=4 time=17.1190s score=1.843210 z=1.698 late=False rule=hard_filter_start_end_z_then_prefer_non_late_then_best_rank
+  -> final hybrid time: 17.1190s (source=optical_flow_rule, qwen_time=Nones, qwen_confidence=0.00/5)
+  -> predicted accident_time=17.1190 (source=optical_flow_rule, qwen_confidence=0.00/5)
+  -> model output: {
+  "center_x": 0.63,
+  "center_y": 0.85
+}
+
+  -> model output: {
+  "center_x": 0.68,
+  "center_y": 0.74
+}
+
+  -> model output: {
+  "center_x": 0.73,
+  "center_y": 0.63
+}
+
+  -> model output: {
+  "center_x": 0.51,
+  "center_y": 0.51
+}
+
+  -> model output: {
+  "center_x": 0.5,
+  "center_y": 0.5
+}
+
+  -> predicted location: center_x=0.6800, center_y=0.7400
+  -> saved representative frame: /root/Desktop/workspace/yujin/code/accident/frames/hQVkdwPxafw_00_t17.119.jpg
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=17.1190, center_x=0.6800, center_y=0.7400, type=single
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test15_part1.csv (57 rows saved)
+
+[1071] Processing: videos/dgWpyczEx7U_00.mp4
+  -> hybrid time selector: running full-video Qwen first
+  -> model output: {
+  "accident_time": 6.0,
+  "confidence": 5
+}
+
+  -> initial Qwen time: 6.0000s (confidence=5.00/5)
+  -> Qwen time accepted by hybrid rule; final_time=6.0000s (confidence=5.00/5)
+  -> predicted accident_time=6.0000 (source=qwen, qwen_confidence=5.00/5)
+  -> model output: {
+  "center_x": 0.64,
+  "center_y": 0.57
+}
+
+  -> model output: {
+  "center_x": 0.62,
+  "center_y": 0.62
+}
+
+  -> model output: {
+  "center_x": 0.28,
+  "center_y": 0.55
+}
+
+  -> model output: {
+  "center_x": 0.5,
+  "center_y": 0.5
+}
+
+  -> model output: {
+  "center_x": 0.5,
+  "center_y": 0.5
+}
+
+  -> predicted location: center_x=0.6199, center_y=0.5700
+  -> saved representative frame: /root/Desktop/workspace/yujin/code/accident/frames/dgWpyczEx7U_00_t6.000.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "sideswipe"
+}
+
+  -> final parsed result: accident_time=6.0000, center_x=0.6199, center_y=0.5700, type=sideswipe
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test15_part1.csv (58 rows saved)
+
+[1072] Processing: videos/20zWZEGQ7GY_00.mp4
+  -> hybrid time selector: running full-video Qwen first
+  -> model output: {
+  "accident_time": null,
+  "confidence": 0
+}
+
+  -> initial Qwen time: Nones (confidence=0.00/5)
+  -> Qwen time is suspicious; running OF rule selector (reason=qwen_time_none, confidence=0.00/5)
+  -> optical-flow stats: points=149 score_max=0.427186 score_mean=0.216801 score_std=0.073134
+  -> optical-flow candidates:
+     rank=1 t=7.190s score=0.427186 z=2.877 motion=0.412239 delta=0.021353 idx=35 late=False KEEP
+     rank=2 t=5.193s score=0.361118 z=1.973 motion=0.344979 delta=0.023056 idx=25 late=False KEEP
+     rank=3 t=28.760s score=0.317842 z=1.382 motion=0.309956 delta=0.011265 idx=143 late=True KEEP
+     rank=4 t=25.165s score=0.309535 z=1.268 motion=0.297993 delta=0.016488 idx=125 late=True KEEP
+     rank=5 t=3.395s score=0.308500 z=1.254 motion=0.287660 delta=0.029772 idx=16 late=False KEEP
+  -> rule-based OF selector: Qwen selector is disabled
+  -> selected OF candidate by hybrid rule: rank=1 time=7.1900s score=0.427186 z=2.877 late=False rule=hard_filter_start_end_z_then_prefer_non_late_then_best_rank
+  -> final hybrid time: 7.1900s (source=optical_flow_rule, qwen_time=Nones, qwen_confidence=0.00/5)
+  -> predicted accident_time=7.1900 (source=optical_flow_rule, qwen_confidence=0.00/5)
+  -> model output: {
+  "center_x": 0.67,
+  "center_y": 0.69
+}
+
+  -> model output: {
+  "center_x": 0.63,
+  "center_y": 0.66
+}
+
+  -> model output: {
+  "center_x": 0.635,
+  "center_y": 0.555
+}
+
+  -> model output: {
+  "center_x": 0.48,
+  "center_y": 0.23
+}
+
+  -> model output: {
+  "center_x": 0.72,
+  "center_y": 0.55
+}
+
+  -> predicted location: center_x=0.6350, center_y=0.6600
+  -> saved representative frame: /root/Desktop/workspace/yujin/code/accident/frames/20zWZEGQ7GY_00_t7.190.jpg
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=7.1900, center_x=0.6350, center_y=0.6600, type=single
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test15_part1.csv (59 rows saved)
+
+[1073] Processing: videos/TvdgqAnb3QM_00.mp4
+  -> hybrid time selector: running full-video Qwen first
+  -> model output: {
+  "accident_time": null,
+  "confidence": 0
+}
+
+  -> initial Qwen time: Nones (confidence=0.00/5)
+  -> Qwen time is suspicious; running OF rule selector (reason=qwen_time_none, confidence=0.00/5)
+  -> optical-flow stats: points=149 score_max=4.814206 score_mean=2.815322 score_std=0.825314
+  -> optical-flow candidates:
+     rank=1 t=20.028s score=4.814206 z=2.422 motion=4.531067 delta=0.404485 idx=99 late=True KEEP
+     rank=2 t=11.416s score=4.407664 z=1.929 motion=4.277440 delta=0.186034 idx=56 late=False KEEP
+     rank=3 t=27.438s score=4.334594 z=1.841 motion=4.004666 delta=0.471326 idx=136 late=True KEEP
+     rank=4 t=21.830s score=4.288380 z=1.785 motion=4.114188 delta=0.248846 idx=108 late=True KEEP
+     rank=5 t=9.613s score=3.846910 z=1.250 motion=3.737847 delta=0.155803 idx=47 late=False KEEP
+  -> rule-based OF selector: Qwen selector is disabled
+  -> selected OF candidate by hybrid rule: rank=2 time=11.4158s score=4.407664 z=1.929 late=False rule=hard_filter_start_end_z_then_prefer_non_late_then_best_rank
+  -> final hybrid time: 11.4158s (source=optical_flow_rule, qwen_time=Nones, qwen_confidence=0.00/5)
+  -> predicted accident_time=11.4158 (source=optical_flow_rule, qwen_confidence=0.00/5)
+  -> model output: {
+  "center_x": 0.71,
+  "center_y": 0.89
+}
+
+  -> model output: {
+  "center_x": 0.5,
+  "center_y": 0.5
+}
+
+  -> model output: {
+  "center_x": 0.52,
+  "center_y": 0.68
+}
+
+  -> model output: {
+  "center_x": 0.42,
+  "center_y": 0.41
+}
+
+  -> model output: {
+  "center_x": 0.42,
+  "center_y": 0.45
+}
+
+  -> predicted location: center_x=0.4990, center_y=0.6672
+  -> saved representative frame: /root/Desktop/workspace/yujin/code/accident/frames/TvdgqAnb3QM_00_t11.416.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "sideswipe"
+}
+
+  -> final parsed result: accident_time=11.4158, center_x=0.4990, center_y=0.6672, type=sideswipe
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test15_part1.csv (60 rows saved)
+
+[1074] Processing: videos/zBa7uxOYBd0_00.mp4
+  -> hybrid time selector: running full-video Qwen first
+  -> model output: {
+  "accident_time": null,
+  "confidence": 0
+}
+
+  -> initial Qwen time: Nones (confidence=0.00/5)
+  -> Qwen time is suspicious; running OF rule selector (reason=qwen_time_none, confidence=0.00/5)
+  -> optical-flow stats: points=61 score_max=1.684017 score_mean=0.838542 score_std=0.406537
+  -> optical-flow candidates:
+     rank=1 t=2.815s score=1.684017 z=2.080 motion=1.594310 delta=0.128152 idx=13 late=False KEEP
+     rank=2 t=3.820s score=1.530734 z=1.703 motion=1.530734 delta=0.000000 idx=18 late=False KEEP
+     rank=3 t=4.826s score=1.077284 z=0.587 motion=1.077284 delta=0.000000 idx=23 late=False KEEP
+     rank=4 t=1.810s score=1.072920 z=0.577 motion=1.006662 delta=0.094655 idx=8 late=False KEEP
+     rank=5 t=6.837s score=0.997462 z=0.391 motion=0.944920 delta=0.075059 idx=33 late=False KEEP
+  -> rule-based OF selector: Qwen selector is disabled
+  -> selected OF candidate by hybrid rule: rank=1 time=2.8151s score=1.684017 z=2.080 late=False rule=hard_filter_start_end_z_then_prefer_non_late_then_best_rank
+  -> final hybrid time: 2.8151s (source=optical_flow_rule, qwen_time=Nones, qwen_confidence=0.00/5)
+  -> predicted accident_time=2.8151 (source=optical_flow_rule, qwen_confidence=0.00/5)
+  -> model output: {"center_x": 0.38, "center_y": 0.45}
+
+  -> model output: {"center_x": 0.41, "center_y": 0.44}
+
+  -> model output: {
+  "center_x": 0.45,
+  "center_y": 0.42
+}
+
+  -> model output: {
+  "center_x": 0.5,
+  "center_y": 0.5
+}
+
+  -> model output: {
+  "center_x": 0.52,
+  "center_y": 0.51
+}
+
+  -> predicted location: center_x=0.4100, center_y=0.4400
+  -> saved representative frame: /root/Desktop/workspace/yujin/code/accident/frames/zBa7uxOYBd0_00_t2.815.jpg
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=2.8151, center_x=0.4100, center_y=0.4400, type=single
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test15_part1.csv (61 rows saved)
+
+[1075] Processing: videos/XtJodwSF_lQ_00.mp4
+  -> hybrid time selector: running full-video Qwen first
+  -> model output: {
+  "accident_time": null,
+  "confidence": 0
+}
+
+  -> initial Qwen time: Nones (confidence=0.00/5)
+  -> Qwen time is suspicious; running OF rule selector (reason=qwen_time_none, confidence=0.00/5)
+  -> optical-flow stats: points=126 score_max=2.137854 score_mean=1.263377 score_std=0.364213
+  -> optical-flow candidates:
+     rank=1 t=17.159s score=2.137854 z=2.401 motion=1.862631 delta=0.393175 idx=85 late=False KEEP
+     rank=2 t=6.784s score=1.889253 z=1.718 motion=1.844866 delta=0.063410 idx=33 late=False KEEP
+     rank=3 t=18.356s score=1.872365 z=1.672 motion=1.872365 delta=0.000000 idx=91 late=True KEEP
+     rank=4 t=0.599s score=1.830686 z=1.558 motion=1.635602 delta=0.278692 idx=2 late=False KEEP
+     rank=5 t=4.788s score=1.723035 z=1.262 motion=1.580632 delta=0.203432 idx=23 late=False KEEP
+  -> rule-based OF selector: Qwen selector is disabled
+  -> selected OF candidate by hybrid rule: rank=1 time=17.1586s score=2.137854 z=2.401 late=False rule=hard_filter_start_end_z_then_prefer_non_late_then_best_rank
+  -> final hybrid time: 17.1586s (source=optical_flow_rule, qwen_time=Nones, qwen_confidence=0.00/5)
+  -> predicted accident_time=17.1586 (source=optical_flow_rule, qwen_confidence=0.00/5)
+  -> model output: {"center_x": 0.566, "center_y": 0.552}
+
+  -> model output: {"center_x": 0.346, "center_y": 0.584}
+
+  -> model output: {"center_x": 0.613, "center_y": 0.483}
+
+  -> model output: {
+  "center_x": 0.55,
+  "center_y": 0.43
+}
+
+  -> model output: {
+  "center_x": 0.58,
+  "center_y": 0.42
+}
+
+  -> predicted location: center_x=0.5858, center_y=0.5316
+  -> saved representative frame: /root/Desktop/workspace/yujin/code/accident/frames/XtJodwSF_lQ_00_t17.159.jpg
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=17.1586, center_x=0.5858, center_y=0.5316, type=single
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test15_part1.csv (62 rows saved)
+
+[1076] Processing: videos/xNdcRobqvsc_00.mp4
+  -> hybrid time selector: running full-video Qwen first
+  -> model output: {
+  "accident_time": 3.0,
+  "confidence": 5
+}
+
+  -> initial Qwen time: 3.0000s (confidence=5.00/5)
+  -> Qwen time accepted by hybrid rule; final_time=3.0000s (confidence=5.00/5)
+  -> predicted accident_time=3.0000 (source=qwen, qwen_confidence=5.00/5)
+  -> model output: {"center_x": 0.25, "center_y": 0.59}
+
+  -> model output: {"center_x": 0.23, "center_y": 0.78}
+
+  -> model output: {
+  "center_x": 0.22,
+  "center_y": 0.72
+}
+
+  -> model output: {
+  "center_x": 0.56,
+  "center_y": 0.62
+}
+
+  -> model output: {
+  "center_x": 0.62,
+  "center_y": 0.65
+}
+
+  -> predicted location: center_x=0.2539, center_y=0.7590
+  -> saved representative frame: /root/Desktop/workspace/yujin/code/accident/frames/xNdcRobqvsc_00_t3.000.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "sideswipe"
+}
+
+  -> final parsed result: accident_time=3.0000, center_x=0.2539, center_y=0.7590, type=sideswipe
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test15_part1.csv (63 rows saved)
+
+[1077] Processing: videos/cdKTiLurgOI_00.mp4
+  -> hybrid time selector: running full-video Qwen first
+  -> model output: {
+  "accident_time": null,
+  "confidence": 0
+}
+
+  -> initial Qwen time: Nones (confidence=0.00/5)
+  -> Qwen time is suspicious; running OF rule selector (reason=qwen_time_none, confidence=0.00/5)
+  -> optical-flow stats: points=147 score_max=1.393190 score_mean=0.613781 score_std=0.288189
+  -> optical-flow candidates:
+     rank=1 t=10.560s score=1.393190 z=2.704 motion=1.302727 delta=0.129234 idx=51 late=False KEEP
+     rank=2 t=28.635s score=1.181379 z=1.970 motion=1.091007 delta=0.129104 idx=140 late=True KEEP
+     rank=3 t=18.074s score=1.140004 z=1.826 motion=1.081712 delta=0.083273 idx=88 late=True KEEP
+     rank=4 t=22.745s score=1.025823 z=1.430 motion=1.000273 delta=0.036500 idx=111 late=True KEEP
+     rank=5 t=1.422s score=0.989050 z=1.302 motion=0.874624 delta=0.163467 idx=6 late=False KEEP
+  -> rule-based OF selector: Qwen selector is disabled
+  -> selected OF candidate by hybrid rule: rank=1 time=10.5603s score=1.393190 z=2.704 late=False rule=hard_filter_start_end_z_then_prefer_non_late_then_best_rank
+  -> final hybrid time: 10.5603s (source=optical_flow_rule, qwen_time=Nones, qwen_confidence=0.00/5)
+  -> predicted accident_time=10.5603 (source=optical_flow_rule, qwen_confidence=0.00/5)
+  -> model output: {"center_x": 0.59, "center_y": 0.62}
+
+  -> model output: {
+  "center_x": 0.42,
+  "center_y": 0.8
+}
+
+  -> model output: {
+  "center_x": 0.43,
+  "center_y": 0.83
+}
+
+  -> model output: {
+  "center_x": 0.49,
+  "center_y": 0.51
+}
+
+  -> model output: {
+  "center_x": 0.51,
+  "center_y": 0.48
+}
+
+  -> predicted location: center_x=0.4300, center_y=0.8000
+  -> saved representative frame: /root/Desktop/workspace/yujin/code/accident/frames/cdKTiLurgOI_00_t10.560.jpg
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=10.5603, center_x=0.4300, center_y=0.8000, type=single
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test15_part1.csv (64 rows saved)
+
+[1078] Processing: videos/x2ymyeli9Xc_00.mp4
+  -> hybrid time selector: running full-video Qwen first
+  -> model output: {
+  "accident_time": 4.0,
+  "confidence": 5
+}
+
+  -> initial Qwen time: 4.0000s (confidence=5.00/5)
+  -> Qwen time accepted by hybrid rule; final_time=4.0000s (confidence=5.00/5)
+  -> predicted accident_time=4.0000 (source=qwen, qwen_confidence=5.00/5)
+  -> model output: {
+  "center_x": 0.49,
+  "center_y": 0.51
+}
+
+  -> model output: {
+  "center_x": 0.53,
+  "center_y": 0.53
+}
+
+  -> model output: {
+  "center_x": 0.56,
+  "center_y": 0.56
+}
+
+  -> model output: {
+  "center_x": 0.48,
+  "center_y": 0.51
+}
+
+  -> model output: {
+  "center_x": 0.48,
+  "center_y": 0.52
+}
+
+  -> predicted location: center_x=0.5240, center_y=0.5332
+  -> saved representative frame: /root/Desktop/workspace/yujin/code/accident/frames/x2ymyeli9Xc_00_t4.000.jpg
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=4.0000, center_x=0.5240, center_y=0.5332, type=single
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test15_part1.csv (65 rows saved)
+
+[1079] Processing: videos/4IUmjPBj5ik_00.mp4
+  -> hybrid time selector: running full-video Qwen first
+  -> model output: {
+  "accident_time": 7.0,
+  "confidence": 5.0
+}
+
+  -> initial Qwen time: 7.0000s (confidence=5.00/5)
+  -> Qwen time accepted by hybrid rule; final_time=7.0000s (confidence=5.00/5)
+  -> predicted accident_time=7.0000 (source=qwen, qwen_confidence=5.00/5)
+  -> model output: {"center_x": 0.81, "center_y": 0.08}
+
+  -> model output: {"center_x": 0.739, "center_y": 0.074}
+
+  -> model output: {
+  "center_x": 0.75,
+  "center_y": 0.08
+}
+
+  -> model output: {
+  "center_x": 0.51,
+  "center_y": 0.21
+}
+
+  -> model output: {
+  "center_x": 0.49,
+  "center_y": 0.31
+}
+
+  -> predicted location: center_x=0.7500, center_y=0.0802
+  -> saved representative frame: /root/Desktop/workspace/yujin/code/accident/frames/4IUmjPBj5ik_00_t7.000.jpg
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=7.0000, center_x=0.7500, center_y=0.0802, type=single
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test15_part1.csv (66 rows saved)
+
+[1080] Processing: videos/1Utldy8lKBo_00.mp4
+  -> hybrid time selector: running full-video Qwen first
+  -> model output: {
+  "accident_time": 5.0,
+  "confidence": 5
+}
+
+  -> initial Qwen time: 5.0000s (confidence=5.00/5)
+  -> Qwen time accepted by hybrid rule; final_time=5.0000s (confidence=5.00/5)
+  -> predicted accident_time=5.0000 (source=qwen, qwen_confidence=5.00/5)
+  -> model output: {"center_x": 0.54, "center_y": 0.22}
+
+  -> model output: {"center_x": 0.02, "center_y": 0.56}
+
+  -> model output: {"center_x": 0.01, "center_y": 0.53}
+
+  -> model output: {
+  "center_x": 0.05,
+  "center_y": 0.65
+}
+
+  -> model output: {
+  "center_x": 0.15,
+  "center_y": 0.75
+}
+
+  -> predicted location: center_x=0.0200, center_y=0.5896
+  -> saved representative frame: /root/Desktop/workspace/yujin/code/accident/frames/1Utldy8lKBo_00_t5.000.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "sideswipe"
+}
+
+  -> final parsed result: accident_time=5.0000, center_x=0.0200, center_y=0.5896, type=sideswipe
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test15_part1.csv (67 rows saved)
+
+[1081] Processing: videos/pB-O0UY9gM8_00.mp4
+  -> hybrid time selector: running full-video Qwen first
+  -> model output: {
+  "accident_time": null,
+  "confidence": 0
+}
+
+  -> initial Qwen time: Nones (confidence=0.00/5)
+  -> Qwen time is suspicious; running OF rule selector (reason=qwen_time_none, confidence=0.00/5)
+  -> optical-flow stats: points=25 score_max=1.262225 score_mean=0.339959 score_std=0.377478
+  -> optical-flow candidates:
+     rank=1 t=0.520s score=1.262225 z=2.443 motion=1.170182 delta=0.131490 idx=2 late=False KEEP
+     rank=2 t=1.559s score=0.318636 z=-0.056 motion=0.318636 delta=0.000000 idx=8 late=False REJECT(low_score_z<0.0)
+     rank=3 t=2.599s score=0.110840 z=-0.607 motion=0.110840 delta=0.000000 idx=14 late=False REJECT(low_score_z<0.0)
+     rank=4 t=3.638s score=0.030395 z=-0.820 motion=0.030395 delta=0.000000 idx=20 late=True REJECT(too_close_to_end(duration-1.0))
+  -> rule-based OF selector: Qwen selector is disabled
+  -> selected OF candidate by hybrid rule: rank=1 time=0.5197s score=1.262225 z=2.443 late=False rule=hard_filter_start_end_z_then_prefer_non_late_then_best_rank
+  -> final hybrid time: 0.5197s (source=optical_flow_rule, qwen_time=Nones, qwen_confidence=0.00/5)
+  -> predicted accident_time=0.5197 (source=optical_flow_rule, qwen_confidence=0.00/5)
+  -> model output: {"center_x": 0.24, "center_y": 0.81}
+
+  -> model output: {"center_x": 0.19, "center_y": 0.64}
+
+  -> model output: {"center_x": 0.22, "center_y": 0.48}
+
+  -> model output: {
+  "center_x": 0.46,
+  "center_y": 0.72
+}
+
+  -> model output: {
+  "center_x": 0.5,
+  "center_y": 0.5
+}
+
+  -> predicted location: center_x=0.2199, center_y=0.6404
+  -> saved representative frame: /root/Desktop/workspace/yujin/code/accident/frames/pB-O0UY9gM8_00_t0.520.jpg
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=0.5197, center_x=0.2199, center_y=0.6404, type=single
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test15_part1.csv (68 rows saved)
+
+[1082] Processing: videos/pB-O0UY9gM8_01.mp4
+  -> hybrid time selector: running full-video Qwen first
+  -> model output: {
+  "accident_time": 2.0,
+  "confidence": 5
+}
+
+  -> initial Qwen time: 2.0000s (confidence=5.00/5)
+  -> Qwen time accepted by hybrid rule; final_time=2.0000s (confidence=5.00/5)
+  -> predicted accident_time=2.0000 (source=qwen, qwen_confidence=5.00/5)
+  -> model output: {"center_x": 0.41, "center_y": 0.18}
+
+  -> model output: {"center_x": 0.486, "center_y": 0.162}
+
+  -> model output: ```json
+{
+  "center_x": 0.41,
+  "center_y": 0.16
+}
+```
+
+  -> model output: {
+  "center_x": 0.69,
+  "center_y": 0.39
+}
+
+  -> model output: {
+  "center_x": 0.82,
+  "center_y": 0.53
+}
+
+  -> predicted location: center_x=0.4858, center_y=0.1620
+  -> saved representative frame: /root/Desktop/workspace/yujin/code/accident/frames/pB-O0UY9gM8_01_t2.000.jpg
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.99
+}
+
+  -> final parsed result: accident_time=2.0000, center_x=0.4858, center_y=0.1620, type=single
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test15_part1.csv (69 rows saved)
+
+[1083] Processing: videos/s80RaghtMRk_00.mp4
+  -> hybrid time selector: running full-video Qwen first
+  -> model output: {
+  "accident_time": null,
+  "confidence": 0
+}
+
+  -> initial Qwen time: Nones (confidence=0.00/5)
+  -> Qwen time is suspicious; running OF rule selector (reason=qwen_time_none, confidence=0.00/5)
+  -> optical-flow stats: points=13 score_max=0.289168 score_mean=0.186269 score_std=0.065656
+  -> optical-flow candidates:
+     rank=1 t=0.627s score=0.289168 z=1.567 motion=0.265055 delta=0.034447 idx=2 late=False KEEP
+     rank=2 t=1.673s score=0.192013 z=0.087 motion=0.192013 delta=0.000000 idx=7 late=False KEEP
+     rank=3 t=2.718s score=0.057011 z=-1.969 motion=0.057011 delta=0.000000 idx=12 late=True REJECT(too_close_to_end(duration-1.0))
+  -> rule-based OF selector: Qwen selector is disabled
+  -> selected OF candidate by hybrid rule: rank=1 time=0.6273s score=0.289168 z=1.567 late=False rule=hard_filter_start_end_z_then_prefer_non_late_then_best_rank
+  -> final hybrid time: 0.6273s (source=optical_flow_rule, qwen_time=Nones, qwen_confidence=0.00/5)
+  -> predicted accident_time=0.6273 (source=optical_flow_rule, qwen_confidence=0.00/5)
+  -> model output: {
+  "center_x": 0.71,
+  "center_y": 0.33
+}
+
+  -> model output: {
+  "center_x": 0.67,
+  "center_y": 0.34
+}
+
+  -> model output: {
+  "center_x": 0.62,
+  "center_y": 0.34
+}
+
+  -> model output: {
+  "center_x": 0.38,
+  "center_y": 0.55
+}
+
+  -> model output: {
+  "center_x": 0.42,
+  "center_y": 0.58
+}
+
+  -> predicted location: center_x=0.6494, center_y=0.3596
+  -> saved representative frame: /root/Desktop/workspace/yujin/code/accident/frames/s80RaghtMRk_00_t0.627.jpg
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=0.6273, center_x=0.6494, center_y=0.3596, type=single
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test15_part1.csv (70 rows saved)
+
+[1084] Processing: videos/s80RaghtMRk_01.mp4
+  -> hybrid time selector: running full-video Qwen first
+  -> model output: {
+  "accident_time": null,
+  "confidence": 0
+}
+
+  -> initial Qwen time: Nones (confidence=0.00/5)
+  -> Qwen time is suspicious; running OF rule selector (reason=qwen_time_none, confidence=0.00/5)
+  -> optical-flow stats: points=16 score_max=0.260657 score_mean=0.154387 score_std=0.051573
+  -> optical-flow candidates:
+     rank=1 t=0.575s score=0.260657 z=2.061 motion=0.230437 delta=0.043171 idx=2 late=False KEEP
+     rank=2 t=1.915s score=0.188210 z=0.656 motion=0.174018 delta=0.020275 idx=9 late=False KEEP
+     rank=3 t=3.064s score=0.049267 z=-2.038 motion=0.049267 delta=0.000000 idx=15 late=True REJECT(too_close_to_end(duration-1.0))
+  -> rule-based OF selector: Qwen selector is disabled
+  -> selected OF candidate by hybrid rule: rank=1 time=0.5745s score=0.260657 z=2.061 late=False rule=hard_filter_start_end_z_then_prefer_non_late_then_best_rank
+  -> final hybrid time: 0.5745s (source=optical_flow_rule, qwen_time=Nones, qwen_confidence=0.00/5)
+  -> predicted accident_time=0.5745 (source=optical_flow_rule, qwen_confidence=0.00/5)
+  -> model output: {
+  "center_x": 0.93,
+  "center_y": 0.42
+}
+
+  -> model output: {
+  "center_x": 0.89,
+  "center_y": 0.41
+}
+
+  -> model output: {
+  "center_x": 0.89,
+  "center_y": 0.41
+}
+
+  -> model output: {
+  "center_x": 0.78,
+  "center_y": 0.52
+}
+
+  -> model output: {
+  "center_x": 0.62,
+  "center_y": 0.52
+}
+
+  -> predicted location: center_x=0.9014, center_y=0.4148
+  -> saved representative frame: /root/Desktop/workspace/yujin/code/accident/frames/s80RaghtMRk_01_t0.575.jpg
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=0.5745, center_x=0.9014, center_y=0.4148, type=single
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test15_part1.csv (71 rows saved)
+
+[1085] Processing: videos/s80RaghtMRk_02.mp4
+  -> hybrid time selector: running full-video Qwen first
+  -> model output: {
+  "accident_time": 3.5,
+  "confidence": 5
+}
+
+  -> initial Qwen time: 3.5000s (confidence=5.00/5)
+  -> Qwen time accepted by hybrid rule; final_time=3.5000s (confidence=5.00/5)
+  -> predicted accident_time=3.5000 (source=qwen, qwen_confidence=5.00/5)
+  -> model output: {"center_x": 0.408, "center_y": 0.339}
+
+  -> model output: {"center_x": 0.39, "center_y": 0.34}
+
+  -> model output: {
+  "center_x": 0.39,
+  "center_y": 0.33
+}
+
+  -> model output: {
+  "center_x": 0.55,
+  "center_y": 0.52
+}
+
+  -> model output: {
+  "center_x": 0.56,
+  "center_y": 0.52
+}
+
+  -> predicted location: center_x=0.4054, center_y=0.3444
+  -> saved representative frame: /root/Desktop/workspace/yujin/code/accident/frames/s80RaghtMRk_02_t3.500.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.99
+}
+
+  -> model output: {
+  "type": "t-bone"
+}
+
+  -> final parsed result: accident_time=3.5000, center_x=0.4054, center_y=0.3444, type=t-bone
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test15_part1.csv (72 rows saved)
+
+[1086] Processing: videos/s80RaghtMRk_03.mp4
+  -> hybrid time selector: running full-video Qwen first
+  -> model output: {
+  "accident_time": null,
+  "confidence": 0
+}
+
+  -> initial Qwen time: Nones (confidence=0.00/5)
+  -> Qwen time is suspicious; running OF rule selector (reason=qwen_time_none, confidence=0.00/5)
+  -> optical-flow stats: points=24 score_max=0.633871 score_mean=0.533971 score_std=0.065386
+  -> optical-flow candidates:
+     rank=1 t=4.294s score=0.633871 z=1.528 motion=0.622397 delta=0.016392 idx=21 late=True REJECT(too_close_to_end(duration-1.0))
+     rank=2 t=0.586s score=0.629087 z=1.455 motion=0.565885 delta=0.090288 idx=2 late=False KEEP
+     rank=3 t=2.733s score=0.556832 z=0.350 motion=0.522921 delta=0.048443 idx=13 late=False KEEP
+  -> rule-based OF selector: Qwen selector is disabled
+  -> selected OF candidate by hybrid rule: rank=2 time=0.5856s score=0.629087 z=1.455 late=False rule=hard_filter_start_end_z_then_prefer_non_late_then_best_rank
+  -> final hybrid time: 0.5856s (source=optical_flow_rule, qwen_time=Nones, qwen_confidence=0.00/5)
+  -> predicted accident_time=0.5856 (source=optical_flow_rule, qwen_confidence=0.00/5)
+  -> model output: {"center_x": 0.57, "center_y": 0.54}
+
+  -> model output: {"center_x": 0.56, "center_y": 0.54}
+
+  -> model output: {"center_x": 0.56, "center_y": 0.55}
+
+  -> model output: {
+  "center_x": 0.48,
+  "center_y": 0.55
+}
+
+  -> model output: {
+  "center_x": 0.48,
+  "center_y": 0.55
+}
+
+  -> predicted location: center_x=0.5550, center_y=0.5533
+  -> saved representative frame: /root/Desktop/workspace/yujin/code/accident/frames/s80RaghtMRk_03_t0.586.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "rear-end"
+}
+
+  -> final parsed result: accident_time=0.5856, center_x=0.5550, center_y=0.5533, type=rear-end
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test15_part1.csv (73 rows saved)
+
+[1087] Processing: videos/s80RaghtMRk_04.mp4
+  -> hybrid time selector: running full-video Qwen first
+  -> model output: {
+  "accident_time": 2.0,
+  "confidence": 5
+}
+
+  -> initial Qwen time: 2.0000s (confidence=5.00/5)
+  -> Qwen time accepted by hybrid rule; final_time=2.0000s (confidence=5.00/5)
+  -> predicted accident_time=2.0000 (source=qwen, qwen_confidence=5.00/5)
+  -> model output: {"center_x": 0.68, "center_y": 0.46}
+
+  -> model output: ```json
+{
+  "center_x": 0.69,
+  "center_y": 0.52
+}
+```
+
+  -> model output: {"center_x": 0.69, "center_y": 0.45}
+
+  -> model output: {
+  "center_x": 0.57,
+  "center_y": 0.55
+}
+
+  -> model output: {
+  "center_x": 0.65,
+  "center_y": 0.65
+}
+
+  -> predicted location: center_x=0.7177, center_y=0.4792
+  -> saved representative frame: /root/Desktop/workspace/yujin/code/accident/frames/s80RaghtMRk_04_t2.000.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "rear-end"
+}
+
+  -> final parsed result: accident_time=2.0000, center_x=0.7177, center_y=0.4792, type=rear-end
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test15_part1.csv (74 rows saved)
+
+[1088] Processing: videos/IQDkEcJP3rw_00.mp4
+  -> hybrid time selector: running full-video Qwen first
+  -> model output: {
+  "accident_time": 3.6,
+  "confidence": 5
+}
+
+  -> initial Qwen time: 3.6000s (confidence=5.00/5)
+  -> Qwen time accepted by hybrid rule; final_time=3.6000s (confidence=5.00/5)
+  -> predicted accident_time=3.6000 (source=qwen, qwen_confidence=5.00/5)
+  -> model output: {"center_x": 0.56, "center_y": 0.26}
+
+  -> model output: {"center_x": 0.56, "center_y": 0.27}
+
+  -> model output: {"center_x": 0.57, "center_y": 0.26}
+
+  -> model output: {
+  "center_x": 0.51,
+  "center_y": 0.51
+}
+
+  -> model output: {
+  "center_x": 0.54,
+  "center_y": 0.58
+}
+
+  -> predicted location: center_x=0.5639, center_y=0.2640
+  -> saved representative frame: /root/Desktop/workspace/yujin/code/accident/frames/IQDkEcJP3rw_00_t3.600.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "rear-end"
+}
+
+  -> final parsed result: accident_time=3.6000, center_x=0.5639, center_y=0.2640, type=rear-end
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test15_part1.csv (75 rows saved)
+
+[1089] Processing: videos/0ThWw_efieo_00.mp4
+  -> hybrid time selector: running full-video Qwen first
+  -> model output: {
+  "accident_time": 4.0,
+  "confidence": 5
+}
+
+  -> initial Qwen time: 4.0000s (confidence=5.00/5)
+  -> Qwen time accepted by hybrid rule; final_time=4.0000s (confidence=5.00/5)
+  -> predicted accident_time=4.0000 (source=qwen, qwen_confidence=5.00/5)
+  -> model output: ```json
+{
+  "center_x": 0.52,
+  "center_y": 0.24
+}
+```
+
+  -> model output: {"center_x": 0.46, "center_y": 0.19}
+
+  -> model output: ```json
+{
+  "center_x": 0.48,
+  "center_y": 0.19
+}
+```
+
+  -> model output: {
+  "center_x": 0.41,
+  "center_y": 0.44
+}
+
+  -> model output: {
+  "center_x": 0.41,
+  "center_y": 0.51
+}
+
+  -> predicted location: center_x=0.4566, center_y=0.1900
+  -> saved representative frame: /root/Desktop/workspace/yujin/code/accident/frames/0ThWw_efieo_00_t4.000.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "t-bone"
+}
+
+  -> final parsed result: accident_time=4.0000, center_x=0.4566, center_y=0.1900, type=t-bone
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test15_part1.csv (76 rows saved)
+
+[1090] Processing: videos/0ThWw_efieo_01.mp4
+  -> hybrid time selector: running full-video Qwen first
+  -> model output: {
+  "accident_time": 3.0,
+  "confidence": 5
+}
+
+  -> initial Qwen time: 3.0000s (confidence=5.00/5)
+  -> Qwen time accepted by hybrid rule; final_time=3.0000s (confidence=5.00/5)
+  -> predicted accident_time=3.0000 (source=qwen, qwen_confidence=5.00/5)
+  -> model output: ```json
+{
+  "center_x": 0.51,
+  "center_y": 0.18
+}
+```
+
+  -> model output: {"center_x": 0.52, "center_y": 0.17}
+
+  -> model output: {"center_x": 0.52, "center_y": 0.17}
+
+  -> model output: {
+  "center_x": 0.45,
+  "center_y": 0.52
+}
+
+  -> model output: {
+  "center_x": 0.53,
+  "center_y": 0.52
+}
+
+  -> predicted location: center_x=0.5200, center_y=0.1748
+  -> saved representative frame: /root/Desktop/workspace/yujin/code/accident/frames/0ThWw_efieo_01_t3.000.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "t-bone"
+}
+
+  -> final parsed result: accident_time=3.0000, center_x=0.5200, center_y=0.1748, type=t-bone
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test15_part1.csv (77 rows saved)
+
+[1091] Processing: videos/P9JZFMr8NeQ_00.mp4
+  -> hybrid time selector: running full-video Qwen first
+  -> model output: {
+  "accident_time": 14.0,
+  "confidence": 5
+}
+
+  -> initial Qwen time: 14.0000s (confidence=5.00/5)
+  -> Qwen time accepted by hybrid rule; final_time=14.0000s (confidence=5.00/5)
+  -> predicted accident_time=14.0000 (source=qwen, qwen_confidence=5.00/5)
+  -> model output: {"center_x": 0.63, "center_y": 0.34}
+
+  -> model output: {"center_x": 0.62, "center_y": 0.34}
+
+  -> model output: {"center_x": 0.59, "center_y": 0.34}
+
+  -> model output: {"center_x": 0.48, "center_y": 0.49}
+
+  -> model output: {
+  "center_x": 0.48,
+  "center_y": 0.51
+}
+
+  -> predicted location: center_x=0.6149, center_y=0.3400
+  -> saved representative frame: /root/Desktop/workspace/yujin/code/accident/frames/P9JZFMr8NeQ_00_t14.000.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "t-bone"
+}
+
+  -> final parsed result: accident_time=14.0000, center_x=0.6149, center_y=0.3400, type=t-bone
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test15_part1.csv (78 rows saved)
+
+[1092] Processing: videos/5-sIe-O1b8I_00.mp4
+  -> hybrid time selector: running full-video Qwen first
+  -> model output: {
+  "accident_time": null,
+  "confidence": 0
+}
+
+  -> initial Qwen time: Nones (confidence=0.00/5)
+  -> Qwen time is suspicious; running OF rule selector (reason=qwen_time_none, confidence=0.00/5)
+  -> optical-flow stats: points=147 score_max=1.760897 score_mean=1.172197 score_std=0.262894
+  -> optical-flow candidates:
+     rank=1 t=20.940s score=1.760897 z=2.239 motion=1.697277 delta=0.090886 idx=104 late=True KEEP
+     rank=2 t=8.176s score=1.706870 z=2.034 motion=1.658215 delta=0.069507 idx=40 late=False KEEP
+     rank=3 t=6.780s score=1.702266 z=2.016 motion=1.666200 delta=0.051523 idx=33 late=False KEEP
+     rank=4 t=10.968s score=1.573615 z=1.527 motion=1.482337 delta=0.130397 idx=54 late=False KEEP
+     rank=5 t=5.384s score=1.506296 z=1.271 motion=1.463491 delta=0.061149 idx=26 late=False KEEP
+  -> rule-based OF selector: Qwen selector is disabled
+  -> selected OF candidate by hybrid rule: rank=2 time=8.1764s score=1.706870 z=2.034 late=False rule=hard_filter_start_end_z_then_prefer_non_late_then_best_rank
+  -> final hybrid time: 8.1764s (source=optical_flow_rule, qwen_time=Nones, qwen_confidence=0.00/5)
+  -> predicted accident_time=8.1764 (source=optical_flow_rule, qwen_confidence=0.00/5)
+  -> model output: {"center_x": 0.16, "center_y": 0.79}
+
+  -> model output: {
+  "center_x": 0.57,
+  "center_y": 0.67
+}
+
+  -> model output: {"center_x": 0.59, "center_y": 0.64}
+
+  -> model output: {
+  "center_x": 0.51,
+  "center_y": 0.51
+}
+
+  -> model output: {
+  "center_x": 0.51,
+  "center_y": 0.51
+}
+
+  -> predicted location: center_x=0.5722, center_y=0.6727
+  -> saved representative frame: /root/Desktop/workspace/yujin/code/accident/frames/5-sIe-O1b8I_00_t8.176.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "rear-end"
+}
+
+  -> final parsed result: accident_time=8.1764, center_x=0.5722, center_y=0.6727, type=rear-end
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test15_part1.csv (79 rows saved)
+
+[1093] Processing: videos/-PpjzmhI_PE_00.mp4
+  -> hybrid time selector: running full-video Qwen first
+  -> model output: {
+  "accident_time": 2.5,
+  "confidence": 5
+}
+
+  -> initial Qwen time: 2.5000s (confidence=5.00/5)
+  -> Qwen time accepted by hybrid rule; final_time=2.5000s (confidence=5.00/5)
+  -> predicted accident_time=2.5000 (source=qwen, qwen_confidence=5.00/5)
+  -> model output: {
+  "center_x": 0.38,
+  "center_y": 0.59
+}
+
+  -> model output: {
+  "center_x": 0.43,
+  "center_y": 0.56
+}
+
+  -> model output: {
+  "center_x": 0.40,
+  "center_y": 0.55
+}
+
+  -> model output: {
+  "center_x": 0.55,
+  "center_y": 0.48
+}
+
+  -> model output: {
+  "center_x": 0.45,
+  "center_y": 0.55
+}
+
+  -> predicted location: center_x=0.4000, center_y=0.5600
+  -> saved representative frame: /root/Desktop/workspace/yujin/code/accident/frames/-PpjzmhI_PE_00_t2.500.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "sideswipe"
+}
+
+  -> final parsed result: accident_time=2.5000, center_x=0.4000, center_y=0.5600, type=sideswipe
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test15_part1.csv (80 rows saved)
+
+[1094] Processing: videos/yS19DGEwcO4_00.mp4
+  -> hybrid time selector: running full-video Qwen first
+  -> model output: {
+  "accident_time": null,
+  "confidence": 0
+}
+
+  -> initial Qwen time: Nones (confidence=0.00/5)
+  -> Qwen time is suspicious; running OF rule selector (reason=qwen_time_none, confidence=0.00/5)
+  -> optical-flow stats: points=149 score_max=0.783880 score_mean=0.435928 score_std=0.149098
+  -> optical-flow candidates:
+     rank=1 t=4.406s score=0.783880 z=2.334 motion=0.736865 delta=0.067164 idx=21 late=False KEEP
+     rank=2 t=2.203s score=0.723983 z=1.932 motion=0.660837 delta=0.090209 idx=10 late=False KEEP
+     rank=3 t=23.433s score=0.707436 z=1.821 motion=0.695176 delta=0.017513 idx=116 late=True KEEP
+     rank=4 t=22.431s score=0.625034 z=1.268 motion=0.591583 delta=0.047787 idx=111 late=True KEEP
+     rank=5 t=10.815s score=0.621853 z=1.247 motion=0.580990 delta=0.058376 idx=53 late=False KEEP
+  -> rule-based OF selector: Qwen selector is disabled
+  -> selected OF candidate by hybrid rule: rank=1 time=4.4061s score=0.783880 z=2.334 late=False rule=hard_filter_start_end_z_then_prefer_non_late_then_best_rank
+  -> final hybrid time: 4.4061s (source=optical_flow_rule, qwen_time=Nones, qwen_confidence=0.00/5)
+  -> predicted accident_time=4.4061 (source=optical_flow_rule, qwen_confidence=0.00/5)
+  -> model output: {
+  "center_x": 0.46,
+  "center_y": 0.57
+}
+
+  -> model output: {
+  "center_x": 0.45,
+  "center_y": 0.55
+}
+
+  -> model output: {
+  "center_x": 0.43,
+  "center_y": 0.53
+}
+
+  -> model output: {
+  "center_x": 0.48,
+  "center_y": 0.55
+}
+
+  -> model output: {
+  "center_x": 0.55,
+  "center_y": 0.55
+}
+
+  -> predicted location: center_x=0.4500, center_y=0.5623
+  -> saved representative frame: /root/Desktop/workspace/yujin/code/accident/frames/yS19DGEwcO4_00_t4.406.jpg
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=4.4061, center_x=0.4500, center_y=0.5623, type=single
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test15_part1.csv (81 rows saved)
+
+[1095] Processing: videos/NyKEneNoK54_00.mp4
+  -> hybrid time selector: running full-video Qwen first
+  -> model output: ```json
+{
+  "accident_time": 1.0,
+  "confidence": 5.0
+}
+```
+
+  -> initial Qwen time: 1.0000s (confidence=5.00/5)
+  -> Qwen time accepted by hybrid rule; final_time=1.0000s (confidence=5.00/5)
+  -> predicted accident_time=1.0000 (source=qwen, qwen_confidence=5.00/5)
+  -> model output: {
+  "center_x": 0.19,
+  "center_y": 0.91
+}
+
+  -> model output: {
+  "center_x": 0.27,
+  "center_y": 0.84
+}
+
+  -> model output: {
+  "center_x": 0.35,
+  "center_y": 0.78
+}
+
+  -> model output: {
+  "center_x": 0.55,
+  "center_y": 0.55
+}
+
+  -> model output: {"center_x": 0.5, "center_y": 0.5}
+
+  -> predicted location: center_x=0.2700, center_y=0.8400
+  -> saved representative frame: /root/Desktop/workspace/yujin/code/accident/frames/NyKEneNoK54_00_t1.000.jpg
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=1.0000, center_x=0.2700, center_y=0.8400, type=single
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test15_part1.csv (82 rows saved)
+
+[1096] Processing: videos/Vk8h0fpJgcs_00.mp4
+  -> hybrid time selector: running full-video Qwen first
+  -> model output: {
+  "accident_time": null,
+  "confidence": 0
+}
+
+  -> initial Qwen time: Nones (confidence=0.00/5)
+  -> Qwen time is suspicious; running OF rule selector (reason=qwen_time_none, confidence=0.00/5)
+  -> optical-flow stats: points=139 score_max=2.593681 score_mean=1.559277 score_std=0.488308
+  -> optical-flow candidates:
+     rank=1 t=12.785s score=2.593681 z=2.118 motion=2.467133 delta=0.180783 idx=63 late=False KEEP
+     rank=2 t=6.992s score=2.380309 z=1.681 motion=2.182232 delta=0.282968 idx=34 late=False KEEP
+     rank=3 t=5.194s score=2.333880 z=1.586 motion=2.180080 delta=0.219715 idx=25 late=False KEEP
+     rank=4 t=0.599s score=2.315603 z=1.549 motion=2.180058 delta=0.193636 idx=2 late=False KEEP
+     rank=5 t=3.995s score=2.290711 z=1.498 motion=2.180389 delta=0.157602 idx=19 late=False KEEP
+  -> rule-based OF selector: Qwen selector is disabled
+  -> selected OF candidate by hybrid rule: rank=1 time=12.7847s score=2.593681 z=2.118 late=False rule=hard_filter_start_end_z_then_prefer_non_late_then_best_rank
+  -> final hybrid time: 12.7847s (source=optical_flow_rule, qwen_time=Nones, qwen_confidence=0.00/5)
+  -> predicted accident_time=12.7847 (source=optical_flow_rule, qwen_confidence=0.00/5)
+  -> model output: {"center_x": 0.02, "center_y": 0.89}
+
+  -> model output: {"center_x": 0.63, "center_y": 0.29}
+
+  -> model output: {
+  "center_x": 0.06,
+  "center_y": 0.55
+}
+
+  -> model output: {
+  "center_x": 0.41,
+  "center_y": 0.39
+}
+
+  -> model output: {
+  "center_x": 0.62,
+  "center_y": 0.45
+}
+
+  -> predicted location: center_x=0.1609, center_y=0.5366
+  -> saved representative frame: /root/Desktop/workspace/yujin/code/accident/frames/Vk8h0fpJgcs_00_t12.785.jpg
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=12.7847, center_x=0.1609, center_y=0.5366, type=single
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test15_part1.csv (83 rows saved)
+
+[1097] Processing: videos/yZNmOYWiGY0_00.mp4
+  -> hybrid time selector: running full-video Qwen first
+  -> model output: {
+  "accident_time": 3.9,
+  "confidence": 5
+}
+
+  -> initial Qwen time: 3.9000s (confidence=5.00/5)
+  -> Qwen time accepted by hybrid rule; final_time=3.9000s (confidence=5.00/5)
+  -> predicted accident_time=3.9000 (source=qwen, qwen_confidence=5.00/5)
+  -> model output: {
+  "center_x": 0.24,
+  "center_y": 0.51
+}
+
+  -> model output: {
+  "center_x": 0.31,
+  "center_y": 0.47
+}
+
+  -> model output: {
+  "center_x": 0.36,
+  "center_y": 0.44
+}
+
+  -> model output: {
+  "center_x": 0.48,
+  "center_y": 0.52
+}
+
+  -> model output: {
+  "center_x": 0.58,
+  "center_y": 0.58
+}
+
+  -> predicted location: center_x=0.3100, center_y=0.4774
+  -> saved representative frame: /root/Desktop/workspace/yujin/code/accident/frames/yZNmOYWiGY0_00_t3.900.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "rear-end"
+}
+
+  -> final parsed result: accident_time=3.9000, center_x=0.3100, center_y=0.4774, type=rear-end
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test15_part1.csv (84 rows saved)
+
+[1098] Processing: videos/_DbmvhywZZ8_00.mp4
+  -> hybrid time selector: running full-video Qwen first
+  -> model output: {
+  "accident_time": null,
+  "confidence": 0
+}
+
+  -> initial Qwen time: Nones (confidence=0.00/5)
+  -> Qwen time is suspicious; running OF rule selector (reason=qwen_time_none, confidence=0.00/5)
+  -> optical-flow stats: points=149 score_max=0.823324 score_mean=0.396148 score_std=0.158575
+  -> optical-flow candidates:
+     rank=1 t=4.023s score=0.823324 z=2.694 motion=0.769730 delta=0.076563 idx=19 late=False KEEP
+     rank=2 t=5.834s score=0.765338 z=2.328 motion=0.753117 delta=0.017459 idx=28 late=False KEEP
+     rank=3 t=8.449s score=0.647745 z=1.587 motion=0.598917 delta=0.069754 idx=41 late=False KEEP
+     rank=4 t=10.059s score=0.583272 z=1.180 motion=0.555482 delta=0.039701 idx=49 late=False KEEP
+     rank=5 t=28.566s score=0.582190 z=1.173 motion=0.570851 delta=0.016199 idx=141 late=True KEEP
+  -> rule-based OF selector: Qwen selector is disabled
+  -> selected OF candidate by hybrid rule: rank=1 time=4.0234s score=0.823324 z=2.694 late=False rule=hard_filter_start_end_z_then_prefer_non_late_then_best_rank
+  -> final hybrid time: 4.0234s (source=optical_flow_rule, qwen_time=Nones, qwen_confidence=0.00/5)
+  -> predicted accident_time=4.0234 (source=optical_flow_rule, qwen_confidence=0.00/5)
+  -> model output: {
+  "center_x": 0.48,
+  "center_y": 0.51
+}
+
+  -> model output: {
+  "center_x": 0.5,
+  "center_y": 0.5
+}
+
+  -> model output: {
+  "center_x": 0.5,
+  "center_y": 0.5
+}
+
+  -> model output: {
+  "center_x": 0.5,
+  "center_y": 0.5
+}
+
+  -> model output: {
+  "center_x": 0.45,
+  "center_y": 0.45
+}
+
+  -> predicted location: center_x=0.5000, center_y=0.5000
+  -> saved representative frame: /root/Desktop/workspace/yujin/code/accident/frames/_DbmvhywZZ8_00_t4.023.jpg
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=4.0234, center_x=0.5000, center_y=0.5000, type=single
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test15_part1.csv (85 rows saved)
+
+[1099] Processing: videos/bsvWhFHgta8_00.mp4
+  -> hybrid time selector: running full-video Qwen first
+  -> model output: {
+  "accident_time": null,
+  "confidence": 0
+}
+
+  -> initial Qwen time: Nones (confidence=0.00/5)
+  -> Qwen time is suspicious; running OF rule selector (reason=qwen_time_none, confidence=0.00/5)
+  -> optical-flow stats: points=39 score_max=0.924058 score_mean=0.771465 score_std=0.116254
+  -> optical-flow candidates:
+     rank=1 t=2.408s score=0.924058 z=1.313 motion=0.890616 delta=0.047775 idx=11 late=False KEEP
+     rank=2 t=3.611s score=0.873852 z=0.881 motion=0.866849 delta=0.010004 idx=17 late=False KEEP
+     rank=3 t=4.815s score=0.851255 z=0.686 motion=0.838968 delta=0.017553 idx=23 late=False KEEP
+     rank=4 t=6.220s score=0.809084 z=0.324 motion=0.806951 delta=0.003047 idx=30 late=True KEEP
+     rank=5 t=0.602s score=0.736704 z=-0.299 motion=0.649722 delta=0.124259 idx=2 late=False REJECT(low_score_z<0.0)
+  -> rule-based OF selector: Qwen selector is disabled
+  -> selected OF candidate by hybrid rule: rank=1 time=2.4076s score=0.924058 z=1.313 late=False rule=hard_filter_start_end_z_then_prefer_non_late_then_best_rank
+  -> final hybrid time: 2.4076s (source=optical_flow_rule, qwen_time=Nones, qwen_confidence=0.00/5)
+  -> predicted accident_time=2.4076 (source=optical_flow_rule, qwen_confidence=0.00/5)
+  -> model output: {
+  "center_x": 0.44,
+  "center_y": 0.63
+}
+
+  -> model output: {
+  "center_x": 0.0,
+  "center_y": 0.0
+}
+
+  -> model output: {
+  "center_x": 0.51,
+  "center_y": 0.51
+}
+
+  -> model output: {
+  "center_x": 0.52,
+  "center_y": 0.72
+}
+
+  -> model output: {
+  "center_x": 0.53,
+  "center_y": 0.58
+}
+
+  -> predicted location: center_x=0.4473, center_y=0.5311
+  -> saved representative frame: /root/Desktop/workspace/yujin/code/accident/frames/bsvWhFHgta8_00_t2.408.jpg
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=2.4076, center_x=0.4473, center_y=0.5311, type=single
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test15_part1.csv (86 rows saved)
+
+[1100] Processing: videos/ht0QCYJRWXc_00.mp4
+  -> hybrid time selector: running full-video Qwen first
+  -> model output: {
+  "accident_time": 2.0,
+  "confidence": 5
+}
+
+  -> initial Qwen time: 2.0000s (confidence=5.00/5)
+  -> Qwen time accepted by hybrid rule; final_time=2.0000s (confidence=5.00/5)
+  -> predicted accident_time=2.0000 (source=qwen, qwen_confidence=5.00/5)
+  -> model output: {
+  "center_x": 0.29,
+  "center_y": 0.48
+}
+
+  -> model output: {
+  "center_x": 0.42,
+  "center_y": 0.75
+}
+
+  -> model output: {
+  "center_x": 0.49,
+  "center_y": 0.69
+}
+
+  -> model output: {
+  "center_x": 0.62,
+  "center_y": 0.65
+}
+
+  -> model output: {"center_x": 0.45, "center_y": 0.75}
+
+  -> predicted location: center_x=0.4200, center_y=0.7490
+  -> saved representative frame: /root/Desktop/workspace/yujin/code/accident/frames/ht0QCYJRWXc_00_t2.000.jpg
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=2.0000, center_x=0.4200, center_y=0.7490, type=single
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test15_part1.csv (87 rows saved)
+
+[1101] Processing: videos/J22LBVPh5kk_00.mp4
+  -> hybrid time selector: running full-video Qwen first
+  -> model output: {
+  "accident_time": 4.0,
+  "confidence": 5
+}
+
+  -> initial Qwen time: 4.0000s (confidence=5.00/5)
+  -> Qwen time accepted by hybrid rule; final_time=4.0000s (confidence=5.00/5)
+  -> predicted accident_time=4.0000 (source=qwen, qwen_confidence=5.00/5)
+  -> model output: {
+  "center_x": 0.17,
+  "center_y": 0.31
+}
+
+  -> model output: {
+  "center_x": 0.08,
+  "center_y": 0.35
+}
+
+  -> model output: {
+  "center_x": 0.01,
+  "center_y": 0.41
+}
+
+  -> model output: {
+  "center_x": 0.33,
+  "center_y": 0.48
+}
+
+  -> model output: {
+  "center_x": 0.38,
+  "center_y": 0.52
+}
+
+  -> predicted location: center_x=0.0987, center_y=0.3500
+  -> saved representative frame: /root/Desktop/workspace/yujin/code/accident/frames/J22LBVPh5kk_00_t4.000.jpg
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=4.0000, center_x=0.0987, center_y=0.3500, type=single
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test15_part1.csv (88 rows saved)
+
+[1102] Processing: videos/O8x8fTbKfQo_00.mp4
+  -> hybrid time selector: running full-video Qwen first
+  -> model output: {
+  "accident_time": 22.0,
+  "confidence": 5
+}
+
+  -> initial Qwen time: 22.0000s (confidence=5.00/5)
+  -> Qwen time accepted by hybrid rule; final_time=22.0000s (confidence=5.00/5)
+  -> predicted accident_time=22.0000 (source=qwen, qwen_confidence=5.00/5)
+  -> model output: {
+  "center_x": 0.31,
+  "center_y": 0.53
+}
+
+  -> model output: {
+  "center_x": 0.31,
+  "center_y": 0.54
+}
+
+  -> model output: {
+  "center_x": 0.31,
+  "center_y": 0.54
+}
+
+  -> model output: {
+  "center_x": 0.51,
+  "center_y": 0.51
+}
+
+  -> model output: {
+  "center_x": 0.57,
+  "center_y": 0.54
+}
+
+  -> predicted location: center_x=0.3132, center_y=0.5429
+  -> saved representative frame: /root/Desktop/workspace/yujin/code/accident/frames/O8x8fTbKfQo_00_t22.000.jpg
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=22.0000, center_x=0.3132, center_y=0.5429, type=single
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test15_part1.csv (89 rows saved)
+
+[1103] Processing: videos/un3zKlzQR0s_00.mp4
+  -> hybrid time selector: running full-video Qwen first
+  -> model output: {
+  "accident_time": null,
+  "confidence": 0
+}
+
+  -> initial Qwen time: Nones (confidence=0.00/5)
+  -> Qwen time is suspicious; running OF rule selector (reason=qwen_time_none, confidence=0.00/5)
+  -> optical-flow stats: points=183 score_max=4.428387 score_mean=0.911873 score_std=1.142647
+  -> optical-flow candidates:
+     rank=1 t=27.919s score=4.428387 z=3.078 motion=4.238574 delta=0.271161 idx=170 late=True KEEP
+     rank=2 t=2.449s score=3.059545 z=1.880 motion=2.943441 delta=0.165863 idx=14 late=False KEEP
+     rank=3 t=29.062s score=3.057920 z=1.878 motion=3.057920 delta=0.000000 idx=177 late=True REJECT(too_close_to_end(duration-1.0))
+     rank=4 t=16.000s score=3.017351 z=1.843 motion=2.881124 delta=0.194611 idx=97 late=False KEEP
+     rank=5 t=1.306s score=2.647128 z=1.519 motion=2.427615 delta=0.313590 idx=7 late=False KEEP
+  -> rule-based OF selector: Qwen selector is disabled
+  -> selected OF candidate by hybrid rule: rank=2 time=2.4490s score=3.059545 z=1.880 late=False rule=hard_filter_start_end_z_then_prefer_non_late_then_best_rank
+  -> final hybrid time: 2.4490s (source=optical_flow_rule, qwen_time=Nones, qwen_confidence=0.00/5)
+  -> predicted accident_time=2.4490 (source=optical_flow_rule, qwen_confidence=0.00/5)
+  -> model output: {
+  "center_x": 0.43,
+  "center_y": 0.33
+}
+
+  -> model output: {
+  "center_x": 0.46,
+  "center_y": 0.65
+}
+
+  -> model output: {
+  "center_x": 0.23,
+  "center_y": 0.62
+}
+
+  -> model output: {
+  "center_x": 0.5,
+  "center_y": 0.5
+}
+
+  -> model output: {
+  "center_x": 0.45,
+  "center_y": 0.55
+}
+
+  -> predicted location: center_x=0.4291, center_y=0.6200
+  -> saved representative frame: /root/Desktop/workspace/yujin/code/accident/frames/un3zKlzQR0s_00_t2.449.jpg
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=2.4490, center_x=0.4291, center_y=0.6200, type=single
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test15_part1.csv (90 rows saved)
+
+[1104] Processing: videos/2xzko5Nggkc_00.mp4
+  -> hybrid time selector: running full-video Qwen first
+  -> model output: {
+  "accident_time": null,
+  "confidence": 0
+}
+
+  -> initial Qwen time: Nones (confidence=0.00/5)
+  -> Qwen time is suspicious; running OF rule selector (reason=qwen_time_none, confidence=0.00/5)
+  -> optical-flow stats: points=149 score_max=3.222900 score_mean=1.470618 score_std=0.710898
+  -> optical-flow candidates:
+     rank=1 t=2.003s score=3.222900 z=2.465 motion=2.950953 delta=0.388495 idx=9 late=False KEEP
+     rank=2 t=3.204s score=3.014523 z=2.172 motion=2.847713 delta=0.238300 idx=15 late=False KEEP
+     rank=3 t=10.815s score=2.819448 z=1.897 motion=2.761914 delta=0.082192 idx=53 late=False KEEP
+     rank=4 t=0.601s score=2.569839 z=1.546 motion=2.193994 delta=0.536921 idx=2 late=False KEEP
+     rank=5 t=14.620s score=2.368733 z=1.263 motion=2.304928 delta=0.091150 idx=72 late=False KEEP
+  -> rule-based OF selector: Qwen selector is disabled
+  -> selected OF candidate by hybrid rule: rank=1 time=2.0028s score=3.222900 z=2.465 late=False rule=hard_filter_start_end_z_then_prefer_non_late_then_best_rank
+  -> final hybrid time: 2.0028s (source=optical_flow_rule, qwen_time=Nones, qwen_confidence=0.00/5)
+  -> predicted accident_time=2.0028 (source=optical_flow_rule, qwen_confidence=0.00/5)
+  -> model output: {
+  "center_x": 0.61,
+  "center_y": 0.65
+}
+
+  -> model output: {
+  "center_x": 0.64,
+  "center_y": 0.6
+}
+
+  -> model output: {
+  "center_x": 0.66,
+  "center_y": 0.57
+}
+
+  -> model output: {
+  "center_x": 0.51,
+  "center_y": 0.52
+}
+
+  -> model output: {
+  "center_x": 0.5,
+  "center_y": 0.5
+}
+
+  -> predicted location: center_x=0.6400, center_y=0.6000
+  -> saved representative frame: /root/Desktop/workspace/yujin/code/accident/frames/2xzko5Nggkc_00_t2.003.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "rear-end"
+}
+
+  -> final parsed result: accident_time=2.0028, center_x=0.6400, center_y=0.6000, type=rear-end
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test15_part1.csv (91 rows saved)
+
+[1105] Processing: videos/FVZu22TdJwc_00.mp4
+  -> hybrid time selector: running full-video Qwen first
+  -> model output: {
+  "accident_time": 3.0,
+  "confidence": 5.0
+}
+
+  -> initial Qwen time: 3.0000s (confidence=5.00/5)
+  -> Qwen time accepted by hybrid rule; final_time=3.0000s (confidence=5.00/5)
+  -> predicted accident_time=3.0000 (source=qwen, qwen_confidence=5.00/5)
+  -> model output: {
+  "center_x": 0.38,
+  "center_y": 0.62
+}
+
+  -> model output: {
+  "center_x": 0.29,
+  "center_y": 0.58
+}
+
+  -> model output: {
+  "center_x": 0.26,
+  "center_y": 0.58
+}
+
+  -> model output: {
+  "center_x": 0.35,
+  "center_y": 0.55
+}
+
+  -> model output: {
+  "center_x": 0.35,
+  "center_y": 0.55
+}
+
+  -> predicted location: center_x=0.2504, center_y=0.5929
+  -> saved representative frame: /root/Desktop/workspace/yujin/code/accident/frames/FVZu22TdJwc_00_t3.000.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "sideswipe"
+}
+
+  -> final parsed result: accident_time=3.0000, center_x=0.2504, center_y=0.5929, type=sideswipe
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test15_part1.csv (92 rows saved)
+
+[1106] Processing: videos/JsJ_gpjIH1k_00.mp4
+  -> hybrid time selector: running full-video Qwen first
+  -> model output: {
+  "accident_time": null,
+  "confidence": 0
+}
+
+  -> initial Qwen time: Nones (confidence=0.00/5)
+  -> Qwen time is suspicious; running OF rule selector (reason=qwen_time_none, confidence=0.00/5)
+  -> optical-flow stats: points=10 score_max=1.457073 score_mean=1.123388 score_std=0.220576
+  -> optical-flow candidates:
+     rank=1 t=0.806s score=1.457073 z=1.513 motion=1.367342 delta=0.128187 idx=3 late=False KEEP
+     rank=2 t=1.815s score=0.868035 z=-1.158 motion=0.868035 delta=0.000000 idx=8 late=True REJECT(too_close_to_end(duration-1.0))
+  -> rule-based OF selector: Qwen selector is disabled
+  -> selected OF candidate by hybrid rule: rank=1 time=0.8065s score=1.457073 z=1.513 late=False rule=hard_filter_start_end_z_then_prefer_non_late_then_best_rank
+  -> final hybrid time: 0.8065s (source=optical_flow_rule, qwen_time=Nones, qwen_confidence=0.00/5)
+  -> predicted accident_time=0.8065 (source=optical_flow_rule, qwen_confidence=0.00/5)
+  -> model output: {
+  "center_x": 0.58,
+  "center_y": 0.91
+}
+
+  -> model output: {
+  "center_x": 0.63,
+  "center_y": 0.82
+}
+
+  -> model output: {
+  "center_x": 0.65,
+  "center_y": 0.82
+}
+
+  -> model output: {
+  "center_x": 0.54,
+  "center_y": 0.54
+}
+
+  -> model output: {
+  "center_x": 0.52,
+  "center_y": 0.48
+}
+
+  -> predicted location: center_x=0.6345, center_y=0.8164
+  -> saved representative frame: /root/Desktop/workspace/yujin/code/accident/frames/JsJ_gpjIH1k_00_t0.806.jpg
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=0.8065, center_x=0.6345, center_y=0.8164, type=single
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test15_part1.csv (93 rows saved)
+
+[1107] Processing: videos/WcZTk9VxOJo_00.mp4
+  -> hybrid time selector: running full-video Qwen first
+  -> model output: {
+  "accident_time": 2.6,
+  "confidence": 5
+}
+
+  -> initial Qwen time: 2.6000s (confidence=5.00/5)
+  -> Qwen time accepted by hybrid rule; final_time=2.6000s (confidence=5.00/5)
+  -> predicted accident_time=2.6000 (source=qwen, qwen_confidence=5.00/5)
+  -> model output: {
+  "center_x": 0.48,
+  "center_y": 0.75
+}
+
+  -> model output: {
+  "center_x": 0.56,
+  "center_y": 0.71
+}
+
+  -> model output: {
+  "center_x": 0.67,
+  "center_y": 0.73
+}
+
+  -> model output: {
+  "center_x": 0.58,
+  "center_y": 0.42
+}
+
+  -> model output: {
+  "center_x": 0.65,
+  "center_y": 0.55
+}
+
+  -> predicted location: center_x=0.5914, center_y=0.7300
+  -> saved representative frame: /root/Desktop/workspace/yujin/code/accident/frames/WcZTk9VxOJo_00_t2.600.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "t-bone"
+}
+
+  -> final parsed result: accident_time=2.6000, center_x=0.5914, center_y=0.7300, type=t-bone
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test15_part1.csv (94 rows saved)
+
+[1108] Processing: videos/LIB4DVkk3lc_00.mp4
+  -> hybrid time selector: running full-video Qwen first
+  -> model output: {
+  "accident_time": null,
+  "confidence": 0
+}
+
+  -> initial Qwen time: Nones (confidence=0.00/5)
+  -> Qwen time is suspicious; running OF rule selector (reason=qwen_time_none, confidence=0.00/5)
+  -> optical-flow stats: points=120 score_max=0.397752 score_mean=0.171295 score_std=0.072065
+  -> optical-flow candidates:
+     rank=1 t=1.897s score=0.397752 z=3.142 motion=0.386119 delta=0.016619 idx=8 late=False KEEP
+     rank=2 t=9.275s score=0.352530 z=2.515 motion=0.313616 delta=0.055591 idx=43 late=False KEEP
+     rank=3 t=4.216s score=0.270466 z=1.376 motion=0.248695 delta=0.031102 idx=19 late=False KEEP
+     rank=4 t=16.021s score=0.232354 z=0.847 motion=0.219587 delta=0.018238 idx=75 late=False KEEP
+     rank=5 t=0.632s score=0.210396 z=0.543 motion=0.179768 delta=0.043754 idx=2 late=False KEEP
+  -> rule-based OF selector: Qwen selector is disabled
+  -> selected OF candidate by hybrid rule: rank=1 time=1.8972s score=0.397752 z=3.142 late=False rule=hard_filter_start_end_z_then_prefer_non_late_then_best_rank
+  -> final hybrid time: 1.8972s (source=optical_flow_rule, qwen_time=Nones, qwen_confidence=0.00/5)
+  -> predicted accident_time=1.8972 (source=optical_flow_rule, qwen_confidence=0.00/5)
+  -> model output: {
+  "center_x": 0.56,
+  "center_y": 0.44
+}
+
+  -> model output: {
+  "center_x": 0.55,
+  "center_y": 0.45
+}
+
+  -> model output: {
+  "center_x": 0.56,
+  "center_y": 0.46
+}
+
+  -> model output: {
+  "center_x": 0.5,
+  "center_y": 0.5
+}
+
+  -> model output: {
+  "center_x": 0.5,
+  "center_y": 0.4
+}
+
+  -> predicted location: center_x=0.5600, center_y=0.4500
+  -> saved representative frame: /root/Desktop/workspace/yujin/code/accident/frames/LIB4DVkk3lc_00_t1.897.jpg
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=1.8972, center_x=0.5600, center_y=0.4500, type=single
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test15_part1.csv (95 rows saved)
+
+[1109] Processing: videos/5ayuUyxh1aQ_00.mp4
+  -> hybrid time selector: running full-video Qwen first
+  -> model output: {
+  "accident_time": 0.0,
+  "confidence": 5
+}
+
+  -> initial Qwen time: 0.0000s (confidence=5.00/5)
+  -> Qwen time accepted by hybrid rule; final_time=0.0000s (confidence=5.00/5)
+  -> predicted accident_time=0.0000 (source=qwen, qwen_confidence=5.00/5)
+  -> model output: {"center_x": 0.605, "center_y": 0.595}
+
+  -> model output: {
+  "center_x": 0.605,
+  "center_y": 0.595
+}
+
+  -> model output: {
+  "center_x": 0.62,
+  "center_y": 0.58
+}
+
+  -> model output: {
+  "center_x": 0.45,
+  "center_y": 0.55
+}
+
+  -> model output: {
+  "center_x": 0.45,
+  "center_y": 0.65
+}
+
+  -> predicted location: center_x=0.5920, center_y=0.6145
+  -> saved representative frame: /root/Desktop/workspace/yujin/code/accident/frames/5ayuUyxh1aQ_00_t0.000.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "t-bone"
+}
+
+  -> final parsed result: accident_time=0.0000, center_x=0.5920, center_y=0.6145, type=t-bone
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test15_part1.csv (96 rows saved)
+
+[1110] Processing: videos/xPNA0BFy_og_00.mp4
+  -> hybrid time selector: running full-video Qwen first
+  -> model output: {
+  "accident_time": 5.7,
+  "confidence": 5
+}
+
+  -> initial Qwen time: 5.7000s (confidence=5.00/5)
+  -> Qwen time accepted by hybrid rule; final_time=5.7000s (confidence=5.00/5)
+  -> predicted accident_time=5.7000 (source=qwen, qwen_confidence=5.00/5)
+  -> model output: {
+  "center_x": 0.34,
+  "center_y": 0.54
+}
+
+  -> model output: {
+  "center_x": 0.33,
+  "center_y": 0.53
+}
+
+  -> model output: {
+  "center_x": 0.17,
+  "center_y": 0.59
+}
+
+  -> model output: {
+  "center_x": 0.32,
+  "center_y": 0.58
+}
+
+  -> model output: {
+  "center_x": 0.51,
+  "center_y": 0.56
+}
+
+  -> predicted location: center_x=0.3300, center_y=0.5559
+  -> saved representative frame: /root/Desktop/workspace/yujin/code/accident/frames/xPNA0BFy_og_00_t5.700.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "t-bone"
+}
+
+  -> final parsed result: accident_time=5.7000, center_x=0.3300, center_y=0.5559, type=t-bone
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test15_part1.csv (97 rows saved)
+
+[1111] Processing: videos/r-fThmrFOqs_00.mp4
+  -> hybrid time selector: running full-video Qwen first
+  -> model output: {
+  "accident_time": 5.0,
+  "confidence": 5
+}
+
+  -> initial Qwen time: 5.0000s (confidence=5.00/5)
+  -> Qwen time accepted by hybrid rule; final_time=5.0000s (confidence=5.00/5)
+  -> predicted accident_time=5.0000 (source=qwen, qwen_confidence=5.00/5)
+  -> model output: {
+  "center_x": 0.77,
+  "center_y": 0.47
+}
+
+  -> model output: {
+  "center_x": 0.75,
+  "center_y": 0.45
+}
+
+  -> model output: {
+  "center_x": 0.72,
+  "center_y": 0.42
+}
+
+  -> model output: {
+  "center_x": 0.52,
+  "center_y": 0.45
+}
+
+  -> model output: {
+  "center_x": 0.51,
+  "center_y": 0.52
+}
+
+  -> predicted location: center_x=0.7518, center_y=0.4500
+  -> saved representative frame: /root/Desktop/workspace/yujin/code/accident/frames/r-fThmrFOqs_00_t5.000.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "sideswipe"
+}
+
+  -> final parsed result: accident_time=5.0000, center_x=0.7518, center_y=0.4500, type=sideswipe
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test15_part1.csv (98 rows saved)
+
+[1112] Processing: videos/QtrYFnbDjeQ_00.mp4
+  -> hybrid time selector: running full-video Qwen first
+  -> model output: {
+  "accident_time": 17.0,
+  "confidence": 5
+}
+
+  -> initial Qwen time: 17.0000s (confidence=5.00/5)
+  -> Qwen time accepted by hybrid rule; final_time=17.0000s (confidence=5.00/5)
+  -> predicted accident_time=17.0000 (source=qwen, qwen_confidence=5.00/5)
+  -> model output: {
+  "center_x": 0.21,
+  "center_y": 0.41
+}
+
+  -> model output: {
+  "center_x": 0.22,
+  "center_y": 0.41
+}
+
+  -> model output: {
+  "center_x": 0.22,
+  "center_y": 0.42
+}
+
+  -> model output: {
+  "center_x": 0.53,
+  "center_y": 0.51
+}
+
+  -> model output: {
+  "center_x": 0.51,
+  "center_y": 0.51
+}
+
+  -> predicted location: center_x=0.2221, center_y=0.4129
+  -> saved representative frame: /root/Desktop/workspace/yujin/code/accident/frames/QtrYFnbDjeQ_00_t17.000.jpg
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=17.0000, center_x=0.2221, center_y=0.4129, type=single
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test15_part1.csv (99 rows saved)
+
+[1113] Processing: videos/NfK10cGdiFw_00.mp4
+  -> hybrid time selector: running full-video Qwen first
+  -> model output: {
+  "accident_time": 0.0,
+  "confidence": 5
+}
+
+  -> initial Qwen time: 0.0000s (confidence=5.00/5)
+  -> Qwen time accepted by hybrid rule; final_time=0.0000s (confidence=5.00/5)
+  -> predicted accident_time=0.0000 (source=qwen, qwen_confidence=5.00/5)
+  -> model output: {
+  "center_x": 0.48,
+  "center_y": 0.65
+}
+
+  -> model output: {
+  "center_x": 0.47,
+  "center_y": 0.66
+}
+
+  -> model output: {
+  "center_x": 0.46,
+  "center_y": 0.65
+}
+
+  -> model output: {
+  "center_x": 0.58,
+  "center_y": 0.62
+}
+
+  -> model output: {"center_x": 0.68, "center_y": 0.62}
+
+  -> predicted location: center_x=0.5015, center_y=0.6798
+  -> saved representative frame: /root/Desktop/workspace/yujin/code/accident/frames/NfK10cGdiFw_00_t0.000.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
+
+  -> model output: {
+  "type": "t-bone"
+}
+
+  -> final parsed result: accident_time=0.0000, center_x=0.5015, center_y=0.6798, type=t-bone
+  -> CSV updated: /root/Desktop/workspace/yujin/result/qwen_test15_part1.csv (100 rows saved)
+
+[1114] Processing: videos/emZJVcNK-q4_00.mp4
+  -> hybrid time selector: running full-video Qwen first
+  -> model output: 

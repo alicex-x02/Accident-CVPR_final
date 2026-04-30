@@ -55,9 +55,10 @@ TIME_CANDIDATE_CLIP_WINDOW_SEC = 0.75
 TIME_CANDIDATE_CLIP_FPS = 6.0
 
 # Hybrid switch rule:
-# - Trust Qwen when its self-reported confidence is at least 3/5.
-# - Use OF rule when confidence is below 3/5 or missing.
-HYBRID_QWEN_MIN_CONFIDENCE = 3.0
+# - Trust Qwen whenever the accident is visible enough to provide a usable estimate.
+# - Use OF only when Qwen reports very low reliability: confidence below 2/5 or missing.
+#   With the prompt below, confidence=2 means "visible but temporally ambiguous", so it is still preserved.
+HYBRID_QWEN_MIN_CONFIDENCE = 2.0
 
 LOCATION_FRAME_OFFSETS = (-0.20, 0.0, 0.20)
 LOCATION_CROP_SCALES = (0.40, 0.26)
@@ -183,7 +184,7 @@ def build_time_prompt(metadata: Dict[str, str]) -> str:
     prompt = f"""
 You are an expert traffic accident analyst looking at CCTV footage.
 
-Your task is to detect the first clear traffic accident in the video and return ONLY the accident start time in seconds.
+Your task is to detect the first clear traffic accident in the video and return ONLY the best estimated accident start time in seconds.
 
 {_meta_block(metadata)}
 
@@ -194,17 +195,12 @@ Instructions:
    - the first frame where physical contact begins, or
    - the first frame where collision is clearly unavoidable and immediate.
 4. Ignore the exact location and the accident type in this step.
-5. Rate your confidence in your own time prediction on a 0 to 5 scale.
-   - 5 means the first contact is unmistakably visible and you are highly certain.
-   - 4 means clear, but there is a small amount of occlusion or ambiguity.
-   - 3 means plausible and probably correct, but not fully certain.
-   - 2 means weak estimate, with several plausible times.
-   - 1 means you are mostly guessing.
-   - 0 means you cannot reliably determine the time.
-6. If you are not confident enough, do not guess a random time.
-   - Set accident_time to null.
-   - Set confidence to 0.
-7. Reserve confidence=5 for cases where the first contact is visually obvious.
+5. If any traffic accident is visible, ALWAYS output your best estimated accident_time.
+6. If the exact first contact is ambiguous or occluded, still output the best plausible onset time.
+7. Do NOT output null just because you are uncertain.
+8. Output null ONLY when the video is unreadable or no traffic accident is visible at all.
+9. Avoid accident_time = 0.0 unless the accident truly begins at the very start of the video.
+10. Do not output confidence in this step.
 
 Critical output rules:
 - Output JSON only.
@@ -215,17 +211,15 @@ Critical output rules:
 - No code block.
 - No text before JSON.
 - No text after JSON.
-- The JSON must contain exactly these keys:
-  "accident_time", "confidence"
+- The JSON must contain exactly this key:
+  "accident_time"
 
 Output format:
 {{
-  "accident_time": <float or null>,
-  "confidence": <float between 0 and 5>
+  "accident_time": <float or null>
 }}
 """
     return prompt.strip()
-
 
 def build_time_candidate_selector_prompt(metadata: Dict[str, str], num_candidates: int) -> str:
     prompt = f"""
@@ -516,20 +510,20 @@ def predict_time_with_hybrid_qwen_of(
     Strategy:
     1. Ask Qwen for the full-video accident_time.
     2. Ask Qwen for a self-reported confidence score from 0 to 5.
-    3. If confidence is at least 3, use Qwen time.
-    4. If confidence is below 3 or missing, run OF rule selector.
+    3. If confidence is at least 2, use Qwen time.
+    4. If confidence is below 2 or missing, run OF rule selector.
     5. If OF produces a valid candidate, use OF time; otherwise fallback to Qwen time.
 
     Location/type code remains unchanged and receives the selected accident_time.
     """
     diagnostics: Dict[str, Any] = {
-        "selector_mode": "hybrid_qwen_then_of_rule_on_low_confidence",
+        "selector_mode": "hybrid_qwen_best_guess_then_of_rule_on_null",
         "qwen_time": None,
         "qwen_confidence": None,
         "qwen_raw": None,
         "qwen_suspicious": False,
         "qwen_suspicious_reason": None,
-        "qwen_confidence_threshold": HYBRID_QWEN_MIN_CONFIDENCE,
+        "qwen_confidence_threshold": None,
         "flow_candidates": [],
         "kept_candidates": [],
         "selected_candidate": None,
@@ -562,10 +556,6 @@ def predict_time_with_hybrid_qwen_of(
     suspicious_reason = None
     if qwen_time is None:
         suspicious_reason = "qwen_time_none"
-    elif qwen_confidence is None:
-        suspicious_reason = "qwen_confidence_none"
-    elif float(qwen_confidence) < HYBRID_QWEN_MIN_CONFIDENCE:
-        suspicious_reason = f"qwen_confidence<{HYBRID_QWEN_MIN_CONFIDENCE:.1f}"
 
     diagnostics["qwen_suspicious"] = suspicious_reason is not None
     diagnostics["qwen_suspicious_reason"] = suspicious_reason
@@ -574,16 +564,15 @@ def predict_time_with_hybrid_qwen_of(
         diagnostics["selected_time"] = qwen_time
         diagnostics["final_source"] = "qwen"
         print(
-            "  -> Qwen time accepted by hybrid rule; "
-            f"final_time={_fmt_float(qwen_time, 4)}s "
-            f"(confidence={_fmt_float(qwen_confidence, 2)}/5)",
+            "  -> Qwen best-guess time accepted by hybrid rule; "
+            f"final_time={_fmt_float(qwen_time, 4)}s",
             flush=True,
         )
         return qwen_time, diagnostics
 
     print(
-        "  -> Qwen time is suspicious; running OF rule selector "
-        f"(reason={suspicious_reason}, confidence={_fmt_float(qwen_confidence, 2)}/5)",
+        "  -> Qwen returned null/invalid time; running OF rule selector "
+        f"(reason={suspicious_reason})",
         flush=True,
     )
     diagnostics["of_attempted"] = True
@@ -630,8 +619,7 @@ def predict_time_with_hybrid_qwen_of(
         )
         print(
             f"  -> final hybrid time: {selected_time:.4f}s "
-            f"(source=optical_flow_rule, qwen_time={_fmt_float(qwen_time, 4)}s, "
-            f"qwen_confidence={_fmt_float(qwen_confidence, 2)}/5)",
+            f"(source=optical_flow_rule, qwen_time={_fmt_float(qwen_time, 4)}s)",
             flush=True,
         )
         return selected_time, diagnostics
@@ -640,9 +628,8 @@ def predict_time_with_hybrid_qwen_of(
     diagnostics["selected_time"] = qwen_time
     diagnostics["final_source"] = "qwen_fallback_after_of_failure"
     print(
-        "  -> no usable OF candidates after rule filters; falling back to suspicious Qwen time "
-        f"{_fmt_float(qwen_time, 4)}s "
-        f"(confidence={_fmt_float(qwen_confidence, 2)}/5)",
+        "  -> no usable OF candidates after rule filters; falling back to Qwen time "
+        f"{_fmt_float(qwen_time, 4)}s",
         flush=True,
     )
     return qwen_time, diagnostics
@@ -1435,8 +1422,7 @@ def main(
                 continue
             print(
                 f"  -> predicted accident_time={accident_time:.4f} "
-                f"(source={time_diag.get('final_source')}, "
-                f"qwen_confidence={_fmt_float(time_diag.get('qwen_confidence'), 2)}/5)"
+                f"(source={time_diag.get('final_source')})"
             )
 
             location, persistent_frame_path, location_diag = predict_location_with_multiframe_refine(

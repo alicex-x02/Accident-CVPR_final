@@ -1,0 +1,22 @@
+The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+Loading model: Qwen/Qwen3.5-9B [part1_resume]
+Using device: cuda
+Processing rows: 1282..2027
+CSV output: /root/Desktop/workspace/yujin/result/test17/qwen_test17_part1_resume.csv
+Raw log: /workspace/yujin/code/accident/qwen_test17_part1_resume_raw_outputs.jsonl
+Traceback (most recent call last):
+  File "/root/Desktop/workspace/yujin/code/qwen_test17_resume.py", line 91, in <module>
+    raise SystemExit(run_cli())
+  File "/root/Desktop/workspace/yujin/code/qwen_test17_resume.py", line 81, in run_cli
+    base.main(
+  File "/workspace/yujin/code/qwen_test17.py", line 1394, in main
+    model = AutoModelForImageTextToText.from_pretrained(MODEL_NAME, device_map="auto", torch_dtype="auto")
+  File "/opt/conda/envs/yujin/lib/python3.10/site-packages/transformers/models/auto/auto_factory.py", line 381, in from_pretrained
+    return model_class.from_pretrained(
+  File "/opt/conda/envs/yujin/lib/python3.10/site-packages/transformers/modeling_utils.py", line 4140, in from_pretrained
+    loading_info, disk_offload_index = cls._load_pretrained_model(model, state_dict, checkpoint_files, load_config)
+  File "/opt/conda/envs/yujin/lib/python3.10/site-packages/transformers/modeling_utils.py", line 4219, in _load_pretrained_model
+    caching_allocator_warmup(model, expanded_device_map, load_config.hf_quantizer)
+  File "/opt/conda/envs/yujin/lib/python3.10/site-packages/transformers/modeling_utils.py", line 4830, in caching_allocator_warmup
+    _ = torch.empty(int(byte_count // 2), dtype=torch.float16, device=device, requires_grad=False)
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 17.53 GiB. GPU 0 has a total capacity of 23.56 GiB of which 5.52 GiB is free. Process 1977536 has 17.78 GiB memory in use. Process 1977537 has 256.00 MiB memory in use. Of the allocated memory 0 bytes is allocated by PyTorch, and 0 bytes is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
