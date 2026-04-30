@@ -3108,4 +3108,61 @@ Keyword argument `enable_thinking` is not a valid argument for this processor an
 
 [1078] Processing: videos/x2ymyeli9Xc_00.mp4
   -> hybrid time selector: running full-video Qwen first
-  -> model output: 
+  -> model output: {
+  "accident_time": 4.0,
+  "accident_end_time": 10.0
+}
+
+  -> initial Qwen span: start=4.0000s end=10.0000s
+  -> Qwen time accepted by hybrid rule; final_start=4.0000s final_end=10.0000s
+  -> predicted accident span: start=4.0000, end=10.0000
+  -> time CSV updated: /workspace/yujin/result/qwen_test23_start_end_part1_time.csv (65 rows saved)
+  -> model output: {
+  "center_x": 0.49,
+  "center_y": 0.51
+}
+
+  -> model output: {
+  "center_x": 0.53,
+  "center_y": 0.53
+}
+
+  -> model output: {
+  "center_x": 0.56,
+  "center_y": 0.56
+}
+
+  -> model output: {
+  "center_x": 0.47,
+  "center_y": 0.48
+}
+
+  -> model output: {
+  "center_x": 0.48,
+  "center_y": 0.52
+}
+
+  -> predicted location: center_x=0.5240, center_y=0.5300
+  -> saved representative frame: /workspace/yujin/code/accident/frames/x2ymyeli9Xc_00_t4.000.jpg
+  -> model output: {
+  "involves_multiple_vehicles": false,
+  "confidence": 0.95
+}
+
+  -> final parsed result: accident_time=4.0000, accident_end_time=10.0000, center_x=0.5240, center_y=0.5300, type=single
+  -> CSV updated: /workspace/yujin/result/qwen_test23_start_end_part1.csv (65 rows saved)
+
+[1079] Processing: videos/4IUmjPBj5ik_00.mp4
+  -> hybrid time selector: running full-video Qwen first
+  -> model output: {
+  "accident_time": 6.5,
+  "accident_end_time": 10.0
+}
+
+  -> initial Qwen span: start=6.5000s end=10.0000s
+  -> Qwen time accepted by hybrid rule; final_start=6.5000s final_end=10.0000s
+  -> predicted accident span: start=6.5000, end=10.0000
+  -> time CSV updated: /workspace/yujin/result/qwen_test23_start_end_part1_time.csv (66 rows saved)
+  -> model output: ```json
+{
+ 

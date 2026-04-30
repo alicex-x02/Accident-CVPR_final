@@ -2771,3 +2771,41 @@ Keyword argument `enable_thinking` is not a valid argument for this processor an
   "involves_multiple_vehicles": true,
   "confidence": 0.95
 }
+
+  -> model output: {
+  "type": "t-bone"
+}
+
+  -> final parsed result: accident_time=5.0000, accident_end_time=22.0000, center_x=0.1501, center_y=0.3500, type=t-bone
+  -> CSV updated: /workspace/yujin/result/qwen_test23_start_end_part0.csv (59 rows saved)
+
+[60] Processing: videos/At-4-Y2g7Y8_00.mp4
+  -> hybrid time selector: running full-video Qwen first
+  -> model output: ```json
+{
+  "accident_time": 10.0,
+  "accident_end_time": 12.0
+}
+```
+
+  -> initial Qwen span: start=10.0000s end=12.0000s
+  -> Qwen time accepted by hybrid rule; final_start=10.0000s final_end=12.0000s
+  -> predicted accident span: start=10.0000, end=12.0000
+  -> time CSV updated: /workspace/yujin/result/qwen_test23_start_end_part0_time.csv (60 rows saved)
+  -> model output: {
+  "center_x": 0.54,
+  "center_y": 0.52
+}
+
+  -> model output: {
+  "center_x": 0.71,
+  "center_y": 0.61
+}
+
+  -> model output: {
+  "center_x": 0.71,
+  "center_y": 0.62
+}
+
+  -> model output: {
+  "center_x": 
