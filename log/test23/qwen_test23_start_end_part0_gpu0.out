@@ -2759,3 +2759,15 @@ Keyword argument `enable_thinking` is not a valid argument for this processor an
   "center_x": 0.38,
   "center_y": 0.46
 }
+
+  -> model output: {
+  "center_x": 0.5,
+  "center_y": 0.5
+}
+
+  -> predicted location: center_x=0.1501, center_y=0.3500
+  -> saved representative frame: /workspace/yujin/code/accident/frames/C7gOL8qM71E_00_t5.000.jpg
+  -> model output: {
+  "involves_multiple_vehicles": true,
+  "confidence": 0.95
+}
