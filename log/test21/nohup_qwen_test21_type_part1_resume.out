@@ -1,0 +1,18 @@
+nohup: ignoring input
+The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+Current model requires 328 bytes of buffer for offloaded layers, which seems does not fit any GPU's remaining memory. If you are experiencing a OOM later, please consider using offload_buffers=True.
+Loading model: Qwen/Qwen3.5-9B [part1_resume]
+Using device: cuda
+Processing rows: 1079..2027
+CSV output: /workspace/yujin/result/qwen_test21_type_part1_resume.csv
+Raw log: /workspace/yujin/code/accident/qwen_test21_type_part1_resume_raw_outputs.jsonl
+Loading weights:   0%|          | 0/760 [00:00<?, ?it/s]Loading weights:  34%|███▎      | 256/760 [00:00<00:00, 2548.45it/s]Loading weights: 100%|██████████| 760/760 [00:00<00:00, 4084.46it/s]
+
+[1079] Processing: videos/4IUmjPBj5ik_00.mp4
+  -> hybrid time selector: running full-video Qwen first
+Keyword argument `enable_thinking` is not a valid argument for this processor and will be ignored.
+/opt/conda/envs/yujin/lib/python3.10/site-packages/transformers/video_processing_utils.py:872: UserWarning: `torchcodec` is not installed and cannot be used to decode the video by default. Falling back to `torchvision`. Note that `torchvision` decoding is deprecated and will be removed in future versions. 
+  warnings.warn(
+/opt/conda/envs/yujin/lib/python3.10/site-packages/transformers/video_utils.py:534: UserWarning: Using `torchvision` for video decoding is deprecated and will be removed in future versions. Please use `torchcodec` instead.
+  warnings.warn(
+  -> model output: 
