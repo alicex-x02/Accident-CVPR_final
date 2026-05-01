@@ -1,0 +1,76 @@
+nohup: ignoring input
+The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+Loading model: Qwen/Qwen3.5-9B
+Using device: cuda
+Loading weights:   0%|          | 0/760 [00:00<?, ?it/s]Loading weights:  60%|█████▉    | 455/760 [00:00<00:00, 4534.81it/s]Loading weights: 100%|██████████| 760/760 [00:00<00:00, 1943.43it/s]
+Some parameters are on the meta device because they were offloaded to the cpu.
+Keyword argument `enable_thinking` is not a valid argument for this processor and will be ignored.
+/opt/conda/envs/yujin/lib/python3.10/site-packages/transformers/video_processing_utils.py:872: UserWarning: `torchcodec` is not installed and cannot be used to decode the video by default. Falling back to `torchvision`. Note that `torchvision` decoding is deprecated and will be removed in future versions. 
+  warnings.warn(
+/opt/conda/envs/yujin/lib/python3.10/site-packages/transformers/video_utils.py:534: UserWarning: Using `torchvision` for video decoding is deprecated and will be removed in future versions. Please use `torchcodec` instead.
+  warnings.warn(
+Shard setup: part 1/2, rows 1-1014 of 2027
+
+[1] Processing: videos/Z4kg2Ev3vhk_00.mp4
+  -> model output: {
+ber    . ** . ) �    .  -（ . =; *  .  .  [. .  ... !  **...* *平衡
+  * " ( [)= ** from ISS **** **' **..."' ' ) )* 得知 
+:) 得知 得知  '  potential the... 得知 英  know 鲁 得知 得知  know  know  know  challenge 得知  utility  know  ...  *   以平衡
+*吾5an{ <
+. . "2' )（...！'. . ** ('. . "=’�”� 
+=’)！ ** '
+"* . ** ( . '`从此 **  
+...（�   . ’！ **. .  ”'"  the .  私 《…  ** 英  .  . 打破 
+= 
+”方-
+】�  
+ 
+
+"（"  
+ 
+* 
+) . = 
+
+طن &- 
+
+ (
+/社  necessary    the 
+  -> model output: Exception in thread Thread-3 (generate):
+Traceback (most recent call last):
+  File "/opt/conda/envs/yujin/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/opt/conda/envs/yujin/lib/python3.10/threading.py", line 953, in run
+    self._target(*self._args, **self._kwargs)
+  File "/opt/conda/envs/yujin/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+  File "/opt/conda/envs/yujin/lib/python3.10/site-packages/transformers/generation/utils.py", line 2555, in generate
+    result = decoding_method(
+  File "/opt/conda/envs/yujin/lib/python3.10/site-packages/transformers/generation/utils.py", line 2748, in _sample
+    outputs = self._prefill(
+  File "/opt/conda/envs/yujin/lib/python3.10/site-packages/transformers/generation/utils.py", line 3796, in _prefill
+    return self(**model_inputs, return_dict=True)
+  File "/opt/conda/envs/yujin/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/opt/conda/envs/yujin/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/opt/conda/envs/yujin/lib/python3.10/site-packages/accelerate/hooks.py", line 192, in new_forward
+    output = module._old_forward(*args, **kwargs)
+  File "/opt/conda/envs/yujin/lib/python3.10/site-packages/transformers/utils/generic.py", line 851, in wrapper
+    output = func(self, *args, **kwargs)
+  File "/opt/conda/envs/yujin/lib/python3.10/site-packages/transformers/models/qwen3_5/modeling_qwen3_5.py", line 2008, in forward
+    logits = self.lm_head(hidden_states[:, slice_indices, :])
+  File "/opt/conda/envs/yujin/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/opt/conda/envs/yujin/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/opt/conda/envs/yujin/lib/python3.10/site-packages/accelerate/hooks.py", line 187, in new_forward
+    args, kwargs = module._hf_hook.pre_forward(module, *args, **kwargs)
+  File "/opt/conda/envs/yujin/lib/python3.10/site-packages/accelerate/hooks.py", line 50, in wrapper
+    return wrapper._compiled_fn(*args, **kwargs)
+  File "/opt/conda/envs/yujin/lib/python3.10/site-packages/torch/_dynamo/eval_frame.py", line 632, in _fn
+    return fn(*args, **kwargs)
+  File "/opt/conda/envs/yujin/lib/python3.10/site-packages/accelerate/hooks.py", line 378, in pre_forward
+    set_module_tensor_to_device(
+  File "/opt/conda/envs/yujin/lib/python3.10/site-packages/accelerate/utils/modeling.py", line 343, in set_module_tensor_to_device
+    new_value = value.to(device, non_blocking=non_blocking)
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 1.89 GiB. GPU 0 has a total capacity of 23.56 GiB of which 1.74 GiB is free. Process 2739152 has 18.45 GiB memory in use. Process 2777876 has 3.36 GiB memory in use. Of the allocated memory 1.63 GiB is allocated by PyTorch, and 1.42 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
